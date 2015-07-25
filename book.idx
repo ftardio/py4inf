@@ -1,0 +1,861 @@
+\indexentry{Licencia Creative Commons}{\es@scroman  {iv}}
+\indexentry{CC-BY-SA}{\es@scroman  {iv}}
+\indexentry{BY-SA}{\es@scroman  {iv}}
+\indexentry{hardware}{2}
+\indexentry{hardware!architecture}{2}
+\indexentry{problem solving}{4}
+\indexentry{programming language}{5}
+\indexentry{language!programming}{5}
+\indexentry{interactive mode}{6}
+\indexentry{script}{10}
+\indexentry{program}{11}
+\indexentry{bug}{15}
+\indexentry{central processing unit}{15}
+\indexentry{CPU}{15}
+\indexentry{compile}{15}
+\indexentry{high-level language}{15}
+\indexentry{interactive mode}{15}
+\indexentry{interpret}{15}
+\indexentry{low-level language}{15}
+\indexentry{machine code}{15}
+\indexentry{main memory}{15}
+\indexentry{parse}{15}
+\indexentry{portability}{15}
+\indexentry{print statement}{15}
+\indexentry{statement!print}{15}
+\indexentry{problem solving}{15}
+\indexentry{program}{15}
+\indexentry{prompt}{15}
+\indexentry{secondary memory}{16}
+\indexentry{semantics}{16}
+\indexentry{semantic error}{16}
+\indexentry{source code}{16}
+\indexentry{value}{19}
+\indexentry{type}{19}
+\indexentry{string}{19}
+\indexentry{quotation mark}{19}
+\indexentry{type}{19}
+\indexentry{string type}{19}
+\indexentry{type!str}{19}
+\indexentry{int type}{19}
+\indexentry{type!int}{19}
+\indexentry{float type}{19}
+\indexentry{type!float}{19}
+\indexentry{quotation mark}{19}
+\indexentry{semantic error}{20}
+\indexentry{error!semantic}{20}
+\indexentry{error message}{20}
+\indexentry{variable}{20}
+\indexentry{assignment statement}{20}
+\indexentry{statement!assignment}{20}
+\indexentry{keyword}{21}
+\indexentry{underscore character}{21}
+\indexentry{keyword}{21}
+\indexentry{statement}{21}
+\indexentry{interactive mode}{21}
+\indexentry{script mode}{21}
+\indexentry{operator, arithmetic}{22}
+\indexentry{arithmetic operator}{22}
+\indexentry{operand}{22}
+\indexentry{expression}{22}
+\indexentry{Python 3.0}{22}
+\indexentry{floor division}{22}
+\indexentry{floating-point division}{22}
+\indexentry{division!floor}{22}
+\indexentry{division!floating-point}{22}
+\indexentry{expression}{23}
+\indexentry{evaluate}{23}
+\indexentry{order of operations}{23}
+\indexentry{rules of precedence}{23}
+\indexentry{PEMDAS}{23}
+\indexentry{parentheses!overriding precedence}{23}
+\indexentry{modulus operator}{24}
+\indexentry{operator!modulus}{24}
+\indexentry{divisibility}{24}
+\indexentry{string!operation}{24}
+\indexentry{operator!string}{24}
+\indexentry{concatenation}{24}
+\indexentry{keyboard input}{24}
+\indexentry{Python 3.0}{25}
+\indexentry{raw\_input function}{25}
+\indexentry{function!raw\_input}{25}
+\indexentry{prompt}{25}
+\indexentry{newline}{25}
+\indexentry{ValueError}{25}
+\indexentry{exception!ValueError}{25}
+\indexentry{comment}{25}
+\indexentry{mnemonic}{26}
+\indexentry{debugging}{28}
+\indexentry{syntax error}{28}
+\indexentry{error!syntax}{28}
+\indexentry{error message}{28}
+\indexentry{use before def}{28}
+\indexentry{exception}{28}
+\indexentry{runtime error}{28}
+\indexentry{error!runtime}{28}
+\indexentry{case-sensitivity, variable names}{28}
+\indexentry{semantic error}{28}
+\indexentry{error!semantic}{28}
+\indexentry{order of operations}{28}
+\indexentry{assignment}{28}
+\indexentry{concatenation}{29}
+\indexentry{comment}{29}
+\indexentry{expression}{29}
+\indexentry{floating-point}{29}
+\indexentry{floor division}{29}
+\indexentry{integer}{29}
+\indexentry{keyword}{29}
+\indexentry{mnemonic}{29}
+\indexentry{modulus operator}{29}
+\indexentry{operator!modulus}{29}
+\indexentry{operand}{29}
+\indexentry{operator}{29}
+\indexentry{rules of precedence}{29}
+\indexentry{precedence}{29}
+\indexentry{statement}{29}
+\indexentry{string}{29}
+\indexentry{type}{29}
+\indexentry{value}{29}
+\indexentry{variable}{29}
+\indexentry{boolean expression}{31}
+\indexentry{expression!boolean}{31}
+\indexentry{logical operator}{31}
+\indexentry{operator!logical}{31}
+\indexentry{True special value}{31}
+\indexentry{False special value}{31}
+\indexentry{special value!True}{31}
+\indexentry{special value!False}{31}
+\indexentry{bool type}{31}
+\indexentry{type!bool}{31}
+\indexentry{comparison operator}{32}
+\indexentry{operator!comparison}{32}
+\indexentry{logical operator}{32}
+\indexentry{operator!logical}{32}
+\indexentry{and operator}{32}
+\indexentry{or operator}{32}
+\indexentry{not operator}{32}
+\indexentry{operator!and}{32}
+\indexentry{operator!or}{32}
+\indexentry{operator!not}{32}
+\indexentry{conditional statement}{32}
+\indexentry{statement!conditional}{32}
+\indexentry{if statement}{32}
+\indexentry{statement!if}{32}
+\indexentry{conditional execution}{32}
+\indexentry{condition}{32}
+\indexentry{compound statement}{32}
+\indexentry{statement!compound}{32}
+\indexentry{pass statement}{33}
+\indexentry{statement!pass}{33}
+\indexentry{alternative execution}{33}
+\indexentry{else keyword}{33}
+\indexentry{keyword!else}{33}
+\indexentry{branch}{33}
+\indexentry{chained conditional}{33}
+\indexentry{conditional!chained}{33}
+\indexentry{elif keyword}{34}
+\indexentry{keyword!elif}{34}
+\indexentry{nested conditional}{34}
+\indexentry{conditional!nested}{34}
+\indexentry{traceback}{35}
+\indexentry{fahrenheit}{35}
+\indexentry{celsius}{35}
+\indexentry{temperature conversion}{35}
+\indexentry{short circuit}{36}
+\indexentry{guardian pattern}{36}
+\indexentry{pattern!guardian}{36}
+\indexentry{debugging}{37}
+\indexentry{traceback}{37}
+\indexentry{whitespace}{38}
+\indexentry{error!runtime}{38}
+\indexentry{runtime error}{38}
+\indexentry{exception!OverflowError}{38}
+\indexentry{OverflowError}{38}
+\indexentry{floor division}{38}
+\indexentry{division!floor}{38}
+\indexentry{body}{39}
+\indexentry{boolean expression}{39}
+\indexentry{expression!boolean}{39}
+\indexentry{branch}{39}
+\indexentry{chained conditional}{39}
+\indexentry{conditional!chained}{39}
+\indexentry{conditional statement}{39}
+\indexentry{statement!conditional}{39}
+\indexentry{condition}{39}
+\indexentry{compound statement}{39}
+\indexentry{guardian pattern}{39}
+\indexentry{pattern!guardian}{39}
+\indexentry{nested conditional}{39}
+\indexentry{conditional!nested}{39}
+\indexentry{traceback}{39}
+\indexentry{short circuit}{39}
+\indexentry{function call}{41}
+\indexentry{parentheses!argument in}{41}
+\indexentry{argument}{41}
+\indexentry{return value}{41}
+\indexentry{conversion!type}{42}
+\indexentry{type conversion}{42}
+\indexentry{int function}{42}
+\indexentry{function!int}{42}
+\indexentry{float function}{42}
+\indexentry{function!float}{42}
+\indexentry{str function}{42}
+\indexentry{function!str}{42}
+\indexentry{random number}{43}
+\indexentry{number, random}{43}
+\indexentry{deterministic}{43}
+\indexentry{pseudorandom}{43}
+\indexentry{random module}{43}
+\indexentry{module!random}{43}
+\indexentry{random function}{43}
+\indexentry{function!random}{43}
+\indexentry{randint function}{43}
+\indexentry{function!randint}{43}
+\indexentry{choice function}{44}
+\indexentry{function!choice}{44}
+\indexentry{math function}{44}
+\indexentry{function, math}{44}
+\indexentry{module}{44}
+\indexentry{module object}{44}
+\indexentry{dot notation}{44}
+\indexentry{log function}{44}
+\indexentry{function!log}{44}
+\indexentry{sine function}{44}
+\indexentry{radian}{44}
+\indexentry{trigonometric function}{44}
+\indexentry{function, trigonometric}{44}
+\indexentry{pi}{44}
+\indexentry{sqrt function}{44}
+\indexentry{function!sqrt}{44}
+\indexentry{function}{45}
+\indexentry{function definition}{45}
+\indexentry{definition!function}{45}
+\indexentry{def keyword}{45}
+\indexentry{keyword!def}{45}
+\indexentry{argument}{45}
+\indexentry{parentheses!empty}{45}
+\indexentry{header}{45}
+\indexentry{body}{45}
+\indexentry{indentation}{45}
+\indexentry{colon}{45}
+\indexentry{ellipses}{45}
+\indexentry{function object}{46}
+\indexentry{object!function}{46}
+\indexentry{function definition}{46}
+\indexentry{use before def}{46}
+\indexentry{flow of execution}{47}
+\indexentry{parameter}{47}
+\indexentry{function parameter}{47}
+\indexentry{argument}{47}
+\indexentry{function argument}{47}
+\indexentry{parentheses!parameters in}{47}
+\indexentry{composition}{48}
+\indexentry{argument}{48}
+\indexentry{fruitful function}{48}
+\indexentry{void function}{48}
+\indexentry{function, fruitful}{48}
+\indexentry{function, void}{48}
+\indexentry{interactive mode}{49}
+\indexentry{script mode}{49}
+\indexentry{None special value}{49}
+\indexentry{special value!None}{49}
+\indexentry{function, reasons for}{50}
+\indexentry{debugging}{50}
+\indexentry{whitespace}{50}
+\indexentry{algorithm}{51}
+\indexentry{argument}{51}
+\indexentry{body}{51}
+\indexentry{composition}{51}
+\indexentry{deterministic}{51}
+\indexentry{dot notation}{51}
+\indexentry{flow of execution}{51}
+\indexentry{fruitful function}{51}
+\indexentry{function}{51}
+\indexentry{function call}{51}
+\indexentry{function definition}{51}
+\indexentry{function definition}{51}
+\indexentry{header}{51}
+\indexentry{import statement}{51}
+\indexentry{statement!import}{51}
+\indexentry{module}{51}
+\indexentry{parameter}{51}
+\indexentry{pseudorandom}{51}
+\indexentry{return value}{51}
+\indexentry{void function}{51}
+\indexentry{iteration}{55}
+\indexentry{update}{55}
+\indexentry{variable!updating}{55}
+\indexentry{initialization (before update)}{55}
+\indexentry{increment}{55}
+\indexentry{decrement}{55}
+\indexentry{statement!while}{55}
+\indexentry{while loop}{55}
+\indexentry{loop!while}{55}
+\indexentry{iteration}{55}
+\indexentry{flow of execution}{56}
+\indexentry{condition}{56}
+\indexentry{loop}{56}
+\indexentry{body}{56}
+\indexentry{infinite loop}{56}
+\indexentry{loop!infinite}{56}
+\indexentry{break statement}{56}
+\indexentry{statement!break}{56}
+\indexentry{continue statement}{57}
+\indexentry{statement!continue}{57}
+\indexentry{for statement}{58}
+\indexentry{statement!for}{58}
+\indexentry{accumulator!sum}{60}
+\indexentry{loop!maximum}{60}
+\indexentry{loop!minimum}{60}
+\indexentry{None special value}{60}
+\indexentry{special value!None}{60}
+\indexentry{debugging!by bisection}{62}
+\indexentry{bisection, debugging by}{62}
+\indexentry{accumulator}{62}
+\indexentry{counter}{62}
+\indexentry{decrement}{62}
+\indexentry{increment}{62}
+\indexentry{infinite loop}{62}
+\indexentry{iteration}{63}
+\indexentry{sequence}{65}
+\indexentry{character}{65}
+\indexentry{bracket operator}{65}
+\indexentry{operator!bracket}{65}
+\indexentry{index}{65}
+\indexentry{index!starting at zero}{65}
+\indexentry{zero, index starting at}{65}
+\indexentry{index}{65}
+\indexentry{exception!TypeError}{65}
+\indexentry{TypeError}{65}
+\indexentry{len function}{66}
+\indexentry{function!len}{66}
+\indexentry{exception!IndexError}{66}
+\indexentry{IndexError}{66}
+\indexentry{index!negative}{66}
+\indexentry{negative index}{66}
+\indexentry{traversal}{66}
+\indexentry{loop!traversal}{66}
+\indexentry{for loop}{66}
+\indexentry{loop!for}{66}
+\indexentry{statement!for}{66}
+\indexentry{traversal}{66}
+\indexentry{slice operator}{67}
+\indexentry{operator!slice}{67}
+\indexentry{index!slice}{67}
+\indexentry{string!slice}{67}
+\indexentry{slice!string}{67}
+\indexentry{quotation mark}{67}
+\indexentry{copy!slice}{67}
+\indexentry{slice!copy}{67}
+\indexentry{mutability}{67}
+\indexentry{immutability}{67}
+\indexentry{string!immutable}{67}
+\indexentry{TypeError}{67}
+\indexentry{exception!TypeError}{67}
+\indexentry{object}{68}
+\indexentry{item assignment}{68}
+\indexentry{assignment!item}{68}
+\indexentry{immutability}{68}
+\indexentry{concatenation}{68}
+\indexentry{counter}{68}
+\indexentry{counting and looping}{68}
+\indexentry{looping and counting}{68}
+\indexentry{looping!with strings}{68}
+\indexentry{encapsulation}{68}
+\indexentry{in operator}{68}
+\indexentry{operator!in}{68}
+\indexentry{boolean operator}{68}
+\indexentry{operator!boolean}{68}
+\indexentry{string!comparison}{68}
+\indexentry{comparison!string}{68}
+\indexentry{method}{70}
+\indexentry{string!method}{70}
+\indexentry{dot notation}{70}
+\indexentry{parentheses!empty}{70}
+\indexentry{invocation}{70}
+\indexentry{optional argument}{70}
+\indexentry{argument!optional}{70}
+\indexentry{count method}{71}
+\indexentry{method!count}{71}
+\indexentry{format operator}{72}
+\indexentry{operator!format}{72}
+\indexentry{format string}{72}
+\indexentry{format sequence}{72}
+\indexentry{exception!TypeError}{72}
+\indexentry{TypeError}{72}
+\indexentry{debugging}{73}
+\indexentry{guardian pattern}{74}
+\indexentry{pattern!guardian}{74}
+\indexentry{counter}{74}
+\indexentry{empty string}{74}
+\indexentry{format operator}{74}
+\indexentry{operator!format}{74}
+\indexentry{format sequence}{74}
+\indexentry{format string}{74}
+\indexentry{flag}{74}
+\indexentry{invocation}{74}
+\indexentry{immutability}{74}
+\indexentry{index}{74}
+\indexentry{item}{74}
+\indexentry{method}{74}
+\indexentry{object}{74}
+\indexentry{search pattern}{74}
+\indexentry{pattern!search}{74}
+\indexentry{sequence}{74}
+\indexentry{slice}{74}
+\indexentry{traversal}{74}
+\indexentry{string method}{75}
+\indexentry{method!string}{75}
+\indexentry{file}{77}
+\indexentry{type!file}{77}
+\indexentry{persistence}{77}
+\indexentry{secondary memory}{77}
+\indexentry{file!open}{77}
+\indexentry{open function}{77}
+\indexentry{function!open}{77}
+\indexentry{file handle}{78}
+\indexentry{newline}{78}
+\indexentry{file!reading}{79}
+\indexentry{counter}{79}
+\indexentry{filter pattern}{80}
+\indexentry{pattern!filter}{80}
+\indexentry{Quality Assurance}{83}
+\indexentry{QA}{83}
+\indexentry{try statement}{83}
+\indexentry{statement!try}{83}
+\indexentry{open function}{83}
+\indexentry{function!open}{83}
+\indexentry{exception!IOError}{83}
+\indexentry{IOError}{83}
+\indexentry{Pythonic}{84}
+\indexentry{file!writing}{84}
+\indexentry{newline}{85}
+\indexentry{close method}{85}
+\indexentry{method!close}{85}
+\indexentry{debugging}{85}
+\indexentry{whitespace}{85}
+\indexentry{repr function}{85}
+\indexentry{function!repr}{85}
+\indexentry{string representation}{85}
+\indexentry{end of line character}{85}
+\indexentry{catch}{86}
+\indexentry{newline}{86}
+\indexentry{Pythonic}{86}
+\indexentry{Quality Assurance}{86}
+\indexentry{QA}{86}
+\indexentry{text file}{86}
+\indexentry{list}{89}
+\indexentry{type!list}{89}
+\indexentry{element}{89}
+\indexentry{sequence}{89}
+\indexentry{item}{89}
+\indexentry{nested list}{89}
+\indexentry{list!nested}{89}
+\indexentry{empty list}{89}
+\indexentry{list!empty}{89}
+\indexentry{assignment}{89}
+\indexentry{list!element}{89}
+\indexentry{access}{89}
+\indexentry{index}{89}
+\indexentry{bracket operator}{89}
+\indexentry{operator!bracket}{89}
+\indexentry{mutability}{90}
+\indexentry{index!starting at zero}{90}
+\indexentry{zero, index starting at}{90}
+\indexentry{item assignment}{90}
+\indexentry{assignment!item}{90}
+\indexentry{exception!IndexError}{90}
+\indexentry{IndexError}{90}
+\indexentry{list!index}{90}
+\indexentry{list!membership}{90}
+\indexentry{membership!list}{90}
+\indexentry{in operator}{90}
+\indexentry{operator!in}{90}
+\indexentry{list!traversal}{90}
+\indexentry{traversal!list}{90}
+\indexentry{for loop}{90}
+\indexentry{loop!for}{90}
+\indexentry{statement!for}{90}
+\indexentry{looping!with indices}{90}
+\indexentry{index!looping with}{90}
+\indexentry{item update}{91}
+\indexentry{update!item}{91}
+\indexentry{nested list}{91}
+\indexentry{list!nested}{91}
+\indexentry{list!operation}{91}
+\indexentry{concatenation!list}{91}
+\indexentry{list!concatenation}{91}
+\indexentry{repetition!list}{91}
+\indexentry{list!repetition}{91}
+\indexentry{slice operator}{91}
+\indexentry{operator!slice}{91}
+\indexentry{index!slice}{91}
+\indexentry{list!slice}{91}
+\indexentry{slice!list}{91}
+\indexentry{list!copy}{91}
+\indexentry{slice!copy}{91}
+\indexentry{copy!slice}{91}
+\indexentry{mutability}{92}
+\indexentry{slice!update}{92}
+\indexentry{update!slice}{92}
+\indexentry{list!method}{92}
+\indexentry{method, list}{92}
+\indexentry{append method}{92}
+\indexentry{method!append}{92}
+\indexentry{extend method}{92}
+\indexentry{method!extend}{92}
+\indexentry{sort method}{92}
+\indexentry{method!sort}{92}
+\indexentry{void method}{92}
+\indexentry{method!void}{92}
+\indexentry{None special value}{92}
+\indexentry{special value!None}{92}
+\indexentry{element deletion}{92}
+\indexentry{deletion, element of list}{92}
+\indexentry{pop method}{92}
+\indexentry{method!pop}{92}
+\indexentry{del operator}{93}
+\indexentry{operator!del}{93}
+\indexentry{remove method}{93}
+\indexentry{method!remove}{93}
+\indexentry{None special value}{93}
+\indexentry{special value!None}{93}
+\indexentry{list}{94}
+\indexentry{string}{94}
+\indexentry{sequence}{94}
+\indexentry{list!function}{94}
+\indexentry{function!list}{94}
+\indexentry{split method}{95}
+\indexentry{method!split}{95}
+\indexentry{optional argument}{95}
+\indexentry{argument!optional}{95}
+\indexentry{delimiter}{95}
+\indexentry{join method}{95}
+\indexentry{method!join}{95}
+\indexentry{concatenation}{95}
+\indexentry{empty string}{95}
+\indexentry{string!empty}{95}
+\indexentry{object}{96}
+\indexentry{value}{96}
+\indexentry{aliasing}{96}
+\indexentry{is operator}{96}
+\indexentry{operator!is}{96}
+\indexentry{equivalence}{97}
+\indexentry{identity}{97}
+\indexentry{object}{97}
+\indexentry{value}{97}
+\indexentry{aliasing}{97}
+\indexentry{reference!aliasing}{97}
+\indexentry{reference}{97}
+\indexentry{mutability}{97}
+\indexentry{immutability}{97}
+\indexentry{list!as argument}{97}
+\indexentry{argument}{97}
+\indexentry{argument!list}{97}
+\indexentry{reference}{97}
+\indexentry{parameter}{97}
+\indexentry{append method}{98}
+\indexentry{method!append}{98}
+\indexentry{list!concatenation}{98}
+\indexentry{concatenation!list}{98}
+\indexentry{slice operator}{98}
+\indexentry{operator!slice}{98}
+\indexentry{debugging}{99}
+\indexentry{sort method}{99}
+\indexentry{method!sort}{99}
+\indexentry{idiom}{99}
+\indexentry{aliasing!copying to avoid}{100}
+\indexentry{copy!to avoid aliasing}{100}
+\indexentry{aliasing}{102}
+\indexentry{delimiter}{102}
+\indexentry{element}{102}
+\indexentry{equivalent}{102}
+\indexentry{index}{102}
+\indexentry{identical}{102}
+\indexentry{list}{102}
+\indexentry{list!traversal}{102}
+\indexentry{nested list}{102}
+\indexentry{object}{102}
+\indexentry{reference}{102}
+\indexentry{Romeo and Juliet}{103}
+\indexentry{dictionary}{105}
+\indexentry{dictionary}{105}
+\indexentry{type!dict}{105}
+\indexentry{key}{105}
+\indexentry{key-value pair}{105}
+\indexentry{index}{105}
+\indexentry{dict function}{105}
+\indexentry{function!dict}{105}
+\indexentry{squiggly bracket}{105}
+\indexentry{bracket!squiggly}{105}
+\indexentry{exception!KeyError}{106}
+\indexentry{KeyError}{106}
+\indexentry{len function}{106}
+\indexentry{function!len}{106}
+\indexentry{membership!dictionary}{106}
+\indexentry{in operator}{106}
+\indexentry{operator!in}{106}
+\indexentry{values method}{106}
+\indexentry{method!values}{106}
+\indexentry{hash table}{106}
+\indexentry{set membership}{106}
+\indexentry{membership!set}{106}
+\indexentry{counter}{107}
+\indexentry{implementation}{107}
+\indexentry{histogram}{107}
+\indexentry{frequency}{107}
+\indexentry{traversal}{107}
+\indexentry{histogram}{107}
+\indexentry{get method}{107}
+\indexentry{method!get}{107}
+\indexentry{idiom}{108}
+\indexentry{nested loops}{108}
+\indexentry{loop!nested}{108}
+\indexentry{Romeo and Juliet}{109}
+\indexentry{dictionary!looping with}{109}
+\indexentry{looping!with dictionaries}{109}
+\indexentry{traversal}{109}
+\indexentry{idiom}{110}
+\indexentry{keys method}{110}
+\indexentry{method!keys}{110}
+\indexentry{Romeo and Juliet}{110}
+\indexentry{debugging}{112}
+\indexentry{sanity check}{113}
+\indexentry{consistency check}{113}
+\indexentry{scaffolding}{113}
+\indexentry{dictionary}{113}
+\indexentry{hashtable}{113}
+\indexentry{hash function}{113}
+\indexentry{histogram}{113}
+\indexentry{implementation}{113}
+\indexentry{item!dictionary}{113}
+\indexentry{key}{113}
+\indexentry{key-value pair}{113}
+\indexentry{lookup}{113}
+\indexentry{nested loops}{113}
+\indexentry{loop!nested}{113}
+\indexentry{value}{113}
+\indexentry{tuple}{115}
+\indexentry{type!tuple}{115}
+\indexentry{sequence}{115}
+\indexentry{mutability}{115}
+\indexentry{hashable}{115}
+\indexentry{comparable}{115}
+\indexentry{immutability}{115}
+\indexentry{parentheses!tuples in}{115}
+\indexentry{singleton}{115}
+\indexentry{tuple!singleton}{115}
+\indexentry{tuple function}{115}
+\indexentry{function!tuple}{115}
+\indexentry{bracket operator}{116}
+\indexentry{operator!bracket}{116}
+\indexentry{slice operator}{116}
+\indexentry{operator!slice}{116}
+\indexentry{tuple!slice}{116}
+\indexentry{slice!tuple}{116}
+\indexentry{exception!TypeError}{116}
+\indexentry{TypeError}{116}
+\indexentry{item assignment}{116}
+\indexentry{assignment!item}{116}
+\indexentry{comparison!tuple}{116}
+\indexentry{tuple!comparison}{116}
+\indexentry{sort method}{116}
+\indexentry{method!sort}{116}
+\indexentry{DSU pattern}{117}
+\indexentry{pattern!DSU}{117}
+\indexentry{decorate-sort-undecorate pattern}{117}
+\indexentry{pattern!decorate-sort-undecorate}{117}
+\indexentry{Romeo and Juliet}{117}
+\indexentry{keyword argument}{117}
+\indexentry{argument!keyword}{117}
+\indexentry{traversal}{117}
+\indexentry{tuple!assignment}{117}
+\indexentry{assignment!tuple}{117}
+\indexentry{swap pattern}{117}
+\indexentry{pattern!swap}{117}
+\indexentry{exception!ValueError}{118}
+\indexentry{ValueError}{118}
+\indexentry{split method}{119}
+\indexentry{method!split}{119}
+\indexentry{email address}{119}
+\indexentry{dictionary}{119}
+\indexentry{items method}{119}
+\indexentry{method!items}{119}
+\indexentry{key-value pair}{119}
+\indexentry{traverse!dictionary}{119}
+\indexentry{dictionary!traversal}{119}
+\indexentry{Romeo and Juliet}{120}
+\indexentry{tuple!as key in dictionary}{122}
+\indexentry{hashable}{122}
+\indexentry{tuple!in brackets}{122}
+\indexentry{sequence}{122}
+\indexentry{string}{122}
+\indexentry{list}{122}
+\indexentry{tuple}{122}
+\indexentry{mutability}{122}
+\indexentry{immutability}{122}
+\indexentry{sorted function}{123}
+\indexentry{function!sorted}{123}
+\indexentry{reversed function}{123}
+\indexentry{function!reversed}{123}
+\indexentry{debugging}{123}
+\indexentry{data structure}{123}
+\indexentry{shape error}{123}
+\indexentry{error!shape}{123}
+\indexentry{typographical error}{123}
+\indexentry{experimental debugging}{123}
+\indexentry{random walk programming}{124}
+\indexentry{development plan!random walk programming}{124}
+\indexentry{comparable}{124}
+\indexentry{data structure}{124}
+\indexentry{DSU pattern}{124}
+\indexentry{gather}{124}
+\indexentry{hashable}{124}
+\indexentry{scatter}{124}
+\indexentry{shape}{124}
+\indexentry{singleton}{124}
+\indexentry{tuple}{125}
+\indexentry{tuple assignment}{125}
+\indexentry{assignment!tuple}{125}
+\indexentry{letter frequency}{126}
+\indexentry{frequency!letter}{126}
+\indexentry{regular expressions}{127}
+\indexentry{regex}{127}
+\indexentry{re module}{127}
+\indexentry{regex!search}{127}
+\indexentry{string!find}{128}
+\indexentry{string!startswith}{128}
+\indexentry{wild card}{128}
+\indexentry{regex!wild card}{128}
+\indexentry{greedy}{129}
+\indexentry{findall}{129}
+\indexentry{regex!findall}{129}
+\indexentry{regex!character sets(brackets)}{131}
+\indexentry{string!split}{132}
+\indexentry{regex!parentheses}{132}
+\indexentry{parentheses!regular expression}{132}
+\indexentry{grep}{136}
+\indexentry{greedy}{138}
+\indexentry{greedy matching}{138}
+\indexentry{grep}{138}
+\indexentry{wild card}{138}
+\indexentry{urllib!image}{143}
+\indexentry{image!jpg}{143}
+\indexentry{jpg}{143}
+\indexentry{time}{145}
+\indexentry{time.sleep}{145}
+\indexentry{flow control}{145}
+\indexentry{web!scraping}{146}
+\indexentry{parsing HTML}{146}
+\indexentry{greedy}{147}
+\indexentry{non-greedy}{147}
+\indexentry{regex!parentheses}{147}
+\indexentry{parentheses!regular expression}{147}
+\indexentry{BeautifulSoup}{148}
+\indexentry{BeautifulSoup}{148}
+\indexentry{HTML}{148}
+\indexentry{parsing!HTML}{148}
+\indexentry{binary file}{149}
+\indexentry{curl}{150}
+\indexentry{BeautifulSoup}{151}
+\indexentry{port}{151}
+\indexentry{socket}{151}
+\indexentry{socket}{151}
+\indexentry{spider}{151}
+\indexentry{ElementTree}{154}
+\indexentry{ElementTree!fromstring}{154}
+\indexentry{ElementTree!find}{154}
+\indexentry{ElementTree!findall}{154}
+\indexentry{ElementTree!get}{154}
+\indexentry{JSON}{155}
+\indexentry{JavaScript Object Notation}{155}
+\indexentry{Google}{158}
+\indexentry{geocoding}{158}
+\indexentry{web service}{158}
+\indexentry{rate limiting}{158}
+\indexentry{OAuth}{160}
+\indexentry{API!key}{160}
+\indexentry{API}{164}
+\indexentry{ElementTree}{164}
+\indexentry{JSON}{164}
+\indexentry{JavaScript Object Notation}{164}
+\indexentry{SOA}{164}
+\indexentry{Service Oriented Architecture}{164}
+\indexentry{XML}{164}
+\indexentry{eXtensible Markup Language}{164}
+\indexentry{database}{165}
+\indexentry{database!indexes}{165}
+\indexentry{sqlite3 module}{166}
+\indexentry{module!sqlite3}{166}
+\indexentry{connect function}{167}
+\indexentry{function!connect}{167}
+\indexentry{cursor function}{167}
+\indexentry{function!cursor}{167}
+\indexentry{Unicode}{168}
+\indexentry{attribute}{185}
+\indexentry{constraint}{185}
+\indexentry{cursor}{185}
+\indexentry{database browser}{185}
+\indexentry{foreign key}{185}
+\indexentry{index}{185}
+\indexentry{logical key}{185}
+\indexentry{normalization}{185}
+\indexentry{database normalization}{185}
+\indexentry{primary key}{186}
+\indexentry{relation}{186}
+\indexentry{tuple}{186}
+\indexentry{Google!map}{187}
+\indexentry{Visualization!map}{187}
+\indexentry{cache}{187}
+\indexentry{Google!page rank}{189}
+\indexentry{Visualization!networks}{189}
+\indexentry{Visualization!page rank}{189}
+\indexentry{file name}{197}
+\indexentry{path}{197}
+\indexentry{directory}{197}
+\indexentry{folder}{197}
+\indexentry{os module}{197}
+\indexentry{module!os}{197}
+\indexentry{getcwd function}{197}
+\indexentry{function!getcwd}{197}
+\indexentry{working directory}{198}
+\indexentry{directory!working}{198}
+\indexentry{relative path}{198}
+\indexentry{path!relative}{198}
+\indexentry{absolute path}{198}
+\indexentry{path!absolute}{198}
+\indexentry{exists function}{198}
+\indexentry{function!exists}{198}
+\indexentry{arguments}{203}
+\indexentry{shell}{204}
+\indexentry{pipe}{204}
+\indexentry{ls (Unix command)}{204}
+\indexentry{Unix command!ls}{204}
+\indexentry{popen function}{205}
+\indexentry{function!popen}{205}
+\indexentry{readline method}{205}
+\indexentry{method!readline}{205}
+\indexentry{read method}{205}
+\indexentry{method!read}{205}
+\indexentry{close method}{205}
+\indexentry{method!close}{205}
+\indexentry{path!absolute}{205}
+\indexentry{checksum}{205}
+\indexentry{directory!current}{205}
+\indexentry{directory!working}{205}
+\indexentry{directory!cwd}{205}
+\indexentry{hashing}{206}
+\indexentry{pipe}{206}
+\indexentry{path!relative}{206}
+\indexentry{shell}{206}
+\indexentry{walk}{206}
+\indexentry{MP3}{206}
+\indexentry{duplicate}{206}
+\indexentry{MD5 algorithm}{206}
+\indexentry{algorithm!MD5}{206}
+\indexentry{checksum}{206}
+\indexentry{GNU Free Documentation License}{214}
+\indexentry{Free Documentation License, GNU}{214}
+\indexentry{GNU Free Documentation License}{215}
+\indexentry{Free Documentation License, GNU}{215}
+\indexentry{contributors}{215}
