@@ -11,9 +11,9 @@
 \contentsline {section}{\numberline {1.8}\IeC {\textquestiondown }Qu\IeC {\'e} es un programa?}{10}
 \contentsline {section}{\numberline {1.9}Los bloques de construcci\IeC {\'o}n de los programas}{12}
 \contentsline {section}{\numberline {1.10}\IeC {\textquestiondown }Qu\IeC {\'e} es posible que vaya mal?}{13}
-\contentsline {section}{\numberline {1.11}The learning journey}{14}
-\contentsline {section}{\numberline {1.12}Glossary}{15}
-\contentsline {section}{\numberline {1.13}Exercises}{16}
+\contentsline {section}{\numberline {1.11}El viaje de aprendizaje}{14}
+\contentsline {section}{\numberline {1.12}Glosario}{15}
+\contentsline {section}{\numberline {1.13}Ejercicios}{16}
 \contentsline {chapter}{\numberline {2}Variables, expressions, and statements}{19}
 \contentsline {section}{\numberline {2.1}Values and types}{19}
 \contentsline {section}{\numberline {2.2}Variables}{20}

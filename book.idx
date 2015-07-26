@@ -2,34 +2,34 @@
 \indexentry{CC-BY-SA}{\es@scroman  {iv}}
 \indexentry{BY-SA}{\es@scroman  {iv}}
 \indexentry{hardware}{2}
-\indexentry{hardware!architecture}{2}
-\indexentry{problem solving}{4}
-\indexentry{programming language}{5}
-\indexentry{language!programming}{5}
-\indexentry{interactive mode}{6}
+\indexentry{hardware!arquitectura}{2}
+\indexentry{resoluci\IeC {\'o}n de problemas}{4}
+\indexentry{lenguaje de programaci\IeC {\'o}n}{5}
+\indexentry{lenguaje!programaci\IeC {\'o}n}{5}
+\indexentry{modo interactivo}{6}
 \indexentry{script}{10}
-\indexentry{program}{11}
+\indexentry{programa}{11}
 \indexentry{bug}{15}
-\indexentry{central processing unit}{15}
+\indexentry{unidad central de procesamiento}{15}
 \indexentry{CPU}{15}
-\indexentry{compile}{15}
-\indexentry{high-level language}{15}
-\indexentry{interactive mode}{15}
-\indexentry{interpret}{15}
-\indexentry{low-level language}{15}
-\indexentry{machine code}{15}
-\indexentry{main memory}{15}
-\indexentry{parse}{16}
+\indexentry{compilar}{15}
+\indexentry{lenguaje de alto nivel}{15}
+\indexentry{modo interactivo}{15}
+\indexentry{interpretar}{15}
+\indexentry{lenguaje de bajo nivel}{16}
+\indexentry{c\IeC {\'o}digo m\IeC {\'a}quina}{16}
+\indexentry{memoria principal}{16}
+\indexentry{parsear}{16}
 \indexentry{portability}{16}
-\indexentry{print statement}{16}
-\indexentry{statement!print}{16}
-\indexentry{problem solving}{16}
-\indexentry{program}{16}
+\indexentry{sentencia print}{16}
+\indexentry{sentencia!print}{16}
+\indexentry{resoluci\IeC {\'o}n de problemas}{16}
+\indexentry{programa}{16}
 \indexentry{prompt}{16}
-\indexentry{secondary memory}{16}
-\indexentry{semantics}{16}
-\indexentry{semantic error}{16}
-\indexentry{source code}{16}
+\indexentry{memoria secundaria}{16}
+\indexentry{sem\IeC {\'a}ntica}{16}
+\indexentry{error sem\IeC {\'a}ntico}{16}
+\indexentry{c\IeC {\'o}digo fuente}{16}
 \indexentry{value}{19}
 \indexentry{type}{19}
 \indexentry{string}{19}
