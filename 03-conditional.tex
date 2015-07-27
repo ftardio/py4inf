@@ -1,18 +1,17 @@
 % LaTeX source for ``Python for Informatics: Exploring Information''
 % Copyright (c)  2010-  Charles R. Severance, All Rights Reserved
 
-\chapter{Conditional execution}
+\chapter{Ejecución condicional}
 
-\section{Boolean expressions}
+\section{Expresiones booleanas}
 \index{boolean expression}
 \index{expression!boolean}
 \index{logical operator}
 \index{operator!logical}
 
-A {\bf boolean expression} is an expression that is either true
-or false.  The following examples use the 
-operator {\tt ==}, which compares two operands and produces
-{\tt True} if they are equal and {\tt False} otherwise:
+Una {\bf expresión booleana} es aquella que puede ser verdadera (true)
+o falsa (false). Los ejemplos siguientes usan el operador
+{\tt True} si son iguales y {\tt False} en caso contrario:
 
 \beforeverb
 \begin{verbatim}
@@ -23,8 +22,8 @@ False
 \end{verbatim}
 \afterverb
 %
-{\tt True} and {\tt False} are special
-values that belong to the type {\tt bool}; they are not strings:
+{\tt True} y {\tt False} son valores especiales
+que pertenecen al tipo {\tt bool (booleano)}; no son cadenas:
 
 \index{True special value}
 \index{False special value}
@@ -42,45 +41,45 @@ values that belong to the type {\tt bool}; they are not strings:
 \end{verbatim}
 \afterverb
 %
-The {\tt ==} operator is one of the {\bf comparison operators}; the
-others are:
+El perador {\tt ==} es uno de los {\bf operadores de comparación};
+los demás son:
 
 \beforeverb
 \begin{verbatim}
-      x != y               # x is not equal to y
-      x > y                # x is greater than y
-      x < y                # x is less than y
-      x >= y               # x is greater than or equal to y
-      x <= y               # x is less than or equal to y
-      x is y               # x is the same as y
-      x is not y           # x is not the same as y
+      x != y               # x es distinto de y
+      x > y                # x es mayor que y
+      x < y                # x es menor que y
+      x >= y               # x es mayor o igual que y
+      x <= y               # x es menor o igual que y
+      x is y               # x es lo mismo que y
+      x is not y           # x no es lo mismo que y
 \end{verbatim}
 \afterverb
 %
-Although these operations are probably familiar to you, the Python
-symbols are different from the mathematical symbols for the same
-operations.  A common error
-is to use a single equal sign ({\tt =}) instead of a double equal sign
-({\tt ==}).  Remember that {\tt =} is an assignment operator and
-{\tt ==} is a comparison operator.   There is no such thing as
-{\tt =<} or {\tt =>}.
+A pesar de que estas operaciones probablemente te resulten familiares, los
+símboles en Python son diferentes de los símbolos matemáticos que se usan
+para realizar las mismas operaciones. Un error muy común
+es usar sólo un símbolo igual ({\tt =}) en vez del símbolo de doble igualdad
+({\tt ==}). Recuerda que {\tt =} es el operador de asignación, y
+{\tt ==} es un operador de comparación. No ocurre lo mismo con
+{\tt =<} o {\tt =>}.
 
 \index{comparison operator}
 \index{operator!comparison}
 
 
-\section {Logical operators}
+\section {Operadores lógicos}
 \index{logical operator}
 \index{operator!logical}
 
-There are three {\bf logical operators}: {\tt and}, {\tt
-or}, and {\tt not}.  The semantics (meaning) of these operators is
-similar to their meaning in English.  For example,
+Existen tres {\bf operadores lógicos}: {\tt and (y)}, {\tt
+or (o)}, y {\tt not (no)}. La semántica (significado) de estas operaciones
+es similar a su significado en inglés. Por ejemplo, 
 
 {\tt x > 0 and x < 10} 
 
-is true only if {\tt x} is greater than 0
-\emph{and} less than 10.
+es verdadero sólo cuando {\tt x} es mayor que 0
+\emph{y} menor que 10.
 
 \index{and operator}
 \index{or operator}
@@ -89,16 +88,16 @@ is true only if {\tt x} is greater than 0
 \index{operator!or}
 \index{operator!not}
 
-{\tt n\%2 == 0 or n\%3 == 0} is true if \emph{either} of the conditions
-is true, that is, if the number is divisible by 2 \emph{or} 3.
+{\tt n\%2 == 0 or n\%3 == 0} es verdadero si \emph{cualquiera} de las condiciones
+es verdadera, es decir, el número es divisible por 2 \emph{o} por 3.
 
-Finally, the {\tt not} operator negates a boolean
-expression, so {\tt not (x > y)} is true if {\tt x > y} is false;
-that is, if {\tt x} is less than or equal to {\tt y}.
+Finalmente, el operador {\tt not} niega una expresión
+booleana, de modo que {\tt not (x > y)} es verdadero si {\tt x > y} es falso;
+es decir, si {\tt x} es menor o igual que {\tt y}.
 
-Strictly speaking, the operands of the logical operators should be
-boolean expressions, but Python is not very strict.
-Any nonzero number is interpreted as ``true.''
+Estrictamente hablando, los operandos de los operadores lógicos deberían ser
+expresiones booleanas, pero Python no es muy estricto.
+Cualquier número distinto de cero se interpreta como ``verdadero.''
 
 \beforeverb
 \begin{verbatim}
@@ -107,11 +106,11 @@ True
 \end{verbatim}
 \afterverb
 %
-This flexibility can be useful, but there are some subtleties to
-it that might be confusing.  You might want to avoid it until
-you are sure you know what you are doing.
+Esta flexibilidad puede ser útil, pero existen ciertas sutilezas en
+ello que pueden resultar confusas. Puede que quieras evitar usarlo así
+hasta que estés bien seguro de lo que estás haciendo.
 
-\section{Conditional execution}
+\section{Ejecución condicional}
 \label{conditional execution}
 
 \index{conditional statement}
@@ -120,48 +119,48 @@ you are sure you know what you are doing.
 \index{statement!if}
 \index{conditional execution}
 
-In order to write useful programs, we almost always need the ability
-to check conditions and change the behavior of the program
-accordingly.  {\bf Conditional statements} give us this ability.  The
-simplest form is the {\tt if} statement:
+Para poder escribir programas útiles, casi siempre vamos a necesitar
+la capacidad de comprobar condiciones y cambiar el comportamiento del programa
+de acuerdo a ellas. Las {\\ sentencias condicionales} nos proporciona esa capacidad.
+La forma más sencilla es la sentencia {\\tt if}:
 
 \beforeverb
 \begin{verbatim}
 if x > 0 :
-    print 'x is positive'
+    print 'x es positivo'
 \end{verbatim}
 \afterverb
 %
-The boolean expression after the {\tt if} statement is
-called the {\bf condition}.  We end the {\tt if} 
-statement with a colon character (:) and the line(s) 
-after the if statement are indented.  
+La expresión booleana después de la sentencia {\\tt if} recibe
+el nombre de {\bf condición}. La sentencia {\tt if} se termina
+con un carácter de dos-puntos (:) y la(s) línea(s) que van detrás de
+la sentencia if van sangradas (llevan una tabulación o varios espacios en blanco al principio).
 
 \beforefig
 \centerline{\includegraphics[height=1.75in]{figs2/if.eps}}
 \afterfig
 
-If the logical condition is true, then the indented
-statement gets executed.  If the logical condition is 
-false, the indented statement is skipped.
+Si la condición lógica es verdadera, la sentencia sangrada
+es ejecutada. Si la condición es falsa,
+la sentencia sangrada es omitida.
 
 \index{condition}
 \index{compound statement}
 \index{statement!compound}
 
-{\tt if} statements have the same structure as function definitions
-or {\tt for} loops\footnote{We will learn about functions in Chapter 4
-and loops in Chapter 5.}.The statement consists of a header line
-that ends with the colon character (:) 
-followed by an indented block.  Statements like this are
-called {\bf compound statements} because they stretch 
-across more than one line.
+La sentencia {\tt if} tiene la misma estructura que la definición de funciones
+o los bucles {\tt for}\footnote{Estudiaremos las funciones en el capítulo 4
+y los bucles en el capítulo 5.}. La sentencia consiste en una línea de encabezado
+que termina con el carácter dos-puntos (:)
+seguido por un bloque con sangrado. Las sentencias de este tipo
+reciben el nombre de {\bf setentencias compuestas}, porque se extienden
+a lo largo de varias líneas.
 
-There is no limit on the number of statements that can appear in
-the body, but there must be at least one.
-Occasionally, it is useful to have a body with no statements (usually
-as a placekeeper for code you haven't written yet).  In that
-case, you can use the {\tt pass} statement, which does nothing.
+No hay límite en el número de sentencias que pueden aparecer en el
+cuerpo, pero debe haber al menos una.
+Ocasionalmente, puede resultar útil tener un cuerpo sin sentencias
+(normalmente como emplazamiento reservado para código que no se ha escrito aún). En ese
+caso, se puede usar la sentencia {\\tt pass}, que no hace nada.
 
 \index{pass statement}
 \index{statement!pass}
@@ -169,19 +168,19 @@ case, you can use the {\tt pass} statement, which does nothing.
 \beforeverb
 \begin{verbatim}
 if x < 0 :
-    pass          # need to handle negative values!
+    pass          # ¡necesito manejar los valores negativos!
 \end{verbatim}
 \afterverb
 %
-If you enter an {\tt if} statement in the Python interpreter, the prompt will change 
-from three chevrons to three dots to indicate you are in the middle of a block of
-statements, as shown below:
+Si introduces una sentencia {\tt if} en el intérprete de Python, el prompt cambiará
+su aspecto habitual por tres puntos, para indicar que estás en medio de un bloque de sentencias, como
+se muestra a continuación:
 
 \beforeverb
 \begin{verbatim}
 >>> x = 3
 >>> if x < 10:
-...    print 'Small'
+...    print 'Pequeño'
 ... 
 Small
 >>>
@@ -189,72 +188,70 @@ Small
 \afterverb
 %
 
-\section{Alternative execution}
+\section{Ejecución alternativa}
 \label{alternative execution}
 
 \index{alternative execution}
 \index{else keyword}
 \index{keyword!else}
 
-A second form of the {\tt if} statement is {\bf alternative execution},
-in which there are two possibilities and the condition determines
-which one gets executed.  The syntax looks like this:
+La segunda forma de la sentencia {\tt if} es la {\bf ejecución alternativa},
+en la cual existen dos posibilidades y la condición determina
+cual de ellas será ejecutada. La sintaxis se parece a esta:
 
 \beforeverb
 \begin{verbatim}
 if x%2 == 0 :
-    print 'x is even'
+    print 'x es par'
 else :
-    print 'x is odd'
+    print 'x es impar'
 \end{verbatim}
 \afterverb
 %
-If the remainder when {\tt x} is divided by 2 is 0, then we
-know that {\tt x} is even, and the program displays a message to that
-effect.  If the condition is false, the second set of statements is
-executed.  
+Si al dividir {\tt x} por 2 obtenemos como resto 0, entonces sabemos
+que {\tt x} es par, y el programa muestra un mensaje a tal
+efecto. Si esa condición es falsa, se ejecuta el segundo
+conjunto de sentencias.
 
 \beforefig
 \centerline{\includegraphics[height=1.75in]{figs2/if-else.eps}}
 \afterfig
 
-Since the condition must either be true or false, exactly one of
-the alternatives will be executed.  The alternatives are called
-{\bf branches}, because they are branches in the flow of execution.
+Dado que la condición debe ser obligatoriamente o bien verdadera o bien falsa, solamente una de
+las alternativas será ejecutada. Las alternativas reciben el nombre de
+{\bf ramas}, dado que se trata de ramas en el flujo de la ejecución.
 
 \index{branch}
 
-
-
-\section{Chained conditionals}
+\section{Condicionales encadenados}
 \index{chained conditional}
 \index{conditional!chained}
 
-Sometimes there are more than two possibilities and we need more than
-two branches.  One way to express a computation like that is a {\bf
-chained conditional}:
+Algunas veces hay más de dos posibilidades, de modo que necesitamos más
+de dos ramas. Una forma de expresar una computación como esa es usar un
+{\bf condicional encadenado}:
 
 \beforeverb
 \begin{verbatim}
 if x < y:
-    print 'x is less than y'
+    print 'x es menor que y'
 elif x > y:
-    print 'x is greater than y'
+    print 'x es mayor que y'
 else:
-    print 'x and y are equal'
+    print 'x e y son iguales'
 \end{verbatim}
 \afterverb
 %
-{\tt elif} is an abbreviation of ``else if.''  Again, exactly one
-branch will be executed.  
+{\tt elif} es una abreviatura para ``else if.''  En este caso también
+será ejecutada únicamente una de las ramas.
 
 \beforefig
 \centerline{\includegraphics[height=3.00in]{figs2/elif.eps}}
 \afterfig
 
-There is no limit on the number of {\tt
-elif} statements.  If there is an {\tt else} clause, it has to be
-at the end, but there doesn't have to be one.
+No hay un límite para el número de sentencias
+{\tt elif}. Si hay una claúsula {\tt else}, debe ir
+al final, pero tampoco es obligatorio que ésta exista.
 
 \index{elif keyword}
 \index{keyword!elif}
@@ -263,122 +260,123 @@ at the end, but there doesn't have to be one.
 \beforeverb
 \begin{verbatim}
 if choice == 'a':
-    print 'Bad guess'
+    print 'Respuesta incorrecta'
 elif choice == 'b':
-    print 'Good guess'
+    print 'Respuesta acertada'
 elif choice == 'c':
-    print 'Close, but not correct'
+    print 'Casi, pero no has acertado'
 \end{verbatim}
 \afterverb
 %
-Each condition is checked in order.  If the first is false,
-the next is checked, and so on.  If one of them is
-true, the corresponding branch executes, and the statement
-ends.  Even if more than one condition is true, only the
-first true branch executes.  
+Cada condición es comprobada en orden. Si la primera es falsa,
+se comprueba la siguiente y así con las demás. Si una de ellas es
+verdadera, se ejecuta la rama correspondiente, y la sentencia
+termina. Incluso si hay más de una condición que sea verdadera, sólo se
+ejecuta la primera que se encuentra.
 
-
-\section{Nested conditionals}
+\section{Condicionales anidados}
 \index{nested conditional}
 \index{conditional!nested}
 
-One conditional can also be nested within another.  We could have
-written the three-branch example like this:
+Un condicional puede también estar anidado dentro de otro. Podríamos
+haber escrito el anterior ejemplo de tres ramas de este modo:
 
 \beforeverb
 \begin{verbatim}
 if x == y:
-    print 'x and y are equal'
+    print 'x e y son iguales'
 else:
     if x < y:
-        print 'x is less than y'
+        print 'x es menor que y'
     else:
-        print 'x is greater than y'
+        print 'x es mayor que y'
 \end{verbatim}
 \afterverb
 %
-The outer conditional contains two branches.  The
-first branch contains a simple statement.  The second branch
-contains another {\tt if} statement, which has two branches of its
-own.  Those two branches are both simple statements,
-although they could have been conditional statements as well.
+El condicional exterior contiene dos ramas. La
+primera rama ejecuta una sentencia simple. La segunda
+contiene otra sentencia {\tt if}, que tiene a su vez sus propias
+dos ramas. Esas dos ramas son ambas sentencias simples,
+pero podrían haber sido sentencias condicionales también.
 
 \beforefig
 \centerline{\includegraphics[height=2.50in]{figs2/nested.eps}}
 \afterfig
 
-Although the indentation of the statements makes the structure
-apparent, {\bf nested conditionals} become difficult to read very
-quickly. In general, it is a good idea to avoid them when you can.
+A pesar de que el sangrado de las sentencias hace que la estructura
+esté clara, los {\bf condicionales anidados} pueden volverse difíciles
+de leer enseguida. En general, es buena idea evitarlos si se puede.
 
-Logical operators often provide a way to simplify nested conditional
-statements.  For example, we can rewrite the following code using a
-single conditional:
+Los operadores lógicos a menudo proporcionan un modo de simplificar las
+sentencias condicionales anidadas. Por ejemplo, podemos reescribir el código
+siguiente usando un único condicional:
 
 \beforeverb
 \begin{verbatim}
 if 0 < x:
     if x < 10:
-        print 'x is a positive single-digit number.'
+        print 'x es un número positivo con un sólo dígito.'
 \end{verbatim}
 \afterverb
 %
-The {\tt print} statement is executed only if we make it past both
-conditionals, so we can get the same effect with the {\tt and} operator:
+La sentencia {\tt print} se ejecuta solamente si se pasa por los dos
+condicionales, así que en realidad podemos conseguir el mismo efecto con el operador {\tt and}:
 
 \beforeverb
 \begin{verbatim}
 if 0 < x and x < 10:
-    print 'x is a positive single-digit number.'
+    print 'x es un número positivo con un sólo dígito.'
 \end{verbatim}
 \afterverb
 
 
-\section{Catching exceptions using try and except}
+\section{Capturando excepciones usando try y except}
 \label{catch1}
 
-Earlier we saw a code segment where we used the \verb"raw_input" and
-{\tt int} functions to read and parse an integer number entered by
-the user.  We also saw how treacherous doing this could be:
+Anteriormente vimos un fragmento de código donde usábamos las funciones \verb"raw_input" y
+{\tt int} para leer y analizar un número entero introducido por
+el usuario. También vimos lo poco seguro que podía llegar a ser hacer algo así:
 
 \beforeverb
 \begin{verbatim}
->>> speed = raw_input(prompt)
-What...is the airspeed velocity of an unladen swallow?
-What do you mean, an African or a European swallow?
->>> int(speed)
+>>> velocidad = raw_input(prompt)
+¿Cual.... es la velocidad aerodinámica de una golondrina sin carga?
+¿Te refieres a una golondrina africana o a una europea?
+>>> int(velocidad)
 ValueError: invalid literal for int()
 >>>
 \end{verbatim}
 \afterverb
 %
-When we are executing these statements in the Python interpreter, 
-we get a new prompt from the interpreter, think ``oops'', and move 
-on to our next statement.  
+Cuando estamos ejecutando este tipo de sentencias en el intérprete de Python,
+sacamos un nuevo indicador del intérprete, pensamos ``oops'', y continuamos
+con la siguiente sentencia.
 
-However if you place this code in a 
-Python script and this error occurs, your script immediately 
-stops in its tracks with a traceback.  
-It does not execute the following statement. 
+Sin embargo, si pones ese código en un
+script de Python y se produce el error, el script se detendrá
+inmediatamente, y mostrará un ``traceback''.
+No ejecutará la siguiente sentencia.
+
 \index{traceback}
 
-Here is a sample program to convert a Fahrenheit temperature 
-to a Celsius temperature:
+He aquí un programa de ejemplo para convertir una temperatura
+desde grados Fahrenheit a grados Celsius:
+
 \index{fahrenheit}
 \index{celsius}
 \index{temperature conversion}
 
 \beforeverb
 \begin{verbatim}
-inp = raw_input('Enter Fahrenheit Temperature:')
+inp = raw_input('Introduce la Temperatura Fahrenheit:')
 fahr = float(inp)
 cel = (fahr - 32.0) * 5.0 / 9.0
 print cel
 \end{verbatim}
 \afterverb
 %
-If we execute this code and give it invalid input, it simply fails
-with an unfriendly error message:
+Si ejecutamos este código y le damos una entrada no válida, simplemente
+fallará con un antipático mensaje de error:
 
 \beforeverb
 \begin{verbatim}
@@ -387,7 +385,7 @@ Enter Fahrenheit Temperature:72
 22.2222222222
 
 python fahren.py 
-Enter Fahrenheit Temperature:fred
+Introduce la Temperatura Fahrenheit:fred
 Traceback (most recent call last):
   File "fahren.py", line 2, in <module>
     fahr = float(inp)
@@ -395,83 +393,83 @@ ValueError: invalid literal for float(): fred
 \end{verbatim}
 \afterverb
 %
-There is a conditional execution structure built into 
-Python to handle these types of expected and unexpected
-errors called ``try / except''.  The idea of {\tt try}
-and {\tt except} is that you know that some sequence
-of instruction(s) may have a problem and you want to 
-add some statements to be executed if an error occurs.
-These extra statements (the except block) are ignored
-if there is no error.
+Existen estructuras de ejecución condicional dentro de
+Python para manejar este tipo de errores esperados e
+inesperados, llamadas ``try / except''. La idea de {\tt try}
+y {\\ except} es que se sabe que cierta secuencia
+de instrucciones pueden tener un problema y se quieren
+añadir algunas sentencias para que sean ejecutadas si se produce un error.
+Estas sentencias extras (el bloque except) serán ignoradas
+si no hay ningún error.
 
-You can think of the {\tt try} and {\tt except} feature
-in Python as an ``insurance policy'' on a sequence of
-statements.
+Puedes pensar en la característica {\tt try} y {\tt except}
+de Python como una ``póliza de seguros'' en una secuencia
+de sentencias.
 
-We can rewrite our temperature converter as follows:
+Se puede reescribir nuestro conversor de temperaturas del siguiente modo:
 
 \beforeverb
 \begin{verbatim}
-inp = raw_input('Enter Fahrenheit Temperature:')
+inp = raw_input('Introduce la Temperatura Fahrenheit:')
 try:
     fahr = float(inp)
     cel = (fahr - 32.0) * 5.0 / 9.0
     print cel
 except:
-    print 'Please enter a number'
+    print 'Por favor, introduce un número'
 \end{verbatim}
 \afterverb
 %
 
-Python starts by executing the 
-sequence of statements in the 
-{\tt try} block.  If all goes
-well, it skips the {\tt except} block and proceeds.  If an
-exception occurs in the {\tt try} block, 
-Python jumps out of the {\tt try} block and
-executes the sequence of statements in the {\tt except} block.
+Python comienza ejecutando la
+secuencia de setencias del bloque
+{\tt try}. Si todo va bien,
+saltará el bloque {\tt except} y terminará.
+Si ocurre una excepción en el bloque {\tt try},
+Python saltará fuera del bloque {\tt try} y
+executará la secuencia de sentencias en el bloque {\tt except}.
 
 \beforeverb
 \begin{verbatim}
 python fahren2.py 
-Enter Fahrenheit Temperature:72
+Introduce la Temperatura Fahrenheit:72
 22.2222222222
 
 python fahren2.py 
-Enter Fahrenheit Temperature:fred
-Please enter a number
+Introduce la Temperatura Fahrenheit:fred
+Por favor, introduce un número
 \end{verbatim}
 \afterverb
 %
 
-Handling an exception with a {\tt try} statement is called {\bf
-catching} an exception.  In this example, the {\tt except} clause
-prints an error message.  In general,
-catching an exception gives you a chance to fix the problem, or try
-again, or at least end the program gracefully.
+Manejar una excepción con una sentencia {\tt try} recibe el nombre de
+{\bf capturar} una excepción. En este ejemplo, la claúsula {\tt except}
+muestra un mensaje de error. En general,
+capturar una excepción te da la oportunidad de corregir el problema
+o volverlo a intentar, o al menos de terminar el programa con gracia.
 
-\section{Short-circuit evaluation of logical expressions}
+\section{Evalucación en corto-circuito de expresiones lógicas}
 \index{short circuit}
 
-When Python is processing a logical expression such as 
-{\tt x >= 2 and (x/y) > 2}, it evaluates the expression
-from left to right.  Because of the definition of {\tt and},
-if {\tt x} is less than 2, the expression {\tt x >= 2} is 
-{\tt False} and so the whole expression is {\tt False} regardless
-of whether {\tt (x/y) > 2} evaluates to {\tt True} or {\tt False}.
+Cuando Python está procesando una expresión lógica, como
+{\tt x >= 2 and (x/y) > 2}, evalúa la expresión de
+izquierda a derecha. Debido a la definición de {\tt and},
+si {\tt x} es menor de 2, la expresión {\tt x >= 2} resulta ser
+{\tt falsa}, de modo que la expresión completa es {\tt falsa}, independientemente
+de si {\tt (x/y) > 2} se evalúa como {\tt verdadero} o {\\ falso}.
 
-When Python detects that there is nothing to be gained by evaluating
-the rest of a logical expression, it stops its evaluation and does
-not do the computations in the rest of the logical expression.  
-When the evaluation of a logical expression stops because the overall
-value is already known, it is called {\bf short-circuiting} 
-the evaluation.
+Cuando Python detecta que no se gana nada evaluando
+el resto de una expresión lógica, detiene su evaluación y no
+realiza el cálculo del resto de la expresión lógica.
+Cuando la evaluación de una expresión lógica se detiene debido a que
+ya se conoce el valor final, esto es conocido como {\bf corto-circuitar}
+la evaluación.
 
 \index{guardian pattern}
 \index{pattern!guardian}
-While this may seem like a fine point, the short-circuit behavior
-leads to a clever technique called the {\bf guardian pattern}.  
-Consider the following code sequence in the Python interpreter:
+A pesar de que esto pueda parecer hilar demasiado fino, el funcionamiento
+en corto-circuito nos dirige a una astuta técnica llamada el {\bf patrón guardián}.
+Considera la siguiente secuencia de código en el intérprete de Python:
 
 \beforeverb
 \begin{verbatim}
@@ -493,14 +491,15 @@ ZeroDivisionError: integer division or modulo by zero
 \end{verbatim}
 \afterverb
 %
-The third calculation failed because Python was evaluating {\tt (x/y)}
-and {\tt y} was zero, which causes a runtime error.  But the second example
-did \emph{not} fail because the first part of the expression {\tt x >= 2} 
-evaluated to {\tt False} so the {\tt (x/y)} was not ever executed 
-due to the {\bf short-circuit} rule and there was no error.
+El tercer cálculo ha fallado porque Python intentó evaluar {\tt (x/y)}
+e {\tt y} era cero, lo cual provoca un runtime error (error en tiempo de ejecución). Pero el segundo
+ejemplo \emph{no} falló, porque la primera parte de la expresión {\tt x >= 2}
+fue evaluada como {\tt falsa}, así que {\tt (x/y)} no llegó a ejecutarse
+debido a la regla del {\bf corto-circuito}, y no se produjo ningún error.
 
-We can construct the logical expression to strategically place a {\bf guard}
-evaluation just before the evaluation that might cause an error as follows:
+Es posible construir las expresiones lógicas colocando estratégicamente una
+evaluación {\bf guardián} justo antes de la evaluación que podría causar un error,
+como se muestra a continuación:
 
 \beforeverb
 \begin{verbatim}
@@ -520,37 +519,37 @@ ZeroDivisionError: integer division or modulo by zero
 \end{verbatim}
 \afterverb
 %
-In the first logical expression, {\tt x >= 2} is {\tt False} so the evaluation
-stops at the {\tt and}.  In the second logical expression, {\tt x >= 2} is {\tt True}
-but {\tt y != 0} is {\tt False} so we never reach {\tt (x/y)}.
+En la primera expresión lógica, {\tt x >= 2} es {\tt falsa}, así que la evaluación
+se detiene en el {\tt and}. En la segunda expresión lógica, {\tt x >= 2} es {\tt verdadera},
+pero {\tt y != 0} es {\tt falsa}, de modo que nunca se alcanza {\tt (x/y)}.
 
-In the third logical expression, the {\tt y != 0} is \emph{after} the 
-{\tt (x/y) } calculation so the expression fails with an error.
+En la tercera expresión lógica, el {\tt y != 0} va \emph{después} del
+cálculo de {\tt (x/y) }, de modo que la expresión falla con un error.
 
-In the second expression, we say that {\tt y != 0} acts as a {\bf guard}
-to insure that we only execute {\tt (x/y)} if {\tt y} is non-zero.
+En la segunda expresión, se dice que {\tt y != 0} actúa como {\bf guardián}
+para asegurar que sólo se ejecute {\tt (x/y)} en el caso de que {\tt y} no sea cero.
 
 
-\section{Debugging}
+\section{Depurando}
 \label{whitespace}
 \index{debugging}
 \index{traceback}
 
-The traceback Python displays when an error occurs contains
-a lot of information, but it can be overwhelming.  The most
-useful parts are usually:
+Los ``traceback'' que Python muestra cuando se produce un error contienen
+un montón de información, pero pueden resultar abrumadores. Las partes
+más útiles normalmente son:
 
 \begin{itemize}
 
-\item What kind of error it was, and
+\item Qué tipo de error se ha producido, y
 
-\item Where it occurred.
+\item Dónde ha ocurrido.
 
 \end{itemize}
 
-Syntax errors are usually easy to find, but there are a few
-gotchas.  Whitespace errors can be tricky because spaces and
-tabs are invisible and we are used to ignoring them.
+Los errorres de sintaxis (syntax errors), normalmente son fáciles de encontrar, pero
+tienen alguna trampa. Los errores debido a espacios en blanco pueden tener truco,
+ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
 
 \index{whitespace}
 
@@ -565,34 +564,34 @@ SyntaxError: invalid syntax
 \end{verbatim}
 \afterverb
 %
-In this example, the problem is that the second line is indented by
-one space.  But the error message points to {\tt y}, which is
-misleading.  In general, error messages indicate where the problem was
-discovered, but the actual error might be earlier in the code,
-sometimes on a previous line.
+En este ejemplo, el problema es que la segunda línea está sangrada por
+un espacio. Pero el mensaje de error apunta a {\tt y}, lo cual
+resulta engañoso. En general, los mensajes de error indican dónde se ha
+descubierto el problema, pero el error real podría estar en el código
+previo, a veces en alguna línea anterior.
 
 \index{error!runtime}
 \index{runtime error}
 
-The same is true of runtime errors.  Suppose you are trying
-to compute a signal-to-noise ratio in decibels.  The formula
-is $SNR_{db} = 10 \log_{10} (P_{signal} / P_{noise})$.  In Python,
-you might write something like this:
+Ocurre lo mismo con los errores en tiempo de ejecución (runtime errors). Supón que estás tratando
+de calcular una relación señal-ruido en decibelios. La fórmula
+es $SNR_{db} = 10 \log_{10} (P_{señal} / P_{ruido})$. En Python,
+podrías escribir algo como esto:
 
 \beforeverb
 \begin{verbatim}
 import math
-signal_power = 9
-noise_power = 10
-ratio = signal_power / noise_power
-decibels = 10 * math.log10(ratio)
-print decibels
+int_senal = 9
+int_ruido = 10
+relacion = int_senal / int_ruido
+decibelios = 10 * math.log10(relacion)
+print decibelios
 \end{verbatim}
 \afterverb
 %
-But when you run it, you get an error message\footnote{In Python 3.0,
-  you no longer get an error message; the division operator performs
-  floating-point division even with integer operands.}:
+Pero cuando lo haces funcionar, obtienes un mensaje de error\footnote{En Python 3.0,
+ya no tendrás un mensaje de error; el operador de división realiza
+división en punto flotante incluso con operandos enteros.}:
 
 \index{exception!OverflowError}
 \index{OverflowError}
@@ -601,150 +600,150 @@ But when you run it, you get an error message\footnote{In Python 3.0,
 \begin{verbatim}
 Traceback (most recent call last):
   File "snr.py", line 5, in ?
-    decibels = 10 * math.log10(ratio)
+    decibelios = 10 * math.log10(relacion)
 OverflowError: math range error
 \end{verbatim}
 \afterverb
 %
-The error message indicates line 5, but there is nothing
-wrong with that line.  To find the real error, it might be
-useful to print the value of {\tt ratio}, which turns out to
-be 0.  The problem is in line 4, because dividing two integers
-does floor division.  The solution is to represent signal power
-and noise power with floating-point values.
+El mensaje de error apunta a la línea 5, pero no hay nada
+incorrecto en ese línea. Para encontrar el error real, puede resultar
+útil imprimir el valor de {\tt relacion}, que resulta ser
+0. El problema está en la línea 4, ya que al dividir dos enteros
+se realiza una división hacia abajo. La solución es representar la intensidad
+de la señal y la intensidad del ruido con valores en punto flotante.
 
 \index{floor division}
 \index{division!floor}
 
-In general, error messages tell you where the problem was discovered, 
-but that is often not where it was caused.
+En general, los mensajes de error te dicen dónde se ha descubierto el problema,
+pero a menudo no es precisamente ahí donde se ha producido.
 
 
-\section{Glossary}
+\section{Glosario}
 
 \begin{description}
 
-\item[body:] The sequence of statements within a compound statement.
+\item[cuerpo:] La secuencia de setencias en el interior de una sentencia compuesta.
 \index{body}
 
-\item[boolean expression:]  An expression whose value is either 
-{\tt True} or {\tt False}.
+\item[expresión booleana:]  Un expresión cuyo valor puede ser o bien 
+{\tt Verdadero} o bien {\tt Falso}.
 \index{boolean expression}
 \index{expression!boolean}
 
-\item[branch:] One of the alternative sequences of statements in
-a conditional statement.
+\item[rama:] Una de las secuencias alternativas de sentencias en una
+sentencia condicional.
 \index{branch}
 
-\item[chained conditional:]  A conditional statement with a series
-of alternative branches.
+\item[condicional encadenada:]  Una sentencia condicional con una serie
+de ramas alternativas.
 \index{chained conditional}
 \index{conditional!chained}
 
-\item[comparison operator:] One of the operators that compares
-its operands: {\tt ==}, {\tt !=}, {\tt >}, {\tt <}, {\tt >=}, and {\tt <=}.
+\item[operadores de comparación:] Uno de los operadores que compara
+sus operandos: {\tt ==}, {\tt !=}, {\tt >}, {\tt <}, {\tt >=}, y {\tt <=}.
 
-\item[conditional statement:]  A statement that controls the flow of
-execution depending on some condition.
+\item[sentencia condicional:]  Una sentencia que controla el flujo de
+ejecución, dependiendo de cierta condición.
 \index{conditional statement}
 \index{statement!conditional}
 
-\item[condition:] The boolean expression in a conditional statement
-that determines which branch is executed.
+\item[condición:] La expresión booleana en una sentencia condicional
+que determina qué rama será ejecutada.
 \index{condition}
 
-\item[compound statement:]  A statement that consists of a header
-and a body.  The header ends with a colon (:).  The body is indented
-relative to the header.
+\item[sentencia compuesta:]  Una sentencia que consiste en un encabezado
+y un cuerpo. El encabezado termina con dos-puntos (:). El cuerpo está sangrado
+con relación al encabezado.
 \index{compound statement}
 
-\item[guardian pattern:] Where we construct a logical expression 
-with additional
-comparisons to take advantage of the short-circuit behavior.
+\item[patrón guardián:] Cuando construimos una expresión lógica
+con comparaciones adicionales
+para aprovecharnos del funcionamiento en corto-circuito.
 \index{guardian pattern}
 \index{pattern!guardian}
 
-\item[logical operator:] One of the operators that combines boolean
-expressions: {\tt and}, {\tt or}, and {\tt not}.
+\item[operador lógico:] Uno de los operadores que se combinan en las expresiones
+booleanas: {\tt and}, {\tt or}, y {\tt not}.
 
-\item[nested conditional:]  A conditional statement that appears
-in one of the branches of another conditional statement.
+\item[condicional anidado:]  Una sentencia condicional que aparece
+en una de las ramas de otra sentencia condicional.
 \index{nested conditional}
 \index{conditional!nested}
 
-\item[traceback:]  A list of the functions that are executing,
-printed when an exception occurs.
+\item[traceback:]  Una lista de las funciones que se están ejecutando,
+que se imprime cuando se produce una excepción.
 \index{traceback}
 
-\item[short circuit:]  When Python is part-way through evaluating a 
-logical expression and stops the evaluation because Python 
-knows the final value for the expression 
-without needing to evaluate the rest of the expression.
+\item[corto circuito:]  Cuando Python va evaluando una expresión lógica
+por tramos y detiene el proceso de evaluación debido a que ya
+conoce el valor final que va a tener el resultado
+sin necesidad de evaluar el resto de la expresión.
 \index{short circuit}
 
 \end{description}
 
-\section{Exercises}
+\section{Ejercicicos}
 
 \begin{ex}
-Rewrite your pay computation to give the employee 1.5 
-times the hourly rate for 
-hours worked above 40 hours.
+Reescribe el cálculo del salario para darle al empleado 1.5
+veces la tarifa horaria para
+las horas trabajadas que excedan de 40.
 
 \begin{verbatim}
-Enter Hours: 45
-Enter Rate: 10
-Pay: 475.0
+Introduce las Horas: 45
+Introduce la Tarifa por hora: 10
+Salario: 475.0
 \end{verbatim}
 \end{ex}
 
 \begin{ex}
-Rewrite your pay program using {\tt try} and {\tt except} 
-so that your program handles non-numeric input gracefully
-by printing a message and exiting the program.
-The following shows two executions of the program:
+Reescribe el programa del salario usando {\tt try} y {\tt except},
+de modo que el programa sea capaz de manejar entradas no numéricas con elegancia,
+mostrando un mensaje y saliendo del programa.
+A continuación se muestran dos ejecuciones del programa:
 
 \begin{verbatim}
-Enter Hours: 20
-Enter Rate: nine
-Error, please enter numeric input
+Introduce las Horas: 20
+Introduce la Tarifa por hora: nueve
+Error, por favor introduce un número
 
-Enter Hours: forty
-Error, please enter numeric input
+Introduce las Horas: cuarenta
+Error, por favor introduce un número
 \end{verbatim}
 \end{ex}
 
 \begin{ex}
-Write a program to prompt for a score between 0.0 and 1.0.
-If the score is out of range, print an error message.  If the score
-is between 0.0 and 1.0, print a grade using the following 
-table:
+Escribe un programa que solicite una puntuación entra 0.0 y 1.0.
+Si la puntuación está fuera de ese rango, muestra un mensaje de error.
+Si la puntuación está entre 0.0 y 1.0, muestra la nota usando la tabla
+siguiente:
 
 \begin{verbatim}
-Score   Grade
->= 0.9     A
->= 0.8     B
->= 0.7     C
->= 0.6     D
-< 0.6    F
+Puntuación Nota
+>= 0.9     Sobresaliente
+>= 0.8     Notable
+>= 0.7     Bien
+>= 0.6     Suficiente
+< 0.6      Insuficiente
 
-Enter score: 0.95
-A
+Introduce puntuación: 0.95
+Sobresaliente
 
-Enter score: perfect
-Bad score
+Introduce puntuación: perfecto
+Puntuación incorrecta
 
-Enter score: 10.0
-Bad score
+Introduce puntuación: 10.0
+Puntuación incorrecta
 
-Enter score: 0.75
-C
+Introduce puntuación: 0.75
+Bien
 
-Enter score: 0.5
-F
+Introduce puntuación: 0.5
+Insuficiente
 \end{verbatim}
 
-Run the program repeatedly as shown above to test the 
-various different values for input.
+Ejecuta el programa repetidamente, como se muestra arriba, para probar
+con varios valores de entrada diferentes.
 \end{ex}
 

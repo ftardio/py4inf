@@ -4,9 +4,9 @@
 \chapter{Variables, expresiones y sentencias}
 
 \section{Valores y tipos}
-\index{valor}
-\index{tipo}
-\index{cadena}
+\index{value}
+\index{type}
+\index{string}
 
 Un {\bf valor} es una de las cosas básicas que utiliza un programa,
 como una letra o un número.
@@ -20,7 +20,7 @@ que recibe ese nombre porque contiene una ``cadena'' de letras.
 Tú (y el intérprete) podéis identificar
 las cadenas porque van encerradas entre comillas.
 
-\index{comillas}
+\index{quotation mark}
 
 La sentencia {\\tt print} funciona también para enteros. Vamos a usar el
 comando {\\tt python} para iniciar el intérprete.
@@ -45,19 +45,19 @@ Si no estás seguro de qué tipo de valor estás manejando, el intérprete te lo
 \afterverb
 %
 No resulta sorprendente que las cadenas pertenezca al tipo {\tt str}, y los
-enteros pertenzcan al tipo {\tt int}. Resulta sin embargo menos obvio
+enteros pertenezcan al tipo {\tt int}. Resulta sin embargo menos obvio
 que los números con un punto decimal pertenezcan a un tipo llamado {\\tt float} (flotante),
 ya que esos números se representan en un formato
 conocido como {\\bf punto flotante}\footnote{En el mundo anglosajón (y también en Python)
-	la parte decimal de un número se separa de la parte entera mediante un punto, y no mediante una coma
-	(N. del trad.)}.
+la parte decimal de un número se separa de la parte entera mediante un punto, y no mediante una coma
+(N. del trad.)}.
 
-\index{tipo}
-\index{tipo cadena}
+\index{type}
+\index{string type}
 \index{type!str}
-\index{tipo entero}
+\index{int type}
 \index{type!int}
-\index{tipo flotante}
+\index{float type}
 \index{type!float}
 
 \beforeverb
@@ -71,7 +71,7 @@ conocido como {\\bf punto flotante}\footnote{En el mundo anglosajón (y también
 Parecen números, pero van entre comillas como
 las cadenas.
 
-\index{comillas}
+\index{quotation mark}
 
 \beforeverb
 \begin{verbatim}
@@ -100,9 +100,9 @@ Bien, ha funcionado. ¡Pero eso no era lo que esperábamos!. Python interpreta
 {\\tt 1,000,000} como una secuencia de enteros separados por comas, así que lo
 imprime con espacios en medio.
 
-\index{error semántico}
-\index{error!semántico}
-\index{mensaje de error}
+\index{semantic error}
+\index{error!semantic}
+\index{error message}
 
 Éste es el primer ejemplo que hemos visto de un error semántico: el código
 funciona sin producir ningún mensaje de error, pero no hace su trabajo
@@ -110,8 +110,8 @@ funciona sin producir ningún mensaje de error, pero no hace su trabajo
 
 \section{Variables}
 \index{variable}
-\index{sentencia de asignación}
-\index{sentencia!asignación}
+\index{assignment statement}
+\index{statement!assignment}
 
 Una de las características más potentes de un lenguaje de programación es
 la capacidad para manipular {\bf variables}. Una variable es un nombre
@@ -159,7 +159,7 @@ El tipo de una variable es el tipo del valor al que se refiere.
 %
 
 \section{Nombres de variables y palabras claves}
-\index{palabra clave}
+\index{keyword}
 
 Los programadores generalmente elijen nombres para sus variables que
 tengan sentido y documenten para qué se usa esa variable.
@@ -177,9 +177,9 @@ Los nombres de las variables pueden comenzar con un carácter barra-baja, pero
 generalmente se evita usarlo así a menos que se esté escribiendo código
 para librerías que luego usarán otros.
 
-\index{carácter barra-baja}
+\index{underscore character}
 
-Si le das a una variable un nombre no permitido, obtienes un error de sintaxis:
+Si se le da a una variable un nombre no permitido, se obtiene un error de sintaxis:
 
 \beforeverb
 \begin{verbatim}
@@ -200,7 +200,7 @@ Pues resulta que {\\tt class} es una de las {\bf palabras clave} de Python. El
 intérprete usa palabras clave para reconocer la estructura del programa,
 y esas palabras no pueden ser utilizadas como nombres de variables.
 
-\index{palabra clave}
+\index{keyword}
 
 Python reserva 31 palabras claves\footnote{En Python 3.0, {\tt exec} ya no es
 una palabra clave, pero {\tt nonlocal} sí que lo es.} para su propio uso:
@@ -227,9 +227,9 @@ Una {\bf sentencia} es una unidad de código que el intérprete de Python puede
 ejecutar. Hemos visto hasta ahora dos tipos de sentencia: print
 y las asignaciones.
 
-\index{sentencia}
-\index{modo interactivo}
-\index{modo script}
+\index{statement}
+\index{interactive mode}
+\index{script mode}
 
 Cuando escribes una sentencia en modo interactivo, el intérprete la
 ejecuta y muestra el resultado, si es que lo hay.
@@ -261,12 +261,12 @@ La sentencia de asignación no produce ninguna salida.
 
 
 \section{Operadores y operandos}
-\index{operador, aritmético}
-\index{operador aritmético}
-\index{operando}
-\index{expresión}
+\index{operator, arithmetic}
+\index{arithmetic operator}
+\index{operand}
+\index{expression}
 
-{\bf Los operadores} son símbolos especiales que reprentan cálculas, como
+{\bf Los operadores} son símbolos especiales que representan cálculos, como
 la suma o la multiplicación. Los valores a los cuales se aplican esos operadores
 reciben el nombre de {\bf operandos}.
 
@@ -298,13 +298,13 @@ En Python 3.0, el nuevo operador
 {\\tt //} es el que realiza la división de enteros.}.
 
 \index{Python 3.0}
-\index{división hacia abajo}
-\index{división de punto plotante}
-\index{division!hacia abajo}
-\index{division!punto flotante}
+\index{floor division}
+\index{floating-point division}
+\index{division!floor}
+\index{division!floating-point}
 
 Cuando ambos operandos son enteros, el resultado es también un
-entero; la división hacia abajo descarta la parte fraccionaria,
+entero; la división hacia abajo descarta la parte decimal,
 así que en este ejemplo trunca la respuesta a cero.
 
 Si cualquiera de los operandos es un número en punto flotante, Python realiza
@@ -325,8 +325,8 @@ Un valor por si mismo se considera una expresión, y también lo es
 una variable, así que las siguientes expresiones son todas válidas
 (asumiendo que la variable {\\tt x} tenga un valor asignado):
 
-\index{expresión}
-\index{evaluar}
+\index{expression}
+\index{evaluate}
 
 \beforeverb
 \begin{verbatim}
@@ -346,7 +346,7 @@ Si escribes una expresión en modo interactivo, el intérprete la
 \end{verbatim}
 \afterverb
 %
-Sin embargo, ¡en un script, una expresión por si misma no hace nada!
+Sin embargo, en un script, ¡una expresión por si misma no hace nada!
 Esto a menudo puede causar confusión
 a los principiantes.
 
@@ -366,21 +366,21 @@ x + 1
 
 
 \section{Orden de las operaciones}
-\index{orden de las operaciones}
-\index{reglas de precedencia}
-\index{PEMDSR}
+\index{order of operations}
+\index{rules of precedence}
+\index{PEMDAS}
 
 Cuando en una expresión aparece más de un operador, el orden de
-evalucación depende de las {\\bf reglas de precedencia}. Para los
+evaluación depende de las {\\bf reglas de precedencia}. Para los
 operadores matemáticos, Python sigue las convenciones matemáticas.
-El acrónimo {\bf PEMDSR} resulta un modo útil
-de recordar esas reglas:
+El acrónimo {\bf PEMDSR} resulta útil para
+recordar esas reglas:
 
-\index{paréntesis!modificar precedencia}
+\index{parentheses!overriding precedence}
 
 \begin{itemize}
 
-\item Los {\bf P}aréntsis tienen el nivel superior de precedencia, y pueden usarse
+\item Los {\bf P}aréntesis tienen el nivel superior de precedencia, y pueden usarse
 para forzar a que una expresión sea evaluada en el orden que se quiera. Dado
 que las expresiones entre paréntesis son evaluadas primero, {\tt 2 * (3-1)} es 4,
 y {\tt (1+1)**(5-2)} es 8. Se pueden usar también paréntesis para hacer una
@@ -390,8 +390,8 @@ si el resultado no cambia por ello.
 \item La {\bf E}xponenciación (elevar un número a una potencia) tiene el siguiente nivel más alto de
 precedencia, de modo que {\tt 2**1+1} es 3, no 4, y {\tt 3*1**3} es 3, no 27.
 
-\item La {\bf M}ultiplicación y la {\bf D}ivisión tienen la misma precendencia,
-que es superior a la {\bf S}uma y {\bf R}esta, que también tienen el mismo
+\item La {\bf M}ultiplicación y la {\bf D}ivisión tienen la misma precedencia,
+que es superior a la de la {\bf S}uma y la {\bf R}esta, que también tienen entre si el mismo
 nivel de precedencia. Así que {\tt 2*3-1} es 5, no 4, y
 {\tt 6+4/2} es 8, no 5.
 
@@ -402,12 +402,12 @@ derecha. Así que la expresión {\tt 5-3-1} es 1 y no 3, ya que
 \end{itemize}
 
 En caso de duda, añade siempre paréntesis a tus expresiones para asegurarte
-de que los cálculos se realicen en el orden que quieres.
+de que los cálculos se realicen en el orden que tú quieres.
 
 \section{Operador módulo}
 
-\index{operador módulo}
-\index{operador!módulo}
+\index{modulus operator}
+\index{operator!modulus}
 
 El {\bf operador módulo} trabaja con enteros y obtiene el resto
 de la operación consistente en dividir el primer operando por el segundo. En Python, el
@@ -427,11 +427,11 @@ que se usa para los demás operadores:
 %
 Así que 7 dividido por 3 es 2 y nos sobra 1. 
 
-El operador módulo resulta ser sorpendentemente útil. Por ejemplo,
+El operador módulo resulta ser sorprendentemente útil. Por ejemplo,
 puedes comprobar si un número es divisible por otro---si
 {\tt x \% y} es cero, entonces {\tt x} es divisible por {\tt y}.
 
-\index{divisibilidad}
+\index{divisibility}
 
 También se puede extraer el dígito más a la derecha
 de los que componen un número. Por ejemplo, {\tt x \% 10} obtiene el
@@ -439,15 +439,15 @@ dígito que está más a la derecha de {\\tt x} (en base 10). De forma similar, 
 obtiene los últimos dos dígitos.
 
 \section{Operaciones con cadenas}
-\index{cadenas!operaciones}
-\index{operador!cadena}
+\index{string!operation}
+\index{operator!string}
 
 El operador {\\tt +} funciona con las cadenas, pero
 no realiza una suma en el sentido matemático. En vez de eso, realiza una
 {\bf concatenación}, que quiere decir que une ambas cadenas,
 enlazando el final de la primera con el principio de la segunda. Por ejemplo:
 
-\index{concatenación}
+\index{concatenation}
 
 \beforeverb
 \begin{verbatim}
@@ -465,9 +465,9 @@ enlazando el final de la primera con el principio de la segunda. Por ejemplo:
 La salida de este programa es {\\tt 100150}.
 
 \section{Pidiendo información al usuario}
-\index{entrada por teclado}
+\index{keyboard input}
 
-A veces podemos querer recibir el valor de una variable del usuario,
+A veces puede que queramos recibir el valor de una variable del usuario,
 a través del teclado.
 Python proporciona una función integrada llamada \verb"raw_input" que recibe
 la entrada desde el teclado\footnote{En Python 3.0, esta función ha sido llamada
@@ -477,8 +477,8 @@ espera a que el usuario escriba algo. Cuando el usuario pulsa {\sf Retorno} o
 devuelve como una cadena aquello que el usuario escribió.
 
 \index{Python 3.0}
-\index{función raw\_input}
-\index{función!raw\_input}
+\index{raw\_input function}
+\index{function!raw\_input}
 
 \beforeverb
 \begin{verbatim}
@@ -490,8 +490,8 @@ Alguna cosa ridícula
 \afterverb
 %
 Antes de recibir algo del usuario, es buena idea escribir
-un mensaje diciéndole qué queremos recibir. Se puede pasar una cadena a
-\verb"raw_input", que será mostrada al usuario antes de la espera
+un mensaje explicándole qué esperamos recibir. Se puede pasar una cadena a
+\verb"raw_input", que será mostrada al usuario antes de que el programa se detenga
 para recibir su entrada:
 
 \index{prompt}
@@ -548,21 +548,21 @@ Veremos cómo controlar este tipo de errores más adelante.
 
 
 \section{Comentarios}
-\index{comentarios}
+\index{comment}
 
 A medida que los programas van siendo más grandes y más complicados, se vuelven más difíciles
 de leer. Los lenguajes formales son densos, y a menudo es complicado
 mirar un trozo de código e imaginarse qué es lo que hace, o por qué.
 
 Por eso es buena idea añadir notas a tus programas, para explicar
-en lenguaje natural qué es lo que es programa está haciendo. Estas notas reciben el nombre de
+en lenguaje natural qué es lo que el programa está haciendo. Estas notas reciben el nombre de
 {\bf comentarios}, y en Python comienzan con el símbolo \verb"#":
 
 
 \beforeverb
 \begin{verbatim}
 # calcula el porcentaje de hora transcurrido
-porcentaje = (minutos * 100) / 60
+porcentaje = (minuto * 100) / 60
 \end{verbatim}
 \afterverb
 %
@@ -571,7 +571,7 @@ poner comentarios al final de una línea
 
 \beforeverb
 \begin{verbatim}
-porcentaje = (minutos * 100) / 60     # porcentaje de una hora
+porcentaje = (minuto * 100) / 60     # porcentaje de una hora
 \end{verbatim}
 \afterverb
 %
@@ -599,18 +599,18 @@ v = 5     # velocidad en metros/segundo.
 \afterverb
 %
 Elegir nombres adecuados para las variables puede reducir la necesidad de comentarios, pero
-los nombres largos pueden hacer que las expresiones complejas sean difíciles de leer, así
+los nombres largos también pueden ocasionar que las expresiones complejas sean difíciles de leer, así
 que lo uno compensa a lo otro.
 
 \section{Eligiendo nombres de variables mnemotécnicos}
 
-\index{mnemotécnicos}
+\index{mnemonic}
 
-Mientras que sigas las sencillas reglas de nombrado de variables y evites las
+Mientras sigas las sencillas reglas de nombrado de variables y evites las
 palabras reservadas, tendrás mucho donde elegir para poner nombres a tus variables.
-Al principio, esa variedad de posibilidades pueden resultarte confusas, tanto al leer un programa
+Al principio, esa variedad de opciones puede resultarte confusa, tanto al leer un programa
 como al escribir el tuyo propio. Por ejemplo, los tres
-programas siguientes son idénticos si nos fijamos en lo que realizan,
+programas siguientes son idénticos en cuanto a la función que realizan,
 pero muy diferentes cuando los lees e intentas entenderlos.
 
 \beforeverb
@@ -656,8 +656,8 @@ parte del lenguaje y no simplemente nombres de variable bien elegidos\footnote{E
 se refiere más bien a quienes eligen nombres de variables en inglés, ya que todas las
 palabras reservadas de Python coinciden con palabras propias de ese idioma (N. del trad.)}.
 
-Echa un vistazo rápido al siguiente código de ejemplo en Python que se mueve en bucle a través de
-un conjunto de datos. Trataremos los bucles pronto, pero por ahora tan sólo trata de encajar
+Echa un vistazo rápido al siguiente código de ejemplo en Python, que se mueve en bucle a través de
+un conjunto de datos. Trataremos los bucles pronto, pero por ahora tan sólo trata de entender
 su significado:
 
 \beforeverb
@@ -696,7 +696,6 @@ nombres de variables distrae del propósito real del programa.
 Después de un breve periodo de tiempo, conocerás las palabras reservadas más comunes,
 y empezarás a ver cómo esas palabras reservadas resaltan sobre las demás:
 
-
 {\tt {\bf for} word {\bf in} words{\bf :}\\
 \verb"    "{\bf print} word }
 
@@ -710,15 +709,15 @@ Dentro de poco empezarás a leer Python y podrás determinar rápidamente qué
 es una variable y qué es una palabra reservada.
 
 \section{Depurando}
-\index{depurando}
+\index{debugging}
 
 En este punto, el error de sintaxis que es más probable que comentas será
 intentar utilizar nombres de variables no válidos, como {\\tt class} y {\\ yield}, que
 son palabras clave, o \verb"odd~job" and \verb"US$",que contienen
 caracteres no válidos.
 
-\index{error de sintaxis}
-\index{error!sintaxis}
+\index{syntax error}
+\index{error!syntax}
 
 Si pones un espacio en un nombre de variable, Python cree que se trata
 de dos operandos sin ningún operador:
@@ -734,9 +733,9 @@ Para la mayoría de errores de sintaxis, los mensajes de error no ayudan mucho.
 Los mensajes más comunes son {\tt SyntaxError: invalid syntax} y
 {\tt SyntaxError: invalid token}, ninguno de los cuales resulta muy informativo.
 
-\index{mensaje de error}
+\index{error message}
 \index{use before def}
-\index{excepción}
+\index{exception}
 \index{runtime error}
 \index{error!runtime}
 
@@ -755,9 +754,9 @@ NameError: name 'principle' is not defined
 Los nombres de las variables son sensibles a mayúsculas, así que {\tt LaTeX} no es
 lo mismo que {\tt latex}.
 
-\index{sensibilidad a mayúsculas, nombres de variables}
-\index{error semántico}
-\index{error!semántico}
+\index{case-sensitivity, variable names}
+\index{semantic error}
+\index{error!semantic}
 
 En este punto, la causa más probable de un error semántico es
 el orden de las operaciones. Por ejemplo, para evaluar $\frac{1}{2 \pi}$,
@@ -774,7 +773,7 @@ no es lo mismo! No hay forma de que Python
 sepa qué es lo que querías escribir exactamente, así que en este caso no
 obtienes un mensaje de error; simplemente obtienes una respuesta incorrecta.
 
-\index{orden de operaciones}
+\index{order of operations}
 
 
 \section{Glosario}
@@ -782,76 +781,76 @@ obtienes un mensaje de error; simplemente obtienes una respuesta incorrecta.
 \begin{descripción}
 
 \item[asignación:]  Una sentencia que asigna un valor a una variable.
-\index{asignación}
+\index{assignment}
 
 \item[concatenar:]  Unir dos operandos, uno a continuación del otro.
-\index{concatenación}
+\index{concatenation}
 
 \item[commentario:]  Información en un programa que se pone para otros
 programadores (o cualquiera que lea el código fuente), y no tiene efecto alguno
 en la ejecución del programa.
-\index{commentario}
+\index{comment}
 
 \item[evaluar:]  Simplificar una expresión realizando las operaciones
 en orden para obtener un único valor.
 
 \item[expresión:]  Una combinación de variables, operadores y valores que
 repesentan un único valor resultante.
-\index{expresión}
+\index{expression}
 
 \item[punto flotante:] Un tipo que representa números con parte
-fraccionaria.
-\index{punto flotante}
+decimal.
+\index{floating-point}
 
 \item[división hacia abajo:] La operación que divide dos números y trunca la
 parte fraccionaria.
-\index{división hacia abajo}
+\index{floor division}
 
 \item[entero:] Un tipo que representa números enteros.
-\index{entero}
+\index{integer}
 
 \item[palabra clave:]  Una palabra reservada que es usada por el compilador para analizar un
 programa; no se pueden usar palabres clave como {\tt if}, {\tt  def}, y {\tt while} como
 nombres de variables.
-\index{palabra clave}
+\index{keyword}
 
 \item[mnemónico:] Una ayuda para memorizar. A menudo damos nombres mnemónicos a las variables
 para ayudarnos a recordar qué está almacenado en ellas.
-\index{mnemónico}
+\index{mnemonic}
 
 \item[operador módulo:]  Un operador, representado por un signo de porcentaje
 ({\tt \%}), que funciona con enteros y obtiene el resto cuando
 un número es dividido por otro.
-\index{operador módulo}
-\index{operador!módulo}
+\index{modulus operator}
+\index{operator!modulus}
 
 \item[operando:]  Uno de los valores con los cuales un operador opera.
-\index{operando}
+\index{operand}
 
 \item[operador:]  Un símbolo especial que representa un cálculo simple, como
 suma, multiplicación o concatenación de cadenas.
-\index{operador}
+\index{operator}
 
 \item[reglas de precedencia:]  El conjunto de reglas que gobierna el orden en el cual
 son evaluadas las expresiones que involucran a múltiples operadores.
-\index{reglas de precedencia}
-\index{precedencia}
+\index{rules of precedence}
+\index{precedence}
 
 \item[sentencia:]  Una sección del código que representa un comando o acción.
 Hasta ahora, las únicas sentencias que hemos visto son asignaciones y sentencias print.
-\index{sentencia}
+\index{statement}
 
 \item[cadena:] Un tipo que representa secuencias de caracteres.
-\index{cadena}
+\index{string}
 
 \item[tipo:] Una categoría de valores. Los tipos que hemos visto hasta ahora
 son enteros (tipo {\tt int}), números en punto flotante (tipo {\tt
 float}), y cadenas (type {\tt str}).
-\index{tipo}
+\index{type}
 
 \item[valor:]  Una de las unidades básicas de datos, como un número o una cadena,
 que un programa manipula.
-\index{valor}
+\index{value}
 
 \item[variable:]  Un nombre que hace referencia a un valor.
 \index{variable}
