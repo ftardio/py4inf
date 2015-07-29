@@ -41,7 +41,7 @@ que pertenecen al tipo {\tt bool (booleano)}; no son cadenas:
 \end{verbatim}
 \afterverb
 %
-El perador {\tt ==} es uno de los {\bf operadores de comparación};
+El operador {\tt ==} es uno de los {\bf operadores de comparación};
 los demás son:
 
 \beforeverb
@@ -57,7 +57,7 @@ los demás son:
 \afterverb
 %
 A pesar de que estas operaciones probablemente te resulten familiares, los
-símboles en Python son diferentes de los símbolos matemáticos que se usan
+símbolos en Python son diferentes de los símbolos matemáticos que se usan
 para realizar las mismas operaciones. Un error muy común
 es usar sólo un símbolo igual ({\tt =}) en vez del símbolo de doble igualdad
 ({\tt ==}). Recuerda que {\tt =} es el operador de asignación, y
@@ -73,7 +73,7 @@ es usar sólo un símbolo igual ({\tt =}) en vez del símbolo de doble igualdad
 \index{operator!logical}
 
 Existen tres {\bf operadores lógicos}: {\tt and (y)}, {\tt
-or (o)}, y {\tt not (no)}. La semántica (significado) de estas operaciones
+or (o)}, y {\tt not (no)}. El significado semántico de estas operaciones
 es similar a su significado en inglés. Por ejemplo, 
 
 {\tt x > 0 and x < 10} 
@@ -153,7 +153,7 @@ o los bucles {\tt for}\footnote{Estudiaremos las funciones en el capítulo 4
 y los bucles en el capítulo 5.}. La sentencia consiste en una línea de encabezado
 que termina con el carácter dos-puntos (:)
 seguido por un bloque con sangrado. Las sentencias de este tipo
-reciben el nombre de {\bf setentencias compuestas}, porque se extienden
+reciben el nombre de {\bf sentencias compuestas}, porque se extienden
 a lo largo de varias líneas.
 
 No hay límite en el número de sentencias que pueden aparecer en el
@@ -173,7 +173,7 @@ if x < 0 :
 \afterverb
 %
 Si introduces una sentencia {\tt if} en el intérprete de Python, el prompt cambiará
-su aspecto habitual por tres puntos, para indicar que estás en medio de un bloque de sentencias, como
+su aspecto habitual por puntos suspensivos, para indicar que estás en medio de un bloque de sentencias, como
 se muestra a continuación:
 
 \beforeverb
@@ -217,9 +217,9 @@ conjunto de sentencias.
 \centerline{\includegraphics[height=1.75in]{figs2/if-else.eps}}
 \afterfig
 
-Dado que la condición debe ser obligatoriamente o bien verdadera o bien falsa, solamente una de
+Dado que la condición debe ser obligatoriamente verdadera o falsa, solamente una de
 las alternativas será ejecutada. Las alternativas reciben el nombre de
-{\bf ramas}, dado que se trata de ramas en el flujo de la ejecución.
+{\bf ramas}, dado que se trata de ramificaciones en el flujo de la ejecución.
 
 \index{branch}
 
@@ -228,7 +228,7 @@ las alternativas será ejecutada. Las alternativas reciben el nombre de
 \index{conditional!chained}
 
 Algunas veces hay más de dos posibilidades, de modo que necesitamos más
-de dos ramas. Una forma de expresar una computación como esa es usar un
+de dos ramas. Una forma de expresar un cálculo como ese es usar un
 {\bf condicional encadenado}:
 
 \beforeverb
@@ -242,7 +242,7 @@ else:
 \end{verbatim}
 \afterverb
 %
-{\tt elif} es una abreviatura para ``else if.''  En este caso también
+{\tt elif} es una abreviatura para ``else if''.  En este caso también
 será ejecutada únicamente una de las ramas.
 
 \beforefig
@@ -250,7 +250,7 @@ será ejecutada únicamente una de las ramas.
 \afterfig
 
 No hay un límite para el número de sentencias
-{\tt elif}. Si hay una claúsula {\tt else}, debe ir
+{\tt elif}. Si hay una clausula {\tt else}, debe ir
 al final, pero tampoco es obligatorio que ésta exista.
 
 \index{elif keyword}
@@ -279,7 +279,7 @@ ejecuta la primera que se encuentra.
 \index{conditional!nested}
 
 Un condicional puede también estar anidado dentro de otro. Podríamos
-haber escrito el anterior ejemplo de tres ramas de este modo:
+haber escrito el ejemplo anterior de las tres ramas de este modo:
 
 \beforeverb
 \begin{verbatim}
@@ -308,8 +308,8 @@ esté clara, los {\bf condicionales anidados} pueden volverse difíciles
 de leer enseguida. En general, es buena idea evitarlos si se puede.
 
 Los operadores lógicos a menudo proporcionan un modo de simplificar las
-sentencias condicionales anidadas. Por ejemplo, podemos reescribir el código
-siguiente usando un único condicional:
+sentencias condicionales anidadas. Por ejemplo, el código siguiente
+puede ser reescrito usando un único condicional:
 
 \beforeverb
 \begin{verbatim}
@@ -319,8 +319,8 @@ if 0 < x:
 \end{verbatim}
 \afterverb
 %
-La sentencia {\tt print} se ejecuta solamente si se pasa por los dos
-condicionales, así que en realidad podemos conseguir el mismo efecto con el operador {\tt and}:
+La sentencia {\tt print} se ejecuta solamente si se cumplen las dos condiciones
+anteriores, así que en realidad podemos conseguir el mismo efecto con el operador {\tt and}:
 
 \beforeverb
 \begin{verbatim}
@@ -333,7 +333,7 @@ if 0 < x and x < 10:
 \section{Capturando excepciones usando try y except}
 \label{catch1}
 
-Anteriormente vimos un fragmento de código donde usábamos las funciones \verb"raw_input" y
+Anteriormente vimos un fragmento de código donde usábamos las funciones \verb"raw_input" e
 {\tt int} para leer y analizar un número entero introducido por
 el usuario. También vimos lo poco seguro que podía llegar a ser hacer algo así:
 
@@ -348,11 +348,11 @@ ValueError: invalid literal for int()
 \end{verbatim}
 \afterverb
 %
-Cuando estamos ejecutando este tipo de sentencias en el intérprete de Python,
-sacamos un nuevo indicador del intérprete, pensamos ``oops'', y continuamos
+Cuando estamos trabajando con el intérprete de Python, tras el error simplemente
+nos aparece de nuevo el prompt, así que pensamos ``¡epa, me he equivocado!'', y continuamos
 con la siguiente sentencia.
 
-Sin embargo, si pones ese código en un
+Sin embargo, si se escribe ese código en un
 script de Python y se produce el error, el script se detendrá
 inmediatamente, y mostrará un ``traceback''.
 No ejecutará la siguiente sentencia.
@@ -396,11 +396,11 @@ ValueError: invalid literal for float(): fred
 Existen estructuras de ejecución condicional dentro de
 Python para manejar este tipo de errores esperados e
 inesperados, llamadas ``try / except''. La idea de {\tt try}
-y {\\ except} es que se sabe que cierta secuencia
-de instrucciones pueden tener un problema y se quieren
-añadir algunas sentencias para que sean ejecutadas si se produce un error.
+y {\\ except} es que se si sabe que cierta secuencia
+de instrucciones pueden tener un problema, se pueden
+añadir algunas sentencias para que sean ejecutadas en caso de error.
 Estas sentencias extras (el bloque except) serán ignoradas
-si no hay ningún error.
+si no se produce ningún error.
 
 Puedes pensar en la característica {\tt try} y {\tt except}
 de Python como una ``póliza de seguros'' en una secuencia
@@ -422,12 +422,12 @@ except:
 %
 
 Python comienza ejecutando la
-secuencia de setencias del bloque
+secuencia de sentencias del bloque
 {\tt try}. Si todo va bien,
 saltará el bloque {\tt except} y terminará.
 Si ocurre una excepción en el bloque {\tt try},
 Python saltará fuera del bloque {\tt try} y
-executará la secuencia de sentencias en el bloque {\tt except}.
+ejecutará la secuencia de sentencias en el bloque {\tt except}.
 
 \beforeverb
 \begin{verbatim}
@@ -443,10 +443,10 @@ Por favor, introduce un número
 %
 
 Manejar una excepción con una sentencia {\tt try} recibe el nombre de
-{\bf capturar} una excepción. En este ejemplo, la claúsula {\tt except}
+{\bf capturar} una excepción. En este ejemplo, la clausula {\tt except}
 muestra un mensaje de error. En general,
-capturar una excepción te da la oportunidad de corregir el problema
-o volverlo a intentar, o al menos de terminar el programa con gracia.
+capturar una excepción te da la oportunidad de corregir el problema,
+volverlo a intentar, o al menos de terminar el programa con elegancia.
 
 \section{Evalucación en corto-circuito de expresiones lógicas}
 \index{short circuit}
@@ -455,12 +455,12 @@ Cuando Python está procesando una expresión lógica, como
 {\tt x >= 2 and (x/y) > 2}, evalúa la expresión de
 izquierda a derecha. Debido a la definición de {\tt and},
 si {\tt x} es menor de 2, la expresión {\tt x >= 2} resulta ser
-{\tt falsa}, de modo que la expresión completa es {\tt falsa}, independientemente
+{\tt falsa}, de modo que la expresión completa ya va a resultar {\tt falsa}, independientemente
 de si {\tt (x/y) > 2} se evalúa como {\tt verdadero} o {\\ falso}.
 
 Cuando Python detecta que no se gana nada evaluando
 el resto de una expresión lógica, detiene su evaluación y no
-realiza el cálculo del resto de la expresión lógica.
+realiza el cálculo del resto de la expresión.
 Cuando la evaluación de una expresión lógica se detiene debido a que
 ya se conoce el valor final, esto es conocido como {\bf corto-circuitar}
 la evaluación.
@@ -547,8 +547,8 @@ más útiles normalmente son:
 
 \end{itemize}
 
-Los errorres de sintaxis (syntax errors), normalmente son fáciles de encontrar, pero
-tienen alguna trampa. Los errores debido a espacios en blanco pueden tener truco,
+Los errores de sintaxis (syntax errors), normalmente son fáciles de encontrar, pero
+a veces tienen trampa. Los errores debido a espacios en blanco pueden tener truco,
 ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
 
 \index{whitespace}
@@ -607,7 +607,7 @@ OverflowError: math range error
 %
 El mensaje de error apunta a la línea 5, pero no hay nada
 incorrecto en ese línea. Para encontrar el error real, puede resultar
-útil imprimir el valor de {\tt relacion}, que resulta ser
+útil mostrar en pantalla el valor de {\tt relacion}, que resulta ser
 0. El problema está en la línea 4, ya que al dividir dos enteros
 se realiza una división hacia abajo. La solución es representar la intensidad
 de la señal y la intensidad del ruido con valores en punto flotante.
@@ -623,7 +623,27 @@ pero a menudo no es precisamente ahí donde se ha producido.
 
 \begin{description}
 
-\item[cuerpo:] La secuencia de setencias en el interior de una sentencia compuesta.
+\item[condición:] La expresión booleana en una sentencia condicional
+que determina qué rama será ejecutada.
+\index{condition}
+
+\item[condicional anidado:]  Una sentencia condicional que aparece
+en una de las ramas de otra sentencia condicional.
+\index{nested conditional}
+\index{conditional!nested}
+
+\item[condicional encadenado:]  Una sentencia condicional con una serie
+de ramas alternativas.
+\index{chained conditional}
+\index{conditional!chained}
+	
+\item[corto circuito:]  Cuando Python va evaluando una expresión lógica
+por tramos y detiene el proceso de evaluación debido a que ya
+conoce el valor final que va a tener el resultado
+sin necesidad de evaluar el resto de la expresión.
+\index{short circuit}
+
+\item[cuerpo:] La secuencia de sentencias en el interior de una sentencia compuesta.
 \index{body}
 
 \item[expresión booleana:]  Un expresión cuyo valor puede ser o bien 
@@ -631,31 +651,11 @@ pero a menudo no es precisamente ahí donde se ha producido.
 \index{boolean expression}
 \index{expression!boolean}
 
-\item[rama:] Una de las secuencias alternativas de sentencias en una
-sentencia condicional.
-\index{branch}
+\item[operadores de comparación:] Uno de los operadores que se utiliza para comparar
+dos operandos: {\tt ==}, {\tt !=}, {\tt >}, {\tt <}, {\tt >=}, y {\tt <=}.
 
-\item[condicional encadenada:]  Una sentencia condicional con una serie
-de ramas alternativas.
-\index{chained conditional}
-\index{conditional!chained}
-
-\item[operadores de comparación:] Uno de los operadores que compara
-sus operandos: {\tt ==}, {\tt !=}, {\tt >}, {\tt <}, {\tt >=}, y {\tt <=}.
-
-\item[sentencia condicional:]  Una sentencia que controla el flujo de
-ejecución, dependiendo de cierta condición.
-\index{conditional statement}
-\index{statement!conditional}
-
-\item[condición:] La expresión booleana en una sentencia condicional
-que determina qué rama será ejecutada.
-\index{condition}
-
-\item[sentencia compuesta:]  Una sentencia que consiste en un encabezado
-y un cuerpo. El encabezado termina con dos-puntos (:). El cuerpo está sangrado
-con relación al encabezado.
-\index{compound statement}
+\item[operador lógico:] Uno de los operadores que se combinan en las expresiones
+booleanas: {\tt and}, {\tt or}, y {\tt not}.
 
 \item[patrón guardián:] Cuando construimos una expresión lógica
 con comparaciones adicionales
@@ -663,23 +663,23 @@ para aprovecharnos del funcionamiento en corto-circuito.
 \index{guardian pattern}
 \index{pattern!guardian}
 
-\item[operador lógico:] Uno de los operadores que se combinan en las expresiones
-booleanas: {\tt and}, {\tt or}, y {\tt not}.
+\item[rama:] Una de las secuencias alternativas de sentencias en una
+sentencia condicional.
+\index{branch}
 
-\item[condicional anidado:]  Una sentencia condicional que aparece
-en una de las ramas de otra sentencia condicional.
-\index{nested conditional}
-\index{conditional!nested}
+\item[sentencia compuesta:]  Una sentencia que consiste en un encabezado
+y un cuerpo. El encabezado termina con dos-puntos (:). El cuerpo está sangrado
+con relación al encabezado.
+\index{compound statement}
+
+\item[sentencia condicional:]  Una sentencia que controla el flujo de
+ejecución, dependiendo de cierta condición.
+\index{conditional statement}
+\index{statement!conditional}
 
 \item[traceback:]  Una lista de las funciones que se están ejecutando,
-que se imprime cuando se produce una excepción.
+que se muestra en pantalla cuando se produce una excepción.
 \index{traceback}
-
-\item[corto circuito:]  Cuando Python va evaluando una expresión lógica
-por tramos y detiene el proceso de evaluación debido a que ya
-conoce el valor final que va a tener el resultado
-sin necesidad de evaluar el resto de la expresión.
-\index{short circuit}
 
 \end{description}
 
@@ -687,7 +687,7 @@ sin necesidad de evaluar el resto de la expresión.
 
 \begin{ex}
 Reescribe el cálculo del salario para darle al empleado 1.5
-veces la tarifa horaria para
+veces la tarifa horaria para todas
 las horas trabajadas que excedan de 40.
 
 \begin{verbatim}
@@ -716,11 +716,11 @@ Error, por favor introduce un número
 \begin{ex}
 Escribe un programa que solicite una puntuación entra 0.0 y 1.0.
 Si la puntuación está fuera de ese rango, muestra un mensaje de error.
-Si la puntuación está entre 0.0 y 1.0, muestra la nota usando la tabla
+Si la puntuación está entre 0.0 y 1.0, muestra la calificación usando la tabla
 siguiente:
 
 \begin{verbatim}
-Puntuación Nota
+Puntuación Calificación
 >= 0.9     Sobresaliente
 >= 0.8     Notable
 >= 0.7     Bien
