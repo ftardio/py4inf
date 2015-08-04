@@ -311,25 +311,25 @@ El siguiente programa cuenta el número de veces que aparece la letra
 \beforeverb
 \begin{verbatim}
 palabra = 'banana'
-cuenta = 0
+contador = 0
 for letra in palabra:
     if letra == 'a':
-        cuenta = cuenta + 1
-print cuenta
+        contador = contador + 1
+print contador
 \end{verbatim}
 \afterverb
 %
 Este programa demuestra otro patrón en el cálculo llamado {\bf contador}.
-La variable {\tt cuenta} es inicializada a 0 y después
+La variable {\tt contador} es inicializada a 0 y después
 es incrementada cada vez que se encuentra una {\tt a}.
-Cuando se sale del bucle, {\tt cuenta}
+Cuando se sale del bucle, {\tt contador}
 contiene el resultado---el número total de {\tt a}'es
 
 \begin{ex}
 \index{encapsulation}
 
 Encapsula el código anterior en una función llamada
-{\tt cuenta}, y generalízala, de modo que acepte la cadena y la
+{\tt contador}, y generalízala, de modo que acepte la cadena y la
 letra como argumentos.
 \end{ex}
 

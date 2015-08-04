@@ -488,20 +488,20 @@ Primero, el programa que calculaba la media sin usar listas:
 \beforeverb
 \begin{verbatim}
 total = 0
-cuenta = 0
+contador = 0
 while ( True ) :
     ent = raw_input('Introduzce un número: ')
     if ent == 'fin' : break
     valor = float(ent)
     total = total + valor
-    cuenta = cuenta + 1
+    contador = contador + 1
 
-media = total / cuenta
+media = total / contador
 print 'Media:', media
 \end{verbatim}
 \afterverb
 %
-En este programa, tenemos las variables {\tt cuenta} y {\tt total}
+En este programa, tenemos las variables {\tt contador} y {\tt total}
 para almacenar la cantidad y el total actual de los números del usuario
 según éste los va introduciendo.
 
@@ -1160,7 +1160,7 @@ comprobar el número de palabras que tenemos antes de mirar cuál es la primera 
 \beforeverb
 \begin{verbatim}
 fman = open('mbox-short.txt')
-cuenta = 0
+contador= 0
 for linea in fman:
     palabras = linea.split()
     # print 'Debug:', palabras

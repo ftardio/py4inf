@@ -184,10 +184,10 @@ y contabilizando cada una de las líneas de un fichero:
 \beforeverb
 \begin{verbatim}
 manf = open('mbox.txt')
-cuenta = 0
+contador = 0
 for linea in manf:
-    cuenta = cuenta + 1
-print 'Líneas contabilizadas:', cuenta
+    contador = contador + 1
+print 'Líneas contabilizadas:', contador
 
 python open.py 
 Line Count: 132045
@@ -198,7 +198,7 @@ Podemos usar el manejador del fichero como secuenciador en nuestro bucle {\tt fo
 El bucle {\tt for} simplemente cuenta el número de líneas del
 archivo y lo muestra en pantalla. La traducción aproximada del bucle for
 al español es: ``para cada línea del archivo representado por este
-manejador, añade una unidad a la variable {\tt cuenta}''.
+manejador, añade una unidad a la variable {\tt contador}''.
 
 La razón de que la función {\tt open} no lea el archivo completo
 es que el fichero puede ser bastante extenso, con muchos gigabytes de datos.
@@ -406,11 +406,11 @@ usuario mediante el uso de \verb"raw_input", como se muestra a continuación:
 \begin{verbatim}
 nombref = raw_input('Introduzca el nombre del fichero: ')
 manf = open(nombref)
-cuenta = 0
+contador = 0
 for linea in manf:
     if linea.startswith('Subject:') :
-        cuenta = cuenta + 1
-print 'Hay', cuenta, 'líneas subject en', nombref
+        contador = contador + 1
+print 'Hay', contador, 'líneas subject en', nombref
 \end{verbatim}
 \afterverb
 %
@@ -494,11 +494,11 @@ except:
     print 'No se pudo abrir el fichero:', nombref
     exit()
 
-cuenta = 0
+contador = 0
 for linea in manf:
     if linea.startswith('Subject:') : 
-        cuenta = cuenta + 1
-print 'Hay', cuenta, 'líneas subject en', nombref
+        contador = contador + 1
+print 'Hay', contador, 'líneas subject en', nombref
 \end{verbatim}
 \afterverb
 %

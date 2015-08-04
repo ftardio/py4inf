@@ -349,25 +349,25 @@ en una lista, podemos escribir el siguiente bucle {\tt for}:
 
 \beforeverb
 \begin{verbatim}
-cuenta = 0
+contador = 0
 for valor in [3, 41, 12, 9, 74, 15]:
-    cuenta = cuenta + 1
-print 'Num. elementos: ', cuenta
+    contador = contador + 1
+print 'Num. elementos: ', contador
 \end{verbatim}
 \afterverb
 %
-Ajustamos la variable {\tt cuenta} a cero antes de que el bucle comience,
+Ajustamos la variable {\tt contador} a cero antes de que el bucle comience,
 después escribimos un bucle {\tt for} para movernos a través de la lista de números.
 Nuestra variable de {\bf iteración} se llama {\tt valor}, y dado que no
 usamos {\tt valor} dentro del bucle, lo único que hace es controlar el bucle
 y hacer que el cuerpo del mismo sea ejecutado una vez para cada uno de los
 valores de la lista.
 
-En el cuerpo del bucle, añadimos 1 al valor actual de {\tt cuenta}
+En el cuerpo del bucle, añadimos 1 al valor actual de {\tt contador}
 para cada uno de los valores de la lista. Mientras el bucle se está ejecutando, el
-valor de {\tt cuenta} es el número de valores que se hayan visto ``hasta ese momento''.
+valor de {\tt contador} es el número de valores que se hayan visto ``hasta ese momento''.
 
-Una vez el bucle se completa, el valor de {\tt cuenta} es el número total
+Una vez el bucle se completa, el valor de {\tt contador} es el número total
 de elementos. El número total ``cae en nuestro poder'' al final del
 bucle. Se construye el bucle de modo que obtengamos lo que queremos cuando el
 bucle termina.
@@ -385,7 +385,7 @@ print 'Total: ', total
 \afterverb
 %
 En este bucle, \emph{sí} usamos la {\bf variable de iteración}.
-En vez de añadir simplemente uno a la {\tt cuenta} como en el bucle previo,
+En vez de añadir simplemente uno a la {\tt contador} como en el bucle previo,
 ahora añadimos el número actual (3, 41, 12, etc) al total en ese momento,
 durante cada iteración del bucle.
 Si piensas en la variable {\tt total}, ésta contiene la
