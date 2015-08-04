@@ -173,13 +173,13 @@ en el cuerpo del bucle para salir explícitamente, usando {\tt break}
 cuando se haya alcanzado la condición de salida.
 
 Por ejemplo, supón que quieres recoger entradas del usuario hasta que
-éste escriba {\\tt terminar}. Podrías escribir:
+éste escriba {\\tt fin}. Podrías escribir:
 
 \beforeverb
 \begin{verbatim}
 while True:
     line = raw_input('> ')
-    if line == 'terminar':
+    if line == 'fin':
         break
     print line
 print '¡Terminado!'
@@ -190,7 +190,7 @@ La condición del bucle es {\tt True}, lo cual es verdadero siempre, así que
 el bucle se repetirá hasta que se ejecute la sentencia break.
 
 Cada vez que se entre en el bucle, pedirá una entrada al usuario.
-Si el usuario escribe {\tt terminar}, la sentencia {\tt break} hará que se
+Si el usuario escribe {\tt fin}, la sentencia {\tt break} hará que se
 salga del bucle. En otro caso, el programa repetirá cualquier cosa que el usuario
 escriba y volverá al principio del bucle. Éste es un ejemplo de su funcionamiento:
 
@@ -200,7 +200,7 @@ escriba y volverá al principio del bucle. Éste es un ejemplo de su funcionamie
 hola a todos
 > he terminado
 he terminado
-> terminar
+> fin
 ¡Terminado!
 \end{verbatim}
 \afterverb
@@ -222,7 +222,7 @@ En ese caso se puede utilizar la sentencia
 la ejecución del cuerpo del bucle para la actual.
 
 A continuación se muestra un ejemplo de un bucle que repite lo que recibe como entrada hasta que
-el usuario escribe ``terminar'', pero trata las líneas que empiezan por el carácter almohadilla
+el usuario escribe ``fin'', pero trata las líneas que empiezan por el carácter almohadilla
 como líneas que no deben mostrarse en pantalla (algo parecido a lo que hace Python con los comentarios).
 
 \beforeverb
@@ -231,7 +231,7 @@ while True:
     line = raw_input('> ')
     if line[0] == '#' :
         continue
-    if line == 'terminar':
+    if line == 'fin':
         break
     print line
 print '¡Terminado!'
@@ -247,7 +247,7 @@ hola a todos
 > # no imprimas esto
 > ¡imprime esto!
 ¡imprime esto!
-> terminar
+> fin
 ¡Terminado!
 \end{verbatim}
 \afterverb
@@ -510,7 +510,7 @@ En esta versión de la función para calcular el mínimo, hemos eliminado las
 sentencias {\tt print}, de modo que sea equivalente a la función {\tt min},
 que ya está incorporada a Python.
 
-\section{Depurando}
+\section{Depuración}
 
 Según vayas escribiendo programas más grandes, puede que notes que vas necesitando
 emplear cada vez más tiempo en depurarlos. Más código significa más oportunidades de
@@ -584,8 +584,8 @@ bien una función que se llama a si misma o bien un bucle.
 
 \begin{ex}
 Escribe un programa que lea repetidamente números hasta que el usuario
-introduzca ``finalizar''.
-Una vez se haya introducido ``finalizar'', muestra por pantalla el total, la cantidad de números y la media
+introduzca ``fin''.
+Una vez se haya introducido ``fin'', muestra por pantalla el total, la cantidad de números y la media
 de esos números. Si el usuario introduce cualquier otra cosa que no sea un número,
 detecta su error usando {\tt try} y {\tt except},
 muestra un mensaje de error y pasa al siguiente número.
@@ -596,7 +596,7 @@ Introduce un número: 5
 Introduce un número: dato erróneo
 Entrada inválida
 Introduce un número: 7
-Introduce un número: finalizar
+Introduce un número: fin
 16 3 5.33333333333
 \end{verbatim}
 \end{ex}
