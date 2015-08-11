@@ -16,11 +16,11 @@ los índices pueden ser de (casi) cualquier tipo.
 
 Puedes pensar en un diccionario como un mapa entre un conjunto de índices
 (a los cuales se les llama {\bf claves}) y un conjunto de valores. Cada clave apunta a un
-valor. La asocicación de una clave y un valor recibe el nombre de {\bf
-par clave-valor}, o a veces {\bf elemento}.
+valor. La asociación de una clave y un valor recibe el nombre de {\bf
+pareja clave-valor}, o a veces {\bf elemento}.
 
 Por ejemplo, hemos construido un diccionario que mapea desde palabras inglesas
-a sus equivalentes en español, de modo que tanto claves como valores son cadenas.
+sus equivalentes en español, de modo que tanto claves como valores son cadenas.
 
 La función {\tt dict} crea un diccionario nuevo sin elementos.
 Dado que {\tt dict} es el nombre de una función incorporada, debes
@@ -51,7 +51,7 @@ Para añadir elementos al diccionario, se pueden usar corchetes:
 %
 Esta línea crea un elemento con la clave {\tt 'one'}
 que apunta al valor \verb"'uno'". Si imprimimos el
-diccionario de nuevo, veremos un par clave-valor con dos-puntos
+diccionario de nuevo, veremos una pareja clave-valor con dos-puntos
 entre la clave y el valor:
 
 \beforeverb
@@ -70,7 +70,7 @@ puedes crear un nuevo diccionario con tres elementos:
 \end{verbatim}
 \afterverb
 %
-Pero si ahora imprimes {\tt eng2sp}, puedes encontrarte con una sorpresa:
+Pero si ahora imprimes {\tt eng2sp}, puedes llevarte una sorpresa:
 
 \beforeverb
 \begin{verbatim}
@@ -79,7 +79,7 @@ Pero si ahora imprimes {\tt eng2sp}, puedes encontrarte con una sorpresa:
 \end{verbatim}
 \afterverb
 %
-El orden de los pares clave-valor no es el mismo. De hecho, si
+El orden de las parejas clave-valor no es el mismo. De hecho, si
 escribes el mismo ejemplo en tu ordenador, puedes obtener un
 resultado diferente. En general, el orden de los elementos en
 un diccionario es impredecible.
@@ -157,8 +157,8 @@ True
 %
 El operador {\tt in} utiliza algoritmos diferentes para las listas y
 para los diccionarios. Para las listas, usa un algoritmo lineal de búsqueda.
-Según la lista se hace más larga, el tiempo de búsqueda
-crece en proporción directa a la longitud de la lista.
+Según la lista se va haciendo más larga, el tiempo de búsqueda
+crece en proporción directa a la longitud.
 Para los diccionarios, Python usa un
 algoritmo llamado {\bf tabla de dispersión}, que tiene una propiedad destacada--el
 operador {\tt in} emplea la misma cantidad de tiempo sin importar cuántos
@@ -184,7 +184,7 @@ diccionario.
 \end{ex}
 
 
-\section{Diccionario como conjunto de contadores}
+\section{Diccionarios como conjuntos de contadores}
 \label{histogram}
 
 \index{counter}
@@ -218,11 +218,11 @@ una de ellas implementa la computación de un modo diferente.
 
 Una {\bf implementación} es un modo de realizar un cálculo;
 algunas implementaciones son mejores que otras. Por ejemplo,
-una ventaja de las implementaciones del diccionario es que
+una ventaja de las implementaciones del diccionario es que no
 necesitamos saber de antemano qué letras aparecerán en la cadena
-y sólo tendremos que hacer sitios para las letras que vayan apareciendo.
+y sólo tendremos que hacer sitio para las letras que vayan apareciendo.
 
-Así es como podría ser el código:
+Así es como podría programarse el código:
 
 \beforeverb
 \begin{verbatim}
@@ -266,7 +266,7 @@ aparecen una vez;  \verb"'o'" aparece tres, y así con las demás.
 \index{get method}
 \index{method!get}
 
-Los diccionarios tienen un método llamado {\tt get} que tomas una clave
+Los diccionarios tienen un método llamado {\tt get} que toma una clave
 y un valor por defecto. Si la clave aparece en el diccionario,
 {\tt get} devuelve el valor correspondiente; si no, devuelve
 el valor por defecto. Por ejemplo:
@@ -282,8 +282,8 @@ el valor por defecto. Por ejemplo:
 \afterverb
 %
 Podemos usar {\tt get} para escribir nuestro bucle de histograma de forma más concisa.
-Ya que el método {\tt get} maneja automáticamente el caso de que la clave
-no esté en el diccionario, podemos reducir cuatro líneas a una
+Ya que el método {\tt get} controla automáticamente el caso de que la clave
+no esté en el diccionario, podemos reducir cuatro líneas en una
 y eliminar la sentencia {\tt if}
 
 \beforeverb
@@ -297,9 +297,9 @@ print d
 \afterverb
 %
 El uso del método {\tt get} para simplificar este bucle de recuento
-termina resultando un ``idioma'' usado en Python con mucha frecuencia, y
+al final resulta ser un ``estilo'' que se usa en Python con mucha frecuencia, y
 lo utilizaremos muchas veces en el resto del libro. Así que deberías
-tomarte un respiro y comparar el bucle usando la sentencia {\tt if}
+pararte un momento y comparar el bucle usando la sentencia {\tt if}
 y el operador {\tt in} con el mismo bucle usando el método {\tt get}.
 Hacen exactamente lo mismo, pero uno es más breve.
 \index{idiom}
@@ -326,23 +326,23 @@ Who is already sick and pale with grief
 %
 Vamos a escribir un programa en Python para ir leyendo las líneas del archivo,
 dividir cada línea en una lista de palabras, movernos en bucle a través de cada
-palabra de la línea y contar el número de veces que aparece cada una, usando un diccionario.
+palabra y contar el número de veces que aparece cada una, usando un diccionario.
 
 \index{nested loops}
 \index{loop!nested}
 Verás que tenemos dos bucles {\tt for}. El bucle exterior va leyendo las
 líneas del archivo, mientras que el interior va iterando a través de cada
 una de las palabras de una línea concreta. Esto es un ejemplo
-de un patrón llamdo {\bf bucles anidados}, ya que uno de los bucles
+de un patrón llamado {\bf bucles anidados}, ya que uno de los bucles
 es el \emph{exterior}, y el otro es el \emph{interior}.
 
 Debido a que el bucle interior ejecuta todas sus iteracciones cada vez
-que el bucle exterior realiza una sola, imaginamos
+que el bucle exterior realiza una sola, consideramos
 que el bucle interior va iterando ``más rápido'' y que el exterior lo hace
 más lentamente.
 
 \index{Romeo and Juliet}
-La combinación de los dos bucles anidados asegura que se cuentan
+La combinación de los dos bucles anidados garantiza que se cuentan
 todas las palabras en cada línea del archivo de entrada.
 
 \beforeverb
@@ -387,7 +387,7 @@ Introduce el nombre del fichero: romeo.txt
 %
 Resulta un poco incómodo buscar a través del diccionario para encontrar
 cuál es la palabra más común y su contador, de modo que necesitamos añadir un poco
-más de código en Pyhton que nos proporcione la salida de modo que nos resulte más útil.
+más de código Pyhton que nos proporcione la salida de un modo que nos resulte más útil.
 
 \section{Bucles y diccionarios}
 
@@ -424,7 +424,7 @@ Otra vez vemos que la claves aparecen sin ningún orden en particular.
 Podemos usar este patrón para poner en práctica las diversas expresiones de bucles
 que hemos descrito antes. Por ejemplo, si queremos
 encontrar todas las entradas de un diccionario que tengan un valor
-de más de diez, podríamos escribir el siguiente código:
+superior a diez, podríamos escribir el siguiente código:
 
 \beforeverb
 \begin{verbatim}
@@ -491,7 +491,7 @@ parejas clave-valor ya en orden, imprimidas desde el bucle {\tt for}.
 
 \index{Romeo and Juliet}
 En el ejemplo anterior, usando el fichero {\tt romeo.txt},
-hemos creado un archivo tan simple como fuera posible, eliminando
+hemos creado un archivo lo más sencillo posible, eliminando
 manualmente todos los signos de puntuación. El texto real
 tiene montones de esos signos, como se muestra a continuación:
 
@@ -520,9 +520,9 @@ Aquí está la documentación para {\tt translate}:
 
 \verb"string.translate(s, table[, deletechars])"
 
-\emph{Elimina todos los caracteres de s que hay en deletechars (si hay alguno),
+\emph{Elimina todos los caracteres de s que hay en deletechars (si existe alguno),
 y luego traduce los caracteres usando table, que debe ser una cadena
-de 256-caracteres, que proporcione la traducción para cada
+de 256-caracteres que proporcione la traducción para cada
 valor de carácter, indexado por su ordinal. Si la tabla es None,
 entonces sólo se realizará el borrado de caracteres.}
 
@@ -582,9 +582,9 @@ print a.translate(string.maketrans(' ',' '), string.punctuation
 Parte del aprendizaje del ``Arte de Python'' o ``Pensar Pythónicamente''
 consiste en darse cuenta de que Python
 a menudo tiene capacidades incorporadas para muchos problemas de análisis
-de datos comunes. Con el tiempo, habrás visto suficiente código de ejemplo y leído
+de datos comunes. Llegará un momento en que habrás visto suficiente código de ejemplo y leído
 suficiente documentación para saber dónde buscar para localizar si alguien
-ya ha escrito antes algo que pueda hacer tu trabajo mucho más sencillo.
+ya ha escrito antes algo que pueda facilitarte el trabajo.
 
 Lo siguiente es una versión abreviada de la salida:
 
@@ -650,7 +650,7 @@ puede hacer más fácil localizar un error.
 
 \end{description}
 
-Una vez más, el tiempo que emplees construyendo el andamiaje puede reducir
+Una vez más, el tiempo que emplees construyendo la estructura puede reducir
 el tiempo que emplearás luego depurando.
 
 \index{scaffolding}
@@ -708,7 +708,7 @@ el uso que hacíamos antes de la palabra ``valor''.
 \section{Ejercicios}
 
 \begin{ex}
-Escribe un programa que categorice cada mensaje de correo según
+Escribe un programa que ordene en categorías cada mensaje de correo según
 el día de la semana en que fue hecho el envío. Para lograrlo, busca
 las líneas que comienzan por ``From'', luego localiza la
 tercera palabra y mantén un contador actualizado de cada uno
@@ -730,9 +730,9 @@ Intoduce un nombre de fichero: mbox-short.txt
 
 \begin{ex}
 Escribe un programa que lea a través de un registro de correo,
-construye un histograma usando un diccionario para contar cuántos
+construya un histograma usando un diccionario para contar cuántos
 mensajes han llegado desde cada dirección de correo,
-e imprime el diccionario.
+e imprima el diccionario.
 
 \beforeverb
 \begin{verbatim}
@@ -769,8 +769,8 @@ zqian@umich.edu 195
 \end{ex}
 
 \begin{ex}
-Este programa guarda el nombre de dominio (en vez de la dirección)
-desde donde se envió el mensaje, en vez de quién mandó el mensaje
+Este programa debe guardar el nombre de dominio
+desde donde se envió el mensaje en vez de quién mandó el mensaje
 (es decir, la dirección de correo completa). Al final
 del programa, imprime en pantalla el contenido de tu diccionario.
 
