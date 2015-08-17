@@ -4,16 +4,16 @@
 \chapter{Programas en red}
 
 A pesar de que muchos de los ejemplos de este libro se han enfocado a la lectura
-de ficheros y búsqueda de datos en esos ficheros, hay muchas fuentes
-diferentes de información cuando uno tiene en cuenta Internet.
+de ficheros y búsqueda de datos dentro de esos ficheros, hay muchas otras fuentes
+diferentes de información cuando se tiene en cuenta también Internet.
 
-En este capítulo, intentaremos ser un navegador web y recuperar páginas
+En este capítulo, fingiremos ser un navegador web y recuperaremos páginas
 web usando el Protocolo de Transporte de Hipertexto - HyperText Transport Protocol (HTTP).
-Luego recorreremos los datos de la página web y los analizaremos.
+Luego recorreremos los datos de esas páginas web y los analizaremos.
 
-\section{Protocolo de Transportes de Hipertexto - HTTP}
+\section{Protocolo de Transporte de Hipertexto - HTTP}
 
-El protocolo de red que hace funcionar la web es en la actualidad bastante simple, y
+El protocolo de red que hace funcionar la web es en realidad bastante simple, y
 existe un soporte integrado en Python que se llama {\tt sockets} que hace que resulte muy
 fácil realizar conexiones de red y recuperar datos a través de esas
 conexiones en un programa Python.
@@ -24,16 +24,17 @@ Es posible tanto leer como escribir en el mismo socket. Si se escribe algo en
 un socket, es enviado hacia la aplicación que está al otro lado del socket. Si se lee
 de un socket, se obtienen los datos que la otra aplicación ha enviado.
 
-Pero si se intenta leer un socket cuando el programa que está al otro lado
+Pero si intentas leer de un socket cuando el programa que está al otro lado
 no ha enviado ningún dato---puedes esperar sentado. Si los programas de ambos extremos
 del socket simplemente esperan recibir datos sin enviar nada, esperarán durante mucho,
 mucho tiempo.
 
 De modo que una parte importante de los programas que se comunican a través de Internet es tener algún
 tipo de protocolo. Un protocolo son un conjunto de reglas precisas que determinan quién
-debe ir primero, lo que tienen que hacer, y después cuáles son las respuestas para ese mensaje,
-quién envía luego y demás. En cierto sentido las aplicaciones a ambos lados del
-socket están interpretando un baile y deben estar seguras de que no pisan los pies del otro.
+empieza primero, qué debe hacer, cuáles son las respuestas siguientes para ese mensaje,
+quién envía a continuación y todo lo demás. En cierto sentido las aplicaciones a ambos lados del
+socket están interpretando un baile y cada una de ellas debe estar segura de que no pisa
+los pies del otro.
 
 Hay muchos documentos que describen esos protocolos de red. El Protocolo de Transportes de
 Hipertexto está descrito en el siguiente documento:
@@ -118,9 +119,9 @@ para describir el documento.
 Por ejemplo, la cabecera {\tt Content-Type} indica que
 el documento es del tipo texto plano ({\tt text/plain}).
 
-Despues de que el servidor nos envía la cabecera, añade una línea en blanco
+Después de que el servidor nos envía la cabecera, añade una línea en blanco
 para indicar el final de la misma, y a continuación envía los datos
-reales del fichero {\tt rometo.txt}.
+reales del fichero {\tt romeo.txt}.
 
 Este ejemplo nos muestra cómo crear una conexión de red de bajo nivel
 con sockets. Los sockets pueden ser usados para comunicarse con un servidor
@@ -134,7 +135,7 @@ el protocolo web HTTP, Python posee una librería
 especial específicamente diseñada para trabajar con ese protocolo
 y recibir documentos y datos a través de la web.
 
-\section{Recepción de una imagen mediante HTTP}
+\section{Recibiendo una imagen mediante HTTP}
 
 \index{urllib!image}
 \index{image!jpg}
@@ -216,15 +217,15 @@ cuerpo del documento es una imagen ({\tt image/jpeg}).
 Una vez que el programa se completa, se pueden ver los datos de la imagen abriendo
 el archivo {\tt cosa.jpg} con un visor de imágenes.
 
-Según el programa funciona, se puede ver que no se obtienen 5120 caracteres
+Al ejecutar el programa, se puede ver que no se obtienen 5120 caracteres
 cada vez que que se llama al método {\tt recv()}.
 Se obtienen tantos caracteres como hayan sido transferidos a través de la red
 hacia nosotros por el servidor web en el momento de la llamada a {\tt recv()}.
 En este ejemplo, se obtienen 1460 ó 2920 caracteres cada vez que
-se solicitan hasta 5120 caracteres de datos.
+se solicita un máximo de 5120 caracteres de datos.
 
-Los resultados obtenidos pueden ser diferentes dependiendo de la velocidad de tu red. También
-fíjate que en la última llamada a {\tt recv()} se obtienen 1681 bytes, que es el final
+Los resultados obtenidos pueden ser diferentes dependiendo de la velocidad de tu red. Además
+fíjate en que en la última llamada a {\tt recv()} se obtienen 1681 bytes, que es el final
 de la cadena, y en la siguiente llamada a {\tt recv()} se obtiene una cadena de
 longitud cero que nos indica que el servidor ya ha llamado a {\tt close()} en su lado
 del socket y por tanto no quedan más datos pendientes.
@@ -232,7 +233,7 @@ del socket y por tanto no quedan más datos pendientes.
 \index{time}
 \index{time.sleep}
 Podemos retardar las llamadas sucesivas a {\tt recv()} descomentando la llamada
-a {\tt time.sleep()}. De este modo, esperamos un cuarto de segundo después de cada llamada,
+a {\tt time.sleep()}. Así, esperamos un cuarto de segundo después de cada llamada,
 de modo que el servidor puede ``adelantarse'' a nosotros y enviarnos más datos
 antes de que llamemos de nuevo a {\tt recv()}. Con el retraso, esta vez el programa
 se ejecuta así:
@@ -271,11 +272,11 @@ que envía los datos o de la que los recibe se llama
 ``control de flujo''.
 \index{flow control}
 
-\section{Recepción de páginas web con {\tt urllib}}
+\section{Recibiendo páginas web con {\tt urllib}}
 
 A pesar de que es posible enviar y recibir datos manualmente a través de HTTP
 usando la librería socket, existe en Python un modo mucho más sencillo de
-realizar esta tarea habitual,
+realizar esta tarea cotidiana,
 usando la librería {\tt urllib}.
 
 Al usar {\tt urllib},
@@ -351,12 +352,12 @@ luego los datos de esas páginas para encontrar ciertos patrones.
 
 Por ejemplo, un motor de búsqueda como Google buscará en el código
 de una página web, extraerá los enlaces a otras páginas y recuperará
-esas páginas, extrayendo los enlaces y así sucesivamente. Usando esta técnica,
+esas páginas, extrayendo los enlaces que haya en ellas y así sucesivamente. Usando esta técnica,
 las  {\bf arañas} de Google se mueven por casi todas las páginas de
 la web.
 
 Google utiliza también la frecuencia de los enlaces de las páginas que encuentra
-hacia una página concreta como media de cómo de ``importante'' es
+hacia una página concreta como medida de la ``importancia'' de
 esa página, y en qué posición debe aparecer en sus resultados de búsqueda.
 
 \section{Analizando HTML mediante expresiones regulares}
@@ -399,7 +400,7 @@ localizar la cadena coincidente {\em más grande}.
 
 Añadimos paréntesis a nuestra expresión regular para indicar
 qué parte de la cadena localizada queremos extraer, y
-produce el siguiente programa:
+obtenemos el siguiente programa:
 \index{regex!parentheses}
 \index{parentheses!regular expression}
 
@@ -418,7 +419,7 @@ for enlace in enlaces:
 %
 El método {\tt findall} de las expresiones regulares nos proporciona una lista de todas
 las cadenas que coinciden con nuestra expresión regular, devolviendo sólo
-en texto del enlace situado dentro de las comillas dobles.
+el texto del enlace situado dentro de las comillas dobles.
 
 Cuando ejecutamos el programa, obtenemos la siguiente salida:
 
@@ -464,7 +465,7 @@ Se puede descargar e ``instalar'' BeautifulSoup, o
 simplemente colocar el archivo {\tt BeautifulSoup.py} en la
 misma carpeta que nuestra aplicación.
 
-A pesar de que HTML se parece a XML\footnote{El formato XML será descrito
+A pesar de que el HTML se parece al XML\footnote{El formato XML será descrito
 en el próximo capítulo.} y que algunas páginas están cuidadosamente
 construidas para ser XML, la mayoría del HTML generalmente está
 incompleto, de tal modo que provoca que un analizador de XML rechace la página completa de HTML
@@ -497,7 +498,7 @@ for etiqueta in etiquetas:
 El programa solicita una dirección web, luego abre la página
 web, lee los datos y se los pasa al analizador BeautifulSoup,
 que recupera todas las etiquetas de anclaje e imprime en pantalla
-el atributo {\tt href} para cada una de ellas.
+el atributo {\tt href} de cada una de ellas.
 
 Cuando el programa se ejecuta, muestra lo siguiente:
 
@@ -583,16 +584,16 @@ manf.close()
 %
 Este programa lee todos los datos de una sola vez a través de la red y los
 almacena en la variable {\tt img} en la memoria principal de tu ordenador,
-luego abre el fichero {\tt portada.jpg} y escribe los datos en tu
+luego abre el fichero {\tt portada.jpg} y escribe los datos en el
 disco. Esto funcionará sólo si el tamaño del fichero es menor que el tamaño
 de la memoria de tu ordenador.
 
 Sin embargo, si se trata de un fichero enorme de audio o video, este programa puede fallar
-o al menos funcionar extremadamente lento cuando tu ordenador se quede sin memoria.
+o al menos funcionar extremadamente lento cuando el ordenador se quede sin memoria.
 Para evitar agotar la memoria, vamos a recuperar los datos en bloques
 (o buffers), y luego escribiremos cada bloque en el disco antes de recuperar
 el siguiente. De este modo el programa podrá leer archivos de cualquier tamaño sin
-usar toda la memoria que tiene tu ordenador.
+usar toda la memoria que tenga el ordenador.
 
 \beforeverb
 \begin{verbatim}
@@ -628,7 +629,7 @@ python curl2.py
 %
 
 Si tienes un ordenador Unix o Macintosh, probablemente tendrás un comando
-incorporado en tu sistema operativo que realice esta operación
+incorporado en tu sistema operativo que puede realizar esa misma operación
 de este modo:
 \index{curl}
 
@@ -643,7 +644,7 @@ ejemplos se han llamado astutamente {\tt curl1.py} y {\tt curl2.py} en
 \url{www.py4inf.com/code}, ya que implementan una funcionalidad similar
 a la del comando {\tt curl}. Existe también un programa de ejemplo {\tt curl3.py}
 que realiza la misma tarea de forma un poco más eficiente, en caso de
-que quieras usar de verdad este patrón en algún programa que estés escribiendo.
+que quieras usar realmente este patrón en algún programa que estés escribiendo.
 
 \section{Glosario}
 
@@ -674,10 +675,10 @@ siguiente, de modo que pueden atravesar una red de páginas o una red social.
 en la cual dichas aplicaciones pueden enviar y recibir datos en ambas direcciones.
 \index{socket}
 
-\item[araña:] La acción de un motor de búsqueda web al recuperar una página
+\item[araña:] La acción de un motor de búsqueda web de recuperar una página
 y luego todas las páginas enlazadas por ella, continuando así sucesivamente hasta que
 tiene casi todas las páginas de Internet, que
-usa para construir su índice de búsqueda.
+usan para construir su índice de búsqueda.
 \index{spider}
 
 \end{description}
@@ -694,7 +695,7 @@ el usuario introduzca una URL mal formada o inexistente.
 \end{ex}
 
 \begin{ex}
-Cambia tu programa del socket para que cuente el número de caracteres que ha recibido
+Cambia el programa del socket para que cuente el número de caracteres que ha recibido
 y se detenga, con un texto en pantalla, después de que se hayan mostrado 3000 caracteres. El programa
 debe recuperar el documento completo y contar el número total de caracteres,
 mostrando ese total al final del documento.
@@ -702,7 +703,7 @@ mostrando ese total al final del documento.
 
 \begin{ex}
 Usa {\tt urllib} para rehacer el ejercicio anterior de modo que (1) reciba el documento
-de una URL, (2) muestre hasta 3000 caracteres, y (3) cuente la cantidad media
+de una URL, (2) muestre hasta 3000 caracteres, y (3) cuente la cantidad total
 de caracteres en el documento. No te preocupes de las cabeceras en este ejercicio,
 muestra simplemente los primeros 3000 caracteres del contenido del documento.
 \end{ex}
@@ -710,8 +711,8 @@ muestra simplemente los primeros 3000 caracteres del contenido del documento.
 \begin{ex}
 Cambia el programa {\tt urllinks.py} para extraer y contar
 las etiquetas de párrafo (p) del documento HTML recuperado y
-muestra el total de párrafos como
-salida de tu programa.
+mostrar el total de párrafos como
+salida del programa.
 No muestres el texto de los párrafos, sólo cuéntalos.
 Prueba el programa en varias páginas web pequeñas,
 y también en otras más grandes.
