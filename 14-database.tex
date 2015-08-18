@@ -1222,7 +1222,7 @@ for fila in cur :
 print contador, 'filas.'
 
 cur.execute('''SELECT * FROM Seguimientos JOIN Personas 
-    ON Seguimientos.desde_id = Personas.id WHERE Personas.id = 2''')
+    ON Seguimientos.hacia_id = Personas.id WHERE Seguimientos.desde_id = 2''')
 contador = 0
 print 'Conexiones para id=2:'
 for fila in cur :
@@ -1280,7 +1280,7 @@ coincide con la tercera ({\tt Personas.id}) en cada una de las ``meta-filas'' de
 
 \section{Resumen}
 
-Este capítulo ha tratado un montón de temas para darte una visión de conjunto del uso básico
+En este capítulo se han tratado un montón de temas para darte una visión de conjunto del uso básico
 de las bases de datos en Python. Es más complicado escribir el código para usar una base
 de datos que almacene los datos que utilizar diccionarios de Python o archivos planos, de modo que
 existen pocas razones para usar una base de datos a menos que tu aplicación necesite de verdad
