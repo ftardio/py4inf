@@ -3,14 +3,14 @@
 
 \chapter{Visualizando datos}
 
-Hasta el momento hemos aprendido primero el lenguaje Python y luego
+Hasta el momento, primero hemos aprendido el lenguaje Python y luego
 hemos descubierto cómo usar Python, la red y las bases de datos
 para manipular datos.
 
 En este capítulo, echaremos un vistazo a tres
 aplicaciones completas que reúnen todas esas cosas
 para gestionar y visualizar datos. Puedes usar estas aplicaciones
-como código de ejemplo que te sirva de punto de partida para la
+como código de ejemplo que te puede servir de punto de partida para la
 resolución de problemas del mundo real.
 
 Cada una de las aplicaciones es un archivo ZIP que puedes descargar,
@@ -20,9 +20,9 @@ extraer en tu ordenador y ejecutar.
 \index{Google!map}
 \index{Visualization!map}
 
-En este proyecto usamos la API de geocodificación de Google
+En este proyecto usaremos la API de geocodificación de Google
 para limpiar varias ubicaciones geográficas de nombres de universidades
-introducidas por los usuarios, y luego colocamos los datos en
+introducidas por los usuarios, y luego colocaremos los datos en
 un mapa de Google. 
 
 \beforefig
@@ -34,7 +34,7 @@ Para comenzar, descarga la aplicación desde:
 \url{www.py4inf.com/code/geodata.zip}
 
 El primer problema a resolver es que la API libre de geocodificación
-de Google tiene un límite de uso de un cierto número de peticiones diarias. Si tienes
+de Google tiene como límite de uso un cierto número de peticiones diarias. Si tienes
 un montón de datos, necesitarás detener y reanudar el proceso de
 búsqueda varias veces. De modo que dividiremos el problema en
 dos fases.
@@ -54,12 +54,12 @@ Puedes reiniciar el proceso en cualquier momento eliminando el archivo
 {\bf geodata.sqlite}.
 
 Ejecuta el programa {\bf geoload.py}. Este programa leerá las líneas
-de entrada desde {\bf where.data} y para cada línea verificará si ya
+de entrada desde {\bf where.data} y para cada línea verificará primero si ya
 está en la base de datos. Si no disponemos de datos para esa ubicación,
 llamará a la API de geocodificación para recuperar los datos y los almacenará
 en la base de datos.
 
-Aquí tenemos un ejemplo de ejecución una vez que ya disponemos de información guardada en la
+Aquí tenemos un ejemplo de ejecución una vez que ya disponemos de información almacenada en la
 base de datos:
 
 \beforeverb
@@ -119,7 +119,7 @@ Open where.html to view the data in a browser
 \end{verbatim}
 \afterverb
 %
-El archivo {\bf where.html} consiste en HTML y JavaScript para visualizar
+El archivo {\bf where.html} consiste en HTML y JavaScript para mostrar
 un mapa de Google. Lee los datos más actuales de {\bf where.js} para obtener
 los datos que se visualizarán. He aquí el formato del fichero {\bf where.js}:
 
@@ -142,7 +142,7 @@ Simplemente abre {\bf where.html} en un navegador para ver las ubicaciones.
 Puedes mantener el ratón sobre cada marca del mapa para ver la
 ubicación que la API de geocodificación ha devuelto para la entrada que el usuario introdujo.
 Si no puedes ver ningún dato cuando abras el fichero {\bf where.html}, deberías
-verificar el JavaScript o usar la consola de desarrollador de tu navegador.
+verificar que tengas activado JavaScript o usar la consola de desarrollador de tu navegador.
 
 \section{Visualización de redes e interconexiones}
 \index{Google!page rank}
@@ -151,8 +151,8 @@ verificar el JavaScript o usar la consola de desarrollador de tu navegador.
 
 En la siguiente aplicación, realizaremos algunas de las funciones de un motor
 de búsqueda. Primero rastrearemos una pequeña parte de la web y ejecutaremos
-una versión simplificada del algoritmo de clasificación de la página de Google
-para determinar qué páginas son las más visitadas, y luego visualizaremos
+una versión simplificada del algoritmo de clasificación que usa la página de Google
+para determinar qué páginas son las más visitadas. Luego visualizaremos
 la clasificación de las páginas y visitas de nuestro pequeño rincón de la web.
 Usaremos la librería de visualización de JavaScript D3
 \url{http://d3js.org/} para generar la imagen de salida.
@@ -166,8 +166,8 @@ Puedes descargar y extraer esta aplicación desde:
 \afterfig
 
 El primer programa ({\bf spider.py}) rastrea un sitio web
-y envía una serie de página a la
-base de datos ({\bf spider.sqlite}), guardando los enlaces entre las páginas.
+y envía una serie de páginas a la
+base de datos ({\bf spider.sqlite}), guardando los enlaces entre páginas.
 Puedes reiniciar el proceso en cualquier momento eliminando el
 fichero {\bf spider.sqlite} y ejecutando de nuevo {\bf spider.py}.
 
@@ -182,10 +182,10 @@ How many pages:
 \end{verbatim}
 \afterverb
 %
-En esta ejecución de ejemplo, le pedimos que rastree un sitio web y recupere dos
+En esta ejecución de ejemplo, le pedimos que rastree un sitio web y que recupere dos
 páginas. Si reinicias el programa y le pides que rastree más
 páginas, no volverá a revisar aquellas que ya estén en la base de datos.
-en cada reinicio irá a una página al azar no rastreada aún y comenzará allí.
+En cada reinicio irá a una página al azar no rastreada aún y comenzará allí.
 De modo que cada ejecución sucesiva de {\bf spider.py} irá añadiendo páginas nuevas.
 
 \beforeverb
@@ -205,7 +205,7 @@ del programa, estos son llamados ``webs''. La araña
 elije entre todos los enlaces no visitados de las páginas existentes uno al azar
 como siguiente página a rastrear.
 
-Si quieres mostrar el contenido del fichero {\bf spider.sqlite}, puedes
+Si quieres ver el contenido del fichero {\bf spider.sqlite}, puedes
 ejecutar {\bf spdump.py}, que mostrará algo como esto:
 
 \beforeverb
@@ -222,13 +222,8 @@ Se muestra el número de enlaces hacia la página, la clasificación antigua de 
 clasificación nueva, el id de la página, y la url de la página. El programa {\bf spdump.py}
 sólo muestra aquellas páginas que tienen al menos un enlace hacia ella.
 
-Una vez que tienes unas cuantas páginas en la base de datos, puedes ejecutar el clasificador de
-páginas sobre ellas, usando el programa {\bf sprank.py}. Simplemente debes indicarle cuántas
-interacciones de clasificación entre páginas debe realizar.
-
-This shows the number of incoming links, the old page rank, the new page
-rank, the id of the page, and the url of the page.  The {\bf spdump.py} program
-only shows pages that have at least one incoming link to them.
+Una vez que tienes unas cuantas páginas en la base de datos, puedes ejecutar el clasificador sobre ellas, usando el programa {\bf sprank.py}. Simplemente debes indicarle cuántas
+iteraciones del clasificador de páginas debe realizar.
 
 \beforeverb
 \begin{verbatim}
@@ -253,7 +248,7 @@ páginas ha sido actualizada:
 \afterverb
 %
 Puedes ejecutar {\bf sprank.py} tantas veces com quieras, y simplemente irá refinando
-la clasificación de páginas cada vez más. Puedes incluso ejecutar {\bf sprank.py} unas cuantas veces,
+la clasificación de páginas cada vez más. Puedes incluso ejecutar {\bf sprank.py} varias veces,
 luego ir a la araña {\bf spider.py} a recuperar unas cuantas páginas más y después ejecutar de nuevo
 {\bf sprank.py} para actualizar los valores de clasificación. Un motor de búsqueda normalmente
 ejecuta ambos programas (el rastreador y el clasificador) de forma constante.
@@ -290,7 +285,7 @@ desequilibrada, de modo que los valores de esos cambios medios de clasificación
 para cada página variarán a lo loco entre iteraciones. Pero después de unas cuantas
 iteraciones, la clasificación de páginas converge. Deberías
 ejecutar {\bf prank.py} durante el tiempo suficiente para que los valores de clasificación
-de las páginas converjan.
+converjan.
 
 Si quieres visualizar las páginas mejor clasificadas hasta ese momento,
 ejecuta {\bf spjson.py} para leer desde base de datos y escribir el ranking de
@@ -335,7 +330,7 @@ Puedes descargar la aplicación desde:
 
 Utilizaremos los datos de un servicio de archivo de listas de correo electrónico libre,
 llamado \url{www.gmane.org}. Este servicio es muy popular en proyectos de código abierto,
-debido a que proporciona un buen almacenaje con capacidad de búsqueda de sus
+debido a que proporciona un buen almacenaje con capacidad de búsqueda de su
 actividad de correo. También tienen una política muy liberal respecto al acceso a
 sus datos a través de su API. No tienen límites de acceso, pero te piden que no
 sobrecargues su servicio y descargues sólo los datos que necesites. Puedes leer
@@ -345,12 +340,12 @@ los términos y condiciones de gmane en su página:
 
 {\em Es muy importante que hagas uso de los datos de gname.org con
 responsabilidad, añadiendo retrasos en tus accesos a sus servicios y extendiendo
-la realización de los procesos de larga duración a periodos de tiempo más largos.
+la realización de los procesos de larga duración a periodos de tiempo lo suficientemente largos.
 No abuses de este servicio libre y lo estropees para los demás.}
 
 Cuando se usa este software para rastrear los datos de correo de Sakai, se genera casi
-un Gigabyte de datos y se necesitan una cantidad considerable de ejecuciones durante varios días.
-El archivo {\bf README.txt} del ZIP anterior puede tener instrucciones sobre cómo
+un Gigabyte de datos y se necesita una cantidad considerable de ejecuciones durante varios días.
+El archivo {\bf README.txt} del ZIP anterior contiene instrucciones sobre cómo
 descargar una copia pre-rastreada del fichero {\bf content.sqlite} con
 la mayor parte del contenido de los correos de Sakai, de modo que no tengas que rastrear
 durante cinco días sólo para hacer funcionar los programas. Aunque descargues el contenido
@@ -363,7 +358,7 @@ de desarrolladores de Sakai. Puedes rastrear otro repositorio cambiando la
 url base. Asegúrate de borrar el fichero {\bf content.sqlite} si realizas
 el cambio de url.
 
-El fichero {\bf gmane.py} opera como una araña caché fiable, que
+El fichero {\bf gmane.py} opera como una araña caché responsable, que
 funciona despacio y recupera un mensaje de correo por segundo para
 evitar ser bloqueado por gmane. Almacena todos sus datos
 en una base de datos y puede ser interrumpido y reanudado tantas veces como
@@ -410,7 +405,7 @@ nuevos según van siendo enviados a la lista.
 
 Los datos en {\bf content.sqlite} están guardados en bruto, con un modelado de datos
 ineficiente y sin comprimir.
-Esto se ha hecho así intencionadamente, para permitirte mirar en {\bf content.sqlite}
+Esto se ha hecho así intencionadamente, para permitirte echar un vistazo en {\bf content.sqlite}
 usando el SQLite Manager y depurar problemas con el proceso de rastreo.
 Sería una mala idea ejecutar cualquier consulta sobre esta base de datos, ya que
 puede resultar bastante lenta.
@@ -441,7 +436,7 @@ Loaded allsenders 1588 and mapping 28 dns mapping 1
 El programa {\bf gmodel.py} realiza varias labores de limpieza de datos.
 
 Los nombres de dominio son truncados a dos niveles para .com, .org, .edu y .net.
-Otros nombres de dominio son truncaos a tres niveles. De modo que si.umich.edu se transforma en
+Otros nombres de dominio son truncados a tres niveles. De modo que si.umich.edu se transforma en
 umich.edu, y caret.cam.ac.uk queda como cam.ac.uk. Las direcciones de correo electrónico también
 son transformadas a minúsculas, y algunas de las direcciones de @gmane.org, como las siguientes
 
@@ -451,7 +446,7 @@ son transformadas a minúsculas, y algunas de las direcciones de @gmane.org, com
 \end{verbatim}
 \afterverb
 %
-son convertidas en direcciones reales cuando existe una dirección de correo real
+son convertidas en direcciones reales, cuando esa dirección de correo real existe
 en otra parte del cuerpo del mensaje.
 
 En la base de datos {\bf content.sqlite} existen dos tablas que te permiten
