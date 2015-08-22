@@ -35,7 +35,7 @@ Sintácticamente, una tupla es una lista de valores separados por comas:
 \afterverb
 %
 A pesar de que no es necesario, resulta corriente encerrar las tuplas entre
-paréntesis, lo que ayuda para identificarlas rápidamente dentro del
+paréntesis, lo que ayuda a identificarlas rápidamente dentro del
 código en Python.
 
 \index{parentheses!tuples in}
@@ -154,7 +154,7 @@ reemplazar una tupla con otra:
 \afterverb
 %
 
-\section{Comparando tuplas}
+\section{Comparación de tuplas}
 
 \index{comparison!tuple}
 \index{tuple!comparison}
@@ -181,7 +181,7 @@ La función {\tt sort} funciona del mismo modo. En principio
 ordena por el primer elemento, pero en caso de que haya dos iguales,
 usa el segundo, y así sucesivamente. 
 
-Esta característica se presta al uso de un patrón llamado {\bf DSU}, que
+Esta característica se presta al uso de un diseño llamado {\bf DSU}, que
 
 \begin{description}
 
@@ -421,7 +421,7 @@ La nueva lista está ordenada alfabéticamente en orden ascendente según el val
 \index{dictionary!traversal}
 
 La combinación de {\tt items}, asignación en tupla y {\tt for},
-consigue un bonito patrón de código para recorrer las claves y valores
+consigue un bonito diseño de código para recorrer las claves y valores
 de un diccionario en un único bucle:
 
 \beforeverb
@@ -554,13 +554,13 @@ puedan ser hecho en un programa Python de 19 líneas
 sencillo de comprender, es una de las razones por las que Python es una buena elección
 como lenguaje para explorar información.
 
-\section{Usando tuplas como claves en diccionarios}
+\section{Uso de tuplas como claves en diccionarios}
 
 \index{tuple!as key in dictionary}
 \index{hashable}
 
 Dado que las tuplas son {\bf hashables (dispersables)} y las listas no, si queremos
-crear una clave {\bf compuesta} para usar en un diccionario, debemos usar una tupla
+crear una clave {\bf compuesta} para usar en un diccionario, deberemos usar una tupla
 como clave.
 
 Usaríamos por ejemplo una clave compuesta si quisiésemos crear un
@@ -798,8 +798,8 @@ tamaño, y composición de una estructura de datos.
 \section{Ejercicios}
 
 \begin{ex}
-Revisa un programa previo como se indica: Lee y
-procesa las líneas ``From'' y extrae la
+Revisa el ejercicio 9.3, del tema anterior, de este modo:
+Lee y procesa las líneas ``From'' y extrae la
 dirección. Cuenta el número de
 mensajes de cada persona usando un diccionario.
 	
@@ -866,4 +866,3 @@ de las letras es diferente en cada idioma. Compara tus resultados con las tablas
 \index{frequency!letter}
 
 \end{ex}
-

@@ -1,7 +1,7 @@
 % LaTeX source for ``Python for Informatics: Exploring Information''
 % Copyright (c)  2010-  Charles R. Severance, All Rights Reserved
 
-\chapter{Archivos}
+\chapter{Ficheros}
 
 \index{file}
 \index{type!file}
@@ -17,7 +17,7 @@ nuestras intenciones a la {\bf Unidad Central de Procesamiento} usando ejecució
 condicional, funciones e iteraciones. Hemos aprendido cómo
 crear y usar estructuras de datos en la {\bf Memoria Principal}. La CPU
 y la memoria son los lugares donde nuestro software trabaja y funciona. Ahí es
-donde se desarrolla todo la ``inteligencia''.
+donde se desarrolla toda la ``inteligencia''.
 
 Pero si te acuerdas de nuestra discusión sobre arquitectura del hardware,
 una vez que la corriente se interrumpe, cualquier cosa almacenada tanto
@@ -29,30 +29,30 @@ programas ha sido sólo fugaces y divertidos ejercicios para aprender Python.
 \afterfig
 
 En este capítulo, comenzaremos a trabajar con la {\bf Memoria Secundaria}
-(o archivos).
+(o ficheros, o archivos).
 La memoria secundaria no se borra aunque se interrumpa la corriente.
 Incluso, en el caso de una unidad flash USB, los
 datos que escribimos desde nuestros programas pueden ser retirados
 del sistema y transportados a otro equipo.
 
-En primer lugar nos centraremos en leer y escribir archivos de texto,
+En primer lugar nos centraremos en leer y escribir ficheros de texto,
 como los que se crean usando un editor de texto cualquiera. Más tarde veremos cómo
 trabajar con archivos de bases de datos, que son ficheros binarios diseñados
 específicamente para ser leídos y escritos mediante software de manejo de bases de datos.
 
-\section{Abriendo archivos}
+\section{Apertura de ficheros}
 \index{file!open}
 \index{open function}
 \index{function!open}
 
-Cuando se desea leer o escribir un archivo (nos referimos en el disco duro), primero
+Cuando se desea leer o escribir en un archivo (nos referimos en el disco duro), primero
 debemos {\bf abrir} el fichero. Al abrir el fichero nos comunicamos con el sistema
 operativo, que sabe dónde se encuentran almacenados los datos de cada archivo. Cuando se
-abre un archivo, se está pidiendo al sistema operativo que busque al fichero por su nombre
+abre un fichero, se está pidiendo al sistema operativo que lo busque por su nombre
 y se asegure de que existe. En este ejemplo, abrimos el fichero
 {\tt mbox.txt}, que debería estar guardado en la misma carpeta en la que te
 encontrabas cuando iniciaste Python.
-Puedes descargar el archivo desde
+Puedes descargar el fichero desde
 \url{www.py4inf.com/code/mbox.txt}
 
 \beforeverb
@@ -65,8 +65,8 @@ Puedes descargar el archivo desde
 %
 \index{file handle}
 Si la {\tt apertura} tiene éxito, el sistema operativo nos devuelve un
-{\bf manejador de archivo (file handle)}. El manejador de archivo no son los datos que
-contiene actualmente el fichero, sino que se trata de un ``manejador (handle)'' que se
+{\bf manejador de fichero (file handle)}. El manejador de fichero no son los datos que
+contiene actualmente el archivo, sino que se trata de un ``manejador (handle)'' que se
 puede utilizar para leer esos datos. Sólo obtendrás el manejador si el fichero especificado
 existe y además dispones de los permisos apropiados para poder leerlo.
 
@@ -75,7 +75,7 @@ existe y además dispones de los permisos apropiados para poder leerlo.
 \afterfig
 
 Si el fichero no existe, {\tt open} fallará con un traceback, y no obtendrás
-un manejador para poder acceder al contenido del archivo:
+ningún manejador para poder acceder a su contenido:
 
 \beforeverb
 \begin{verbatim}
@@ -90,12 +90,12 @@ Más adelante usaremos {\tt try} y {\tt except} para controlar con más
 elegancia la situación cuando intentemos abrir un archivo
 que no existe.
 
-\section{Archivos de texto y líneas}
+\section{Ficheros de texto y líneas}
 
-Un archivo de texto puede ser considerado una secuencia de líneas, de igual
+Un fichero de texto puede ser considerado una secuencia de líneas, de igual
 modo que una cadena en Python puede ser considerada una secuencia de caracteres.
-Por ejemplo, esta es una muestra de un archivo de texto que guarda la actividad de correos
-de varias personas en el equipo de desarrollo de un projecto de código abierto (open source):
+Por ejemplo, esta es una muestra de un fichero de texto que guarda la actividad de correos
+de varias personas en el equipo de desarrollo de un proyecto de código abierto:
 
 \beforeverb
 \begin{alltt}
@@ -112,7 +112,7 @@ Details: http://source.sakaiproject.org/viewsvn/?view=rev\&rev=39772
 
 El fichero completo de interacciones de correo está disponible en
 \url{www.py4inf.com/code/mbox.txt} 
-y una versión más reducida del fichero se puede encontrar en
+y una versión más reducida se puede encontrar en
 \url{www.py4inf.com/code/mbox-short.txt}.
 Estos ficheros tienen un formato estándar, diseñado para archivos que contienen
 múltiples mensajes de correo. Las líneas que comienzan con
@@ -126,11 +126,11 @@ representa el ``final de línea'', llamado {\bf salto de línea (newline)}.
 
 \index{newline}
 En Python, el carácter {\bf salto de línea} se representa por barra invertida-n en
-las cadenas constantes. A pesar de que parezcan ser dos caracteres, se
+las cadenas. A pesar de que parezcan dos caracteres, se
 trata en realidad de uno sólo. Cuando revisamos la variable introduciendo
 ``cosa'' en el intérprete, nos mostrará el \verb"\n" en la cadena,
 pero cuando usemos {\tt print} para mostrar la cadena, veremos cómo ésta
-es dividida en dos líneas por el carácter de salto de línea.
+aparece dividida en dos líneas por el carácter de salto de línea.
 
 \beforeverb
 \begin{verbatim}
@@ -153,7 +153,7 @@ Y
 También puedes observar que la longitud de la cadena \verb"'X\nY'" es de \emph{tres}
 caracteres, porque el carácter de salto de línea se cuenta como uno sólo.
 
-De modo que cuando miremos a las líneas de un archivo, tendremos que \emph{imaginarnos}
+De modo que cuando miremos a las líneas de un fichero, tendremos que \emph{imaginarnos}
 que existe un carácter especial invisible llamado salto de línea al
 final de cada línea, que marca donde termina la misma y comienza la siguiente.
 
@@ -170,14 +170,14 @@ final de cada línea, que marca donde termina la misma y comienza la siguiente.
 % \end{alltt}
 % \afterverb
 
-De modo que el carácter de salto de línea separa los caracteres
-del archivo en líneas.
+Así que el carácter de salto de línea separa los caracteres
+del fichero en líneas.
 
-\section{Leyendo archivos}
+\section{Lectura de ficheros}
 
 \index{file!reading}
 \index{counter}
-A pesar de que el {\bf manejador de archivo} no contiene los datos del fichero,
+A pesar de que el {\bf manejador de fichero} no contiene los datos del archivo,
 es bastante fácil construir un bucle {\tt for} para ir leyendo
 y contabilizando cada una de las líneas de un fichero:
 
@@ -196,8 +196,8 @@ Line Count: 132045
 %
 Podemos usar el manejador del fichero como secuenciador en nuestro bucle {\tt for}.
 El bucle {\tt for} simplemente cuenta el número de líneas del
-archivo y lo muestra en pantalla. La traducción aproximada del bucle for
-al español es: ``para cada línea del archivo representado por este
+fichero y lo muestra en pantalla. La traducción aproximada del bucle for
+al español es: ``para cada línea del fichero representado por este
 manejador, añade una unidad a la variable {\tt contador}''.
 
 La razón de que la función {\tt open} no lea el archivo completo
@@ -250,9 +250,9 @@ Si el fichero es demasiado grande para caber en la memoria principal, deberías
 hacer que tu programa leyera el archivo en bloques, usando un bucle
 {\tt for} o {\tt while}.
 
-\section{Buscando dentro de un archivo}
+\section{Búsqueda dentro de un fichero}
 
-Cuando se buscan datos dentro de un archivo, un
+Cuando se buscan datos dentro de un fichero, un
 patrón muy común consiste en ir leyendo el archivo completo, ignorando
 la mayoría de las líneas y procesando únicamente aquellas que cumplen alguna condición
 particular. Es posible combinar ese patrón de lectura de ficheros con los métodos de cadena
@@ -298,8 +298,8 @@ incluye un salto de línea, y a continuación {\tt print} añade \emph{otro} sal
 cuyo resultado es el efecto de doble espaciado que podemos ver.
 
 Podríamos usar rebanado de líneas para imprimir todo menos el último carácter, pero
-una aproximación más sencilla consiste en usar el método {\bf rstrip}, que retira
-los espacios en blancos de la parte derecha de una cadena, como se muestra a continuación:
+un enfoque más sencillo consiste en usar el método {\bf rstrip}, que retira
+los espacios en blanco de la parte derecha de una cadena, como se muestra a continuación:
 
 \beforeverb
 \begin{verbatim}
@@ -326,14 +326,14 @@ From: cwen@iupui.edu
 \end{verbatim}
 \afterverb
 %
-Según los programas de procesado de archivos se van volviendo más complejos, es posible
+Cuando los programas de procesado de archivos se van volviendo más complejos, es posible
 que queramos estructurar los bucles de búsqueda usando {\tt continue}. La idea básica
 del bucle de búsqueda es que estamos localizando líneas ``interesantes''
 y saltando eficazmente aquellas que ``no nos interesan''. Y a continuación, cuando
 encontramos una línea interesante, hacemos algo con esa línea.
 
 Podemos estructurar el bucle para usar ese
-patrón y saltar las líneas que no nos interesan, de este modo:
+diseño y saltar las líneas que no nos interesan, de este modo:
 
 \beforeverb
 \begin{verbatim}
@@ -348,7 +348,7 @@ for linea in manf:
 \end{verbatim}
 \afterverb
 %
-La salida del programa es la misma. En español, las
+La salida del programa es la misma. Traduciendo, las
 líneas que no nos interesan son aquellas que no comienzan
 por ``From:'', de modo que las saltamos usando {\tt continue}.
 En cambio las líneas ``interesantes'' (es decir, aquellas que comienzan por ``From:''),
@@ -391,7 +391,7 @@ Author: david.horwitz@uct.ac.za
 \afterverb
 %
 
-\section{Dejando al usuario elegir el nombre del archivo}
+\section{Permitir al usuario elegir el nombre del fichero}
 
 Lo más probable es que no nos apetezca editar nuestro código Python
 cada vez que queramos procesar un archivo diferente. Sería
@@ -404,7 +404,7 @@ usuario mediante el uso de \verb"raw_input", como se muestra a continuación:
 
 \beforeverb
 \begin{verbatim}
-nombref = raw_input('Introduzca el nombre del fichero: ')
+nombref = raw_input('Introduce el nombre del fichero: ')
 manf = open(nombref)
 contador = 0
 for linea in manf:
@@ -421,11 +421,11 @@ el programa repetidamente con distintos ficheros.
 \beforeverb
 \begin{verbatim}
 python search6.py 
-Introduzca el nombre del fichero: mbox.txt
+Introduce el nombre del fichero: mbox.txt
 Hay 1797 líneas subject en mbox.txt
 
 python search6.py 
-Introduzca el nombre del fichero: mbox-short.txt
+Introduce el nombre del fichero: mbox-short.txt
 Hay 27 líneas subject en mbox-short.txt
 \end{verbatim}
 \afterverb
@@ -436,7 +436,7 @@ nuestro simpático usuario que provoque que nuestro bonito programita
 termine sin gracia, con un tracebak, haciéndonos parecer menos atractivos
 a los ojos de los usuarios?
 
-\section{Usando {\tt try, except,} y {\tt open}}
+\section{Uso de {\tt try, except,} y {\tt open}}
 
 Te avisé que no te asomases. Esta es tu última oportunidad.
 
@@ -445,14 +445,14 @@ Te avisé que no te asomases. Esta es tu última oportunidad.
 \beforeverb
 \begin{verbatim}
 python search6.py 
-Introduzca el nombre del fichero: missing.txt
+Introduce el nombre del fichero: missing.txt
 Traceback (most recent call last):
   File "search6.py", line 2, in <module>
     manf = open(nombref)
 IOError: [Errno 2] No such file or directory: 'missing.txt'
 
 python search6.py 
-Introduzca el nombre del fichero: na na boo boo
+Introduce el nombre del fichero: na na boo boo
 Traceback (most recent call last):
   File "search6.py", line 2, in <module>
     manf = open(nombref)
@@ -487,7 +487,7 @@ como se muestra a continuación:
 
 \beforeverb
 \begin{verbatim}
-nombref = raw_input('Introduzca el nombre del fichero: ')
+nombref = raw_input('Introduce el nombre del fichero: ')
 try:
     manf = open(nombref)
 except:
@@ -510,11 +510,11 @@ los ``capturaremos'' y recuperaremos el control del programa con elegancia:
 \beforeverb
 \begin{verbatim}
 python search7.py
-Introduzca el nombre del fichero: mbox.txt
+Introduce el nombre del fichero: mbox.txt
 Hay 1797 líneas subject en mbox.txt
 
 python search7.py
-Introduzca el nombre del fichero: na na boo boo
+Introduce el nombre del fichero: na na boo boo
 No se puedo abrir el fichero: na na boo boo
 \end{verbatim}
 \afterverb
@@ -538,11 +538,11 @@ sea elegante y que sea apreciada por su elegancia
 por nuestros colegas.
 
 
-\section{Escribiendo archivos}
+\section{Escritura en ficheros}
 
 \index{file!writing}
 
-Para escribir un fichero, debes abrirlo usando el modo
+Para escribir en un fichero, debes abrirlo usando el modo
 \verb"'w'" como segundo parámetro:
 
 \beforeverb
@@ -553,9 +553,9 @@ Para escribir un fichero, debes abrirlo usando el modo
 \end{verbatim}
 \afterverb
 %
-Si el archivo ya existe, abrirlo en modo escritura eliminará
+Si el fichero ya existe, abrirlo en modo escritura eliminará
 los datos antiguos y lo dejará completamente vacío, ¡así que ten cuidado!
-Si el archivo no existe, se creará nuevo.
+Si el fichero no existe, se creará nuevo.
 
 El método {\tt write} del objeto manejador del fichero
 pone datos dentro del archivo.
@@ -568,11 +568,11 @@ pone datos dentro del archivo.
 \afterverb
 %
 \index{newline}
-El objeto archivo también realiza el seguimiento de dónde se encuentra, de modo
-que si se llama a {\tt write} otra vez, añadirá los datos nuevos al final del fichero.
+El objeto fichero también realiza el seguimiento de la posición dentro del fichero, de modo
+que si se llama a {\tt write} otra vez, añadirá los datos nuevos al final del archivo.
 
 Deberemos asegurarnos de gestionar los finales de las líneas mientras
-escribimos en el archivo, insertando explícitamente el carácter de salto
+escribimos en el fichero, insertando explícitamente el carácter de salto
 cuando queramos terminar una línea. La sentencia {\tt print}
 añade un salto de línea automáticamente, pero el método
 {\tt write} no lo hace a menos que se lo especifiquemos.
@@ -584,7 +584,7 @@ añade un salto de línea automáticamente, pero el método
 \end{verbatim}
 \afterverb
 %
-Cuando hayas terminado de escribir, debes cerrar el archivo
+Cuando hayas terminado de escribir, debes cerrar el fichero
 para asegurarte de que hasta el último bit de datos se escriba
 físicamente en el disco, de modo que no se pierda si la corriente se interrumpe.
 
@@ -594,11 +594,11 @@ físicamente en el disco, de modo que no se pierda si la corriente se interrumpe
 \end{verbatim}
 \afterverb
 %
-También se pueden cerrar los archivos que se han abierto en modo lectura,
+También se pueden cerrar los ficheros que se han abierto en modo lectura,
 pero no es necesario que seamos muy estrictos con ello si solamente
 estamos abriendo unos pocos archivos, ya que Python se asegura de que
-todos los archivos queden cerrados cuando el programa termina. En el caso
-de que estemos escribiendo ficheros, deberemos cerrar explícitamente los ficheros
+todos los ficheros queden cerrados cuando el programa termina. En cambio, en el caso
+de que estemos escribiendo ficheros, deberemos cerrarlos explícitamente
 para no dejar nada al azar.
 
 \index{close method}
@@ -639,12 +639,12 @@ con secuencias de barras invertidas:
 \end{verbatim}
 \afterverb
 
-Esto puede ser útil para depurar.
+Esto puede resultarnos de utilidad a la hora de depurar.
 
 Otro problema que puedes tener se debe a que los distintos sistemas
 utilizan caracteres diferentes para indicar el final de una línea. Algunos
 sistemas usan un salto de línea, representado por \verb"\n". Otros
-usan un carácter de retorno, representado por \verb"\r". Otro usan ambos.
+usan un carácter de retorno, representado por \verb"\r". Otros usan ambos.
 Si trasladas ficheros entre sistemas diferentes, esas inconsistencias
 pueden causar problemas.
 
@@ -692,7 +692,7 @@ medio de almacenamiento permanente, como un disco duro.
 \section{Ejercicios}
 
 \begin{ex}
-Escribe un programa que lea un archivo e imprima en pantalla su contenido
+Escribe un programa que lea un fichero e imprima en pantalla su contenido
 (línea a línea), todo en mayúsculas. La ejecución del programa debería
 ser algo similar a esto:
 
@@ -724,7 +724,7 @@ X-DSPAM-Confidence: {\bf 0.8475}
 \afterverb
 
 Cuando encuentres una línea que comienza por
-``X-DSPAM-Confidence:'' separa la línea para extraer
+``X-DSPAM-Confidence:'', separa esa línea para extraer
 el número en punto flotante que figure en ella. Cuenta esas línea y
 calcula también el total de los valores de probabilidad de spam (spam confidence)
 de estas líneas. Cuando alcances el final del archivo, muestra en pantalla
@@ -732,10 +732,10 @@ el valor medio de probabilidad de spam.
 
 \beforeverb
 \begin{verbatim}
-Introduzca el nombre del fichero: mbox.txt
+Introduce el nombre del fichero: mbox.txt
 Valor medio de probabilidad de spam: 0.894128046745
 
-Introduzca el nombre del fichero: mbox-short.txt
+Introduce el nombre del fichero: mbox-short.txt
 Valor medio de probabilidad de spam: 0.750718518519
 \end{verbatim}
 \afterverb
@@ -757,15 +757,15 @@ del programa:
 \beforeverb
 \begin{verbatim}
 python egg.py 
-Introduzca el nombre del fichero:  mbox.txt
+Introduce el nombre del fichero:  mbox.txt
 Hay 1797 líneas subject en mbox.txt
 
 python egg.py 
-Introduzca el nombre del fichero:  missing.tyxt
+Introduce el nombre del fichero:  missing.tyxt
 No se pudo abrir el fichero: missing.tyxt
 
 python egg.py 
-Introduzca el nombre del fichero: na na boo boo
+Introduce el nombre del fichero: na na boo boo
 NA NA BOO BOO PARA TI - ¡Has sido malo!
 \end{verbatim}
 \afterverb
@@ -774,4 +774,3 @@ No te estamos animando a poner Huevos de Pascua en tus
 programa---se trata sólo de un ejercicio.
 
 \end{ex}
-

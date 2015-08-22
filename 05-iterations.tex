@@ -4,15 +4,15 @@
 \chapter{Iteración}
 \index{iteration}
 
-\section{Actualizando variables}
+\section{Actualización de variables}
 \label{update}
 
 \index{update}
 \index{variable!updating}
 
-Un patrón común en sentencias de asignación es aquel
-que actualiza una variable --
-en la cual el nuevo valor de la variable depende del antiguo.
+Un uso habitual de las sentencias de asignación es aquel que consiste en
+actualizar una variable --
+donde el valor nuevo de la variable depende del antiguo.
 
 \beforeverb
 \begin{verbatim}
@@ -46,8 +46,8 @@ normalmente mediante una simple asignación:
 \end{verbatim}
 \afterverb
 %
-Actualizar una variable añadiéndole 1 se denomina hacer un {\bf incremento};
-restarle 1 se denomina efectuar un {\bf decremento}.
+Actualizar una variable añadiéndole 1 se denomina {\bf incrementar};
+restarle 1 recibe el nombre de {\bf decrementar}.
 
 \index{increment}
 \index{decrement}
@@ -78,7 +78,7 @@ print '¡Despegue!'
 \end{verbatim}
 \afterverb
 %
-Casi se puede leer la sentencia {\tt while} como si fuera inglés.
+Casi se puede leer la sentencia {\tt while} como si estuviera escrita en inglés.
 Significa, ``Mientras {\tt n} sea mayor que 0,
 muestra el valor de {\tt n} y luego reduce el valor de {\tt n}
 en 1 unidad. Cuando llegues a 0, sal de la sentencia {\tt while} y
@@ -90,13 +90,13 @@ muestra la palabra {\tt ¡Despegue!}''
 
 \begin{enumerate}
 
-\item Evalúa la condición, obteniendo {\tt Verdadero} or {\tt Falso}.
+\item Se evalúa la condición, obteniendo {\tt Verdadero} or {\tt Falso}.
 
-\item Si la condición es falsa, sale de la sentencia {\tt while}
-y continúa la ejecución en la siguiente sentencia.
+\item Si la condición es falsa, se sale de la sentencia {\tt while}
+y se continúa la ejecución en la siguiente sentencia.
 
-\item Si la condición es verdadera, ejecuta el
-cuerpo del {\tt while} y luego vuelve al paso 1.
+\item Si la condición es verdadera, se ejecuta el
+cuerpo del {\tt while} y luego se vuelve al paso 1.
 
 \end{enumerate}
 
@@ -114,7 +114,7 @@ El cuerpo del bucle debe cambiar el valor de una o más variables,
 de modo que la condición pueda en algún momento evaluarse como falsa
 y el bucle termine.
 La variable que cambia cada vez que el bucle se ejecuta
-y controla cuándo termina el bucle, recibe el nombre de
+y controla cuándo termina éste, recibe el nombre de
 {\bf variable de iteración}.
 Si no hay variable de iteración, el bucle se repetirá para siempre,
 resultando así un {\bf bucle infinito}.
@@ -133,8 +133,8 @@ debe ejecutarse el proceso.
 En el caso de una {\tt cuenta atrás}, podemos verificar que el bucle
 termina, ya que sabemos que el valor de {\tt n} es finito, y podemos
 ver que ese valor se va haciendo más pequeño cada vez que
-se repite el bucle, de modo que en algún momento se hará 0. Otras veces
-un bucle es obviamente infinito porque no tiene ninguna variable de iteración.
+se repite el bucle, de modo que en algún momento llegará a 0. Otras veces
+un bucle es obviamente infinito, porque no tiene ninguna variable de iteración.
 
 \section{``Bucles infinitos'' y {\tt break}}
 \index{break statement}
@@ -144,7 +144,7 @@ A veces no se sabe si hay que terminar un bucle hasta que se ha
 recorrido la mitad del cuerpo del mismo. En ese caso se puede crear un bucle infinito a propósito
 y usar la sentencia {\tt break} para salir fuera del bucle cuando se desee.
 
-El bucle siguiente es obviamente un {\bf bucle infinito}, porque la
+El bucle siguiente es, obviamente, un {\bf bucle infinito}, porque la
 expresión lógica de la sentencia
 {\tt while} es simplemente la constante lógica {\tt True (verdadero)};
 
@@ -158,16 +158,16 @@ print '¡Terminado!'
 \end{verbatim}
 \afterverb
 %
-Si cometes el error de ejecutar este código, aprenderás enseguida cómo
+Si cometes el error de ejecutar este código, aprenderás rápidamente cómo
 detener un proceso de Python bloqueado en el sistema, o tendrás que localizar dónde
 se encuentra el botón de apagado de tu ordenador.
 Este programa funcionará para siempre,
 o hasta que la batería del equipo se termine,
 ya que la expresión lógica al principio del bucle
-es siempre cierta en virtud del hecho de que esa expresión es
+es siempre cierta, en virtud del hecho de que esa expresión es
 precisamente el valor constante {\tt True}.
  
-A pesar de que en este caso se trata de un bucle infinito inútil, se puede usar ese patrón
+A pesar de que en este caso se trata de un bucle infinito inútil, se puede usar ese modelo
 para construir bucles útiles, siempre que se tenga la precaución de añadir código
 en el cuerpo del bucle para salir explícitamente, usando {\tt break}
 cuando se haya alcanzado la condición de salida.
@@ -189,7 +189,7 @@ print '¡Terminado!'
 La condición del bucle es {\tt True}, lo cual es verdadero siempre, así que
 el bucle se repetirá hasta que se ejecute la sentencia break.
 
-Cada vez que se entre en el bucle, pedirá una entrada al usuario.
+Cada vez que se entre en el bucle, se pedirá una entrada al usuario.
 Si el usuario escribe {\tt fin}, la sentencia {\tt break} hará que se
 salga del bucle. En otro caso, el programa repetirá cualquier cosa que el usuario
 escriba y volverá al principio del bucle. Éste es un ejemplo de su funcionamiento:
@@ -208,7 +208,7 @@ he terminado
 Este modo de escribir bucles {\tt while} es habitual, ya que
 así se puede comprobar la condición en cualquier punto del
 bucle (no sólo al principio), y se puede expresar la condición de parada
-afirmativamente (``detente cuando ocurra''), en vez de tenerlo que hacer con lógica negativa
+afirmativamente (``detente cuando ocurra''), en vez de tener que hacerlo con lógica negativa
 (``sigue funcionando hasta que ocurra'').
 
 \section{Terminando iteraciones con {\tt continue}}
@@ -264,7 +264,7 @@ que se omite la sentencia {\tt print}.
 
 A veces se desea repetir un bucle a través de un {\bf conjunto} de cosas, como
 una lista de palabras, las líneas de un archivo, o una lista de números.
-Cuando se tiene una lista de cosas para ir repitiendo, se puede
+Cuando se tiene una lista de cosas para recorrer, se puede
 construir un bucle \emph{definido} usando una sentencia {\tt for}.
 A la sentencia {\tt while} se la llama un bucle \emph{indefinido},
 porque simplemente se repite hasta que cierta condición se hace {\tt Falsa},
@@ -288,7 +288,7 @@ En términos de Python,
 la variable {\tt amigos} es una lista\footnote{Examinaremos
 las listas con más detalle en un capítulo posterior.}
 de tres cadenas y el bucle {\tt for}
-se mueve a través de la lista y ejecuta su cuerpo una vez
+se mueve recorriendo la lista y ejecuta su cuerpo una vez
 para cada una de las tres cadenas en la lista, produciendo
 esta salida:
 
@@ -315,12 +315,12 @@ reservadas de Python, mientras que {\tt amigo} y {\tt amigos} son variables.
 
 En particular, {\tt amigo} es la {\bf variable de iteración} para
 el bucle for. La variable {\tt amigo} cambia para cada iteración del
-bucle y controla cuándo se completa el bucle {\tt for}. La
-{\bf variable de iteracion} se mueve sucesivamente a través de
+bucle y controla cuándo se termina el bucle {\tt for}. La
+{\bf variable de iteracion} se desplaza sucesivamente a través de
 las tres cadenas almacenadas en la variable {\tt friends}.
 
 
-\section{Patrones de bucles}
+\section{Diseños de bucles}
 
 A menudo se usa un bucle {\tt for} o {\tt while} para movernos a través de una lista de elementos
 o el contenido de un archivo y se busca algo, como el valor
@@ -340,7 +340,7 @@ posiblemente cambiando las variables en ese cuerpo.
 \end{itemize}
 
 Usaremos ahora una lista de números para demostrar los conceptos y construcción
-de estos patrones de bucles.
+de estos diseños de bucles.
 
 \subsection{Bucles de recuento y suma}
 
@@ -384,13 +384,13 @@ print 'Total: ', total
 \end{verbatim}
 \afterverb
 %
-En este bucle, \emph{sí} usamos la {\bf variable de iteración}.
-En vez de añadir simplemente uno a la {\tt contador} como en el bucle previo,
-ahora añadimos el número actual (3, 41, 12, etc) al total en ese momento,
-durante cada iteración del bucle.
+En este bucle, \emph{sí} utilizamos la {\bf variable de iteración}.
+En vez de añadir simplemente uno a {\tt contador} como en el bucle previo,
+ahora durante cada iteración del bucle añadimos el número actual (3, 41, 12, etc.)
+al total en ese momento.
 Si piensas en la variable {\tt total}, ésta contiene la
 ``suma parcial de valores hasta el momento''. Así que antes de que el bucle
-comience, {\tt total} es cero, porque no aún no se ha visto ningún valor.
+comience, {\tt total} es cero, porque aún no se ha examinado ningún valor.
 Durante el bucle, {\tt total} es la suma parcial, y al final del bucle,
 {\tt total} es la suma total definitiva de todos los valores
 de la lista.
@@ -443,7 +443,7 @@ Mayor: 74
 \end{verbatim}
 \afterverb
 %
-La variable {\tt mayor} debe pensarse más bien como
+Debemos pensar en la variable {\tt mayor} como
 el ``mayor valor visto hasta el momento''.
 Antes del bucle, asignamos a {\tt mayor} el valor {\tt None}.
 {\tt None} es un valor constante especial que se puede
@@ -460,7 +460,7 @@ mientras que {\tt mayor} es {\tt None}, inmediatamente
 
 Tras la primera iteración, {\tt mayor} ya no es {\tt None},
 así que la segunda parte de la expresión lógica compuesta que comprueba
-si {\tt valor > mayor} se activa sólo cuando encontramos un valor que es
+si {\tt valor > mayor} se activará sólo cuando encontramos un valor que es
 mayor que el ``mayor hasta el momento''. Cuando encontramos un nuevo valor ``mayor aún'',
 tomamos ese nuevo valor para {\tt mayor}. Se puede ver en la salida
 del programa que {\tt mayor} pasa desde 3 a 41 y luego a 74.
@@ -477,7 +477,7 @@ pequeño cambio:
 menor = None
 print 'Antes:', menor
 for valor in [3, 41, 12, 9, 74, 15]:
-    if menr is None or valor < menor:
+    if menor is None or valor < menor:
         menor = valor
     print 'Bucle:', valor, menor
 print 'Menor:', menor
@@ -512,7 +512,7 @@ que ya está incorporada a Python.
 
 \section{Depuración}
 
-Según vayas escribiendo programas más grandes, puede que notes que vas necesitando
+Según vayas escribiendo programas más grandes, puede que te des cuenta que vas necesitando
 emplear cada vez más tiempo en depurarlos. Más código significa más oportunidades de
 cometer un error y más lugares para que los bugs puedan esconderse.
 
@@ -540,8 +540,8 @@ al menos en teoría.
 En la práctica no siempre está claro qué es
 ``el medio del programa'', y no siempre es posible colocar ahí
 una verificación. No tiene sentido contar las líneas y encontrar
-el punto medio exacto. En lugar de eso, piensa en lugares en el programa
-donde puede haber errores y en lugares donde sea fácil colocar una verificación.
+el punto medio exacto. En lugar de eso, piensa en lugares del programa
+en los cuales pueda haber errores y en lugares donde sea fácil colocar una verificación.
 Luego elige un lugar donde creas que las oportunidades de que el bug
 esté por delante y las de que esté por detrás son más o menos las mismas.
 
@@ -588,7 +588,7 @@ introduzca ``fin''.
 Una vez se haya introducido ``fin'', muestra por pantalla el total, la cantidad de números y la media
 de esos números. Si el usuario introduce cualquier otra cosa que no sea un número,
 detecta su error usando {\tt try} y {\tt except},
-muestra un mensaje de error y pasa al siguiente número.
+muestra un mensaje de error y pasa al número siguiente.
 
 \begin{verbatim}
 Introduce un número: 4

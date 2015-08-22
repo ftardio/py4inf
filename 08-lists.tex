@@ -50,14 +50,14 @@ con unos corchetes vacíos, \verb"[]".
 \index{empty list}
 \index{list!empty}
 
-Como se podría esperar, puedes asignar listas de valores a variables:
+Como es lógico, puedes asignar listas de valores a variables:
 
 \beforeverb
 \begin{verbatim}
 >>> quesos = ['Cheddar', 'Edam', 'Gouda']
 >>> numeros = [17, 123]
 >>> vacia = []
->>> print quesos, numeros, vacio
+>>> print quesos, numeros, vacia
 ['Cheddar', 'Edam', 'Gouda'] [17, 123] []
 \end{verbatim}
 \afterverb
@@ -110,7 +110,7 @@ antes era 123, es ahora 5.
 Puedes pensar en una lista como una relación entre índices y
 elementos. Esta relación recibe el nombre de {\bf mapeo o direccionamiento}; cada índice
 ``dirige a'' uno de los elementos.
- 
+
 
 \index{item assignment}
 \index{assignment!item}
@@ -153,7 +153,7 @@ False
 \afterverb
 
 
-\section{Recorriendo una lista}
+\section{Recorrer una lista}
 \index{list!traversal}
 \index{traversal!list}
 \index{for loop}
@@ -172,7 +172,7 @@ for queso in quesos:
 %
 Esto funciona correctamente si sólo se necesita leer los elementos de la
 lista. Pero si quieres escribir o modificar los elementos,
-se hacen necesarios los índices. Un modo habitual de hacerlo consiste en combinar
+necesitarás los índices. Un modo habitual de hacerlo consiste en combinar
 las funciones {\tt range} y {\tt len}:
 
 \index{looping!with indices}
@@ -190,7 +190,7 @@ devuelve el número de elementos de la lista. {\tt range} devuelve
 una lista de índices desde 0 hasta $n-1$, donde $n$ es la longitud de
 la lista. Cada vez que atravesamos el bucle, {\tt i} obtiene el índice
 del elemento siguiente. La sentencia de asignación en el cuerpo usa
-{\tt i} para leer el valor anterior del elemento y asignarle el
+{\tt i} para leer el valor antiguo del elemento y asignarle el
 valor nuevo.
 
 \index{item update}
@@ -294,8 +294,8 @@ si omites ambos, la rebanada será una copia de la lista completa.
 \afterverb
 %
 Como las litas son mutables, a menudo resultará útil hacer una copia
-antes de realizar operaciones que dupliquen elementos, revuelvan o mutilen
-listas.
+antes de realizar operaciones que dupliquen elementos, los haga rotar o mutile
+las listas.
 
 \index{mutability}
 
@@ -367,7 +367,7 @@ En este ejemplo, {\tt t2} no se modifica.
 \end{verbatim}
 \afterverb
 %
-La mayoría de los métodos de lista no devuelven nada; modican la lista y devuelven {\tt None}.
+La mayoría de los métodos de lista no devuelven nada; modifican la lista y devuelven {\tt None}.
 Si escribes por accidente {\tt t = t.sort()}, seguro que te sientes defraudado
 por el resultado.
 
@@ -376,7 +376,7 @@ por el resultado.
 \index{None special value}
 \index{special value!None}
 
-\section{Borrando elementos}
+\section{Borrado de elementos}
 
 \index{element deletion}
 \index{deletion, element of list}
@@ -451,13 +451,13 @@ un índice de rebanada:
 \end{verbatim}
 \afterverb
 %
-Como de costumbre, el método de rebanado selecciona todos los elementos hasta, pero
-no incluyendo, el segundo índice.
+Como de costumbre, el método de rebanado selecciona todos los elementos hasta (pero
+sin incluir) el segundo índice.
 
 \section{Listas y funciones}
 
-Hay un número de funciones incorporadas que pueden utilizarse en las listas
-y que nos permiten buscar rápidamente a través de una lista
+Hay varias funciones incorporadas que pueden utilizarse en las listas
+y que nos permiten buscar rápidamente a través de ellas
 sin tener que escribir nuestros propios bucles:
 
 \beforeverb
@@ -490,7 +490,7 @@ Primero, el programa que calculaba la media sin usar listas:
 total = 0
 contador = 0
 while ( True ) :
-    ent = raw_input('Introduzce un número: ')
+    ent = raw_input('Introduce un número: ')
     if ent == 'fin' : break
     valor = float(ent)
     total = total + valor
@@ -507,7 +507,7 @@ según éste los va introduciendo.
 
 Podemos simplemente guardar cada número que el usuario introduzca
 y usar las funciones incorporadas para calcular la suma y la cantidad
-de números al final.
+de números introducidos al final.
 
 \beforeverb
 \begin{verbatim}
@@ -624,12 +624,12 @@ cadenas sin espacios, puedes usar la cadena vacía,
 \index{string!empty}
 
 
-\section{Analizando líneas}
+\section{Análisis de líneas}
 
 Normalmente, cuando se está leyendo un archivo,
 se deseará hacer con las líneas algo más que simplemente
 imprimirlas completas en pantalla. A menudo se querrán encontrar
-las ``líneas interesantes'' y luego {\bf analizar} cada una de ellas
+las ``líneas interesantes'' y luego {\bf parsear (analizar)} cada una de ellas
 para buscar alguna \emph{parte} importante en su interior. ¿Qué ocurre si queremos
 imprimir el día de la semana de aquellas líneas que comienzan por ``From ''?
 
@@ -797,7 +797,7 @@ afectarán al otro:
 \end{verbatim}
 \afterverb
 %
-A pesar de que este comportamiento puede resultar útil, resulta también propenso a errores. En general,
+A pesar de que este comportamiento puede resultar útil, es también propenso a errores. En general,
 resulta más seguro evitar usar alias cuando se está trabajando con objetos
 mutables.
 
@@ -828,21 +828,21 @@ a la misma cadena o no.
 Cuando se pasa una lista a una función, la función recibe una referencia
 de esa lista.
 Si la función modifica un parámetro de la lista, el código que la ha llamado también se verá afectado por el cambio.
-Por ejemplo, \verb"borra_primero" elimina el primer elemento de una lista:
+Por ejemplo, \verb"borra_primer" elimina el primer elemento de una lista:
 
 \beforeverb
 \begin{verbatim}
-def borra_primero(t):
+def borra_primer(t):
     del t[0]
 \end{verbatim}
 \afterverb
 %
-He aquí cómo lo hemos usado:
+Y aquí vemos el modo lo hemos usado:
 
 \beforeverb
 \begin{verbatim}
 >>> letras = ['a', 'b', 'c']
->>> borra_primero(letras)
+>>> borra_primer(letras)
 >>> print letras
 ['b', 'c']
 \end{verbatim}
@@ -884,7 +884,7 @@ se supone que modificarán listas. Por ejemplo, esta función
 
 \beforeverb
 \begin{verbatim}
-def no_borra_primero(t):
+def no_borra_primer(t):
     t = t[1:]              # ¡INCORRECTO!
 \end{verbatim}
 \afterverb
@@ -984,7 +984,7 @@ están documentados en
 Parte del problema con las listas es que hay demasiados
 modos de hacer las cosas. Por ejemplo, para eliminar un elemento de
 una lista, se puede usar {\tt pop}, {\tt remove}, {\tt del},
-o incluso una asignación de rebanada.
+o incluso una asignación de rebanado.
 
 Para añadir un elemento, se puede usar el método {\tt append} o
 el operador {\tt +}. Pero no olvides que esto es correcto:
@@ -1030,7 +1030,7 @@ t.sort()
 \afterverb
 
 En este ejemplo, puedes usar también la función incorporada {\tt sorted},
-que devuelve una nueva lista ordenada, y deja el original sin modificar.
+que devuelve una nueva lista ordenada, y deja la original sin modificar.
 Pero en ese caso, ¡recuerda no utilizar {\tt sorted} como nombre de
 variable!
 
@@ -1084,23 +1084,23 @@ IndexError: list index out of range
 \afterverb
 %
 Parece funcionar, y podemos ver el día de la primera línea
-(Sat), pero luego el programa falla con un error y su traceback.
+(Sat), pero luego el programa falla con un error y su traceback correspondiente.
 ¿Qué es lo que ha ido mal? ¿Qué desastroso dato ha provocado que nuestro elegante,
 ingenioso, y muy Pythónico programa haya fallado?
 
 Puedes revisarlo durante largo rato y romperte la cabeza
-con él, o pedir ayuda a alguien, pero la aproximación más
-rápida e inteligente es añadir una sentencia {\tt print}. El mejor lugar
+con él, o pedir ayuda a alguien, pero el enfoque más
+rápido e inteligente consiste en añadir una sentencia {\tt print}. El mejor lugar
 para situarla es justo antes de la línea en la que
 falla el programa, e imprimir el dato que parecer ser el causante
-del fallo.
+del error.
 
-Esa aproximación puede generar un montón de líneas en la salida, pero
+Ese enfoque puede generar un montón de líneas en la salida, pero
 al menos tendrás a mano inmediatamente alguna pista acerca
 del problema. De modo que imprimiremos la variable
 {\tt palabras} justo antes de la línea cinco. Incluso
-añadiremos el prefijo ``Debug:'' a la línea, de modo que
-podemos mantener nuestra salida normal separada de la de depuración:
+añadiremos el prefijo ``Debug:'' a la línea, para que
+podamos mantener nuestra salida normal separada de la de depuración:
 
 \beforeverb
 \begin{verbatim}
@@ -1177,9 +1177,9 @@ usamos {\tt continue} para saltar a la siguiente línea del archivo.
 
 Podemos pensar en las dos sentencias {\tt continue} como ayudas para seleccionar
 el conjunto de líneas que nos resultan ``interesantes'' y que querremos
-procesar un poco más. Una línea que no tiene palabras resulta ``no-interesante'' para
+procesar un poco más. Una línea que no tiene palabras resulta ``irrelevante'' para
 nosotros, de modo que saltamos a la siguiente. Una línea que no tiene ``From''
-como primera palabra tampoco resulta interesante para nosotros, así que también la saltaremos.
+como primera palabra también resulta irrelevante para nosotros, así que también la saltaremos.
 
 El programa modificado funciona correctamente, así que tal vez sea correcto. Nuestra
 sentencia guardián nos asegura que {\tt palabras[0]} no fallará nunca,
@@ -1189,7 +1189,7 @@ estar pensando: ``¿Qué podría ir mal?''
 \begin{ex}
 
 Averigua qué línea del programa anterior aún no está suficientemente protegida.
-Mira a ver si puedes construir un archivo de texto que provoque que el programa falle,
+Intenta construir un archivo de texto que provoque que el programa falle,
 luego modifica el programa para que esa línea quede protegida adecuadamente, y
 pruébalo para asegurarte de que es capaz de manejar tu nuevo archivo de texto.
 
@@ -1305,7 +1305,7 @@ ray@media.berkeley.edu
 cwen@iupui.edu
 cwen@iupui.edu
 cwen@iupui.edu
-Hay 27 lines en el archivo con From como primera palabra
+Hay 27 lineas en el archivo con From como primera palabra
 \end{verbatim}
 \afterverb
 %
@@ -1335,4 +1335,3 @@ Mínimo: 2.0
 %
 
 \end{ex}
-

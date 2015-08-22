@@ -13,8 +13,8 @@
    height="381.66666"
    id="svg2826"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="New document 3">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cursor.svg">
   <defs
      id="defs2828">
     <marker
@@ -66,16 +66,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.75"
-     inkscape:cx="295.5"
+     inkscape:cx="324.83333"
      inkscape:cy="197.83333"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="923"
-     inkscape:window-height="663"
-     inkscape:window-x="70"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata2831">
     <rdf:RDF>
@@ -84,7 +84,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -152,7 +152,7 @@
          id="tspan3628">R</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="203.99998"
        y="367.33334"
        id="text3630"
@@ -160,21 +160,27 @@
          sodipodi:role="line"
          id="tspan3632"
          x="203.99998"
-         y="367.33334">Your</tspan><tspan
+         y="367.33334">Tu</tspan><tspan
          sodipodi:role="line"
          x="203.99998"
          y="417.33334"
-         id="tspan3634">Program</tspan></text>
+         id="tspan3634">Programa</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="500.00003"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+       x="593.46094"
        y="105.99999"
        id="text3636"><tspan
          sodipodi:role="line"
          id="tspan3638"
-         x="500.00003"
-         y="105.99999">Database</tspan></text>
+         x="593.46094"
+         y="105.99999"
+         style="text-align:center;text-anchor:middle">Base de</tspan><tspan
+         sodipodi:role="line"
+         x="593.46094"
+         y="156"
+         id="tspan3376"
+         style="text-align:center;text-anchor:middle">datos</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"

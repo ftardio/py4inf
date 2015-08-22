@@ -26,7 +26,7 @@ de un socket, se obtienen los datos que la otra aplicación ha enviado.
 
 Pero si intentas leer de un socket cuando el programa que está al otro lado
 no ha enviado ningún dato---puedes esperar sentado. Si los programas de ambos extremos
-del socket simplemente esperan recibir datos sin enviar nada, esperarán durante mucho,
+del socket simplemente intentan recibir datos sin que ninguno envié nada, esperarán durante mucho,
 mucho tiempo.
 
 De modo que una parte importante de los programas que se comunican a través de Internet es tener algún
@@ -50,7 +50,7 @@ enviamos una línea como esta
 {\tt GET http://www.py4inf.com/code/romeo.txt HTTP/1.0 }
 
 donde el segundo parámetro es la página web que estamos solicitando, seguido
-de una línea en blanco. El servidor web responderá con una cabecera con cierta
+de una línea en blanco. El servidor web responderá con una cabecera que contiene cierta
 información acerca del documento y una línea en blanco,
 seguido por el contenido del documento.
 
@@ -73,7 +73,7 @@ while True:
     datos = mysock.recv(512)
     if ( len(datos) < 1 ) :
         break
-    print data
+    print datos
 
 mysock.close()
 \end{verbatim}
@@ -135,7 +135,7 @@ el protocolo web HTTP, Python posee una librería
 especial específicamente diseñada para trabajar con ese protocolo
 y recibir documentos y datos a través de la web.
 
-\section{Recibiendo una imagen mediante HTTP}
+\section{Recepción de una imagen mediante HTTP}
 
 \index{urllib!image}
 \index{image!jpg}
@@ -272,7 +272,7 @@ que envía los datos o de la que los recibe se llama
 ``control de flujo''.
 \index{flow control}
 
-\section{Recibiendo páginas web con {\tt urllib}}
+\section{Recepción de páginas web con {\tt urllib}}
 
 A pesar de que es posible enviar y recibir datos manualmente a través de HTTP
 usando la librería socket, existe en Python un modo mucho más sencillo de
@@ -282,7 +282,7 @@ usando la librería {\tt urllib}.
 Al usar {\tt urllib},
 es posible tratar una página web de forma mucho más parecida a un fichero. Se puede
 indicar simplemente qué página web se desea recuperar y
-{\tt urllib} se encargará de manejar todo lo referente al protocolo HTTP y
+{\tt urllib} se encargará de gestionar todo lo referente al protocolo HTTP y
 los detalles de la cabecera.
 
 El código equivalente para leer el fichero {\tt romeo.txt}
@@ -303,8 +303,8 @@ Una vez que la página web ha sido abierta con
 un archivo y leer a través de ella usando un
 bucle {\tt for}.
 
-Cuando el programa se ejecuta, sólo obtenemos la
-salida con el contenido del fichero. Las cabeceras
+Cuando el programa se ejecuta, en su salida
+sólo vemos el contenido del fichero. Las cabeceras
 siguen enviándose, pero el código de {\tt urllib}
 se queda con ellas y sólo nos devuelve
 los datos.
@@ -341,7 +341,7 @@ print contadores
 Vemos de nuevo que una vez abierta la página web
 se puede leer como si fuera un fichero local.
 
-\section{Analizando HTML y rascando la web}
+\section{Análisis de HTML y rascado de la web}
 \index{web!scraping}
 \index{parsing HTML}
 
@@ -356,11 +356,11 @@ esas páginas, extrayendo los enlaces que haya en ellas y así sucesivamente. Us
 las  {\bf arañas} de Google se mueven por casi todas las páginas de
 la web.
 
-Google utiliza también la frecuencia de los enlaces de las páginas que encuentra
+Google utiliza también la frecuencia con que las páginas que encuentra enlazan
 hacia una página concreta como medida de la ``importancia'' de
 esa página, y en qué posición debe aparecer en sus resultados de búsqueda.
 
-\section{Analizando HTML mediante expresiones regulares}
+\section{Análisis de HTML mediante expresiones regulares}
 
 Un modo sencillo de analizar HTML consiste en usar expresiones regulares para
 hacer búsquedas repetidas que extraigan subcadenas que coincidan con un patrón concreto.
@@ -440,13 +440,13 @@ http://www.py4inf.com/py4inf-slides.zip
 \afterverb
 %
 Las expresiones regulares funcionan muy bien cuando el HTML está bien formado
-y es predecible. Pero dado que hay muchas páginas con HTML ``defectuoso''
-ahí fuera, una solución usando solamente expresiones regulares puede o bien
+y es predecible. Pero dado que ahí fuera hay muchas páginas con HTML ``defectuoso'',
+una solución usando solamente expresiones regulares puede o bien
 perder parte de los enlaces correctos, o bien terminar obteniendo datos erróneos.
 
 Esto se puede resolver usando una librería de análisis de HTML robusta.
 
-\section{Analizando HTML mediante BeautifulSoup}
+\section{Análisis de HTML mediante BeautifulSoup}
 \index{BeautifulSoup}
 
 Hay un buen número de librerías en Python que pueden ayudarte a analizar
@@ -588,12 +588,12 @@ luego abre el fichero {\tt portada.jpg} y escribe los datos en el
 disco. Esto funcionará sólo si el tamaño del fichero es menor que el tamaño
 de la memoria de tu ordenador.
 
-Sin embargo, si se trata de un fichero enorme de audio o video, este programa puede fallar
+Sin embargo, si se trata de un fichero enorme de audio o video, el programa puede fallar
 o al menos funcionar extremadamente lento cuando el ordenador se quede sin memoria.
 Para evitar agotar la memoria, vamos a recuperar los datos en bloques
 (o buffers), y luego escribiremos cada bloque en el disco antes de recuperar
 el siguiente. De este modo el programa podrá leer archivos de cualquier tamaño sin
-usar toda la memoria que tenga el ordenador.
+usar toda la memoria del equipo.
 
 \beforeverb
 \begin{verbatim}
@@ -601,7 +601,7 @@ import urllib
 
 img = urllib.urlopen('http://www.py4inf.com/cover.jpg')
 manf = open('portada.jpg', 'w')
-size = 0
+tamano = 0
 while True:
     info = img.read(100000)
     if len(info) < 1 : break
@@ -644,7 +644,7 @@ ejemplos se han llamado astutamente {\tt curl1.py} y {\tt curl2.py} en
 \url{www.py4inf.com/code}, ya que implementan una funcionalidad similar
 a la del comando {\tt curl}. Existe también un programa de ejemplo {\tt curl3.py}
 que realiza la misma tarea de forma un poco más eficiente, en caso de
-que quieras usar realmente este patrón en algún programa que estés escribiendo.
+que quieras usar de verdad este patrón en algún programa que estés escribiendo.
 
 \section{Glosario}
 
@@ -665,21 +665,21 @@ Por ejemplo, el tráfico web normalmente usa el puerto 80, mientras que el tráf
 del correo electrónico usa el puerto 25.
 \index{port}
 
-\item[rascar:] Cuando un programa simula ser un navegador web y
-recupera una página web, y luego realiza una búsqueda en su contenido.
-A menudo los programas siguen los enlaces en una página para encontrar la
-siguiente, de modo que pueden atravesar una red de páginas o una red social.
-\index{scrape}
+\item[rastrear:] La acción de un motor de búsqueda web de recuperar una página
+y luego todas las páginas enlazadas por ella, continuando así sucesivamente hasta que
+tiene casi todas las páginas de Internet, que
+usan para construir su índice de búsqueda.
+\index{spider}
 
 \item[socket:] Una conexión de red entre dos aplicaciones,
 en la cual dichas aplicaciones pueden enviar y recibir datos en ambas direcciones.
 \index{socket}
 
-\item[araña:] La acción de un motor de búsqueda web de recuperar una página
-y luego todas las páginas enlazadas por ella, continuando así sucesivamente hasta que
-tiene casi todas las páginas de Internet, que
-usan para construir su índice de búsqueda.
-\index{spider}
+\item[scraping (rascado):] Cuando un programa simula ser un navegador web y
+recupera una página web, y luego realiza una búsqueda en su contenido.
+A menudo los programas siguen los enlaces en una página para encontrar la
+siguiente, de modo que pueden atravesar una red de páginas o una red social.
+\index{scrape}
 
 \end{description}
 

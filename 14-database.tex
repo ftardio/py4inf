@@ -1,7 +1,7 @@
 % The contents of this file is 
 % Copyright (c) 2009-  Charles R. Severance, All Righs Reserved
 
-\chapter{Usando bases de datos y Lenguaje de Consultas eStructurado (SQL)}
+\chapter{Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}
 
 \section{¿Qué es una base de datos?}
 \index{database}
@@ -76,9 +76,9 @@ se puede aplicar al trabajo con bases de datos. Se realizarán las
 operaciones más sencillas en el gestor de bases de datos, y para otras más complejas
 será más conveniente usar Python.
 
-\section{Creando una tabla en una base de datos}
+\section{Creación de una tabla en una base de datos}
 
-Las bases de datos necesitas estructuras más definidas que las listas
+Las bases de datos necesitas una estructura más definida que las listas
 o diccionarios de Python\footnote{SQLite en realidad permite cierta
 flexibilidad respecto al tipo de datos que se almacenan en cada columna,
 pero en este capítulo nosotros vamos a mantener los tipos de datos estrictos
@@ -185,9 +185,9 @@ cur.execute('CREATE TABLE Canciones (titulo TEXT, reproducciones INTEGER)')
 \afterverb
 %
 Ahora que ya hemos creado la tabla llamada {\tt Canciones}, podemos guardar
-algunos datos en la tabla usando la operación de SQL {\tt INSERT}. Empezaremos otra vez
-realizando una conexión con la base de datos y obteniendo el {\tt cursor}.
-Luego podremos ejecutar comandos SQL usando ese cursor.
+algunos datos en ella usando la operación de SQL {\tt INSERT}. Empezaremos
+realizando otra vez una conexión con la base de datos y obteniendo el {\tt cursor}.
+Luego podremos ejecutar comandos SQL utilizando ese cursor.
 
 El comando {\tt INSERT} de SQL indica qué tabla se está utilizando
 y luego define una fila nueva, enumerando los campos que se desean
@@ -271,7 +271,7 @@ la base de datos.
 \section{Resumen de Lenguaje de Consultas eStructurado}
 
 Hasta ahora, hemos estado usando el Lenguaje de Consultas eStructurado en nuestros
-ejemplos de Python y hemos cubierto muchos de los comandos básicos de SQL.
+ejemplos de Python y hemos usado muchos de los comandos básicos de SQL.
 En esta sección, nos centraremos en el lenguaje SQL en particular
 y echaremos un vistazo a su sintaxis.
 
@@ -347,7 +347,7 @@ DELETE FROM Canciones WHERE titulo = 'My Way'
 \end{verbatim}
 \afterverb
 %
-Es posible {\tt actualizar (UPDATE)} una columna o varios de una o más filas
+Es posible {\tt actualizar (UPDATE)} una columna o varias de una o más filas
 en una tabla usando la sentencia de SQL {\tt UPDATE}, como se muestra a continuación:
 
 \beforeverb
@@ -376,7 +376,7 @@ demasiados datos o ejecutas el programa durante demasiado tiempo
 pueden terminar cortándote el acceso a Twitter.}
 
 Uno de los problemas de cualquier tipo de programa araña es que se
-hace necesario poder detenerlo y volverlo a poner en marcha muchas veces y
+necesita poder detenerlo y volverlo a poner en marcha muchas veces y
 no queremos perder los datos que hayamos recuperado hasta ese momento.
 No querrás tener que empezar siempre la recuperación de datos desde
 el principio, de modo que necesitaremos almacenar los datos según los vamos recuperando para
@@ -395,7 +395,7 @@ También rastrearemos cuántas veces hemos visto un amigo concreto en la
 base de datos para tener una idea de su ``popularidad''.
 
 Al almacenar nuestra lista de cuentas de conocidos,
-de cuándo hemos recuperado una cuenta o no,
+de cuándo hemos recuperado una cuenta o no
 y de la popularidad de cada cuenta
 en una base datos en el disco del ordenador,
 podremos detener y volver a poner en marcha el programa tantas veces como queramos. 
@@ -581,7 +581,7 @@ Este programa simplemente abre la base de datos y selecciona todas las columnas
 de todas las filas de la tabla {\tt Twitter}, luego
 se mueve a través de las filas e imprime en pantalla su contenido.
 
-Si ejecutamos este programa después de la primera ejecución de nuestra araña
+Si lanzamos este programa después de la primera ejecución de nuestra araña
 de Twitter, la salida que mostrará será parecida a ésta:
 
 \beforeverb
@@ -693,7 +693,7 @@ Cada vez que ejecutamos el programa y pulsamos intro, se elegirá la siguiente
 cuenta no visitada (es decir, ahora la siguiente cuenta sería \verb"steve_coppin"),
 recuperará sus amigos, los marcará como recuperados, y para cada uno de los
 amigos de \verb"steve_coppin" o bien lo añadirá al final de la
-base de datos o bien actualizará su contador de amigos si ya está en la
+base de datos o bien actualizará su contador de amigos si ya estaba en la
 tabla.
 
 Como ves, al estar los datos del programa almacenados en el disco en una base de datos,
@@ -817,7 +817,7 @@ conectadas y (b) la dirección de la relación.
 \afterfig
 
 
-\section{Programando con múltiples tablas}
+\section{Programación con múltiples tablas}
 
 A continuación reharemos de nuevo el programa araña de Twitter usando dos tablas, las claves
 primarias, y las claves de referencia, como hemos descrito antes. He aquí el código
@@ -907,7 +907,7 @@ cur.close()
 \afterverb
 %
 Este programa empieza a resultar un poco complicado, pero ilustra
-los patrones que debemos usar cuando utilizamos
+los patrones de diseño que debemos usar cuando utilizamos
 claves enteras para enlazar tablas. Esos patrones básicos son:
 
 \begin{enumerate}
@@ -988,7 +988,7 @@ no existe aún en la tabla {\tt Personas}, debemos insertar
 el registro y obtener el valor del {\tt id} de la fila
 recién insertada.
 
-Éste es un enfoque muy habitual y se realiza dos veces en el programa anterior.
+Éste es un diseño muy habitual y se realiza dos veces en el programa anterior.
 Este código muestra cómo se busca el {\tt id} de la
 cuenta de un amigo una vez extraído su \verb"screen_name"
 desde un nodo de {\tt usuario} del JSON recuperado desde Twitter.
@@ -1039,7 +1039,7 @@ Si el {\tt INSERT} tiene éxito, podemos usar {\tt cur.lastrowid}
 para averiguar el valor que la base de datos ha asignado a la columna {\tt id}
 en nuestra fila recién creada.
 
-\subsection{Almacenando la relación entre amigos}
+\subsection{Almacenado de relaciones entre amigos}
 
 Una vez que sabemos el valor de la clave tanto para del usuario de Twitter
 como para el amigo que hemos extraído del JSON, resulta sencillo insertar
@@ -1155,7 +1155,7 @@ convención de nombres para darle siempre al campo de clave primaria el nombre
 {\tt id} y añadir el sufijo \verb"_id" a cualquier nombre de campo
 que sea una clave foránea.
 
-\section{Usando JSON para recuperar datos}
+\section{Uso de JSON para recuperar datos}
 
 Ahora que hemos cumplido con las reglas de la normalización de bases de datos
 y hemos separado los datos en dos tablas, enlazándolas entre sí usando

@@ -14,7 +14,7 @@
    height="383.66666"
    id="svg4574"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="if-else.svg">
   <defs
      id="defs4576">
@@ -47,16 +47,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.6"
-     inkscape:cx="478.75871"
+     inkscape:cx="515.42538"
      inkscape:cy="155.98665"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="997"
-     inkscape:window-height="649"
-     inkscape:window-x="205"
-     inkscape:window-y="11"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata4579">
     <rdf:RDF>
@@ -65,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -105,14 +105,14 @@
        y="51.716011" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="745.33337"
        y="101.66669"
        id="text5574"><tspan
          sodipodi:role="line"
          id="tspan5576"
          x="745.33337"
-         y="101.66669">print 'x is even'</tspan></text>
+         y="101.66669">print 'x es par'</tspan></text>
     <path
        style="fill:none;stroke:#800000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
        d="m 726.84852,1.5151892 169.3363,0 0,48.6362918"
@@ -123,14 +123,14 @@
        id="path5766" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#800000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#800000;fill-opacity:1;stroke:none"
        x="733.66669"
        y="-16.666672"
        id="text6136"><tspan
          sodipodi:role="line"
          id="tspan6138"
          x="733.66669"
-         y="-16.666672">yes</tspan></text>
+         y="-16.666672">sí</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#008000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -166,14 +166,14 @@
        y="55.477875" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="86.621323"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+       x="60.621323"
        y="102.66669"
        id="text6198"><tspan
          sodipodi:role="line"
          id="tspan6200"
-         x="86.621323"
-         y="102.66669">print 'x is odd'</tspan></text>
+         x="60.621323"
+         y="102.66669">print 'x es impar'</tspan></text>
     <path
        style="fill:none;stroke:#008000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
        d="M 388.33333,196.66667 205,195 c 0,6.66667 0,51.66667 0,51.66667"

@@ -152,7 +152,7 @@ otro carácter. Mira la documentación detallada para obtener información sobre
 el comportamiento codicioso.
 \index{greedy}
 
-\section{Extraer datos usando expresiones regulares}
+\section{Extracción de datos usando expresiones regulares}
 
 Si queremos extraer datos desde una cadena en Python, podemos usar el método {\tt findall()} para
 obtener todas las subcadenas que coinciden con una expresión regular. Pongamos como ejemplo que
@@ -187,7 +187,7 @@ print lst
 %
 El método {\tt findall()} busca la cadena que se le pasa como segundo argumento y devuelve una lista de
 todas las cadenas que parecen direcciones de e-mail. Estamos usando una secuencia de dos caracteres
-que coinciden con un carácter que no sea un espacio en blanco ({\textbackslash}S). 
+que equivale a cualquier carácter distinto de un espacio en blanco ({\textbackslash}S). 
 
 La salida del programa sería:
 
@@ -305,7 +305,7 @@ ha encontrado que ``coincide'' (es decir, la ``g'' en este caso).
 Fíjate también que la salida de este programa tiene, en cada línea, una lista de Python que contiene una cadena como
 único elemento.
 
-\section{Combinando búsqueda y extracción}
+\section{Combinar búsqueda y extracción}
 
 Si queremos encontrar números en líneas que comienzan con la cadena ``X-'', como en:
 
@@ -333,7 +333,7 @@ uno o más caracteres que sean o bien dígitos (0-9) o puntos ``[0-9.]+''.
 Fíjate que dentro de los corchetes, el punto coincide con un punto real (es decir, dentro de los corchetes
 no actúa como comodín).
 
-Se trata de una expresión muy rigurosa, que coincidirá más o menos con las líneas en las que
+Se trata de una expresión muy rigurosa, que localizará bastante bien sólo las líneas en las que
 estamos interesados:
 
 \beforeverb
@@ -404,11 +404,11 @@ La salida de este programa es la siguiente:
 \afterverb
 %
 Los número siguen estando en una lista y necesitan ser convertidos de cadenas a números en punto flotante, pero
-hemos usado el poder de las expresiones regulares para realizan tanto la búsqueda como la extracción de información
+hemos usado el poder de las expresiones regulares para realizar tanto la búsqueda como la extracción de información
 que nos resulta interesante.
 
 Como otro ejemplo de esta técnica, si observas el archivo hay un cierto número de líneas
-de la forma:
+con esta forma:
 
 \beforeverb
 \begin{verbatim}
@@ -449,9 +449,9 @@ Cuando ejecutamos el programa, obtenemos la salida siguiente:
 \afterverb
 %
 Recuerda que el ``[0-9]+'' es ``codicioso'', e intentará conseguir una cadena de dígitos tan larga
-como sea posible antes de extraer esos dígitos. Este comportamiento ``codicioso'' el el motivo por el que obtenemos
+como sea posible antes de extraer esos dígitos. Este comportamiento ``codicioso'' es el motivo por el que obtenemos
 los cinco dígitos de cada número. La librería de expresiones regulares se expande en ambas direcciones hasta que
-encuentra un no-dígito, o el comienzo o el final de una línea.
+encuentra un no-dígito, o el comienzo o final de una línea.
 
 Ahora ya podemos usar expresiones regulares para rehacer un ejercicio anterior del libro, en el cual estábamos
 interesados en la hora de cada mensaje de e-mail. Buscamos líneas de la forma:
@@ -467,9 +467,9 @@ y queremos extraer la hora del día de cada linea. Anteriormente lo hicimos con 
 de nuevo usando el carácter dos-puntos para extraer los dos caracteres en los que estábamos interesados.
 
 % Añadir una sección con la noción de código frágil
-A pesar de que esto funciona, en realidad se está generando un código bastante frágil que asume todas las líneas
+A pesar de que esto funciona, en realidad se está generando un código bastante frágil que asume que todas las líneas
 están perfectamente formateadas. Hay que añadir suficiente comprobación de errores (o un gran bloque try/except)
-para asegurarte de que tu programa nunca fallará cuando se encuentre con líneas incorrectamente formateadas, de
+para asegurarse de que el programa nunca fallará cuando se encuentre con líneas incorrectamente formateadas, de
 modo que el código aumentaría en 10-15 líneas bastante difíciles de leer.
 
 Podemos lograr lo mismo de un modo mucho más sencillo con la siguiente expresión regular:
@@ -482,7 +482,7 @@ Podemos lograr lo mismo de un modo mucho más sencillo con la siguiente expresi�
 %
 La traducción de esta expresión regular es que estamos buscando líneas que comiencen con ``From ''
 (fíjate en el espacio), seguidas por cualquier número de caracteres (``.*''), seguidos por un espacio,
-seguidos por dos dígitos ``[0-9][0-9]'', seguidos por un carácter dos-puntos. Esta es la definición del tipo de
+seguidos por dos dígitos ``[0-9][0-9]'', seguidos por un carácter dos-puntos. Ésa es la definición del tipo de
 líneas que estamos buscando.
 
 Para extraer sólo la hora usando {\tt findall()}, vamos a añadir paréntesis alrededor de los dos dígitos,
@@ -519,13 +519,13 @@ Cuando el programa se ejecuta, produce la siguiente salida:
 \end{verbatim}
 \afterverb
 %
-\section{Escape de caracteres}
+\section{Escapado de caracteres}
 
 A pesar de que usamos caracteres especiales en las expresiones regulares para encontrar el principio o el final
 de una línea, o los utilizamos como comodines, necesitamos un modo de indicar cuándo esos caracteres son
 ``normales'' y queremos encontrar el carácter real, como un signo de dolar o uno de intercalación.
 
-Podemos indicar que queremos simplemente encontrar un carácter, escapando ése carácter con
+Podemos indicar que queremos simplemente encontrar un carácter, escapando ese carácter con
 una barra invertida. Por ejemplo, podemos encontrar cantidades de dinero con la expresión regular
 siguiente:
 
@@ -537,7 +537,7 @@ y = re.findall('\$[0-9.]+',x)
 \end{verbatim}
 \afterverb
 %
-Dado que hemos antepuesto una contrabarra al signo dólar, ahora equivaldrá al símbolo del dolar
+Dado que hemos antepuesto una barra invertida al signo dólar, ahora equivaldrá al símbolo del dolar
 en la cadena de entrada, en lugar de equivaler al ``final de la línea'', y el resto de la expresión
 regular buscará uno o más dígitos o el carácter punto. {\em Nota:} Dentro de los corchetes,
 los caracteres no son ``especiales''. De modo que cuando escribimos ``[0-9.]'', en realidad
@@ -582,7 +582,7 @@ Se aplica al carácter que le precede e indica que la búsqueda debe coincidir u
 en ``modo no-codicioso''.
 
 [aeiou] \newline
-Coincide con un único carácter siempre que ése carácter esté en el conjunto especificado. En este ejemplo,
+Coincide con un único carácter siempre que ese carácter esté en el conjunto especificado. En este ejemplo,
 deberían coincidir ``a'', ``e'', ``i'', ``o'', o ``u'', pero no los demás caracteres.
 
 [a-z0-9] \newline
@@ -767,14 +767,13 @@ muestra al final la media obtenida.
 
 \beforeverb
 \begin{verbatim}
-Introduce archivo:mbox.txt 
+Introduce fichero:mbox.txt 
 38549.7949721
 
-Introduce archivo:mbox-short.txt
+Introduce fichero:mbox-short.txt
 39756.9259259
 \end{verbatim}
 \afterverb
 %
 
 \end{ex}
-

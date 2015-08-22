@@ -9,8 +9,9 @@
 \index{logical operator}
 \index{operator!logical}
 
-Una {\bf expresión booleana} es aquella que puede ser verdadera (true)
-o falsa (false). Los ejemplos siguientes usan el operador
+Una {\bf expresión booleana} es aquella que puede ser verdadera (True)
+o falsa (False). Los ejemplos siguientes usan el operador
+{\tt ==}, que compara dos operandos y devuelve
 {\tt True} si son iguales y {\tt False} en caso contrario:
 
 \beforeverb
@@ -107,7 +108,7 @@ True
 \afterverb
 %
 Esta flexibilidad puede ser útil, pero existen ciertas sutilezas en
-ello que pueden resultar confusas. Puede que quieras evitar usarlo así
+ello que pueden resultar confusas. Es posible que prefieras evitar usarlo de este modo
 hasta que estés bien seguro de lo que estás haciendo.
 
 \section{Ejecución condicional}
@@ -168,7 +169,7 @@ caso, se puede usar la sentencia {\\tt pass}, que no hace nada.
 \beforeverb
 \begin{verbatim}
 if x < 0 :
-    pass          # ¡necesito manejar los valores negativos!
+    pass          # ¡necesito controlar los valores negativos!
 \end{verbatim}
 \afterverb
 %
@@ -182,7 +183,7 @@ se muestra a continuación:
 >>> if x < 10:
 ...    print 'Pequeño'
 ... 
-Small
+Pequeño
 >>>
 \end{verbatim}
 \afterverb
@@ -197,7 +198,7 @@ Small
 
 La segunda forma de la sentencia {\tt if} es la {\bf ejecución alternativa},
 en la cual existen dos posibilidades y la condición determina
-cual de ellas será ejecutada. La sintaxis se parece a esta:
+cual de ellas será ejecutada. La sintaxis es similar a ésta:
 
 \beforeverb
 \begin{verbatim}
@@ -228,7 +229,7 @@ las alternativas será ejecutada. Las alternativas reciben el nombre de
 \index{conditional!chained}
 
 Algunas veces hay más de dos posibilidades, de modo que necesitamos más
-de dos ramas. Una forma de expresar un cálculo como ese es usar un
+de dos ramas. Una forma de expresar un cálculo como ése es usar un
 {\bf condicional encadenado}:
 
 \beforeverb
@@ -262,9 +263,9 @@ al final, pero tampoco es obligatorio que ésta exista.
 if choice == 'a':
     print 'Respuesta incorrecta'
 elif choice == 'b':
-    print 'Respuesta acertada'
+    print 'Respuesta correcta'
 elif choice == 'c':
-    print 'Casi, pero no has acertado'
+    print 'Casi, pero no es correcto'
 \end{verbatim}
 \afterverb
 %
@@ -305,7 +306,7 @@ pero podrían haber sido sentencias condicionales también.
 
 A pesar de que el sangrado de las sentencias hace que la estructura
 esté clara, los {\bf condicionales anidados} pueden volverse difíciles
-de leer enseguida. En general, es buena idea evitarlos si se puede.
+de leer rápidamente. En general, es buena idea evitarlos si se puede.
 
 Los operadores lógicos a menudo proporcionan un modo de simplificar las
 sentencias condicionales anidadas. Por ejemplo, el código siguiente
@@ -330,7 +331,7 @@ if 0 < x and x < 10:
 \afterverb
 
 
-\section{Capturando excepciones usando try y except}
+\section{Captura de excepciones usando try y except}
 \label{catch1}
 
 Anteriormente vimos un fragmento de código donde usábamos las funciones \verb"raw_input" e
@@ -376,7 +377,7 @@ print cel
 \afterverb
 %
 Si ejecutamos este código y le damos una entrada no válida, simplemente
-fallará con un antipático mensaje de error:
+fallará con un mensaje de error bastante antipático:
 
 \beforeverb
 \begin{verbatim}
@@ -396,9 +397,9 @@ ValueError: invalid literal for float(): fred
 Existen estructuras de ejecución condicional dentro de
 Python para manejar este tipo de errores esperados e
 inesperados, llamadas ``try / except''. La idea de {\tt try}
-y {\\ except} es que se si sabe que cierta secuencia
-de instrucciones pueden tener un problema, se pueden
-añadir algunas sentencias para que sean ejecutadas en caso de error.
+y {\\ except} es que si se sabe que cierta secuencia
+de instrucciones puede generar un problema, se pueden
+añadir ciertas sentencias para que sean ejecutadas en caso de error.
 Estas sentencias extras (el bloque except) serán ignoradas
 si no se produce ningún error.
 
@@ -406,7 +407,7 @@ Puedes pensar en la característica {\tt try} y {\tt except}
 de Python como una ``póliza de seguros'' en una secuencia
 de sentencias.
 
-Se puede reescribir nuestro conversor de temperaturas del siguiente modo:
+Se puede reescribir nuestro conversor de temperaturas de esta forma:
 
 \beforeverb
 \begin{verbatim}
@@ -448,7 +449,7 @@ muestra un mensaje de error. En general,
 capturar una excepción te da la oportunidad de corregir el problema,
 volverlo a intentar, o al menos de terminar el programa con elegancia.
 
-\section{Evalucación en corto-circuito de expresiones lógicas}
+\section{Evaluación en corto-circuito de expresiones lógicas}
 \index{short circuit}
 
 Cuando Python está procesando una expresión lógica, como
@@ -468,7 +469,7 @@ la evaluación.
 \index{guardian pattern}
 \index{pattern!guardian}
 A pesar de que esto pueda parecer hilar demasiado fino, el funcionamiento
-en corto-circuito nos dirige a una astuta técnica llamada el {\bf patrón guardián}.
+en corto-circuito nos descubre una astuta técnica llamada el {\bf patrón guardián}.
 Considera la siguiente secuencia de código en el intérprete de Python:
 
 \beforeverb
@@ -498,7 +499,7 @@ fue evaluada como {\tt falsa}, así que {\tt (x/y)} no llegó a ejecutarse
 debido a la regla del {\bf corto-circuito}, y no se produjo ningún error.
 
 Es posible construir las expresiones lógicas colocando estratégicamente una
-evaluación {\bf guardián} justo antes de la evaluación que podría causar un error,
+evaluación como {\bf guardián} justo antes de la evaluación que podría causar un error,
 como se muestra a continuación:
 
 \beforeverb
@@ -548,8 +549,8 @@ más útiles normalmente son:
 \end{itemize}
 
 Los errores de sintaxis (syntax errors), normalmente son fáciles de encontrar, pero
-a veces tienen trampa. Los errores debido a espacios en blanco pueden tener truco,
-ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
+a veces tienen trampa. Los errores debido a espacios en blanco pueden ser complicados de
+localizar, ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
 
 \index{whitespace}
 
@@ -590,7 +591,7 @@ print decibelios
 \afterverb
 %
 Pero cuando lo haces funcionar, obtienes un mensaje de error\footnote{En Python 3.0,
-ya no tendrás un mensaje de error; el operador de división realiza
+ya no se produce el mensaje de error; el operador de división realiza
 división en punto flotante incluso con operandos enteros.}:
 
 \index{exception!OverflowError}
@@ -616,7 +617,7 @@ de la señal y la intensidad del ruido con valores en punto flotante.
 \index{division!floor}
 
 En general, los mensajes de error te dicen dónde se ha descubierto el problema,
-pero a menudo no es precisamente ahí donde se ha producido.
+pero a menudo no es ahí exactamente donde se ha producido.
 
 
 \section{Glosario}
@@ -637,7 +638,7 @@ de ramas alternativas.
 \index{chained conditional}
 \index{conditional!chained}
 	
-\item[corto circuito:]  Cuando Python va evaluando una expresión lógica
+\item[cortocircuito:]  Cuando Python va evaluando una expresión lógica
 por tramos y detiene el proceso de evaluación debido a que ya
 conoce el valor final que va a tener el resultado
 sin necesidad de evaluar el resto de la expresión.
@@ -683,10 +684,10 @@ que se muestra en pantalla cuando se produce una excepción.
 
 \end{description}
 
-\section{Ejercicicos}
+\section{Ejercicios}
 
 \begin{ex}
-Reescribe el cálculo del salario para darle al empleado 1.5
+Reescribe el programa del cálculo del salario para darle al empleado 1.5
 veces la tarifa horaria para todas
 las horas trabajadas que excedan de 40.
 
@@ -699,7 +700,7 @@ Salario: 475.0
 
 \begin{ex}
 Reescribe el programa del salario usando {\tt try} y {\tt except},
-de modo que el programa sea capaz de manejar entradas no numéricas con elegancia,
+de modo que el programa sea capaz de gestionar entradas no numéricas con elegancia,
 mostrando un mensaje y saliendo del programa.
 A continuación se muestran dos ejecuciones del programa:
 
@@ -714,7 +715,7 @@ Error, por favor introduce un número
 \end{ex}
 
 \begin{ex}
-Escribe un programa que solicite una puntuación entra 0.0 y 1.0.
+Escribe un programa que solicite una puntuación entre 0.0 y 1.0.
 Si la puntuación está fuera de ese rango, muestra un mensaje de error.
 Si la puntuación está entre 0.0 y 1.0, muestra la calificación usando la tabla
 siguiente:
@@ -746,4 +747,3 @@ Insuficiente
 Ejecuta el programa repetidamente, como se muestra arriba, para probar
 con varios valores de entrada diferentes.
 \end{ex}
-

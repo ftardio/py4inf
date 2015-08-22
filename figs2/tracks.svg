@@ -13,7 +13,7 @@
    height="303.55728"
    id="svg4392"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="tracks.svg">
   <defs
      id="defs4394">
@@ -33,16 +33,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.6"
-     inkscape:cx="254.83335"
+     inkscape:cx="291.50002"
      inkscape:cy="88.166664"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="993"
-     inkscape:window-height="625"
-     inkscape:window-x="90"
-     inkscape:window-y="20"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata4397">
     <rdf:RDF>
@@ -76,24 +76,24 @@
        y="130.51321" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="153.33333"
        y="115"
        id="text4406"><tspan
          sodipodi:role="line"
          id="tspan4408"
          x="153.33333"
-         y="115">Tracks</tspan></text>
+         y="115">Canciones</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="168.33333"
        y="183.33334"
        id="text4410"><tspan
          sodipodi:role="line"
          id="tspan4412"
          x="168.33333"
-         y="183.33334">title</tspan></text>
+         y="183.33334">título</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -144,13 +144,13 @@
        id="path4434" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="561.66669"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+       x="545.66669"
        y="183.33333"
        id="text4436"><tspan
          sodipodi:role="line"
          id="tspan4438"
-         x="561.66669"
-         y="183.33333">plays</tspan></text>
+         x="545.66669"
+         y="183.33333">reprod.</tspan></text>
   </g>
 </svg>

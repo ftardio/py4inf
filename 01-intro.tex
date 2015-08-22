@@ -52,7 +52,7 @@ se ha usado la más frecuente le resulta muy sencillo:
 \beforeverb
 \begin{verbatim}
 python words.py
-Introduce archivo:words.txt
+Introduce fichero:words.txt
 que 8
 \end{verbatim}
 \afterverb
@@ -69,22 +69,22 @@ en tu socio (el ordenador), dejando más tiempo libre
 para ti, de modo que puedas dedicarte a aquellas otras cosas
 para las que estás más capacitado. Serás el encargado
 de poner la creatividad, intuición e inventiva a esa
-sociedad.
+asociación.
 
 \section{Creatividad y motivación}
 
 Aunque este libro no está dirigido a programadores profesionales, la programación
 profesional puede ser un trabajo muy gratificante tanto a nivel financiero como personal.
 Construir programas útiles, elegantes e ingeniosos para que otros los usen
-es una actividad muy creativa. Tu ordenador o Asistente Personal Digital (APD),
+es una actividad muy creativa. Tu ordenador o Asistente Personal Digital (PDA),
 normalmente contienen muchos programas diferentes de multitud de grupos de programadores
 distintos, cada uno de los cuales compite por tu atención e interés.
-Ellos intentan hacerlo lo mejor que saben para adaptarse a tus necesidades y proporcionarte
-una buena experiencia de usuario en tu tarea. En algunos casos, cuando eliges un programa
-determinado, los programadores son directamente recompensados por tu elección.
+Esos programadores intentan hacerlo lo mejor que saben para adaptarse a tus necesidades y
+proporcionarte una buena experiencia de usuario en tu tarea. En algunos casos, cuando eliges un
+programa determinado, los programadores son directamente recompensados por tu elección.
 
 Si pensamos en los programas como salida creativa para grupos de programadores,
-tal vez la siguiente figura sea una versión más acertada de tu APD:
+tal vez la siguiente figura sea una versión más acertada de tu PDA:
 
 \beforefig
 \centerline{\includegraphics[height=1.00in]{figs2/pda2.eps}}
@@ -99,7 +99,7 @@ tus ideas podrán avanzar desarrollando programas para otros.
 
 \section{Arquitectura hardware del ordenador}
 \index{hardware}
-\index{hardware!arquitectura}
+\index{hardware!architecture}
 
 Antes de que empecemos a aprender el idioma que deberemos hablar
 para dar instrucciones a los ordenadores o desarrollar
@@ -143,7 +143,7 @@ Son todos los aparatos que utilizamos para interactuar con el ordenador.
 \item En la actualidad, la mayoría de los ordenadores disponen también de una
 {\bf Conexión de Red} para recibir información a través de la red.
 Podemos pensar en la red como en un sitio muy lento donde se almacenan
-y recuperan datos, que puede no estar siempre ``lista''. Así que en cierto sentido,
+y recuperan datos, que puede no estar siempre ``preparado''. Así que en cierto sentido,
 la red es una forma lenta y a veces poco fiable de
 {\bf Memoria Secundaria}.
 
@@ -151,7 +151,7 @@ la red es una forma lenta y a veces poco fiable de
 
 Aunque la mayoría de los detalles de cómo funcionan estos componentes es mejor
 dejarlos para los que construyen ordenadores, resulta útil tener cierta terminología
-con la que referirnos a todas estas partes diferentes mientras escribimos nuestros programas.
+con la que referirnos a todas estas partes distintas mientras escribimos nuestros programas.
 
 Como programador, tu trabajo es usar y orquestar cada uno de esos
 recursos para resolver el problema que necesites solucionar
@@ -170,7 +170,7 @@ y meterse dentro del ordenador sólo para poder pasarle un comando
 tres mil millones de veces por segundo. Así que en vez de eso,
 deberás ponerle por escrito las instrucciones por adelantado.
 Llamaremos a esas instrucciones almacenadas un {\bf programa}, y al acto
-de escribir esas instrucciones y conseguir que
+de escribir las instrucciones y conseguir que
 sean correctas, {\bf programar}.
 
 \section{Comprendiendo la programación}
@@ -181,7 +181,7 @@ hábil en el arte de programar. Al final serás un
 al menos tendrás la capacidad de echar un vistazo a un problema de análisis
 de datos/información y desarrollar un programa para resolverlo.
 
-\index{resolución de problemas}
+\index{problem solving}
 
 En cierto sentido, necesitas dos habilidades para ser un programador:
 
@@ -193,11 +193,11 @@ las palabras en este nuevo lenguaje correctamente y saber cómo construir
 ``frases'' bien formadas en este lenguaje.
 
 \item En segundo lugar, debes ``contar una historia''. Al escribir una historia,
-combinas palabras y frases para transmitir una idea al lector.
+combinas palabras y frases para transmitir un concepto al lector.
 Son necesarios habilidad y arte para construir la historia, y esa habilidad
 se mejora precisamente escribiendo y teniendo cierta retroalimentación.
 En programación, nuestro programa es la ``historia'' y el problema
-que estás tratando de resolver es la ``idea''.
+que estás tratando de resolver es el ``concepto''.
 
 \end{itemize}
 
@@ -208,7 +208,7 @@ diferentes, pero la forma de resolver problemas
 va a ser la misma en todos ellos.
 
 Aprenderás el ``vocabulario'' y ``frases'' de Python muy rápidamente.
-Te constará un poco más ser capaz de escribir un programa coherente
+Te contará un poco más ser capaz de escribir un programa coherente
 para resolver un problema nuevo. Se enseña a programar de forma muy similar
 a como se enseña a escribir. Se comienza leyendo y explicando programas,
 después se escriben programas simples, y se va incrementando la complejidad
@@ -222,8 +222,8 @@ paciencia si la simplicidad de los ejemplos te recuerdan a cuando empezaste
 a leer por primera vez.
 
 \section{Palabras y frases}
-\index{lenguaje de programación}
-\index{lenguaje!programación}
+ \index{programming language}
+ \index{language!programming}
 
 A diferencia de los idiomas humanos, el vocabulario de Python es actualmente
 bastante reducido. Llamamos a ese ``vocabulario'' las ``palabras reservadas''.
@@ -236,15 +236,15 @@ Cuando se entrena a un perro, se usan palabras especiales como
 no usas ninguna de las palabras reservadas, sólo consigues que te mire
 con cara extraña hasta que le digas una palabra reservada.
 Por ejemplo, si le dices:
-``Me gustaría que hubiera más gente que se dedicase a caminar para mejorar su salud'',
+``Me gustaría que hubiera más gente que se dedicase a pasear para mejorar su salud'',
 lo que la mayoría de los perros oirían sería:
-``bla bla bla {\bf caminar} bla bla bla bla.''.
-Esto se debe a que ``caminar'' es una palabra reservada en el idioma del perro.
-Mucha gente podría indicar que el idioma entre humanos y gatos no tiene
+``bla bla bla {\bf pasear} bla bla bla bla.''.
+Esto se debe a que ``pasear'' es una palabra reservada en el idioma del perro.
+Mucha gente sugeriría que el idioma entre humanos y gatos no tiene
 palabras reservadas\footnote{\url{http://xkcd.com/231/}}.
 
 Las palabras reservadas en el idioma en que los humanos hablan con
-Python incluye las siguientes:
+Python contiene las siguientes:
 
 \beforeverb
 \begin{verbatim}
@@ -260,7 +260,7 @@ def       for       lambda    try
 %
 Eso es todo, y a diferencia de un perro, Python ya está completamente entrenado.
 Cuando utilices ``try'', Python lo intentará cada vez que se lo digas sin
-equivocarse\footnote{``try'' en inglés puede traducirse como ``inténtalo''(N. del Trad.)}.
+equivocarse\footnote{``try'' en inglés puede traducirse como ``intento''(N. del Trad.)}.
 
 Aprenderemos esas palabras reservadas y cómo usarlas a su debido tiempo,
 pero por ahora nos centraremos en la equivalencia en Python de ``habla''
@@ -283,16 +283,18 @@ Ahora que ya conocemos una palabra y una sentencia simple en Python,
 debemos aprender cómo comenzar una conversación con Python para probar
 nuestras nuevas habilidades.
 
-Antes de que puedas conversar con Python, debes en primer lugar instalar
+Antes de que puedas conversar con Python, debes instalar en primer lugar
 el software de Python en tu ordenador, y aprender a ponerlo en marcha.
 La explicación sobre cómo conseguirlo excede el propósito de este capítulo,
 así que te sugiero consultar \url{www.pythonlearn.com}, donde tengo
 instrucciones detalladas y capturas de pantallas sobre cómo instalar y poner en marcha
-Python en sistemas Macinstosh y Windows. En algún momento, terminarás en un terminal
+Python en sistemas Macintosh y Windows\footnote{En los capítulos finales del libro también
+encontrarás dos apéndices con instrucciones sobre la instalación de Python en esos sistemas (Nota
+del trad.)}. En algún momento, terminarás en un terminal
 o ventana de comandos, escribirás {\bf python}, y el intérprete de Pyhton
 comenzará a ejecutarse en modo interactivo, apareciendo algo como lo siguiente:
 
-\index{modo interactivo}
+\index{interactive mode}
 
 \beforeverb
 \begin{verbatim}
@@ -306,7 +308,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 El prompt o indicador {\tt >>>} es el modo que tiene el intérprete de Python de preguntarte:
 ``¿Qué quieres que haga a continuación?''. Python está preparado para tener una conversación contigo. Todo lo que tienes que hacer es hablar el idioma de Python.
 
-Imaginemos por ejemplo que no conoces ni siquiera la más simple de las palabras o frases del lenguaje Python. Tal vez quieras usar la línea habitual que los astronautas utilizan cuando aterrizan en un planeta remoto y quieren hablar con sus habitantes:
+Imaginemos por ejemplo que no conoces ni siquiera la más simple de las palabras o frases del lenguaje Python. Tal vez quieras usar la línea habitual que siguen los astronautas cuando aterrizan en un planeta remoto y quieren hablar con sus habitantes:
 
 \beforeverb
 \begin{verbatim}
@@ -369,7 +371,7 @@ con Python actuando como intermediario. Python es un
 modo de que los creadores de programas puedan expresar cómo creen
 que deben desarrollarse las conversaciones. Y dentro
 de unos pocos capítulos más, tú serás uno de esos programadores
-que usan Python para hablar con los usuarios de tus programas.
+que usan Python para hablar con los usuarios de sus programas.
 
 Antes de terminar nuestra primera conversación con el intérprete
 de Python, probablemente debas saber cual es el modo correcto
@@ -395,8 +397,8 @@ SyntaxError: invalid syntax
 %
 Te habrás dado cuenta de que el error es diferente en los primeros
 dos intentos, a pesar de ser ambos incorrectos. El segundo error es diferente porque
-{\bf if} es una palabra reservada, y Python encuentra la palabra
-reservada en la frase y cree que estás intentando decirle algo, pero encuentra
+{\bf if} es una palabra reservada, y Python vió la palabra
+reservada en la frase y creyó que estabas intentando decirle algo, pero encontró
 la sintaxis de la sentencia incorrecta.
 
 El modo correcto de decir ``adios'' a Python es introducir
@@ -408,7 +410,7 @@ esté empezando a resultarte útil.
 \section{Terminología: intérprete y compilador}
 
 Python es un lenguaje de {\bf alto nivel}, que intenta ser relativamente
-sencillo de escribir y leer para los humanos y de leer y procesar para
+sencillo de escribir y leer para los humanos y fácil de leer y procesar para
 los ordenadores. Hay otros lenguajes de alto nivel, como Java, C++,
 PHP, Ruby, Basic, Perl, JavaScript, y muchos más. El hardware que está
 actualmente dentro del la Unidad Central de Procesamiento (CPU) no comprende
@@ -484,7 +486,7 @@ A continuación el compilador guarda el código máquina resultante en un archiv
 posterior ejecución. 
 
 Si usas un sistema Windows, a menudo esos programas ejecutables en código máquina tienen un sufijo como ``.exe'' or ``.dll'', que indican ``executable (ejecutable)'' y ``dynamic
-link library (librería de enlace dinámico)'' respectivamente. En Linux y Macinstosh
+link library (librería de enlace dinámico)'' respectivamente. En Linux y Macintosh
 no hay un sufijo que marque de forma única un archivo como ejecutable.
 
 Si abrieras un archivo ejecutable en un editor de texto, se mostraría algo
@@ -510,8 +512,8 @@ estar preguntándote algunas cosas sobre el mismo intérprete de Python. ¿En qu
 lenguaje ha sido escrito? ¿Ha sido escrito en un lenguaje compilado? Cuando escribimos ``python'', ¿qué es exactamente lo que ocurre?
 
 El intérprete de Python está escrito en un lenguaje de alto nivel llamado ``C''.
-Puedes ver el código fuente actual del intérprete de Python acudiendo a
-\url{www.python.org}, y trabajar como quieras con su código fuente.
+Puedes ver el código fuente real del intérprete de Python acudiendo a
+\url{www.python.org}, y hacer lo que quieras con su código fuente.
 Así que el propio Python es también un programa, y está compilado en código máquina.
 Cuando instalaste Python en tu ordenador (o el vendedor lo instaló),
 pusiste una copia del código máquina del programa Python traducido para tu sistema.
@@ -528,7 +530,7 @@ Esto ya es más de lo que en realidad necesitas saber para ser un programador en
 pero a veces es mejor responder a estas típicas preguntillas justo
 al principio.
 
-\section{Escribiendo un programa}
+\section{Escribir un programa}
 
 Escribir frases en el intérprete de Python es un buen modo de experimentar
 con las características de Python, pero no se recomienda para resolver problemas
@@ -564,7 +566,7 @@ archivo ``hello.py'', en vez de ir escribiendo nosotros las líneas de código P
 de forma interactiva.
 
 Habrás notado que no es necesario poner {\\bf quit()} al final del programa
-Python en el archivo. Cuando Python está leyendo tu código fuente
+Python en el archivo. Cuando Python está leyendo el código fuente
 desde un archivo, sabe parar cuando llega al final del fichero.
 
 \section{¿Qué es un programa?}
@@ -577,9 +579,9 @@ es un programa Python.
 
 Debería ser más sencillo comprender qué es un programa si pensásemos en un problema
 que pudiera resolverse mediante programación, y a continuación estudiásemos cómo sería el
-programa que resolvería ese problema.
+programa que resolviera ese problema.
 
-Imaginemos que estás haciendo una investigación sobre Cómputo Social en los mensajes
+Imaginemos que estás haciendo una investigación sobre estadística social en los mensajes
 de Facebook, y estás interesado en saber cuál es la palabra que se usa con mayor frecuencia
 en una serie de mensajes. Podrías imprimir la cadena de mensajes de Facebook y estudiar
 detenidamente el texto, buscando la palabra más común, pero eso te llevaría mucho tiempo
@@ -587,7 +589,7 @@ y lo más probable sería que cometieses errores. Sería más inteligente escrib
 en Python para realizar la tarea rápidamente y con precisión, y así podrías emplear el fin
 de semana en hacer algo divertido.
 
-Por ejemplo, mira el texto siguiente acerca de un payaso y un coche. Mira al
+Por ejemplo, mira el texto siguiente acerca de un payaso y un coche. Fijate en el
 texto y busca cual es la palabra más común y cuántas veces se repite.
 
 \beforeverb
@@ -599,7 +601,7 @@ y la carpa se cayó sobre el payaso y el coche
 %
 Después imagina que estás haciendo esta tarea buscando en millones de líneas de
 texto. Francamente, te resultaría más rápido aprender Python y escribir un
-programa para contar las palabras que revisar manualmente todas las palabras.
+programa para contar las palabras que revisarlas manualmente una a una.
 
 La buena noticia es que a mí ya se me ha ocurrido un programa
 simple para encontrar la palabra más común en un archivo de texto. Lo he escrito,
@@ -608,22 +610,22 @@ probado, y ahora te lo doy a ti para que lo uses y puedas ahorrarte algo de tiem
 \beforeverb
 \begin{verbatim}
 name = raw_input('Introduce archivo:')
-handle = open(name, 'r')
-text = handle.read()
-words = text.split()
-counts = dict()
+manejador = open(nombre, 'r')
+texto = manejador.read()
+palabras = texto.split()
+contadores = dict()
 
-for word in words:
-   counts[word] = counts.get(word,0) + 1
+for palabra in palabras:
+   contadores[palabra] = contadores.get(palabra,0) + 1
 
-bigcount = None
-bigword = None
-for word,count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigword = word
-        bigcount = count
+mayorcantidad = None
+mayorpalabra = None
+for palabra,contador in contadores.items():
+    if mayorcantidad is None or contador > mayorcantidad:
+        mayorpalabra = palabra
+        mayorcantidad = contador
 
-print bigword, bigcount
+print mayorpalabra, mayorcantidad
 \end{verbatim}
 \afterverb
 %
@@ -635,7 +637,7 @@ Simplemente escribe el código
 en un archivo llamado {\bf words.py} y ejecútalo, o descarga el código fuente
 de \url{http://www.pythonlearn.com/code/} y hazlo funcionar.
 
-\index{programa}
+\index{program}
 Este es un buen ejemplo de cómo Python y el lenguaje Python están actuando de
 intermediarios entre tú (el usuario final) y yo (el programador). Python es para nosotros
 un modo de intercambiar secuencias de instrucciones útiles (p.e. programas) en un
@@ -650,7 +652,7 @@ frases, estructura de los párrafos, y estructura de las historias de Python. Ap
 sobre las potentes capacidades de Python y cómo usar esas capacidades juntas para crear
 programas útiles.
 
-Hay ciertos patrones conceptuales de bajo nivel que se usan para construir programas.
+Hay ciertos modelos conceptuales de bajo nivel que se usan para construir programas.
 Estas estructuras no son exclusivas de los programas Python, sino que son parte de
 cualquier lenguaje de programación, desde el código máquina hasta los lenguajes de alto
 nivel.
@@ -670,7 +672,7 @@ un altavoz, para reproducir música o leer texto.
 en el orden en que se encuentran en el script.
 
 \item[ejecución condicional:] Comprueba ciertas condiciones y
-después ejecuta o se salta una secuencia de sentencias.
+después ejecuta u omite una secuencia de sentencias.
 
 \item[ejecución repetida:] Ejecuta cierto conjunto de sentencias
 repetidamente, normalmente con alguna variación.
@@ -688,7 +690,7 @@ de escribir un programa es componer y entrelazar juntos estos
 elementos básicos muchas veces, para producir algo
 que sea útil a sus usuarios.
 
-El anterior programa de cálculo del número de palabras usa directamente
+El programa anterior que calcula el número de palabras usa directamente
 todos estos patrones, excepto uno.
 
 \section{¿Qué es posible que vaya mal?}
@@ -771,7 +773,7 @@ no realiza aquello que tú {\em pretendías} que hiciera. Un ejemplo sencillo po
 si tú estuvieses indicando a alguien el camino hacia un restaurante y dijeras:
 ``...cuando llegues a la intersección con la gasolinera, gira a la izquierda, continúa
 durante kilómetro y medio y el edificio rojo de tu derecha será el restaurante.'' Tu amigo
-llegará tarde y te llamará para decirte que está en una granja, y dando vueltas alrededor
+se retrasará y te llamará para decirte que está en una granja, y dando vueltas alrededor
 de un granero, sin que haya señal alguna de un restaurante.
 Entonces le preguntarás: ``¿Giraste a la izquierda o a la derecha en la gasolinera?'', y él
 responderá: ``Seguí al pie de la letra tus indicaciones, las tengo por escrito, y decían
@@ -815,8 +817,8 @@ que lo que estás intentando construir es una maravillosa escultura.
 
 Si algo parece particularmente difícil, generalmente no vale la pena quedarse mirándolo
 toda la noche. Tómate un respiro, échate una siesta, come algo, explícale a alguien
-(quizás a tu perro) con qué estás teniendo problemas, y después vuelve a ello con la
-vista relajada. Te aseguro que una vez que aprendas los conceptos de la programación en
+(quizás a tu perro) con qué estás teniendo problemas, y después vuelve a ello con nuevos
+ojos. Te aseguro que una vez que aprendas los conceptos de la programación en
 el libro, volverás atrás y verás que en realidad todo era fácil y elegante y que
 simplemente te ha llevado un poco de tiempo llegar a absorberlo.
 
@@ -824,62 +826,62 @@ simplemente te ha llevado un poco de tiempo llegar a absorberlo.
 
 \begin{description}
 
-\item[bug:]  Un error en un programa.
+\item[bug:] Un error en un programa.
 \index{bug}
 
-\item[código fuente:]  Um programa en un lenguaje de alto nivel.
-\index{código fuente}
+\item[código fuente:] Un programa en un lenguaje de alto nivel.
+\index{source code}
 
-\item[código máquina:]  El lenguaje de más bajo nivel para el software, ya que
-es el lenguaje que es directamente ejecutado por la unidad central de procesamiento
+\item[código máquina:] El lenguaje de más bajo nivel para el software, ya que se trata
+del lenguaje que es directamente ejecutado por la unidad central de procesamiento
 (CPU).
-\index{código máquina}
+\index{machine code}
 
-\item[compilar:]  Traducir un programa escrito en un lenguaje de alto nivel
+\item[compilar:] Traducir un programa escrito en un lenguaje de alto nivel
 a otro lenguaje de bajo nivel de una vez, preparándolo para su posterior
 ejecución.
-\index{compilar}
+\index{compile}
 
 \item[error semántico:] Un error en un programa que provoca que haga algo
 distinto de lo que el programador pretendía.
-\index{error semántico}
+\index{semantic error}
 
 \item[interpretar:]  Ejecutar un programa en un lenguaje de alto nivel
 traduciendo sus líneas de una en una.
-\index{interpretar}
+\index{interpret}
 
-\item[lenguaje de alto nivel:]  Un lenguaje de programación como Python que
+\item[lenguaje de alto nivel:]  Un lenguaje de programación como Python, que
 está diseñado para ser sencillo de leer y escribir para los humanos.
-\index{lenguaje de alto nivel}
+\index{high-level language}
 
 \item[lenguaje de bajo nivel:]  Un lenguaje de programación que ha sido diseñado
 para ser sencillo de ejecutar para un ordenador; también se le llama ``código máquina''
 o ``lenguaje ensamblador''.
-\index{lenguaje de bajo nivel}
+\index{low-level language}
 
 \item[memoria principal:] Almacena programas y datos. La memoria principal pierde
 su información cuando se interrumpe la energía que la alimenta.
-\index{memoria principal}
+\index{main memory}
 
 \item[memoria secundaria:] Almacena programas y datos y retienen su
 información incluso cuando la corriente se interrumpe. Generalmente es más lenta
 que la memoria principal. Ejemplos de memoria secundaria pueden ser unidades de
 disco y memorias flash en lápices USB.
-\index{memoria secundaria}
+\index{secondary memory}
 
 \item[modo interactivo:] Un modo de uso de usar el intérprete de Python
 escribiendo comandos y expresiones en el prompt (indicador).
-\index{modo interactivo}
+\index{interactive mode}
 
-\item[parsear:]  Examinar un programa y analizar su estructura sintáctica.
-\index{parsear}
+\item[parsear:] Examinar un programa y analizar su estructura sintáctica.
+\index{parse}
 
 \item[portabilidad:]  La propiedad de un programa que le permite funcionar en más
 de un tipo de ordenador.
 \index{portability}
 
 \item[programa:] Un conjunto de instrucciones que especifican un cálculo.
-\index{programa}
+\index{program}
 
 \item[prompt:] Cuando un programa muestra un mensaje y se detiene para que
 el usuario escriba alguna entrada para el programa.
@@ -887,19 +889,19 @@ el usuario escriba alguna entrada para el programa.
 
 \item[resolución de problemas:]  El proceso de formular un problema, encontrar
 una solución y expresar la solución.
-\index{resolución de problemas}
+\index{problem solving}
 
 \item[semántica:] El significado de un programa.
-\index{semántica}
+\index{semantics}
 
 \item[sentencia print:]  Una instrucción que provoca que el intérprete de Python
 muestre un valor en la pantalla.
-\index{sentencia print}
-\index{sentencia!print}
+\index{print statement}
+\index{statement!print}
 
 \item[unidad central de procesamiento:] El corazón de cualquier ordenador. Es lo que
 ejecuta el software que escribimos; también se le suele llamar ``CPU'' o ``el procesador''.
-\index{unidad central de procesamiento}
+\index{central processing unit}
 \index{CPU}
 
 \end{description}
@@ -951,7 +953,7 @@ SyntaxError: invalid syntax
 
 \begin{ex}
 ¿En qué parte del ordenador queda almacenada una variable como ``X''
-después de que la siguiente línea de Python termine?:
+después de que termine la siguiente línea de Python?:
 
 \beforeverb
 \begin{verbatim}
@@ -980,7 +982,7 @@ print x
 a) 43\\
 b) 44\\
 c) x + 1\\
-d) Error, porque x = x + 1 no es matemáticamente posible
+d) Error, porque x = x + 1 no es posible matemáticamente
 \end{ex}
 
 \begin{ex}

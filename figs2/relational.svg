@@ -14,8 +14,8 @@
    height="340.95703"
    id="svg3935"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="New document 15">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="relational.svg">
   <defs
      id="defs3937">
     <inkscape:perspective
@@ -60,11 +60,11 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="1080"
-     inkscape:window-height="670"
-     inkscape:window-x="40"
-     inkscape:window-y="40"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata3940">
     <rdf:RDF>
@@ -73,7 +73,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -105,44 +105,46 @@
        y="193.33545" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="115"
        y="178.33334"
        id="text3951"><tspan
          sodipodi:role="line"
          id="tspan3953"
          x="115"
-         y="178.33334">Table</tspan></text>
+         y="178.33334">Tabla</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="13.333323"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+       x="21.333323"
        y="309.99997"
        id="text3955"><tspan
          sodipodi:role="line"
          id="tspan3957"
-         x="13.333323"
-         y="309.99997">row</tspan></text>
+         x="21.333323"
+         y="309.99997">fila</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="120"
-       y="481.66666"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+       x="98"
+       y="479.66666"
        id="text3959"><tspan
          sodipodi:role="line"
          id="tspan3961"
-         x="120"
-         y="481.66666">column</tspan></text>
+         x="98"
+         y="479.66666">columna</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 270,471.66667 316.66667,440"
        id="path3963"
-       inkscape:connector-type="polyline" />
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 36.666667,313.33333 55,28.33334"
        id="path4477"
-       inkscape:connector-type="polyline" />
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -162,33 +164,33 @@
        xlink:href="file:///Users/csev/dev/py4inf/tex/figs2/inkscape_pasted_image_20100801_190048.png" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="583.33337"
        y="291.66669"
        id="text4587"><tspan
          sodipodi:role="line"
          id="tspan4589"
          x="583.33337"
-         y="291.66669">tuple</tspan></text>
+         y="291.66669">tupla</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="716.66669"
        y="171.66666"
        id="text4591"><tspan
          sodipodi:role="line"
          id="tspan4593"
          x="716.66669"
-         y="171.66666">Relation</tspan></text>
+         y="171.66666">Relación</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="693.33331"
        y="476.66669"
        id="text4595"><tspan
          sodipodi:role="line"
          id="tspan4597"
          x="693.33331"
-         y="476.66669">attribute</tspan></text>
+         y="476.66669">atributo</tspan></text>
   </g>
 </svg>

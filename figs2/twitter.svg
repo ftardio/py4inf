@@ -14,7 +14,7 @@
    height="801"
    id="svg4392"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="twitter.svg">
   <defs
      id="defs4394">
@@ -129,11 +129,11 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="1223"
-     inkscape:window-height="672"
-     inkscape:window-x="62"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
   <metadata
@@ -144,7 +144,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -169,24 +169,24 @@
        y="-77.77726" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="890"
        y="-93.333351"
        id="text4406"><tspan
          sodipodi:role="line"
          id="tspan4408"
          x="890"
-         y="-93.333351">People</tspan></text>
+         y="-93.333351">Personas</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="977.36841"
        y="-24.999979"
        id="text4410"><tspan
          sodipodi:role="line"
          id="tspan4412"
          x="977.36841"
-         y="-24.999979">name</tspan></text>
+         y="-24.999979">nombre</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -229,15 +229,15 @@
          y="110.36395">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="1316.6667"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="1286.6667"
        y="-26.666666"
        id="text4436"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4438"
-         x="1316.6667"
-         y="-26.666666">retrieved</tspan></text>
+         x="1286.6667"
+         y="-26.666666">recuperado</tspan></text>
     <rect
        y="-50.36314"
        x="207.9702"
@@ -256,22 +256,22 @@
        id="use4531"
        y="-64.999992"
        x="214.99997"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="-64.999992"
          x="214.99997"
          id="tspan4555"
-         sodipodi:role="line">Follows</tspan></text>
+         sodipodi:role="line">Seguimientos</tspan></text>
     <text
        id="use4533"
        y="3.3333485"
-       x="229.99997"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="211.99997"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="3.3333485"
-         x="229.99997"
+         x="211.99997"
          id="tspan4559"
-         sodipodi:role="line">from_id</tspan></text>
+         sodipodi:role="line">desde_id</tspan></text>
     <text
        id="use4535"
        y="84.999992"
@@ -305,13 +305,13 @@
     <text
        id="use4547"
        y="3.333318"
-       x="446.33337"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="410.33337"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="3.333318"
-         x="446.33337"
+         x="410.33337"
          id="tspan4583"
-         sodipodi:role="line">to_id</tspan></text>
+         sodipodi:role="line">hacia_id</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -413,7 +413,7 @@
            height="128.33333"
            x="220"
            y="430" /></flowRegion><flowPara
-         id="flowPara4749"></flowPara></flowRoot>    <text
+         id="flowPara4749" /></flowRoot>    <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
        x="481.83331"
@@ -535,7 +535,7 @@
            height="68.333336"
            x="365"
            y="61.666668" /></flowRegion><flowPara
-         id="flowPara6962"></flowPara></flowRoot>    <path
+         id="flowPara6962" /></flowRoot>    <path
        style="fill:none;stroke:#000000;stroke-width:2.12604332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
        d="m 661.89634,-328.43698 c 299.87396,89.87396 299.87396,89.87396 299.87396,89.87396"
        id="path6966" />

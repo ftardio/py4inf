@@ -13,8 +13,8 @@
    height="915.20483"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="New document 1">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="soa.svg">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -81,17 +81,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.33589188"
-     inkscape:cx="561.18411"
-     inkscape:cy="318.94596"
+     inkscape:zoom="0.67178376"
+     inkscape:cx="880.53183"
+     inkscape:cy="314.23648"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1265"
-     inkscape:window-height="690"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -100,7 +100,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -123,30 +123,30 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 374.99999,311.45308 239.19247,393.96192 163.9211,488.34189 43.4837,384.6779 -69.537121,342.25559 -8.1640074,195.67888 -2.7433488,75.080475 155.62472,88.155079 271.9957,56.043476 308.49943,210.70074 374.99999,311.45308 z"
+       d="M 374.99999,311.45308 239.19247,393.96192 163.9211,488.34189 43.4837,384.6779 -69.537121,342.25559 -8.1640074,195.67888 -2.7433488,75.080475 155.62472,88.155079 271.9957,56.043476 308.49943,210.70074 Z"
        transform="matrix(0.7301943,0,0,0.75409976,151.43509,18.068609)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="254.54547"
        y="165.99857"
        id="text2822"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2824"
          x="254.54547"
          y="165.99857"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Auto</tspan><tspan
+         id="tspan2828"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle">Servicio</tspan><tspan
          sodipodi:role="line"
          x="254.54547"
          y="215.99857"
-         id="tspan2826"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Rental</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         id="tspan3548">Alquiler</tspan><tspan
          sodipodi:role="line"
          x="254.54547"
          y="265.99857"
-         id="tspan2828"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Service</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         id="tspan3550">Automóviles</tspan></text>
     <path
        sodipodi:type="star"
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
@@ -161,7 +161,7 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 365.66251,157.74783 305.58545,308.10167 307.21804,431.96388 145.65821,421.2891 28.362742,461.11732 -11.409668,304.16609 -85.534846,204.91907 51.44429,118.59267 122.92787,17.426416 247.35805,121.02499 365.66251,157.74783 z"
+       d="M 365.66251,157.74783 305.58545,308.10167 307.21804,431.96388 145.65821,421.2891 28.362742,461.11732 -11.409668,304.16609 -85.534846,204.91907 51.44429,118.59267 122.92787,17.426416 247.35805,121.02499 Z"
        transform="matrix(0.7301943,0,0,0.75409976,590.7491,26.647195)" />
     <path
        sodipodi:type="star"
@@ -177,11 +177,11 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 374.99999,181.85846 298.87244,324.87048 287.17291,448.29495 127.63569,420.0865 6.6366853,447.09984 -15.835192,286.65403 -78.917157,179.92473 66.731686,108.97222 148.74389,15.996535 261.2317,132.59129 374.99999,181.85846 z"
+       d="M 374.99999,181.85846 298.87244,324.87048 287.17291,448.29495 127.63569,420.0865 6.6366853,447.09984 -15.835192,286.65403 -78.917157,179.92473 66.731686,108.97222 148.74389,15.996535 261.2317,132.59129 Z"
        transform="matrix(0.7301943,0,0,0.75409976,1047.5673,17.556289)" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="699.70703"
        y="171.20451"
        id="text2822-3"
@@ -189,21 +189,21 @@
          sodipodi:role="line"
          x="699.70703"
          y="171.20451"
-         id="tspan2826-0"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Hotel</tspan><tspan
+         id="tspan2828-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle">Servicio</tspan><tspan
          sodipodi:role="line"
          x="699.70703"
          y="221.20451"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-         id="tspan2907">Reservation</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         id="tspan3557">Reserva</tspan><tspan
          sodipodi:role="line"
          x="699.70703"
          y="271.20453"
-         id="tspan2828-2"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Service</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         id="tspan3559">Hoteles</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="1153.6256"
        y="155.88966"
        id="text2822-3-0"
@@ -211,18 +211,18 @@
          sodipodi:role="line"
          x="1153.6256"
          y="155.88966"
-         id="tspan2826-0-5"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Airline</tspan><tspan
+         id="tspan2828-2-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle">Servicio</tspan><tspan
          sodipodi:role="line"
          x="1153.6256"
          y="205.88966"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-         id="tspan2907-2">Reservation</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         id="tspan3566">Reserva</tspan><tspan
          sodipodi:role="line"
          x="1153.6256"
          y="255.88966"
-         id="tspan2828-2-2"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Service</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle"
+         id="tspan3568">Vuelos</tspan></text>
     <rect
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect2971"
@@ -232,24 +232,25 @@
        y="804.87482" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="809.95868"
        y="861.12195"
        id="text2973"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan2975"
          x="809.95868"
-         y="861.12195">Travel</tspan><tspan
+         y="861.12195"
+         id="tspan2977">Aplicación de</tspan><tspan
          sodipodi:role="line"
          x="809.95868"
          y="911.12195"
-         id="tspan2977">Application</tspan></text>
+         id="tspan3541">Viajes</tspan></text>
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.79958129;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:2.79958129;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 324.53329,317.84235 345.7041,487.12546"
        id="path3006"
-       inkscape:connector-type="polyline" />
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
     <g
        id="g3788">
       <rect
@@ -271,10 +272,11 @@
            sodipodi:role="line">API</tspan></text>
     </g>
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.87775731;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:2.87775731;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 776.27152,803.32886 703.83154,345.19428"
        id="path3815"
-       inkscape:connector-type="polyline" />
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
     <g
        transform="translate(313.37688,105.26249)"
        id="g3788-3">
@@ -297,10 +299,11 @@
            sodipodi:role="line">API</tspan></text>
     </g>
     <path
-       style="fill:none;stroke:#000000;stroke-width:3.06154943;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:none;stroke:#000000;stroke-width:3.06154943;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 901.59192,803.23697 1140.9824,334.03675"
        id="path3850"
-       inkscape:connector-type="polyline" />
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
     <g
        transform="translate(610.68313,-50.62241)"
        id="g3788-3-2">

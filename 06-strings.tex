@@ -23,7 +23,7 @@ operador corchete:
 \afterverb
 %
 \index{index}
-La segunda sentencia extrae el carácter cuya posición índice es 1 de la
+La segunda sentencia extrae el carácter cuyo índice de posición es 1 en la
 variable {\tt fruta} y lo asigna a la variable {\tt letra}.
 
 La expresión entre corchetes recibe el nombre de {\bf índice}.
@@ -77,7 +77,7 @@ TypeError: string indices must be integers
 \afterverb
 %
 
-\section{Obteniendo la longitud de una cadena mediante {\tt len}}
+\section{Obtener la longitud de una cadena mediante {\tt len}}
 
 \index{len function}
 \index{function!len}
@@ -140,7 +140,7 @@ letra, {\tt fruit[-2]} extrae la segunda desde el final, y así todas las demás
 
 Gran parte de los cálculos implican procesar una cadena carácter por
 carácter. A menudo se empieza por el principio, se van seleccionando caracteres
-de uno en uno, se hace algo con ellos, y se continúa hasta el final. Este patrón
+de uno en uno, se hace algo con ellos, y se continúa hasta el final. Este modelo
 de procesamiento recibe el nombre de {\bf recorrido}. Una forma de escribir un recorrido
 es usar un bucle {\tt while}:
 
@@ -267,6 +267,7 @@ TypeError: object does not support item assignment
 \end{verbatim}
 \afterverb
 %
+Error de tipado: El objeto no soporta la asignación del elemento.
 El ``object (objeto)'' en este caso es la cadena y el ``item (elemento)'' es
 el carácter que intentabas asignar. Por ahora, un {\bf objeto} es
 lo mismo que un valor, aunque mejoraremos esa definición más adelante.
@@ -292,8 +293,8 @@ JHola, mundo!
 \afterverb
 %
 Este ejemplo concatena una primera letra nueva en
-una rebanada de {\tt saludo}. Esto no tiene ningún efecto
-sobre la cadena original.
+una rebanada de {\tt saludo}. Esto conserva intacta
+la cadena original.
 
 \index{concatenation}
 
@@ -319,7 +320,7 @@ print contador
 \end{verbatim}
 \afterverb
 %
-Este programa demuestra otro patrón en el cálculo llamado {\bf contador}.
+Este programa demuestra otro patrón del cálculo llamado {\bf contador}.
 La variable {\tt contador} es inicializada a 0 y después
 es incrementada cada vez que se encuentra una {\tt a}.
 Cuando se sale del bucle, {\tt contador}
@@ -535,7 +536,7 @@ Algunos métodos como {\bf startswith} devuelven valores booleanos.
 >>> linea = 'Que tengas un buen día'
 >>> linea.startswith('Que')
 True
->>> linea.startswith('p')
+>>> linea.startswith('q')
 False
 \end{verbatim}
 \afterverb
@@ -547,11 +548,11 @@ ninguna comprobación, usando para ello el método {\tt lower}.
 \beforeverb
 \begin{verbatim}
 >>> linea = 'Que tengas un buen día'
->>> linea.startswith('p')
+>>> linea.startswith('q')
 False
 >>> linea.lower()
 'que tengas un buen día'
->>> linea.lower().startswith('p')
+>>> linea.lower().startswith('q')
 True
 \end{verbatim}
 \afterverb
@@ -559,7 +560,7 @@ True
 En el último ejemplo, se llama al método {\tt lower}
 y después se usa {\tt startswith} para comprobar
 si la cadena resultante en minúsculas
-comienza por la letra ``p''. Mientras tengamos cuidado
+comienza por la letra ``q''. Mientras tengamos cuidado
 con el orden en que las aplicamos, podemos hacer múltiples
 llamadas a métodos en una única expresión..
 
@@ -572,14 +573,14 @@ que vimos en el ejercicio anterior. Lee la documentación
 de este método en
 \url{https://docs.python.org/2/library/stdtypes.html#string-methods}
 y escribe una invocación que cuente el número de veces que
-la letra ``a'' aparece
+aparece la letra ``a''
 en \verb"'banana'".
 \end{ex}
 
-\section{Analizando cadenas}
+\section{Análisis de cadenas}
 
-A menudo querremos mirar en el interior una cadena para localizar una subcadena. Por ejemplo,
-si se nos presentan una serie de líneas formateadas de este modo:
+A menudo tendremos que mirar en el interior una cadena para localizar una subcadena. Por
+ejemplo, si se nos presentan una serie de líneas formateadas de este modo:
 
 \beforeverb
 \begin{alltt}
@@ -599,13 +600,13 @@ buscando.
 \beforeverb
 \begin{verbatim}
 >>> datos = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
->>> enpos = datos.find('@')
->>> print enpos
+>>> posarroba = datos.find('@')
+>>> print posarroba
 21
->>> esppos = datos.find(' ',enpos)
->>> print esppos
+>>> posesp = datos.find(' ',posarroba)
+>>> print posesp
 31
->>> host = data[enpos+1:esppos]
+>>> host = data[posarroba+1:posesp]
 >>> print host
 uct.ac.za
 >>> 
@@ -726,8 +727,8 @@ Puedes leer más sobre él en
 \section{Depuración}
 \index{debugging}
 
-Una habilidad que deberás desarrollar cuando programes es
-estar preguntándote siempre: ``¿Qué podría ir mal aquí?'', o alternativamente,
+Una habilidad que deberás desarrollar cuando programes es la de
+estar preguntándote siempre: ``¿Qué podría ir mal aquí?'', o quizás,
 ``¿Qué locura puede hacer el usuario para destrozar nuestro (aparentemente)
 perfecto programa?''
 
@@ -781,7 +782,7 @@ que devuelve {\tt False (falso)} si la cadena está vacía.
 \index{guardian pattern}
 \index{pattern!guardian}
 Otro modo es asegurar la sentencia {\tt if} usando el patrón {\bf guardián},
-y asegurarnos que la segunda expresión lógica sea evaluada
+y asegurarnos de que la segunda expresión lógica sea evaluada
 sólo cuando hay al menos un carácter en la cadena:
 
 \beforeverb
@@ -804,7 +805,7 @@ cuando encuentra lo que está buscando.
 dos comillas.
 \index{empty string}
 
-\item[contador:] Una variable utilizar para contar algo, normalmente inicializada
+\item[contador:] Una variable utilizada para contar algo, normalmente inicializada
 a cero y luego incrementada.
 \index{counter}
 
@@ -847,7 +848,7 @@ los elementos de la tupla formateados como se especifica en la cadena de formato
 \item[rebanada (slice):] Una parte de una cadena especificada por un rango de índices.
 \index{slice}
 
-\item[recorrido:] Para iterar a través de los elementos de una secuencia,
+\item[recorrido:] Iterar a través de los elementos de una secuencia,
 realizando un operación similar en cada uno de ellos.
 \index{traversal}
 
@@ -898,4 +899,3 @@ pero {\tt start} es opcional, y si incluyes {\tt start},
 entonces {\tt end} es opcional.
 
 \end{ex}
-

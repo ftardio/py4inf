@@ -184,7 +184,7 @@ diccionario.
 \end{ex}
 
 
-\section{Diccionarios como conjuntos de contadores}
+\section{Diccionario como conjunto de contadores}
 \label{histogram}
 
 \index{counter}
@@ -212,7 +212,7 @@ Después, aumentarías el valor del elemento ya existente.
 \end{enumerate}
 
 Todas estas opciones realiza el mismo cálculo, pero cada
-una de ellas implementa la computación de un modo diferente.
+una de ellas implementa ese cálculo de un modo diferente.
 
 \index{implementation}
 
@@ -283,7 +283,7 @@ el valor por defecto. Por ejemplo:
 %
 Podemos usar {\tt get} para escribir nuestro bucle de histograma de forma más concisa.
 Ya que el método {\tt get} controla automáticamente el caso de que la clave
-no esté en el diccionario, podemos reducir cuatro líneas en una
+no esté en el diccionario, podemos reducir cuatro líneas a una sola
 y eliminar la sentencia {\tt if}
 
 \beforeverb
@@ -333,10 +333,10 @@ palabra y contar el número de veces que aparece cada una, usando un diccionario
 Verás que tenemos dos bucles {\tt for}. El bucle exterior va leyendo las
 líneas del archivo, mientras que el interior va iterando a través de cada
 una de las palabras de una línea concreta. Esto es un ejemplo
-de un patrón llamado {\bf bucles anidados}, ya que uno de los bucles
+de un diseño llamado {\bf bucles anidados}, ya que uno de los bucles
 es el \emph{exterior}, y el otro es el \emph{interior}.
 
-Debido a que el bucle interior ejecuta todas sus iteracciones cada vez
+Debido a que el bucle interior ejecuta todas sus iteraciones cada vez
 que el bucle exterior realiza una sola, consideramos
 que el bucle interior va iterando ``más rápido'' y que el exterior lo hace
 más lentamente.
@@ -351,7 +351,7 @@ nombref = raw_input('Introduce el nombre del fichero: ')
 try:
     manf = open(nombref)
 except:
-    print 'No se pudo abrir el archivo:', fname
+    print 'El fichero no se pudo abrir:', fname
     exit()
 
 contadores = dict()
@@ -387,7 +387,7 @@ Introduce el nombre del fichero: romeo.txt
 %
 Resulta un poco incómodo buscar a través del diccionario para encontrar
 cuál es la palabra más común y su contador, de modo que necesitamos añadir un poco
-más de código Pyhton que nos proporcione la salida de un modo que nos resulte más útil.
+más de código Phyton que nos proporcione la salida de un modo que nos resulte más útil.
 
 \section{Bucles y diccionarios}
 
@@ -418,10 +418,10 @@ annie 42
 \end{verbatim}
 \afterverb
 %
-Otra vez vemos que la claves aparecen sin ningún orden en particular.
+Vemos de nuevo que la claves aparecen sin ningún orden en particular.
 
 \index{idiom}
-Podemos usar este patrón para poner en práctica las diversas expresiones de bucles
+Podemos usar este modelo para poner en práctica las diversas expresiones de bucles
 que hemos descrito antes. Por ejemplo, si queremos
 encontrar todas las entradas de un diccionario que tengan un valor
 superior a diez, podríamos escribir el siguiente código:
@@ -490,8 +490,8 @@ parejas clave-valor ya en orden, imprimidas desde el bucle {\tt for}.
 \section{Procesado avanzado de texto}
 
 \index{Romeo and Juliet}
-En el ejemplo anterior, usando el fichero {\tt romeo.txt},
-hemos creado un archivo lo más sencillo posible, eliminando
+En el ejemplo anterior, al usar el fichero {\tt romeo.txt}
+hemos hecho que el archivo fuera lo más sencillo posible, eliminando
 manualmente todos los signos de puntuación. El texto real
 tiene montones de esos signos, como se muestra a continuación:
 
@@ -607,7 +607,7 @@ Retomaremos este ejemplo una vez que hayamos estudiado las tuplas.
 \section{Depuración}
 \index{debugging}
 
-Según vayas trabajando con conjuntos de datos más grandes, se irá haciendo más
+Al ir trabajando con conjuntos de datos más grandes, se irá haciendo más
 pesado depurar imprimiendo y comprobando los datos de forma manual. He aquí algunas
 sugerencias para depurar conjuntos de datos grandes:
 
@@ -694,7 +694,7 @@ para calcular la localización de una clave.
 una clave hacia un valor.
 \index{key-value pair}
 
-\item[tabla de disperasión (hashtable):] El algoritmo usado para implementar
+\item[tabla de dispersión (hashtable):] El algoritmo usado para implementar
 los diccionarios de Python.
 \index{hashtable}
 
@@ -783,4 +783,3 @@ Introduce un nombre de archivo: mbox-short.txt
 \end{verbatim}
 \afterverb
 \end{ex}
-

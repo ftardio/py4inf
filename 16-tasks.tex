@@ -31,8 +31,8 @@ Para movernos a través de todos los directorios y archivos de un árbol usaremo
 \index{directory}
 \index{folder}
 
-Cada programa en ejecución tiene su propio ``directorio actual'', que es su
-directorio por defecto para la mayoría de las operaciones. Por ejemplo, cuando abres un archivo
+Cada programa en ejecución tiene su propio ``directorio actual'', que es el directorio que
+usará por defecto para la mayoría de las operaciones. Por ejemplo, cuando abres un archivo
 en modo lectura, Python lo busca en el directorio actual.
 
 \index{os module}
@@ -57,7 +57,7 @@ directorios ({\tt os} significa ``Sistema Operativo''\footnote{en inglés, ``ope
 %
 {\tt cwd} significa {\bf directorio de trabajo actual}\footnote{en inglés, ``current working
 directory'' (Nota del trad.)}. El resultado en
-este ejemplo es {\tt /Users/csev}, que es el directorio home de un
+este ejemplo es {\tt /Users/csev}, que es el directorio home para un
 usuario llamado {\tt csev}.
 
 \index{working directory}
@@ -85,7 +85,7 @@ un archivo se puede utilizar {\tt os.path.abspath}:
 \afterverb
 %
 {\tt os.path.exists} comprueba
-si un fichero o directoriio existe:
+si un fichero o directorio existe:
 
 \index{exists function}
 \index{function!exists}
@@ -130,7 +130,7 @@ en mi servidor. Lo escribí antes de que Flickr existiera y he continuado
 usándolo después, porque quería mantener las copias originales
 de mis imágenes para siempre.
 
-También quería enviar una descripción sencilla, de una línea de texto en el mensaje MMS,
+También quería enviar una descripción sencilla, con una línea de texto en el mensaje MMS,
 en la línea de título del correo. Almacené esos mensajes
 en un fichero de texto en el mismo directorio que el fichero con la imagen.
 Se me ocurrió una estructura de directorios basada en el mes, año, día y hora en
@@ -150,7 +150,7 @@ fallaba y añadía un montón de datos inútiles al servidor en lugar de la desc
 
 Quería moverme a través de esos ficheros y averiguar cuáles de los
 textos eran realmente descripciones y cuales eran basura, para poder eliminar
-los ficheros erróneos. Lo primero que hice fue crear un sencillo inventario de
+los ficheros erróneos. Lo primero que hice fue generar un sencillo inventario de
 cuántos archivos de texto tenía en uno de los subdirectorios,
 usando el programa siguiente:
 
@@ -178,7 +178,7 @@ A medida que va encontrando directorios, obtenemos tres valores en una tupla
 en el cuerpo del bucle {\tt for}. El primer valor es el nombre del
 directorio actual, el segundo es la lista de subdirectorios dentro
 del actual y el tercer valor es la lista de ficheros
-que se encuentran en el directorio.
+que se encuentran en ese directorio.
 
 No necesitamos mirar explícitamente dentro de cada uno de los subdirectorios,
 porque podemos contar con que {\tt os.walk} visitará cada
@@ -192,7 +192,7 @@ sufijo.
 Una vez que tenemos una noción acerca de cuántos archivos terminan por ``.txt'', lo
 siguiente es intentar determinar automáticamente
 desde Python qué ficheros son incorrectos y cuáles están bien.
-De modo que escribimos un programa sencillo para imprimir en pantalla los
+De modo que escribiremos un programa sencillo para imprimir en pantalla los
 nombres de los ficheros y el tamaño de cada uno:
 
 \beforeverb
@@ -210,9 +210,9 @@ for (nombredir, dirs, ficheros) in os.walk('.'):
 Ahora en vez de simplemente contar los ficheros, creamos
 un nombre de archivo concatenando el nombre del directorio con
 el nombre del archivo, usando {\tt os.path.join}.
-Es importarnte usar
+Es importante usar
 {\tt os.path.join} en vez de una simple concatenación de cadenas,
-porque en Windows para consturir las rutas de archivos
+porque en Windows para construir las rutas de archivos
 se utiliza la barra-invertida (\verb"\"), mientras que en Linux
 o Apple se usa la barra normal (\verb"/").
 {\tt os.path.join} conoce esas diferencias y sabe en qué
@@ -245,7 +245,7 @@ python txtsize.py
 %
 Si observamos la salida, nos damos cuenta de que algunos ficheros son demasiado pequeños y
 otros muchos son demasiado grandes y tienen siempre el mismo tamaño (2578 y 2565).
-Cuando echamos un vistazo manualmente a algunos de esos ficheros grandes,
+Cuando examinamos manualmente algunos de esos ficheros grandes,
 descubrimos que no son nada más que un montón genérico de HTML idéntico, que llega
 desde el correo enviado al sistema por mi teléfono T-Mobile:
 
@@ -259,7 +259,7 @@ desde el correo enviado al sistema por mi teléfono T-Mobile:
 \afterverb
 %
 Ojeando uno de estos fichero, da la impresión de que no hay información aprovechable
-en ellos, de modo que seguramente se pueden borrar.
+en ellos, de modo que lo más probable es que se puedan borrar.
 
 Pero antes de borrarlos, escribiremos un programa que busque los ficheros
 que tengan más de una línea de longitud y muestre su contenido.
@@ -324,13 +324,6 @@ colado entre mis datos y que contienen
 dos líneas en blanco seguidas por una línea que dice
 ``Sent from my iPhone''. De modo que haremos el siguiente cambio
 al programa para tener en cuenta esos ficheros también:
-
-But there is one more annoying pattern of files: 
-there are some three-line files that consist of
-two blank lines followed by a line that says
-``Sent from my iPhone'' that have slipped 
-into my data.   So we make the following change
-to the program to deal with these files as well.
 
 \beforeverb
 \begin{verbatim}
@@ -417,11 +410,11 @@ iPhone: ./2007/09/19-09-07_124857_01.txt
 \afterverb
 %
 Podemos ir revisando estos ficheros para asegurarnos de que no hemos
-introducido un error en el programa de forma inadvertida, o de que tal vez
+introducido un error en el programa de forma inadvertida, o de que quizás
 nuestra lógica captura algún fichero que no debería capturar.
 
 Una vez hemos comprobado que esta es la lista de los archivos que queremos eliminar,
-realizmos los cambios siguientes en el programa:
+realizamos los cambios siguientes en el programa:
 
 \beforeverb
 \begin{verbatim}
@@ -437,8 +430,8 @@ realizmos los cambios siguientes en el programa:
 \end{verbatim}
 \afterverb
 %
-En esta versión el programa, primero mostraremos los ficheros erróneos
-en pantalla y luego los eliminaremos
+En esta versión del programa, primero mostramos los ficheros erróneos
+en pantalla y luego los eliminamos
 usando {\tt os.remove}.
 
 \beforeverb
@@ -463,15 +456,15 @@ Ficheros: 1018
 \afterverb
 %
 En esta sección, hemos seguido una secuencia en la cual usamos
-Python en primer lugar para buscar a través de los directorios y archivos comprobando
-patrones. Utilizamos Python para, poco a poco, determinar qué queríamos
-hacer para limpiar nuestros directorios. Una vez supimos
-qué ficheros eran buenos y cuáles inútiles, utilizamos Python
+Python en primer lugar para buscar a través de los directorios y archivos, comprobando
+patrones. Hemos utilizado también Python para, poco a poco, determinar qué queríamos
+hacer para limpiar los directorios. Una vez supimos
+qué ficheros eran buenos y cuáles inútiles, utilizamos de nuevo Python
 para eliminar los ficheros y realizar la limpieza.
 
 El problema que necesites resolver puede ser bastante sencillo,
 y quizás sólo tengas que comprobar los nombres de los ficheros.
-O, tal vez necesites leer cada fichero completo y buscar ciertos patrones en el
+O tal vez necesites leer cada fichero completo y buscar ciertos patrones en el
 interior del mismo. A veces necesitarás
 leer todos los ficheros y realizar un cambio en
 algunos de ellos. Todo esto resulta bastante
@@ -508,9 +501,10 @@ Introduce fichero: mbox-short.txt
 \end{verbatim}
 \afterverb
 %
-Podemos colocar cadenas adicionales después del nombre del fichero con el código de Python y acceder
-a esos {\bf argumentos de línea de comandos} desde el propio programa Python. Aquí tenemos
-un programa sencillo que ilustra la lectura de argumentos desde la línea de comandos:
+Podemos colocar cadenas adicionales después del nombre del fichero con el código de Python y
+acceder a esos {\bf argumentos de línea de comandos} desde el propio programa Python.
+Aquí tenemos un programa sencillo que ilustra la lectura de argumentos desde la línea de
+comandos:
 
 \beforeverb
 \begin{verbatim}
@@ -559,8 +553,8 @@ print nombre, 'tiene', len(texto), 'bytes'
 \afterverb
 %
 Tomamos el segundo argumento de la línea de comandos y lo usamos como nombre para el fichero
-(omitiendo el nombre del programa que está en la anterior entrada {\tt [0]}). Abrimos el fichero
-y leemos su contenido así:
+(omitiendo el nombre del programa que está en la anterior entrada de la lista {\tt [0]}).
+Abrimos el fichero y leemos su contenido así:
 
 \beforeverb
 \begin{verbatim}
@@ -652,7 +646,7 @@ del fichero Python.
 \item[checksum:] Ver también {\bf hashing}.  El término ``checksum'' (suma de comprobación)
 viene de la necesidad de verificar si los datos se han alterado al
 enviarse a través de la red o al escribirse en un medio de almacenamiento y luego
-haber sido leídos de nuevo. Cuando los datos son escritos o enviados, el sistema de envío
+ser leídos de nuevo. Cuando los datos son escritos o enviados, el sistema de envío
 realiza una suma de comprobación (checksum) y la envía también. Cuando los
 datos se leen o reciben, el sistema de recepción re-calcula la suma de comprobación
 de esos datos y lo compara con la cifra recibida. Si ambas sumas de comprobación no coinciden,
@@ -663,7 +657,7 @@ se asume que los datos se han alterado durante la transmisión.
 que estás. Puedes cambiar el directorio de trabajo usando el comando
 {\tt cd} en la interfaz de línea de comandos de la mayoría de los sistemas.
 Cuando abres un fichero en Python usando sólo el nombre del fichero sin información
-acerca de la ruta, el fichero debe estar en el directorio de trabajo actual
+acerca de la ruta, el fichero debe estar en el directorio de trabajo actual,
 en el cual estás ejecutando el programa.
 \index{directory!current}
 \index{directory!working}
@@ -673,7 +667,7 @@ en el cual estás ejecutando el programa.
 para producir una suma de comprobación única para esos datos. Las mejores funciones hash
 producen muy pocas ``colisiones''. Las colisiones se producen cuando se envían dos cadenas de datos
 distintas a la función de hash y ésta devuelve el mismo hash para ambas.
-MD5, SHA1, y SHA256 son ejemplos de funciones hash comunmente utilizadas.
+MD5, SHA1, y SHA256 son ejemplos de funciones hash comúnmente utilizadas.
 \index{hashing}
 
 \item[pipe (tubería):] Un pipe o tubería es una conexión con un programa en ejecución. Se
@@ -697,11 +691,11 @@ actual.
 
 \item[shell:] Una interfaz de línea de comandos de un sistema operativo.
 También se la llama ``terminal de programas'' en ciertos sistemas. En esta interfaz
-se escriben el comando y parámetros en una línea y se pulsa ``intro''
+se escriben el comando y sus parámetros en una línea y se pulsa ``intro''
 para ejecutarlo.
 \index{shell}
 
-\item[walk (recorrer):] Un término que se usa para describir la idea de visitar
+\item[walk (recorrer):] Un término que se usa para describir el concepto de visitar
 el árbol completo de directorios, subdirectorios, sub-subdirectorios,
 hasta que se han visitado todos los directorios. A esto se le llama
 ``recorrer el árbol de directorios''.
@@ -766,8 +760,8 @@ import hashlib
 Debes crear un diccionario en el cual la suma de comprobación sea la clave
 y el nombre del fichero el valor. Cuando calcules una suma de comprobación
 y ésta ya se encuentre como clave dentro del diccionario, habrás localizado
-dos ficheros con contenido duplicado, de modo que imprime en pantalla el nombre del fichero
-que tienes en el diccionario y el del archivo que acabas de leer. He aquí una salida
+dos ficheros con contenido duplicado, de modo que puedes imprimir en pantalla el nombre del
+fichero que tienes en el diccionario y el del archivo que acabas de leer. He aquí una salida
 de ejemplo de la ejecución del programa en una carpeta con archivos de imágenes:
 
 \beforeverb

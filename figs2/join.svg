@@ -14,7 +14,7 @@
    height="801"
    id="svg4392"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="join.svg">
   <defs
      id="defs4394">
@@ -129,11 +129,11 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="1223"
-     inkscape:window-height="672"
-     inkscape:window-x="62"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true" />
   <metadata
@@ -144,7 +144,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -169,24 +169,24 @@
        y="-419.44391" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="245.00002"
        y="-435"
        id="text4406"><tspan
          sodipodi:role="line"
          id="tspan4408"
          x="245.00002"
-         y="-435">People</tspan></text>
+         y="-435">Personas</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="332.36844"
        y="-366.66663"
        id="text4410"><tspan
          sodipodi:role="line"
          id="tspan4412"
          x="332.36844"
-         y="-366.66663">name</tspan></text>
+         y="-366.66663">nombre</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -229,15 +229,15 @@
          y="-231.30272">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
-       x="671.66669"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Bitstream Vera Sans';-inkscape-font-specification:'Bitstream Vera Sans';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="645.66669"
        y="-368.33331"
        id="text4436"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4438"
-         x="671.66669"
-         y="-368.33331">retrieved</tspan></text>
+         x="645.66669"
+         y="-368.33331">recuperado</tspan></text>
     <rect
        y="-398.69647"
        x="989.63696"
@@ -256,22 +256,22 @@
        id="use4531"
        y="-413.33334"
        x="996.66663"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="-413.33334"
          x="996.66663"
          id="tspan4555"
-         sodipodi:role="line">Follows</tspan></text>
+         sodipodi:role="line">Seguimientos</tspan></text>
     <text
        id="use4533"
        y="-345"
-       x="1011.6666"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="995.66663"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="-345"
-         x="1011.6666"
+         x="995.66663"
          id="tspan4559"
-         sodipodi:role="line">from_id</tspan></text>
+         sodipodi:role="line">desde_id</tspan></text>
     <text
        id="use4535"
        y="-263.33334"
@@ -305,13 +305,13 @@
     <text
        id="use4547"
        y="-345.00003"
-       x="1228"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="1194"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="-345.00003"
-         x="1228"
+         x="1194"
          id="tspan4583"
-         sodipodi:role="line">to_id</tspan></text>
+         sodipodi:role="line">hacia_id</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -492,12 +492,12 @@
        id="use2969"
        y="99.000046"
        x="377.36844"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="99.000046"
          x="377.36844"
          id="tspan3007"
-         sodipodi:role="line">name</tspan></text>
+         sodipodi:role="line">nombre</tspan></text>
     <text
        id="use2971"
        y="173.87567"
@@ -630,34 +630,34 @@
        ry="0" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:35px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="913.49994"
-       y="100.49998"
+       y="98.499977"
        id="text3079"><tspan
          sodipodi:role="line"
          id="tspan3081"
          x="913.49994"
-         y="100.49998">to_id</tspan></text>
+         y="98.499977">hacia_id</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-       x="1060.1666"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
+       x="1076.1666"
        y="98.833328"
        id="text3083"><tspan
          sodipodi:role="line"
          id="tspan3085"
-         x="1060.1666"
-         y="98.833328">name</tspan></text>
+         x="1076.1666"
+         y="98.833328">nombre</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:35px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none;"
        x="736.83325"
        y="98.833328"
        id="text3087"><tspan
          sodipodi:role="line"
          id="tspan3089"
          x="736.83325"
-         y="98.833328">from_id</tspan></text>
+         y="98.833328">desde_id</tspan></text>
     <use
        x="0"
        y="0"

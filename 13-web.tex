@@ -1,9 +1,10 @@
 % The contents of this file is 
 % Copyright (c) 2009-  Charles R. Severance, All Righs Reserved
 
-\chapter{Usando servicios web}
+\chapter{Uso de servicios web}
 
-Cuando la recuperación de documentos a través de HTTP y su análisis usando programas se convirtió en algo sencillo,
+Una vez que recuperar documentos a través de HTTP y analizarlos usando
+programas se convirtió en algo sencillo,
 no se tardó demasiado en desarrollar un modelo
 consistente en la producción de
 documentos específicamente diseñados para ser consumidos por otros
@@ -11,7 +12,7 @@ programas (es decir, no sólo HTML para ser mostrado en un navegador).
 
 Existen dos formatos habituales que se usan para intercambio de datos a través de la web.
 El ``eXtensible Markup Language (lenguaje extensible de marcas)'' o XML ha sido utilizado
-durante mucho tiempo y es el más adecuado para intercambiar datos de estilo-documento.
+durante mucho tiempo y es el más adecuado para intercambiar datos del tipo-documento.
 Cuando los programas simplemente quieren intercambiar unos con otros diccionarios, listas u otra
 información interna, usan JavaScript Object Notation (Notación de Objetos Javascript), o JSON
 (see \url{www.json.org}). Nosotros vamos a revisar ambos formatos.
@@ -28,20 +29,20 @@ Esto es un ejemplo de un documento XML:
   <telefono tipo="intl">
      +1 734 303 4456
    </telefono>
-   <email oculto="yes"/>
+   <email oculto="si"/>
 </persona>
 \end{verbatim}
 \afterverb
 %
 A veces resulta útil pensar en un documento XML como en la estructura de un árbol,
 donde hay una etiqueta superior {\tt persona}, y otras etiquetas como {\tt telefono}
-que se trazan como \emph{hijas} de sus nodos padres.
+que se dibujan como \emph{hijas} de sus nodos padres.
 
 \beforefig
 \centerline{\includegraphics[height=1.50in]{figs2/xml-tree.eps}}
 \afterfig
 
-\section{Analizando XML}
+\section{Análisis de XML}
 
 \index{ElementTree}
 \index{ElementTree!fromstring}
@@ -63,8 +64,8 @@ datos = '''
 </persona>'''
 
 arbol = ET.fromstring(datos)
-print 'Nombre:',tree.find('nombre').text
-print 'Attr:',tree.find('email').get('oculto')
+print 'Nombre:',arbol.find('nombre').text
+print 'Attr:',arbol.find('email').get('oculto')
 \end{verbatim}
 \afterverb
 %
@@ -81,7 +82,7 @@ ciertos nodos ``hijos''. Cada nodo puede ser el origen de otro árbol de nodos.
 \beforeverb
 \begin{verbatim}
 Nombre: Chuck
-Attr: yes
+Attr: si
 \end{verbatim}
 \afterverb
 %
@@ -91,13 +92,13 @@ que hay un montón de reglas respecto a la validez del XML, y el uso de
 {\tt ElementTree} nos permite extraer datos del XML sin
 preocuparnos acerca de esas reglas de sintaxis.
 
-\section{Moviéndonos en bucle a través de los nodos}
+\section{Desplazamiento a través de los nodos}
 
 \index{ElementTree!findall}
 \index{ElementTree!get}
 A menudo el XML tiene múltiples nodos y tenemos que escribir un bucle
 para procesarlos todos. En el programa siguiente,
-usamos un bucle para movernos a través de todos los nodos {\tt usuario}:
+usamos un bucle para recorrer todos los nodos {\tt usuario}:
 
 \beforeverb
 \begin{verbatim}
@@ -154,7 +155,7 @@ Atributo 7
 El formato JSON se inspiró en el formato de objetos y arrays que se usa en el lenguaje
 JavaScript. Pero como Python se inventó antes que JavaScript, la sintaxis usada en Python
 para los diccionarios y listas influyeron la sintaxis de JSON. De modo que el formato
-de JSON es casi idéntico a la combinación de listas y diccionarios de Python.
+del JSON es casi idéntico a la combinación de listas y diccionarios de Python.
 
 He aquí una codificación JSON que es más o menos equivalente al XML del ejemplo anterior:
 
@@ -187,9 +188,9 @@ muy intuitivo para que dos programas que vayan a cooperar intercambien datos.
 JSON se está convirtiendo rápidamente en el formato elegido para casi todos los intercambios
 de datos entre aplicaciones, debido a su relativa simplicidad comparado con XML.
 
-\section{Analizando JSON}
+\section{Análisis de JSON}
 
-Para construir nuestro JSON anidaremos diccionarios (objetos) y listas según necesitemos.
+El JSON se construye anidando diccionarios (objetos) y listas según se necesite.
 En este ejemplo, vamos a representar una lista de usuarios en la cual cada usuario es un
 conjunto de parejas clave-valor (es decir, un diccionario). De modo que tendremos una lista
 de diccionarios.
@@ -250,7 +251,7 @@ Atributo 7
 \afterverb
 %
 En general, hay una tendencia en la industria a apartarse del XML y pasar al JSON para
-los servicios web. Debido a que JSON es más sencillo, y se mapea más directamente hacia
+los servicios web. Debido a que JSON es más sencillo, y se mapea de forma más directa hacia
 estructuras de datos nativas que ya tenemos en los lenguajes de programación, el código de
 análisis y extracción de datos normalmente es más sencillo y directo usando JSON.
 Pero XML es más auto-descriptivo, y por eso hay ciertas
@@ -262,7 +263,7 @@ procesadores de texto almacenan sus documentos internamente usando XML en vez de
 Ahora ya tenemos la capacidad de intercambiar datos entre aplicaciones usando el Protocolo
 de Transporte de Hipertexto (HTTP), y un modo de representar estructuras de datos complejas
 para poder enviar y recibir los datos entre esas aplicaciones, a través del eXtensible 
-Markup Language (XML) o JavaScript Object Notation (JSON).
+Markup Language (XML) o del JavaScript Object Notation (JSON).
 
 El paso siguiente consiste en empezar a definir y documentar ``contratos'' entre
 aplicaciones usando estas técnicas. El nombre corriente para estos
@@ -274,10 +275,10 @@ acceder a los servicios proporcionados por el programa.
 
 Cuando comenzamos a construir programas con funcionalidades que incluyen
 el acceso a servicios proporcionados por otros,
-se utiliza un enfoque llamado {\bf Arquitectura Orientada a Servicios}, o SOA, por sus
+se utiliza un planteamiento llamado {\bf Arquitectura Orientada a Servicios}, o SOA, por sus
 iniciales en inglés.
-El enfoque SOA es aquel en el cual nuestra aplicación principal usa los servicios
-de otras aplicaciones. Un enfoque no-SOA es aquel en el cual tenemos
+Un planteamiento SOA es aquel en el cual nuestra aplicación principal usa los servicios
+de otras aplicaciones. Un planteamiento no-SOA es aquel en el cual tenemos
 una única aplicación independiente que contiene ella misma todo el código
 necesario para su implementación.
 
@@ -289,7 +290,7 @@ de los ordenadores de los hoteles y recuperan los datos de los alojamientos que 
 usuario. Cuando el usuario acepta realizar una reserva de un hotel usando el sitio web
 de una aerolínea, ésta utiliza otro servicio web en los sistemas de los hoteles para realizar
 la reserva real. Y cuando llega el momento de cargar en tu tarjeta de crédito el importe de la
-transacción completa, todavía hay otros ordenadores diferentes involucrados en el proceso.
+transacción completa, hay todavía otros ordenadores diferentes involucrados en el proceso.
 
 \beforefig
 \centerline{\includegraphics[height=2.50in]{figs2/soa.eps}}
@@ -374,7 +375,7 @@ while True:
 \end{verbatim}
 \afterverb
 %
-El programa toma la cadena de búsqueda y construye una URL,
+El programa toma la cadena de búsqueda y construye una URL
 codificándola como parámetro dentro de ella, utilizando luego
 {\bf urllib} para recuperar el texto de la API de geocodificación de Google.
 A diferencia de una página web estática, los datos que obtenemos dependen de los
@@ -438,7 +439,7 @@ las variantes JSON y XML de la API de geocodificación de Google.
 \index{OAuth}
 \index{API!key}
 
-Resulta bastante frecuente que necesites algún tipo de
+Resulta bastante frecuente que se necesite algún tipo de
 ``clave API'' para hacer uso de una API comercial. La
 idea general es que ellos quieren saber quién está usando
 sus servicios y cuánto los utiliza cada usuario.
@@ -465,7 +466,7 @@ el uso de firmas OAuth en cada solicitud. Afortunadamente,
 aún hay unas cuantas librerías OAuth buenas y gratuitas,
 de modo que te puedes ahorrar el tener que escribir una implementación OAuth
 desde cero leyendo las especificaciones. Estas librerías tienen
-una complejidad variable y varios grados distintos en cuanto a variedad de características.
+una complejidad variable y varios niveles distintos en cuanto a variedad de características.
 El sitio web OAuth tiene información sobre varias librerías OAuth.
 
 Para el programa de ejemplo siguiente, descargaremos los ficheros
@@ -478,7 +479,7 @@ de tu ordenador.
 
 Para usar estos programas debes tener una cuenta de Twitter,
 y autorizar a tu código Python como aplicación permitida,
-establecer una clave, secret, token y token secret. Debes editar
+estableciendo diversos parámetros (key, secret, token y token secret). Debes editar
 el archivo {\bf hidden.py} y colocar esas cuatro cadenas en las
 variables apropiadas dentro del fichero:
 
@@ -578,14 +579,13 @@ Junto con los datos de la línea del tiempo, Twitter también devuelve
 metadatos sobre la petición en las cabeceras de respuesta HTTP.
 Una cabecera en particular, {\bf x-rate-limit-remaining}, nos informa
 sobre cuántas peticiones podemos hacer antes de que seamos bloqueados
-por un corto periodo de tiempo. Puedes ver que nuestros intentos
-restantes van disminuyendo cada vez que hacemos una petición a la
-API.
+por un corto periodo de tiempo. Puedes ver cómo cada vez que realizamos
+una petición a la API nuestros intentos restantes van disminuyendo.
 
 En el ejemplo siguiente, recuperamos los amigos de un usuario en Twitter,
 analizamos el JSON devuelto y extraemos parte de la información
 sobre esos amigos. También vaciamos el JSON después de analizarlo e
-``imprimirlo bonito'' con un justificado de cuatro caracteres para permitirnos
+``imprimirlo ordenado'', con un justificado de cuatro caracteres para permitirnos
 estudiar minuciosamente los datos cuando queramos extraer más campos.
 
 \beforeverb
@@ -678,8 +678,8 @@ cinco ``amigos'' más recientes de la cuenta de Twitter del {\bf drchuck}
 e imprime el estado más reciente de cada uno de ellos. Hay
 muchos más datos disponibles en el JSON devuelto. Si miras
 la salida del programa, podrás ver que el ``encuentra a los amigos''
-de una cuenta particular tiene un límite de número de usos distinto al
-número de consultas de líneas del tiempo que está permitido realizar para cada periodo de tiempo.
+de una cuenta particular tiene una limitación de usos distinta al
+número de consultas de líneas del tiempo que está permitido realizar en un periodo de tiempo.
 
 Estas claves de seguridad de la API permiten a Twitter tener la certeza de que
 sabe quién está usando su API y datos y a qué nivel. El enfoque del
@@ -724,9 +724,9 @@ el marcado de datos estructurados.
 Cambia bien el programa
 \url{www.py4inf.com/code/geojson.py} o bien
 \url{www.py4inf.com/code/geoxml.py} para imprimir en pantalla el
-código de país de dos-caracteres de los datos recuperados.
+código de país de dos caracteres de los datos recuperados.
 Añade comprobación de errores, de modo que tu programa no rastree esos datos
 si el código del país no está presente. Una vez que lo tengas
 funcionando, busca ``Océano Atlántico'' y asegúrate
-de que es capaz de manejar ubicaciones que no están dentro de ningún país.
+de que es capaz de gestionar ubicaciones que no están dentro de ningún país.
 \end{ex}

@@ -14,7 +14,7 @@
    height="622.33337"
    id="svg4574"
    version="1.1"
-   inkscape:version="0.47 r22583"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="nested.svg">
   <defs
      id="defs4576">
@@ -52,11 +52,11 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="997"
-     inkscape:window-height="649"
-     inkscape:window-x="140"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata4579">
     <rdf:RDF>
@@ -65,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -105,24 +105,24 @@
        y="-525.72424" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="1150.3334"
        y="-478.85684"
        id="text5574"><tspan
          sodipodi:role="line"
          id="tspan5576"
          x="1150.3334"
-         y="-478.85684">print 'greater'</tspan></text>
+         y="-478.85684">print 'mayor'</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="350.33337"
        y="-766.66669"
        id="text6136"><tspan
          sodipodi:role="line"
          id="tspan6138"
          x="350.33337"
-         y="-766.66669">yes</tspan></text>
+         y="-766.66669">sí</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot6704"
@@ -147,19 +147,19 @@
        y="0"
        xlink:href="#rect5572"
        id="use7420"
-       transform="matrix(0.7791798,0,0,1,-251.02315,3.721468e-8)"
+       transform="matrix(0.93220456,0,0,0.99772368,-423.41677,-1.1151514)"
        width="1000"
        height="1000" />
     <text
        id="use7422"
        y="-478.85684"
-       x="650.66669"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="644.66669"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
          y="-478.85684"
-         x="650.66669"
+         x="644.66669"
          id="tspan7974"
-         sodipodi:role="line">print 'less'</tspan></text>
+         sodipodi:role="line">print 'menor'</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -180,14 +180,14 @@
        height="1000" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="146.62132"
        y="-478.85684"
        id="text7438"><tspan
          sodipodi:role="line"
          id="tspan7440"
          x="146.62132"
-         y="-478.85684">print 'equal'</tspan></text>
+         y="-478.85684">print 'igual'</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -210,7 +210,7 @@
          y="-636.33331">no</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="673.33331"
        y="251.66667"
        id="text7984"
@@ -218,7 +218,7 @@
          sodipodi:role="line"
          id="tspan7986"
          x="673.33331"
-         y="251.66667">yes</tspan></text>
+         y="251.66667">sí</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
        d="m 435.16168,-734.67112 -160.21152,0 0,210.00898 m 416.21961,-210.00898 308.86143,0 0,50.00214"

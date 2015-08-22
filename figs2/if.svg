@@ -14,8 +14,8 @@
    height="380.33334"
    id="svg4574"
    version="1.1"
-   inkscape:version="0.47 r22583"
-   sodipodi:docname="New document 14">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="if.svg">
   <defs
      id="defs4576">
     <marker
@@ -52,11 +52,11 @@
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="997"
-     inkscape:window-height="649"
-     inkscape:window-x="360"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata4579">
     <rdf:RDF>
@@ -65,7 +65,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -105,14 +105,14 @@
        y="216.80618" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#000000;fill-opacity:1;stroke:none"
        x="307.00003"
        y="266.66669"
        id="text5574"><tspan
          sodipodi:role="line"
          id="tspan5576"
          x="307.00003"
-         y="266.66669">print 'x is positive'</tspan></text>
+         y="266.66669">print 'x es positivo'</tspan></text>
     <path
        style="fill:none;stroke:#800000;stroke-width:1.86918652;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
        d="m 288.60126,166.60126 206.16196,0 0,48.46415"
@@ -127,14 +127,14 @@
        id="path5766" />
     <text
        xml:space="preserve"
-       style="font-size:40px;font-style:normal;font-weight:normal;fill:#800000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       style="font-style:normal;font-weight:normal;font-size:40px;font-family:'Bitstream Vera Sans';fill:#800000;fill-opacity:1;stroke:none"
        x="295.33334"
        y="148.33333"
        id="text6136"><tspan
          sodipodi:role="line"
          id="tspan6138"
          x="295.33334"
-         y="148.33333">yes</tspan></text>
+         y="148.33333">sí</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;fill:#008000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"

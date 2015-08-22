@@ -24,7 +24,7 @@ Ya hemos visto un ejemplo de una {\bf llamada a una función}:
 El nombre de la función es {\tt type}. La expresión entre paréntesis recibe
 el nombre de {\bf argumento} de la función. El argumento es
 un valor o variable que se pasa a la función como parámetro de entrada.
-El resultado, para la función {\tt type}, es el tipo del argumento.
+El resultado de la función {\tt type} es el tipo del argumento.
 
 \index{parentheses!argument in}
 
@@ -54,7 +54,7 @@ el valor mayor y menor de una lista:
 \end{verbatim}
 \afterverb
 %
-La función {\tt max} nos dice el ``carácter más grande'' de la
+La función {\tt max} nos dice cuál es el ``carácter más grande'' de la
 cadena (que resulta ser la letra ``u''), mientras que la función
 {\tt min} nos muestra el carácter más pequeño (que en ese caso es
 un espacio).
@@ -157,12 +157,12 @@ Finalmente, {\tt str} convierte su argumento en una cadena:
 
 A partir de las mismas entradas, la mayoría de los ordenadores generarán
 las mismas salidas cada vez, que es lo que llamamos comportamiento {\bf determinista}.
-El determinismo normalmente es algo bueno, ya que esperamos realizar el mismo
-cálculo para obtener el mismo resultado. Para ciertas aplicaciones, sin embargo,
+El determinismo normalmente es algo bueno, ya que esperamos que el mismo
+cálculo nos proporcione siempre el mismo resultado. Para ciertas aplicaciones, sin embargo,
 querremos que el ordenador sea impredecible. Los juegos son el ejemplo
 obvio, pero hay más.
 
-Conseguir que un programa sea realmente no-determinista resulta no ser tan fácil,
+Conseguir que un programa sea realmente no-determinista no resulta tan fácil,
 pero hay modos de hacer que al menos lo parezca. Una de ellos
 es usar {\bf algoritmos} que generen números {\bf pseudoaleatorios}.
 Los números pseudoaleatorios no son verdaderamente aleatorios, ya que son
@@ -216,7 +216,7 @@ entre 0.0 y hasta (pero no incluyendo) 1.0.
 Ejecuta el programa en tu sistema y observa qué números obtienes.
 \end{ex}
 
-La función {\tt random} es solamente na de las muchas
+La función {\tt random} es solamente una de las muchas
 que trabajan con números aleatorios.
 La función {\tt randint} toma los parámetros {\tt inferior} y
 {\\ superior}, y devuelve un entero entre {\tt inferior} y 
@@ -271,7 +271,7 @@ Antes de que se pueda utilizar el módulo, hay que importarlo:
 \afterverb
 %
 Esta sentencia crea un {\bf objeto módulo} llamado math. Si
-se imprime el objeto módulo, se obtiene alguna información sobre él:
+se imprime el objeto módulo, se obtiene cierta información sobre él:
 
 \beforeverb
 \begin{verbatim}
@@ -348,9 +348,9 @@ la raíz cuadrada de dos dividida por dos:
 \section{Añadiendo funciones nuevas}
 
 Hasta ahora, sólo hemos estado usando las funciones que vienen incorporadas en Python,
-pero es posible también añadir funciones nuevas.
+pero es posible añadir también funciones nuevas.
 Una {\bf definición de función} especifica el nombre de una función nueva y
-la secuencia de sentencias que ejecuta cuando la función es llamada.
+la secuencia de sentencias que se ejecutan cuando esa función es llamada.
 Una vez definida una función, se puede reutilizar una y otra vez
 a lo largo de todo el programa.
 
@@ -363,7 +363,7 @@ He aquí un ejemplo:
 \beforeverb
 \begin{verbatim}
 def print_lyrics():
-    print "Soy un leñador, y me siento bien."
+    print "Soy un leñador, qué alegría."
     print 'Duermo toda la noche y trabajo todo el día.'
 \end{verbatim}
 \afterverb
@@ -404,13 +404,13 @@ una comilla simple (que también se usa como apostrofe) aparece en medio de la c
 \index{ellipses}
 
 Si escribes una definición de función en modo interactivo, el intérprete
-mostrará puntos suspensivos (\emph{...}) para hacerte saber que la definición
+mostrará puntos suspensivos (\emph{...}) para informarte de que la definición
 no está completa:
 
 \beforeverb
 \begin{verbatim}
 >>> def print_lyrics():
-...     print "Soy un leñador, y me siento bien."
+...     print "Soy un leñador, qué alegría."
 ...     print 'Duermo toda la noche y trabajo todo el día.'
 ...
 \end{verbatim}
@@ -442,13 +442,13 @@ la de las funciones incorporadas:
 \beforeverb
 \begin{verbatim}
 >>> print_lyrics()
-Soy un leñador, y me siento bien.
+Soy un leñador, qué alegría.
 Duermo toda la noche y trabajo todo el día.
 \end{verbatim}
 \afterverb
 %
 Una vez que se ha definido una función, puede usarse dentro de otra.
-Por ejemplo, para repetir el refrán anterior, podríamos escribir
+Por ejemplo, para repetir el estribillo anterior, podríamos escribir
 una función llamada \verb"repeat_lyrics":
 
 \beforeverb
@@ -464,9 +464,9 @@ Y después llamar a \verb"repeat_lyrics":
 \beforeverb
 \begin{verbatim}
 >>> repeat_lyrics()
-Soy un leñador, y me siento bien.
+Soy un leñador, qué alegría.
 Duermo toda la noche y trabajo todo el día.
-Soy un leñador, y me siento bien.
+Soy un leñador, qué alegría.
 Duermo toda la noche y trabajo todo el día.
 \end{verbatim}
 \afterverb
@@ -482,7 +482,7 @@ programa completo sería algo esto:
 \beforeverb
 \begin{verbatim}
 def print_lyrics():
-    print "Soy un leñador, y me siento bien."
+    print "Soy un leñador, que alegría."
     print 'Duermo toda la noche y trabajo todo el día.'
 
 def repeat_lyrics():
@@ -507,7 +507,7 @@ ejecutada antes de que la función se llame por primera vez.
 
 \begin{ex}
 Mueve la última línea de este programa
-hacia arriba, de modo que la llamada a la función aparezca antes de las
+hacia arriba, de modo que la llamada a la función aparezca antes que las
 definiciones. Ejecuta
 el programa y observa qué mensaje
 de error obtienes.
@@ -542,8 +542,8 @@ al punto donde lo dejó.
 Esto parece bastante simple, hasta que uno recuerda que una función puede
 llamar a otra. Cuando está en medio de una función, el programa puede
 tener que ejecutar las sentencias de otra función. Pero cuando
-está ejecutando esa nueva función, ¡tal vez el programa tenga que ejecutar
-todavía otra función más!
+está ejecutando esa nueva función, ¡tal vez haya que ejecutar
+otra función más todavía!
 
 Afortunadamente, Python es hábil llevando el seguimiento de dónde se encuentra en cada momento, de modo
 que cada vez que completa la ejecución de una función, el programa vuelve al punto donde lo dejó
@@ -551,7 +551,7 @@ en la función que había llamado a esa. Cuando esto le lleva hasta el final del
 simplemente termina.
 
 ¿Cuál es la moraleja de esta sórdida historia? Cuando leas un programa, no
-siempre querrás hacerlo de arriba a abajo. A veces tiene más
+siempre te convendrá hacerlo de arriba a abajo. A veces tiene más
 sentido seguir el flujo de la ejecución.
 
 \section{Parámetros y argumentos}
@@ -568,7 +568,7 @@ como argumento. Algunas funciones necesitan más de un argumento:
 
 Dentro de las funciones, los argumentos son asignados a
 variables llamadas {\bf parámetros}. A continuación mostramos un ejemplo
-de una función definida por el usuario que toma un argumento:
+de una función definida por el usuario que recibe un argumento:
 
 \index{parentheses!parameters in}
 
@@ -584,7 +584,7 @@ Esta función asigna el argumento a un parámetro
 llamado {\tt bruce}. Cuando la función es llamada, imprime el valor del
 parámetro (sea éste lo que sea) dos veces.
 
-Esta función funciona con cualquier valor que pueda ser imprimido en pantalla.
+Esta función funciona con cualquier valor que pueda ser mostrado en pantalla.
 
 \beforeverb
 \begin{verbatim}
@@ -619,7 +619,7 @@ Spam Spam Spam Spam
 %
 El argumento es evaluado antes de que función sea llamada, así
 que en los ejemplos, la expresión \verb"'Spam '*4" y
-{\tt math.cos(math.pi)} son evaluadas una sola vez.
+{\tt math.cos(math.pi)} son evaluadas sólo una vez.
 
 \index{argument}
 
@@ -627,10 +627,10 @@ También se puede usar una variable como argumento:
 
 \beforeverb
 \begin{verbatim}
->>> michael = 'Eric, el medio-abeja.'
+>>> michael = 'Eric, la medio-abeja.'
 >>> print_twice(michael)
-Eric, el medio-abeja.
-Eric, el medio-abeja.
+Eric, la medio-abeja.
+Eric, la medio-abeja.
 \end{verbatim}
 \afterverb
 %
@@ -762,7 +762,7 @@ que hacerlo en un único lugar.
 \item Dividir un programa largo en funciones te permite depurar las
 partes de una en una y luego ensamblarlas juntas en una sola pieza.
 
-\item Las funciones bien designadas a menudo resultan útiles para muchos programas.
+\item Las funciones bien diseñadas a menudo resultan útiles para otros muchos programas.
 Una vez que has escrito y depurado una, puedes reutilizarla.
 
 \end{itemize}
@@ -789,7 +789,7 @@ hay algunos que no.
 \index{whitespace}
 
 Las tabulaciones y los espacios normalmente son invisibles, lo cual hace
-que sea difícil depurar los errores que pueden producir, así que mejor
+que sea difícil depurar los errores que se pueden producir, así que mejor
 busca un editor que gestione el sangrado por ti.
 
 Tampoco te olvides de guardar tu programa antes de hacerlo funcionar. Algunos
@@ -810,10 +810,10 @@ pantalla, ¡es que no estás ejecutando el programa correcto!
 
 \begin{description}
 
-\item[algoritmo:]  Un proceso general para resolver una categoría de problemas.
+\item[algoritmo:] Un proceso general para resolver una categoría de problemas.
 \index{algorithm}
 
-\item[argumento:]  Un valor proporcionado a una función cuando ésta es llamada.
+\item[argumento:] Un valor proporcionado a una función cuando ésta es llamada.
 Ese valor se asigna al parámetro correspondiente en la función.
 \index{argument}
 
@@ -881,8 +881,7 @@ un objeto módulo.
 \index{statement!import}
 
 \item[valor de retorno:] El resultado de una función. Si una llamada a una función
-es usada como una expresión, el valor de retorno es el valor de
-la expresión.
+es usada como una expresión, el valor de retorno es el valor de la expresión.
 \index{return value}
 
 \end{description}
@@ -967,8 +966,6 @@ Introduce puntuación: 0.5
 Insuficiente
 \end{verbatim}
 
-Ejecuta el programa repetidamente para probar varios valores diferentes
-como entrada.
+Ejecuta el programa repetidamente para probar con varios valores
+de entrada diferentes.
 \end{ex}
-
-

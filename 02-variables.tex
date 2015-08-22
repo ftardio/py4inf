@@ -15,7 +15,7 @@ han sido {\tt 1}, {\tt 2}, y
 \verb"'¡Hola, mundo!'"
 
 Esos valores pertenecen a {\bf tipos} diferentes:
-{\tt 2} es un entero (int), y \verb"'¡Hola, mundo!'" es una {\bf cadena} (string),
+{\tt 2} es un entero (int), y \verb"'¡Hola, mundo!'" es una {\bf cadena (string)},
 que recibe ese nombre porque contiene una ``cadena'' de letras.
 Tú (y el intérprete) podéis identificar
 las cadenas porque van encerradas entre comillas.
@@ -46,11 +46,11 @@ Si no estás seguro de qué tipo de valor estás manejando, el intérprete te lo
 %
 No resulta sorprendente que las cadenas pertenezca al tipo {\tt str}, y los
 enteros pertenezcan al tipo {\tt int}. Resulta sin embargo menos obvio
-que los números con un punto decimal pertenezcan a un tipo llamado {\\tt float} (flotante),
+que los números con un punto decimal pertenezcan a un tipo llamado {\\tt float (flotante)},
 ya que esos números se representan en un formato
 conocido como {\\bf punto flotante}\footnote{En el mundo anglosajón (y también en Python)
 la parte decimal de un número se separa de la parte entera mediante un punto, y no mediante una coma
-(N. del trad.)}.
+(Nota del trad.)}.
 
 \index{type}
 \index{string type}
@@ -86,7 +86,7 @@ Son cadenas.
 
 Cuando escribes un entero grande, puede que te sientas tentado a usar comas
 o puntos para separarlo en grupos de tres dígitos, como en {\tt 1,000,000}
-\footnote{En el mundo anglosajón el ``separador de millares'' es la coma, y no el punto (N. del trad.)}.
+\footnote{En el mundo anglosajón el ``separador de millares'' es la coma, y no el punto (Nota del trad.)}.
 Eso no es un entero válido en Python, pero en cambio sí que resulta válido algo como:
 
 \beforeverb
@@ -219,7 +219,7 @@ def       for       lambda    try
 %
 Puede que quieras tener esta lista a mano. Si el intérprete se queja
 por el nombre de una de tus variables y no sabes por qué, comprueba
-si ese nombre está en esta lisa.
+si ese nombre está en esta lista.
 
 \section{Sentencias}
 
@@ -270,7 +270,7 @@ La sentencia de asignación no produce ninguna salida.
 la suma o la multiplicación. Los valores a los cuales se aplican esos operadores
 reciben el nombre de {\bf operandos}.
 
-Los operadores {\tt +}, {\tt -}, {\tt *}, {\tt /}, and {\tt **}
+Los operadores {\tt +}, {\tt -}, {\tt *}, {\tt /}, y {\tt **}
 realizan sumas, restas, multiplicaciones, divisiones y
 exponenciación (elevar un número a una potencia), como se muestra en los siguientes ejemplos:
 
@@ -402,7 +402,7 @@ derecha. Así que la expresión {\tt 5-3-1} es 1 y no 3, ya que
 \end{itemize}
 
 En caso de duda, añade siempre paréntesis a tus expresiones para asegurarte
-de que los cálculos se realicen en el orden que tú quieres.
+de que los cálculos se realizan en el orden que tú quieres.
 
 \section{Operador módulo}
 
@@ -464,14 +464,14 @@ enlazando el final de la primera con el principio de la segunda. Por ejemplo:
 %
 La salida de este programa es {\\tt 100150}.
 
-\section{Pidiendo información al usuario}
+\section{Petición de información al usuario}
 \index{keyboard input}
 
 A veces puede que queramos recibir el valor de una variable del usuario,
 a través del teclado.
 Python proporciona una función integrada llamada \verb"raw_input" que recibe
 la entrada desde el teclado\footnote{En Python 3.0, esta función ha sido llamada
-	{\tt input}.}. Cuando esta función es llamada, el programa se detiene y
+{\tt input}.}. Cuando se llama a esa función, el programa se detiene y
 espera a que el usuario escriba algo. Cuando el usuario pulsa {\sf Retorno} o
 {\sf Intro}, el programa continúa y \verb"raw_input"
 devuelve como una cadena aquello que el usuario escribió.
@@ -602,7 +602,7 @@ Elegir nombres adecuados para las variables puede reducir la necesidad de coment
 los nombres largos también pueden ocasionar que las expresiones complejas sean difíciles de leer, así
 que lo uno compensa a lo otro.
 
-\section{Eligiendo nombres de variables mnemotécnicos}
+\section{Elección de nombres de variables mnemónicos}
 
 \index{mnemonic}
 
@@ -622,8 +622,8 @@ print c
 
 horas = 35.0
 tarifa = 12.50
-paga = horas * tarifa
-print paga
+salario = horas * tarifa
+print salario
 
 x1q3z9ahd = 35.0
 x1q3z9afd = 12.50
@@ -654,7 +654,7 @@ principiantes no han memorizado aún las palabras reservadas (sólo hay 31), y a
 variables con nombres que son demasiado descriptivos pueden llegar a parecerles
 parte del lenguaje y no simplemente nombres de variable bien elegidos\footnote{El párrafo anterior
 se refiere más bien a quienes eligen nombres de variables en inglés, ya que todas las
-palabras reservadas de Python coinciden con palabras propias de ese idioma (N. del trad.)}.
+palabras reservadas de Python coinciden con palabras propias de ese idioma (Nota del trad.)}.
 
 Echa un vistazo rápido al siguiente código de ejemplo en Python, que se mueve en bucle a través de
 un conjunto de datos. Trataremos los bucles pronto, pero por ahora tan sólo trata de entender
@@ -669,7 +669,7 @@ for word in words:
 %
 ¿Qué ocurre aquí? ¿Cuáles de las piezas (for, word, in, etc.) son palabras reservadas
 y cuáles son simplemente nombres de variables? ¿Acaso Python comprende de un modo
-básico la noción de palabras? Los programadores novatos tienen
+básico la noción de palabras (words)? Los programadores novatos tienen
 problemas separando qué parte del código
 \emph{debe} mantenerse tal como está en este ejemplo y qué partes son simplemente
 elección del programador.
@@ -687,7 +687,7 @@ Para los principiantes es más fácil observar este código y saber qué partes
 son palabras reservadas definidas por Python y qué partes son simplemente nombres
 de variables elegidas por el programador. Está bastante claro que Python no
 entiende nada de pizza ni de porciones,
-ni del hecho de que una pizza consista en un conjunto de una o más porciones.
+ni del hecho de que una pizza consiste en un conjunto de una o más porciones.
 
 Pero si nuestro programa lo que realmente va a hacer es leer datos y buscar palabras en esos datos,
 {\\tt pizza} y {\\ porción} son nombres muy poco mnemónicos. Elegirlos como
@@ -746,8 +746,8 @@ antes de que le hayas asignado un valor. Eso puede ocurrir si escribes mal el no
 \beforeverb
 \begin{verbatim}
 >>> principal = 327.68
->>> interes = principle * tarifa
-NameError: name 'principle' is not defined
+>>> interes = principla * tarifa
+NameError: name 'principla' is not defined
 \end{verbatim}
 \afterverb
 %
@@ -790,7 +790,7 @@ obtienes un mensaje de error; simplemente obtienes una respuesta incorrecta.
 \index{concatenation}
 
 \item[comentario:]  Información en un programa que se pone para otros
-programadores (o cualquiera que lea el código fuente), y no tiene efecto alguno
+programadores (o para cualquiera que lea el código fuente), y no tiene efecto alguno
 en la ejecución del programa.
 \index{comment}
 
@@ -848,11 +848,11 @@ son enteros (tipo {\tt int}), números en punto flotante (tipo {\tt
 float}), y cadenas (type {\tt str}).
 \index{type}
 
-\item[valor:]  Una de las unidades básicas de datos, como un número o una cadena,
+\item[valor:] Una de las unidades básicas de datos, como un número o una cadena,
 que un programa manipula.
 \index{value}
 
-\item[variable:]  Un nombre que hace referencia a un valor.
+\item[variable:] Un nombre que hace referencia a un valor.
 \index{variable}
 
 \end{descripción}
