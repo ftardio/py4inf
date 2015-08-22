@@ -5,7 +5,7 @@
 
 Hemos estado leyendo datos desde ficheros, redes, servicios y
 bases de datos. Python puede moverse también a través de todos los
-directorios y carpetas de tus ordenadores y además leer
+directorios y carpetas de tus equipos y además leer
 los ficheros.
 
 En este capítulo, vamos a escribir programas que busquen
@@ -122,7 +122,7 @@ existentes en el directorio dado:
 %
 
 
-\section{Ejemplo: Limpieza del directorio foto}
+\section{Ejemplo: Limpieza de un directorio de fotos}
 
 Hace algún tiempo, construí un software parecido a Flickr, que
 recibía fotos desde mi teléfono móvil y las almacenaba
@@ -181,8 +181,8 @@ del actual y el tercer valor es la lista de ficheros
 que se encuentran en ese directorio.
 
 No necesitamos mirar explícitamente dentro de cada uno de los subdirectorios,
-porque podemos contar con que {\tt os.walk} visitará cada
-uno de ellos al final. Pero sí que tendremos que mirar cada fichero, de
+porque podemos contar con que {\tt os.walk} terminará visitando cada
+uno de ellos. Pero sí que tendremos que fijarnos en cada fichero, de
 modo que usamos un sencillo bucle {\tt for} para examinar cada uno de los archivos
 en el directorio actual. Verificamos cada fichero para comprobar si
 termina por ``.txt'', y luego contamos el número de
@@ -259,7 +259,7 @@ desde el correo enviado al sistema por mi teléfono T-Mobile:
 \afterverb
 %
 Ojeando uno de estos fichero, da la impresión de que no hay información aprovechable
-en ellos, de modo que lo más probable es que se puedan borrar.
+en él, de modo que lo más probable es que se puedan borrar.
 
 Pero antes de borrarlos, escribiremos un programa que busque los ficheros
 que tengan más de una línea de longitud y muestre su contenido.
@@ -411,7 +411,7 @@ iPhone: ./2007/09/19-09-07_124857_01.txt
 %
 Podemos ir revisando estos ficheros para asegurarnos de que no hemos
 introducido un error en el programa de forma inadvertida, o de que quizás
-nuestra lógica captura algún fichero que no debería capturar.
+nuestra lógica captura algún fichero que no debiera capturar.
 
 Una vez hemos comprobado que esta es la lista de los archivos que queremos eliminar,
 realizamos los cambios siguientes en el programa:
@@ -553,7 +553,7 @@ print nombre, 'tiene', len(texto), 'bytes'
 \afterverb
 %
 Tomamos el segundo argumento de la línea de comandos y lo usamos como nombre para el fichero
-(omitiendo el nombre del programa que está en la anterior entrada de la lista {\tt [0]}).
+(omitiendo el nombre del programa, que está en la entrada anterior de la lista, {\tt [0]}).
 Abrimos el fichero y leemos su contenido así:
 
 \beforeverb
@@ -779,4 +779,3 @@ la original.
 \end{enumerate}
 
 \end{ex}
-

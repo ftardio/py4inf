@@ -59,7 +59,7 @@ está en la base de datos. Si no disponemos de datos para esa ubicación,
 llamará a la API de geocodificación para recuperar los datos y los almacenará
 en la base de datos.
 
-Aquí tenemos un ejemplo de ejecución una vez que ya disponemos de información almacenada en la
+Aquí tenemos un ejemplo de ejecución una vez que ya disponemos de alguna información almacenada en la
 base de datos:
 
 \beforeverb
@@ -136,12 +136,12 @@ myData = [
 %
 Se trata de una variable JavaScript que contiene una lista de listas.
 La sintaxis de las listas de constantes en JavaScript es muy similar a
-las de Python, de modo que las sintaxis debería resultarte familiar.
+las de Python, de modo que la sintaxis debería resultarte familiar.
 
 Simplemente abre {\bf where.html} en un navegador para ver las ubicaciones.
 Puedes mantener el ratón sobre cada marca del mapa para ver la
 ubicación que la API de geocodificación ha devuelto para la entrada que el usuario introdujo.
-Si no puedes ver ningún dato cuando abras el fichero {\bf where.html}, deberías
+Si no puedes ver ningún dato cuando abras el fichero {\bf where.html}, deberás
 verificar que tengas activado JavaScript o usar la consola de desarrollador de tu navegador.
 
 \section{Visualización de redes e interconexiones}
@@ -399,7 +399,7 @@ demás campos en blanco y reanuda {\bf gmane.py}. Así se desbloqueará el
 proceso de rastreo y podrá continuar. Esos mensajes vacíos serán ignorados en la siguiente
 fase del proceso.
 
-Una cosa útil es que una vez que has rastreado todos los mensajes y los tienes en
+Algo bueno es que una vez que has rastreado todos los mensajes y los tienes en
 {\bf content.sqlite}, puedes ejecutar {\bf gmane.py} otra vez para obtener los mensajes
 nuevos según van siendo enviados a la lista.
 
@@ -490,7 +490,7 @@ mapeos para hacer que los datos queden más y más limpios. Cuando lo hayas hech
 versión indexada del correo en {\bf index.sqlite}. Éste es el fichero que usaremos para realizar
 el análisis de datos. Con ese fichero, el análisis de datos se realizará muy rápidamente.
 
-El primero y más simple análisis de datos consistirá en determinar ``¿quién ha enviado más correos?'',
+El primer y más sencillo análisis de datos consistirá en determinar ``¿quién ha enviado más correos?'',
 y ´´¿qué organización ha enviado más correos?''. Esto se realizará usando {\bf gbasic.py}:
 
 \beforeverb
