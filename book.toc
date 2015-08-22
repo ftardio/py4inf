@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {1.4}Palabras y frases}{5}
 \contentsline {section}{\numberline {1.5}Conversando con Python}{6}
 \contentsline {section}{\numberline {1.6}Terminolog\IeC {\'\i }a: int\IeC {\'e}rprete y compilador}{8}
-\contentsline {section}{\numberline {1.7}Escribiendo un programa}{10}
+\contentsline {section}{\numberline {1.7}Escribir un programa}{10}
 \contentsline {section}{\numberline {1.8}\IeC {\textquestiondown }Qu\IeC {\'e} es un programa?}{10}
 \contentsline {section}{\numberline {1.9}Los bloques de construcci\IeC {\'o}n de los programas}{12}
 \contentsline {section}{\numberline {1.10}\IeC {\textquestiondown }Qu\IeC {\'e} es posible que vaya mal?}{13}
@@ -24,177 +24,177 @@
 \contentsline {section}{\numberline {2.7}Orden de las operaciones}{24}
 \contentsline {section}{\numberline {2.8}Operador m\IeC {\'o}dulo}{24}
 \contentsline {section}{\numberline {2.9}Operaciones con cadenas}{25}
-\contentsline {section}{\numberline {2.10}Pidiendo informaci\IeC {\'o}n al usuario}{25}
+\contentsline {section}{\numberline {2.10}Petici\IeC {\'o}n de informaci\IeC {\'o}n al usuario}{25}
 \contentsline {section}{\numberline {2.11}Comentarios}{26}
-\contentsline {section}{\numberline {2.12}Eligiendo nombres de variables mnemot\IeC {\'e}cnicos}{27}
-\contentsline {section}{\numberline {2.13}Depurando}{29}
+\contentsline {section}{\numberline {2.12}Elecci\IeC {\'o}n de nombres de variables mnem\IeC {\'o}nicos}{27}
+\contentsline {section}{\numberline {2.13}Depuraci\IeC {\'o}n}{29}
 \contentsline {section}{\numberline {2.14}Glosario}{30}
 \contentsline {section}{\numberline {2.15}Ejercicios}{31}
-\contentsline {chapter}{\numberline {3}Conditional execution}{33}
-\contentsline {section}{\numberline {3.1}Boolean expressions}{33}
-\contentsline {section}{\numberline {3.2}Logical operators}{34}
-\contentsline {section}{\numberline {3.3}Conditional execution}{34}
-\contentsline {section}{\numberline {3.4}Alternative execution}{35}
-\contentsline {section}{\numberline {3.5}Chained conditionals}{35}
-\contentsline {section}{\numberline {3.6}Nested conditionals}{36}
-\contentsline {section}{\numberline {3.7}Catching exceptions using try and except}{37}
-\contentsline {section}{\numberline {3.8}Short-circuit evaluation of logical expressions}{38}
-\contentsline {section}{\numberline {3.9}Debugging}{39}
-\contentsline {section}{\numberline {3.10}Glossary}{41}
-\contentsline {section}{\numberline {3.11}Exercises}{41}
-\contentsline {chapter}{\numberline {4}Functions}{43}
-\contentsline {section}{\numberline {4.1}Function calls}{43}
-\contentsline {section}{\numberline {4.2}Built-in functions}{43}
-\contentsline {section}{\numberline {4.3}Type conversion functions}{44}
-\contentsline {section}{\numberline {4.4}Random numbers}{45}
-\contentsline {section}{\numberline {4.5}Math functions}{46}
-\contentsline {section}{\numberline {4.6}Adding new functions}{47}
-\contentsline {section}{\numberline {4.7}Definitions and uses}{48}
-\contentsline {section}{\numberline {4.8}Flow of execution}{49}
-\contentsline {section}{\numberline {4.9}Parameters and arguments}{49}
-\contentsline {section}{\numberline {4.10}Fruitful functions and void functions}{50}
-\contentsline {section}{\numberline {4.11}Why functions?}{52}
-\contentsline {section}{\numberline {4.12}Debugging}{52}
-\contentsline {section}{\numberline {4.13}Glossary}{53}
-\contentsline {section}{\numberline {4.14}Exercises}{54}
-\contentsline {chapter}{\numberline {5}Iteration}{57}
-\contentsline {section}{\numberline {5.1}Updating variables}{57}
-\contentsline {section}{\numberline {5.2}The {\tt while} statement}{57}
-\contentsline {section}{\numberline {5.3}Infinite loops}{58}
-\contentsline {section}{\numberline {5.4}``Infinite loops'' and {\tt break}}{58}
-\contentsline {section}{\numberline {5.5}Finishing iterations with {\tt continue}}{59}
-\contentsline {section}{\numberline {5.6}Definite loops using {\tt for} }{60}
-\contentsline {section}{\numberline {5.7}Loop patterns}{61}
-\contentsline {subsection}{\numberline {5.7.1}Counting and summing loops}{61}
-\contentsline {subsection}{\numberline {5.7.2}Maximum and minimum loops}{62}
-\contentsline {section}{\numberline {5.8}Debugging}{64}
-\contentsline {section}{\numberline {5.9}Glossary}{64}
-\contentsline {section}{\numberline {5.10}Exercises}{65}
-\contentsline {chapter}{\numberline {6}Strings}{67}
-\contentsline {section}{\numberline {6.1}A string is a sequence}{67}
-\contentsline {section}{\numberline {6.2}Getting the length of a string using {\tt len}}{68}
-\contentsline {section}{\numberline {6.3}Traversal through a string with a loop}{68}
-\contentsline {section}{\numberline {6.4}String slices}{69}
-\contentsline {section}{\numberline {6.5}Strings are immutable}{69}
-\contentsline {section}{\numberline {6.6}Looping and counting}{70}
-\contentsline {section}{\numberline {6.7}The {\tt in} operator}{70}
-\contentsline {section}{\numberline {6.8}String comparison}{70}
-\contentsline {section}{\numberline {6.9}{\tt string} methods}{71}
-\contentsline {section}{\numberline {6.10}Parsing strings}{73}
-\contentsline {section}{\numberline {6.11}Format operator}{74}
-\contentsline {section}{\numberline {6.12}Debugging}{75}
-\contentsline {section}{\numberline {6.13}Glossary}{76}
-\contentsline {section}{\numberline {6.14}Exercises}{77}
-\contentsline {chapter}{\numberline {7}Files}{79}
-\contentsline {section}{\numberline {7.1}Persistence}{79}
-\contentsline {section}{\numberline {7.2}Opening files}{79}
-\contentsline {section}{\numberline {7.3}Text files and lines}{80}
-\contentsline {section}{\numberline {7.4}Reading files}{81}
-\contentsline {section}{\numberline {7.5}Searching through a file}{82}
-\contentsline {section}{\numberline {7.6}Letting the user choose the file name}{84}
-\contentsline {section}{\numberline {7.7}Using {\tt try, except,} and {\tt open}}{85}
-\contentsline {section}{\numberline {7.8}Writing files}{86}
-\contentsline {section}{\numberline {7.9}Debugging}{87}
-\contentsline {section}{\numberline {7.10}Glossary}{88}
-\contentsline {section}{\numberline {7.11}Exercises}{88}
-\contentsline {chapter}{\numberline {8}Lists}{91}
-\contentsline {section}{\numberline {8.1}A list is a sequence}{91}
-\contentsline {section}{\numberline {8.2}Lists are mutable}{91}
-\contentsline {section}{\numberline {8.3}Traversing a list}{92}
-\contentsline {section}{\numberline {8.4}List operations}{93}
-\contentsline {section}{\numberline {8.5}List slices}{93}
-\contentsline {section}{\numberline {8.6}List methods}{94}
-\contentsline {section}{\numberline {8.7}Deleting elements}{94}
-\contentsline {section}{\numberline {8.8}Lists and functions}{95}
-\contentsline {section}{\numberline {8.9}Lists and strings}{96}
-\contentsline {section}{\numberline {8.10}Parsing lines}{97}
-\contentsline {section}{\numberline {8.11}Objects and values}{98}
-\contentsline {section}{\numberline {8.12}Aliasing}{99}
-\contentsline {section}{\numberline {8.13}List arguments}{99}
-\contentsline {section}{\numberline {8.14}Debugging}{101}
-\contentsline {section}{\numberline {8.15}Glossary}{104}
-\contentsline {section}{\numberline {8.16}Exercises}{105}
-\contentsline {chapter}{\numberline {9}Dictionaries}{107}
-\contentsline {section}{\numberline {9.1}Dictionary as a set of counters}{109}
-\contentsline {section}{\numberline {9.2}Dictionaries and files}{110}
-\contentsline {section}{\numberline {9.3}Looping and dictionaries}{111}
-\contentsline {section}{\numberline {9.4}Advanced text parsing}{112}
-\contentsline {section}{\numberline {9.5}Debugging}{114}
-\contentsline {section}{\numberline {9.6}Glossary}{115}
-\contentsline {section}{\numberline {9.7}Exercises}{115}
-\contentsline {chapter}{\numberline {10}Tuples}{117}
-\contentsline {section}{\numberline {10.1}Tuples are immutable}{117}
-\contentsline {section}{\numberline {10.2}Comparing tuples}{118}
-\contentsline {section}{\numberline {10.3}Tuple assignment}{119}
-\contentsline {section}{\numberline {10.4}Dictionaries and tuples}{121}
-\contentsline {section}{\numberline {10.5}Multiple assignment with dictionaries}{121}
-\contentsline {section}{\numberline {10.6}The most common words}{122}
-\contentsline {section}{\numberline {10.7}Using tuples as keys in dictionaries}{124}
-\contentsline {section}{\numberline {10.8}Sequences: strings, lists, and tuples---Oh My!}{124}
-\contentsline {section}{\numberline {10.9}Debugging}{125}
-\contentsline {section}{\numberline {10.10}Glossary}{126}
-\contentsline {section}{\numberline {10.11}Exercises}{127}
-\contentsline {chapter}{\numberline {11}Regular expressions}{129}
-\contentsline {section}{\numberline {11.1}Character matching in regular expressions}{130}
-\contentsline {section}{\numberline {11.2}Extracting data using regular expressions}{131}
-\contentsline {section}{\numberline {11.3}Combining searching and extracting}{133}
-\contentsline {section}{\numberline {11.4}Escape character}{136}
-\contentsline {section}{\numberline {11.5}Summary}{137}
-\contentsline {section}{\numberline {11.6}Bonus section for Unix users}{138}
-\contentsline {section}{\numberline {11.7}Debugging}{139}
-\contentsline {section}{\numberline {11.8}Glossary}{140}
-\contentsline {section}{\numberline {11.9}Exercises}{140}
-\contentsline {chapter}{\numberline {12}Networked programs}{143}
-\contentsline {section}{\numberline {12.1}HyperText Transport Protocol - HTTP}{143}
-\contentsline {section}{\numberline {12.2}The World's Simplest Web Browser}{144}
-\contentsline {section}{\numberline {12.3}Retrieving an image over HTTP}{145}
-\contentsline {section}{\numberline {12.4}Retrieving web pages with {\tt urllib}}{147}
-\contentsline {section}{\numberline {12.5}Parsing HTML and scraping the web}{148}
-\contentsline {section}{\numberline {12.6}Parsing HTML using regular expressions}{149}
-\contentsline {section}{\numberline {12.7}Parsing HTML using BeautifulSoup}{150}
-\contentsline {section}{\numberline {12.8}Reading binary files using urllib}{151}
-\contentsline {section}{\numberline {12.9}Glossary}{153}
-\contentsline {section}{\numberline {12.10}Exercises}{153}
-\contentsline {chapter}{\numberline {13}Using Web Services}{155}
-\contentsline {section}{\numberline {13.1}eXtensible Markup Language - XML}{155}
-\contentsline {section}{\numberline {13.2}Parsing XML}{156}
-\contentsline {section}{\numberline {13.3}Looping through nodes}{156}
-\contentsline {section}{\numberline {13.4}JavaScript Object Notation - JSON}{157}
-\contentsline {section}{\numberline {13.5}Parsing JSON}{158}
-\contentsline {section}{\numberline {13.6}Application Programming Interfaces}{159}
-\contentsline {section}{\numberline {13.7}Google geocoding web service}{160}
-\contentsline {section}{\numberline {13.8}Security and API usage}{162}
-\contentsline {section}{\numberline {13.9}Glossary}{166}
-\contentsline {section}{\numberline {13.10}Exercises}{166}
-\contentsline {chapter}{\numberline {14}Using databases and Structured Query Language (SQL)}{167}
-\contentsline {section}{\numberline {14.1}What is a database?}{167}
-\contentsline {section}{\numberline {14.2}Database concepts}{167}
-\contentsline {section}{\numberline {14.3}SQLite manager Firefox add-on}{168}
-\contentsline {section}{\numberline {14.4}Creating a database table}{168}
-\contentsline {section}{\numberline {14.5}Structured Query Language summary}{171}
-\contentsline {section}{\numberline {14.6}Spidering Twitter using a database}{172}
-\contentsline {section}{\numberline {14.7}Basic data modeling}{177}
-\contentsline {section}{\numberline {14.8}Programming with multiple tables}{179}
-\contentsline {subsection}{\numberline {14.8.1}Constraints in database tables}{181}
-\contentsline {subsection}{\numberline {14.8.2}Retrieve and/or insert a record}{181}
-\contentsline {subsection}{\numberline {14.8.3}Storing the friend relationship}{182}
-\contentsline {section}{\numberline {14.9}Three kinds of keys}{184}
-\contentsline {section}{\numberline {14.10}Using JOIN to retrieve data}{184}
-\contentsline {section}{\numberline {14.11}Summary}{186}
-\contentsline {section}{\numberline {14.12}Debugging}{187}
-\contentsline {section}{\numberline {14.13}Glossary}{187}
-\contentsline {chapter}{\numberline {15}Visualizing data}{189}
-\contentsline {section}{\numberline {15.1}Building a Google map from geocoded data}{189}
-\contentsline {section}{\numberline {15.2}Visualizing networks and interconnections}{191}
-\contentsline {section}{\numberline {15.3}Visualizing mail data}{193}
-\contentsline {chapter}{\numberline {16}Automating common tasks on your computer}{199}
-\contentsline {section}{\numberline {16.1}File names and paths}{199}
-\contentsline {section}{\numberline {16.2}Example: Cleaning up a photo directory}{200}
-\contentsline {section}{\numberline {16.3}Command-line arguments}{205}
-\contentsline {section}{\numberline {16.4}Pipes}{206}
-\contentsline {section}{\numberline {16.5}Glossary}{207}
-\contentsline {section}{\numberline {16.6}Exercises}{208}
-\contentsline {chapter}{\numberline {A}Python Programming on Windows}{211}
-\contentsline {chapter}{\numberline {B}Python Programming on Macintosh}{213}
-\contentsline {chapter}{\numberline {C}Contributions}{215}
-\contentsline {chapter}{\numberline {D}Copyright Detail}{219}
+\contentsline {chapter}{\numberline {3}Ejecuci\IeC {\'o}n condicional}{33}
+\contentsline {section}{\numberline {3.1}Expresiones booleanas}{33}
+\contentsline {section}{\numberline {3.2}Operadores l\IeC {\'o}gicos}{34}
+\contentsline {section}{\numberline {3.3}Ejecuci\IeC {\'o}n condicional}{34}
+\contentsline {section}{\numberline {3.4}Ejecuci\IeC {\'o}n alternativa}{35}
+\contentsline {section}{\numberline {3.5}Condicionales encadenados}{36}
+\contentsline {section}{\numberline {3.6}Condicionales anidados}{36}
+\contentsline {section}{\numberline {3.7}Captura de excepciones usando try y except}{37}
+\contentsline {section}{\numberline {3.8}Evaluaci\IeC {\'o}n en corto-circuito de expresiones l\IeC {\'o}gicas}{39}
+\contentsline {section}{\numberline {3.9}Depuraci\IeC {\'o}n}{40}
+\contentsline {section}{\numberline {3.10}Glosario}{41}
+\contentsline {section}{\numberline {3.11}Ejercicios}{42}
+\contentsline {chapter}{\numberline {4}Funciones}{45}
+\contentsline {section}{\numberline {4.1}Llamadas a funciones}{45}
+\contentsline {section}{\numberline {4.2}Funciones incorporadas}{45}
+\contentsline {section}{\numberline {4.3}Funciones de conversi\IeC {\'o}n de tipos}{46}
+\contentsline {section}{\numberline {4.4}N\IeC {\'u}meros aleatorios}{47}
+\contentsline {section}{\numberline {4.5}Funciones matem\IeC {\'a}ticas}{48}
+\contentsline {section}{\numberline {4.6}A\IeC {\~n}adiendo funciones nuevas}{49}
+\contentsline {section}{\numberline {4.7}Definici\IeC {\'o}n y usos}{50}
+\contentsline {section}{\numberline {4.8}Flujo de ejecuci\IeC {\'o}n}{51}
+\contentsline {section}{\numberline {4.9}Par\IeC {\'a}metros y argumentos}{52}
+\contentsline {section}{\numberline {4.10}Funciones fruct\IeC {\'\i }feras y funciones huecas}{53}
+\contentsline {section}{\numberline {4.11}\IeC {\textquestiondown }Por qu\IeC {\'e} funciones?}{54}
+\contentsline {section}{\numberline {4.12}Depuraci\IeC {\'o}n}{55}
+\contentsline {section}{\numberline {4.13}Glosario}{55}
+\contentsline {section}{\numberline {4.14}Ejercicios}{56}
+\contentsline {chapter}{\numberline {5}Iteraci\IeC {\'o}n}{59}
+\contentsline {section}{\numberline {5.1}Actualizaci\IeC {\'o}n de variables}{59}
+\contentsline {section}{\numberline {5.2}La sentencia {\tt while}}{59}
+\contentsline {section}{\numberline {5.3}Bucles infinitos}{60}
+\contentsline {section}{\numberline {5.4}``Bucles infinitos'' y {\tt break}}{61}
+\contentsline {section}{\numberline {5.5}Terminando iteraciones con {\tt continue}}{62}
+\contentsline {section}{\numberline {5.6}Bucles definidos usando {\tt for} }{62}
+\contentsline {section}{\numberline {5.7}Dise\IeC {\~n}os de bucles}{63}
+\contentsline {subsection}{\numberline {5.7.1}Bucles de recuento y suma}{64}
+\contentsline {subsection}{\numberline {5.7.2}Bucles de m\IeC {\'a}ximos y m\IeC {\'\i }nimos}{65}
+\contentsline {section}{\numberline {5.8}Depuraci\IeC {\'o}n}{66}
+\contentsline {section}{\numberline {5.9}Glosario}{67}
+\contentsline {section}{\numberline {5.10}Ejercicios}{67}
+\contentsline {chapter}{\numberline {6}Cadenas}{69}
+\contentsline {section}{\numberline {6.1}Una cadena es una secuencia}{69}
+\contentsline {section}{\numberline {6.2}Obtener la longitud de una cadena mediante {\tt len}}{70}
+\contentsline {section}{\numberline {6.3}Recorrido a trav\IeC {\'e}s de una cadena con un bucle}{70}
+\contentsline {section}{\numberline {6.4}Rebanado de cadenas}{71}
+\contentsline {section}{\numberline {6.5}Las cadenas son inmutables}{72}
+\contentsline {section}{\numberline {6.6}Bucles y recuentos}{72}
+\contentsline {section}{\numberline {6.7}El operador {\tt in}}{72}
+\contentsline {section}{\numberline {6.8}Comparaci\IeC {\'o}n de cadenas}{73}
+\contentsline {section}{\numberline {6.9}M\IeC {\'e}todos de {\tt cadenas}}{73}
+\contentsline {section}{\numberline {6.10}An\IeC {\'a}lisis de cadenas}{76}
+\contentsline {section}{\numberline {6.11}Operador de formato}{76}
+\contentsline {section}{\numberline {6.12}Depuraci\IeC {\'o}n}{77}
+\contentsline {section}{\numberline {6.13}Glosario}{78}
+\contentsline {section}{\numberline {6.14}Ejercicios}{79}
+\contentsline {chapter}{\numberline {7}Ficheros}{81}
+\contentsline {section}{\numberline {7.1}Persistencia}{81}
+\contentsline {section}{\numberline {7.2}Apertura de ficheros}{81}
+\contentsline {section}{\numberline {7.3}Ficheros de texto y l\IeC {\'\i }neas}{82}
+\contentsline {section}{\numberline {7.4}Lectura de ficheros}{83}
+\contentsline {section}{\numberline {7.5}B\IeC {\'u}squeda dentro de un fichero}{85}
+\contentsline {section}{\numberline {7.6}Permitir al usuario elegir el nombre del fichero}{87}
+\contentsline {section}{\numberline {7.7}Uso de {\tt try, except,} y {\tt open}}{87}
+\contentsline {section}{\numberline {7.8}Escritura en ficheros}{89}
+\contentsline {section}{\numberline {7.9}Depurando}{90}
+\contentsline {section}{\numberline {7.10}Glosario}{90}
+\contentsline {section}{\numberline {7.11}Ejercicios}{91}
+\contentsline {chapter}{\numberline {8}Listas}{93}
+\contentsline {section}{\numberline {8.1}Una lista es una secuencia}{93}
+\contentsline {section}{\numberline {8.2}Las listas son mutables}{93}
+\contentsline {section}{\numberline {8.3}Recorrer una lista}{94}
+\contentsline {section}{\numberline {8.4}Operaciones con listas}{95}
+\contentsline {section}{\numberline {8.5}Rebanado de listas}{95}
+\contentsline {section}{\numberline {8.6}M\IeC {\'e}todos de listas}{96}
+\contentsline {section}{\numberline {8.7}Borrado de elementos}{97}
+\contentsline {section}{\numberline {8.8}Listas y funciones}{97}
+\contentsline {section}{\numberline {8.9}Listas y cadenas}{99}
+\contentsline {section}{\numberline {8.10}An\IeC {\'a}lisis de l\IeC {\'\i }neas}{100}
+\contentsline {section}{\numberline {8.11}Objetos y valores}{100}
+\contentsline {section}{\numberline {8.12}Alias}{101}
+\contentsline {section}{\numberline {8.13}Listas como argumentos}{102}
+\contentsline {section}{\numberline {8.14}Depuraci\IeC {\'o}n}{103}
+\contentsline {section}{\numberline {8.15}Glosario}{107}
+\contentsline {section}{\numberline {8.16}Ejercicios}{108}
+\contentsline {chapter}{\numberline {9}Diccionarios}{111}
+\contentsline {section}{\numberline {9.1}Diccionario como conjunto de contadores}{113}
+\contentsline {section}{\numberline {9.2}Diccionarios y archivos}{114}
+\contentsline {section}{\numberline {9.3}Bucles y diccionarios}{115}
+\contentsline {section}{\numberline {9.4}Procesado avanzado de texto}{117}
+\contentsline {section}{\numberline {9.5}Depuraci\IeC {\'o}n}{118}
+\contentsline {section}{\numberline {9.6}Glosario}{119}
+\contentsline {section}{\numberline {9.7}Ejercicios}{120}
+\contentsline {chapter}{\numberline {10}Tuplas}{123}
+\contentsline {section}{\numberline {10.1}Las tuplas son inmutables}{123}
+\contentsline {section}{\numberline {10.2}Comparaci\IeC {\'o}n de tuplas}{124}
+\contentsline {section}{\numberline {10.3}Asignaci\IeC {\'o}n de tuplas}{126}
+\contentsline {section}{\numberline {10.4}Diccionarios y tuplas}{127}
+\contentsline {section}{\numberline {10.5}Asignaci\IeC {\'o}n m\IeC {\'u}ltiple con diccionarios}{128}
+\contentsline {section}{\numberline {10.6}Las palabras m\IeC {\'a}s comunes}{128}
+\contentsline {section}{\numberline {10.7}Uso de tuplas como claves en diccionarios}{130}
+\contentsline {section}{\numberline {10.8}Secuencias: cadenas, listas, y tuplas---\IeC {\textexclamdown }Oh, Dios m\IeC {\'\i }o!}{130}
+\contentsline {section}{\numberline {10.9}Depuraci\IeC {\'o}n}{131}
+\contentsline {section}{\numberline {10.10}Glosario}{132}
+\contentsline {section}{\numberline {10.11}Ejercicios}{133}
+\contentsline {chapter}{\numberline {11}Expresiones regulares}{135}
+\contentsline {section}{\numberline {11.1}Coincidencia de caracteres en expresiones regulares}{136}
+\contentsline {section}{\numberline {11.2}Extracci\IeC {\'o}n de datos usando expresiones regulares}{137}
+\contentsline {section}{\numberline {11.3}Combinar b\IeC {\'u}squeda y extracci\IeC {\'o}n}{140}
+\contentsline {section}{\numberline {11.4}Escapado de caracteres}{143}
+\contentsline {section}{\numberline {11.5}Resumen}{143}
+\contentsline {section}{\numberline {11.6}Secci\IeC {\'o}n extra para usuarios de Unix}{145}
+\contentsline {section}{\numberline {11.7}Depuraci\IeC {\'o}n}{145}
+\contentsline {section}{\numberline {11.8}Glosario}{146}
+\contentsline {section}{\numberline {11.9}Ejercicios}{147}
+\contentsline {chapter}{\numberline {12}Programas en red}{149}
+\contentsline {section}{\numberline {12.1}Protocolo de Transporte de Hipertexto - HTTP}{149}
+\contentsline {section}{\numberline {12.2}El Navegador Web M\IeC {\'a}s Sencillo del Mundo}{150}
+\contentsline {section}{\numberline {12.3}Recepci\IeC {\'o}n de una imagen mediante HTTP}{151}
+\contentsline {section}{\numberline {12.4}Recepci\IeC {\'o}n de p\IeC {\'a}ginas web con {\tt urllib}}{154}
+\contentsline {section}{\numberline {12.5}An\IeC {\'a}lisis de HTML y rascado de la web}{155}
+\contentsline {section}{\numberline {12.6}An\IeC {\'a}lisis de HTML mediante expresiones regulares}{155}
+\contentsline {section}{\numberline {12.7}An\IeC {\'a}lisis de HTML mediante BeautifulSoup}{156}
+\contentsline {section}{\numberline {12.8}Lectura de archivos binarios mediante urllib}{158}
+\contentsline {section}{\numberline {12.9}Glosario}{159}
+\contentsline {section}{\numberline {12.10}Ejercicios}{160}
+\contentsline {chapter}{\numberline {13}Uso de servicios web}{161}
+\contentsline {section}{\numberline {13.1}eXtensible Markup Language - XML}{161}
+\contentsline {section}{\numberline {13.2}An\IeC {\'a}lisis de XML}{162}
+\contentsline {section}{\numberline {13.3}Desplazamiento a trav\IeC {\'e}s de los nodos}{162}
+\contentsline {section}{\numberline {13.4}JavaScript Object Notation - JSON}{163}
+\contentsline {section}{\numberline {13.5}An\IeC {\'a}lisis de JSON}{164}
+\contentsline {section}{\numberline {13.6}Interfaces de programaci\IeC {\'o}n de aplicaciones}{165}
+\contentsline {section}{\numberline {13.7}Servicio web de geocodificaci\IeC {\'o}n de Google}{166}
+\contentsline {section}{\numberline {13.8}Seguridad y uso de APIs}{168}
+\contentsline {section}{\numberline {13.9}Glosario}{173}
+\contentsline {section}{\numberline {13.10}Ejercicios}{173}
+\contentsline {chapter}{\numberline {14}Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}{175}
+\contentsline {section}{\numberline {14.1}\IeC {\textquestiondown }Qu\IeC {\'e} es una base de datos?}{175}
+\contentsline {section}{\numberline {14.2}Conceptos sobre bases de datos}{176}
+\contentsline {section}{\numberline {14.3}Add-on de Firefox para gesti\IeC {\'o}n de SQLite}{176}
+\contentsline {section}{\numberline {14.4}Creaci\IeC {\'o}n de una tabla en una base de datos}{176}
+\contentsline {section}{\numberline {14.5}Resumen de Lenguaje de Consultas eStructurado}{179}
+\contentsline {section}{\numberline {14.6}Rastreo en Twitter usando una base de datos}{181}
+\contentsline {section}{\numberline {14.7}Modelado de datos b\IeC {\'a}sico}{186}
+\contentsline {section}{\numberline {14.8}Programaci\IeC {\'o}n con m\IeC {\'u}ltiples tablas}{188}
+\contentsline {subsection}{\numberline {14.8.1}Restricciones en tablas de bases de datos}{190}
+\contentsline {subsection}{\numberline {14.8.2}Recuperar y/o insertar un registro}{191}
+\contentsline {subsection}{\numberline {14.8.3}Almacenado de relaciones entre amigos}{192}
+\contentsline {section}{\numberline {14.9}Tres tipos de claves}{193}
+\contentsline {section}{\numberline {14.10}Uso de JSON para recuperar datos}{194}
+\contentsline {section}{\numberline {14.11}Resumen}{196}
+\contentsline {section}{\numberline {14.12}Depuraci\IeC {\'o}n}{196}
+\contentsline {section}{\numberline {14.13}Glosario}{197}
+\contentsline {chapter}{\numberline {15}Visualizando datos}{199}
+\contentsline {section}{\numberline {15.1}Construcci\IeC {\'o}n de un mapa de Google a partir de datos geocodificados}{199}
+\contentsline {section}{\numberline {15.2}Visualizaci\IeC {\'o}n de redes e interconexiones}{201}
+\contentsline {section}{\numberline {15.3}Visualizaci\IeC {\'o}n de datos de correo}{204}
+\contentsline {chapter}{\numberline {16}Automatizaci\IeC {\'o}n de tareas habituales en tu ordenador}{209}
+\contentsline {section}{\numberline {16.1}Nombres de archivo y rutas}{209}
+\contentsline {section}{\numberline {16.2}Ejemplo: Limpieza de un directorio de fotos}{210}
+\contentsline {section}{\numberline {16.3}Argumentos de l\IeC {\'\i }nea de comandos}{216}
+\contentsline {section}{\numberline {16.4}Pipes (tuber\IeC {\'\i }as)}{217}
+\contentsline {section}{\numberline {16.5}Glosario}{218}
+\contentsline {section}{\numberline {16.6}Ejercicios}{219}
+\contentsline {chapter}{\numberline {A}Programando con Python en Windows}{221}
+\contentsline {chapter}{\numberline {B}Programando con Python en Macintosh}{223}
+\contentsline {chapter}{\numberline {C}Colaboraciones}{225}
+\contentsline {chapter}{\numberline {D}Detalles del Copyright}{229}
