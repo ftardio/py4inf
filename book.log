@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  22 AUG 2015 12:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  22 AUG 2015 17:32
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -162,6 +162,49 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen119
 \Gin@req@width=\dimen120
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip52
@@ -720,31 +763,31 @@ Package babel Info: Making > an active character on input line 630.
 
 Writing index file book.idx
 (C:\Users\Windows\Documents\GitHub\py4inf\book.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 28
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for OMS+pzccm on input line 29
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspzccm.fd"
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -903,71 +946,94 @@ Package Fancyhdr Warning: \headheight is too small (13.59999pt):
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
+Package epstopdf Info: Source file: <figs2/pda.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 8753 bytes
+(epstopdf)             Output file: <figs2/pda-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:28:57
+(epstopdf)                    size: 3458 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/pda-eps-converted-to.
+pdf figs2/pda.eps>
+(epstopdf)             \includegraphics on input line 24.
+Package epstopdf Info: Output file is already uptodate.
+<figs2/pda-eps-converted-to.pdf, id=50, 433.62pt x 96.36pt>
+File: figs2/pda-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.24 ...udegraphics[height=1.00in]{figs2/pda.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[1
-
-
-
-
-]
-
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.90 ...degraphics[height=1.00in]{figs2/pda2.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use figs2/pda-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/pda-eps-converted-to.pdf used on input line 24.
+(pdftex.def)             Requested size: 325.2142pt x 72.26999pt.
+ [1
 
 
-! LaTeX Error: Unknown graphics extension: .eps.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.112 ...egraphics[height=2.50in]{figs2/arch.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-[2]
+ <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pda-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs2/pda2.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 8646 bytes
+(epstopdf)             Output file: <figs2/pda2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:28:58
+(epstopdf)                    size: 3413 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/pda2-eps-converted-to
+.pdf figs2/pda2.eps>
+(epstopdf)             \includegraphics on input line 90.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<figs2/pda2-eps-converted-to.pdf, id=58, 218.8175pt x 96.36pt>
+File: figs2/pda2-eps-converted-to.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.164 ...graphics[height=2.50in]{figs2/arch2.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use figs2/pda2-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/pda2-eps-converted-to.pdf used on input line 90.
 
-[3] [4]
+(pdftex.def)             Requested size: 164.11272pt x 72.26999pt.
+ [2 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pda2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs2/arch.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 8220 bytes
+(epstopdf)             Output file: <figs2/arch-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:28:58
+(epstopdf)                    size: 3520 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/arch-eps-converted-to
+.pdf figs2/arch.eps>
+(epstopdf)             \includegraphics on input line 112.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs2/arch-eps-converted-to.pdf, id=66, 437.635pt x 256.96pt>
+File: figs2/arch-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs2/arch-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/arch-eps-converted-to.pdf used on input line 112
+.
+(pdftex.def)             Requested size: 307.71802pt x 180.67499pt.
+ [3 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs2/arch2.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 8964 bytes
+(epstopdf)             Output file: <figs2/arch2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:28:59
+(epstopdf)                    size: 3727 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/arch2-eps-converted-t
+o.pdf figs2/arch2.eps>
+(epstopdf)             \includegraphics on input line 164.
+Package epstopdf Info: Output file is already uptodate.
+
+<figs2/arch2-eps-converted-to.pdf, id=74, 437.635pt x 256.96pt>
+File: figs2/arch2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figs2/arch2-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/arch2-eps-converted-to.pdf used on input line 16
+4.
+(pdftex.def)             Requested size: 307.71802pt x 180.67499pt.
+ [4 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch2-eps-converted-to.pdf>
+] [5]
 LaTeX Font Info:    Try loading font information for TS1+pcr on input line 273.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)
-[5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16])
-(C:\Users\Windows\Documents\GitHub\py4inf\02-variables.tex [17] [18
 
-]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+) [6] [7]
+[8] [9] [10] [11] [12] [13] [14] [15] [16] [17])
+(C:\Users\Windows\Documents\GitHub\py4inf\02-variables.tex [18]
 Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 6792) in paragraph at lines 17--22
@@ -976,7 +1042,9 @@ OT1/ptm/m/n/10.95 di-fe-ren-tes: \OT1/pcr/m/n/10.95 2 \OT1/ptm/m/n/10.95 es un
 en-te-ro (int), y
  []
 
-[19] [20]
+[19
+
+] [20]
 Underfull \hbox (badness 5119) in paragraph at lines 173--179
 []\OT1/ptm/m/n/10.95 El car[]acter barra-baja ([]\OT1/pcr/m/n/10.95 _\OT1/ptm/m
 /n/10.95 ) pue-de uti-li-zar-se en un nom-bre. A me-nu-do
@@ -1003,62 +1071,94 @@ Cap\'{\i }tulo 3.
 [33
 
 ]
+Package epstopdf Info: Source file: <figs2/if.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 15890 bytes
+(epstopdf)             Output file: <figs2/if-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:28:59
+(epstopdf)                    size: 8370 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/if-eps-converted-to.p
+df figs2/if.eps>
+(epstopdf)             \includegraphics on input line 141.
+Package epstopdf Info: Output file is already uptodate.
+ <figs2/if-eps-converted-to.pdf, id=178, 537.00626pt x 308.15125pt>
+File: figs2/if-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/if-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/if-eps-converted-to.pdf used on input line 141.
+(pdftex.def)             Requested size: 220.39522pt x 126.47249pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 ...udegraphics[height=1.75in]{figs2/if.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \vbox (badness 1394) has occurred while \output is active []
 
-[34]
+ [34]
+[35 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/if-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs2/if-else.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 18155 bytes
+(epstopdf)             Output file: <figs2/if-else-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:28:59
+(epstopdf)                    size: 9068 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/if-else-eps-converted
+-to.pdf figs2/if-else.eps>
+(epstopdf)             \includegraphics on input line 218.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<figs2/if-else-eps-converted-to.pdf, id=192, 816.04875pt x 311.1625pt>
+File: figs2/if-else-eps-converted-to.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 ...aphics[height=1.75in]{figs2/if-else.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use figs2/if-else-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/if-else-eps-converted-to.pdf used on input line 
+218.
+(pdftex.def)             Requested size: 331.68086pt x 126.47249pt.
+Package epstopdf Info: Source file: <figs2/elif.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 19425 bytes
+(epstopdf)             Output file: <figs2/elif-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:00
+(epstopdf)                    size: 9482 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/elif-eps-converted-to
+.pdf figs2/elif.eps>
+(epstopdf)             \includegraphics on input line 250.
+Package epstopdf Info: Output file is already uptodate.
 
-[35]
+<figs2/elif-eps-converted-to.pdf, id=193, 574.145pt x 554.07pt>
+File: figs2/elif-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/elif-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/elif-eps-converted-to.pdf used on input line 250
+.
+(pdftex.def)             Requested size: 224.66031pt x 216.81pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.250 ...egraphics[height=3.00in]{figs2/elif.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [36 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/if-else-eps-converted-to.p
+df>]
+Package epstopdf Info: Source file: <figs2/nested.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 19958 bytes
+(epstopdf)             Output file: <figs2/nested-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:00
+(epstopdf)                    size: 9531 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/nested-eps-converted-
+to.pdf figs2/nested.eps>
+(epstopdf)             \includegraphics on input line 304.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<figs2/nested-eps-converted-to.pdf, id=203, 1048.91875pt x 502.87875pt>
+File: figs2/nested-eps-converted-to.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.304 ...raphics[height=2.50in]{figs2/nested.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[36] [37] [38] [39] [40] [41] [42])
-(C:\Users\Windows\Documents\GitHub\py4inf\04-functions.tex [43] [44
-
-]
+<use figs2/nested-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/nested-eps-converted-to.pdf used on input line 3
+04.
+(pdftex.def)             Requested size: 376.85822pt x 180.67499pt.
+ [37 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/elif-eps-converted-to.pdf>
+] [38 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/nested-eps-converted-to.p
+df>] [39] [40] [41] [42] [43])
+(C:\Users\Windows\Documents\GitHub\py4inf\04-functions.tex [44]
 Cap\'{\i }tulo 4.
-[45] [46] [47] [48] [49] [50]
+[45
+
+] [46] [47] [48] [49] [50]
 Underfull \hbox (badness 2941) in paragraph at lines 496--501
 \OT1/ptm/m/n/10.95 Este pro-gra-ma con-tie-ne dos de-fi-ni-cio-nes de fun-cio-n
 es: []\OT1/pcr/m/n/10.95 print_lyrics \OT1/ptm/m/n/10.95 y
@@ -1075,21 +1175,28 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
  [64] [65] [66] [67])
 (C:\Users\Windows\Documents\GitHub\py4inf\06-strings.tex [68]
 Cap\'{\i }tulo 6.
+Package epstopdf Info: Source file: <figs2/string.eps>
+(epstopdf)                    date: 2015-07-23 20:50:32
+(epstopdf)                    size: 30085 bytes
+(epstopdf)             Output file: <figs2/string-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:01
+(epstopdf)                    size: 13100 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/string-eps-converted-
+to.pdf figs2/string.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+<figs2/string-eps-converted-to.pdf, id=318, 299.1175pt x 63.23625pt>
+File: figs2/string-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/string-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/string-eps-converted-to.pdf used on input line 5
+8.
+(pdftex.def)             Requested size: 170.92776pt x 36.135pt.
+ [69
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.58 ...graphics[height=0.50in]{figs2/string.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[69
-
-] [70] [71] [72] [73] [74] [75] [76] [77] [78]
+ <C:/Users/Windows/Documents/GitHub/py4inf/figs2/string-eps-converted-to.pdf>] 
+[70] [71] [72] [73] [74] [75]
+[76] [77] [78]
 Underfull \hbox (badness 10000) in paragraph at lines 889--894
 $\OT1/pcr/m/n/10.95 https : / / docs . python . org / 2 / library / stdtypes . 
 html # string-[]methods$\OT1/ptm/m/n/10.95 .
@@ -1097,56 +1204,72 @@ html # string-[]methods$\OT1/ptm/m/n/10.95 .
 
 [79]) (C:\Users\Windows\Documents\GitHub\py4inf\07-files.tex [80]
 Cap\'{\i }tulo 7.
+Package epstopdf Info: Source file: <figs2/arch3.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 4609 bytes
+(epstopdf)             Output file: <figs2/arch3-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:01
+(epstopdf)                    size: 2881 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/arch3-eps-converted-t
+o.pdf figs2/arch3.eps>
+(epstopdf)             \includegraphics on input line 28.
+Package epstopdf Info: Output file is already uptodate.
+<figs2/arch3-eps-converted-to.pdf, id=367, 437.635pt x 243.91125pt>
+File: figs2/arch3-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/arch3-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/arch3-eps-converted-to.pdf used on input line 28
+.
+(pdftex.def)             Requested size: 324.17871pt x 180.67499pt.
+ [81
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 ...egraphics[height=2.50in]{figs2/arch3.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch3-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figs2/handle.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 41483 bytes
+(epstopdf)             Output file: <figs2/handle-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:01
+(epstopdf)                    size: 18370 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/handle-eps-converted-
+to.pdf figs2/handle.eps>
+(epstopdf)             \includegraphics on input line 74.
+Package epstopdf Info: Output file is already uptodate.
 
-[81
+<figs2/handle-eps-converted-to.pdf, id=374, 606.265pt x 307.1475pt>
+File: figs2/handle-eps-converted-to.pdf Graphic file (type pdf)
 
-]
-
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 ...graphics[height=1.75in]{figs2/handle.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[82] [83]
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [84]
-[85] [86] [87] [88] [89] [90] [91])
-(C:\Users\Windows\Documents\GitHub\py4inf\08-lists.tex [92]
+<use figs2/handle-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/handle-eps-converted-to.pdf used on input line 7
+4.
+(pdftex.def)             Requested size: 249.64336pt x 126.47249pt.
+ [82 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/handle-eps-converted-to.pd
+f>] [83] [84] [85] [86] [87] [88]
+[89] [90] [91]) (C:\Users\Windows\Documents\GitHub\py4inf\08-lists.tex [92]
 Cap\'{\i }tulo 8.
 [93
 
 ] [94] [95] [96] [97] [98] [99]
+Package epstopdf Info: Source file: <figs2/list1.eps>
+(epstopdf)                    date: 2015-07-23 20:50:32
+(epstopdf)                    size: 4720 bytes
+(epstopdf)             Output file: <figs2/list1-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:02
+(epstopdf)                    size: 3133 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/list1-eps-converted-t
+o.pdf figs2/list1.eps>
+(epstopdf)             \includegraphics on input line 703.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<figs2/list1-eps-converted-to.pdf, id=443, 218.8175pt x 42.1575pt>
+File: figs2/list1-eps-converted-to.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.703 ...erline{\includegraphics{figs2/list1.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[100] [101] [102] [103] [104] [105] [106] [107] [108])
+<use figs2/list1-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/list1-eps-converted-to.pdf used on input line 70
+3.
+(pdftex.def)             Requested size: 218.81696pt x 42.15738pt.
+ [100] [101 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/list1-eps-converted
+-to.pdf>] [102] [103] [104] [105]
+[106] [107] [108])
 (C:\Users\Windows\Documents\GitHub\py4inf\09-dictionaries.tex [109] [110
 
 ]
@@ -1182,85 +1305,107 @@ cias (csev@umich.edu y
 ]
 Cap\'{\i }tulo 12.
 [149]
+Package epstopdf Info: Source file: <figs2/socket.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 23622 bytes
+(epstopdf)             Output file: <figs2/socket-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:02
+(epstopdf)                    size: 11207 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/socket-eps-converted-
+to.pdf figs2/socket.eps>
+(epstopdf)             \includegraphics on input line 88.
+Package epstopdf Info: Output file is already uptodate.
+ <figs2/socket-eps-converted-to.pdf, id=606, 1032.85875pt x 476.78125pt>
+File: figs2/socket-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/socket-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/socket-eps-converted-to.pdf used on input line 8
+8.
+(pdftex.def)             Requested size: 234.84177pt x 108.405pt.
+ [150]
+Underfull \vbox (badness 2310) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88 ...graphics[height=1.50in]{figs2/socket.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ [151 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/socket-eps-converted-to.p
+df>]
+[152] [153] [154] [155] [156] [157] [158] [159] [160])
+(C:\Users\Windows\Documents\GitHub\py4inf\13-web.tex [161] [162
 
-[150] [151]
-Underfull \vbox (badness 5446) has occurred while \output is active []
-
- [152]
-[153] [154] [155] [156] [157] [158] [159])
-(C:\Users\Windows\Documents\GitHub\py4inf\13-web.tex [160]
+]
 Cap\'{\i }tulo 13.
+Package epstopdf Info: Source file: <figs2/xml-tree.eps>
+(epstopdf)                    date: 2015-08-22 13:16:54
+(epstopdf)                    size: 53993 bytes
+(epstopdf)             Output file: <figs2/xml-tree-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:03
+(epstopdf)                    size: 20222 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/xml-tree-eps-converte
+d-to.pdf figs2/xml-tree.eps>
+(epstopdf)             \includegraphics on input line 42.
+Package epstopdf Info: Output file is already uptodate.
+<figs2/xml-tree-eps-converted-to.pdf, id=654, 916.42375pt x 381.425pt>
+File: figs2/xml-tree-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/xml-tree-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/xml-tree-eps-converted-to.pdf used on input line
+ 42.
+(pdftex.def)             Requested size: 260.45634pt x 108.405pt.
+ [163] [164 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/xml-tree-eps-conver
+ted-to.pdf>] [165] [166] [167]
+Package epstopdf Info: Source file: <figs2/soa.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 20591 bytes
+(epstopdf)             Output file: <figs2/soa-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:03
+(epstopdf)                    size: 10207 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/soa-eps-converted-to.
+pdf figs2/soa.eps>
+(epstopdf)             \includegraphics on input line 296.
+Package epstopdf Info: Output file is already uptodate.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 ...aphics[height=1.50in]{figs2/xml-tree.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<figs2/soa-eps-converted-to.pdf, id=681, 982.67125pt x 736.7525pt>
+File: figs2/soa-eps-converted-to.pdf Graphic file (type pdf)
 
-[161
+<use figs2/soa-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/soa-eps-converted-to.pdf used on input line 296.
 
-] [162] [163] [164] [165]
-
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.296 ...degraphics[height=2.50in]{figs2/soa.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[166]
+(pdftex.def)             Requested size: 240.97398pt x 180.67499pt.
+ [168 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/soa-eps-converted-to.pdf>
+]
 Underfull \hbox (badness 10000) in paragraph at lines 335--336
 []$\OT1/pcr/m/n/10.95 http : / / maps . googleapis . com / maps / api / geocode
  / json ? sensor = false &$
  []
 
-[167]
+[169] [170]
 Underfull \hbox (badness 1603) in paragraph at lines 433--437
 \OT1/ptm/m/n/10.95 Puedes des-car-gar $\OT1/pcr/m/n/10.95 www . py4inf . com / 
 code / geojson . py$ \OT1/ptm/m/n/10.95 y $\OT1/pcr/m/n/10.95 www . py4inf . co
 m /$
  []
 
-[168] [169] [170] [171]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [172])
-(C:\Users\Windows\Documents\GitHub\py4inf\14-database.tex [173] [174
+[171] [172] [173] [174] [175])
+(C:\Users\Windows\Documents\GitHub\py4inf\14-database.tex [176]
+Cap\'{\i }tulo 14.
+[177
 
 ]
-Cap\'{\i }tulo 14.
-[175]
+Package epstopdf Info: Source file: <figs2/relational.eps>
+(epstopdf)                    date: 2015-08-22 13:10:54
+(epstopdf)                    size: 30908 bytes
+(epstopdf)             Output file: <figs2/relational-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:03
+(epstopdf)                    size: 14701 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/relational-eps-conver
+ted-to.pdf figs2/relational.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
+ <figs2/relational-eps-converted-to.pdf, id=719, 854.19125pt x 277.035pt>
+File: figs2/relational-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 ...hics[height=1.50in]{figs2/relational.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use figs2/relational-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/relational-eps-converted-to.pdf used on input li
+ne 49.
+(pdftex.def)             Requested size: 334.24113pt x 108.405pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.20308pt): 
@@ -1268,33 +1413,47 @@ Package Fancyhdr Warning: \headheight is too small (14.20308pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[176]
+[178 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/relational-eps-converted-t
+o.pdf>]
+Package epstopdf Info: Source file: <figs2/cursor.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 29617 bytes
+(epstopdf)             Output file: <figs2/cursor-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:04
+(epstopdf)                    size: 14023 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/cursor-eps-converted-
+to.pdf figs2/cursor.eps>
+(epstopdf)             \includegraphics on input line 144.
+Package epstopdf Info: Output file is already uptodate.
+ <figs2/cursor-eps-converted-to.pdf, id=730, 538.01pt x 308.15125pt>
+File: figs2/cursor-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/cursor-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/cursor-eps-converted-to.pdf used on input line 1
+44.
+(pdftex.def)             Requested size: 189.26682pt x 108.405pt.
+ [179] [180 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/cursor-eps-converte
+d-to.pdf>]
+Package epstopdf Info: Source file: <figs2/tracks.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 19673 bytes
+(epstopdf)             Output file: <figs2/tracks-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:04
+(epstopdf)                    size: 9958 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/tracks-eps-converted-
+to.pdf figs2/tracks.eps>
+(epstopdf)             \includegraphics on input line 229.
+Package epstopdf Info: Output file is already uptodate.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 ...raphics[height=1.50in]{figs2/cursor.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<figs2/tracks-eps-converted-to.pdf, id=748, 448.67625pt x 244.915pt>
+File: figs2/tracks-eps-converted-to.pdf Graphic file (type pdf)
 
-[177]
-
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.229 ...raphics[height=1.00in]{figs2/tracks.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[178] [179] [180] [181]
+<use figs2/tracks-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/tracks-eps-converted-to.pdf used on input line 2
+29.
+(pdftex.def)             Requested size: 132.39258pt x 72.26999pt.
+ [181 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/tracks-eps-converted-to.p
+df>] [182] [183]
 Overfull \hbox (2.62457pt too wide) in paragraph at lines 469--469
 []        \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 SELECT nomb
 re FROM Twitter WHERE recuperado = 0 LIMIT 1\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
@@ -1308,14 +1467,14 @@ SET recuperado=1 WHERE nombre = ?\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , (cuenta, ) )[
 ] 
  []
 
-[182] [183] [184]
+[184] [185] [186]
 Overfull \hbox (2.62457pt too wide) in paragraph at lines 633--633
 []        \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 SELECT nomb
 re FROM Twitter WHERE recuperado = 0 LIMIT 1\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
 
  []
 
-
+[187]
 Overfull \hbox (1.27464pt too wide) in paragraph at lines 654--654
 []    \OT1/pcr/m/n/9 url = twurl.augment(TWITTER_URL, {\TS1/pcr/m/n/9 '\OT1/pcr
 /m/n/9 screen_name\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 : cuenta, \TS1/pcr/m/n/9 '\OT1
@@ -1330,27 +1489,37 @@ SET recuperado=1 WHERE nombre = ?\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , (cuenta, ) )[
 ] 
  []
 
-[185] [186]
+[188]
 Overfull \hbox (13.42456pt too wide) in paragraph at lines 740--740
 []\OT1/pcr/m/n/9 INSERT INTO Camaradas (desde_amigo, hacia_amigo) VALUES (\TS1/
 pcr/m/n/9 '\OT1/pcr/m/n/9 drchuck\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , \TS1/pcr/m/n/
 9 '\OT1/pcr/m/n/9 lhawthorn\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
  []
 
-[187]
+[189]
+Package epstopdf Info: Source file: <figs2/twitter.eps>
+(epstopdf)                    date: 2015-08-22 13:06:37
+(epstopdf)                    size: 48778 bytes
+(epstopdf)             Output file: <figs2/twitter-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:05
+(epstopdf)                    size: 22183 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/twitter-eps-converted
+-to.pdf figs2/twitter.eps>
+(epstopdf)             \includegraphics on input line 816.
+Package epstopdf Info: Output file is already uptodate.
+ <figs2/twitter-eps-converted-to.pdf, id=783, 1021.8175pt x 644.4075pt>
+File: figs2/twitter-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/twitter-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/twitter-eps-converted-to.pdf used on input line 
+816.
+(pdftex.def)             Requested size: 286.49673pt x 180.67499pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.816 ...aphics[height=2.50in]{figs2/twitter.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[188]
+ [190]
+[191 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/twitter-eps-converted-to.p
+df>]
 Overfull \hbox (3.43459pt too wide) in paragraph at lines 906--906
 []            \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 INSER
 T OR IGNORE INTO Personas (nombre, recuperado)[] 
@@ -1375,24 +1544,20 @@ Overfull \hbox (3.43459pt too wide) in paragraph at lines 906--906
  IGNORE INTO Seguimientos (desde_id, hacia_id)[] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [189]
-[190]
+[192] [193]
 Overfull \hbox (3.43459pt too wide) in paragraph at lines 1027--1027
 []            \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 INSER
 T OR IGNORE INTO Personas (nombre, recuperado)[] 
  []
 
-[191]
+[194]
 Overfull \hbox (30.16446pt too wide) in paragraph at lines 1053--1053
 []\OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 INSERT OR IGNORE IN
 TO Seguimientos (desde_id, hacia_id) VALUES (?, ?)\TS1/pcr/m/n/9 '\OT1/pcr/m/n/
 9 ,[] 
  []
 
-[192] [193]
+[195] [196]
 LaTeX Font Info:    Try loading font information for OML+ptm on input line 1166
 .
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
@@ -1401,108 +1566,146 @@ File: omlptm.fd
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 1166.
 
+Package epstopdf Info: Source file: <figs2/join.eps>
+(epstopdf)                    date: 2015-08-22 12:03:04
+(epstopdf)                    size: 24203 bytes
+(epstopdf)             Output file: <figs2/join-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:05
+(epstopdf)                    size: 10891 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/join-eps-converted-to
+.pdf figs2/join.eps>
+(epstopdf)             \includegraphics on input line 1187.
+Package epstopdf Info: Output file is already uptodate.
 
+<figs2/join-eps-converted-to.pdf, id=816, 916.42375pt x 631.35875pt>
+File: figs2/join-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1187 ...graphics[height=2.50in]{figs2/join.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[194]
+<use figs2/join-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/join-eps-converted-to.pdf used on input line 118
+7.
+(pdftex.def)             Requested size: 262.24623pt x 180.67499pt.
+ [197 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/join-eps-converted-to.pdf
+>]
 Overfull \hbox (3.43459pt too wide) in paragraph at lines 1234--1234
 []    \OT1/pcr/m/n/9 ON Seguimientos.hacia_id = Personas.id WHERE Seguimientos.
 desde_id = 2\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 )[] 
  []
 
-[195] [196]) (C:\Users\Windows\Documents\GitHub\py4inf\15-viz.tex [197]
-[198
+[198] [199] [200]) (C:\Users\Windows\Documents\GitHub\py4inf\15-viz.tex
+[201] [202
 
 ]
 Cap\'{\i }tulo 15.
+Package epstopdf Info: Source file: <figs2/google-map.eps>
+(epstopdf)                    date: 2015-07-23 20:50:32
+(epstopdf)                    size: 1610376 bytes
+(epstopdf)             Output file: <figs2/google-map-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:07
+(epstopdf)                    size: 72314 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/google-map-eps-conver
+ted-to.pdf figs2/google-map.eps>
+(epstopdf)             \includegraphics on input line 29.
+Package epstopdf Info: Output file is already uptodate.
+<figs2/google-map-eps-converted-to.pdf, id=842, 947.54pt x 681.54625pt>
+File: figs2/google-map-eps-converted-to.pdf Graphic file (type pdf)
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<use figs2/google-map-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/google-map-eps-converted-to.pdf used on input li
+ne 29.
+(pdftex.def)             Requested size: 226.06963pt x 162.6075pt.
+ [203 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/google-map-eps-converted-
+to.pdf>] [204] [205]
+Package epstopdf Info: Source file: <figs2/pagerank.eps>
+(epstopdf)                    date: 2015-07-23 20:50:32
+(epstopdf)                    size: 437382 bytes
+(epstopdf)             Output file: <figs2/pagerank-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:08
+(epstopdf)                    size: 42121 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/pagerank-eps-converte
+d-to.pdf figs2/pagerank.eps>
+(epstopdf)             \includegraphics on input line 165.
+Package epstopdf Info: Output file is already uptodate.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.29 ...hics[height=2.25in]{figs2/google-map.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<figs2/pagerank-eps-converted-to.pdf, id=856, 641.39626pt x 498.86375pt>
+File: figs2/pagerank-eps-converted-to.pdf Graphic file (type pdf)
 
-[199] [200]
+<use figs2/pagerank-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/pagerank-eps-converted-to.pdf used on input line
+ 165.
+(pdftex.def)             Requested size: 209.06789pt x 162.6075pt.
+ [206 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pagerank-eps-converted-to
+.pdf>] [207]
+Package epstopdf Info: Source file: <figs2/wordcloud.eps>
+(epstopdf)                    date: 2015-07-23 20:50:33
+(epstopdf)                    size: 470699 bytes
+(epstopdf)             Output file: <figs2/wordcloud-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:09
+(epstopdf)                    size: 80942 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/wordcloud-eps-convert
+ed-to.pdf figs2/wordcloud.eps>
+(epstopdf)             \includegraphics on input line 324.
+Package epstopdf Info: Output file is already uptodate.
 
-! LaTeX Error: Unknown graphics extension: .eps.
+<figs2/wordcloud-eps-converted-to.pdf, id=866, 824.07875pt x 881.2925pt>
+File: figs2/wordcloud-eps-converted-to.pdf Graphic file (type pdf)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.165 ...phics[height=2.25in]{figs2/pagerank.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use figs2/wordcloud-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/wordcloud-eps-converted-to.pdf used on input lin
+e 324.
+(pdftex.def)             Requested size: 168.93723pt x 180.67499pt.
 
-[201] [202] [203]
+Underfull \vbox (badness 2486) has occurred while \output is active []
 
-! LaTeX Error: Unknown graphics extension: .eps.
+ [208]
+[209 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/wordcloud-eps-converted-to
+.pdf>] [210] [211]
+Package epstopdf Info: Source file: <figs2/mailorg.eps>
+(epstopdf)                    date: 2015-07-23 20:50:32
+(epstopdf)                    size: 676820 bytes
+(epstopdf)             Output file: <figs2/mailorg-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-22 17:29:10
+(epstopdf)                    size: 208620 bytes
+(epstopdf)             Command: <epstopdf --outfile=figs2/mailorg-eps-converted
+-to.pdf figs2/mailorg.eps>
+(epstopdf)             \includegraphics on input line 556.
+Package epstopdf Info: Output file is already uptodate.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.324 ...hics[height=2.50in]{figs2/wordcloud.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<figs2/mailorg-eps-converted-to.pdf, id=883, 1230.5975pt x 687.56876pt>
+File: figs2/mailorg-eps-converted-to.pdf Graphic file (type pdf)
 
-[204] [205] [206]
+<use figs2/mailorg-eps-converted-to.pdf>
+Package pdftex.def Info: figs2/mailorg-eps-converted-to.pdf used on input line 
+556.
+(pdftex.def)             Requested size: 323.3653pt x 180.67499pt.
+ [212])
+(C:\Users\Windows\Documents\GitHub\py4inf\16-tasks.tex [213 <C:/Users/Windows/D
+ocuments/GitHub/py4inf/figs2/mailorg-eps-converted-to.pdf>] [214
 
-! LaTeX Error: Unknown graphics extension: .eps.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.556 ...aphics[height=2.50in]{figs2/mailorg.eps}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[207]) (C:\Users\Windows\Documents\GitHub\py4inf\16-tasks.tex [208]
+]
 Cap\'{\i }tulo 16.
-[209
-
-] [210] [211] [212]
+[215] [216] [217] [218]
 Overfull \hbox (7.21455pt too wide) in paragraph at lines 338--338
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
-[213]
+[219]
 Overfull \hbox (7.21455pt too wide) in paragraph at lines 392--392
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
-[214]
+[220]
 Overfull \hbox (7.21455pt too wide) in paragraph at lines 430--430
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
-[215] [216] [217] [218] [219])
-(C:\Users\Windows\Documents\GitHub\py4inf\AA-windows.tex [220]
+[221] [222] [223] [224] [225])
+(C:\Users\Windows\Documents\GitHub\py4inf\AA-windows.tex [226]
 Ap\'{e}ndice A.
 LaTeX Font Info:    Try loading font information for OMS+pcr on input line 28.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
@@ -1510,29 +1713,29 @@ File: omspcr.fd
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
- [221
+ [227
 
 ])
-(C:\Users\Windows\Documents\GitHub\py4inf\AB-apple.tex [222]
+(C:\Users\Windows\Documents\GitHub\py4inf\AB-apple.tex [228]
 Ap\'{e}ndice B.
-[223
+[229
 
-]) (C:\Users\Windows\Documents\GitHub\py4inf\AC-contrib.tex [224]
+]) (C:\Users\Windows\Documents\GitHub\py4inf\AC-contrib.tex [230]
 Ap\'{e}ndice C.
-[225
+[231
 
-] [226]
+] [232]
 Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
-[227]) (C:\Users\Windows\Documents\GitHub\py4inf\AD-copyright.tex [228]
+[233]) (C:\Users\Windows\Documents\GitHub\py4inf\AD-copyright.tex [234]
 Ap\'{e}ndice D.
-[229
+[235
 
 ]
 No file book.ind.
-[230]
+[236]
 \createspace@c@pages=\count134
 
 Package createspace Info: added one page for calculations to make the page coun
@@ -1545,18 +1748,18 @@ t even
 \log@current=\dimen135
 \createspace@log=\dimen136
 \createspace@l@spine=\dimen137
-Package createspace Info: spine is about 37.86072pt wide
+Package createspace Info: spine is about 39.16626pt wide
 
 \createspace@cents=\count137
 \createspace@dols=\count138
-Package createspace Info: book cost is 6.14USD (3.63USD for pro plan)
+Package createspace Info: book cost is 6.26USD (3.70USD for pro plan)
 
 (C:\Users\Windows\Documents\GitHub\py4inf\book.aux) ) ) 
 Here is how much of TeX's memory you used:
- 5686 strings out of 493921
- 77580 string characters out of 3144870
- 137293 words of memory out of 3000000
- 8721 multiletter control sequences out of 15000+200000
+ 6120 strings out of 493921
+ 87506 string characters out of 3144870
+ 145900 words of memory out of 3000000
+ 9127 multiletter control sequences out of 15000+200000
  66777 words of font info for 139 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,12n,69p,362b,573s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1571,9 +1774,9 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (244 pages, 700737 bytes).
+Output written on book.pdf (250 pages, 1269932 bytes).
 PDF statistics:
- 826 PDF objects out of 1000 (max. 8388607)
+ 1008 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

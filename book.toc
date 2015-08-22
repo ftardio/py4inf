@@ -2,18 +2,18 @@
 \contentsline {chapter}{Prefacio}{\es@scroman {iii}}
 \contentsline {chapter}{\numberline {1}\IeC {\textquestiondown }Por qu\IeC {\'e} deber\IeC {\'\i }a aprender a escribir programas?}{1}
 \contentsline {section}{\numberline {1.1}Creatividad y motivaci\IeC {\'o}n}{2}
-\contentsline {section}{\numberline {1.2}Arquitectura hardware del ordenador}{2}
+\contentsline {section}{\numberline {1.2}Arquitectura hardware del ordenador}{3}
 \contentsline {section}{\numberline {1.3}Comprendiendo la programaci\IeC {\'o}n}{4}
 \contentsline {section}{\numberline {1.4}Palabras y frases}{5}
 \contentsline {section}{\numberline {1.5}Conversando con Python}{6}
 \contentsline {section}{\numberline {1.6}Terminolog\IeC {\'\i }a: int\IeC {\'e}rprete y compilador}{8}
-\contentsline {section}{\numberline {1.7}Escribir un programa}{10}
-\contentsline {section}{\numberline {1.8}\IeC {\textquestiondown }Qu\IeC {\'e} es un programa?}{10}
-\contentsline {section}{\numberline {1.9}Los bloques de construcci\IeC {\'o}n de los programas}{12}
-\contentsline {section}{\numberline {1.10}\IeC {\textquestiondown }Qu\IeC {\'e} es posible que vaya mal?}{13}
-\contentsline {section}{\numberline {1.11}El viaje de aprendizaje}{14}
-\contentsline {section}{\numberline {1.12}Glosario}{15}
-\contentsline {section}{\numberline {1.13}Ejercicios}{16}
+\contentsline {section}{\numberline {1.7}Escribir un programa}{11}
+\contentsline {section}{\numberline {1.8}\IeC {\textquestiondown }Qu\IeC {\'e} es un programa?}{11}
+\contentsline {section}{\numberline {1.9}Los bloques de construcci\IeC {\'o}n de los programas}{13}
+\contentsline {section}{\numberline {1.10}\IeC {\textquestiondown }Qu\IeC {\'e} es posible que vaya mal?}{14}
+\contentsline {section}{\numberline {1.11}El viaje de aprendizaje}{15}
+\contentsline {section}{\numberline {1.12}Glosario}{16}
+\contentsline {section}{\numberline {1.13}Ejercicios}{17}
 \contentsline {chapter}{\numberline {2}Variables, expresiones y sentencias}{19}
 \contentsline {section}{\numberline {2.1}Valores y tipos}{19}
 \contentsline {section}{\numberline {2.2}Variables}{20}
@@ -36,12 +36,12 @@
 \contentsline {section}{\numberline {3.3}Ejecuci\IeC {\'o}n condicional}{34}
 \contentsline {section}{\numberline {3.4}Ejecuci\IeC {\'o}n alternativa}{35}
 \contentsline {section}{\numberline {3.5}Condicionales encadenados}{36}
-\contentsline {section}{\numberline {3.6}Condicionales anidados}{36}
-\contentsline {section}{\numberline {3.7}Captura de excepciones usando try y except}{37}
-\contentsline {section}{\numberline {3.8}Evaluaci\IeC {\'o}n en corto-circuito de expresiones l\IeC {\'o}gicas}{39}
-\contentsline {section}{\numberline {3.9}Depuraci\IeC {\'o}n}{40}
-\contentsline {section}{\numberline {3.10}Glosario}{41}
-\contentsline {section}{\numberline {3.11}Ejercicios}{42}
+\contentsline {section}{\numberline {3.6}Condicionales anidados}{37}
+\contentsline {section}{\numberline {3.7}Captura de excepciones usando try y except}{38}
+\contentsline {section}{\numberline {3.8}Evaluaci\IeC {\'o}n en corto-circuito de expresiones l\IeC {\'o}gicas}{40}
+\contentsline {section}{\numberline {3.9}Depuraci\IeC {\'o}n}{41}
+\contentsline {section}{\numberline {3.10}Glosario}{42}
+\contentsline {section}{\numberline {3.11}Ejercicios}{43}
 \contentsline {chapter}{\numberline {4}Funciones}{45}
 \contentsline {section}{\numberline {4.1}Llamadas a funciones}{45}
 \contentsline {section}{\numberline {4.2}Funciones incorporadas}{45}
@@ -87,15 +87,15 @@
 \contentsline {section}{\numberline {6.14}Ejercicios}{79}
 \contentsline {chapter}{\numberline {7}Ficheros}{81}
 \contentsline {section}{\numberline {7.1}Persistencia}{81}
-\contentsline {section}{\numberline {7.2}Apertura de ficheros}{81}
-\contentsline {section}{\numberline {7.3}Ficheros de texto y l\IeC {\'\i }neas}{82}
-\contentsline {section}{\numberline {7.4}Lectura de ficheros}{83}
+\contentsline {section}{\numberline {7.2}Apertura de ficheros}{82}
+\contentsline {section}{\numberline {7.3}Ficheros de texto y l\IeC {\'\i }neas}{83}
+\contentsline {section}{\numberline {7.4}Lectura de ficheros}{84}
 \contentsline {section}{\numberline {7.5}B\IeC {\'u}squeda dentro de un fichero}{85}
 \contentsline {section}{\numberline {7.6}Permitir al usuario elegir el nombre del fichero}{87}
-\contentsline {section}{\numberline {7.7}Uso de {\tt try, except,} y {\tt open}}{87}
+\contentsline {section}{\numberline {7.7}Uso de {\tt try, except,} y {\tt open}}{88}
 \contentsline {section}{\numberline {7.8}Escritura en ficheros}{89}
 \contentsline {section}{\numberline {7.9}Depurando}{90}
-\contentsline {section}{\numberline {7.10}Glosario}{90}
+\contentsline {section}{\numberline {7.10}Glosario}{91}
 \contentsline {section}{\numberline {7.11}Ejercicios}{91}
 \contentsline {chapter}{\numberline {8}Listas}{93}
 \contentsline {section}{\numberline {8.1}Una lista es una secuencia}{93}
@@ -147,7 +147,7 @@
 \contentsline {chapter}{\numberline {12}Programas en red}{149}
 \contentsline {section}{\numberline {12.1}Protocolo de Transporte de Hipertexto - HTTP}{149}
 \contentsline {section}{\numberline {12.2}El Navegador Web M\IeC {\'a}s Sencillo del Mundo}{150}
-\contentsline {section}{\numberline {12.3}Recepci\IeC {\'o}n de una imagen mediante HTTP}{151}
+\contentsline {section}{\numberline {12.3}Recepci\IeC {\'o}n de una imagen mediante HTTP}{152}
 \contentsline {section}{\numberline {12.4}Recepci\IeC {\'o}n de p\IeC {\'a}ginas web con {\tt urllib}}{154}
 \contentsline {section}{\numberline {12.5}An\IeC {\'a}lisis de HTML y rascado de la web}{155}
 \contentsline {section}{\numberline {12.6}An\IeC {\'a}lisis de HTML mediante expresiones regulares}{155}
@@ -155,46 +155,46 @@
 \contentsline {section}{\numberline {12.8}Lectura de archivos binarios mediante urllib}{158}
 \contentsline {section}{\numberline {12.9}Glosario}{159}
 \contentsline {section}{\numberline {12.10}Ejercicios}{160}
-\contentsline {chapter}{\numberline {13}Uso de servicios web}{161}
-\contentsline {section}{\numberline {13.1}eXtensible Markup Language - XML}{161}
-\contentsline {section}{\numberline {13.2}An\IeC {\'a}lisis de XML}{162}
-\contentsline {section}{\numberline {13.3}Desplazamiento a trav\IeC {\'e}s de los nodos}{162}
-\contentsline {section}{\numberline {13.4}JavaScript Object Notation - JSON}{163}
-\contentsline {section}{\numberline {13.5}An\IeC {\'a}lisis de JSON}{164}
-\contentsline {section}{\numberline {13.6}Interfaces de programaci\IeC {\'o}n de aplicaciones}{165}
-\contentsline {section}{\numberline {13.7}Servicio web de geocodificaci\IeC {\'o}n de Google}{166}
-\contentsline {section}{\numberline {13.8}Seguridad y uso de APIs}{168}
-\contentsline {section}{\numberline {13.9}Glosario}{173}
-\contentsline {section}{\numberline {13.10}Ejercicios}{173}
-\contentsline {chapter}{\numberline {14}Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}{175}
-\contentsline {section}{\numberline {14.1}\IeC {\textquestiondown }Qu\IeC {\'e} es una base de datos?}{175}
-\contentsline {section}{\numberline {14.2}Conceptos sobre bases de datos}{176}
-\contentsline {section}{\numberline {14.3}Add-on de Firefox para gesti\IeC {\'o}n de SQLite}{176}
-\contentsline {section}{\numberline {14.4}Creaci\IeC {\'o}n de una tabla en una base de datos}{176}
-\contentsline {section}{\numberline {14.5}Resumen de Lenguaje de Consultas eStructurado}{179}
-\contentsline {section}{\numberline {14.6}Rastreo en Twitter usando una base de datos}{181}
-\contentsline {section}{\numberline {14.7}Modelado de datos b\IeC {\'a}sico}{186}
-\contentsline {section}{\numberline {14.8}Programaci\IeC {\'o}n con m\IeC {\'u}ltiples tablas}{188}
-\contentsline {subsection}{\numberline {14.8.1}Restricciones en tablas de bases de datos}{190}
-\contentsline {subsection}{\numberline {14.8.2}Recuperar y/o insertar un registro}{191}
-\contentsline {subsection}{\numberline {14.8.3}Almacenado de relaciones entre amigos}{192}
-\contentsline {section}{\numberline {14.9}Tres tipos de claves}{193}
-\contentsline {section}{\numberline {14.10}Uso de JSON para recuperar datos}{194}
-\contentsline {section}{\numberline {14.11}Resumen}{196}
-\contentsline {section}{\numberline {14.12}Depuraci\IeC {\'o}n}{196}
-\contentsline {section}{\numberline {14.13}Glosario}{197}
-\contentsline {chapter}{\numberline {15}Visualizando datos}{199}
-\contentsline {section}{\numberline {15.1}Construcci\IeC {\'o}n de un mapa de Google a partir de datos geocodificados}{199}
-\contentsline {section}{\numberline {15.2}Visualizaci\IeC {\'o}n de redes e interconexiones}{201}
-\contentsline {section}{\numberline {15.3}Visualizaci\IeC {\'o}n de datos de correo}{204}
-\contentsline {chapter}{\numberline {16}Automatizaci\IeC {\'o}n de tareas habituales en tu ordenador}{209}
-\contentsline {section}{\numberline {16.1}Nombres de archivo y rutas}{209}
-\contentsline {section}{\numberline {16.2}Ejemplo: Limpieza de un directorio de fotos}{210}
-\contentsline {section}{\numberline {16.3}Argumentos de l\IeC {\'\i }nea de comandos}{216}
-\contentsline {section}{\numberline {16.4}Pipes (tuber\IeC {\'\i }as)}{217}
-\contentsline {section}{\numberline {16.5}Glosario}{218}
-\contentsline {section}{\numberline {16.6}Ejercicios}{219}
-\contentsline {chapter}{\numberline {A}Programando con Python en Windows}{221}
-\contentsline {chapter}{\numberline {B}Programando con Python en Macintosh}{223}
-\contentsline {chapter}{\numberline {C}Colaboraciones}{225}
-\contentsline {chapter}{\numberline {D}Detalles del Copyright}{229}
+\contentsline {chapter}{\numberline {13}Uso de servicios web}{163}
+\contentsline {section}{\numberline {13.1}eXtensible Markup Language - XML}{163}
+\contentsline {section}{\numberline {13.2}An\IeC {\'a}lisis de XML}{164}
+\contentsline {section}{\numberline {13.3}Desplazamiento a trav\IeC {\'e}s de los nodos}{165}
+\contentsline {section}{\numberline {13.4}JavaScript Object Notation - JSON}{165}
+\contentsline {section}{\numberline {13.5}An\IeC {\'a}lisis de JSON}{166}
+\contentsline {section}{\numberline {13.6}Interfaces de programaci\IeC {\'o}n de aplicaciones}{167}
+\contentsline {section}{\numberline {13.7}Servicio web de geocodificaci\IeC {\'o}n de Google}{169}
+\contentsline {section}{\numberline {13.8}Seguridad y uso de APIs}{171}
+\contentsline {section}{\numberline {13.9}Glosario}{175}
+\contentsline {section}{\numberline {13.10}Ejercicios}{176}
+\contentsline {chapter}{\numberline {14}Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}{177}
+\contentsline {section}{\numberline {14.1}\IeC {\textquestiondown }Qu\IeC {\'e} es una base de datos?}{177}
+\contentsline {section}{\numberline {14.2}Conceptos sobre bases de datos}{178}
+\contentsline {section}{\numberline {14.3}Add-on de Firefox para gesti\IeC {\'o}n de SQLite}{178}
+\contentsline {section}{\numberline {14.4}Creaci\IeC {\'o}n de una tabla en una base de datos}{179}
+\contentsline {section}{\numberline {14.5}Resumen de Lenguaje de Consultas eStructurado}{182}
+\contentsline {section}{\numberline {14.6}Rastreo en Twitter usando una base de datos}{183}
+\contentsline {section}{\numberline {14.7}Modelado de datos b\IeC {\'a}sico}{189}
+\contentsline {section}{\numberline {14.8}Programaci\IeC {\'o}n con m\IeC {\'u}ltiples tablas}{191}
+\contentsline {subsection}{\numberline {14.8.1}Restricciones en tablas de bases de datos}{193}
+\contentsline {subsection}{\numberline {14.8.2}Recuperar y/o insertar un registro}{194}
+\contentsline {subsection}{\numberline {14.8.3}Almacenado de relaciones entre amigos}{195}
+\contentsline {section}{\numberline {14.9}Tres tipos de claves}{196}
+\contentsline {section}{\numberline {14.10}Uso de JSON para recuperar datos}{197}
+\contentsline {section}{\numberline {14.11}Resumen}{199}
+\contentsline {section}{\numberline {14.12}Depuraci\IeC {\'o}n}{199}
+\contentsline {section}{\numberline {14.13}Glosario}{200}
+\contentsline {chapter}{\numberline {15}Visualizando datos}{203}
+\contentsline {section}{\numberline {15.1}Construcci\IeC {\'o}n de un mapa de Google a partir de datos geocodificados}{203}
+\contentsline {section}{\numberline {15.2}Visualizaci\IeC {\'o}n de redes e interconexiones}{205}
+\contentsline {section}{\numberline {15.3}Visualizaci\IeC {\'o}n de datos de correo}{208}
+\contentsline {chapter}{\numberline {16}Automatizaci\IeC {\'o}n de tareas habituales en tu ordenador}{215}
+\contentsline {section}{\numberline {16.1}Nombres de archivo y rutas}{215}
+\contentsline {section}{\numberline {16.2}Ejemplo: Limpieza de un directorio de fotos}{216}
+\contentsline {section}{\numberline {16.3}Argumentos de l\IeC {\'\i }nea de comandos}{222}
+\contentsline {section}{\numberline {16.4}Pipes (tuber\IeC {\'\i }as)}{223}
+\contentsline {section}{\numberline {16.5}Glosario}{224}
+\contentsline {section}{\numberline {16.6}Ejercicios}{225}
+\contentsline {chapter}{\numberline {A}Programando con Python en Windows}{227}
+\contentsline {chapter}{\numberline {B}Programando con Python en Macintosh}{229}
+\contentsline {chapter}{\numberline {C}Colaboraciones}{231}
+\contentsline {chapter}{\numberline {D}Detalles del Copyright}{235}

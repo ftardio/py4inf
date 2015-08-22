@@ -1,35 +1,35 @@
 \indexentry{Creative Commons License}{\es@scroman  {iv}}
 \indexentry{CC-BY-SA}{\es@scroman  {iv}}
 \indexentry{BY-SA}{\es@scroman  {iv}}
-\indexentry{hardware}{2}
-\indexentry{hardware!architecture}{2}
-\indexentry{problem solving}{4}
+\indexentry{hardware}{3}
+\indexentry{hardware!architecture}{3}
+\indexentry{problem solving}{5}
 \indexentry{programming language}{5}
 \indexentry{language!programming}{5}
-\indexentry{interactive mode}{6}
-\indexentry{script}{10}
-\indexentry{program}{11}
-\indexentry{bug}{15}
-\indexentry{source code}{15}
-\indexentry{machine code}{15}
-\indexentry{compile}{15}
-\indexentry{semantic error}{15}
-\indexentry{interpret}{15}
-\indexentry{high-level language}{15}
-\indexentry{low-level language}{16}
-\indexentry{main memory}{16}
-\indexentry{secondary memory}{16}
-\indexentry{interactive mode}{16}
-\indexentry{parse}{16}
-\indexentry{portability}{16}
-\indexentry{program}{16}
-\indexentry{prompt}{16}
-\indexentry{problem solving}{16}
-\indexentry{semantics}{16}
-\indexentry{print statement}{16}
-\indexentry{statement!print}{16}
-\indexentry{central processing unit}{16}
-\indexentry{CPU}{16}
+\indexentry{interactive mode}{7}
+\indexentry{script}{11}
+\indexentry{program}{12}
+\indexentry{bug}{16}
+\indexentry{source code}{16}
+\indexentry{machine code}{16}
+\indexentry{compile}{16}
+\indexentry{semantic error}{16}
+\indexentry{interpret}{16}
+\indexentry{high-level language}{16}
+\indexentry{low-level language}{17}
+\indexentry{main memory}{17}
+\indexentry{secondary memory}{17}
+\indexentry{interactive mode}{17}
+\indexentry{parse}{17}
+\indexentry{portability}{17}
+\indexentry{program}{17}
+\indexentry{prompt}{17}
+\indexentry{problem solving}{17}
+\indexentry{semantics}{17}
+\indexentry{print statement}{17}
+\indexentry{statement!print}{17}
+\indexentry{central processing unit}{17}
+\indexentry{CPU}{17}
 \indexentry{value}{19}
 \indexentry{type}{19}
 \indexentry{string}{19}
@@ -142,53 +142,53 @@
 \indexentry{if statement}{34}
 \indexentry{statement!if}{34}
 \indexentry{conditional execution}{34}
-\indexentry{condition}{34}
-\indexentry{compound statement}{34}
-\indexentry{statement!compound}{34}
+\indexentry{condition}{35}
+\indexentry{compound statement}{35}
+\indexentry{statement!compound}{35}
 \indexentry{pass statement}{35}
 \indexentry{statement!pass}{35}
 \indexentry{alternative execution}{35}
 \indexentry{else keyword}{35}
 \indexentry{keyword!else}{35}
-\indexentry{branch}{35}
+\indexentry{branch}{36}
 \indexentry{chained conditional}{36}
 \indexentry{conditional!chained}{36}
-\indexentry{elif keyword}{36}
-\indexentry{keyword!elif}{36}
-\indexentry{nested conditional}{36}
-\indexentry{conditional!nested}{36}
-\indexentry{traceback}{37}
-\indexentry{fahrenheit}{37}
-\indexentry{celsius}{37}
-\indexentry{temperature conversion}{37}
-\indexentry{short circuit}{39}
-\indexentry{guardian pattern}{39}
-\indexentry{pattern!guardian}{39}
-\indexentry{debugging}{40}
-\indexentry{traceback}{40}
-\indexentry{whitespace}{40}
-\indexentry{error!runtime}{40}
-\indexentry{runtime error}{40}
-\indexentry{exception!OverflowError}{41}
-\indexentry{OverflowError}{41}
-\indexentry{floor division}{41}
-\indexentry{division!floor}{41}
-\indexentry{condition}{41}
-\indexentry{nested conditional}{41}
-\indexentry{conditional!nested}{41}
-\indexentry{chained conditional}{41}
-\indexentry{conditional!chained}{41}
-\indexentry{short circuit}{41}
-\indexentry{body}{41}
-\indexentry{boolean expression}{41}
-\indexentry{expression!boolean}{41}
-\indexentry{guardian pattern}{42}
-\indexentry{pattern!guardian}{42}
-\indexentry{branch}{42}
-\indexentry{compound statement}{42}
-\indexentry{conditional statement}{42}
-\indexentry{statement!conditional}{42}
-\indexentry{traceback}{42}
+\indexentry{elif keyword}{37}
+\indexentry{keyword!elif}{37}
+\indexentry{nested conditional}{37}
+\indexentry{conditional!nested}{37}
+\indexentry{traceback}{39}
+\indexentry{fahrenheit}{39}
+\indexentry{celsius}{39}
+\indexentry{temperature conversion}{39}
+\indexentry{short circuit}{40}
+\indexentry{guardian pattern}{40}
+\indexentry{pattern!guardian}{40}
+\indexentry{debugging}{41}
+\indexentry{traceback}{41}
+\indexentry{whitespace}{41}
+\indexentry{error!runtime}{42}
+\indexentry{runtime error}{42}
+\indexentry{exception!OverflowError}{42}
+\indexentry{OverflowError}{42}
+\indexentry{floor division}{42}
+\indexentry{division!floor}{42}
+\indexentry{condition}{42}
+\indexentry{nested conditional}{42}
+\indexentry{conditional!nested}{42}
+\indexentry{chained conditional}{42}
+\indexentry{conditional!chained}{42}
+\indexentry{short circuit}{42}
+\indexentry{body}{42}
+\indexentry{boolean expression}{43}
+\indexentry{expression!boolean}{43}
+\indexentry{guardian pattern}{43}
+\indexentry{pattern!guardian}{43}
+\indexentry{branch}{43}
+\indexentry{compound statement}{43}
+\indexentry{conditional statement}{43}
+\indexentry{statement!conditional}{43}
+\indexentry{traceback}{43}
 \indexentry{function call}{45}
 \indexentry{parentheses!argument in}{45}
 \indexentry{argument}{45}
@@ -410,13 +410,13 @@
 \indexentry{type!file}{81}
 \indexentry{persistence}{81}
 \indexentry{secondary memory}{81}
-\indexentry{file!open}{81}
-\indexentry{open function}{81}
-\indexentry{function!open}{81}
+\indexentry{file!open}{82}
+\indexentry{open function}{82}
+\indexentry{function!open}{82}
 \indexentry{file handle}{82}
 \indexentry{newline}{83}
-\indexentry{file!reading}{83}
-\indexentry{counter}{83}
+\indexentry{file!reading}{84}
+\indexentry{counter}{84}
 \indexentry{filter pattern}{85}
 \indexentry{pattern!filter}{85}
 \indexentry{Quality Assurance}{88}
@@ -427,23 +427,23 @@
 \indexentry{function!open}{88}
 \indexentry{exception!IOError}{88}
 \indexentry{IOError}{88}
-\indexentry{Pythonic}{88}
+\indexentry{Pythonic}{89}
 \indexentry{file!writing}{89}
 \indexentry{newline}{89}
-\indexentry{close method}{89}
-\indexentry{method!close}{89}
+\indexentry{close method}{90}
+\indexentry{method!close}{90}
 \indexentry{debugging}{90}
 \indexentry{whitespace}{90}
 \indexentry{repr function}{90}
 \indexentry{function!repr}{90}
 \indexentry{string representation}{90}
 \indexentry{end of line character}{90}
-\indexentry{catch}{90}
-\indexentry{newline}{90}
-\indexentry{Pythonic}{90}
-\indexentry{Quality Assurance}{90}
-\indexentry{QA}{90}
-\indexentry{text file}{90}
+\indexentry{catch}{91}
+\indexentry{newline}{91}
+\indexentry{Pythonic}{91}
+\indexentry{Quality Assurance}{91}
+\indexentry{QA}{91}
+\indexentry{text file}{91}
 \indexentry{list}{93}
 \indexentry{type!list}{93}
 \indexentry{element}{93}
@@ -738,18 +738,18 @@
 \indexentry{greedy matching}{146}
 \indexentry{wild card}{147}
 \indexentry{grep}{147}
-\indexentry{urllib!image}{151}
-\indexentry{image!jpg}{151}
-\indexentry{jpg}{151}
+\indexentry{urllib!image}{152}
+\indexentry{image!jpg}{152}
+\indexentry{jpg}{152}
 \indexentry{time}{153}
 \indexentry{time.sleep}{153}
 \indexentry{flow control}{154}
 \indexentry{web!scraping}{155}
 \indexentry{parsing HTML}{155}
-\indexentry{greedy}{155}
-\indexentry{non-greedy}{155}
-\indexentry{regex!parentheses}{155}
-\indexentry{parentheses!regular expression}{155}
+\indexentry{greedy}{156}
+\indexentry{non-greedy}{156}
+\indexentry{regex!parentheses}{156}
+\indexentry{parentheses!regular expression}{156}
 \indexentry{BeautifulSoup}{156}
 \indexentry{BeautifulSoup}{157}
 \indexentry{HTML}{157}
@@ -757,104 +757,104 @@
 \indexentry{binary file}{158}
 \indexentry{curl}{159}
 \indexentry{BeautifulSoup}{159}
-\indexentry{port}{159}
-\indexentry{spider}{159}
+\indexentry{port}{160}
+\indexentry{spider}{160}
 \indexentry{socket}{160}
 \indexentry{scrape}{160}
-\indexentry{ElementTree}{162}
-\indexentry{ElementTree!fromstring}{162}
-\indexentry{ElementTree!find}{162}
-\indexentry{ElementTree!findall}{162}
-\indexentry{ElementTree!get}{162}
-\indexentry{JSON}{163}
-\indexentry{JavaScript Object Notation}{163}
-\indexentry{Google}{166}
-\indexentry{geocoding}{166}
-\indexentry{web service}{166}
-\indexentry{rate limiting}{167}
-\indexentry{OAuth}{168}
-\indexentry{API!key}{168}
-\indexentry{API}{173}
-\indexentry{ElementTree}{173}
-\indexentry{JSON}{173}
-\indexentry{JavaScript Object Notation}{173}
-\indexentry{SOA}{173}
-\indexentry{Service Oriented Architecture}{173}
-\indexentry{XML}{173}
-\indexentry{eXtensible Markup Language}{173}
-\indexentry{database}{175}
-\indexentry{database!indexes}{175}
-\indexentry{sqlite3 module}{177}
-\indexentry{module!sqlite3}{177}
-\indexentry{connect function}{177}
-\indexentry{function!connect}{177}
-\indexentry{cursor function}{177}
-\indexentry{function!cursor}{177}
-\indexentry{Unicode}{179}
-\indexentry{attribute}{197}
-\indexentry{cursor}{197}
-\indexentry{foreign key}{197}
-\indexentry{logical key}{197}
-\indexentry{primary key}{197}
-\indexentry{index}{197}
-\indexentry{database browser}{197}
-\indexentry{normalization}{197}
-\indexentry{database normalization}{197}
-\indexentry{relation}{197}
-\indexentry{constraint}{197}
-\indexentry{tuple}{197}
-\indexentry{Google!map}{199}
-\indexentry{Visualization!map}{199}
-\indexentry{cache}{199}
-\indexentry{Google!page rank}{201}
-\indexentry{Visualization!networks}{201}
-\indexentry{Visualization!page rank}{201}
-\indexentry{file name}{209}
-\indexentry{path}{209}
-\indexentry{directory}{209}
-\indexentry{folder}{209}
-\indexentry{os module}{209}
-\indexentry{module!os}{209}
-\indexentry{getcwd function}{209}
-\indexentry{function!getcwd}{209}
-\indexentry{working directory}{210}
-\indexentry{directory!working}{210}
-\indexentry{relative path}{210}
-\indexentry{path!relative}{210}
-\indexentry{absolute path}{210}
-\indexentry{path!absolute}{210}
-\indexentry{exists function}{210}
-\indexentry{function!exists}{210}
-\indexentry{arguments}{216}
-\indexentry{shell}{217}
-\indexentry{pipe}{217}
-\indexentry{ls (Unix command)}{217}
-\indexentry{Unix command!ls}{217}
-\indexentry{popen function}{217}
-\indexentry{function!popen}{217}
-\indexentry{readline method}{217}
-\indexentry{method!readline}{217}
-\indexentry{read method}{217}
-\indexentry{method!read}{217}
-\indexentry{close method}{217}
-\indexentry{method!close}{217}
-\indexentry{checksum}{218}
-\indexentry{directory!current}{218}
-\indexentry{directory!working}{218}
-\indexentry{directory!cwd}{218}
-\indexentry{hashing}{218}
-\indexentry{pipe}{218}
-\indexentry{path!absolute}{218}
-\indexentry{path!relative}{218}
-\indexentry{shell}{219}
-\indexentry{walk}{219}
-\indexentry{MP3}{219}
-\indexentry{duplicate}{219}
-\indexentry{MD5 algorithm}{219}
-\indexentry{algorithm!MD5}{219}
-\indexentry{checksum}{219}
-\indexentry{GNU Free Documentation License}{226}
-\indexentry{Free Documentation License, GNU}{226}
-\indexentry{GNU Free Documentation License}{227}
-\indexentry{Free Documentation License, GNU}{227}
-\indexentry{contributors}{227}
+\indexentry{ElementTree}{164}
+\indexentry{ElementTree!fromstring}{164}
+\indexentry{ElementTree!find}{164}
+\indexentry{ElementTree!findall}{165}
+\indexentry{ElementTree!get}{165}
+\indexentry{JSON}{165}
+\indexentry{JavaScript Object Notation}{165}
+\indexentry{Google}{169}
+\indexentry{geocoding}{169}
+\indexentry{web service}{169}
+\indexentry{rate limiting}{169}
+\indexentry{OAuth}{171}
+\indexentry{API!key}{171}
+\indexentry{API}{175}
+\indexentry{ElementTree}{175}
+\indexentry{JSON}{175}
+\indexentry{JavaScript Object Notation}{175}
+\indexentry{SOA}{175}
+\indexentry{Service Oriented Architecture}{175}
+\indexentry{XML}{175}
+\indexentry{eXtensible Markup Language}{175}
+\indexentry{database}{177}
+\indexentry{database!indexes}{177}
+\indexentry{sqlite3 module}{179}
+\indexentry{module!sqlite3}{179}
+\indexentry{connect function}{179}
+\indexentry{function!connect}{179}
+\indexentry{cursor function}{179}
+\indexentry{function!cursor}{179}
+\indexentry{Unicode}{181}
+\indexentry{attribute}{200}
+\indexentry{cursor}{200}
+\indexentry{foreign key}{200}
+\indexentry{logical key}{200}
+\indexentry{primary key}{200}
+\indexentry{index}{200}
+\indexentry{database browser}{200}
+\indexentry{normalization}{201}
+\indexentry{database normalization}{201}
+\indexentry{relation}{201}
+\indexentry{constraint}{201}
+\indexentry{tuple}{201}
+\indexentry{Google!map}{203}
+\indexentry{Visualization!map}{203}
+\indexentry{cache}{204}
+\indexentry{Google!page rank}{205}
+\indexentry{Visualization!networks}{205}
+\indexentry{Visualization!page rank}{205}
+\indexentry{file name}{215}
+\indexentry{path}{215}
+\indexentry{directory}{215}
+\indexentry{folder}{215}
+\indexentry{os module}{215}
+\indexentry{module!os}{215}
+\indexentry{getcwd function}{215}
+\indexentry{function!getcwd}{215}
+\indexentry{working directory}{216}
+\indexentry{directory!working}{216}
+\indexentry{relative path}{216}
+\indexentry{path!relative}{216}
+\indexentry{absolute path}{216}
+\indexentry{path!absolute}{216}
+\indexentry{exists function}{216}
+\indexentry{function!exists}{216}
+\indexentry{arguments}{222}
+\indexentry{shell}{223}
+\indexentry{pipe}{223}
+\indexentry{ls (Unix command)}{223}
+\indexentry{Unix command!ls}{223}
+\indexentry{popen function}{223}
+\indexentry{function!popen}{223}
+\indexentry{readline method}{223}
+\indexentry{method!readline}{223}
+\indexentry{read method}{223}
+\indexentry{method!read}{223}
+\indexentry{close method}{223}
+\indexentry{method!close}{223}
+\indexentry{checksum}{224}
+\indexentry{directory!current}{224}
+\indexentry{directory!working}{224}
+\indexentry{directory!cwd}{224}
+\indexentry{hashing}{224}
+\indexentry{pipe}{224}
+\indexentry{path!absolute}{224}
+\indexentry{path!relative}{224}
+\indexentry{shell}{225}
+\indexentry{walk}{225}
+\indexentry{MP3}{225}
+\indexentry{duplicate}{225}
+\indexentry{MD5 algorithm}{225}
+\indexentry{algorithm!MD5}{225}
+\indexentry{checksum}{225}
+\indexentry{GNU Free Documentation License}{232}
+\indexentry{Free Documentation License, GNU}{232}
+\indexentry{GNU Free Documentation License}{233}
+\indexentry{Free Documentation License, GNU}{233}
+\indexentry{contributors}{233}
