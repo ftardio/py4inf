@@ -6,7 +6,7 @@
 
 \section{Llamadas a funciones}
 \label{functionchap}
-\index{function call}
+\index{función, llamada a}
 
 En el contexto de la programación, una {\bf función} es una secuencia de
 sentencias que realizan un cálculo y que reciben un nombre. Cuando se define una función,
@@ -26,13 +26,13 @@ el nombre de {\bf argumento} de la función. El argumento es
 un valor o variable que se pasa a la función como parámetro de entrada.
 El resultado de la función {\tt type} es el tipo del argumento.
 
-\index{parentheses!argument in}
+\index{paréntesis!argumento in}
 
 Es habitual decir que una función ``toma'' un argumento y ``retorna'' (o devuelve)
 un resultado. El resultado se llama {\bf valor de retorno}.
 
-\index{argument}
-\index{return value}
+\index{argumento}
+\index{valor de retorno}
 
 \section{Funciones incorporadas}
 
@@ -79,8 +79,8 @@ Se deben tratar los nombres de las funciones incorporadas como si fueran palabra
 (es decir, evita usar ``max'' como nombre para una variable).
 
 \section{Funciones de conversión de tipos}
-\index{conversion!type}
-\index{type conversion}
+\index{conversión!tipo}
+\index{tipo, conversión de}
 
 % de Elkner:
 % comentario acerca de si estas cosas son realmente funciones
@@ -94,8 +94,8 @@ Python también proporciona funciones incorporadas que convierten valores
 de un tipo a otro. La función {\tt int} toma cualquier valor y
 lo convierte en un entero si puede, o se queja si no puede:
 
-\index{int function}
-\index{function!int}
+\index{int, función}
+\index{función!int}
 
 \beforeverb
 \begin{verbatim}
@@ -121,8 +121,8 @@ los redondea; simplemente corta y descarta la parte decimal:
 {\tt float} convierte enteros y cadenas en números
 de punto flotante:
 
-\index{float function}
-\index{function!float}
+\index{float, función}
+\index{función!float}
 
 \beforeverb
 \begin{verbatim}
@@ -135,8 +135,8 @@ de punto flotante:
 %
 Finalmente, {\tt str} convierte su argumento en una cadena:
 
-\index{str function}
-\index{function!str}
+\index{str, función}
+\index{función!str}
 
 \beforeverb
 \begin{verbatim}
@@ -150,10 +150,10 @@ Finalmente, {\tt str} convierte su argumento en una cadena:
 
 \section{Números aleatorios}
 
-\index{random number}
-\index{number, random}
-\index{deterministic}
-\index{pseudorandom}
+\index{aleatorio, número}
+\index{número, aleatorio}
+\index{determinístico}
+\index{pseudoaleatorio}
 
 A partir de las mismas entradas, la mayoría de los ordenadores generarán
 las mismas salidas cada vez, que es lo que llamamos comportamiento {\bf determinista}.
@@ -169,15 +169,15 @@ Los números pseudoaleatorios no son verdaderamente aleatorios, ya que son
 generados por un cálculo determinista, pero si sólo nos fijamos en los números
 resulta casi imposible distinguirlos de los aleatorios de verdad.
 
-\index{random module}
-\index{module!random}
+\index{random, módulo}
+\index{módulo!random}
 
 El módulo {\tt random} proporciona funciones que generan
 números pseudoaleatorios (a los que simplemente llamaremos ``aleatorios''
 de ahora en adelante).
 
-\index{random function}
-\index{function!random}
+\index{random, función}
+\index{función!random}
 
 La función {\tt random} devuelve un número flotante aleatorio
 entre 0.0 y 1.0 (incluyendo 0.0, pero no 1.0). Cada vez que se
@@ -222,8 +222,8 @@ La función {\tt randint} toma los parámetros {\tt inferior} y
 {\\ superior}, y devuelve un entero entre {\tt inferior} y 
 {\tt superior} (incluyendo ambos extremos).
 
-\index{randint function}
-\index{function!randint}
+\index{randint, función}
+\index{función!randint}
 
 \beforeverb
 \begin{verbatim}
@@ -237,8 +237,8 @@ La función {\tt randint} toma los parámetros {\tt inferior} y
 Para elegir un elemento de una secuencia aleatoriamente, se puede usar
 {\tt choice}:
 
-\index{choice function}
-\index{function!choice}
+\index{choice, función}
+\index{función!choice}
 
 \beforeverb
 \begin{verbatim}
@@ -255,10 +255,10 @@ valores aleatorios de distribuciones continuas, incluyendo
 Gausiana, exponencial, gamma, y unas cuantas más.
 
 \section{Funciones matemáticas}
-\index{math function}
-\index{function, math}
-\index{module}
-\index{module object}
+\index{math, función}
+\index{función, math}
+\index{módulo}
+\index{módulo, objeto}
 
 Python tienen un módulo {\tt matemático (math)}, que proporciona la mayoría
 de las funciones matemáticas habituales.
@@ -285,7 +285,7 @@ Para acceder a una de esas funciones, es necesario especificar el nombre
 del módulo y el nombre de la función, separados por un punto (también
 conocido como período). Este formato recibe el nombre de {\bf notación punto}.
 
-\index{dot notation}
+\index{notación punto}
 
 \beforeverb
 \begin{verbatim}
@@ -301,12 +301,12 @@ El primer ejemplo calcula el logaritmo base 10 de la
 relación señal-ruido. El módulo math también proporciona una
 función llamada {\tt log} que calcula logaritmos en base {\tt e}.
 
-\index{log function}
-\index{function!log}
-\index{sine function}
-\index{radian}
-\index{trigonometric function}
-\index{function, trigonometric}
+\index{log, función}
+\index{función!log}
+\index{sine, función}
+\index{radián}
+\index{trigonométrica, función}
+\index{función, trigonométrica}
 
 El segundo ejemplo calcula el seno de la variable {\tt radianes}. El nombre de la
 variable es una pista de que {\tt sin} y las otras funciones
@@ -333,8 +333,8 @@ Si sabes de
 trigonometría, puedes comprobar el resultado anterior, comparándolo con
 la raíz cuadrada de dos dividida por dos:
 
-\index{sqrt function}
-\index{function!sqrt}
+\index{sqrt, función}
+\index{función!sqrt}
 
 \beforeverb
 \begin{verbatim}
@@ -354,9 +354,9 @@ la secuencia de sentencias que se ejecutan cuando esa función es llamada.
 Una vez definida una función, se puede reutilizar una y otra vez
 a lo largo de todo el programa.
 
-\index{function}
-\index{function definition}
-\index{definition!function}
+\index{función}
+\index{función, definición}
+\index{definición!función}
 
 He aquí un ejemplo:
 
@@ -376,19 +376,19 @@ no puede ser un número. No se pueden usar una palabra clave como nombre de una 
 y se debería evitar tener una variable y una función con el mismo
 nombre.
 
-\index{def keyword}
-\index{keyword!def}
-\index{argument}
+\index{def, palabra clave}
+\index{palabra clave!def}
+\index{argumento}
 
 Los paréntesis vacíos después del nombre indican que esta función
 no toma ningún argumento. Más tarde construiremos funciones que
 toman argumentos de entrada.
 
-\index{parentheses!empty}
-\index{header}
-\index{body}
-\index{indentation}
-\index{colon}
+\index{paréntesis!vacíos}
+\index{cabecera}
+\index{cuerpo}
+\index{sangrado}
+\index{dos-puntos}
 
 La primera línea de la definición de la función es llamada la {\bf cabecera};
 el resto se llama el {\bf cuerpo}. La cabecera debe terminar con dos-puntos (:),
@@ -401,7 +401,7 @@ comillas. Da igual utilizar comillas simples que dobles;
 la mayoría de la gente prefiere comillas simples, excepto en aquellos casos en los que
 una comilla simple (que también se usa como apostrofe) aparece en medio de la cadena.
 
-\index{ellipses}
+\index{puntos suspensivos}
 
 Si escribes una definición de función en modo interactivo, el intérprete
 mostrará puntos suspensivos (\emph{...}) para informarte de que la definición
@@ -433,8 +433,8 @@ Al definir una función se crea una variable con el mismo nombre.
 El valor de \verb"print_lyrics" es {\bf function object (objeto función)}, que
 tiene como tipo \verb"'function'".
 
-\index{function object}
-\index{object!function}
+\index{función, objeto}
+\index{objeto!función}
 
 La sintaxis para llamar a la nueva función es la misma que
 la de las funciones incorporadas:
@@ -474,7 +474,7 @@ Duermo toda la noche y trabajo todo el día.
 Pero la canción en realidad no es así.
 
 \section{Definición y usos}
-\index{function definition}
+\index{función, definición}
 
 Reuniendo los fragmentos de código de las secciones anteriores, el
 programa completo sería algo esto:
@@ -521,7 +521,7 @@ de \verb"repeat_lyrics". ¿Qué ocurre cuando haces funcionar este programa?
 
 
 \section{Flujo de ejecución}
-\index{flow of execution}
+\index{flujo de ejecución}
 
 Para asegurarnos de que una función está definida antes de usarla por primera vez,
 es necesario saber el orden en que las sentencias son ejecutadas, que es lo
@@ -556,10 +556,10 @@ sentido seguir el flujo de la ejecución.
 
 \section{Parámetros y argumentos}
 \label{parameters}
-\index{parameter}
-\index{function parameter}
-\index{argument}
-\index{function argument}
+\index{parámetro}
+\index{parámetro de función}
+\index{argumento}
+\index{argumento de función}
 
 Algunas de las funciones incorporadas que hemos visto necesitan argumentos. Por
 ejemplo, cuando se llama a {\tt math.sin}, se le pasa un número
@@ -570,7 +570,7 @@ Dentro de las funciones, los argumentos son asignados a
 variables llamadas {\bf parámetros}. A continuación mostramos un ejemplo
 de una función definida por el usuario que recibe un argumento:
 
-\index{parentheses!parameters in}
+\index{paréntesis!parámetros entre}
 
 \beforeverb
 \begin{verbatim}
@@ -604,7 +604,7 @@ Las mismas reglas de composición que se aplican a las funciones incorporadas, t
 se aplican a las funciones definidas por el usuario, de modo que podemos usar cualquier tipo
 de expresión como argumento para \verb"print_twice":
 
-\index{composition}
+\index{composición}
 
 \beforeverb
 \begin{verbatim}
@@ -621,7 +621,7 @@ El argumento es evaluado antes de que función sea llamada, así
 que en los ejemplos, la expresión \verb"'Spam '*4" y
 {\tt math.cos(math.pi)} son evaluadas sólo una vez.
 
-\index{argument}
+\index{argumento}
 
 También se puede usar una variable como argumento:
 
@@ -641,10 +641,10 @@ dentro de \verb"print_twice", siempre se llamará {\tt bruce}.
 
 \section{Funciones fructíferas y funciones huecas}
 
-\index{fruitful function}
-\index{void function}
-\index{function, fruitful}
-\index{function, void} 
+\index{fructífera, función}
+\index{hueca, función}
+\index{función fructífera}
+\index{función hueca} 
 
 Algunas de las funciones que estamos usando, como las matemáticas, producen
 resultados; a falta de un nombre mejor, las llamaremos {\bf funciones fructíferas (fruitful functions)}.
@@ -686,16 +686,16 @@ math.sqrt(5)
 Este script calcula la raíz cuadrada de 5, pero dado que no almacena
 el resultado en una variable ni lo muestra, no resulta en realidad muy útil.
 
-\index{interactive mode}
-\index{script mode}
+\index{interactivo, modo}
+\index{script, modo}
 
 Las funciones huecas pueden mostrar algo en la pantalla o tener cualquier
 otro efecto, pero no devuelven un valor. Si intentas asignar
 el resultado a una variable, obtendrás un valor especial llamado
 {\tt None (nada)}.
 
-\index{None special value}
-\index{special value!None}
+\index{None, valor especial}
+\index{valor especial!None}
 
 \beforeverb
 \begin{verbatim}
@@ -744,7 +744,7 @@ como resultado de la función, que fue asignado
 a la variable {\tt x} y mostrado en pantalla.
 
 \section{¿Por qué funciones?}
-\index{function, reasons for}
+\index{función, razones para}
 
 Puede no estar muy claro por qué merece la pena molestarse en dividir
 un programa en funciones. Existen varias razones:
@@ -778,7 +778,7 @@ devuelve el valor menor de esa lista.
 
 \section{Depuración}
 \label{editor}
-\index{debugging}
+\index{depuración}
 
 Si estás usando un editor de texto para escribir tus propios scripts, puede
 que tengas problemas con los espacios y tabulaciones. El mejor modo de evitar
@@ -786,7 +786,7 @@ esos problemas es usar espacios exclusivamente (no tabulaciones). La mayoría
 de los editores de texto que reconocen Python lo hacen así por efecto, aunque
 hay algunos que no.
 
-\index{whitespace}
+\index{espacio en blanco}
 
 Las tabulaciones y los espacios normalmente son invisibles, lo cual hace
 que sea difícil depurar los errores que se pueden producir, así que mejor
@@ -811,78 +811,78 @@ pantalla, ¡es que no estás ejecutando el programa correcto!
 \begin{description}
 
 \item[algoritmo:] Un proceso general para resolver una categoría de problemas.
-\index{algorithm}
+\index{algoritmo}
 
 \item[argumento:] Un valor proporcionado a una función cuando ésta es llamada.
 Ese valor se asigna al parámetro correspondiente en la función.
-\index{argument}
+\index{argumento}
 
 \item[cabecera:] La primera línea de una definición de función.
-\index{header}
+\index{cabecera}
 
 \item[cuerpo:] La secuencia de sentencias dentro de la definición de una función.
-\index{body}
+\index{cuerpo}
 
 \item[composición:] Uso de una expresión o sentencia como parte de otra más larga,
-\index{composition}
+\index{composición}
 
 \item[definición de función:] Una sentencia que crea una función nueva,
 especificando su nombre, parámetros, y las sentencias que ejecuta.
-\index{function definition}
+\index{función, definición}
 
 \item[determinístico:] Perteneciente a un programa que hace lo mismo
 cada vez que se ejecuta, a partir de las mismas entradas.
-\index{deterministic}
+\index{determinístico}
 
 \item[función:] Una secuencia de sentencias con un nombre que realizan alguna
 operación útil. Las funciones pueden tomar argumentos o no, y pueden
 producir un resultado o no.
-\index{function}
+\index{función}
 
 \item[función fructífera (fruitful function):] Una función que devuelve un valor.
-\index{fruitful function}
+\index{fructífera, función}
 
 \item[función hueca (void function):] Una función que no devuelve ningún valor.
-\index{void function}
+\index{hueca, función}
 
 \item[flujo de ejecución:] El orden en el cual las sentencias son ejecutadas durante
 el funcionamiento de un programa.
-\index{flow of execution}
+\index{flujo de ejecución}
 
 \item[llamada a función:] Una sentencia que ejecuta una función. Consiste en
 el nombre de la función seguido por una lista de argumentos.
-\index{function call}
+\index{función, llamada a}
 
 \item[notación punto:] La sintaxis de llamada a una función en
 otro módulo, especificando el nombre del módulo seguido por un punto y el
 nombre de la función.
-\index{dot notation}
+\index{punto, notación}
 
 \item[objeto función:]  Un valor creado por una definición de función.
 El nombre de la función es una variable que se refiere al objeto
 función.
-\index{function definition}
+\index{función, definición}
 
 \item[objeto módulo:] Un valor creado por una sentencia {\tt import},
 que proporciona acceso a los datos y código definidos en un módulo.
-\index{module}
+\index{módulo}
 
 \item[parámetro:] Un nombre usado dentro de una función para referirse al valor
 pasado como argumento.
-\index{parameter}
+\index{parámetro}
 
 \item[pseudoaleatorio:] Perteneciente a una secuencia de números que parecen
 ser aleatorios, pero son generados por un programa determinista.
-\index{pseudorandom}
+\index{pseudoaleatorio}
 
 \item[sentencia import:] Una sentencia que lee un archivo módulo y crea
 un objeto módulo.
-\index{import statement}
-\index{statement!import}
+\index{import, sentencia}
+\index{sentencia!import}
 
 \item[valor de retorno:] El resultado de una función. Si una llamada a una función
 es usada como una expresión, el valor de retorno es el valor de la expresión.
-\index{return value}
+\index{valor de retorno}
 
 \end{description}
 

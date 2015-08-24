@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  22 AUG 2015 17:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  24 AUG 2015 10:20
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -851,51 +851,51 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
-LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 90
+LaTeX Font Info:    Try loading font information for OT1+ptmcm on input line 93
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptmcm.fd"
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 90
+LaTeX Font Info:    Try loading font information for OML+ptmcm on input line 93
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlptmcm.fd"
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+psycm on input line 90
+LaTeX Font Info:    Try loading font information for OMX+psycm on input line 93
 .
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxpsycm.fd"
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 90.
-LaTeX Font Info:    Try loading font information for U+msa on input line 90.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+LaTeX Font Info:    Try loading font information for U+msa on input line 93.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 90.
+LaTeX Font Info:    Try loading font information for U+msb on input line 93.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 5652) in paragraph at lines 85--94
+Underfull \hbox (badness 5652) in paragraph at lines 88--97
 []\OT1/ptm/m/n/10 Este tra-ba-jo est[]a li-cen-cia-do ba-jo una li-cen-cia Crea
 -ti-ve Com-mon Attribution-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--94
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
 \OT1/ptm/m/n/10 NonCommercial-ShareAlike 3.0 Un-por-ted. Es-ta li-cen-cia est[]
 a dis-po-ni-ble en
  []
 
 
-Underfull \hbox (badness 7221) in paragraph at lines 85--94
+Underfull \hbox (badness 7221) in paragraph at lines 88--97
 $\OT1/pcr/m/n/10 creativecommons . org / licenses / by-[]nc-[]sa / 3 . 0/$\OT1/
 ptm/m/n/10 . Pue-des con-sul-tar qu[]e es lo
  []
@@ -1171,7 +1171,7 @@ es: []\OT1/pcr/m/n/10.95 print_lyrics \OT1/ptm/m/n/10.95 y
 Cap\'{\i }tulo 5.
 [59] [60] [61] [62] [63]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 345.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 346.
  [64] [65] [66] [67])
 (C:\Users\Windows\Documents\GitHub\py4inf\06-strings.tex [68]
 Cap\'{\i }tulo 6.
@@ -1197,7 +1197,7 @@ Package pdftex.def Info: figs2/string-eps-converted-to.pdf used on input line 5
  <C:/Users/Windows/Documents/GitHub/py4inf/figs2/string-eps-converted-to.pdf>] 
 [70] [71] [72] [73] [74] [75]
 [76] [77] [78]
-Underfull \hbox (badness 10000) in paragraph at lines 889--894
+Underfull \hbox (badness 10000) in paragraph at lines 890--895
 $\OT1/pcr/m/n/10.95 https : / / docs . python . org / 2 / library / stdtypes . 
 html # string-[]methods$\OT1/ptm/m/n/10.95 .
  []
@@ -1212,13 +1212,13 @@ Package epstopdf Info: Source file: <figs2/arch3.eps>
 (epstopdf)                    size: 2881 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/arch3-eps-converted-t
 o.pdf figs2/arch3.eps>
-(epstopdf)             \includegraphics on input line 28.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
 <figs2/arch3-eps-converted-to.pdf, id=367, 437.635pt x 243.91125pt>
 File: figs2/arch3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch3-eps-converted-to.pdf>
-Package pdftex.def Info: figs2/arch3-eps-converted-to.pdf used on input line 28
+Package pdftex.def Info: figs2/arch3-eps-converted-to.pdf used on input line 29
 .
 (pdftex.def)             Requested size: 324.17871pt x 180.67499pt.
  [81
@@ -1232,7 +1232,7 @@ Package epstopdf Info: Source file: <figs2/handle.eps>
 (epstopdf)                    size: 18370 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/handle-eps-converted-
 to.pdf figs2/handle.eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs2/handle-eps-converted-to.pdf, id=374, 606.265pt x 307.1475pt>
@@ -1240,7 +1240,7 @@ File: figs2/handle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/handle-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/handle-eps-converted-to.pdf used on input line 7
-4.
+5.
 (pdftex.def)             Requested size: 249.64336pt x 126.47249pt.
  [82 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/handle-eps-converted-to.pd
 f>] [83] [84] [85] [86] [87] [88]
@@ -1280,7 +1280,7 @@ Cap\'{\i }tulo 9.
 ]
 Cap\'{\i }tulo 10.
 [123] [124] [125] [126] [127] [128] [129]
-Underfull \hbox (badness 1009) in paragraph at lines 595--595
+Underfull \hbox (badness 1009) in paragraph at lines 599--599
 []\OT1/ptm/b/n/14.4 Secuencias: ca-de-nas, lis-tas, y tuplas---!`Oh, Dios
  []
 
@@ -1558,14 +1558,6 @@ TO Seguimientos (desde_id, hacia_id) VALUES (?, ?)\TS1/pcr/m/n/9 '\OT1/pcr/m/n/
  []
 
 [195] [196]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 1166
-.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlptm.fd"
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1166.
-
 Package epstopdf Info: Source file: <figs2/join.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 24203 bytes
@@ -1725,7 +1717,7 @@ Ap\'{e}ndice C.
 [231
 
 ] [232]
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
@@ -1733,9 +1725,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--161
 Ap\'{e}ndice D.
 [235
 
-]
-No file book.ind.
-[236]
+] (C:\Users\Windows\Documents\GitHub\py4inf\book.ind [236] [237
+
+] [238]
+[239]
+Underfull \hbox (badness 2856) in paragraph at lines 278--279
+[]\OT1/ptm/m/n/10.95 Free Do-cu-men-ta-tion Li-cen-se, GNU,
+ []
+
+
+Underfull \hbox (badness 4713) in paragraph at lines 318--319
+[]\OT1/ptm/m/n/10.95 GNU Free Do-cu-men-ta-tion Li-cen-se,
+ []
+
+[240] [241] [242] [243] [244])
 \createspace@c@pages=\count134
 
 Package createspace Info: added one page for calculations to make the page coun
@@ -1748,18 +1751,18 @@ t even
 \log@current=\dimen135
 \createspace@log=\dimen136
 \createspace@l@spine=\dimen137
-Package createspace Info: spine is about 39.16626pt wide
+Package createspace Info: spine is about 40.4718pt wide
 
 \createspace@cents=\count137
 \createspace@dols=\count138
-Package createspace Info: book cost is 6.26USD (3.70USD for pro plan)
+Package createspace Info: book cost is 6.42USD (3.80USD for pro plan)
 
 (C:\Users\Windows\Documents\GitHub\py4inf\book.aux) ) ) 
 Here is how much of TeX's memory you used:
- 6120 strings out of 493921
- 87506 string characters out of 3144870
+ 6106 strings out of 493921
+ 87327 string characters out of 3144870
  145900 words of memory out of 3000000
- 9127 multiletter control sequences out of 15000+200000
+ 9114 multiletter control sequences out of 15000+200000
  66777 words of font info for 139 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,12n,69p,362b,573s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1774,9 +1777,9 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (250 pages, 1269932 bytes).
+Output written on book.pdf (258 pages, 1284414 bytes).
 PDF statistics:
- 1008 PDF objects out of 1200 (max. 8388607)
+ 1034 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,10 +4,10 @@
 \chapter{Ejecución condicional}
 
 \section{Expresiones booleanas}
-\index{boolean expression}
-\index{expression!boolean}
-\index{logical operator}
-\index{operator!logical}
+\index{booleana, expresión}
+\index{expresión!booleana}
+\index{lógico, operador}
+\index{operador!lógico}
 
 Una {\bf expresión booleana} es aquella que puede ser verdadera (True)
 o falsa (False). Los ejemplos siguientes usan el operador
@@ -26,12 +26,12 @@ False
 {\tt True} y {\tt False} son valores especiales
 que pertenecen al tipo {\tt bool (booleano)}; no son cadenas:
 
-\index{True special value}
-\index{False special value}
-\index{special value!True}
-\index{special value!False}
-\index{bool type}
-\index{type!bool}
+\index{True, valor especial}
+\index{False, valor especial}
+\index{valor especial!True}
+\index{valor especial!False}
+\index{booleano, tipo}
+\index{tipo!booleano}
 
 \beforeverb
 \begin{verbatim}
@@ -65,13 +65,13 @@ es usar sólo un símbolo igual ({\tt =}) en vez del símbolo de doble igualdad
 {\tt ==} es un operador de comparación. No ocurre lo mismo con
 {\tt \verb"=<"} o {\tt \verb"=>"}.
 
-\index{comparison operator}
-\index{operator!comparison}
+\index{comparación, operador}
+\index{operador!comparación}
 
 
 \section {Operadores lógicos}
-\index{logical operator}
-\index{operator!logical}
+\index{lógico, operador}
+\index{operador!lógico}
 
 Existen tres {\bf operadores lógicos}: {\tt and (y)}, {\tt
 or (o)}, y {\tt not (no)}. El significado semántico de estas operaciones
@@ -82,12 +82,12 @@ es similar a su significado en inglés. Por ejemplo,
 es verdadero sólo cuando {\tt x} es mayor que 0
 \emph{y} menor que 10.
 
-\index{and operator}
-\index{or operator}
-\index{not operator}
-\index{operator!and}
-\index{operator!or}
-\index{operator!not}
+\index{and, operador}
+\index{or, operador}
+\index{not, operador}
+\index{operador!and}
+\index{operador!or}
+\index{operador!not}
 
 {\tt n\%2 == 0 or n\%3 == 0} es verdadero si \emph{cualquiera} de las condiciones
 es verdadera, es decir, el número es divisible por 2 \emph{o} por 3.
@@ -114,11 +114,11 @@ hasta que estés bien seguro de lo que estás haciendo.
 \section{Ejecución condicional}
 \label{conditional execution}
 
-\index{conditional statement}
-\index{statement!conditional}
-\index{if statement}
-\index{statement!if}
-\index{conditional execution}
+\index{condicional, sentencia}
+\index{sentencia!condicional}
+\index{if, sentencia}
+\index{sentencia!if}
+\index{condicional, ejecución}
 
 Para poder escribir programas útiles, casi siempre vamos a necesitar
 la capacidad de comprobar condiciones y cambiar el comportamiento del programa
@@ -145,9 +145,9 @@ Si la condición lógica es verdadera, la sentencia sangrada
 es ejecutada. Si la condición es falsa,
 la sentencia sangrada es omitida.
 
-\index{condition}
-\index{compound statement}
-\index{statement!compound}
+\index{condición}
+\index{compuesta, sentencia}
+\index{sentencia!compuesta}
 
 La sentencia {\tt if} tiene la misma estructura que la definición de funciones
 o los bucles {\tt for}\footnote{Estudiaremos las funciones en el capítulo 4
@@ -163,8 +163,8 @@ Ocasionalmente, puede resultar útil tener un cuerpo sin sentencias
 (normalmente como emplazamiento reservado para código que no se ha escrito aún). En ese
 caso, se puede usar la sentencia {\\tt pass}, que no hace nada.
 
-\index{pass statement}
-\index{statement!pass}
+\index{pass, sentencia}
+\index{sentencia!pass}
 
 \beforeverb
 \begin{verbatim}
@@ -192,9 +192,9 @@ Pequeño
 \section{Ejecución alternativa}
 \label{alternative execution}
 
-\index{alternative execution}
-\index{else keyword}
-\index{keyword!else}
+\index{ejecución alternativa}
+\index{else, palabra clave}
+\index{palabra clave!else}
 
 La segunda forma de la sentencia {\tt if} es la {\bf ejecución alternativa},
 en la cual existen dos posibilidades y la condición determina
@@ -225,8 +225,8 @@ las alternativas será ejecutada. Las alternativas reciben el nombre de
 \index{branch}
 
 \section{Condicionales encadenados}
-\index{chained conditional}
-\index{conditional!chained}
+\index{encadenado, condicional}
+\index{condicional!encadenado}
 
 Algunas veces hay más de dos posibilidades, de modo que necesitamos más
 de dos ramas. Una forma de expresar un cálculo como ése es usar un
@@ -254,8 +254,8 @@ No hay un límite para el número de sentencias
 {\tt elif}. Si hay una clausula {\tt else}, debe ir
 al final, pero tampoco es obligatorio que ésta exista.
 
-\index{elif keyword}
-\index{keyword!elif}
+\index{elif, palabra clave}
+\index{palabra clave!elif}
 
 
 \beforeverb
@@ -276,8 +276,8 @@ termina. Incluso si hay más de una condición que sea verdadera, sólo se
 ejecuta la primera que se encuentra.
 
 \section{Condicionales anidados}
-\index{nested conditional}
-\index{conditional!nested}
+\index{anidado, condicional}
+\index{condicional!anidado}
 
 Un condicional puede también estar anidado dentro de otro. Podríamos
 haber escrito el ejemplo anterior de las tres ramas de este modo:
@@ -365,7 +365,7 @@ desde grados Fahrenheit a grados Celsius:
 
 \index{fahrenheit}
 \index{celsius}
-\index{temperature conversion}
+\index{conversión de temperatura}
 
 \beforeverb
 \begin{verbatim}
@@ -450,7 +450,7 @@ capturar una excepción te da la oportunidad de corregir el problema,
 volverlo a intentar, o al menos de terminar el programa con elegancia.
 
 \section{Evaluación en corto-circuito de expresiones lógicas}
-\index{short circuit}
+\index{corto circuito}
 
 Cuando Python está procesando una expresión lógica, como
 {\tt x >= 2 and (x/y) > 2}, evalúa la expresión de
@@ -466,8 +466,8 @@ Cuando la evaluación de una expresión lógica se detiene debido a que
 ya se conoce el valor final, esto es conocido como {\bf corto-circuitar}
 la evaluación.
 
-\index{guardian pattern}
-\index{pattern!guardian}
+\index{guardián, patrón}
+\index{patrón!guardián}
 A pesar de que esto pueda parecer hilar demasiado fino, el funcionamiento
 en corto-circuito nos descubre una astuta técnica llamada el {\bf patrón guardián}.
 Considera la siguiente secuencia de código en el intérprete de Python:
@@ -533,7 +533,7 @@ para asegurar que sólo se ejecute {\tt (x/y)} en el caso de que {\tt y} no sea 
 
 \section{Depuración}
 \label{whitespace}
-\index{debugging}
+\index{depuración}
 \index{traceback}
 
 Los ``traceback'' que Python muestra cuando se produce un error contienen
@@ -552,7 +552,7 @@ Los errores de sintaxis (syntax errors), normalmente son fáciles de encontrar, 
 a veces tienen trampa. Los errores debido a espacios en blanco pueden ser complicados de
 localizar, ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
 
-\index{whitespace}
+\index{espacio en blanco}
 
 \beforeverb
 \begin{verbatim}
@@ -613,8 +613,8 @@ incorrecto en ese línea. Para encontrar el error real, puede resultar
 se realiza una división hacia abajo. La solución es representar la intensidad
 de la señal y la intensidad del ruido con valores en punto flotante.
 
-\index{floor division}
-\index{division!floor}
+\index{hacia abajo, division}
+\index{división!hacia abajo}
 
 En general, los mensajes de error te dicen dónde se ha descubierto el problema,
 pero a menudo no es ahí exactamente donde se ha producido.
@@ -626,31 +626,31 @@ pero a menudo no es ahí exactamente donde se ha producido.
 
 \item[condición:] La expresión booleana en una sentencia condicional
 que determina qué rama será ejecutada.
-\index{condition}
+\index{condición}
 
 \item[condicional anidado:]  Una sentencia condicional que aparece
 en una de las ramas de otra sentencia condicional.
-\index{nested conditional}
-\index{conditional!nested}
+\index{anidado, condicional}
+\index{condicional!anidado}
 
 \item[condicional encadenado:]  Una sentencia condicional con una serie
 de ramas alternativas.
-\index{chained conditional}
-\index{conditional!chained}
+\index{encadenado, condicional}
+\index{condicional!encadenado}
 	
 \item[cortocircuito:]  Cuando Python va evaluando una expresión lógica
 por tramos y detiene el proceso de evaluación debido a que ya
 conoce el valor final que va a tener el resultado
 sin necesidad de evaluar el resto de la expresión.
-\index{short circuit}
+\index{corto circuito}
 
 \item[cuerpo:] La secuencia de sentencias en el interior de una sentencia compuesta.
-\index{body}
+\index{cuerpo}
 
 \item[expresión booleana:]  Un expresión cuyo valor puede ser o bien 
 {\tt Verdadero} o bien {\tt Falso}.
-\index{boolean expression}
-\index{expression!boolean}
+\index{booleana, expresión}
+\index{expresión!booleana}
 
 \item[operadores de comparación:] Uno de los operadores que se utiliza para comparar
 dos operandos: {\tt ==}, {\tt !=}, {\tt \verb">"}, {\tt \verb"<"}, {\tt \verb">="}, y {\tt \verb"<="}.
@@ -661,22 +661,23 @@ booleanas: {\tt and}, {\tt or}, y {\tt not}.
 \item[patrón guardián:] Cuando construimos una expresión lógica
 con comparaciones adicionales
 para aprovecharnos del funcionamiento en corto-circuito.
-\index{guardian pattern}
-\index{pattern!guardian}
+\index{guardián, patrón}
+\index{patrón!guardián}
 
 \item[rama:] Una de las secuencias alternativas de sentencias en una
 sentencia condicional.
-\index{branch}
+\index{rama}
 
 \item[sentencia compuesta:]  Una sentencia que consiste en un encabezado
 y un cuerpo. El encabezado termina con dos-puntos (:). El cuerpo está sangrado
 con relación al encabezado.
-\index{compound statement}
+\index{compuesta, sentencia}
+\index{sentencia!compuesta}
 
 \item[sentencia condicional:]  Una sentencia que controla el flujo de
 ejecución, dependiendo de cierta condición.
-\index{conditional statement}
-\index{statement!conditional}
+\index{condicional, sentencia}
+\index{sentencia!condicional}
 
 \item[traceback:]  Una lista de las funciones que se están ejecutando,
 que se muestra en pantalla cuando se produce una excepción.

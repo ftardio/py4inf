@@ -94,7 +94,7 @@
 \contentsline {section}{\numberline {7.6}Permitir al usuario elegir el nombre del fichero}{87}
 \contentsline {section}{\numberline {7.7}Uso de {\tt try, except,} y {\tt open}}{88}
 \contentsline {section}{\numberline {7.8}Escritura en ficheros}{89}
-\contentsline {section}{\numberline {7.9}Depurando}{90}
+\contentsline {section}{\numberline {7.9}Depuraci\IeC {\'o}n}{90}
 \contentsline {section}{\numberline {7.10}Glosario}{91}
 \contentsline {section}{\numberline {7.11}Ejercicios}{91}
 \contentsline {chapter}{\numberline {8}Listas}{93}

@@ -26,25 +26,25 @@ Para movernos a través de todos los directorios y archivos de un árbol usaremo
 \section{Nombres de archivo y rutas}
 \label{paths}
 
-\index{file name}
-\index{path}
-\index{directory}
-\index{folder}
+\index{archivo, nombre}
+\index{ruta}
+\index{directorio}
+\index{carpeta}
 
 Cada programa en ejecución tiene su propio ``directorio actual'', que es el directorio que
 usará por defecto para la mayoría de las operaciones. Por ejemplo, cuando abres un archivo
 en modo lectura, Python lo busca en el directorio actual.
 
-\index{os module}
-\index{module!os}
+\index{os, módulo}
+\index{módulo!os}
 
 El módulo {\tt os} proporciona funciones para trabajar con archivos y
 directorios ({\tt os} significa ``Sistema Operativo''\footnote{en inglés, ``operating system''
 (Nota del trad.)}).
 {\tt os.getcwd} devuelve el nombre del directorio actual:
 
-\index{getcwd function}
-\index{function!getcwd}
+\index{getcwd, función}
+\index{función!getcwd}
 
 \beforeverb
 \begin{verbatim}
@@ -60,18 +60,18 @@ directory'' (Nota del trad.)}. El resultado en
 este ejemplo es {\tt /Users/csev}, que es el directorio home para un
 usuario llamado {\tt csev}.
 
-\index{working directory}
-\index{directory!working}
+\index{trabajo, directorio de}
+\index{directorio!de trabajo}
 
 Una cadena como {\tt cwd}, que identifica un fichero, recibe el nombre de ruta.
 Una {\bf ruta relativa} comienza en el directorio actual;
 una {\bf ruta absoluta} comienza en el directorio superior del
 sistema de archivos.
 
-\index{relative path}
-\index{path!relative}
-\index{absolute path}
-\index{path!absolute}
+\index{relativa, ruta}
+\index{ruta!relativa}
+\index{absoluta, ruta}
+\index{ruta!absoluta}
 
 Las rutas que hemos visto hasta ahora son simples nombres de archivo, de modo que
 son relativas al directorio actual. Para encontrar la ruta absoluta de
@@ -87,8 +87,8 @@ un archivo se puede utilizar {\tt os.path.abspath}:
 {\tt os.path.exists} comprueba
 si un fichero o directorio existe:
 
-\index{exists function}
-\index{function!exists}
+\index{exists, función}
+\index{función!exists}
 
 \beforeverb
 \begin{verbatim}
@@ -473,7 +473,7 @@ y las otras utilidades {\tt os}.
 
 \section{Argumentos de línea de comandos}
 
-\index{arguments}
+\index{argumentos}
 
 En capítulos anteriores, teníamos varios programas que usaban
 \verb"raw_input" para pedir el nombre de un fichero, y luego leían datos
@@ -578,8 +578,8 @@ ejemplo, en Unix se cambia de directorio con {\tt cd},
 se muestra el contenido de un directorio con {\tt ls}, y se ejecuta
 un navegador web tecleando (por ejemplo) {\tt firefox}.
 
-\index{ls (Unix command)}
-\index{Unix command!ls}
+\index{ls (Comando Unix)}
+\index{Comando Unix!ls}
 
 Cualquier programa que se ejecute desde la shell puede ser ejecutado
 también desde Python usando una {\bf pipe (tubería)}. Una tubería es un objeto
@@ -593,8 +593,8 @@ tuberías hacia comandos que estén soportados en ese sistema operativo.}
 contenido del directorio actual (en formato largo). Se puede
 ejecutar {\tt ls} con {\tt os.popen}:
 
-\index{popen function}
-\index{function!popen}
+\index{popen, función}
+\index{función!popen}
 
 \beforeverb
 \begin{verbatim}
@@ -609,10 +609,10 @@ abierto. Se puede leer la salida del proceso {\tt ls} línea a línea
 usando {\tt readline}, u obtener todo de una vez
 con {\tt read}:
 
-\index{readline method}
-\index{method!readline}
-\index{read method}
-\index{method!read}
+\index{readline, método}
+\index{método!readline}
+\index{read, método}
+\index{método!read}
 
 \beforeverb
 \begin{verbatim}
@@ -622,8 +622,8 @@ con {\tt read}:
 %
 Cuando hayas terminado, debes cerrar la tubería como harías con un fichero:
 
-\index{close method}
-\index{method!close}
+\index{close, método}
+\index{método!close}
 
 \beforeverb
 \begin{verbatim}
@@ -659,9 +659,9 @@ que estás. Puedes cambiar el directorio de trabajo usando el comando
 Cuando abres un fichero en Python usando sólo el nombre del fichero sin información
 acerca de la ruta, el fichero debe estar en el directorio de trabajo actual,
 en el cual estás ejecutando el programa.
-\index{directory!current}
-\index{directory!working}
-\index{directory!cwd}
+\index{directorio!actual}
+\index{directorio!de trabajo}
+\index{directorio!cwd}
 
 \item[hashing:] Lectura a través de una cantidad potencialmente grande de datos
 para producir una suma de comprobación única para esos datos. Las mejores funciones hash
@@ -677,17 +677,18 @@ mediante una tubería. Una tubería es similar a un
 para conectar programas en ejecución dentro del mismo ordenador
 (es decir, no se puede usar a través de una red).
 \index{pipe}
+\index{tubería}
 
 \item[ruta absoluta:] Una cadena que describe dónde está almacenado
 un fichero o directorio, comenzando desde la ``parte superior del árbol de directorios'',
 de modo que puede usarse para acceder al fichero o directorio, independientemente
 de cual sea el directorio de trabajo actual.
-\index{path!absolute}
+\index{ruta!absoluta}
 
 \item[ruta relativa:] Una cadena que describe dónde se almacena
 un fichero o directorio, relativo al directorio de trabajo
 actual.
-\index{path!relative}
+\index{ruta!relativa}
 
 \item[shell:] Una interfaz de línea de comandos de un sistema operativo.
 También se la llama ``terminal de programas'' en ciertos sistemas. En esta interfaz
@@ -700,6 +701,7 @@ el árbol completo de directorios, subdirectorios, sub-subdirectorios,
 hasta que se han visitado todos los directorios. A esto se le llama
 ``recorrer el árbol de directorios''.
 \index{walk}
+\index{recorrer}
 
 \end{description}
 
@@ -729,10 +731,11 @@ con el mismo tamaño. Si es así, has localizado un par de duplicados,
 de modo que puedes imprimir el tamaño del archivo y los dos nombres
 (el guardado en el diccionario y el del fichero que estás comprobando).
 
-\index{duplicate}
-\index{MD5 algorithm}
-\index{algorithm!MD5}
+\index{duplicados}
+\index{MD5, algoritmo}
+\index{algoritmo!MD5}
 \index{checksum}
+\index{suma de comprobación}
 
 \item Adapta el programa anterior para buscar ficheros que
 tengan contenidos duplicados usando un algoritmo de hashing o

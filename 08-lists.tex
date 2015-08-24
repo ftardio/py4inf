@@ -3,8 +3,8 @@
 
 \chapter{Listas}
 
-\index{list}
-\index{type!list}
+\index{lista}
+\index{tipo!list}
 
 
 \section{Una lista es una secuencia}
@@ -13,9 +13,9 @@ Al igual que una cadena, una {\bf lista} es una secuencia de valores. En una cad
 valores son caracteres; en una lista, pueden ser de cualquier tipo. Los valores en las
 listas reciben el nombre de {\bf elementos}, o a veces {\bf artículos}.
 
-\index{element}
-\index{sequence}
-\index{item}
+\index{elemento}
+\index{secuencia}
+\index{artículo}
 
 Hay varios modos de crear una lista nueva; el más simple
 consiste en encerrar los elementos entre corchetes (\verb"[" y \verb"]"):
@@ -40,15 +40,15 @@ La lista siguiente contiene una cadena, un flotante, un entero y
 %
 Una lista dentro de otra se dice que está {\bf anidada}.
 
-\index{nested list}
-\index{list!nested}
+\index{anidada, lista}
+\index{lista!anidada}
 
 Una lista que no contiene elementos recibe el nombre
 de lista vacía; se puede crear una simplemente
 con unos corchetes vacíos, \verb"[]".
 
-\index{empty list}
-\index{list!empty}
+\index{vacía, lista}
+\index{lista!vacía}
 
 Como es lógico, puedes asignar listas de valores a variables:
 
@@ -63,15 +63,15 @@ Como es lógico, puedes asignar listas de valores a variables:
 \afterverb
 %
 
-\index{assignment}
+\index{asignación}
 
 \section{Las listas son mutables}
 
-\index{list!element}
-\index{access}
-\index{index}
-\index{bracket operator}
-\index{operator!bracket}
+\index{lista!elemento}
+\index{accesso}
+\index{índice}
+\index{corchete, operador}
+\index{operador!corchete}
 
 La sintaxis para acceder a los elementos de una lista es la misma que
 para acceder a los caracteres de una cadena---el operador corchete. La
@@ -90,7 +90,7 @@ de los elementos o reasignar un elemento dentro de la lista.
 Cuando el operador corchete aparece en el lado izquierdo de una asignación,
 éste identifica el elemento de la lista que será asignado.
 
-\index{mutability}
+\index{mutabilidad}
 
 \beforeverb
 \begin{verbatim}
@@ -104,16 +104,16 @@ Cuando el operador corchete aparece en el lado izquierdo de una asignación,
 El elemento cuyo índice es uno de {\tt numeros}, que
 antes era 123, es ahora 5.
 
-\index{index!starting at zero}
-\index{zero, index starting at}
+\index{índice!comienza en cero}
+\index{cero, índice comienza en}
 
 Puedes pensar en una lista como una relación entre índices y
 elementos. Esta relación recibe el nombre de {\bf mapeo o direccionamiento}; cada índice
 ``dirige a'' uno de los elementos.
 
 
-\index{item assignment}
-\index{assignment!item}
+\index{asignación de elemento}
+\index{asignación!elemento}
 
 Los índices de una lista funcionan del mismo modo que los índices de una cadena:
 
@@ -132,13 +132,13 @@ el final de la lista.
 
 \end{itemize}
 
-\index{list!index}
+\index{lista!índice}
 
 
-\index{list!membership}
-\index{membership!list}
-\index{in operator}
-\index{operator!in}
+\index{lista!pertenencia}
+\index{pertenencia!lista}
+\index{in, operador}
+\index{operador!in}
 
 El operador {\tt in} también funciona con las listas.
 
@@ -154,11 +154,11 @@ False
 
 
 \section{Recorrer una lista}
-\index{list!traversal}
-\index{traversal!list}
-\index{for loop}
-\index{loop!for}
-\index{statement!for}
+\index{lista!recorrido}
+\index{recorrido!lista}
+\index{for, bucle}
+\index{bucle!for}
+\index{sentencia!for}
 
 El modo más habitual de recorrer los elementos de una lista es
 con un bucle {\tt for}. La sintaxis es la misma que para las cadenas:
@@ -175,8 +175,8 @@ lista. Pero si quieres escribir o modificar los elementos,
 necesitarás los índices. Un modo habitual de hacerlo consiste en combinar
 las funciones {\tt range} y {\tt len}:
 
-\index{looping!with indices}
-\index{index!looping with}
+\index{iteración!con índices}
+\index{índice!iterando con}
 
 \beforeverb
 \begin{verbatim}
@@ -193,8 +193,8 @@ del elemento siguiente. La sentencia de asignación en el cuerpo usa
 {\tt i} para leer el valor antiguo del elemento y asignarle el
 valor nuevo.
 
-\index{item update}
-\index{update!item}
+\index{elemento, actualizar}
+\index{actualizar!elemento}
 
 Un bucle {\tt for} aplicado a una lista vacía no ejecuta nunca el código contenido en su cuerpo:
 
@@ -209,8 +209,8 @@ A pesar de que una lista puede contener otra, la lista
 anidada sólo cuenta como un único elemento. La longitud de esta lista
 es cuatro:
 
-\index{nested list}
-\index{list!nested}
+\index{anidada, lista}
+\index{lista!anidada}
 
 \beforeverb
 \begin{verbatim}
@@ -221,12 +221,12 @@ es cuatro:
 
 
 \section{Operaciones con listas}
-\index{list!operation}
+\index{lista!operación}
 
 El operador {\tt +} concatena listas:
 
-\index{concatenation!list}
-\index{list!concatenation}
+\index{concatenación!lista}
+\index{lista!concatenación}
 
 \beforeverb
 \begin{verbatim}
@@ -240,8 +240,8 @@ El operador {\tt +} concatena listas:
 %
 De forma similar, el operador {\tt *} repite una lista el número especificado de veces:
 
-\index{repetition!list}
-\index{list!repetition}
+\index{repeticion!lista}
+\index{lista!repetición}
 
 \beforeverb
 \begin{verbatim}
@@ -258,11 +258,11 @@ repite la lista {\tt [1, 2, 3]} tres veces.
 
 \section{Rebanado de listas}
 
-\index{slice operator}
-\index{operator!slice}
-\index{index!slice}
-\index{list!slice}
-\index{slice!list}
+\index{rebanado, operador}
+\index{operador!rebanado}
+\index{índice!rebanado}
+\index{lista!rebanado}
+\index{rebanado!lista}
 
 El operador de recorte o rebanado también funciona en listas:
 
@@ -282,9 +282,9 @@ Si omites el primer índice, la rebanada comenzará al principio.
 Si omites el segundo, la rebanada llegará hasta el final. De modo que
 si omites ambos, la rebanada será una copia de la lista completa.
 
-\index{list!copy}
-\index{slice!copy}
-\index{copy!slice}
+\index{lista!copiar}
+\index{rebanado!copiar}
+\index{copiar!rebanado}
 
 \beforeverb
 \begin{verbatim}
@@ -297,13 +297,13 @@ Como las litas son mutables, a menudo resultará útil hacer una copia
 antes de realizar operaciones que dupliquen elementos, los haga rotar o mutile
 las listas.
 
-\index{mutability}
+\index{mutabilidad}
 
 Un operador de rebanado en la parte izquierda de una asignación
 puede modificar múltiples elementos:
 
-\index{slice!update}
-\index{update!slice}
+\index{rebanado!actualizar}
+\index{actualizar!rebanado}
 
 \beforeverb
 \begin{verbatim}
@@ -317,14 +317,14 @@ puede modificar múltiples elementos:
 
 \section{Métodos de listas}
 
-\index{list!method}
-\index{method, list}
+\index{lista!métodos}
+\index{métodos!lista}
 
 Python proporciona varios métodos que operan con listas. Por ejemplo,
 {\tt append} añade un nuevo elemento al final de una lista:
 
-\index{append method}
-\index{method!append}
+\index{append, método}
+\index{método!append}
 
 \beforeverb
 \begin{verbatim}
@@ -338,8 +338,8 @@ Python proporciona varios métodos que operan con listas. Por ejemplo,
 {\tt extend} toma una lista como argumento y añade al final de la actual
 todos sus elementos
 
-\index{extend method}
-\index{method!extend}
+\index{extend, método}
+\index{método!extend}
 
 \beforeverb
 \begin{verbatim}
@@ -355,8 +355,8 @@ En este ejemplo, {\tt t2} no se modifica.
 
 {\tt sort} ordena los elementos de una lista de menor a mayor:
 
-\index{sort method}
-\index{method!sort}
+\index{sort, método}
+\index{método!sort}
 
 \beforeverb
 \begin{verbatim}
@@ -371,22 +371,22 @@ La mayoría de los métodos de lista no devuelven nada; modifican la lista y dev
 Si escribes por accidente {\tt t = t.sort()}, seguro que te sientes defraudado
 por el resultado.
 
-\index{void method}
-\index{method!void}
-\index{None special value}
-\index{special value!None}
+\index{hueco, método}
+\index{método!hueco}
+\index{None, valor especial}
+\index{valor especial!None}
 
 \section{Borrado de elementos}
 
-\index{element deletion}
-\index{deletion, element of list}
+\index{borrado de elemento}
+\index{borrado, elemento de lista}
 
 Hay varias formas de borrar elementos de una lista. Si conoces
 el índice del elemento que quieres eliminar, puedes usar
 {\tt pop}:
 
-\index{pop method}
-\index{method!pop}
+\index{pop, método}
+\index{método!pop}
 
 \beforeverb
 \begin{verbatim}
@@ -406,8 +406,8 @@ Si no le proporcionas un índice, borra y devuelve el
 Si no necesitas el valor eliminado, puedes usar el operador
 {\tt del}:
 
-\index{del operator}
-\index{operator!del}
+\index{del, operador}
+\index{operador!del}
 
 \beforeverb
 \begin{verbatim}
@@ -422,8 +422,8 @@ Si no necesitas el valor eliminado, puedes usar el operador
 Si conoces el elemento que quieres eliminar (pero no su índice), puedes
 usar {\tt remove}:
 
-\index{remove method}
-\index{method!remove}
+\index{remove, método}
+\index{método!remove}
 
 \beforeverb
 \begin{verbatim}
@@ -436,8 +436,8 @@ usar {\tt remove}:
 %
 El valor que devuelve {\tt remove} es {\tt None}.
 
-\index{None special value}
-\index{special value!None}
+\index{None, valor especial}
+\index{valor especial!None}
 
 Para eliminar más de un elemento, puedes usar {\tt del} con
 un índice de rebanada:
@@ -531,17 +531,17 @@ para conseguir la media.
 
 \section{Listas y cadenas}
 
-\index{list}
-\index{string}
-\index{sequence}
+\index{lista}
+\index{cadena}
+\index{secuencia}
 
 Una cadena es una secuencia de caracteres y una lista es una secuencia
 de valores, pero una lista de caracteres no es lo mismo que una
 cadena. Para convertir desde una cadena a una lista de caracteres,
 se puede usar la función {\tt list}:
 
-\index{list!function}
-\index{function!list}
+\index{lista!función}
+\index{función!list}
 
 \beforeverb
 \begin{verbatim}
@@ -560,8 +560,8 @@ La función {\tt list} divide una cadena en letras individuales. Si
 quieres dividir una cadena en palabras, puedes usar el método
 {\tt split}:
 
-\index{split method}
-\index{method!split}
+\index{split, método}
+\index{método!split}
 
 \beforeverb
 \begin{verbatim}
@@ -583,9 +583,9 @@ un argumento opcional llamado {\bf delimitador}, que
 especifica qué caracteres se deben usar como delimitadores de palabras.
 El ejemplo siguiente usa un guión como delimitador:
 
-\index{optional argument}
-\index{argument!optional}
-\index{delimiter}
+\index{opcional, argumento}
+\index{argumento!opcional}
+\index{delimitador}
 
 \beforeverb
 \begin{verbatim}
@@ -602,9 +602,9 @@ concatena sus elementos. {\tt join} es un método de cadena,
 de modo que debes invocarlo sobre el delimitador y pasarle
 la lista como un parámetro:
 
-\index{join method}
-\index{method!join}
-\index{concatenation}
+\index{join, método}
+\index{método!join}
+\index{concatenación}
 
 \beforeverb
 \begin{verbatim}
@@ -620,8 +620,8 @@ entonces {\tt join} coloca un espacio entre las palabras. Para concatenar
 cadenas sin espacios, puedes usar la cadena vacía,
 \verb"''", como delimitador.
 
-\index{empty string}
-\index{string!empty}
+\index{cadena vacía}
+\index{cadena!vacía}
 
 
 \section{Análisis de líneas}
@@ -681,8 +681,8 @@ que estamos buscando.
 
 \section{Objetos y valores}
 
-\index{object}
-\index{value}
+\index{objecto}
+\index{valor}
 
 Si ejecutamos estas sentencias de asignación:
 
@@ -697,7 +697,7 @@ sabemos que {\tt a} y {\tt b} se refieren ambas a una
 cadena, pero no sabemos si se refieren a la
 \emph{misma} cadena. Hay dos estados posibles:
 
-\index{aliasing}
+\index{alias}
 
 \beforefig
 \centerline{\includegraphics{figs2/list1.eps}}
@@ -707,8 +707,8 @@ En el primer caso, {\tt a} y {\tt b} se refieren a dos objetos diferentes que
 tienen el mismo valor. En el segundo, se refieren al mismo
 objeto.
 
-\index{is operator}
-\index{operator!is}
+\index{is, operador}
+\index{operador!is}
 
 Para comprobar si dos variables se refieren al mismo objeto, puedes
 usar el operador {\tt is}.
@@ -743,8 +743,8 @@ no son el mismo objeto. Si dos objetos son idénticos, también
 son equivalentes, pero si son equivalentes, no necesariamente
 son idénticos.
 
-\index{equivalence}
-\index{identity}
+\index{equivalencia}
+\index{identidad}
 
 Hasta ahora, hemos estado usando ``objeto'' y ``valor''
 de forma intercambiable, pero es más preciso decir que un objeto tiene
@@ -752,14 +752,14 @@ un valor. Si ejecutas {\tt a = [1,2,3]}, {\tt a} se refiere a un objeto
 lista cuyo valor es una secuencia particular de elementos. Si otra
 lista tiene los mismos elementos, podemos decir que tiene el mismo valor.
 
-\index{object}
-\index{value}
+\index{objecto}
+\index{valor}
 
 
 \section{Alias}
 
-\index{aliasing}
-\index{reference!aliasing}
+\index{alias}
+\index{referencia!alias}
 
 Si {\tt a} se refiere a un objeto y asignas {\tt b = a},
 entonces ambas variables se refieren al mismo objeto:
@@ -778,12 +778,12 @@ La asociación de una variable con un objeto recibe el nombre de
 {\bf referencia}. En este ejemplo, hay dos referencias para el mismo
 objeto.
 
-\index{reference}
+\index{referencia}
 
 Un objeto con más de una referencia tiene más
 de un nombre, de modo que decimos que el objeto tiene uno o varios {\bf alias}.
 
-\index{mutability}
+\index{mutabilidad}
 
 Si el objeto con alias es mutable,
 los cambios que se hagan en uno de los alias
@@ -801,7 +801,7 @@ A pesar de que este comportamiento puede resultar útil, es también propenso a 
 resulta más seguro evitar usar alias cuando se está trabajando con objetos
 mutables.
 
-\index{immutability}
+\index{inmutabilidad}
 
 Para objetos inmutables, como cadenas, usar alias no resulta tan
 problemático. En este ejemplo:
@@ -819,11 +819,11 @@ a la misma cadena o no.
 
 \section{Listas como argumentos}
 
-\index{list!as argument}
-\index{argument}
-\index{argument!list}
-\index{reference}
-\index{parameter}
+\index{lista!como argumento}
+\index{argumento}
+\index{argumento!lista}
+\index{referencia}
+\index{parámetro}
 
 Cuando se pasa una lista a una función, la función recibe una referencia
 de esa lista.
@@ -856,10 +856,10 @@ modifican listas y las operaciones que crean listas nuevas.
 Por ejemplo, el método {\tt append} modifica una lista, pero el
 operador {\tt +} crea una lista nueva:
 
-\index{append method}
-\index{method!append}
-\index{list!concatenation}
-\index{concatenation!list}
+\index{append, método}
+\index{método!append}
+\index{lista!concatenación}
+\index{concatenación!lista}
 
 \beforeverb
 \begin{verbatim}
@@ -893,8 +893,8 @@ El operador de rebanado crea una lista nueva y la asignación
 hace que {\tt t} se refiera a ella, pero ninguno de ellos tiene ningún efecto
 sobre la lista que se ha pasado como argumento.
 
-\index{slice operator}
-\index{operator!slice}
+\index{rebanado, operador}
+\index{operador!rebanado}
 
 Una alternativa consiste en escribir una función que cree y
 retorne una lista nueva. Por ejemplo,
@@ -934,7 +934,7 @@ menos el primero y el último.
 
 
 \section{Depuración}
-\index{debugging}
+\index{depuración}
 
 El uso descuidado de las listas (y otros objetos mutables)
 puede ocasionar largas horas de depuración. He aquí algunas
@@ -962,8 +962,8 @@ t = t.sort()           # ¡INCORRECTO!
 \end{verbatim}
 \afterverb
 
-\index{sort method}
-\index{method!sort}
+\index{sort, método}
+\index{método!sort}
 
 Debido a que {\tt sort} devuelve {\tt None}, la operación
 siguiente que realices con {\tt t} es probable que falle.
@@ -978,8 +978,8 @@ están documentados en
 \url{https://docs.python.org/2/library/stdtypes.html#mutable-sequence-types}.
 
 
-\item Elige un método y ajústate a él.
-\index{idiom}
+\item Elige un estilo y ajústate a él.
+\index{estilo}
 
 Parte del problema con las listas es que hay demasiados
 modos de hacer las cosas. Por ejemplo, para eliminar un elemento de
@@ -1015,8 +1015,8 @@ no hacen lo que queremos.
 
 \item Haz copias para evitar los alias.
 
-\index{aliasing!copying to avoid}
-\index{copy!to avoid aliasing}
+\index{alias!copiar para evitar}
+\index{copiar!para evitar alias}
 
 Si quieres usar un método como {\tt sort}, que modifica
 el argumento, pero necesitas también mantener la lista original,
@@ -1212,40 +1212,40 @@ el operador lógico {\tt and} en una única sentencia {\tt if}.
 
 \item[alias:] Una circunstancia en la cual dos o más variables se refieren al mismo
 objeto.
-\index{aliasing}
+\index{alias}
 
 \item[delimitador:] Un carácter o cadena usado para indicar por dónde
 debe ser dividida una cadena.
-\index{delimiter}
+\index{delimitador}
 
 \item[elemento:] Uno de los valores en una lista (u otra secuencia);
 también reciben el nombre de artículos.
-\index{element}
+\index{elemento}
 
 \item[equivalentes:] Que tienen el mismo valor.
-\index{equivalent}
+\index{equivalentes}
 
 \item[idénticos:] Que son el mismo objeto (lo cual implica equivalencia).
-\index{identical}
+\index{identidad}
 
 \item[índice:] Un valor entero que indica un elemento concreto dentro de una lista.
-\index{index}
+\index{índice}
 
 \item[lista:] Una secuencia de valores.
-\index{list}
+\index{lista}
 
 \item[lista anidada:] Una lista que es un elemento de otra lista.
-\index{nested list}
+\index{anidada, lista}
 
 \item[objeto:] Algo a lo que se puede referir una variable. Un objeto
 tiene un tipo y un valor.
-\index{object}
+\index{objecto}
 
 \item[recorrido de una lista:] El acceso secuencial a cada elemento de una lista.
-\index{list!traversal}
+\index{lista!recorrido}
 
 \item[referencia:] La asociación entre una variable y su valor.
-\index{reference}
+\index{referencia}
 
 \end{description}
 

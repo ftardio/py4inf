@@ -137,8 +137,7 @@ y recibir documentos y datos a través de la web.
 
 \section{Recepción de una imagen mediante HTTP}
 
-\index{urllib!image}
-\index{image!jpg}
+\index{imagen!jpg}
 \index{jpg}
 En el ejemplo anterior, hemos recibido un archivo de texto plano
 que tenía saltos de línea en su interior, y lo único que hemos hecho
@@ -270,10 +269,11 @@ llenar el buffer del socket y verse forzado a pararse hasta que
 nuestro programa empiece a vaciar ese buffer. La detención de la aplicación
 que envía los datos o de la que los recibe se llama
 ``control de flujo''.
-\index{flow control}
+\index{control de flujo}
 
 \section{Recepción de páginas web con {\tt urllib}}
 
+\index{urllib!imagen}
 A pesar de que es posible enviar y recibir datos manualmente a través de HTTP
 usando la librería socket, existe en Python un modo mucho más sencillo de
 realizar esta tarea cotidiana,
@@ -343,7 +343,8 @@ se puede leer como si fuera un fichero local.
 
 \section{Análisis de HTML y rascado de la web}
 \index{web!scraping}
-\index{parsing HTML}
+\index{web!rascado}
+\index{HTML, análisis de}
 
 Uno de los usos más habituales de las capacidades de {\tt urllib} en Python
 es {\bf rascar} la web. El ``web scraping'' o rascado de la web consiste en escribir un programa
@@ -395,14 +396,14 @@ en modo ``no-codicioso'', en vez de en modo ``codicioso''.
 Una búsqueda no-codiciosa intenta encontrar la cadena coincidente
 {\em más pequeña} posible, mientras que una búsqueda codiciosa intentaría
 localizar la cadena coincidente {\em más grande}.
-\index{greedy}
-\index{non-greedy}
+\index{codicioso}
+\index{no codicioso}
 
 Añadimos paréntesis a nuestra expresión regular para indicar
 qué parte de la cadena localizada queremos extraer, y
 obtenemos el siguiente programa:
-\index{regex!parentheses}
-\index{parentheses!regular expression}
+\index{regex!paréntesis}
+\index{paréntesis!expresiones regulares}
 
 \beforeverb
 \begin{verbatim}
@@ -477,7 +478,7 @@ Vamos a usar {\tt urllib} para leer la página y luego usaremos
 etiquetas de anclaje ({\tt a}).
 \index{BeautifulSoup}
 \index{HTML}
-\index{parsing!HTML}
+\index{análisis!HTML}
 
 \beforeverb
 \begin{verbatim}
@@ -567,7 +568,7 @@ A veces se quiere recuperar un fichero que no es de texto (o binario), como
 un archivo de imagen o video. Normalmente no resulta útil imprimir los datos de
 estos ficheros, pero se puede hacer una copia de una URL en un archivo
 local de nuestro disco duro con facilidad, usando {\tt urllib}.
-\index{binary file}
+\index{fichero binario}
 
 El patrón consiste en abrir la URL y usar {\tt read} para descargar el contenido
 completo del documento en una variable de tipo cadena ({\tt img}), y luego escribir la
@@ -663,13 +664,14 @@ desde
 estás contactando cuando realizas una conexión con un socket en un servidor.
 Por ejemplo, el tráfico web normalmente usa el puerto 80, mientras que el tráfico
 del correo electrónico usa el puerto 25.
-\index{port}
+\index{puerto}
 
 \item[rastrear:] La acción de un motor de búsqueda web de recuperar una página
 y luego todas las páginas enlazadas por ella, continuando así sucesivamente hasta que
 tiene casi todas las páginas de Internet, que
 usan para construir su índice de búsqueda.
 \index{spider}
+\index{rastrear}
 
 \item[socket:] Una conexión de red entre dos aplicaciones,
 en la cual dichas aplicaciones pueden enviar y recibir datos en ambas direcciones.
@@ -680,6 +682,7 @@ recupera una página web, y luego realiza una búsqueda en su contenido.
 A menudo los programas siguen los enlaces en una página para encontrar la
 siguiente, de modo que pueden atravesar una red de páginas o una red social.
 \index{scrape}
+\index{rascado}
 
 \end{description}
 
@@ -723,5 +726,3 @@ y también en otras más grandes.
 después de que se haya recibido la cabecera y la línea en blanco. Recuerda que {\tt recv}
 va recibiendo caracteres (saltos de línea incluidos), y no líneas.
 \end{ex}
-
-

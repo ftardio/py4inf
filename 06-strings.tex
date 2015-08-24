@@ -6,10 +6,10 @@
 
 
 \section{Una cadena es una secuencia}
-\index{sequence}
-\index{character}
-\index{bracket operator}
-\index{operator!bracket}
+\index{secuencia}
+\index{carácter}
+\index{corchete, operador}
+\index{operador!corchete}
 
 Una cadena es una {\bf secuencia} de caracteres.
 Puedes acceder a los caracteres de uno en uno con el
@@ -22,7 +22,7 @@ operador corchete:
 \end{verbatim}
 \afterverb
 %
-\index{index}
+\index{índice}
 La segunda sentencia extrae el carácter cuyo índice de posición es 1 en la
 variable {\tt fruta} y lo asigna a la variable {\tt letra}.
 
@@ -58,14 +58,14 @@ es la primera letra, y {\tt n} es la segunda.
 \centerline{\includegraphics[height=0.50in]{figs2/string.eps}}
 \afterfig
 
-\index{index!starting at zero}
-\index{zero, index starting at}
+\index{índice!comienza en cero}
+\index{cero, índice comienza en}
 
 Se puede utilizar cualquier expresión, incluyendo variables y operadores, como índice,
 pero el valor del índice debe ser un entero. Si no es así
 obtendrás:
 
-\index{index}
+\index{índice}
 \index{exception!TypeError}
 \index{TypeError}
 
@@ -79,8 +79,8 @@ TypeError: string indices must be integers
 
 \section{Obtener la longitud de una cadena mediante {\tt len}}
 
-\index{len function}
-\index{function!len}
+\index{len, función}
+\index{función!len}
 
 {\tt len} es una función incorporada que devuelve el número de caracteres
 de una cadena:
@@ -124,19 +124,19 @@ Alternativamente, se pueden usar índices negativos, que cuentan hacia atrás de
 el final de la cadena. La expresión {\tt fruta[-1]} recoge la última
 letra, {\tt fruit[-2]} extrae la segunda desde el final, y así todas las demás.
 
-\index{index!negative}
-\index{negative index}
+\index{índice!negativo}
+\index{negativo, índice}
 
 
 \section{Recorrido a través de una cadena con un bucle}
 \label{for}
 
-\index{traversal}
-\index{loop!traversal}
-\index{for loop}
-\index{loop!for}
-\index{statement!for}
-\index{traversal}
+\index{recorrido}
+\index{bucle!recorrido}
+\index{for, bucle}
+\index{bucle!for}
+\index{sentencia!for}
+\index{recorrido}
 
 Gran parte de los cálculos implican procesar una cadena carácter por
 carácter. A menudo se empieza por el principio, se van seleccionando caracteres
@@ -183,11 +183,11 @@ a la variable {\tt car}. El bucle continúa hasta que no quedan caracteres.
 \section{Rebanado de cadenas}
 \label{slice}
 
-\index{slice operator}
-\index{operator!slice}
-\index{index!slice}
-\index{string!slice}
-\index{slice!string}
+\index{rebanado, operador}
+\index{operador!rebanado}
+\index{índice!rebanado}
+\index{cadena!rebanado}
+\index{rebanado!cadena}
 
 Un segmento de una cadena recibe el nombre de {\bf rebanada (slice)}.
 Seleccionar una rebanada es similar a seleccionar caracteres:
@@ -223,7 +223,7 @@ abarcará hasta el final de la cadena:
 Si el primer índice es mayor o igual que el segundo, el resultado será
 una {\bf cadena vacía}, representada por dos comillas:
 
-\index{quotation mark}
+\index{comillas}
 
 \beforeverb
 \begin{verbatim}
@@ -240,17 +240,17 @@ lo demás es exactamente igual que cualquier otra cadena.
 Dado que {\tt fruta} es una cadena, ¿qué significa
 {\tt fruta[:]}?
 
-\index{copy!slice}
-\index{slice!copy}
+\index{copiar!rebanado}
+\index{rebanado!copiar}
 
 
 \end{ex}
 
 
 \section{Las cadenas son inmutables}
-\index{mutability}
-\index{immutability}
-\index{string!immutable}
+\index{mutabilidad}
+\index{inmutabilidad}
+\index{cadena!inmutable}
 
 Resulta tentador el utilizar el operador {\tt []} en la parte izquierda de una
 asignación, con la intención de cambiar un carácter en una cadena.
@@ -273,10 +273,10 @@ el carácter que intentabas asignar. Por ahora, un {\bf objeto} es
 lo mismo que un valor, aunque mejoraremos esa definición más adelante.
 Un {\bf elemento} es uno de los valores en una secuencia.
 
-\index{object}
-\index{item assignment}
-\index{assignment!item}
-\index{immutability}
+\index{objecto}
+\index{elemento, asignación}
+\index{asignación!elemento}
+\index{inmutabilidad}
 
 La razón del error es que las
 cadenas son {\bf inmutables}, lo cual significa que no se puede
@@ -296,15 +296,15 @@ Este ejemplo concatena una primera letra nueva en
 una rebanada de {\tt saludo}. Esto conserva intacta
 la cadena original.
 
-\index{concatenation}
+\index{concatenación}
 
 \section{Bucles y recuentos}
 \label{counter}
 
-\index{counter}
-\index{counting and looping}
-\index{looping and counting}
-\index{looping!with strings}
+\index{contador}
+\index{contador y bucle}
+\index{bucle y contador}
+\index{bucle!con cadenas}
 
 El siguiente programa cuenta el número de veces que aparece la letra
 {\tt a} en una cadena:
@@ -327,7 +327,7 @@ Cuando se sale del bucle, {\tt contador}
 contiene el resultado---el número total de {\tt a}'es
 
 \begin{ex}
-\index{encapsulation}
+\index{encapsulación}
 
 Encapsula el código anterior en una función llamada
 {\tt contador}, y generalízala, de modo que acepte la cadena y la
@@ -337,10 +337,10 @@ letra como argumentos.
 \section{El operador {\tt in}}
 \label{inboth}
 
-\index{in operator}
-\index{operator!in}
-\index{boolean operator}
-\index{operator!boolean}
+\index{in, operador}
+\index{operador!in}
+\index{booleano, operador}
+\index{operador!booleano}
 
 La palabra {\tt in} es un operador booleano que toma dos cadenas y
 devuelve {\tt True (verdadero)} si la primera aparece como subcadena
@@ -358,8 +358,8 @@ False
 
 \section{Comparación de cadenas}
 
-\index{string!comparison}
-\index{comparison!string}
+\index{cadena!comparación}
+\index{comparación!cadena}
 
 El operador de comparación funciona con cadenas. Para comprobar si dos cadenas son iguales:
 
@@ -453,13 +453,13 @@ Por ejemplo, el
 método {\tt upper} toma una cadena y devuelve otra nueva con todas
 las letras en mayúsculas:
 
-\index{method}
-\index{string!method}
+\index{método}
+\index{cadena!método}
 
 En vez de usar la sintaxis de función {\tt upper(palabra)}, se usa
 la sintaxis de método {\tt palabra.upper()}.
 
-\index{dot notation}
+\index{punto, notación}
 
 \beforeverb
 \begin{verbatim}
@@ -475,12 +475,12 @@ Esta forma de notación con punto especifica el nombre del método,
 {\tt palabra}. Los paréntesis vacíos indican que el método no toma
 argumentos.
 
-\index{parentheses!empty}
+\index{paréntesis!vacíos}
 
 Una llamada a un método se denomina {\bf invocación}; en este caso, diríamos
 que estamos invocando el método {\tt upper} de {\tt palabra}.
 
-\index{invocation}
+\index{invocación}
 
 Por ejemplo, he aquí un método de cadena llamado {\tt find}, que
 busca la posición de una cadena dentro de otra:
@@ -508,8 +508,8 @@ El método {\tt find} puede encontrar tanto subcadenas como caracteres:
 %
 Puede tomar un segundo argumento que indica en qué posición debe comenzar la búsqueda:
 
-\index{optional argument}
-\index{argument!optional}
+\index{opcional, argumento}
+\index{argumento!opcional}
 
 \beforeverb
 \begin{verbatim}
@@ -565,8 +565,8 @@ con el orden en que las aplicamos, podemos hacer múltiples
 llamadas a métodos en una única expresión..
 
 \begin{ex}
-\index{count method}
-\index{method!count}
+\index{count, método}
+\index{método!count}
 
 Existe un método de cadena llamado {\tt count}, que es similar a la función
 que vimos en el ejercicio anterior. Lee la documentación
@@ -624,8 +624,8 @@ La documentación para el método {\tt find} está disponible en
 
 \section{Operador de formato}
 
-\index{format operator}
-\index{operator!format}
+\index{formato, operador}
+\index{operador!formato}
 
 El {\bf operador de formato} {\tt \%},
 nos permite construir cadenas, reemplazando parte de esas cadenas
@@ -633,13 +633,13 @@ con los datos almacenados en variables.
 Cuando se aplica a enteros, {\tt \%} es el operador módulo. Pero
 cuando el primer operando es una cadena, {\tt \%} es el operador formato.
 
-\index{format string}
+\index{formateo de cadenas}
 
 El primer operando es la {\bf cadena a formatear}, que contiene
 una o más {\bf secuencias de formato}, que especifican cómo
 será formateado el segundo operador. El resultado es una cadena.
 
-\index{format sequence}
+\index{formateo de secuencias}
 
 Por ejemplo, la secuencia de formato \verb"'%d'" quiere decir
 que el segundo operador debe ser formateado como un
@@ -725,7 +725,7 @@ Puedes leer más sobre él en
 
 
 \section{Depuración}
-\index{debugging}
+\index{depuración}
 
 Una habilidad que deberás desarrollar cuando programes es la de
 estar preguntándote siempre: ``¿Qué podría ir mal aquí?'', o quizás,
@@ -779,8 +779,8 @@ que devuelve {\tt False (falso)} si la cadena está vacía.
 \end{verbatim}
 \afterverb
 %
-\index{guardian pattern}
-\index{pattern!guardian}
+\index{guardián, patrón}
+\index{patrón!guardián}
 Otro modo es asegurar la sentencia {\tt if} usando el patrón {\bf guardián},
 y asegurarnos de que la segunda expresión lógica sea evaluada
 sólo cuando hay al menos un carácter en la cadena:
@@ -798,67 +798,68 @@ sólo cuando hay al menos un carácter en la cadena:
 
 \item[búsqueda:] Un patrón de recorrido que se detiene
 cuando encuentra lo que está buscando.
-\index{search pattern}
-\index{pattern!search}
+\index{búsqueda, patrón}
+\index{patrón!de búsqueda}
 
 \item[cadena vacía:] Una cadena sin caracteres y de longitud 0, representada por
 dos comillas.
-\index{empty string}
+\index{cadena vacía}
 
 \item[contador:] Una variable utilizada para contar algo, normalmente inicializada
 a cero y luego incrementada.
-\index{counter}
+\index{contador}
 
 \item[cadena a formatear:] Una cadena, usada con el operador de formato,
 que contiene secuencias de formato.
-\index{format string}
+\index{cadena a formatear}
 
 \item[elemento:] Uno de los valores en una secuencia.
-\index{item}
+\index{elemento}
 
 \item[flag (bandera):] Una variable booleana que se usa para indicar si
 una condición es verdadera.
 \index{flag}
+\index{bandera}
 
 \item[índice:] Un valor entero usado para seleccionar un elemento en
 una secuencia, como un carácter en una cadena.
-\index{index}
+\index{índice}
 
 \item[inmutable:] La propiedad de una secuencia cuyos elementos
 no pueden ser asignados.
-\index{immutability}
+\index{inmutabilidad}
 
 \item[invocación:] Una sentencia que llama a un método.
-\index{invocation}
+\index{invocación}
 
 \item[método:] Una función que está asociada con un objeto y es llamada
 usando la notación punto.
-\index{method}
+\index{método}
 
 \item[objecto:] Algo a lo que puede referirse una variable. Por ahora,
 puedes usar ``objeto'' y ``valor'' indistintamente.
-\index{object}
+\index{objecto}
 
 \item[operador de formato:] Un operador, {\tt \%}, que toma una cadena 
 a formatear y una tupla y genera una cadena que incluye
 los elementos de la tupla formateados como se especifica en la cadena de formato.
-\index{format operator}
-\index{operator!format}
+\index{formato, operador}
+\index{operador!formato}
 
 \item[rebanada (slice):] Una parte de una cadena especificada por un rango de índices.
-\index{slice}
+\index{rebanado}
 
 \item[recorrido:] Iterar a través de los elementos de una secuencia,
 realizando un operación similar en cada uno de ellos.
-\index{traversal}
+\index{recorrido}
 
 \item[secuencia:] Un conjunto ordenado; es decir, un conjunto de
 valores donde cada valor está identificado por un índice entero.
-\index{sequence}
+\index{secuencia}
 
 \item[secuencia de formato:] Una secuencia de caracteres en una cadena de formato,
 como {\tt \%d}, que especifica cómo debe ser formateado un valor.
-\index{format sequence}
+\index{formato, secuencia de}
 
 \end{description}
 
@@ -883,8 +884,8 @@ un número en punto flotante.
 
 
 \begin{ex}
-\index{string method}
-\index{method!string}
+\index{cadena, métodos}
+\index{métodos!cadena}
 
 Lee la documentación de los métodos de cadena que está en
 \url{https://docs.python.org/2/library/stdtypes.html#string-methods}.

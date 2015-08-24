@@ -2,13 +2,13 @@
 % Copyright (c)  2010-  Charles R. Severance, All Rights Reserved
 
 \chapter{Iteración}
-\index{iteration}
+\index{iteración}
 
 \section{Actualización de variables}
 \label{update}
 
-\index{update}
-\index{variable!updating}
+\index{actualización}
+\index{variable!actualización}
 
 Un uso habitual de las sentencias de asignación es aquel que consiste en
 actualizar una variable --
@@ -37,7 +37,7 @@ NameError: name 'x' is not defined
 Antes de que puedas actualizar una variable, debes {\bf inicializarla},
 normalmente mediante una simple asignación:
 
-\index{initialization (before update)}
+\index{inicialización (antes de actualizar)}
 
 \beforeverb
 \begin{verbatim}
@@ -49,15 +49,16 @@ normalmente mediante una simple asignación:
 Actualizar una variable añadiéndole 1 se denomina {\bf incrementar};
 restarle 1 recibe el nombre de {\bf decrementar}.
 
-\index{increment}
-\index{decrement}
+\index{incremento}
+\index{decremento}
 
 \section{La sentencia {\tt while}}
 
-\index{statement!while}
-\index{while loop}
-\index{loop!while}
-\index{iteration}
+\index{while, sentencia}
+\index{sentencia!while}
+\index{while, bucle}
+\index{bucle!while}
+\index{iteración}
 
 Los ordenadores se suelen utilizar a menudo para automatizar tareas repetitivas. Repetir
 tareas idénticas o muy similares sin cometer errores es algo que a los
@@ -84,7 +85,7 @@ muestra el valor de {\tt n} y luego reduce el valor de {\tt n}
 en 1 unidad. Cuando llegues a 0, sal de la sentencia {\tt while} y
 muestra la palabra {\tt ¡Despegue!}''
 
-\index{flow of execution}
+\index{flujo de ejecución}
 
 Éste es el flujo de ejecución de la sentencia {\tt while}, explicado de un modo más formal:
 
@@ -106,9 +107,9 @@ bucle se dice que realizamos una {\bf iteración}. Para el bucle anterior,
 podríamos decir que ``ha tenido cinco iteraciones'', lo que significa que el cuerpo
 del bucle se ha ejecutado cinco veces.
 
-\index{condition}
-\index{loop}
-\index{body}
+\index{condición}
+\index{bucle}
+\index{cuerpo}
 
 El cuerpo del bucle debe cambiar el valor de una o más variables,
 de modo que la condición pueda en algún momento evaluarse como falsa
@@ -127,8 +128,8 @@ los programadores es la constatación de que las instrucciones del champú:
 no hay una {\bf variable de iteración} que diga cuántas veces
 debe ejecutarse el proceso.
 
-\index{infinite loop}
-\index{loop!infinite}
+\index{infinito, bucle}
+\index{bucle!infinito}
 
 En el caso de una {\tt cuenta atrás}, podemos verificar que el bucle
 termina, ya que sabemos que el valor de {\tt n} es finito, y podemos
@@ -137,8 +138,8 @@ se repite el bucle, de modo que en algún momento llegará a 0. Otras veces
 un bucle es obviamente infinito, porque no tiene ninguna variable de iteración.
 
 \section{``Bucles infinitos'' y {\tt break}}
-\index{break statement}
-\index{statement!break}
+\index{break, sentencia}
+\index{sentencia!break}
 
 A veces no se sabe si hay que terminar un bucle hasta que se ha
 recorrido la mitad del cuerpo del mismo. En ese caso se puede crear un bucle infinito a propósito
@@ -212,8 +213,8 @@ afirmativamente (``detente cuando ocurra''), en vez de tener que hacerlo con ló
 (``sigue funcionando hasta que ocurra'').
 
 \section{Terminando iteraciones con {\tt continue}}
-\index{continue statement}
-\index{statement!continue}
+\index{continue, sentencia}
+\index{sentencia!continue}
 
 Algunas veces, estando dentro de un bucle se necesita
 terminar con la iteración actual y saltar a la siguiente de forma inmediata.
@@ -259,8 +260,8 @@ a la sentencia {\tt while} para comenzar la siguiente iteración, de modo que
 que se omite la sentencia {\tt print}.
 
 \section{Bucles definidos usando {\tt for} }
-\index{for statement}
-\index{statement!for}
+\index{for, sentencia}
+\index{sentencia!for}
 
 A veces se desea repetir un bucle a través de un {\bf conjunto} de cosas, como
 una lista de palabras, las líneas de un archivo, o una lista de números.
@@ -398,7 +399,7 @@ de la lista.
 Cuando el bucle se ejecuta, {\tt total} acumula la suma de los elementos;
 una variable que se usa de este modo recibe a veces el nombre de
 {\bf acumulador}.
-\index{accumulator!sum}
+\index{acumulador!sum}
 
 Ni el bucle que cuenta los elementos ni el que los suma resultan particularmente
 útiles en la práctica, dado que existen las funciones incorporadas
@@ -408,10 +409,10 @@ respectivamente.
 
 \subsection{Bucles de máximos y mínimos}
 
-\index{loop!maximum}
-\index{loop!minimum}
-\index{None special value}
-\index{special value!None}
+\index{bucle!máximo}
+\index{bucle!mínimo}
+\index{None, valor especial}
+\index{valor especial!None}
 \label{maximumloop}
 Para encontrar el valor mayor de una lista o secuencia, construimos
 el bucle siguiente:
@@ -511,13 +512,14 @@ sentencias {\tt print}, de modo que sea equivalente a la función {\tt min},
 que ya está incorporada a Python.
 
 \section{Depuración}
+\index{depuración}
 
 Según vayas escribiendo programas más grandes, puede que te des cuenta que vas necesitando
 emplear cada vez más tiempo en depurarlos. Más código significa más oportunidades de
 cometer un error y más lugares para que los bugs puedan esconderse.
 
-\index{debugging!by bisection}
-\index{bisection, debugging by}
+\index{depuración!por bisección}
+\index{bisección, depuración por}
 
 Un método para acortar el tiempo de depuración es ``depurar por bisección''.
 Por ejemplo, si hay 100 líneas en tu programa y las compruebas
@@ -551,31 +553,33 @@ esté por delante y las de que esté por detrás son más o menos las mismas.
 
 \item[acumulador:] Una variable usada en un bucle para sumar o
 acumular un resultado.
-\index{accumulator}
+\index{acumulador}
 
 \item[bucle infinito:] Un bucle en el cual la condición de terminación no
 se satisface nunca o para el cual no existe dicha condición de terminación.
-\index{infinite loop}
+\index{infinito, bucle}
+\index{bucle!infinito}
 
 \item[contador:] Una variable usada en un bucle para contar el número
 de veces que algo sucede. Inicializamos el contador a
 cero y luego lo vamos incrementando cada vez que queramos que
 ``cuente'' algo.
-\index{counter}
+\index{contador}
 
 \item[decremento:] Una actualización que disminuye el valor de una variable.
-\index{decrement}
+\index{decremento}
 
 \item[inicializar:] Una asignación que da un valor inicial a
 una variable que va a ser después actualizada.
+\index{inicializar!variable}
 
 \item[incremento:] Una actualización que aumenta el valor de una variable
 (a menudo en una unidad).
-\index{increment}
+\index{incremento}
 
 \item[iteración:] Ejecución repetida de una serie de sentencias usando
 bien una función que se llama a si misma o bien un bucle.
-\index{iteration}
+\index{iteración}
 
 \end{description}
 

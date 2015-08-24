@@ -3,14 +3,15 @@
 
 \chapter{Ficheros}
 
-\index{file}
-\index{type!file}
+\index{fichero}
+\index{archivo}
+\index{tipo!file}
 
 
 \section{Persistencia}
 
-\index{persistence}
-\index{secondary memory}
+\index{persistencia}
+\index{memoria!secundaria}
 
 Hasta ahora, hemos aprendido cómo escribir programas y comunicar
 nuestras intenciones a la {\bf Unidad Central de Procesamiento} usando ejecución
@@ -41,9 +42,9 @@ trabajar con archivos de bases de datos, que son ficheros binarios diseñados
 específicamente para ser leídos y escritos mediante software de manejo de bases de datos.
 
 \section{Apertura de ficheros}
-\index{file!open}
-\index{open function}
-\index{function!open}
+\index{fichero!abrir}
+\index{open, función}
+\index{función!open}
 
 Cuando se desea leer o escribir en un archivo (nos referimos en el disco duro), primero
 debemos {\bf abrir} el fichero. Al abrir el fichero nos comunicamos con el sistema
@@ -63,7 +64,7 @@ Puedes descargar el fichero desde
 \end{verbatim}
 \afterverb
 %
-\index{file handle}
+\index{manejador de fichero}
 Si la {\tt apertura} tiene éxito, el sistema operativo nos devuelve un
 {\bf manejador de fichero (file handle)}. El manejador de fichero no son los datos que
 contiene actualmente el archivo, sino que se trata de un ``manejador (handle)'' que se
@@ -124,7 +125,7 @@ Para tener más información sobre el formato mbox, consulta
 Para dividir el archivo en líneas, existe un carácter especial que
 representa el ``final de línea'', llamado {\bf salto de línea (newline)}.
 
-\index{newline}
+\index{salto de línea}
 En Python, el carácter {\bf salto de línea} se representa por barra invertida-n en
 las cadenas. A pesar de que parezcan dos caracteres, se
 trata en realidad de uno sólo. Cuando revisamos la variable introduciendo
@@ -175,8 +176,8 @@ del fichero en líneas.
 
 \section{Lectura de ficheros}
 
-\index{file!reading}
-\index{counter}
+\index{fichero!lectura}
+\index{contador}
 A pesar de que el {\bf manejador de fichero} no contiene los datos del archivo,
 es bastante fácil construir un bucle {\tt for} para ir leyendo
 y contabilizando cada una de las líneas de un fichero:
@@ -258,8 +259,8 @@ la mayoría de las líneas y procesando únicamente aquellas que cumplen alguna 
 particular. Es posible combinar ese patrón de lectura de ficheros con los métodos de cadena
 para construir un mecanismo simple de búsqueda.
 
-\index{filter pattern}
-\index{pattern!filter}
+\index{filtrado, patrón}
+\index{patrón!de filtrado}
 Por ejemplo, si queremos leer un fichero y mostrar unicamente aquellas líneas
 que comienzan con el prefijo ``From:'', podemos usar el
 método de cadena {\bf startwith} para seleccionar solamente aquellas líneas con
@@ -467,17 +468,17 @@ es una persona o grupo llamado {\bf Controlador de Calidad}
 (o QA por sus siglas en inglés), cuyo trabajo principal es hacer las cosas más disparatadas
 posibles para intentar hacer fallar el software que el programador ha creado.
 
-\index{Quality Assurance}
+\index{Controlador de Calidad}
 \index{QA}
 El equipo de QA es el responsable de encontrar los defectos en los programas antes
 de que éstos se entreguen a los usuarios finales, que pueden estar comprando el
 software o pagando su salario a los que escriben el software. De modo que el equipo QA
 es el mejor amigo del programador.
 
-\index{try statement}
-\index{statement!try}
-\index{open function}
-\index{function!open}
+\index{try, sentencia}
+\index{sentencia!try}
+\index{open, función}
+\index{función!open}
 \index{exception!IOError}
 \index{IOError}
 Así que ahora que hemos visto el defecto en el programa, podemos solucionarlo
@@ -519,7 +520,7 @@ No se puedo abrir el fichero: na na boo boo
 \end{verbatim}
 \afterverb
 %
-\index{Pythonic}
+\index{Pythónico}
 La protección de la llamada a {\tt open} es un buen ejemplo
 del uso correcto de {\tt try}
 y {\tt except} en un programa Python. Se utiliza el término
@@ -540,7 +541,7 @@ por nuestros colegas.
 
 \section{Escritura en ficheros}
 
-\index{file!writing}
+\index{fichero!escritura}
 
 Para escribir en un fichero, debes abrirlo usando el modo
 \verb"'w'" como segundo parámetro:
@@ -567,7 +568,7 @@ pone datos dentro del archivo.
 \end{verbatim}
 \afterverb
 %
-\index{newline}
+\index{salto de línea}
 El objeto fichero también realiza el seguimiento de la posición dentro del fichero, de modo
 que si se llama a {\tt write} otra vez, añadirá los datos nuevos al final del archivo.
 
@@ -601,14 +602,14 @@ todos los ficheros queden cerrados cuando el programa termina. En cambio, en el 
 de que estemos escribiendo ficheros, deberemos cerrarlos explícitamente
 para no dejar nada al azar.
 
-\index{close method}
-\index{method!close}
+\index{close, método}
+\index{método!close}
 
 
-\section{Depurando}
+\section{Depuración}
 
-\index{debugging}
-\index{whitespace}
+\index{depuración}
+\index{espacio en blanco}
 
 Cuando estés leyendo y escribiendo archivos, puedes tener problemas
 con los espacios en blanco. Estos errores pueden ser difíciles de depurar porque los espacios,
@@ -623,9 +624,9 @@ tabulaciones y saltos de línea normalmente son invisibles:
 \end{verbatim}
 \afterverb
 
-\index{repr function}
-\index{function!repr}
-\index{string representation}
+\index{repr, función}
+\index{función!repr}
+\index{cadena, representación de}
 
 La función incorporada {\tt repr} puede ayudarnos. Toma cualquier objeto como
 argumento y devuelve una representación de cadena del objeto. En el caso
@@ -648,7 +649,7 @@ usan un carácter de retorno, representado por \verb"\r". Otros usan ambos.
 Si trasladas ficheros entre sistemas diferentes, esas inconsistencias
 pueden causar problemas.
 
-\index{end of line character}
+\index{final de línea, carácter de}
 
 En la mayoría de los sistemas, existen aplicaciones para convertir de un
 formato a otro. Puedes encontrarlos (y leer más acerca de este
@@ -664,27 +665,28 @@ escribir tu propio programa.
 \item[capturar (catch):] Evitar que una excepción haga terminar
 un programa, usando las sentencias {\tt try} y {\tt except}.
 \index{catch}
-
-\item[salto de línea:] Un carácter especial que se utiliza en los archivos y cadenas
-para indicar el final de una línea.
-\index{newline}
-
-\item[Pythónico:] Una técnica que funciona de forma elegante en Python.
-``Usar try y except y es la forma \emph{Pythónica} de restablecer un programa en
-caso de archivos que no existen''.
-\index{Pythonic}
+\index{capturar}
 
 \item[Controlador de Calidad:] Una persona o equipo centrada en asegurar
 la calidad del conjunto en un producto software.
 Sus siglas en inglés son QA (Quality Assurance). QA se encarga normalmente
 de probar un producto e identificar sus problemas antes de que éste
 sea lanzado.
-\index{Quality Assurance}
+\index{Controlador de Calidad}
 \index{QA}
 
-\item[archivo de texto:] Una secuencia de caracteres almacenados en un
+\item[fichero de texto:] Una secuencia de caracteres almacenados en un
 medio de almacenamiento permanente, como un disco duro.
-\index{text file}
+\index{fichero de texto}
+
+\item[Pythónico:] Una técnica que funciona de forma elegante en Python.
+``Usar try y except y es la forma \emph{Pythónica} de restablecer un programa en
+caso de archivos que no existen''.
+\index{Pythónico}
+
+\item[salto de línea:] Un carácter especial que se utiliza en los archivos y cadenas
+para indicar el final de una línea.
+\index{salto de línea}
 
 \end{description}
 

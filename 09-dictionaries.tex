@@ -2,13 +2,11 @@
 % Copyright (c)  2010-  Charles R. Severance, All Rights Reserved
 
 \chapter{Diccionarios}
-\index{dictionary}
-
-\index{dictionary}
-\index{type!dict}
-\index{key}
-\index{key-value pair}
-\index{index}
+\index{diccionario}
+\index{tipo!dict}
+\index{clave}
+\index{pareja clave-valor}
+\index{índice}
 
 Un {\bf diccionario} es similar a una lista, pero más general. En una lista,
 las posiciones de los índices deben ser enteros; en un diccionario,
@@ -26,8 +24,8 @@ La función {\tt dict} crea un diccionario nuevo sin elementos.
 Dado que {\tt dict} es el nombre de una función incorporada, debes
 evitar usarla como nombre de variable.
 
-\index{dict function}
-\index{function!dict}
+\index{dict, función}
+\index{función!dict}
 
 \beforeverb
 \begin{verbatim}
@@ -40,8 +38,7 @@ evitar usarla como nombre de variable.
 Las llaves \verb"{}", representan un diccionario vacío.
 Para añadir elementos al diccionario, se pueden usar corchetes:
 
-\index{squiggly bracket}
-\index{bracket!squiggly}
+\index{llaves}
 
 \beforeverb
 \begin{verbatim}
@@ -113,8 +110,8 @@ KeyError: 'four'
 La función {\tt len} funciona en los diccionarios; devuelve el
 número de parejas clave-valor:
 
-\index{len function}
-\index{function!len}
+\index{len, función}
+\index{función!len}
 
 \beforeverb
 \begin{verbatim}
@@ -127,9 +124,9 @@ El operador {\tt in} también funciona en los diccionarios; te dice si
 algo aparece como \emph{clave} en el diccionario (que aparezca
 como valor no sirve).
 
-\index{membership!dictionary}
-\index{in operator}
-\index{operator!in}
+\index{pertenencia!diccionario}
+\index{in, operador}
+\index{operador!in}
 
 \beforeverb
 \begin{verbatim}
@@ -144,8 +141,8 @@ Para ver si algo aparece como valor en un diccionario, se
 puede usar el método {\tt values}, que devuelve los valores como
 una lista, y después usar el operador {\tt in} sobre esa lista:
 
-\index{values method}
-\index{method!values}
+\index{values, método}
+\index{método!values}
 
 \beforeverb
 \begin{verbatim}
@@ -167,13 +164,13 @@ por qué las funciones de dispersión son tan mágicas,
 pero puedes leer más acerca de ello en
 \url{es.wikipedia.org/wiki/Tabla_hash}.
 
-\index{hash table}
+\index{tabla de dispersión}
 
 \begin{ex}
 \label{wordlist2}
 
-\index{set membership}
-\index{membership!set}
+\index{establecer pertenencia}
+\index{pertenencia!establecer}
 
 Escribe un programa que lea las palabras de {\tt words.txt} y
 las almacene como claves en un diccionario. No importa qué
@@ -185,9 +182,9 @@ diccionario.
 
 
 \section{Diccionario como conjunto de contadores}
-\label{histogram}
+\label{histograma}
 
-\index{counter}
+\index{contador}
 
 Supongamos que te han dado una cadena y quieres contar cuántas veces
 aparece cada letra. Hay varias formas de hacerlo:
@@ -214,7 +211,7 @@ Después, aumentarías el valor del elemento ya existente.
 Todas estas opciones realiza el mismo cálculo, pero cada
 una de ellas implementa ese cálculo de un modo diferente.
 
-\index{implementation}
+\index{implementación}
 
 Una {\bf implementación} es un modo de realizar un cálculo;
 algunas implementaciones son mejores que otras. Por ejemplo,
@@ -240,9 +237,9 @@ print d
 En realidad estamos realizando un {\bf histograma}, que es un término
 estadístico para un conjunto de contadores (o frecuencias).
 
-\index{histogram}
-\index{frequency}
-\index{traversal}
+\index{histograma}
+\index{frecuencia}
+\index{recorrido}
 
 El bucle {\tt for} recorre
 la cadena. Cada vez que entra en el bucle, si el carácter {\tt c} no
@@ -263,8 +260,8 @@ Aquí está la salida del programa:
 El histograma indica que las letras {\tt 'a'} y \verb"'b'"
 aparecen una vez;  \verb"'o'" aparece tres, y así con las demás.
 
-\index{get method}
-\index{method!get}
+\index{get, método}
+\index{método!get}
 
 Los diccionarios tienen un método llamado {\tt get} que toma una clave
 y un valor por defecto. Si la clave aparece en el diccionario,
@@ -302,7 +299,7 @@ lo utilizaremos muchas veces en el resto del libro. Así que deberías
 pararte un momento y comparar el bucle usando la sentencia {\tt if}
 y el operador {\tt in} con el mismo bucle usando el método {\tt get}.
 Hacen exactamente lo mismo, pero uno es más breve.
-\index{idiom}
+\index{estilo}
 
 \section{Diccionarios y archivos}
 
@@ -328,8 +325,8 @@ Vamos a escribir un programa en Python para ir leyendo las líneas del archivo,
 dividir cada línea en una lista de palabras, movernos en bucle a través de cada
 palabra y contar el número de veces que aparece cada una, usando un diccionario.
 
-\index{nested loops}
-\index{loop!nested}
+\index{anidados, bucles}
+\index{bucle!anidado}
 Verás que tenemos dos bucles {\tt for}. El bucle exterior va leyendo las
 líneas del archivo, mientras que el interior va iterando a través de cada
 una de las palabras de una línea concreta. Esto es un ejemplo
@@ -391,9 +388,9 @@ más de código Phyton que nos proporcione la salida de un modo que nos resulte 
 
 \section{Bucles y diccionarios}
 
-\index{dictionary!looping with}
-\index{looping!with dictionaries}
-\index{traversal}
+\index{diccionario!iterar con}
+\index{iteración!con diccionarios}
+\index{recorrido}
 
 Si se utiliza un diccionario como secuencia
 en una sentencia {\tt for}, ésta recorrerá todas
@@ -420,7 +417,7 @@ annie 42
 %
 Vemos de nuevo que la claves aparecen sin ningún orden en particular.
 
-\index{idiom}
+\index{estilo}
 Podemos usar este modelo para poner en práctica las diversas expresiones de bucles
 que hemos descrito antes. Por ejemplo, si queremos
 encontrar todas las entradas de un diccionario que tengan un valor
@@ -451,8 +448,8 @@ annie 42
 %
 Sólo se muestran las entradas con un valor superior a 10.
 
-\index{keys method}
-\index{method!keys}
+\index{keys, método}
+\index{método!keys}
 Si se quieren imprimir las claves en orden alfabético, primero
 se debe crear una lista de las claves del diccionario, usando el
 método {\tt keys}, que está disponible en los objetos del tipo diccionario.
@@ -605,7 +602,7 @@ tendremos que aprender algo sobre las {\bf tuplas} de Python.
 Retomaremos este ejemplo una vez que hayamos estudiado las tuplas.
 
 \section{Depuración}
-\index{debugging}
+\index{depuración}
 
 Al ir trabajando con conjuntos de datos más grandes, se irá haciendo más
 pesado depurar imprimiendo y comprobando los datos de forma manual. He aquí algunas
@@ -639,7 +636,9 @@ pequeño. A eso se le llama ``sanity check (prueba de sensatez)'', porque detect
 resultados que son ``completamente ilógicos''.
 
 \index{sanity check}
+\index{prueba de sensatez}
 \index{consistency check}
+\index{prueba de consistencia}
 
 Otro tipo de comprobación compara los resultados de dos cálculos
 diferentes para ver si son consistentes. A esto se le llama una
@@ -653,7 +652,7 @@ puede hacer más fácil localizar un error.
 Una vez más, el tiempo que emplees construyendo la estructura puede reducir
 el tiempo que emplearás luego depurando.
 
-\index{scaffolding}
+\index{estructura}
 
 \section{Glosario}
 
@@ -662,46 +661,48 @@ el tiempo que emplearás luego depurando.
 \item[bucles anidados:] Cuando hay uno o más bucles ``dentro'' de
 otro bucle. El bucle interior se ejecuta completo cada vez que el exterior
 se ejecuta una vez.
-\index{nested loops}
-\index{loop!nested}
+\index{anidados, bucles}
+\index{bucle!anidado}
 
 \item[búsqueda (lookup):] Una operación en un diccionario que toma una clave
 y encuentra su valor correspondiente.
 \index{lookup}
+\index{búsqueda}
 
 \item[clave:] Un objeto que aparece en un diccionario como la
 primera parte de una pareja clave-valor.
-\index{key}
+\index{clave}
 
 \item[diccionario:] Un mapeo de un conjunto de claves hacia sus
 valores correspondientes.
-\index{dictionary}
+\index{diccionario}
 
 \item[elemento:] Otro nombre para una pareja clave-valor.
-\index{item!dictionary}
+\index{elemento!diccionario}
 
 \item[función de dispersión (hash function):] Una función usada por una tabla de dispersión
 para calcular la localización de una clave.
-\index{hash function}
+\index{dispersión, función de}
 
 \item[histograma:] Un conjunto de contadores.
-\index{histogram}
+\index{histograma}
 
 \item[implementación:] Un modo de realizar un cálculo.
-\index{implementation}
+\index{implementación}
 
 \item[pareja clave-valor:] La representación del mapeado desde
 una clave hacia un valor.
-\index{key-value pair}
+\index{pareja clave-valor}
 
 \item[tabla de dispersión (hashtable):] El algoritmo usado para implementar
 los diccionarios de Python.
 \index{hashtable}
+\index{dispersión, tabla de}
 
 \item[valor:] Un objeto que aparece en un diccionario como la
 segunda parte de una pareja clave-valor. Es más específico que
 el uso que hacíamos antes de la palabra ``valor''.
-\index{value}
+\index{valor}
 
 \end{description}
 

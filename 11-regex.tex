@@ -6,9 +6,9 @@
 Hasta ahora hemos estado leyendo archivos, buscando patrones y extrayendo varios
 fragmentos de líneas que encontrábamos interesantes. Hemos estado usando métodos de cadena, como {\tt split}
 y {\tt find}, usando listas y rebanado de cadenas para extraer porciones de esas líneas.
-\index{regular expressions}
+\index{expresiones regulares}
 \index{regex}
-\index{re module}
+\index{re, módulo}
 
 Esta tarea de buscar y extraer es tan común que Python tiene una librería muy potente
 llamada {\bf expresiones regulares}, que se encarga de muchas de estas tareas de forma elegante. La
@@ -45,7 +45,7 @@ Abrimos el fichero, vamos recorriendo cada línea, y usamos la expresión regula
 imprimir solamente aquellas líneas que contienen la cadena ``From:''. Este programa no usa la potencia
 real de las expresiones regulares, ya que podríamos haber usado simplemente {\tt linea.find()} para
 lograr el mismo resultado.
-\index{string!find}
+\index{cadena!find}
 
 La potencia de las expresiones regulares llega cuando añadimos caracteres especiales a la cadena de
 búsqueda, que nos permiten controlar con mayor precisión qué líneas coinciden con nuestro patrón.
@@ -73,15 +73,15 @@ de un ejemplo de análisis muy sencillo, ya que podríamos haber hecho lo mismo 
 {\tt startswith()} de la librería de cadenas. Pero sirve para introducir la noción de que las expresiones
 regulares contienen caracteres de acción especiales que nos dan más control sobre lo que localizará
 la expresión regular.
-\index{string!startswith}
+\index{cadena!startswith}
 
 \section{Coincidencia de caracteres en expresiones regulares}
 
 Hay varios caracteres especiales más que nos permiten construir expresiones regulares aún más potentes.
 El más usado de ellos es el punto o parada completa, que equivale
 a cualquier carácter.
-\index{wild card}
-\index{regex!wild card}
+\index{comodín}
+\index{regex!comodín}
 
 En el ejemplo siguiente, la expresión regular ``F..m:'' coincidirá con cualquiera de las cadenas
 ``From:'', ``Fxxm:'', ``F12m:'', or ``F!@m:'', ya que el carácter punto en la expresión regular
@@ -150,7 +150,7 @@ como se muestra debajo:
 Es posible decirle a un asterisco o a un signo más que no sean ``codiciosos'', añadiendo
 otro carácter. Mira la documentación detallada para obtener información sobre cómo desactivar
 el comportamiento codicioso.
-\index{greedy}
+\index{codicioso}
 
 \section{Extracción de datos usando expresiones regulares}
 
@@ -362,14 +362,14 @@ X-DSPAM-Probability: 0.0000
 Pero ahora debemos resolver el programa de la extracción de los números. A pesar de que resultaría
 bastante sencillo usar {\tt split}, podemos usar otra características de las expresiones regulares para
 buscar y analizar la línea al mismo tiempo.
-\index{string!split}
+\index{cadena!split}
 
 Los paréntesis son otros caracteres especiales en las expresiones regulares. Cuando se añaden paréntesis
 a una expresión regular, éstos se ignoran a la hora de buscar coincidencias. Pero cuando se usa
 {\tt findall()}, los paréntesis indican que a pesar de que se desea que la expresión completa coincida,
 sólo se está interesado en extraer una cierta porción de la subcadena.
-\index{regex!parentheses}
-\index{parentheses!regular expression}
+\index{regex!paréntesis}
+\index{paréntesis!expresiones regulares}
 
 Así que haremos el siguiente cambio en nuestro programa:
 
@@ -710,13 +710,13 @@ porque ``se rompe'' con facilidad.
 \item[coincidencia codiciosa:]
 El concepto de que los caracteres ``+'' y ``*'' de una expresión regular se expanden hacia fuera para
 capturar la cadena más larga posible.
-\index{greedy}
-\index{greedy matching}
+\index{codicioso}
+\index{coincidencia codiciosa}
 
 \item[comodín:]
 Un carácter especial que coincide con cualquier carácter. En las expresiones regulares, el carácter
 comodín es el punto.
-\index{wild card}
+\index{comodín}
 
 \item[expresión regular:]
 Un lenguaje para expresiones de búsqueda de cadenas más complejo. Una expresión regular puede contener

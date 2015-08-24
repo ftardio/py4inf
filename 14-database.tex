@@ -4,7 +4,7 @@
 \chapter{Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}
 
 \section{¿Qué es una base de datos?}
-\index{database}
+\index{base de datos}
 
 Una {\bf base de datos} es un archivo que está organizado para almacenar datos.
 La mayoría de las bases de datos están organizadas como diccionarios, en el sentido
@@ -15,7 +15,7 @@ datos se guarda en un almacenamiento permanente, puede almacenar muchos más dat
 un diccionario, que está limitado al tamaño de la memoria
 que tenga el ordenador.
 
-\index{database!indexes}
+\index{base de datos!índices}
 Como un diccionario, el software de una base de datos está diseñado para conseguir que
 la inserción y acceso a los datos sean muy rápidos, incluso para grandes
 cantidades de datos. Este software mantiene su rendimiento mediante la
@@ -106,8 +106,8 @@ El código para crear un archivo de base de datos y una tabla
 llamada {\tt Tracks} con dos columnas en la
 base de datos es el siguiente:
 
-\index{sqlite3 module}
-\index{module!sqlite3}
+\index{sqlite3, módulo}
+\index{módulo!sqlite3}
 \beforeverb
 \begin{verbatim}
 import sqlite3
@@ -122,10 +122,10 @@ conn.close()
 \end{verbatim}
 \afterverb
 %
-\index{connect function}
-\index{function!connect}
-\index{cursor function}
-\index{function!cursor}
+\index{connect, función}
+\index{función!connect}
+\index{cursor, función}
+\index{función!cursor}
 La operación {\tt connect} realiza una ``conexión'' con la base de datos
 almacenada en el archivo {\tt musica.sqlite3} del directorio actual. Si
 el archivo no existe, se creará nuevo. La razón de que se le
@@ -1331,7 +1331,7 @@ esté bloqueada.
 
 \item[atributo:] Uno de los valores dentro de una tupla. Más comúnmente
 llamada ``columna'' o ``campo''..
-\index{attribute}
+\index{atributo}
 
 \item[cursor:] Un cursor permite ejecutar comandos SQL en una base de datos
 y recuperar los datos de ella. Un cursor es similar a un
@@ -1341,45 +1341,49 @@ socket en conexiones de red o a un manejador de ficheros.
 \item[clave foránea:] Una clave numérica que apunta a la clave primaria de
 una fila en otra tabla. Las claves foráneas establecen relaciones entre filas
 almacenadas en tablas diferentes.
-\index{foreign key}
+\index{foránea, clave}
+\index{clave!foránea}
 
 \item[clave lógica:] Una clave que el ``mundo exterior'' utiliza para localizar una fila
 concreta. Por ejemplo, en una tabla de cuentas de usuario, la dirección de e-mail de una persona
 sería un buen candidato a utilizar como clave lógica para los datos de ese usuario.
-\index{logical key}
+\index{lógica, clave}
+\index{clave!lógica}
 
 \item[clave primaria:] Una clave numérica asignada a cada fila que es utilizada para
 referirnos a esa fila concreta de esa tabla desde otra tabla distinta. A menudo la base de datos
 se configura para asignar las claves primarias de forma automática, según se van insertando filas.
-\index{primary key}
+\index{primaria, clave}
+\index{clave!primaria}
 
 \item[índice:] Datos adicionales que el software de la base de datos mantiene como filas
 e inserta en una tabla para conseguir que las búsquedas sean muy rápidas.
-\index{index}
+\index{índice}
 
 \item[navegador de base de datos:]
 Un programa que permite conectar directamente con una base de datos
 y manipularla, sin tener que escribir código para ello.
-\index{database browser}
+\index{gestor de bases de datos}
+\index{base de datos!gestor}
 
 \item[normalización:] Diseño de un modelado de datos de forma que no haya datos
 duplicados. Se almacena cada elemento de los datos en un lugar concreto de la base de datos
 y se referencia desde otros sitios usando una clave foránea.
-\index{normalization}
-\index{database normalization}
+\index{normalización}
+\index{base de datos!normalización}
 
 \item[relación:] Un área dentro de una base de datos que contiene tuplas y
 atributos. Se la conoce más habitualmente como ``tabla''.
-\index{relation}
+\index{relación}
 
 \item[restricción:]
 Cuando le pedimos a una base de datos que imponga una regla a una campo de una fila
 en una tabla. Una restricción habitual consiste en especificar que no pueda haber
 valores repetidos en un campo concreto (es decir, que todos los valores deban ser únicos). 
-\index{constraint}
+\index{restricción}
 
 \item[tupla:] Una entrada única en una base de datos, que es un conjunto
 de atributos. Se la conoce más habitualmente como ``fila''.
-\index{tuple}
+\index{tupla}
 
 \end{description}
