@@ -21,15 +21,15 @@
 \contentsline {section}{\numberline {2.4}Sentencias}{22}
 \contentsline {section}{\numberline {2.5}Operadores y operandos}{22}
 \contentsline {section}{\numberline {2.6}Expresiones}{23}
-\contentsline {section}{\numberline {2.7}Orden de las operaciones}{24}
+\contentsline {section}{\numberline {2.7}Orden de las operaciones}{23}
 \contentsline {section}{\numberline {2.8}Operador m\IeC {\'o}dulo}{24}
 \contentsline {section}{\numberline {2.9}Operaciones con cadenas}{25}
 \contentsline {section}{\numberline {2.10}Petici\IeC {\'o}n de informaci\IeC {\'o}n al usuario}{25}
 \contentsline {section}{\numberline {2.11}Comentarios}{26}
 \contentsline {section}{\numberline {2.12}Elecci\IeC {\'o}n de nombres de variables mnem\IeC {\'o}nicos}{27}
-\contentsline {section}{\numberline {2.13}Depuraci\IeC {\'o}n}{29}
-\contentsline {section}{\numberline {2.14}Glosario}{30}
-\contentsline {section}{\numberline {2.15}Ejercicios}{31}
+\contentsline {section}{\numberline {2.13}Depuraci\IeC {\'o}n}{28}
+\contentsline {section}{\numberline {2.14}Glosario}{29}
+\contentsline {section}{\numberline {2.15}Ejercicios}{30}
 \contentsline {chapter}{\numberline {3}Ejecuci\IeC {\'o}n condicional}{33}
 \contentsline {section}{\numberline {3.1}Expresiones booleanas}{33}
 \contentsline {section}{\numberline {3.2}Operadores l\IeC {\'o}gicos}{34}
@@ -183,7 +183,7 @@
 \contentsline {section}{\numberline {14.11}Resumen}{199}
 \contentsline {section}{\numberline {14.12}Depuraci\IeC {\'o}n}{199}
 \contentsline {section}{\numberline {14.13}Glosario}{200}
-\contentsline {chapter}{\numberline {15}Visualizando datos}{203}
+\contentsline {chapter}{\numberline {15}Visualizaci\IeC {\'o}n de datos}{203}
 \contentsline {section}{\numberline {15.1}Construcci\IeC {\'o}n de un mapa de Google a partir de datos geocodificados}{203}
 \contentsline {section}{\numberline {15.2}Visualizaci\IeC {\'o}n de redes e interconexiones}{205}
 \contentsline {section}{\numberline {15.3}Visualizaci\IeC {\'o}n de datos de correo}{208}

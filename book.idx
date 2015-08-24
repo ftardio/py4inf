@@ -35,13 +35,13 @@
 \indexentry{tipo}{19}
 \indexentry{cadena}{19}
 \indexentry{comillas}{19}
-\indexentry{tipo}{20}
-\indexentry{cadena, tipo}{20}
-\indexentry{tipo!str}{20}
-\indexentry{int, tipo}{20}
-\indexentry{tipo!int}{20}
-\indexentry{float, tipo}{20}
-\indexentry{tipo!float}{20}
+\indexentry{tipo}{19}
+\indexentry{cadena, tipo}{19}
+\indexentry{tipo!str}{19}
+\indexentry{int, tipo}{19}
+\indexentry{tipo!int}{19}
+\indexentry{float, tipo}{19}
+\indexentry{tipo!float}{19}
 \indexentry{comillas}{20}
 \indexentry{sem\IeC {\'a}ntico, error}{20}
 \indexentry{error!sem\IeC {\'a}ntico}{20}
@@ -51,7 +51,7 @@
 \indexentry{sentencia!asignaci\IeC {\'o}n}{20}
 \indexentry{palabra clave}{21}
 \indexentry{barra-baja, car\IeC {\'a}cter}{21}
-\indexentry{palabra clave}{22}
+\indexentry{palabra clave}{21}
 \indexentry{sentencia}{22}
 \indexentry{interactivo, modo}{22}
 \indexentry{script, modo}{22}
@@ -66,13 +66,13 @@
 \indexentry{divisi\IeC {\'o}n!punto-flotante}{23}
 \indexentry{expresi\IeC {\'o}n}{23}
 \indexentry{evaluar}{23}
-\indexentry{orden de operaciones}{24}
-\indexentry{reglas de precedencia}{24}
-\indexentry{PEMDSR}{24}
-\indexentry{par\IeC {\'e}ntesis!invalidar precedencia}{24}
+\indexentry{orden de operaciones}{23}
+\indexentry{reglas de precedencia}{23}
+\indexentry{PEMDSR}{23}
+\indexentry{par\IeC {\'e}ntesis!invalidar precedencia}{23}
 \indexentry{m\IeC {\'o}dulo, operador}{24}
 \indexentry{operador!m\IeC {\'o}dulo}{24}
-\indexentry{divisibilidad}{25}
+\indexentry{divisibilidad}{24}
 \indexentry{cadena!operaci\IeC {\'o}n}{25}
 \indexentry{operador!cadena}{25}
 \indexentry{concatenaci\IeC {\'o}n}{25}
@@ -80,15 +80,15 @@
 \indexentry{Python 3.0}{25}
 \indexentry{raw\_input, funci\IeC {\'o}n}{25}
 \indexentry{funci\IeC {\'o}n!raw\_input}{25}
-\indexentry{indicador}{26}
-\indexentry{salto de l\IeC {\'\i }nea}{26}
+\indexentry{indicador}{25}
+\indexentry{salto de l\IeC {\'\i }nea}{25}
 \indexentry{ValueError}{26}
 \indexentry{excepci\IeC {\'o}n!ValueError}{26}
 \indexentry{comentarios}{26}
 \indexentry{mnem\IeC {\'o}nico}{27}
-\indexentry{depuraci\IeC {\'o}n}{29}
-\indexentry{sintaxis, error}{29}
-\indexentry{error!sintaxis}{29}
+\indexentry{depuraci\IeC {\'o}n}{28}
+\indexentry{sintaxis, error}{28}
+\indexentry{error!sintaxis}{28}
 \indexentry{mensaje de error}{29}
 \indexentry{use before def}{29}
 \indexentry{excepci\IeC {\'o}n}{29}
@@ -97,15 +97,15 @@
 \indexentry{sensibilidad a may\IeC {\'u}sculas, nombres de variables}{29}
 \indexentry{sem\IeC {\'a}ntico, error}{29}
 \indexentry{error!sem\IeC {\'a}ntico}{29}
-\indexentry{orden de operaciones}{30}
-\indexentry{asignaci\IeC {\'o}n}{30}
-\indexentry{cadena}{30}
-\indexentry{concatenaci\IeC {\'o}n}{30}
-\indexentry{comentarios}{30}
-\indexentry{divisi\IeC {\'o}n!hacia abajo}{30}
-\indexentry{entero}{30}
-\indexentry{evaluar}{30}
-\indexentry{expresi\IeC {\'o}n}{30}
+\indexentry{orden de operaciones}{29}
+\indexentry{asignaci\IeC {\'o}n}{29}
+\indexentry{cadena}{29}
+\indexentry{concatenaci\IeC {\'o}n}{29}
+\indexentry{comentarios}{29}
+\indexentry{divisi\IeC {\'o}n!hacia abajo}{29}
+\indexentry{entero}{29}
+\indexentry{evaluar}{29}
+\indexentry{expresi\IeC {\'o}n}{29}
 \indexentry{mnem\IeC {\'o}nico}{30}
 \indexentry{palabra clave}{30}
 \indexentry{punto-flotante}{30}
@@ -113,12 +113,12 @@
 \indexentry{m\IeC {\'o}dulo, operador}{30}
 \indexentry{operador!m\IeC {\'o}dulo}{30}
 \indexentry{operando}{30}
-\indexentry{reglas de precedencia}{31}
-\indexentry{precedencia}{31}
-\indexentry{sentencia}{31}
-\indexentry{tipo}{31}
-\indexentry{valor}{31}
-\indexentry{variable}{31}
+\indexentry{reglas de precedencia}{30}
+\indexentry{precedencia}{30}
+\indexentry{sentencia}{30}
+\indexentry{tipo}{30}
+\indexentry{valor}{30}
+\indexentry{variable}{30}
 \indexentry{booleana, expresi\IeC {\'o}n}{33}
 \indexentry{expresi\IeC {\'o}n!booleana}{33}
 \indexentry{l\IeC {\'o}gico, operador}{33}
@@ -159,18 +159,18 @@
 \indexentry{palabra clave!elif}{37}
 \indexentry{anidado, condicional}{37}
 \indexentry{condicional!anidado}{37}
-\indexentry{traceback}{39}
-\indexentry{fahrenheit}{39}
-\indexentry{celsius}{39}
-\indexentry{conversi\IeC {\'o}n de temperatura}{39}
+\indexentry{traceback}{38}
+\indexentry{fahrenheit}{38}
+\indexentry{celsius}{38}
+\indexentry{conversi\IeC {\'o}n de temperatura}{38}
 \indexentry{corto circuito}{40}
 \indexentry{guardi\IeC {\'a}n, patr\IeC {\'o}n}{40}
 \indexentry{patr\IeC {\'o}n!guardi\IeC {\'a}n}{40}
 \indexentry{depuraci\IeC {\'o}n}{41}
 \indexentry{traceback}{41}
 \indexentry{espacio en blanco}{41}
-\indexentry{error!runtime}{42}
-\indexentry{runtime error}{42}
+\indexentry{error!runtime}{41}
+\indexentry{runtime error}{41}
 \indexentry{exception!OverflowError}{42}
 \indexentry{OverflowError}{42}
 \indexentry{hacia abajo, division}{42}
@@ -182,11 +182,11 @@
 \indexentry{condicional!encadenado}{42}
 \indexentry{corto circuito}{42}
 \indexentry{cuerpo}{42}
-\indexentry{booleana, expresi\IeC {\'o}n}{43}
-\indexentry{expresi\IeC {\'o}n!booleana}{43}
-\indexentry{guardi\IeC {\'a}n, patr\IeC {\'o}n}{43}
-\indexentry{patr\IeC {\'o}n!guardi\IeC {\'a}n}{43}
-\indexentry{rama}{43}
+\indexentry{booleana, expresi\IeC {\'o}n}{42}
+\indexentry{expresi\IeC {\'o}n!booleana}{42}
+\indexentry{guardi\IeC {\'a}n, patr\IeC {\'o}n}{42}
+\indexentry{patr\IeC {\'o}n!guardi\IeC {\'a}n}{42}
+\indexentry{rama}{42}
 \indexentry{compuesta, sentencia}{43}
 \indexentry{sentencia!compuesta}{43}
 \indexentry{condicional, sentencia}{43}
