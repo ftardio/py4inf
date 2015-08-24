@@ -22,8 +22,8 @@ las cadenas porque van encerradas entre comillas.
 
 \index{comillas}
 
-La sentencia {\\tt print} funciona también para enteros. Vamos a usar el
-comando {\\tt python} para iniciar el intérprete.
+La sentencia {\tt print} funciona también para enteros. Vamos a usar el
+comando {\tt python} para iniciar el intérprete.
 
 \beforeverb
 \begin{verbatim}
@@ -46,9 +46,9 @@ Si no estás seguro de qué tipo de valor estás manejando, el intérprete te lo
 %
 No resulta sorprendente que las cadenas pertenezca al tipo {\tt str}, y los
 enteros pertenezcan al tipo {\tt int}. Resulta sin embargo menos obvio
-que los números con un punto decimal pertenezcan a un tipo llamado {\\tt float (flotante)},
+que los números con un punto decimal pertenezcan a un tipo llamado {\tt float (flotante)},
 ya que esos números se representan en un formato
-conocido como {\\bf punto flotante}\footnote{En el mundo anglosajón (y también en Python)
+conocido como {\bf punto flotante}\footnote{En el mundo anglosajón (y también en Python)
 la parte decimal de un número se separa de la parte entera mediante un punto, y no mediante una coma
 (Nota del trad.)}.
 
@@ -97,7 +97,7 @@ Eso no es un entero válido en Python, pero en cambio sí que resulta válido al
 \afterverb
 %
 Bien, ha funcionado. ¡Pero eso no era lo que esperábamos!. Python interpreta
-{\\tt 1,000,000} como una secuencia de enteros separados por comas, así que lo
+{\tt 1,000,000} como una secuencia de enteros separados por comas, así que lo
 imprime con espacios en medio.
 
 \index{semántico, error}
@@ -129,9 +129,9 @@ asigna valores:
 \afterverb
 %
 Este ejemplo hace tres asignaciones. La primera asigna una cadena
-a una variable nueva llamada {\\tt mensaje};
-la segunda asigna el entero {\\tt 17} a {\tt n}; la tercera
-asigna el valor (aproximado) de $\pi$ a {\\tt pi}.
+a una variable nueva llamada {\tt mensaje};
+la segunda asigna el entero {\tt 17} a {\tt n}; la tercera
+asigna el valor (aproximado) de $\pi$ a {\tt pi}.
 
 Para mostrar el valor de una variable, se puede usar la sentencia print:
 
@@ -172,7 +172,7 @@ por qué después).
 
 El carácter barra-baja (\verb"_") puede utilizarse en un nombre.
 A menudo se utiliza en nombres con múltiples palabras, como en
-\verb"mi_nombre" or \verb"velocidad_de_golondrina_sin_carga".
+\verb"mi_nombre" o \verb"velocidad_de_golondrina_sin_carga".
 Los nombres de las variables pueden comenzar con un carácter barra-baja, pero
 generalmente se evita usarlo así a menos que se esté escribiendo código
 para librerías que luego usarán otros.
@@ -193,10 +193,10 @@ SyntaxError: invalid syntax
 \afterverb
 %
 {\tt 76trombones} es incorrecto porque comienza por un número.
-{\tt more@} es incorrecto porque contiene un carácter no premitido, {\\tt @}.
+{\tt more@} es incorrecto porque contiene un carácter no premitido, {\tt @}.
 Pero, ¿qué es lo que está mal en {\tt class}?
 
-Pues resulta que {\\tt class} es una de las {\bf palabras clave} de Python. El
+Pues resulta que {\tt class} es una de las {\bf palabras clave} de Python. El
 intérprete usa palabras clave para reconocer la estructura del programa,
 y esas palabras no pueden ser utilizadas como nombres de variables.
 
@@ -290,12 +290,12 @@ El operador de división puede que no haga exactamente lo que esperas:
 \end{verbatim}
 \afterverb
 %
-El valor de {\\tt minuto} es 59, y en la aritmética convencional 59
+El valor de {\tt minuto} es 59, y en la aritmética convencional 59
 dividido por 60 es 0.98333, no 0. La razón de esta discrepancia es
 que Python está realizando {\bf división hacia abajo}\footnote{En Python 3.0,
 el resultado de esta división es un número {\tt flotante}.
 En Python 3.0, el nuevo operador
-{\\tt //} es el que realiza la división de enteros.}.
+{\tt //} es el que realiza la división de enteros.}.
 
 \index{Python 3.0}
 \index{hacia abajo, división}
@@ -308,7 +308,7 @@ entero; la división hacia abajo descarta la parte decimal,
 así que en este ejemplo trunca la respuesta a cero.
 
 Si cualquiera de los operandos es un número en punto flotante, Python realiza
-división en punto flotante, y el resultado es un {\\tt float}:
+división en punto flotante, y el resultado es un {\tt float}:
 
 \beforeverb
 \begin{verbatim}
@@ -323,7 +323,7 @@ división en punto flotante, y el resultado es un {\\tt float}:
 Una {\bf expresión} es una combinación de valores, variables y operadores.
 Un valor por si mismo se considera una expresión, y también lo es
 una variable, así que las siguientes expresiones son todas válidas
-(asumiendo que la variable {\\tt x} tenga un valor asignado):
+(asumiendo que la variable {\tt x} tenga un valor asignado):
 
 \index{expresión}
 \index{evaluar}
@@ -371,7 +371,7 @@ x + 1
 \index{PEMDSR}
 
 Cuando en una expresión aparece más de un operador, el orden de
-evaluación depende de las {\\bf reglas de precedencia}. Para los
+evaluación depende de las {\bf reglas de precedencia}. Para los
 operadores matemáticos, Python sigue las convenciones matemáticas.
 El acrónimo {\bf PEMDSR} resulta útil para
 recordar esas reglas:
@@ -435,14 +435,14 @@ puedes comprobar si un número es divisible por otro---si
 
 También se puede extraer el dígito más a la derecha
 de los que componen un número. Por ejemplo, {\tt x \% 10} obtiene el
-dígito que está más a la derecha de {\\tt x} (en base 10). De forma similar, {\\tt x \% 100}
+dígito que está más a la derecha de {\tt x} (en base 10). De forma similar, {\tt x \% 100}
 obtiene los últimos dos dígitos.
 
 \section{Operaciones con cadenas}
 \index{cadena!operación}
 \index{operador!cadena}
 
-El operador {\\tt +} funciona con las cadenas, pero
+El operador {\tt +} funciona con las cadenas, pero
 no realiza una suma en el sentido matemático. En vez de eso, realiza una
 {\bf concatenación}, que quiere decir que une ambas cadenas,
 enlazando el final de la primera con el principio de la segunda. Por ejemplo:
@@ -462,7 +462,7 @@ enlazando el final de la primera con el principio de la segunda. Por ejemplo:
 \end{verbatim}
 \afterverb
 %
-La salida de este programa es {\\tt 100150}.
+La salida de este programa es {\tt 100150}.
 
 \section{Petición de información al usuario}
 \index{entrada desde teclado}
@@ -513,7 +513,7 @@ Por eso la entrada del usuario aparece debajo de nuestro mensaje.
 \index{salto de línea}
 
 Si esperas que el usuario escriba un entero, puedes intentar convertir
-el valor de retorno a {\\tt int} usando la función {\\tt int()}:
+el valor de retorno a {\tt int} usando la función {\tt int()}:
 
 \beforeverb
 \begin{verbatim}
@@ -690,7 +690,7 @@ entiende nada de pizza ni de porciones,
 ni del hecho de que una pizza consiste en un conjunto de una o más porciones.
 
 Pero si nuestro programa lo que realmente va a hacer es leer datos y buscar palabras en esos datos,
-{\\tt pizza} y {\\ porción} son nombres muy poco mnemónicos. Elegirlos como
+{\tt pizza} y {\tt porción} son nombres muy poco mnemónicos. Elegirlos como
 nombres de variables distrae del propósito real del programa.
 
 Después de un breve periodo de tiempo, conocerás las palabras reservadas más comunes,
@@ -712,7 +712,7 @@ es una variable y qué es una palabra reservada.
 \index{depuración}
 
 En este punto, el error de sintaxis que es más probable que comentas será
-intentar utilizar nombres de variables no válidos, como {\\tt class} y {\\ yield}, que
+intentar utilizar nombres de variables no válidos, como {\tt class} y {\tt yield}, que
 son palabras clave, o \verb"odd~job" and \verb"US$",que contienen
 caracteres no válidos.
 

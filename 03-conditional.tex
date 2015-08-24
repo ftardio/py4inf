@@ -122,8 +122,8 @@ hasta que estés bien seguro de lo que estás haciendo.
 
 Para poder escribir programas útiles, casi siempre vamos a necesitar
 la capacidad de comprobar condiciones y cambiar el comportamiento del programa
-de acuerdo a ellas. Las {\\ sentencias condicionales} nos proporciona esa capacidad.
-La forma más sencilla es la sentencia {\\tt if}:
+de acuerdo a ellas. Las {\tt sentencias condicionales} nos proporciona esa capacidad.
+La forma más sencilla es la sentencia {\tt if}:
 
 \beforeverb
 \begin{verbatim}
@@ -132,7 +132,7 @@ if x > 0 :
 \end{verbatim}
 \afterverb
 %
-La expresión booleana después de la sentencia {\\tt if} recibe
+La expresión booleana después de la sentencia {\tt if} recibe
 el nombre de {\bf condición}. La sentencia {\tt if} se termina
 con un carácter de dos-puntos (:) y la(s) línea(s) que van detrás de
 la sentencia if van sangradas (llevan una tabulación o varios espacios en blanco al principio).
@@ -161,7 +161,7 @@ No hay límite en el número de sentencias que pueden aparecer en el
 cuerpo, pero debe haber al menos una.
 Ocasionalmente, puede resultar útil tener un cuerpo sin sentencias
 (normalmente como emplazamiento reservado para código que no se ha escrito aún). En ese
-caso, se puede usar la sentencia {\\tt pass}, que no hace nada.
+caso, se puede usar la sentencia {\tt pass}, que no hace nada.
 
 \index{pass, sentencia}
 \index{sentencia!pass}
@@ -397,7 +397,7 @@ ValueError: invalid literal for float(): fred
 Existen estructuras de ejecución condicional dentro de
 Python para manejar este tipo de errores esperados e
 inesperados, llamadas ``try / except''. La idea de {\tt try}
-y {\\ except} es que si se sabe que cierta secuencia
+y {\tt except} es que si se sabe que cierta secuencia
 de instrucciones puede generar un problema, se pueden
 añadir ciertas sentencias para que sean ejecutadas en caso de error.
 Estas sentencias extras (el bloque except) serán ignoradas
@@ -457,7 +457,7 @@ Cuando Python está procesando una expresión lógica, como
 izquierda a derecha. Debido a la definición de {\tt and},
 si {\tt x} es menor de 2, la expresión {\tt x >= 2} resulta ser
 {\tt falsa}, de modo que la expresión completa ya va a resultar {\tt falsa}, independientemente
-de si {\tt (x/y) > 2} se evalúa como {\tt verdadero} o {\\ falso}.
+de si {\tt (x/y) > 2} se evalúa como {\tt verdadero} o {\tt falso}.
 
 Cuando Python detecta que no se gana nada evaluando
 el resto de una expresión lógica, detiene su evaluación y no
