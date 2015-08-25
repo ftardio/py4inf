@@ -15,7 +15,7 @@ han sido {\tt 1}, {\tt 2}, y
 \verb"'¡Hola, mundo!'"
 
 Esos valores pertenecen a {\bf tipos} diferentes:
-{\tt 2} es un entero (int), y \verb"'¡Hola, mundo!'" es una {\bf cadena (string)},
+{\tt 2} es un entero (int), y \verb"'¡Hola, mundo!'" es una {\bf cadena} (string),
 que recibe ese nombre porque contiene una ``cadena'' de letras.
 Tú (y el intérprete) podéis identificar
 las cadenas porque van encerradas entre comillas.
@@ -46,7 +46,7 @@ Si no estás seguro de qué tipo de valor estás manejando, el intérprete te lo
 %
 No resulta sorprendente que las cadenas pertenezca al tipo {\tt str}, y los
 enteros pertenezcan al tipo {\tt int}. Resulta sin embargo menos obvio
-que los números con un punto decimal pertenezcan a un tipo llamado {\tt float (flotante)},
+que los números con un punto decimal pertenezcan a un tipo llamado {\tt float} (flotante),
 ya que esos números se representan en un formato
 conocido como {\bf punto flotante}\footnote{En el mundo anglosajón (y también en Python)
 la parte decimal de un número se separa de la parte entera mediante un punto, y no mediante una coma
@@ -292,19 +292,19 @@ El operador de división puede que no haga exactamente lo que esperas:
 %
 El valor de {\tt minuto} es 59, y en la aritmética convencional 59
 dividido por 60 es 0.98333, no 0. La razón de esta discrepancia es
-que Python está realizando {\bf división hacia abajo}\footnote{En Python 3.0,
+que Python está realizando {\bf división entera}\footnote{En Python 3.0,
 el resultado de esta división es un número {\tt flotante}.
 En Python 3.0, el nuevo operador
-{\tt //} es el que realiza la división de enteros.}.
+{\tt //} es el que realiza la división entera.}.
 
 \index{Python 3.0}
-\index{hacia abajo, división}
+\index{entera, división}
 \index{punto-flotante, división}
-\index{división!hacia abajo}
+\index{división!entera}
 \index{división!punto-flotante}
 
 Cuando ambos operandos son enteros, el resultado es también un
-entero; la división hacia abajo descarta la parte decimal,
+entero; la división entera descarta la parte decimal,
 así que en este ejemplo trunca la respuesta a cero.
 
 Si cualquiera de los operandos es un número en punto flotante, Python realiza
@@ -347,8 +347,8 @@ Si escribes una expresión en modo interactivo, el intérprete la
 \afterverb
 %
 Sin embargo, en un script, ¡una expresión por si misma no hace nada!
-Esto a menudo puede causar confusión
-a los principiantes.
+Esto a menudo puede producir confusión
+entre los principiantes.
 
 \begin{ex}
 Escribe las siguientes sentencias en el intérprete de Python para comprobar
@@ -384,8 +384,8 @@ recordar esas reglas:
 para forzar a que una expresión sea evaluada en el orden que se quiera. Dado
 que las expresiones entre paréntesis son evaluadas primero, {\tt 2 * (3-1)} es 4,
 y {\tt (1+1)**(5-2)} es 8. Se pueden usar también paréntesis para hacer una
-expresión más sencilla de leer, como en {\tt (minuto * 100) / 60}, incluso
-si el resultado no cambia por ello.
+expresión más sencilla de leer, incluso si el resultado de la misma no varía por ello,
+como en {\tt (minuto * 100) / 60}.
 
 \item La {\bf E}xponenciación (elevar un número a una potencia) tiene el siguiente nivel más alto de
 precedencia, de modo que {\tt 2**1+1} es 3, no 4, y {\tt 3*1**3} es 3, no 27.
@@ -397,7 +397,7 @@ nivel de precedencia. Así que {\tt 2*3-1} es 5, no 4, y
 
 \item Los operadores con igual precedencia son evaluados de izquierda a
 derecha. Así que la expresión {\tt 5-3-1} es 1 y no 3, ya que
-{\tt 5-3} se evalúa antes, y después {\tt 1} es restado de {\tt 2}.
+{\tt 5-3} se evalúa antes, y después se resta {\tt 1} de {\tt 2}.
 
 \end{itemize}
 
@@ -483,9 +483,9 @@ devuelve como una cadena aquello que el usuario escribió.
 \beforeverb
 \begin{verbatim}
 >>> entrada = raw_input()
-Alguna cosa ridícula
+Cualquier cosa ridícula
 >>> print entrada
-Alguna cosa ridícula
+Cualquier cosa ridícula
 \end{verbatim}
 \afterverb
 %
@@ -517,9 +517,9 @@ el valor de retorno a {\tt int} usando la función {\tt int()}:
 
 \beforeverb
 \begin{verbatim}
->>> prompt = '¿Cual.... es la velocidad aerodinámica de una golondrina sin carga?\n'
+>>> prompt = '¿Cual.... es la velocidad en vuelo de una golondrina sin carga?\n'
 >>> velocidad = raw_input(prompt)
-¿Cual.... es la velocidad aerodinámica de una golondrina sin carga?
+¿Cual.... es la velocidad en vuelo de una golondrina sin carga?
 17
 >>> int(velocidad)
 17
@@ -534,7 +534,7 @@ obtendrás un error:
 \beforeverb
 \begin{verbatim}
 >>> velocidad = raw_input(prompt)
-¿Cual.... es la velocidad aerodinámica de una golondrina sin carga?
+¿Cual.... es la velocidad en vuelo de una golondrina sin carga?
 ¿Te refieres a una golondrina africana o a una europea?
 >>> int(velocidad)
 ValueError: invalid literal for int()
@@ -550,7 +550,7 @@ Veremos cómo controlar este tipo de errores más adelante.
 \section{Comentarios}
 \index{comentarios}
 
-A medida que los programas van siendo más grandes y más complicados, se vuelven más difíciles
+A medida que los programas se van volviendo más grandes y complicados, se vuelven más difíciles
 de leer. Los lenguajes formales son densos, y a menudo es complicado
 mirar un trozo de código e imaginarse qué es lo que hace, o por qué.
 
@@ -600,14 +600,14 @@ v = 5     # velocidad en metros/segundo.
 %
 Elegir nombres adecuados para las variables puede reducir la necesidad de comentarios, pero
 los nombres largos también pueden ocasionar que las expresiones complejas sean difíciles de leer, así
-que lo uno compensa a lo otro.
+que hay que conseguir una solución de compromiso.
 
 \section{Elección de nombres de variables mnemónicos}
 
 \index{mnemónico}
 
 Mientras sigas las sencillas reglas de nombrado de variables y evites las
-palabras reservadas, tendrás mucho donde elegir para poner nombres a tus variables.
+palabras reservadas, tendrás gran variedad donde elegir para poner nombres a tus variables.
 Al principio, esa variedad de opciones puede resultarte confusa, tanto al leer un programa
 como al escribir el tuyo propio. Por ejemplo, los tres
 programas siguientes son idénticos en cuanto a la función que realizan,
@@ -683,7 +683,7 @@ for porcion in pizza:
 \end{verbatim}
 \afterverb
 %
-Para los principiantes es más fácil observar este código y saber qué partes
+Para los principiantes es más fácil estudiar este código y saber qué partes
 son palabras reservadas definidas por Python y qué partes son simplemente nombres
 de variables elegidas por el programador. Está bastante claro que Python no
 entiende nada de pizza ni de porciones,
@@ -711,9 +711,9 @@ es una variable y qué es una palabra reservada.
 \section{Depuración}
 \index{depuración}
 
-En este punto, el error de sintaxis que es más probable que comentas será
+En este punto, el error de sintaxis que es más probable que cometas será
 intentar utilizar nombres de variables no válidos, como {\tt class} y {\tt yield}, que
-son palabras clave, o \verb"odd~job" and \verb"US$",que contienen
+son palabras clave, o \verb"odd~job" y \verb"US$", que contienen
 caracteres no válidos.
 
 \index{sintaxis, error}
@@ -794,9 +794,9 @@ programadores (o para cualquiera que lea el código fuente), y no tiene efecto a
 en la ejecución del programa.
 \index{comentarios}
 
-\item[división hacia abajo:] La operación que divide dos números y trunca la
+\item[división entera:] La operación que divide dos números y trunca la
 parte fraccionaria.
-\index{división!hacia abajo}
+\index{división!entera}
 
 \item[entero:] Un tipo que representa números enteros.
 \index{entero}
@@ -806,7 +806,7 @@ en orden para obtener un único valor.
 \index{evaluar}
 
 \item[expresión:]  Una combinación de variables, operadores y valores que
-repesentan un único valor resultante.
+representan un único valor resultante.
 \index{expresión}
 
 \item[mnemónico:] Una ayuda para memorizar. A menudo damos nombres mnemónicos a las variables
@@ -894,7 +894,7 @@ ancho = 17
 alto = 12.0
 \end{verbatim}
 
-Para cada una de las siguientes expresiones, escribe el valor de la
+Para cada una de las expresiones siguientes, escribe el valor de la
 expresión y el tipo (del valor de la expresión).
 
 \begin{enumerate}
