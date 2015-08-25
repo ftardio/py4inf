@@ -60,9 +60,9 @@
 \indexentry{operando}{22}
 \indexentry{expresi\IeC {\'o}n}{22}
 \indexentry{Python 3.0}{23}
-\indexentry{hacia abajo, divisi\IeC {\'o}n}{23}
+\indexentry{entera, divisi\IeC {\'o}n}{23}
 \indexentry{punto-flotante, divisi\IeC {\'o}n}{23}
-\indexentry{divisi\IeC {\'o}n!hacia abajo}{23}
+\indexentry{divisi\IeC {\'o}n!entera}{23}
 \indexentry{divisi\IeC {\'o}n!punto-flotante}{23}
 \indexentry{expresi\IeC {\'o}n}{23}
 \indexentry{evaluar}{23}
@@ -86,9 +86,9 @@
 \indexentry{excepci\IeC {\'o}n!ValueError}{26}
 \indexentry{comentarios}{26}
 \indexentry{mnem\IeC {\'o}nico}{27}
-\indexentry{depuraci\IeC {\'o}n}{28}
-\indexentry{sintaxis, error}{28}
-\indexentry{error!sintaxis}{28}
+\indexentry{depuraci\IeC {\'o}n}{29}
+\indexentry{sintaxis, error}{29}
+\indexentry{error!sintaxis}{29}
 \indexentry{mensaje de error}{29}
 \indexentry{use before def}{29}
 \indexentry{excepci\IeC {\'o}n}{29}
@@ -102,10 +102,10 @@
 \indexentry{cadena}{29}
 \indexentry{concatenaci\IeC {\'o}n}{29}
 \indexentry{comentarios}{29}
-\indexentry{divisi\IeC {\'o}n!hacia abajo}{29}
-\indexentry{entero}{29}
-\indexentry{evaluar}{29}
-\indexentry{expresi\IeC {\'o}n}{29}
+\indexentry{divisi\IeC {\'o}n!entera}{30}
+\indexentry{entero}{30}
+\indexentry{evaluar}{30}
+\indexentry{expresi\IeC {\'o}n}{30}
 \indexentry{mnem\IeC {\'o}nico}{30}
 \indexentry{palabra clave}{30}
 \indexentry{punto-flotante}{30}
@@ -163,7 +163,7 @@
 \indexentry{fahrenheit}{38}
 \indexentry{celsius}{38}
 \indexentry{conversi\IeC {\'o}n de temperatura}{38}
-\indexentry{corto circuito}{40}
+\indexentry{cortocircuito}{40}
 \indexentry{guardi\IeC {\'a}n, patr\IeC {\'o}n}{40}
 \indexentry{patr\IeC {\'o}n!guardi\IeC {\'a}n}{40}
 \indexentry{depuraci\IeC {\'o}n}{41}
@@ -173,14 +173,14 @@
 \indexentry{runtime error}{41}
 \indexentry{exception!OverflowError}{42}
 \indexentry{OverflowError}{42}
-\indexentry{hacia abajo, division}{42}
-\indexentry{divisi\IeC {\'o}n!hacia abajo}{42}
+\indexentry{entera, division}{42}
+\indexentry{divisi\IeC {\'o}n!entera}{42}
 \indexentry{condici\IeC {\'o}n}{42}
 \indexentry{anidado, condicional}{42}
 \indexentry{condicional!anidado}{42}
 \indexentry{encadenado, condicional}{42}
 \indexentry{condicional!encadenado}{42}
-\indexentry{corto circuito}{42}
+\indexentry{cortocircuito}{42}
 \indexentry{cuerpo}{42}
 \indexentry{booleana, expresi\IeC {\'o}n}{42}
 \indexentry{expresi\IeC {\'o}n!booleana}{42}
@@ -254,10 +254,10 @@
 \indexentry{par\IeC {\'e}ntesis!par\IeC {\'a}metros entre}{52}
 \indexentry{composici\IeC {\'o}n}{52}
 \indexentry{argumento}{52}
-\indexentry{fruct\IeC {\'\i }fera, funci\IeC {\'o}n}{53}
-\indexentry{hueca, funci\IeC {\'o}n}{53}
-\indexentry{funci\IeC {\'o}n fruct\IeC {\'\i }fera}{53}
-\indexentry{funci\IeC {\'o}n hueca}{53}
+\indexentry{productiva, funci\IeC {\'o}n}{53}
+\indexentry{esteril, funci\IeC {\'o}n}{53}
+\indexentry{funci\IeC {\'o}n productiva}{53}
+\indexentry{funci\IeC {\'o}n esteril}{53}
 \indexentry{interactivo, modo}{53}
 \indexentry{script, modo}{53}
 \indexentry{None, valor especial}{53}
@@ -273,8 +273,8 @@
 \indexentry{funci\IeC {\'o}n, definici\IeC {\'o}n}{55}
 \indexentry{determin\IeC {\'\i }stico}{55}
 \indexentry{funci\IeC {\'o}n}{55}
-\indexentry{fruct\IeC {\'\i }fera, funci\IeC {\'o}n}{55}
-\indexentry{hueca, funci\IeC {\'o}n}{56}
+\indexentry{productiva, funci\IeC {\'o}n}{55}
+\indexentry{est\IeC {\'e}ril, funci\IeC {\'o}n}{56}
 \indexentry{flujo de ejecuci\IeC {\'o}n}{56}
 \indexentry{funci\IeC {\'o}n, llamada a}{56}
 \indexentry{punto, notaci\IeC {\'o}n}{56}
@@ -289,8 +289,8 @@
 \indexentry{actualizaci\IeC {\'o}n}{59}
 \indexentry{variable!actualizaci\IeC {\'o}n}{59}
 \indexentry{inicializaci\IeC {\'o}n (antes de actualizar)}{59}
-\indexentry{incremento}{59}
-\indexentry{decremento}{59}
+\indexentry{incrementar}{59}
+\indexentry{decrementar}{59}
 \indexentry{while, sentencia}{59}
 \indexentry{sentencia!while}{59}
 \indexentry{while, bucle}{59}
@@ -346,14 +346,14 @@
 \indexentry{bucle!for}{70}
 \indexentry{sentencia!for}{70}
 \indexentry{recorrido}{70}
-\indexentry{rebanado, operador}{71}
-\indexentry{operador!rebanado}{71}
-\indexentry{\IeC {\'\i }ndice!rebanado}{71}
-\indexentry{cadena!rebanado}{71}
-\indexentry{rebanado!cadena}{71}
+\indexentry{rebanada, operador}{71}
+\indexentry{operador!rebanada}{71}
+\indexentry{\IeC {\'\i }ndice!rebanada}{71}
+\indexentry{cadena!rebanada}{71}
+\indexentry{rebanada!cadena}{71}
 \indexentry{comillas}{71}
-\indexentry{copiar!rebanado}{71}
-\indexentry{rebanado!copiar}{71}
+\indexentry{copiar!rebanada}{71}
+\indexentry{rebanada!copiar}{71}
 \indexentry{mutabilidad}{72}
 \indexentry{inmutabilidad}{72}
 \indexentry{cadena!inmutable}{72}
@@ -369,10 +369,10 @@
 \indexentry{bucle y contador}{72}
 \indexentry{bucle!con cadenas}{72}
 \indexentry{encapsulaci\IeC {\'o}n}{72}
-\indexentry{in, operador}{72}
-\indexentry{operador!in}{72}
-\indexentry{booleano, operador}{72}
-\indexentry{operador!booleano}{72}
+\indexentry{in, operador}{73}
+\indexentry{operador!in}{73}
+\indexentry{booleano, operador}{73}
+\indexentry{operador!booleano}{73}
 \indexentry{cadena!comparaci\IeC {\'o}n}{73}
 \indexentry{comparaci\IeC {\'o}n!cadena}{73}
 \indexentry{m\IeC {\'e}todo}{74}
@@ -397,7 +397,7 @@
 \indexentry{patr\IeC {\'o}n!de b\IeC {\'u}squeda}{78}
 \indexentry{cadena vac\IeC {\'\i }a}{78}
 \indexentry{contador}{78}
-\indexentry{cadena a formatear}{78}
+\indexentry{cadena a formatear}{79}
 \indexentry{elemento}{79}
 \indexentry{flag}{79}
 \indexentry{bandera}{79}
@@ -408,12 +408,13 @@
 \indexentry{objecto}{79}
 \indexentry{formato, operador}{79}
 \indexentry{operador!formato}{79}
-\indexentry{rebanado}{79}
+\indexentry{rebanada}{79}
+\indexentry{slice}{79}
 \indexentry{recorrido}{79}
 \indexentry{secuencia}{79}
 \indexentry{formato, secuencia de}{79}
-\indexentry{cadena, m\IeC {\'e}todos}{79}
-\indexentry{m\IeC {\'e}todos!cadena}{79}
+\indexentry{cadena, m\IeC {\'e}todos}{80}
+\indexentry{m\IeC {\'e}todos!cadena}{80}
 \indexentry{fichero}{81}
 \indexentry{archivo}{81}
 \indexentry{tipo!file}{81}
@@ -497,17 +498,18 @@
 \indexentry{lista!concatenaci\IeC {\'o}n}{95}
 \indexentry{repeticion!lista}{95}
 \indexentry{lista!repetici\IeC {\'o}n}{95}
-\indexentry{rebanado, operador}{95}
-\indexentry{operador!rebanado}{95}
-\indexentry{\IeC {\'\i }ndice!rebanado}{95}
-\indexentry{lista!rebanado}{95}
-\indexentry{rebanado!lista}{95}
+\indexentry{rebanada, operador}{95}
+\indexentry{operador!rebanada}{95}
+\indexentry{\IeC {\'\i }ndice!rebanada}{95}
+\indexentry{lista!rebanada}{95}
+\indexentry{rebanada!lista}{95}
+\indexentry{slice}{95}
 \indexentry{lista!copiar}{96}
-\indexentry{rebanado!copiar}{96}
-\indexentry{copiar!rebanado}{96}
+\indexentry{rebanada!copiar}{96}
+\indexentry{copiar!rebanada}{96}
 \indexentry{mutabilidad}{96}
-\indexentry{rebanado!actualizar}{96}
-\indexentry{actualizar!rebanado}{96}
+\indexentry{rebanada!actualizar}{96}
+\indexentry{actualizar!rebanada}{96}
 \indexentry{lista!m\IeC {\'e}todos}{96}
 \indexentry{m\IeC {\'e}todos!lista}{96}
 \indexentry{append, m\IeC {\'e}todo}{96}
@@ -530,9 +532,9 @@
 \indexentry{m\IeC {\'e}todo!remove}{97}
 \indexentry{None, valor especial}{97}
 \indexentry{valor especial!None}{97}
-\indexentry{lista}{99}
-\indexentry{cadena}{99}
-\indexentry{secuencia}{99}
+\indexentry{lista}{98}
+\indexentry{cadena}{98}
+\indexentry{secuencia}{98}
 \indexentry{lista!funci\IeC {\'o}n}{99}
 \indexentry{funci\IeC {\'o}n!list}{99}
 \indexentry{split, m\IeC {\'e}todo}{99}
@@ -548,8 +550,8 @@
 \indexentry{objecto}{100}
 \indexentry{valor}{100}
 \indexentry{alias}{100}
-\indexentry{is, operador}{101}
-\indexentry{operador!is}{101}
+\indexentry{is, operador}{100}
+\indexentry{operador!is}{100}
 \indexentry{equivalencia}{101}
 \indexentry{identidad}{101}
 \indexentry{objecto}{101}
@@ -568,8 +570,8 @@
 \indexentry{m\IeC {\'e}todo!append}{102}
 \indexentry{lista!concatenaci\IeC {\'o}n}{102}
 \indexentry{concatenaci\IeC {\'o}n!lista}{102}
-\indexentry{rebanado, operador}{103}
-\indexentry{operador!rebanado}{103}
+\indexentry{rebanada, operador}{103}
+\indexentry{operador!rebanada}{103}
 \indexentry{depuraci\IeC {\'o}n}{103}
 \indexentry{sort, m\IeC {\'e}todo}{103}
 \indexentry{m\IeC {\'e}todo!sort}{103}
@@ -587,301 +589,301 @@
 \indexentry{objecto}{107}
 \indexentry{lista!recorrido}{107}
 \indexentry{referencia}{107}
-\indexentry{Romeo and Juliet}{108}
-\indexentry{diccionario}{111}
-\indexentry{tipo!dict}{111}
-\indexentry{clave}{111}
-\indexentry{pareja clave-valor}{111}
-\indexentry{\IeC {\'\i }ndice}{111}
-\indexentry{dict, funci\IeC {\'o}n}{111}
-\indexentry{funci\IeC {\'o}n!dict}{111}
-\indexentry{llaves}{111}
-\indexentry{exception!KeyError}{112}
-\indexentry{KeyError}{112}
-\indexentry{len, funci\IeC {\'o}n}{112}
-\indexentry{funci\IeC {\'o}n!len}{112}
-\indexentry{pertenencia!diccionario}{112}
-\indexentry{in, operador}{112}
-\indexentry{operador!in}{112}
-\indexentry{values, m\IeC {\'e}todo}{112}
-\indexentry{m\IeC {\'e}todo!values}{112}
-\indexentry{tabla de dispersi\IeC {\'o}n}{112}
-\indexentry{establecer pertenencia}{113}
-\indexentry{pertenencia!establecer}{113}
-\indexentry{contador}{113}
-\indexentry{implementaci\IeC {\'o}n}{113}
-\indexentry{histograma}{113}
-\indexentry{frecuencia}{113}
+\indexentry{Romeo and Juliet}{107}
+\indexentry{diccionario}{109}
+\indexentry{tipo!dict}{109}
+\indexentry{clave}{109}
+\indexentry{pareja clave-valor}{109}
+\indexentry{\IeC {\'\i }ndice}{109}
+\indexentry{dict, funci\IeC {\'o}n}{109}
+\indexentry{funci\IeC {\'o}n!dict}{109}
+\indexentry{llaves}{109}
+\indexentry{exception!KeyError}{110}
+\indexentry{KeyError}{110}
+\indexentry{len, funci\IeC {\'o}n}{110}
+\indexentry{funci\IeC {\'o}n!len}{110}
+\indexentry{pertenencia!diccionario}{110}
+\indexentry{in, operador}{110}
+\indexentry{operador!in}{110}
+\indexentry{values, m\IeC {\'e}todo}{110}
+\indexentry{m\IeC {\'e}todo!values}{110}
+\indexentry{tabla de dispersi\IeC {\'o}n}{110}
+\indexentry{establecer pertenencia}{111}
+\indexentry{pertenencia!establecer}{111}
+\indexentry{contador}{111}
+\indexentry{implementaci\IeC {\'o}n}{111}
+\indexentry{histograma}{111}
+\indexentry{frecuencia}{111}
+\indexentry{recorrido}{111}
+\indexentry{histogram}{111}
+\indexentry{get, m\IeC {\'e}todo}{112}
+\indexentry{m\IeC {\'e}todo!get}{112}
+\indexentry{estilo}{112}
+\indexentry{anidados, bucles}{112}
+\indexentry{bucle!anidado}{112}
+\indexentry{Romeo and Juliet}{113}
+\indexentry{diccionario!iterar con}{113}
+\indexentry{iteraci\IeC {\'o}n!con diccionarios}{113}
 \indexentry{recorrido}{113}
-\indexentry{histogram}{113}
-\indexentry{get, m\IeC {\'e}todo}{114}
-\indexentry{m\IeC {\'e}todo!get}{114}
 \indexentry{estilo}{114}
-\indexentry{anidados, bucles}{114}
-\indexentry{bucle!anidado}{114}
+\indexentry{keys, m\IeC {\'e}todo}{114}
+\indexentry{m\IeC {\'e}todo!keys}{114}
 \indexentry{Romeo and Juliet}{115}
-\indexentry{diccionario!iterar con}{115}
-\indexentry{iteraci\IeC {\'o}n!con diccionarios}{115}
-\indexentry{recorrido}{115}
-\indexentry{estilo}{116}
-\indexentry{keys, m\IeC {\'e}todo}{116}
-\indexentry{m\IeC {\'e}todo!keys}{116}
-\indexentry{Romeo and Juliet}{117}
-\indexentry{depuraci\IeC {\'o}n}{118}
-\indexentry{sanity check}{119}
-\indexentry{prueba de sensatez}{119}
-\indexentry{consistency check}{119}
-\indexentry{prueba de consistencia}{119}
-\indexentry{estructura}{119}
-\indexentry{anidados, bucles}{119}
-\indexentry{bucle!anidado}{119}
-\indexentry{lookup}{119}
-\indexentry{b\IeC {\'u}squeda}{119}
-\indexentry{clave}{119}
-\indexentry{diccionario}{119}
-\indexentry{elemento!diccionario}{119}
-\indexentry{dispersi\IeC {\'o}n, funci\IeC {\'o}n de}{119}
-\indexentry{histograma}{119}
-\indexentry{implementaci\IeC {\'o}n}{120}
-\indexentry{pareja clave-valor}{120}
-\indexentry{hashtable}{120}
-\indexentry{dispersi\IeC {\'o}n, tabla de}{120}
-\indexentry{valor}{120}
-\indexentry{tupla}{123}
-\indexentry{tipo!tupla}{123}
-\indexentry{secuencia}{123}
-\indexentry{mutabilidad}{123}
-\indexentry{hashable}{123}
-\indexentry{dispersable}{123}
-\indexentry{comparable}{123}
-\indexentry{inmutabilidad}{123}
-\indexentry{par\IeC {\'e}ntesis!en tuplas}{123}
-\indexentry{singleton}{123}
-\indexentry{tupla!singleton}{123}
-\indexentry{tupla, funci\IeC {\'o}n}{124}
-\indexentry{funci\IeC {\'o}n!tupla}{124}
-\indexentry{corchete, operador}{124}
-\indexentry{operador!corchete}{124}
-\indexentry{rebanado, operador}{124}
-\indexentry{operador!slice}{124}
-\indexentry{operador!rebanado}{124}
-\indexentry{tupla!rebanado}{124}
-\indexentry{rebanado!tupla}{124}
-\indexentry{exception!TypeError}{124}
-\indexentry{TypeError}{124}
-\indexentry{elemento, asignaci\IeC {\'o}n}{124}
-\indexentry{asignaci\IeC {\'o}n!elemento}{124}
-\indexentry{comparaci\IeC {\'o}n!tupla}{124}
-\indexentry{tupla!comparaci\IeC {\'o}n}{124}
-\indexentry{sort, m\IeC {\'e}todo}{124}
-\indexentry{m\IeC {\'e}todo!sort}{124}
-\indexentry{DSU, dise\IeC {\~n}o}{125}
-\indexentry{dise\IeC {\~n}o!DSU}{125}
-\indexentry{decorate-sort-undecorate pattern}{125}
-\indexentry{decora-ordena-quita la decoraci\IeC {\'o}n, dise\IeC {\~n}o}{125}
-\indexentry{dise\IeC {\~n}o!decorate-sort-undecorate}{125}
-\indexentry{Romeo and Juliet}{125}
-\indexentry{palabra clave, argumento}{125}
-\indexentry{argumento!palabra clave}{125}
-\indexentry{recorrido}{125}
-\indexentry{tupla!asignaci\IeC {\'o}n}{126}
-\indexentry{asignaci\IeC {\'o}n!tupla}{126}
-\indexentry{intercambio, patr\IeC {\'o}n}{126}
-\indexentry{patr\IeC {\'o}n!de intercambio}{126}
-\indexentry{exception!ValueError}{127}
-\indexentry{ValueError}{127}
-\indexentry{split, m\IeC {\'e}todo}{127}
-\indexentry{m\IeC {\'e}todo!split}{127}
-\indexentry{direcci\IeC {\'o}n email}{127}
-\indexentry{diccionario}{127}
-\indexentry{items, m\IeC {\'e}todo}{127}
-\indexentry{m\IeC {\'e}todo!items}{127}
-\indexentry{pareja clave-valor}{127}
-\indexentry{recorrido!diccionario}{128}
-\indexentry{diccionario!recorrido}{128}
-\indexentry{Romeo and Juliet}{128}
-\indexentry{tupla!como clave en diccionario}{130}
-\indexentry{hashable}{130}
-\indexentry{dispersable}{130}
-\indexentry{tupla!en corchetes}{130}
-\indexentry{secuencia}{130}
-\indexentry{cadena}{130}
-\indexentry{lista}{130}
-\indexentry{tupla}{130}
-\indexentry{mutabilidad}{130}
-\indexentry{inmutabilidad}{130}
-\indexentry{sorted, funci\IeC {\'o}n}{131}
-\indexentry{funci\IeC {\'o}n!sorted}{131}
-\indexentry{reversed, funci\IeC {\'o}n}{131}
-\indexentry{funci\IeC {\'o}n!reversed}{131}
-\indexentry{depuraci\IeC {\'o}n}{131}
+\indexentry{depuraci\IeC {\'o}n}{116}
+\indexentry{sanity check}{117}
+\indexentry{prueba de sensatez}{117}
+\indexentry{consistency check}{117}
+\indexentry{prueba de consistencia}{117}
+\indexentry{estructura}{117}
+\indexentry{anidados, bucles}{117}
+\indexentry{bucle!anidado}{117}
+\indexentry{lookup}{117}
+\indexentry{b\IeC {\'u}squeda}{117}
+\indexentry{clave}{117}
+\indexentry{diccionario}{117}
+\indexentry{elemento!diccionario}{117}
+\indexentry{dispersi\IeC {\'o}n, funci\IeC {\'o}n de}{117}
+\indexentry{histograma}{117}
+\indexentry{implementaci\IeC {\'o}n}{118}
+\indexentry{pareja clave-valor}{118}
+\indexentry{hashtable}{118}
+\indexentry{dispersi\IeC {\'o}n, tabla de}{118}
+\indexentry{valor}{118}
+\indexentry{tupla}{121}
+\indexentry{tipo!tupla}{121}
+\indexentry{secuencia}{121}
+\indexentry{mutabilidad}{121}
+\indexentry{hashable}{121}
+\indexentry{dispersable}{121}
+\indexentry{comparable}{121}
+\indexentry{inmutabilidad}{121}
+\indexentry{par\IeC {\'e}ntesis!en tuplas}{121}
+\indexentry{singleton}{121}
+\indexentry{tupla!singleton}{121}
+\indexentry{tupla, funci\IeC {\'o}n}{122}
+\indexentry{funci\IeC {\'o}n!tupla}{122}
+\indexentry{corchete, operador}{122}
+\indexentry{operador!corchete}{122}
+\indexentry{rebanado, operador}{122}
+\indexentry{operador!slice}{122}
+\indexentry{operador!rebanado}{122}
+\indexentry{tupla!rebanado}{122}
+\indexentry{rebanado!tupla}{122}
+\indexentry{exception!TypeError}{122}
+\indexentry{TypeError}{122}
+\indexentry{elemento, asignaci\IeC {\'o}n}{122}
+\indexentry{asignaci\IeC {\'o}n!elemento}{122}
+\indexentry{comparaci\IeC {\'o}n!tupla}{122}
+\indexentry{tupla!comparaci\IeC {\'o}n}{122}
+\indexentry{sort, m\IeC {\'e}todo}{122}
+\indexentry{m\IeC {\'e}todo!sort}{122}
+\indexentry{DSU, dise\IeC {\~n}o}{123}
+\indexentry{dise\IeC {\~n}o!DSU}{123}
+\indexentry{decorate-sort-undecorate pattern}{123}
+\indexentry{decora-ordena-quita la decoraci\IeC {\'o}n, dise\IeC {\~n}o}{123}
+\indexentry{dise\IeC {\~n}o!decorate-sort-undecorate}{123}
+\indexentry{Romeo and Juliet}{123}
+\indexentry{palabra clave, argumento}{123}
+\indexentry{argumento!palabra clave}{123}
+\indexentry{recorrido}{123}
+\indexentry{tupla!asignaci\IeC {\'o}n}{124}
+\indexentry{asignaci\IeC {\'o}n!tupla}{124}
+\indexentry{intercambio, patr\IeC {\'o}n}{124}
+\indexentry{patr\IeC {\'o}n!de intercambio}{124}
+\indexentry{exception!ValueError}{125}
+\indexentry{ValueError}{125}
+\indexentry{split, m\IeC {\'e}todo}{125}
+\indexentry{m\IeC {\'e}todo!split}{125}
+\indexentry{direcci\IeC {\'o}n email}{125}
+\indexentry{diccionario}{125}
+\indexentry{items, m\IeC {\'e}todo}{125}
+\indexentry{m\IeC {\'e}todo!items}{125}
+\indexentry{pareja clave-valor}{125}
+\indexentry{recorrido!diccionario}{126}
+\indexentry{diccionario!recorrido}{126}
+\indexentry{Romeo and Juliet}{126}
+\indexentry{tupla!como clave en diccionario}{128}
+\indexentry{hashable}{128}
+\indexentry{dispersable}{128}
+\indexentry{tupla!en corchetes}{128}
+\indexentry{secuencia}{128}
+\indexentry{cadena}{128}
+\indexentry{lista}{128}
+\indexentry{tupla}{128}
+\indexentry{mutabilidad}{128}
+\indexentry{inmutabilidad}{128}
+\indexentry{sorted, funci\IeC {\'o}n}{129}
+\indexentry{funci\IeC {\'o}n!sorted}{129}
+\indexentry{reversed, funci\IeC {\'o}n}{129}
+\indexentry{funci\IeC {\'o}n!reversed}{129}
+\indexentry{depuraci\IeC {\'o}n}{129}
+\indexentry{estructura de datos}{129}
+\indexentry{forma, error de}{129}
+\indexentry{error!forma}{129}
+\indexentry{error!tipogr\IeC {\'a}fico}{130}
+\indexentry{depuraci\IeC {\'o}n!experimental}{130}
+\indexentry{programaci\IeC {\'o}n al azar}{130}
+\indexentry{plan de desarrollo!programaci\IeC {\'o}n al azar}{130}
+\indexentry{acumular}{130}
+\indexentry{tupla!asignaci\IeC {\'o}n en}{130}
+\indexentry{asignaci\IeC {\'o}n!tupla}{130}
+\indexentry{comparable}{130}
 \indexentry{estructura de datos}{131}
-\indexentry{forma, error de}{131}
-\indexentry{error!forma}{131}
-\indexentry{error!tipogr\IeC {\'a}fico}{132}
-\indexentry{depuraci\IeC {\'o}n!experimental}{132}
-\indexentry{programaci\IeC {\'o}n al azar}{132}
-\indexentry{plan de desarrollo!programaci\IeC {\'o}n al azar}{132}
-\indexentry{acumular}{132}
-\indexentry{tupla!asignaci\IeC {\'o}n en}{132}
-\indexentry{asignaci\IeC {\'o}n!tupla}{132}
-\indexentry{comparable}{132}
-\indexentry{estructura de datos}{133}
-\indexentry{DSU, dise\IeC {\~n}o}{133}
-\indexentry{hashable}{133}
-\indexentry{dispersable}{133}
-\indexentry{dispersar}{133}
-\indexentry{modelado}{133}
-\indexentry{singleton}{133}
-\indexentry{tupla}{133}
-\indexentry{letras, frecuencia de}{134}
-\indexentry{frecuencia!letras}{134}
-\indexentry{expresiones regulares}{135}
-\indexentry{regex}{135}
-\indexentry{re, m\IeC {\'o}dulo}{135}
-\indexentry{regex!search}{135}
-\indexentry{cadena!find}{136}
-\indexentry{cadena!startswith}{136}
-\indexentry{comod\IeC {\'\i }n}{136}
-\indexentry{regex!comod\IeC {\'\i }n}{136}
-\indexentry{codicioso}{137}
-\indexentry{findall}{137}
-\indexentry{regex!findall}{137}
-\indexentry{cadena!split}{140}
-\indexentry{regex!par\IeC {\'e}ntesis}{141}
-\indexentry{par\IeC {\'e}ntesis!expresiones regulares}{141}
+\indexentry{DSU, dise\IeC {\~n}o}{131}
+\indexentry{hashable}{131}
+\indexentry{dispersable}{131}
+\indexentry{dispersar}{131}
+\indexentry{modelado}{131}
+\indexentry{singleton}{131}
+\indexentry{tupla}{131}
+\indexentry{letras, frecuencia de}{132}
+\indexentry{frecuencia!letras}{132}
+\indexentry{expresiones regulares}{133}
+\indexentry{regex}{133}
+\indexentry{re, m\IeC {\'o}dulo}{133}
+\indexentry{regex!search}{133}
+\indexentry{cadena!find}{134}
+\indexentry{cadena!startswith}{134}
+\indexentry{comod\IeC {\'\i }n}{134}
+\indexentry{regex!comod\IeC {\'\i }n}{134}
+\indexentry{codicioso}{135}
+\indexentry{findall}{135}
+\indexentry{regex!findall}{135}
+\indexentry{cadena!split}{138}
+\indexentry{regex!par\IeC {\'e}ntesis}{139}
+\indexentry{par\IeC {\'e}ntesis!expresiones regulares}{139}
+\indexentry{grep}{143}
+\indexentry{codicioso}{144}
+\indexentry{coincidencia codiciosa}{144}
+\indexentry{comod\IeC {\'\i }n}{145}
 \indexentry{grep}{145}
-\indexentry{codicioso}{146}
-\indexentry{coincidencia codiciosa}{146}
-\indexentry{comod\IeC {\'\i }n}{147}
-\indexentry{grep}{147}
-\indexentry{imagen!jpg}{152}
-\indexentry{jpg}{152}
-\indexentry{time}{153}
-\indexentry{time.sleep}{153}
-\indexentry{control de flujo}{154}
-\indexentry{urllib!imagen}{154}
-\indexentry{web!scraping}{155}
-\indexentry{web!rascado}{155}
-\indexentry{HTML, an\IeC {\'a}lisis de}{155}
-\indexentry{codicioso}{156}
-\indexentry{no codicioso}{156}
-\indexentry{regex!par\IeC {\'e}ntesis}{156}
-\indexentry{par\IeC {\'e}ntesis!expresiones regulares}{156}
-\indexentry{BeautifulSoup}{156}
+\indexentry{imagen!jpg}{150}
+\indexentry{jpg}{150}
+\indexentry{time}{151}
+\indexentry{time.sleep}{151}
+\indexentry{control de flujo}{152}
+\indexentry{urllib!imagen}{152}
+\indexentry{web!scraping}{153}
+\indexentry{web!rascado}{153}
+\indexentry{HTML, an\IeC {\'a}lisis de}{153}
+\indexentry{codicioso}{154}
+\indexentry{no codicioso}{154}
+\indexentry{regex!par\IeC {\'e}ntesis}{154}
+\indexentry{par\IeC {\'e}ntesis!expresiones regulares}{154}
+\indexentry{BeautifulSoup}{154}
+\indexentry{BeautifulSoup}{155}
+\indexentry{HTML}{155}
+\indexentry{an\IeC {\'a}lisis!HTML}{155}
+\indexentry{fichero binario}{156}
+\indexentry{curl}{157}
 \indexentry{BeautifulSoup}{157}
-\indexentry{HTML}{157}
-\indexentry{an\IeC {\'a}lisis!HTML}{157}
-\indexentry{fichero binario}{158}
-\indexentry{curl}{159}
-\indexentry{BeautifulSoup}{159}
-\indexentry{puerto}{160}
-\indexentry{spider}{160}
-\indexentry{rastrear}{160}
-\indexentry{socket}{160}
-\indexentry{scrape}{160}
-\indexentry{rascado}{160}
-\indexentry{ElementTree}{164}
-\indexentry{ElementTree!fromstring}{164}
-\indexentry{ElementTree!find}{164}
-\indexentry{ElementTree!findall}{165}
-\indexentry{ElementTree!get}{165}
-\indexentry{JSON}{165}
-\indexentry{JavaScript Object Notation}{165}
-\indexentry{Google}{169}
-\indexentry{geocodificaci\IeC {\'o}n}{169}
-\indexentry{servicio web}{169}
-\indexentry{l\IeC {\'\i }mite de uso}{169}
-\indexentry{OAuth}{171}
-\indexentry{API!clave}{171}
-\indexentry{API}{175}
-\indexentry{\IeC {\'A}rbol de elementos}{175}
-\indexentry{JSON}{175}
-\indexentry{JavaScript Object Notation}{175}
-\indexentry{SOA}{175}
-\indexentry{Service Oriented Architecture}{175}
-\indexentry{XML}{175}
-\indexentry{eXtensible Markup Language}{175}
-\indexentry{base de datos}{177}
-\indexentry{base de datos!\IeC {\'\i }ndices}{177}
-\indexentry{sqlite3, m\IeC {\'o}dulo}{179}
-\indexentry{m\IeC {\'o}dulo!sqlite3}{179}
-\indexentry{connect, funci\IeC {\'o}n}{179}
-\indexentry{funci\IeC {\'o}n!connect}{179}
-\indexentry{cursor, funci\IeC {\'o}n}{179}
-\indexentry{funci\IeC {\'o}n!cursor}{179}
-\indexentry{Unicode}{181}
-\indexentry{atributo}{200}
-\indexentry{cursor}{200}
-\indexentry{for\IeC {\'a}nea, clave}{200}
-\indexentry{clave!for\IeC {\'a}nea}{200}
-\indexentry{l\IeC {\'o}gica, clave}{200}
-\indexentry{clave!l\IeC {\'o}gica}{200}
-\indexentry{primaria, clave}{200}
-\indexentry{clave!primaria}{200}
-\indexentry{\IeC {\'\i }ndice}{200}
-\indexentry{gestor de bases de datos}{200}
-\indexentry{base de datos!gestor}{200}
-\indexentry{normalizaci\IeC {\'o}n}{201}
-\indexentry{base de datos!normalizaci\IeC {\'o}n}{201}
-\indexentry{relaci\IeC {\'o}n}{201}
-\indexentry{restricci\IeC {\'o}n}{201}
-\indexentry{tupla}{201}
-\indexentry{Google!mapa}{203}
-\indexentry{Visualizaci\IeC {\'o}n!mapa}{203}
-\indexentry{cach\IeC {\'e}}{204}
-\indexentry{Google!clasificaci\IeC {\'o}n de p\IeC {\'a}ginas}{205}
-\indexentry{Visualizaci\IeC {\'o}n!redes}{205}
-\indexentry{Visualizaci\IeC {\'o}n!clasificaci\IeC {\'o}n de p\IeC {\'a}ginas}{205}
-\indexentry{archivo, nombre}{215}
-\indexentry{ruta}{215}
-\indexentry{directorio}{215}
-\indexentry{carpeta}{215}
-\indexentry{os, m\IeC {\'o}dulo}{215}
-\indexentry{m\IeC {\'o}dulo!os}{215}
-\indexentry{getcwd, funci\IeC {\'o}n}{215}
-\indexentry{funci\IeC {\'o}n!getcwd}{215}
-\indexentry{trabajo, directorio de}{216}
-\indexentry{directorio!de trabajo}{216}
-\indexentry{relativa, ruta}{216}
-\indexentry{ruta!relativa}{216}
-\indexentry{absoluta, ruta}{216}
-\indexentry{ruta!absoluta}{216}
-\indexentry{exists, funci\IeC {\'o}n}{216}
-\indexentry{funci\IeC {\'o}n!exists}{216}
-\indexentry{argumentos}{222}
+\indexentry{puerto}{158}
+\indexentry{spider}{158}
+\indexentry{rastrear}{158}
+\indexentry{socket}{158}
+\indexentry{scrape}{158}
+\indexentry{rascado}{158}
+\indexentry{ElementTree}{162}
+\indexentry{ElementTree!fromstring}{162}
+\indexentry{ElementTree!find}{162}
+\indexentry{ElementTree!findall}{163}
+\indexentry{ElementTree!get}{163}
+\indexentry{JSON}{163}
+\indexentry{JavaScript Object Notation}{163}
+\indexentry{Google}{167}
+\indexentry{geocodificaci\IeC {\'o}n}{167}
+\indexentry{servicio web}{167}
+\indexentry{l\IeC {\'\i }mite de uso}{167}
+\indexentry{OAuth}{169}
+\indexentry{API!clave}{169}
+\indexentry{API}{173}
+\indexentry{\IeC {\'A}rbol de elementos}{173}
+\indexentry{JSON}{173}
+\indexentry{JavaScript Object Notation}{173}
+\indexentry{SOA}{173}
+\indexentry{Service Oriented Architecture}{173}
+\indexentry{XML}{173}
+\indexentry{eXtensible Markup Language}{173}
+\indexentry{base de datos}{175}
+\indexentry{base de datos!\IeC {\'\i }ndices}{175}
+\indexentry{sqlite3, m\IeC {\'o}dulo}{177}
+\indexentry{m\IeC {\'o}dulo!sqlite3}{177}
+\indexentry{connect, funci\IeC {\'o}n}{177}
+\indexentry{funci\IeC {\'o}n!connect}{177}
+\indexentry{cursor, funci\IeC {\'o}n}{177}
+\indexentry{funci\IeC {\'o}n!cursor}{177}
+\indexentry{Unicode}{179}
+\indexentry{atributo}{198}
+\indexentry{cursor}{198}
+\indexentry{for\IeC {\'a}nea, clave}{198}
+\indexentry{clave!for\IeC {\'a}nea}{198}
+\indexentry{l\IeC {\'o}gica, clave}{198}
+\indexentry{clave!l\IeC {\'o}gica}{198}
+\indexentry{primaria, clave}{198}
+\indexentry{clave!primaria}{198}
+\indexentry{\IeC {\'\i }ndice}{198}
+\indexentry{gestor de bases de datos}{198}
+\indexentry{base de datos!gestor}{198}
+\indexentry{normalizaci\IeC {\'o}n}{199}
+\indexentry{base de datos!normalizaci\IeC {\'o}n}{199}
+\indexentry{relaci\IeC {\'o}n}{199}
+\indexentry{restricci\IeC {\'o}n}{199}
+\indexentry{tupla}{199}
+\indexentry{Google!mapa}{201}
+\indexentry{Visualizaci\IeC {\'o}n!mapa}{201}
+\indexentry{cach\IeC {\'e}}{202}
+\indexentry{Google!clasificaci\IeC {\'o}n de p\IeC {\'a}ginas}{203}
+\indexentry{Visualizaci\IeC {\'o}n!redes}{203}
+\indexentry{Visualizaci\IeC {\'o}n!clasificaci\IeC {\'o}n de p\IeC {\'a}ginas}{203}
+\indexentry{archivo, nombre}{213}
+\indexentry{ruta}{213}
+\indexentry{directorio}{213}
+\indexentry{carpeta}{213}
+\indexentry{os, m\IeC {\'o}dulo}{213}
+\indexentry{m\IeC {\'o}dulo!os}{213}
+\indexentry{getcwd, funci\IeC {\'o}n}{213}
+\indexentry{funci\IeC {\'o}n!getcwd}{213}
+\indexentry{trabajo, directorio de}{214}
+\indexentry{directorio!de trabajo}{214}
+\indexentry{relativa, ruta}{214}
+\indexentry{ruta!relativa}{214}
+\indexentry{absoluta, ruta}{214}
+\indexentry{ruta!absoluta}{214}
+\indexentry{exists, funci\IeC {\'o}n}{214}
+\indexentry{funci\IeC {\'o}n!exists}{214}
+\indexentry{argumentos}{220}
+\indexentry{shell}{221}
+\indexentry{pipe}{221}
+\indexentry{ls (Comando Unix)}{221}
+\indexentry{Comando Unix!ls}{221}
+\indexentry{popen, funci\IeC {\'o}n}{221}
+\indexentry{funci\IeC {\'o}n!popen}{221}
+\indexentry{readline, m\IeC {\'e}todo}{221}
+\indexentry{m\IeC {\'e}todo!readline}{221}
+\indexentry{read, m\IeC {\'e}todo}{221}
+\indexentry{m\IeC {\'e}todo!read}{221}
+\indexentry{close, m\IeC {\'e}todo}{221}
+\indexentry{m\IeC {\'e}todo!close}{221}
+\indexentry{checksum}{222}
+\indexentry{directorio!actual}{222}
+\indexentry{directorio!de trabajo}{222}
+\indexentry{directorio!cwd}{222}
+\indexentry{hashing}{222}
+\indexentry{pipe}{222}
+\indexentry{tuber\IeC {\'\i }a}{222}
+\indexentry{ruta!absoluta}{222}
+\indexentry{ruta!relativa}{222}
 \indexentry{shell}{223}
-\indexentry{pipe}{223}
-\indexentry{ls (Comando Unix)}{223}
-\indexentry{Comando Unix!ls}{223}
-\indexentry{popen, funci\IeC {\'o}n}{223}
-\indexentry{funci\IeC {\'o}n!popen}{223}
-\indexentry{readline, m\IeC {\'e}todo}{223}
-\indexentry{m\IeC {\'e}todo!readline}{223}
-\indexentry{read, m\IeC {\'e}todo}{223}
-\indexentry{m\IeC {\'e}todo!read}{223}
-\indexentry{close, m\IeC {\'e}todo}{223}
-\indexentry{m\IeC {\'e}todo!close}{223}
-\indexentry{checksum}{224}
-\indexentry{directorio!actual}{224}
-\indexentry{directorio!de trabajo}{224}
-\indexentry{directorio!cwd}{224}
-\indexentry{hashing}{224}
-\indexentry{pipe}{224}
-\indexentry{tuber\IeC {\'\i }a}{224}
-\indexentry{ruta!absoluta}{224}
-\indexentry{ruta!relativa}{224}
-\indexentry{shell}{225}
-\indexentry{walk}{225}
-\indexentry{recorrer}{225}
-\indexentry{MP3}{225}
-\indexentry{duplicados}{225}
-\indexentry{MD5, algoritmo}{225}
-\indexentry{algoritmo!MD5}{225}
-\indexentry{checksum}{225}
-\indexentry{suma de comprobaci\IeC {\'o}n}{225}
-\indexentry{GNU Free Documentation License}{232}
-\indexentry{Free Documentation License, GNU}{232}
-\indexentry{GNU Free Documentation License}{233}
-\indexentry{Free Documentation License, GNU}{233}
-\indexentry{colaboradores}{233}
+\indexentry{walk}{223}
+\indexentry{recorrer}{223}
+\indexentry{MP3}{223}
+\indexentry{duplicados}{223}
+\indexentry{MD5, algoritmo}{223}
+\indexentry{algoritmo!MD5}{223}
+\indexentry{checksum}{223}
+\indexentry{suma de comprobaci\IeC {\'o}n}{223}
+\indexentry{GNU Free Documentation License}{230}
+\indexentry{Free Documentation License, GNU}{230}
+\indexentry{GNU Free Documentation License}{231}
+\indexentry{Free Documentation License, GNU}{231}
+\indexentry{colaboradores}{231}

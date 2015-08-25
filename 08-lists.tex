@@ -23,7 +23,7 @@ consiste en encerrar los elementos entre corchetes (\verb"[" y \verb"]"):
 \beforeverb
 \begin{verbatim}
 [10, 20, 30, 40]
-['rana crujiente', 'carnero vejiga', 'alondra vómito']
+['rana crujiente', 'vejiga de carnero', 'vómito de alondra']
 \end{verbatim}
 \afterverb
 %
@@ -80,7 +80,7 @@ expresión dentro de los corchetes especifica el índice. Recuerda que los
 
 \beforeverb
 \begin{verbatim}
->>> print cheeses[0]
+>>> print quesos[0]
 Cheddar
 \end{verbatim}
 \afterverb
@@ -258,13 +258,14 @@ repite la lista {\tt [1, 2, 3]} tres veces.
 
 \section{Rebanado de listas}
 
-\index{rebanado, operador}
-\index{operador!rebanado}
-\index{índice!rebanado}
-\index{lista!rebanado}
-\index{rebanado!lista}
+\index{rebanada, operador}
+\index{operador!rebanada}
+\index{índice!rebanada}
+\index{lista!rebanada}
+\index{rebanada!lista}
+\index{slice}
 
-El operador de recorte o rebanado también funciona en listas:
+El operador de rebanada(slice) también funciona en listas:
 
 \beforeverb
 \begin{verbatim}
@@ -283,8 +284,8 @@ Si omites el segundo, la rebanada llegará hasta el final. De modo que
 si omites ambos, la rebanada será una copia de la lista completa.
 
 \index{lista!copiar}
-\index{rebanado!copiar}
-\index{copiar!rebanado}
+\index{rebanada!copiar}
+\index{copiar!rebanada}
 
 \beforeverb
 \begin{verbatim}
@@ -294,16 +295,16 @@ si omites ambos, la rebanada será una copia de la lista completa.
 \afterverb
 %
 Como las litas son mutables, a menudo resultará útil hacer una copia
-antes de realizar operaciones que dupliquen elementos, los haga rotar o mutile
-las listas.
+antes de realizar operaciones que dupliquen elementos, los hagan rotar o mutilen
+de algún modo esas listas.
 
 \index{mutabilidad}
 
-Un operador de rebanado en la parte izquierda de una asignación
+Un operador de rebanada en la parte izquierda de una asignación
 puede modificar múltiples elementos:
 
-\index{rebanado!actualizar}
-\index{actualizar!rebanado}
+\index{rebanada!actualizar}
+\index{actualizar!rebanada}
 
 \beforeverb
 \begin{verbatim}
@@ -451,12 +452,12 @@ un índice de rebanada:
 \end{verbatim}
 \afterverb
 %
-Como de costumbre, el método de rebanado selecciona todos los elementos hasta (pero
+Como de costumbre, el método de rebanada selecciona todos los elementos hasta (pero
 sin incluir) el segundo índice.
 
 \section{Listas y funciones}
 
-Hay varias funciones incorporadas que pueden utilizarse en las listas
+Hay varias funciones internas que pueden utilizarse en las listas
 y que nos permiten buscar rápidamente a través de ellas
 sin tener que escribir nuestros propios bucles:
 
@@ -506,7 +507,7 @@ para almacenar la cantidad y el total actual de los números del usuario
 según éste los va introduciendo.
 
 Podemos simplemente guardar cada número que el usuario introduzca
-y usar las funciones incorporadas para calcular la suma y la cantidad
+y usar las funciones internas para calcular la suma y la cantidad
 de números introducidos al final.
 
 \beforeverb
@@ -552,7 +553,7 @@ se puede usar la función {\tt list}:
 \end{verbatim}
 \afterverb
 %
-Debido a que {\tt list} es el nombre de una función incorporada, debes
+Debido a que {\tt list} es el nombre de una función interna, debes
 evitar usarla como nombre de variable. Yo también evito utilizar la letra {\tt l},
 porque se parece mucho al número {\tt 1}. Por eso utilizo {\tt t}.
 
@@ -629,9 +630,9 @@ cadenas sin espacios, puedes usar la cadena vacía,
 Normalmente, cuando se está leyendo un archivo,
 se deseará hacer con las líneas algo más que simplemente
 imprimirlas completas en pantalla. A menudo se querrán encontrar
-las ``líneas interesantes'' y luego {\bf parsear (analizar)} cada una de ellas
+las ``líneas interesantes'' y luego {\bf parsear} (analizar) cada una de ellas
 para buscar alguna \emph{parte} importante en su interior. ¿Qué ocurre si queremos
-imprimir el día de la semana de aquellas líneas que comienzan por ``From ''?
+imprimir el día de la semana de aquellas líneas que comienzan por \mbox{``From ''?}
 
 \beforeverb
 \begin{alltt}
@@ -647,8 +648,8 @@ y luego imprimir en pantalla la tercera palabra de cada una:
 
 \beforeverb
 \begin{verbatim}
-fman = open('mbox-short.txt')
-for linea in fman:
+manf = open('mbox-short.txt')
+for linea in manf:
     linea = linea.rstrip()
     if not linea.startswith('From ') : continue
     palabras = linea.split()
@@ -676,7 +677,7 @@ Fri
 %
 Más adelante, aprenderemos técnicas más sofisticadas para
 seleccionar las líneas con las que vamos a trabajar y veremos cómo extraer
-esas líneas para encontrar el trozo exacto de información
+esas líneas para encontrar el fragmento exacto de información
 que estamos buscando.
 
 \section{Objetos y valores}
@@ -889,12 +890,12 @@ def no_borra_primer(t):
 \end{verbatim}
 \afterverb
 
-El operador de rebanado crea una lista nueva y la asignación
+El operador de rebanada crea una lista nueva y la asignación
 hace que {\tt t} se refiera a ella, pero ninguno de ellos tiene ningún efecto
 sobre la lista que se ha pasado como argumento.
 
-\index{rebanado, operador}
-\index{operador!rebanado}
+\index{rebanada, operador}
+\index{operador!rebanada}
 
 Una alternativa consiste en escribir una función que cree y
 retorne una lista nueva. Por ejemplo,
@@ -938,7 +939,7 @@ menos el primero y el último.
 
 El uso descuidado de las listas (y otros objetos mutables)
 puede ocasionar largas horas de depuración. He aquí algunas
-trampas comunes y modos de evitarlas:
+trampas comunes y los modos de evitarlas:
 
 \begin{enumerate}
 
@@ -984,7 +985,7 @@ están documentados en
 Parte del problema con las listas es que hay demasiados
 modos de hacer las cosas. Por ejemplo, para eliminar un elemento de
 una lista, se puede usar {\tt pop}, {\tt remove}, {\tt del},
-o incluso una asignación de rebanado.
+o incluso una asignación de rebanada.
 
 Para añadir un elemento, se puede usar el método {\tt append} o
 el operador {\tt +}. Pero no olvides que esto es correcto:
@@ -1029,12 +1030,12 @@ t.sort()
 \end{verbatim}
 \afterverb
 
-En este ejemplo, puedes usar también la función incorporada {\tt sorted},
+En este ejemplo, puedes usar también la función interna {\tt sorted},
 que devuelve una nueva lista ordenada, y deja la original sin modificar.
 Pero en ese caso, ¡recuerda no utilizar {\tt sorted} como nombre de
 variable!
 
-\item Listas, {\tt particiones} y archivos
+\item Listas, {\tt split} y ficheros
 
 Cuando leemos y analizamos archivos, hay muchas oportunidades
 de encontrar entradas que pueden hacer fallar nuestro programa, de modo que
@@ -1042,8 +1043,8 @@ es una buena idea recurrir al uso del patrón {\bf guardián} cuando
 estemos escribiendo programas que lean a través de un archivo
 y busquen ``una aguja en el pajar''.
 
-Vamos a revisar nuestro anterior programa que busca el día de la semana
-en las líneas de un archivo:
+Vamos a revisar nuestro programa anterior que buscaba el día de la semana
+en las líneas ``from'' de nuestro archivo:
 
 \beforeverb
 \begin{alltt}
@@ -1060,8 +1061,8 @@ a continuación:
 
 \beforeverb
 \begin{verbatim}
-fman = open('mbox-short.txt')
-for linea in fman:
+manf = open('mbox-short.txt')
+for linea in manf:
     palabras = linea.split()
     if palabras[0] != 'From' : continue
     print palabras[2]
@@ -1095,8 +1096,8 @@ para situarla es justo antes de la línea en la que
 falla el programa, e imprimir el dato que parecer ser el causante
 del error.
 
-Ese enfoque puede generar un montón de líneas en la salida, pero
-al menos tendrás a mano inmediatamente alguna pista acerca
+Ese diseño puede generar un montón de líneas en la salida, pero
+al menos tendrás inmediatamente a mano alguna pista acerca
 del problema. De modo que imprimiremos la variable
 {\tt palabras} justo antes de la línea cinco. Incluso
 añadiremos el prefijo ``Debug:'' a la línea, para que
@@ -1104,7 +1105,7 @@ podamos mantener nuestra salida normal separada de la de depuración:
 
 \beforeverb
 \begin{verbatim}
-for linea in fman:
+for linea in manf:
     palabras = linea.split()
     print 'Debug:', palabras
     if palabras[0] != 'From' : continue
@@ -1132,7 +1133,7 @@ IndexError: list index out of range
 Cada línea de depuración está imprimiendo la lista de palabras que obtenemos
 cuando {\tt dividimos} la línea en palabras. Cuando el programa falla,
 la lista de palabras está vacía \verb"[]". Si abrimos el archivo en un
-editor de texto y observamos su contenido, en ese punto podemos ver
+editor de texto y observamos su contenido, en ese punto podremos observar
 lo siguiente:
 
 \beforeverb
@@ -1150,7 +1151,7 @@ Details: http://source.sakaiproject.org/viewsvn/?view=rev&rev=39772
 hay ``cero palabras'' en una línea en blanco. ¿Por qué no hemos pensado en eso
 cuando estábamos escribiendo el código? Cuando el código busca la primera
 palabra (\verb"palabras[0]"), para comprobar si coincide con ``From'',
-obtenemos un error ``index out of range (índice fuera de rango)''.
+obtenemos un error ``index out of range'' (índice fuera de rango).
 
 Por supuesto, éste es el lugar perfecto para añadir un código {\bf guardián},
 que impida revisar la primera palabra si resulta que no existe primera palabra.
@@ -1159,9 +1160,9 @@ comprobar el número de palabras que tenemos antes de mirar cuál es la primera 
 
 \beforeverb
 \begin{verbatim}
-fman = open('mbox-short.txt')
+manf = open('mbox-short.txt')
 contador= 0
-for linea in fman:
+for linea in manf:
     palabras = linea.split()
     # print 'Debug:', palabras
     if len(palabras) == 0 : continue
@@ -1171,7 +1172,7 @@ for linea in fman:
 \afterverb
 %
 Primero hemos comentado la sentencia print de depuración en lugar de eliminarla,
-para que si nuestra modificación falla podemos depurarlo de nuevo. Después, hemos añadido
+para que si nuestra modificación falla podamos depurarlo de nuevo. Después, hemos añadido
 una sentencia guardián que comprueba si tenemos cero palabras, y si es así,
 usamos {\tt continue} para saltar a la siguiente línea del archivo. 
 
@@ -1294,7 +1295,7 @@ Este es un buen ejemplo de salida con algunas líneas eliminadas:
 \beforeverb
 \begin{verbatim}
 python fromcount.py 
-Introduce un nombre de archivo: mbox-short.txt
+Introduce un nombre de fichero: mbox-short.txt
 stephen.marquard@uct.ac.za
 louis@media.berkeley.edu
 zqian@umich.edu

@@ -58,16 +58,16 @@ Puedes descargar el fichero desde
 
 \beforeverb
 \begin{verbatim}
->>> fhand = open('mbox.txt')
->>> print fhand
+>>> manf = open('mbox.txt')
+>>> print manf
 <open file 'mbox.txt', mode 'r' at 0x1005088b0>
 \end{verbatim}
 \afterverb
 %
 \index{manejador de fichero}
 Si la {\tt apertura} tiene éxito, el sistema operativo nos devuelve un
-{\bf manejador de fichero (file handle)}. El manejador de fichero no son los datos que
-contiene actualmente el archivo, sino que se trata de un ``manejador (handle)'' que se
+{\bf manejador de fichero} (file handle). El manejador de fichero no son los datos que
+contiene en realidad el archivo, sino que se trata de un ``manejador'' (handle) que se
 puede utilizar para leer esos datos. Sólo obtendrás el manejador si el fichero especificado
 existe y además dispones de los permisos apropiados para poder leerlo.
 
@@ -80,7 +80,7 @@ ningún manejador para poder acceder a su contenido:
 
 \beforeverb
 \begin{verbatim}
->>> fman = open('stuff.txt')
+>>> manf = open('stuff.txt')
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 IOError: [Errno 2] No such file or directory: 'stuff.txt'
@@ -95,7 +95,7 @@ que no existe.
 
 Un fichero de texto puede ser considerado una secuencia de líneas, de igual
 modo que una cadena en Python puede ser considerada una secuencia de caracteres.
-Por ejemplo, esta es una muestra de un fichero de texto que guarda la actividad de correos
+Por ejemplo, ésta es una muestra de un fichero de texto que guarda la actividad de correos
 de varias personas en el equipo de desarrollo de un proyecto de código abierto:
 
 \beforeverb
@@ -123,7 +123,7 @@ Para tener más información sobre el formato mbox, consulta
 \url{en.wikipedia.org/wiki/Mbox}. 
 
 Para dividir el archivo en líneas, existe un carácter especial que
-representa el ``final de línea'', llamado {\bf salto de línea (newline)}.
+representa el ``final de línea'', llamado {\bf salto de línea} (newline).
 
 \index{salto de línea}
 En Python, el carácter {\bf salto de línea} se representa por barra invertida-n en
@@ -195,7 +195,7 @@ Line Count: 132045
 \end{verbatim}
 \afterverb
 %
-Podemos usar el manejador del fichero como secuenciador en nuestro bucle {\tt for}.
+Podemos usar el manejador del fichero como una secuencia en nuestro bucle {\tt for}.
 El bucle {\tt for} simplemente cuenta el número de líneas del
 fichero y lo muestra en pantalla. La traducción aproximada del bucle for
 al español es: ``para cada línea del fichero representado por este
@@ -294,7 +294,7 @@ La salida parece ser correcta, ya que las únicas líneas que vemos son aquellas
 que comienzan por ``From:''. Pero, ¿por qué estamos viendo líneas extra
 vacías? Esto se debe al carácter invisible de {\bf salto de línea}.
 Cada una de las líneas termina con un salto de línea, de modo que la sentencia
-{\tt print} imprime la cadena que está en la variable {\bf line} y que
+{\tt print} imprime la cadena que está en la variable {\bf linea} y que
 incluye un salto de línea, y a continuación {\tt print} añade \emph{otro} salto de línea,
 cuyo resultado es el efecto de doble espaciado que podemos ver.
 
@@ -327,7 +327,7 @@ From: cwen@iupui.edu
 \end{verbatim}
 \afterverb
 %
-Cuando los programas de procesado de archivos se van volviendo más complejos, es posible
+A medida que los programas de procesado de archivos se van volviendo más complejos, es posible
 que queramos estructurar los bucles de búsqueda usando {\tt continue}. La idea básica
 del bucle de búsqueda es que estamos localizando líneas ``interesantes''
 y saltando eficazmente aquellas que ``no nos interesan''. Y a continuación, cuando
@@ -434,8 +434,8 @@ Hay 27 líneas subject en mbox-short.txt
 Antes de asomarte a la siguiente sección, échale un vistazo al programa anterior
 y pregúntate a ti mismo: ``¿Qué podría ir mal aquí?'', o ``¿Qué podría hacer
 nuestro simpático usuario que provoque que nuestro bonito programita
-termine sin gracia, con un tracebak, haciéndonos parecer menos atractivos
-a los ojos de los usuarios?
+termine sin gracia, con un tracebak, haciéndonos parecer menos geniales
+ante los usuarios?
 
 \section{Uso de {\tt try, except,} y {\tt open}}
 
@@ -446,11 +446,11 @@ Te avisé que no te asomases. Esta es tu última oportunidad.
 \beforeverb
 \begin{verbatim}
 python search6.py 
-Introduce el nombre del fichero: missing.txt
+Introduce el nombre del fichero: perdido.txt
 Traceback (most recent call last):
   File "search6.py", line 2, in <module>
     manf = open(nombref)
-IOError: [Errno 2] No such file or directory: 'missing.txt'
+IOError: [Errno 2] No such file or directory: 'perdido.txt'
 
 python search6.py 
 Introduce el nombre del fichero: na na boo boo
@@ -516,7 +516,7 @@ Hay 1797 líneas subject en mbox.txt
 
 python search7.py
 Introduce el nombre del fichero: na na boo boo
-No se puedo abrir el fichero: na na boo boo
+No se pudo abrir el fichero: na na boo boo
 \end{verbatim}
 \afterverb
 %
@@ -544,7 +544,7 @@ por nuestros colegas.
 \index{fichero!escritura}
 
 Para escribir en un fichero, debes abrirlo usando el modo
-\verb"'w'" como segundo parámetro:
+\verb"'w'" (de {\tt write}) como segundo parámetro:
 
 \beforeverb
 \begin{verbatim}
@@ -669,7 +669,7 @@ un programa, usando las sentencias {\tt try} y {\tt except}.
 
 \item[Controlador de Calidad:] Una persona o equipo centrada en asegurar
 la calidad del conjunto en un producto software.
-Sus siglas en inglés son QA (Quality Assurance). QA se encarga normalmente
+Sus siglas en inglés son QA (Quality Assurance). El QA se encarga normalmente
 de probar un producto e identificar sus problemas antes de que éste
 sea lanzado.
 \index{Controlador de Calidad}
@@ -681,7 +681,7 @@ medio de almacenamiento permanente, como un disco duro.
 
 \item[Pythónico:] Una técnica que funciona de forma elegante en Python.
 ``Usar try y except y es la forma \emph{Pythónica} de restablecer un programa en
-caso de archivos que no existen''.
+caso de intentar abrir archivos que no existen''.
 \index{Pythónico}
 
 \item[salto de línea:] Un carácter especial que se utiliza en los archivos y cadenas
@@ -701,7 +701,7 @@ ser algo similar a esto:
 \beforeverb
 \begin{verbatim}
 python shout.py
-Introduzca el nombre del fichero: mbox-short.txt
+Introduce el nombre del fichero: mbox-short.txt
 FROM STEPHEN.MARQUARD@UCT.AC.ZA SAT JAN  5 09:14:16 2008
 RETURN-PATH: <POSTMASTER@COLLAB.SAKAIPROJECT.ORG>
 RECEIVED: FROM MURDER (MAIL.UMICH.EDU [141.211.14.90])
@@ -768,7 +768,7 @@ No se pudo abrir el fichero: missing.tyxt
 
 python egg.py 
 Introduce el nombre del fichero: na na boo boo
-NA NA BOO BOO PARA TI - ¡Has sido malo!
+NA NA BOO BOO PARA TI - ¡Has sido un niño malo!
 \end{verbatim}
 \afterverb
 %
