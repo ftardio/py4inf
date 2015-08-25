@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  24 AUG 2015 13:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  25 AUG 2015 12:22
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -947,21 +947,21 @@ Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 4.
 Package epstopdf Info: Source file: <figs2/pda.eps>
-(epstopdf)                    date: 2015-08-22 12:03:04
-(epstopdf)                    size: 8753 bytes
+(epstopdf)                    date: 2015-08-24 16:56:40
+(epstopdf)                    size: 53678 bytes
 (epstopdf)             Output file: <figs2/pda-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:28:57
-(epstopdf)                    size: 3458 bytes
+(epstopdf)                    date: 2015-08-25 09:03:49
+(epstopdf)                    size: 19920 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/pda-eps-converted-to.
 pdf figs2/pda.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/pda-eps-converted-to.pdf, id=50, 433.62pt x 96.36pt>
+<figs2/pda-eps-converted-to.pdf, id=50, 375.4025pt x 96.36pt>
 File: figs2/pda-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/pda-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/pda-eps-converted-to.pdf used on input line 24.
-(pdftex.def)             Requested size: 325.2142pt x 72.26999pt.
+(pdftex.def)             Requested size: 281.55118pt x 72.26999pt.
  [1
 
 
@@ -969,61 +969,61 @@ Package pdftex.def Info: figs2/pda-eps-converted-to.pdf used on input line 24.
 
  <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pda-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs2/pda2.eps>
-(epstopdf)                    date: 2015-08-22 12:03:04
-(epstopdf)                    size: 8646 bytes
+(epstopdf)                    date: 2015-08-24 16:58:14
+(epstopdf)                    size: 52569 bytes
 (epstopdf)             Output file: <figs2/pda2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:28:58
-(epstopdf)                    size: 3413 bytes
+(epstopdf)                    date: 2015-08-25 09:03:50
+(epstopdf)                    size: 19568 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/pda2-eps-converted-to
 .pdf figs2/pda2.eps>
 (epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/pda2-eps-converted-to.pdf, id=58, 218.8175pt x 96.36pt>
+<figs2/pda2-eps-converted-to.pdf, id=60, 217.81375pt x 96.36pt>
 File: figs2/pda2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/pda2-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/pda2-eps-converted-to.pdf used on input line 90.
 
-(pdftex.def)             Requested size: 164.11272pt x 72.26999pt.
+(pdftex.def)             Requested size: 163.3599pt x 72.26999pt.
  [2 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pda2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs2/arch.eps>
-(epstopdf)                    date: 2015-08-22 12:03:04
-(epstopdf)                    size: 8220 bytes
+(epstopdf)                    date: 2015-08-24 16:53:11
+(epstopdf)                    size: 77575 bytes
 (epstopdf)             Output file: <figs2/arch-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:28:58
-(epstopdf)                    size: 3520 bytes
+(epstopdf)                    date: 2015-08-25 09:03:50
+(epstopdf)                    size: 27992 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/arch-eps-converted-to
 .pdf figs2/arch.eps>
 (epstopdf)             \includegraphics on input line 112.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/arch-eps-converted-to.pdf, id=66, 437.635pt x 256.96pt>
+<figs2/arch-eps-converted-to.pdf, id=70, 435.6275pt x 255.95625pt>
 File: figs2/arch-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/arch-eps-converted-to.pdf used on input line 112
 .
-(pdftex.def)             Requested size: 307.71802pt x 180.67499pt.
+(pdftex.def)             Requested size: 307.50296pt x 180.67499pt.
  [3 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs2/arch2.eps>
-(epstopdf)                    date: 2015-08-22 12:03:04
-(epstopdf)                    size: 8964 bytes
+(epstopdf)                    date: 2015-08-24 16:54:12
+(epstopdf)                    size: 79923 bytes
 (epstopdf)             Output file: <figs2/arch2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:28:59
-(epstopdf)                    size: 3727 bytes
+(epstopdf)                    date: 2015-08-25 09:03:51
+(epstopdf)                    size: 28467 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/arch2-eps-converted-t
 o.pdf figs2/arch2.eps>
 (epstopdf)             \includegraphics on input line 164.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/arch2-eps-converted-to.pdf, id=74, 437.635pt x 256.96pt>
+<figs2/arch2-eps-converted-to.pdf, id=80, 435.6275pt x 255.95625pt>
 File: figs2/arch2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch2-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/arch2-eps-converted-to.pdf used on input line 16
 4.
-(pdftex.def)             Requested size: 307.71802pt x 180.67499pt.
+(pdftex.def)             Requested size: 307.50296pt x 180.67499pt.
  [4 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch2-eps-converted-to.pdf>
 ] [5]
 LaTeX Font Info:    Try loading font information for TS1+pcr on input line 273.
@@ -1081,7 +1081,7 @@ Package epstopdf Info: Source file: <figs2/if.eps>
 df figs2/if.eps>
 (epstopdf)             \includegraphics on input line 141.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/if-eps-converted-to.pdf, id=178, 537.00626pt x 308.15125pt>
+ <figs2/if-eps-converted-to.pdf, id=186, 537.00626pt x 308.15125pt>
 File: figs2/if-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/if-eps-converted-to.pdf>
@@ -1099,7 +1099,7 @@ Package epstopdf Info: Source file: <figs2/if-else.eps>
 (epstopdf)             \includegraphics on input line 218.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/if-else-eps-converted-to.pdf, id=188, 816.04875pt x 311.1625pt>
+<figs2/if-else-eps-converted-to.pdf, id=196, 816.04875pt x 311.1625pt>
 File: figs2/if-else-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/if-else-eps-converted-to.pdf>
@@ -1121,7 +1121,7 @@ Package epstopdf Info: Source file: <figs2/elif.eps>
 (epstopdf)             \includegraphics on input line 250.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/elif-eps-converted-to.pdf, id=193, 574.145pt x 554.07pt>
+<figs2/elif-eps-converted-to.pdf, id=201, 574.145pt x 554.07pt>
 File: figs2/elif-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/elif-eps-converted-to.pdf>
@@ -1141,7 +1141,7 @@ to.pdf figs2/nested.eps>
 (epstopdf)             \includegraphics on input line 304.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/nested-eps-converted-to.pdf, id=209, 1048.91875pt x 502.87875pt>
+<figs2/nested-eps-converted-to.pdf, id=217, 1048.91875pt x 502.87875pt>
 File: figs2/nested-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/nested-eps-converted-to.pdf>
@@ -1185,7 +1185,7 @@ Package epstopdf Info: Source file: <figs2/string.eps>
 to.pdf figs2/string.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/string-eps-converted-to.pdf, id=318, 299.1175pt x 63.23625pt>
+<figs2/string-eps-converted-to.pdf, id=326, 299.1175pt x 63.23625pt>
 File: figs2/string-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/string-eps-converted-to.pdf>
@@ -1214,7 +1214,7 @@ Package epstopdf Info: Source file: <figs2/arch3.eps>
 o.pdf figs2/arch3.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/arch3-eps-converted-to.pdf, id=367, 437.635pt x 243.91125pt>
+<figs2/arch3-eps-converted-to.pdf, id=375, 437.635pt x 243.91125pt>
 File: figs2/arch3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch3-eps-converted-to.pdf>
@@ -1235,7 +1235,7 @@ to.pdf figs2/handle.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/handle-eps-converted-to.pdf, id=374, 606.265pt x 307.1475pt>
+<figs2/handle-eps-converted-to.pdf, id=382, 606.265pt x 307.1475pt>
 File: figs2/handle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/handle-eps-converted-to.pdf>
@@ -1260,7 +1260,7 @@ o.pdf figs2/list1.eps>
 (epstopdf)             \includegraphics on input line 703.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/list1-eps-converted-to.pdf, id=443, 218.8175pt x 42.1575pt>
+<figs2/list1-eps-converted-to.pdf, id=451, 218.8175pt x 42.1575pt>
 File: figs2/list1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/list1-eps-converted-to.pdf>
@@ -1315,7 +1315,7 @@ Package epstopdf Info: Source file: <figs2/socket.eps>
 to.pdf figs2/socket.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/socket-eps-converted-to.pdf, id=606, 1032.85875pt x 476.78125pt>
+ <figs2/socket-eps-converted-to.pdf, id=614, 1032.85875pt x 476.78125pt>
 File: figs2/socket-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/socket-eps-converted-to.pdf>
@@ -1342,7 +1342,7 @@ Package epstopdf Info: Source file: <figs2/xml-tree.eps>
 d-to.pdf figs2/xml-tree.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/xml-tree-eps-converted-to.pdf, id=654, 916.42375pt x 381.425pt>
+<figs2/xml-tree-eps-converted-to.pdf, id=662, 916.42375pt x 381.425pt>
 File: figs2/xml-tree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/xml-tree-eps-converted-to.pdf>
@@ -1362,7 +1362,7 @@ pdf figs2/soa.eps>
 (epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/soa-eps-converted-to.pdf, id=681, 982.67125pt x 736.7525pt>
+<figs2/soa-eps-converted-to.pdf, id=689, 982.67125pt x 736.7525pt>
 File: figs2/soa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/soa-eps-converted-to.pdf>
@@ -1390,16 +1390,16 @@ Cap\'{\i }tulo 14.
 
 ]
 Package epstopdf Info: Source file: <figs2/relational.eps>
-(epstopdf)                    date: 2015-08-22 13:10:54
-(epstopdf)                    size: 30908 bytes
+(epstopdf)                    date: 2015-08-24 17:02:11
+(epstopdf)                    size: 30909 bytes
 (epstopdf)             Output file: <figs2/relational-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:29:03
-(epstopdf)                    size: 14701 bytes
+(epstopdf)                    date: 2015-08-25 09:03:52
+(epstopdf)                    size: 14703 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/relational-eps-conver
 ted-to.pdf figs2/relational.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/relational-eps-converted-to.pdf, id=719, 854.19125pt x 277.035pt>
+ <figs2/relational-eps-converted-to.pdf, id=727, 854.19125pt x 277.035pt>
 File: figs2/relational-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/relational-eps-converted-to.pdf>
@@ -1425,7 +1425,7 @@ Package epstopdf Info: Source file: <figs2/cursor.eps>
 to.pdf figs2/cursor.eps>
 (epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/cursor-eps-converted-to.pdf, id=730, 538.01pt x 308.15125pt>
+ <figs2/cursor-eps-converted-to.pdf, id=738, 538.01pt x 308.15125pt>
 File: figs2/cursor-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/cursor-eps-converted-to.pdf>
@@ -1445,7 +1445,7 @@ to.pdf figs2/tracks.eps>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/tracks-eps-converted-to.pdf, id=748, 448.67625pt x 244.915pt>
+<figs2/tracks-eps-converted-to.pdf, id=756, 448.67625pt x 244.915pt>
 File: figs2/tracks-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/tracks-eps-converted-to.pdf>
@@ -1507,7 +1507,7 @@ Package epstopdf Info: Source file: <figs2/twitter.eps>
 -to.pdf figs2/twitter.eps>
 (epstopdf)             \includegraphics on input line 816.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/twitter-eps-converted-to.pdf, id=783, 1021.8175pt x 644.4075pt>
+ <figs2/twitter-eps-converted-to.pdf, id=791, 1021.8175pt x 644.4075pt>
 File: figs2/twitter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/twitter-eps-converted-to.pdf>
@@ -1569,7 +1569,7 @@ Package epstopdf Info: Source file: <figs2/join.eps>
 (epstopdf)             \includegraphics on input line 1187.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/join-eps-converted-to.pdf, id=816, 916.42375pt x 631.35875pt>
+<figs2/join-eps-converted-to.pdf, id=824, 916.42375pt x 631.35875pt>
 File: figs2/join-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/join-eps-converted-to.pdf>
@@ -1598,7 +1598,7 @@ Package epstopdf Info: Source file: <figs2/google-map.eps>
 ted-to.pdf figs2/google-map.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/google-map-eps-converted-to.pdf, id=842, 947.54pt x 681.54625pt>
+<figs2/google-map-eps-converted-to.pdf, id=850, 947.54pt x 681.54625pt>
 File: figs2/google-map-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/google-map-eps-converted-to.pdf>
@@ -1618,7 +1618,7 @@ d-to.pdf figs2/pagerank.eps>
 (epstopdf)             \includegraphics on input line 165.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/pagerank-eps-converted-to.pdf, id=856, 641.39626pt x 498.86375pt>
+<figs2/pagerank-eps-converted-to.pdf, id=864, 641.39626pt x 498.86375pt>
 File: figs2/pagerank-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/pagerank-eps-converted-to.pdf>
@@ -1638,7 +1638,7 @@ ed-to.pdf figs2/wordcloud.eps>
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/wordcloud-eps-converted-to.pdf, id=866, 824.07875pt x 881.2925pt>
+<figs2/wordcloud-eps-converted-to.pdf, id=874, 824.07875pt x 881.2925pt>
 File: figs2/wordcloud-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/wordcloud-eps-converted-to.pdf>
@@ -1662,7 +1662,7 @@ Package epstopdf Info: Source file: <figs2/mailorg.eps>
 (epstopdf)             \includegraphics on input line 556.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/mailorg-eps-converted-to.pdf, id=883, 1230.5975pt x 687.56876pt>
+<figs2/mailorg-eps-converted-to.pdf, id=891, 1230.5975pt x 687.56876pt>
 File: figs2/mailorg-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/mailorg-eps-converted-to.pdf>
@@ -1777,9 +1777,9 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (258 pages, 1284297 bytes).
+Output written on book.pdf (258 pages, 1366260 bytes).
 PDF statistics:
- 1034 PDF objects out of 1200 (max. 8388607)
+ 1042 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
