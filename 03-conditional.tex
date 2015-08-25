@@ -107,8 +107,8 @@ True
 \end{verbatim}
 \afterverb
 %
-Esta flexibilidad puede ser útil, pero existen ciertas sutilezas en
-ello que pueden resultar confusas. Es posible que prefieras evitar usarlo de este modo
+Esta flexibilidad puede ser útil, pero existen ciertas sutilezas en este tipo de uso
+que pueden resultar confusas. Es posible que prefieras evitar usarlo de este modo
 hasta que estés bien seguro de lo que estás haciendo.
 
 \section{Ejecución condicional}
@@ -133,7 +133,7 @@ if x > 0 :
 \afterverb
 %
 La expresión booleana después de la sentencia {\tt if} recibe
-el nombre de {\bf condición}. La sentencia {\tt if} se termina
+el nombre de {\bf condición}. La sentencia {\tt if} se finaliza
 con un carácter de dos-puntos (:) y la(s) línea(s) que van detrás de
 la sentencia if van sangradas (llevan una tabulación o varios espacios en blanco al principio).
 
@@ -341,7 +341,7 @@ el usuario. También vimos lo poco seguro que podía llegar a ser hacer algo as�
 \beforeverb
 \begin{verbatim}
 >>> velocidad = raw_input(prompt)
-¿Cual.... es la velocidad aerodinámica de una golondrina sin carga?
+¿Cual.... es la velocidad de vuelo de una golondrina sin carga?
 ¿Te refieres a una golondrina africana o a una europea?
 >>> int(velocidad)
 ValueError: invalid literal for int()
@@ -369,8 +369,8 @@ desde grados Fahrenheit a grados Celsius:
 
 \beforeverb
 \begin{verbatim}
-inp = raw_input('Introduce la Temperatura Fahrenheit:')
-fahr = float(inp)
+ent = raw_input('Introduce la Temperatura Fahrenheit:')
+fahr = float(ent)
 cel = (fahr - 32.0) * 5.0 / 9.0
 print cel
 \end{verbatim}
@@ -382,14 +382,14 @@ fallará con un mensaje de error bastante antipático:
 \beforeverb
 \begin{verbatim}
 python fahren.py 
-Enter Fahrenheit Temperature:72
+Introduce la Temperatura Fahrenheit:72
 22.2222222222
 
 python fahren.py 
 Introduce la Temperatura Fahrenheit:fred
 Traceback (most recent call last):
   File "fahren.py", line 2, in <module>
-    fahr = float(inp)
+    fahr = float(ent)
 ValueError: invalid literal for float(): fred
 \end{verbatim}
 \afterverb
@@ -398,7 +398,7 @@ Existen estructuras de ejecución condicional dentro de
 Python para manejar este tipo de errores esperados e
 inesperados, llamadas ``try / except''. La idea de {\tt try}
 y {\tt except} es que si se sabe que cierta secuencia
-de instrucciones puede generar un problema, se pueden
+de instrucciones puede generar un problema, sea posible
 añadir ciertas sentencias para que sean ejecutadas en caso de error.
 Estas sentencias extras (el bloque except) serán ignoradas
 si no se produce ningún error.
@@ -411,9 +411,9 @@ Se puede reescribir nuestro conversor de temperaturas de esta forma:
 
 \beforeverb
 \begin{verbatim}
-inp = raw_input('Introduce la Temperatura Fahrenheit:')
+ent = raw_input('Introduce la Temperatura Fahrenheit:')
 try:
-    fahr = float(inp)
+    fahr = float(ent)
     cel = (fahr - 32.0) * 5.0 / 9.0
     print cel
 except:
@@ -426,8 +426,8 @@ Python comienza ejecutando la
 secuencia de sentencias del bloque
 {\tt try}. Si todo va bien,
 saltará el bloque {\tt except} y terminará.
-Si ocurre una excepción en el bloque {\tt try},
-Python saltará fuera del bloque {\tt try} y
+Si ocurre una excepción dentro del bloque {\tt try},
+Python saltará fuera de ese bloque y
 ejecutará la secuencia de sentencias en el bloque {\tt except}.
 
 \beforeverb
@@ -449,8 +449,8 @@ muestra un mensaje de error. En general,
 capturar una excepción te da la oportunidad de corregir el problema,
 volverlo a intentar, o al menos de terminar el programa con elegancia.
 
-\section{Evaluación en corto-circuito de expresiones lógicas}
-\index{corto circuito}
+\section{Evaluación en cortocircuito de expresiones lógicas}
+\index{cortocircuito}
 
 Cuando Python está procesando una expresión lógica, como
 {\tt x >= 2 and (x/y) > 2}, evalúa la expresión de
@@ -463,13 +463,13 @@ Cuando Python detecta que no se gana nada evaluando
 el resto de una expresión lógica, detiene su evaluación y no
 realiza el cálculo del resto de la expresión.
 Cuando la evaluación de una expresión lógica se detiene debido a que
-ya se conoce el valor final, esto es conocido como {\bf corto-circuitar}
+ya se conoce el valor final, esto es conocido como {\bf cortocircuitar}
 la evaluación.
 
 \index{guardián, patrón}
 \index{patrón!guardián}
 A pesar de que esto pueda parecer hilar demasiado fino, el funcionamiento
-en corto-circuito nos descubre una astuta técnica llamada el {\bf patrón guardián}.
+en cortocircuito nos descubre una ingeniosa técnica conocida como {\bf patrón guardián}.
 Considera la siguiente secuencia de código en el intérprete de Python:
 
 \beforeverb
@@ -496,7 +496,7 @@ El tercer cálculo ha fallado porque Python intentó evaluar {\tt (x/y)}
 e {\tt y} era cero, lo cual provoca un runtime error (error en tiempo de ejecución). Pero el segundo
 ejemplo \emph{no} falló, porque la primera parte de la expresión {\tt x >= 2}
 fue evaluada como {\tt falsa}, así que {\tt (x/y)} no llegó a ejecutarse
-debido a la regla del {\bf corto-circuito}, y no se produjo ningún error.
+debido a la regla del {\bf cortocircuito}, y no se produjo ningún error.
 
 Es posible construir las expresiones lógicas colocando estratégicamente una
 evaluación como {\bf guardián} justo antes de la evaluación que podría causar un error,
@@ -576,7 +576,7 @@ previo, a veces en alguna línea anterior.
 
 Ocurre lo mismo con los errores en tiempo de ejecución (runtime errors). Supón que estás tratando
 de calcular una relación señal-ruido en decibelios. La fórmula
-es $SNR_{db} = 10 \log_{10} (P_{senal} / P_{ruido})$. En Python,
+es $SNR_{db} = 10 \log_{10} (P_{señal} / P_{ruido})$. En Python,
 podrías escribir algo como esto:
 
 \beforeverb
@@ -642,7 +642,7 @@ de ramas alternativas.
 por tramos y detiene el proceso de evaluación debido a que ya
 conoce el valor final que va a tener el resultado
 sin necesidad de evaluar el resto de la expresión.
-\index{corto circuito}
+\index{cortocircuito}
 
 \item[cuerpo:] La secuencia de sentencias en el interior de una sentencia compuesta.
 \index{cuerpo}
@@ -660,7 +660,7 @@ booleanas: {\tt and}, {\tt or}, y {\tt not}.
 
 \item[patrón guardián:] Cuando construimos una expresión lógica
 con comparaciones adicionales
-para aprovecharnos del funcionamiento en corto-circuito.
+para aprovecharnos del funcionamiento en cortocircuito.
 \index{guardián, patrón}
 \index{patrón!guardián}
 

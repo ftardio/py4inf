@@ -517,9 +517,9 @@ el valor de retorno a {\tt int} usando la función {\tt int()}:
 
 \beforeverb
 \begin{verbatim}
->>> prompt = '¿Cual.... es la velocidad en vuelo de una golondrina sin carga?\n'
+>>> prompt = '¿Cual.... es la velocidad de vuelo de una golondrina sin carga?\n'
 >>> velocidad = raw_input(prompt)
-¿Cual.... es la velocidad en vuelo de una golondrina sin carga?
+¿Cual.... es la velocidad de vuelo de una golondrina sin carga?
 17
 >>> int(velocidad)
 17
@@ -534,7 +534,7 @@ obtendrás un error:
 \beforeverb
 \begin{verbatim}
 >>> velocidad = raw_input(prompt)
-¿Cual.... es la velocidad en vuelo de una golondrina sin carga?
+¿Cual.... es la velocidad de vuelo de una golondrina sin carga?
 ¿Te refieres a una golondrina africana o a una europea?
 >>> int(velocidad)
 ValueError: invalid literal for int()
@@ -882,7 +882,7 @@ Salario: 96.25
 \end{ex}
 %
 Por ahora no es necesario preocuparse de que nuestro salario tenga exactamente dos
-dígitos después del punto decimal. Si quieres, puedes probar la función integrada en Python
+dígitos después del punto decimal. Si quieres, puedes probar la función interna de Python
 {\tt round} para redondear de forma adecuada el salario resultante
 a dos dígitos decimales.
 

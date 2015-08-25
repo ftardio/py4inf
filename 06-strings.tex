@@ -40,7 +40,7 @@ a
 \afterverb
 %
 Para la mayoría de la gente, la primera letra de \verb"'banana'" es {\tt b}, no
-{\tt a}. Pero en Python, el índice es un seguimiento desde el
+{\tt a}. Pero en \mbox{Python}, el índice es un seguimiento desde el
 comienzo de la cadena, y el seguimiento para la primera letra es cero.
 
 \beforeverb
@@ -82,7 +82,7 @@ TypeError: string indices must be integers
 \index{len, función}
 \index{función!len}
 
-{\tt len} es una función incorporada que devuelve el número de caracteres
+{\tt len} es una función interna que devuelve el número de caracteres
 de una cadena:
 
 \beforeverb
@@ -122,7 +122,7 @@ a
 %
 Alternativamente, se pueden usar índices negativos, que cuentan hacia atrás desde
 el final de la cadena. La expresión {\tt fruta[-1]} recoge la última
-letra, {\tt fruit[-2]} extrae la segunda desde el final, y así todas las demás.
+letra, {\tt fruta[-2]} extrae la segunda desde el final, y así todas las demás.
 
 \index{índice!negativo}
 \index{negativo, índice}
@@ -141,12 +141,12 @@ letra, {\tt fruit[-2]} extrae la segunda desde el final, y así todas las demás
 Gran parte de los cálculos implican procesar una cadena carácter por
 carácter. A menudo se empieza por el principio, se van seleccionando caracteres
 de uno en uno, se hace algo con ellos, y se continúa hasta el final. Este modelo
-de procesamiento recibe el nombre de {\bf recorrido}. Una forma de escribir un recorrido
+de procesado recibe el nombre de {\bf recorrido}. Una forma de escribir un recorrido
 es usar un bucle {\tt while}:
 
 \beforeverb
 \begin{verbatim}
-index = 0
+indice = 0
 while indice < len(fruta):
     letra = fruta[indice]
     print letra
@@ -176,7 +176,7 @@ for car in fruta:
 \end{verbatim}
 \afterverb
 %
-Cada vez que se atraviesa el bucle, el carácter siguiente de la cadena es asignado
+Cada vez que se recorre el bucle, el carácter siguiente de la cadena es asignado
 a la variable {\tt car}. El bucle continúa hasta que no quedan caracteres.
 
 
@@ -268,8 +268,8 @@ TypeError: object does not support item assignment
 \afterverb
 %
 Error de tipado: El objeto no soporta la asignación del elemento.
-El ``object (objeto)'' en este caso es la cadena y el ``item (elemento)'' es
-el carácter que intentabas asignar. Por ahora, un {\bf objeto} es
+El ``object'' (objeto) en este caso es la cadena y el ``item'' (elemento) es
+el carácter que intentabas asignar. Por ahora, consideraremos que un {\bf objeto} es
 lo mismo que un valor, aunque mejoraremos esa definición más adelante.
 Un {\bf elemento} es uno de los valores en una secuencia.
 
@@ -439,7 +439,7 @@ capitalize(...)
 %
 
 A pesar de que la función {\tt dir} lista los métodos, y de que
-puedes usar {\tt help} para obtener un poco de documentación sobre
+puedes usar {\tt help} para obtener un poco de información sobre
 cada método, una fuente de documentación mejor para los métodos de las cadenas
 se puede encontrar en
 \url{https://docs.python.org/2/library/stdtypes.html#string-methods}.
@@ -600,13 +600,13 @@ buscando.
 \beforeverb
 \begin{verbatim}
 >>> datos = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
->>> posarroba = datos.find('@')
->>> print posarroba
+>>> pos_arroba = datos.find('@')
+>>> print pos_arroba
 21
->>> posesp = datos.find(' ',posarroba)
->>> print posesp
+>>> pos_esp = datos.find(' ',pos_arroba)
+>>> print pos_esp
 31
->>> host = data[posarroba+1:posesp]
+>>> host = data[pos_arroba+1:pos_esp]
 >>> print host
 uct.ac.za
 >>> 
@@ -616,7 +616,7 @@ uct.ac.za
 Usamos la versión del método {\tt find} que nos permite especificar
 una posición en la cadena desde la cual queremos que {\tt find} empiece a buscar.
 Cuando rebanamos, extraemos los caracteres
-desde ``uno más allá de la arroba hasta, \emph{pero no incluyendo}, el
+desde ``uno más allá de la arroba hasta (\emph{pero no incluyendo}) el
 carácter espacio''.
 
 La documentación para el método {\tt find} está disponible en 
@@ -848,6 +848,7 @@ los elementos de la tupla formateados como se especifica en la cadena de formato
 
 \item[rebanada (slice):] Una parte de una cadena especificada por un rango de índices.
 \index{rebanado}
+\index{slice}
 
 \item[recorrido:] Iterar a través de los elementos de una secuencia,
 realizando un operación similar en cada uno de ellos.

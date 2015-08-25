@@ -47,10 +47,10 @@ normalmente mediante una simple asignación:
 \afterverb
 %
 Actualizar una variable añadiéndole 1 se denomina {\bf incrementar};
-restarle 1 recibe el nombre de {\bf decrementar}.
+restarle 1 recibe el nombre de {\bf decrementar} (o disminuir).
 
-\index{incremento}
-\index{decremento}
+\index{incrementar}
+\index{decrementar}
 
 \section{La sentencia {\tt while}}
 
@@ -67,7 +67,7 @@ Dado que esa interacción es muy común, Python proporciona varias
 características en su lenguaje para hacerlo más sencillo.
 
 Una forma de iteración en Python es la sentencia {\tt while}. He aquí un
-programa sencillo que cuenta atrás desde cinco y luego dice ``¡Despegue!''.
+programa sencillo que cuenta hacia atrás desde cinco y luego dice ``¡Despegue!''.
 
 \beforeverb
 \begin{verbatim}
@@ -168,21 +168,21 @@ ya que la expresión lógica al principio del bucle
 es siempre cierta, en virtud del hecho de que esa expresión es
 precisamente el valor constante {\tt True}.
  
-A pesar de que en este caso se trata de un bucle infinito inútil, se puede usar ese modelo
+A pesar de que en este caso se trata de un bucle infinito inútil, se puede usar ese diseño
 para construir bucles útiles, siempre que se tenga la precaución de añadir código
 en el cuerpo del bucle para salir explícitamente, usando {\tt break}
 cuando se haya alcanzado la condición de salida.
 
-Por ejemplo, supón que quieres recoger entradas del usuario hasta que
+Por ejemplo, supón que quieres recoger entradas de texto del usuario hasta que
 éste escriba {\tt fin}. Podrías escribir:
 
 \beforeverb
 \begin{verbatim}
 while True:
-    line = raw_input('> ')
-    if line == 'fin':
+    linea = raw_input('> ')
+    if linea == 'fin':
         break
-    print line
+    print linea
 print '¡Terminado!'
 \end{verbatim}
 \afterverb
@@ -229,12 +229,12 @@ como líneas que no deben mostrarse en pantalla (algo parecido a lo que hace Pyt
 \beforeverb
 \begin{verbatim}
 while True:
-    line = raw_input('> ')
-    if line[0] == '#' :
+    linea = raw_input('> ')
+    if linea[0] == '#' :
         continue
-    if line == 'fin':
+    if linea == 'fin':
         break
-    print line
+    print linea
 print '¡Terminado!'
 \end{verbatim}
 \afterverb
@@ -318,7 +318,7 @@ En particular, {\tt amigo} es la {\bf variable de iteración} para
 el bucle for. La variable {\tt amigo} cambia para cada iteración del
 bucle y controla cuándo se termina el bucle {\tt for}. La
 {\bf variable de iteracion} se desplaza sucesivamente a través de
-las tres cadenas almacenadas en la variable {\tt friends}.
+las tres cadenas almacenadas en la variable {\tt amigos}.
 
 
 \section{Diseños de bucles}
@@ -334,7 +334,7 @@ Los bucles generalmente se construyen así:
 \item Se inicializan una o más variables antes de que el bucle comience
 
 \item Se realiza algún cálculo con cada elemento en el cuerpo del bucle,
-posiblemente cambiando las variables en ese cuerpo.
+posiblemente cambiando las variables dentro de ese cuerpo.
 
 \item Se revisan las variables resultantes cuando el bucle se completa
 
@@ -390,7 +390,7 @@ En vez de añadir simplemente uno a {\tt contador} como en el bucle previo,
 ahora durante cada iteración del bucle añadimos el número actual (3, 41, 12, etc.)
 al total en ese momento.
 Si piensas en la variable {\tt total}, ésta contiene la
-``suma parcial de valores hasta el momento''. Así que antes de que el bucle
+``suma parcial de valores hasta ese momento''. Así que antes de que el bucle
 comience, {\tt total} es cero, porque aún no se ha examinado ningún valor.
 Durante el bucle, {\tt total} es la suma parcial, y al final del bucle,
 {\tt total} es la suma total definitiva de todos los valores
@@ -402,7 +402,7 @@ una variable que se usa de este modo recibe a veces el nombre de
 \index{acumulador!sum}
 
 Ni el bucle que cuenta los elementos ni el que los suma resultan particularmente
-útiles en la práctica, dado que existen las funciones incorporadas
+útiles en la práctica, dado que existen las funciones internas
 {\tt len()} y {\tt sum()} que cuentan el número de elementos
 de una lista y el total de elementos en la misma
 respectivamente.
@@ -445,7 +445,7 @@ Mayor: 74
 \afterverb
 %
 Debemos pensar en la variable {\tt mayor} como
-el ``mayor valor visto hasta el momento''.
+el ``mayor valor visto hasta ese momento''.
 Antes del bucle, asignamos a {\tt mayor} el valor {\tt None}.
 {\tt None} es un valor constante especial que se puede
 almacenar en una variable para indicar
@@ -461,13 +461,13 @@ mientras que {\tt mayor} es {\tt None}, inmediatamente
 
 Tras la primera iteración, {\tt mayor} ya no es {\tt None},
 así que la segunda parte de la expresión lógica compuesta que comprueba
-si {\tt valor > mayor} se activará sólo cuando encontramos un valor que es
-mayor que el ``mayor hasta el momento''. Cuando encontramos un nuevo valor ``mayor aún'',
+si {\tt valor > mayor} se activará sólo cuando encontremos un valor que es
+mayor que el ``mayor hasta ese momento''. Cuando encontramos un nuevo valor ``mayor aún'',
 tomamos ese nuevo valor para {\tt mayor}. Se puede ver en la salida
 del programa que {\tt mayor} pasa desde 3 a 41 y luego a 74.
 
 Al final del bucle, se habrán revisado todos los valores y la
-variable {\tt mayor} contendrá entonces el valor mayor de
+variable {\tt mayor} contendrá entonces el mayor valor de
 la lista.
 
 Para calcular el número más pequeño, el código es muy similar con un
@@ -489,11 +489,11 @@ De nuevo, {\tt menor} es el ``menor hasta ese momento'' antes, durante y despué
 que el bucle se ejecute. Cuando el bucle se ha completado, {\tt menor} contendrá
 el mínimo valor de la lista
 
-También como en el caso del número de elementos y de la suma, las funciones incorporadas
+También como en el caso del número de elementos y de la suma, las funciones internas
 {\tt max()} y {\tt min()} convierten la escritura de este tipo de bucles
 en innecesaria.
 
-Lo siguiente es una versión simple de la función incorporada de Python
+Lo siguiente es una versión simple de la función interna de Python
 {\tt min()}:
 
 \beforeverb
@@ -509,12 +509,12 @@ def min(valores):
 %
 En esta versión de la función para calcular el mínimo, hemos eliminado las
 sentencias {\tt print}, de modo que sea equivalente a la función {\tt min},
-que ya está incorporada a Python.
+que ya está incorporada dentro de Python.
 
 \section{Depuración}
 \index{depuración}
 
-Según vayas escribiendo programas más grandes, puede que te des cuenta que vas necesitando
+A medida que vayas escribiendo programas más grandes, puede que notes que vas necesitando
 emplear cada vez más tiempo en depurarlos. Más código significa más oportunidades de
 cometer un error y más lugares para que los bugs puedan esconderse.
 

@@ -34,9 +34,9 @@ un resultado. El resultado se llama {\bf valor de retorno}.
 \index{argumento}
 \index{valor de retorno}
 
-\section{Funciones incorporadas}
+\section{Funciones internas}
 
-Python proporciona un número importante de funciones incorporadas, que
+Python proporciona un número importante de funciones internas, que
 pueden ser usadas sin necesidad de tener que definirlas previamente.
 Los creadores de Python han escrito un conjunto de funciones
 para resolver problemas comunes y las han incluido en Python para que las podamos utilizar.
@@ -75,7 +75,7 @@ que hay en la cadena.
 Estas funciones no se limitan a buscar en cadenas. Pueden operar con
 cualquier conjunto de valores, como veremos en los siguientes capítulos.
 
-Se deben tratar los nombres de las funciones incorporadas como si fueran palabras reservadas
+Se deben tratar los nombres de las funciones internas como si fueran palabras reservadas
 (es decir, evita usar ``max'' como nombre para una variable).
 
 \section{Funciones de conversión de tipos}
@@ -90,7 +90,7 @@ Se deben tratar los nombres de las funciones incorporadas como si fueran palabra
 % están en la lista de ``funciones incorporadas'', de modo que estoy dispuesto
 % a llamarlas funciones.
 
-Python también proporciona funciones incorporadas que convierten valores
+Python también proporciona funciones internas que convierten valores
 de un tipo a otro. La función {\tt int} toma cualquier valor y
 lo convierte en un entero si puede, o se queja si no puede:
 
@@ -260,7 +260,7 @@ Gausiana, exponencial, gamma, y unas cuantas más.
 \index{módulo}
 \index{módulo, objeto}
 
-Python tienen un módulo {\tt matemático (math)}, que proporciona la mayoría
+Python tiene un módulo  matemático {\tt (math)}, que proporciona la mayoría
 de las funciones matemáticas habituales.
 Antes de que se pueda utilizar el módulo, hay que importarlo:
 
@@ -362,18 +362,18 @@ He aquí un ejemplo:
 
 \beforeverb
 \begin{verbatim}
-def print_lyrics():
+def muestra_estribillo():
     print "Soy un leñador, qué alegría."
     print 'Duermo toda la noche y trabajo todo el día.'
 \end{verbatim}
 \afterverb
 %
 {\tt def} es una palabra clave que indica que se trata de una definición
-de función. El nombre de la función es \verb"print_lyrics". Las
+de función. El nombre de la función es \verb"muestra_estribillo". Las
 reglas para los nombres de las funciones son los mismos que para las variables:
 se pueden usar letras, números y algunos signos de puntuación, pero el primer carácter
-no puede ser un número. No se pueden usar una palabra clave como nombre de una función,
-y se debería evitar tener una variable y una función con el mismo
+no puede ser un número. No se puede usar una palabra clave como nombre de una función,
+y se debería evitar también tener una variable y una función con el mismo
 nombre.
 
 \index{def, palabra clave}
@@ -409,7 +409,7 @@ no está completa:
 
 \beforeverb
 \begin{verbatim}
->>> def print_lyrics():
+>>> def muestra_estribillo():
 ...     print "Soy un leñador, qué alegría."
 ...     print 'Duermo toda la noche y trabajo todo el día.'
 ...
@@ -423,25 +423,25 @@ Al definir una función se crea una variable con el mismo nombre.
 
 \beforeverb
 \begin{verbatim}
->>> print print_lyrics
-<function print_lyrics at 0xb7e99e9c>
->>> print type(print_lyrics)
+>>> print muestra_estribillo
+<function muestra_estribillo at 0xb7e99e9c>
+>>> print type(muestra_estribillo)
 <type 'function'>
 \end{verbatim}
 \afterverb
 %
-El valor de \verb"print_lyrics" es {\bf function object (objeto función)}, que
+El valor de \verb"muestra_estribillo" es {\bf function object} (objeto función), que
 tiene como tipo \verb"'function'".
 
 \index{función, objeto}
 \index{objeto!función}
 
 La sintaxis para llamar a la nueva función es la misma que
-la de las funciones incorporadas:
+la de las funciones internas:
 
 \beforeverb
 \begin{verbatim}
->>> print_lyrics()
+>>> muestra_estribillo()
 Soy un leñador, qué alegría.
 Duermo toda la noche y trabajo todo el día.
 \end{verbatim}
@@ -449,21 +449,21 @@ Duermo toda la noche y trabajo todo el día.
 %
 Una vez que se ha definido una función, puede usarse dentro de otra.
 Por ejemplo, para repetir el estribillo anterior, podríamos escribir
-una función llamada \verb"repeat_lyrics":
+una función llamada \verb"repite_estribillo":
 
 \beforeverb
 \begin{verbatim}
-def repeat_lyrics():
-    print_lyrics()
-    print_lyrics()
+def repite_estribillo():
+    muestra_estribillo()
+    muestra_estribillo()
 \end{verbatim}
 \afterverb
 %
-Y después llamar a \verb"repeat_lyrics":
+Y después llamar a \verb"repite_estribillo":
 
 \beforeverb
 \begin{verbatim}
->>> repeat_lyrics()
+>>> repite_estribillo()
 Soy un leñador, qué alegría.
 Duermo toda la noche y trabajo todo el día.
 Soy un leñador, qué alegría.
@@ -481,23 +481,23 @@ programa completo sería algo esto:
 
 \beforeverb
 \begin{verbatim}
-def print_lyrics():
+def muestra_estribillo():
     print "Soy un leñador, que alegría."
     print 'Duermo toda la noche y trabajo todo el día.'
 
-def repeat_lyrics():
-    print_lyrics()
-    print_lyrics()
+def repite_estribillo():
+    muestra_estribillo()
+    muestra_estribillo()
 
-repeat_lyrics()
+repite_estribillo()
 \end{verbatim}
 \afterverb
 %
-Este programa contiene dos definiciones de funciones: \verb"print_lyrics" y
-\verb"repeat_lyrics". Las definiciones de funciones son ejecutadas exactamente
-igual que cualquier otra sentencia, pero lo que se consigue es crear objetos del tipo función. Las
-sentencias dentro de esa función no se ejecutarán hasta que no se llame a la función,
-y la definición de la función no genera ninguna salida.
+Este programa contiene dos definiciones de funciones: \verb"muestra_estribillo" y
+\verb"repite_estribillo". Las definiciones de funciones son ejecutadas exactamente
+igual que cualquier otra sentencia, pero su resultado consiste en crear objetos del tipo función. Las
+sentencias dentro de cada función son ejecutadas solamente cuando se llama a esa función,
+y la definición de una función no genera ninguna salida.
 
 \index{use before def}
 
@@ -515,8 +515,8 @@ de error obtienes.
 
 \begin{ex}
 Mueve la llamada de la función de nuevo hacia el final,
-y coloca la definición de \verb"print_lyrics" después de la definición
-de \verb"repeat_lyrics". ¿Qué ocurre cuando haces funcionar este programa?
+y coloca la definición de \verb"muestra_estribillo" después de la definición
+de \verb"repite_estribillo". ¿Qué ocurre cuando haces funcionar ese programa?
 \end{ex}
 
 
@@ -543,9 +543,9 @@ Esto parece bastante simple, hasta que uno recuerda que una función puede
 llamar a otra. Cuando está en medio de una función, el programa puede
 tener que ejecutar las sentencias de otra función. Pero cuando
 está ejecutando esa nueva función, ¡tal vez haya que ejecutar
-otra función más todavía!
+más funciones todavía!
 
-Afortunadamente, Python es hábil llevando el seguimiento de dónde se encuentra en cada momento, de modo
+Afortunadamente, Python es capaz de llevar el seguimiento de dónde se encuentra en cada momento, de modo
 que cada vez que completa la ejecución de una función, el programa vuelve al punto donde lo dejó
 en la función que había llamado a esa. Cuando esto le lleva hasta el final del programa,
 simplemente termina.
@@ -561,7 +561,7 @@ sentido seguir el flujo de la ejecución.
 \index{argumento}
 \index{argumento de función}
 
-Algunas de las funciones incorporadas que hemos visto necesitan argumentos. Por
+Algunas de las funciones internas que hemos visto necesitan argumentos. Por
 ejemplo, cuando se llama a {\tt math.sin}, se le pasa un número
 como argumento. Algunas funciones necesitan más de un argumento:
 {\tt math.pow} toma dos, la base y el exponente.
@@ -574,7 +574,7 @@ de una función definida por el usuario que recibe un argumento:
 
 \beforeverb
 \begin{verbatim}
-def print_twice(bruce):
+def muestra_dos_veces(bruce):
     print bruce
     print bruce
 \end{verbatim}
@@ -588,30 +588,30 @@ Esta función funciona con cualquier valor que pueda ser mostrado en pantalla.
 
 \beforeverb
 \begin{verbatim}
->>> print_twice('Spam')
+>>> muestra_dos_veces('Spam')
 Spam
 Spam
->>> print_twice(17)
+>>> muestra_dos_veces(17)
 17
 17
->>> print_twice(math.pi)
+>>> muestra_dos_veces(math.pi)
 3.14159265359
 3.14159265359
 \end{verbatim}
 \afterverb
 %
-Las mismas reglas de composición que se aplican a las funciones incorporadas, también
+Las mismas reglas de composición que se aplican a las funciones internas, también
 se aplican a las funciones definidas por el usuario, de modo que podemos usar cualquier tipo
-de expresión como argumento para \verb"print_twice":
+de expresión como argumento para \verb"muestra_dos_veces":
 
 \index{composición}
 
 \beforeverb
 \begin{verbatim}
->>> print_twice('Spam '*4)
+>>> muestra_dos_veces('Spam '*4)
 Spam Spam Spam Spam
 Spam Spam Spam Spam
->>> print_twice(math.cos(math.pi))
+>>> muestra_dos_veces(math.cos(math.pi))
 -1.0
 -1.0
 \end{verbatim}
@@ -628,7 +628,7 @@ También se puede usar una variable como argumento:
 \beforeverb
 \begin{verbatim}
 >>> michael = 'Eric, la medio-abeja.'
->>> print_twice(michael)
+>>> muestra_dos_veces(michael)
 Eric, la medio-abeja.
 Eric, la medio-abeja.
 \end{verbatim}
@@ -636,30 +636,30 @@ Eric, la medio-abeja.
 %
 El nombre de la variable que pasamos como argumento, ({\tt michael}) no
 tiene nada que ver con el nombre del parámetro ({\tt bruce}). No
-importa cómo se haya llamado al valor en casa (en la llamada);
-dentro de \verb"print_twice", siempre se llamará {\tt bruce}.
+importa cómo se haya llamado al valor en origen (en la llamada);
+dentro de \verb"muestra_dos_veces", siempre se llamará {\tt bruce}.
 
-\section{Funciones fructíferas y funciones huecas}
+\section{Funciones productivas y funciones estériles}
 
-\index{fructífera, función}
-\index{hueca, función}
-\index{función fructífera}
-\index{función hueca} 
+\index{productiva, función}
+\index{esteril, función}
+\index{función productiva}
+\index{función esteril} 
 
 Algunas de las funciones que estamos usando, como las matemáticas, producen
-resultados; a falta de un nombre mejor, las llamaremos {\bf funciones fructíferas (fruitful functions)}.
-Otras funciones, como \verb"print_twice", realizan una
+resultados; a falta de un nombre mejor, las llamaremos {\bf funciones fructíferas} (fruitful functions).
+Otras funciones, como \verb"muestra_dos_veces", realizan una
 acción, pero no devuelven un valor. A esas las llamaremos {\bf funciones
-huecas (void functions)}.
+estériles} (void functions).
 
-Cuando llamas a una función fructífera, casi siempre
+Cuando llamas a una función productiva, casi siempre
 querrás hacer luego algo con el resultado; por ejemplo, puede
 que quieras asignarlo a una variable o usarlo como parte de una expresión:
 
 \beforeverb
 \begin{verbatim}
 x = math.cos(radians)
-golden = (math.sqrt(5) + 1) / 2
+aurea = (math.sqrt(5) + 1) / 2
 \end{verbatim}
 \afterverb
 %
@@ -673,7 +673,7 @@ el resultado:
 \end{verbatim}
 \afterverb
 %
-Pero en un script, si llamas a una función fructífera y no
+Pero en un script, si llamas a una función productiva y no
 almacenas el resultado de la misma en una variable,
 ¡el valor de retorno se desvanece en la niebla!
 
@@ -689,10 +689,10 @@ el resultado en una variable ni lo muestra, no resulta en realidad muy útil.
 \index{interactivo, modo}
 \index{script, modo}
 
-Las funciones huecas pueden mostrar algo en la pantalla o tener cualquier
+Las funciones estériles pueden mostrar algo en la pantalla o tener cualquier
 otro efecto, pero no devuelven un valor. Si intentas asignar
 el resultado a una variable, obtendrás un valor especial llamado
-{\tt None (nada)}.
+{\tt None} (nada).
 
 \index{None, valor especial}
 \index{valor especial!None}
@@ -752,11 +752,11 @@ un programa en funciones. Existen varias razones:
 \begin{itemize}
 
 \item El crear una función nueva te da oportunidad de dar nombre a un grupo
-de sentencias, lo cual hace tu programa más fácil de leer, entender,
+de sentencias, lo cual hace a tu programa más fácil de leer, entender,
 y depurar.
 
 \item Las funciones pueden hacer un programa más pequeño, al eliminar código
-repetido. Además, si quieres hacer cualquier cambio más tarde, sólo tendrás
+repetido. Además, si quieres realizar cualquier cambio en el futuro, sólo tendrás
 que hacerlo en un único lugar.
 
 \item Dividir un programa largo en funciones te permite depurar las
@@ -773,7 +773,7 @@ tener una función que capture correctamente una idea, como ``encontrar el valor
 más pequeño en una lista de valores''. Más adelante te mostraremos el código para
 encontrar el valor más pequeño de una lista de valores y te lo presentaremos como
 una función llamada {\tt min}, que toma una lista de valores como argumento y
-devuelve el valor menor de esa lista.
+devuelve el menor valor de esa lista.
 
 
 \section{Depuración}
@@ -798,11 +798,11 @@ En ese caso, el programa que estás viendo en el editor de texto
 puede no ser el mismo que estás ejecutando en realidad.
 
 ¡La depuración puede llevar mucho tiempo si estás haciendo funcionar el
-mismo programa erróneo una y otra vez!
+mismo programa con errores una y otra vez!
 
 Asegúrate que el código que estás examinando es el mismo que estás ejecutando.
 Si no estás seguro, pon algo como \verb"print 'hola'" al principio
-del programa y hazlo funcionar de nuevo. Si no ves \verb"print 'hola" en la
+del programa y hazlo funcionar de nuevo. Si no ves \verb"hola" en la
 pantalla, ¡es que no estás ejecutando el programa correcto!
 
 
@@ -839,13 +839,13 @@ operación útil. Las funciones pueden tomar argumentos o no, y pueden
 producir un resultado o no.
 \index{función}
 
-\item[función fructífera (fruitful function):] Una función que devuelve un valor.
-\index{fructífera, función}
+\item[función productiva (fruitful function):] Una función que devuelve un valor.
+\index{productiva, función}
 
-\item[función hueca (void function):] Una función que no devuelve ningún valor.
-\index{hueca, función}
+\item[función estéril (void function):] Una función que no devuelve ningún valor.
+\index{estéril, función}
 
-\item[flujo de ejecución:] El orden en el cual las sentencias son ejecutadas durante
+\item[flujo de ejecución:] El orden en el cual se ejecutan las sentencias durante
 el funcionamiento de un programa.
 \index{flujo de ejecución}
 
@@ -890,11 +890,11 @@ es usada como una expresión, el valor de retorno es el valor de la expresión.
 \section{Ejercicios}
 
 \begin{ex}
-¿Cuál es la utilidad de la palabra clave "def" en Python?
+¿Cuál es la utilidad de la palabra clave ``def'' en Python?
 
-a) Es una jerga que significa "este código es realmente estupendo"\\
+a) Es una jerga que significa ``este código es realmente estupendo''\\
 b) Indica el comienzo de una función\\
-c) Indica que la siguiente sección de código sangrada debe ser almacenada para usarla más tarde\\
+c) Indica que la siguiente sección de código sangrado debe ser almacenada para usarla más tarde\\
 d) b y c son correctas ambas\\
 e) Ninguna de las anteriores
 \end{ex}
@@ -925,7 +925,7 @@ e) Zap Zap Zap
 
 \begin{ex}
 Reescribe el programa de cálculo del salario, con tarifa-y-media para las horas extras,
-y crea una función llamada {\tt calculosalario} que tome
+y crea una función llamada {\tt calculo_salario} que tome
 dos parámetros ({\tt horas} y {\tt tarifa}).
 
 \begin{verbatim}
@@ -937,7 +937,7 @@ Salario: 475.0
 
 \begin{ex}
 Reescribe el programa de calificaciones del capítulo anterior
-usando una función llamada {\tt calculacalificacion}, que tome
+usando una función llamada {\tt calcula_calificacion}, que tome
 una puntuación como parámetro y devuelva una calificación como cadena.
 
 \begin{verbatim}
