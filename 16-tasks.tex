@@ -18,7 +18,7 @@ sobre cientos o miles de ficheros
 distribuidos a lo largo de un arbol de directorios o incluso por todo el ordenador.
 
 Para movernos a través de todos los directorios y archivos de un árbol usaremos
-{\tt os.walk} y un bucle {\tt for}. Es similar a cómo
+{\tt os.walk} y un bucle {\tt for}. Es similar al modo en el que
 {\tt open} nos permite usar un bucle para leer el contenido de un archivo,
 {\tt socket} nos permite usar un bucle para leer el contenido de una conexión de red, y
 {\tt urllib} nos permite abrir un documento web y movernos a través de su contenido. 
@@ -31,7 +31,7 @@ Para movernos a través de todos los directorios y archivos de un árbol usaremo
 \index{directorio}
 \index{carpeta}
 
-Cada programa en ejecución tiene su propio ``directorio actual'', que es el directorio que
+Cada programa en ejecución tiene su propio ``directorio actual'' ({\tt current directory}), que es el directorio que
 usará por defecto para la mayoría de las operaciones. Por ejemplo, cuando abres un archivo
 en modo lectura, Python lo busca en el directorio actual.
 
@@ -39,8 +39,7 @@ en modo lectura, Python lo busca en el directorio actual.
 \index{módulo!os}
 
 El módulo {\tt os} proporciona funciones para trabajar con archivos y
-directorios ({\tt os} significa ``Sistema Operativo''\footnote{en inglés, ``operating system''
-(Nota del trad.)}).
+directorios ({\tt os} significa ``Operating System'' (Sistema Operativo).
 {\tt os.getcwd} devuelve el nombre del directorio actual:
 
 \index{getcwd, función}
@@ -55,9 +54,8 @@ directorios ({\tt os} significa ``Sistema Operativo''\footnote{en inglés, ``ope
 \end{verbatim}
 \afterverb
 %
-{\tt cwd} significa {\bf directorio de trabajo actual}\footnote{en inglés, ``current working
-directory'' (Nota del trad.)}. El resultado en
-este ejemplo es {\tt /Users/csev}, que es el directorio home para un
+{\tt cwd} significa {\bf current working directory} (directorio de trabajo actual). El resultado en
+este ejemplo es {\tt /Users/csev}, que es el directorio de partida ({\tt home}) para un
 usuario llamado {\tt csev}.
 
 \index{trabajo, directorio de}
@@ -149,7 +147,7 @@ según iba cambiando de teléfono móvil, a veces mi código para extraer el tex
 fallaba y añadía un montón de datos inútiles al servidor en lugar de la descripción.
 
 Quería moverme a través de esos ficheros y averiguar cuáles de los
-textos eran realmente descripciones y cuales eran basura, para poder eliminar
+textos eran realmente descripciones y cuáles eran simplemente basura, para poder eliminar
 los ficheros erróneos. Lo primero que hice fue generar un sencillo inventario de
 cuántos archivos de texto tenía en uno de los subdirectorios,
 usando el programa siguiente:
@@ -185,14 +183,14 @@ porque podemos contar con que {\tt os.walk} terminará visitando cada
 uno de ellos. Pero sí que tendremos que fijarnos en cada fichero, de
 modo que usamos un sencillo bucle {\tt for} para examinar cada uno de los archivos
 en el directorio actual. Verificamos cada fichero para comprobar si
-termina por ``.txt'', y luego contamos el número de
+termina por ``.txt'', y así contamos el número de
 ficheros en todo el árbol de directorios que terminan con ese
 sufijo.
 
 Una vez que tenemos una noción acerca de cuántos archivos terminan por ``.txt'', lo
 siguiente es intentar determinar automáticamente
 desde Python qué ficheros son incorrectos y cuáles están bien.
-De modo que escribiremos un programa sencillo para imprimir en pantalla los
+De modo que escribimos un programa sencillo para imprimir en pantalla los
 nombres de los ficheros y el tamaño de cada uno:
 
 \beforeverb
@@ -244,9 +242,9 @@ python txtsize.py
 \afterverb
 %
 Si observamos la salida, nos damos cuenta de que algunos ficheros son demasiado pequeños y
-otros muchos son demasiado grandes y tienen siempre el mismo tamaño (2578 y 2565).
+muchos otros son demasiado grandes y tienen siempre el mismo tamaño (2578 y 2565).
 Cuando examinamos manualmente algunos de esos ficheros grandes,
-descubrimos que no son nada más que un montón genérico de HTML idéntico, que llega
+descubrimos que no son nada más que un montón genérico de HTML idéntico, que ha entrado
 desde el correo enviado al sistema por mi teléfono T-Mobile:
 
 \beforeverb
@@ -318,7 +316,7 @@ python txtcheck.py
 \end{verbatim}
 \afterverb
 %
-Pero existe aún un tipo de ficheros molesto:
+Pero existe aún un tipo de fichero molesto:
 hay algunos archivos con tres líneas que se han
 colado entre mis datos y que contienen
 dos líneas en blanco seguidas por una línea que dice
@@ -411,9 +409,9 @@ iPhone: ./2007/09/19-09-07_124857_01.txt
 %
 Podemos ir revisando estos ficheros para asegurarnos de que no hemos
 introducido un error en el programa de forma inadvertida, o de que quizás
-nuestra lógica captura algún fichero que no debiera capturar.
+nuestra lógica captura algún fichero que no queramos que tome.
 
-Una vez hemos comprobado que esta es la lista de los archivos que queremos eliminar,
+Una vez hemos comprobado que ésta es la lista de los archivos que de verdad queremos eliminar,
 realizamos los cambios siguientes en el programa:
 
 \beforeverb
@@ -443,7 +441,7 @@ T-Mobile: ./2005/01/02-01-05_1858001.txt
 \end{verbatim}
 \afterverb
 %
-Si quieres divertirte y ejecutas el programa por segunda vez, no producirá ninguna salida,
+Si por diversión ejecutas el programa por segunda vez, no producirá ninguna salida,
 ya que los ficheros incorrectos ya no estarán.
 
 Si volvemos a ejecutar {\tt txtcount.py}, podemos ver que se han eliminado
@@ -455,11 +453,11 @@ Ficheros: 1018
 \end{verbatim}
 \afterverb
 %
-En esta sección, hemos seguido una secuencia en la cual usamos
+En esta sección, hemos seguido una secuencia en la cual usamos a
 Python en primer lugar para buscar a través de los directorios y archivos, comprobando
-patrones. Hemos utilizado también Python para, poco a poco, determinar qué queríamos
+patrones. Hemos utilizado también a Python para, poco a poco, determinar qué queríamos
 hacer para limpiar los directorios. Una vez supimos
-qué ficheros eran buenos y cuáles inútiles, utilizamos de nuevo Python
+qué ficheros eran buenos y cuáles inútiles, utilizamos de nuevo a Python
 para eliminar los ficheros y realizar la limpieza.
 
 El problema que necesites resolver puede ser bastante sencillo,
@@ -501,7 +499,7 @@ Introduce fichero: mbox-short.txt
 \end{verbatim}
 \afterverb
 %
-Podemos colocar cadenas adicionales después del nombre del fichero con el código de Python y
+Podemos colocar cadenas adicionales después del nombre del fichero que contiene el código de Python y
 acceder a esos {\bf argumentos de línea de comandos} desde el propio programa Python.
 Aquí tenemos un programa sencillo que ilustra la lectura de argumentos desde la línea de
 comandos:
@@ -564,7 +562,7 @@ mbox-short.txt tiene 94626 bytes
 \afterverb
 %
 El uso de argumentos de línea de comandos como entrada puede hacer más sencillo reutilizar tus
-programa en Python, especialmente cuando sólo necesitas introducir una o dos cadenas.
+programa Python, especialmente cuando sólo necesitas introducir una o dos cadenas.
 
 \section{Pipes (tuberías)}
 
@@ -739,7 +737,7 @@ de modo que puedes imprimir el tamaño del archivo y los dos nombres
 
 \item Adapta el programa anterior para buscar ficheros que
 tengan contenidos duplicados usando un algoritmo de hashing o
-{\bf cheksum (suma de comprobación)}. Por ejemplo,
+{\bf cheksum} (suma de comprobación). Por ejemplo,
 MD5 (Message-Digest algorithm 5) toma un ``mensaje'' de cualquier
 longitud y devuelve una ``suma de comprobación'' de 128 bits. La probabilidad
 de que dos ficheros con diferentes contenidos devuelvan la misma

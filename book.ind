@@ -112,7 +112,7 @@
     \subitem for\IeC {\'a}nea, 198
     \subitem l\IeC {\'o}gica, 198
     \subitem primaria, 198
-  \item close, m\IeC {\'e}todo, 90, 221
+  \item close, m\IeC {\'e}todo, 90, 222
   \item codicioso, 135, 144, 154
   \item coincidencia codiciosa, 144
   \item colaboradores, 231
@@ -415,7 +415,7 @@
 
   \item m\IeC {\'e}todo, 74, 79
     \subitem append, 96, 102
-    \subitem close, 90, 221
+    \subitem close, 90, 222
     \subitem count, 75
     \subitem extend, 96
     \subitem get, 112
@@ -598,8 +598,8 @@
   \item Romeo and Juliet, 107, 113, 115, 123, 126
   \item runtime error, 29, 41
   \item ruta, 213
-    \subitem absoluta, 214, 222
-    \subitem relativa, 214, 222
+    \subitem absoluta, 214, 223
+    \subitem relativa, 214, 223
 
   \indexspace
 

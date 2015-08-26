@@ -76,7 +76,7 @@
 \contentsline {section}{\numberline {6.3}Recorrido a trav\IeC {\'e}s de una cadena con un bucle}{70}
 \contentsline {section}{\numberline {6.4}Rebanado de cadenas}{71}
 \contentsline {section}{\numberline {6.5}Las cadenas son inmutables}{72}
-\contentsline {section}{\numberline {6.6}Bucles y recuentos}{72}
+\contentsline {section}{\numberline {6.6}Bucles y contadores}{72}
 \contentsline {section}{\numberline {6.7}El operador {\tt in}}{73}
 \contentsline {section}{\numberline {6.8}Comparaci\IeC {\'o}n de cadenas}{73}
 \contentsline {section}{\numberline {6.9}M\IeC {\'e}todos de {\tt cadenas}}{73}

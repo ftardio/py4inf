@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  26 AUG 2015 12:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  26 AUG 2015 16:50
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -1263,7 +1263,7 @@ Package epstopdf Info: Source file: <figs2/list1.eps>
 (epstopdf)                    size: 3133 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/list1-eps-converted-t
 o.pdf figs2/list1.eps>
-(epstopdf)             \includegraphics on input line 704.
+(epstopdf)             \includegraphics on input line 703.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs2/list1-eps-converted-to.pdf, id=451, 218.8175pt x 42.1575pt>
@@ -1271,7 +1271,7 @@ File: figs2/list1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/list1-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/list1-eps-converted-to.pdf used on input line 70
-4.
+3.
 (pdftex.def)             Requested size: 218.81696pt x 42.15738pt.
  [100 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/list1-eps-converted-to.pd
 f>] [101] [102] [103] [104] [105]
@@ -1435,17 +1435,12 @@ Package epstopdf Info: Source file: <figs2/tracks.eps>
 (epstopdf)                    date: 2015-08-26 11:17:25
 (epstopdf)                    size: 30327 bytes
 (epstopdf)             Output file: <figs2/tracks-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:29:04
-(epstopdf)                    size: 9958 bytes
+(epstopdf)                    date: 2015-08-26 12:43:27
+(epstopdf)                    size: 12141 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/tracks-eps-converted-
 to.pdf figs2/tracks.eps>
 (epstopdf)             \includegraphics on input line 229.
-runsystem(epstopdf --outfile=figs2/tracks-eps-converted-to.pdf figs2/tracks.eps
-)...executed (allowed).
-
-Package epstopdf Info: Result file: <figs2/tracks-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-26 12:43:27
-(epstopdf)                    size: 12141 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figs2/tracks-eps-converted-to.pdf, id=749, 448.67625pt x 244.915pt>
 File: figs2/tracks-eps-converted-to.pdf Graphic file (type pdf)
@@ -1677,22 +1672,28 @@ ocuments/GitHub/py4inf/figs2/mailorg-eps-converted-to.pdf>] [212
 
 ]
 Cap\'{\i }tulo 16.
+
+Underfull \hbox (badness 1303) in paragraph at lines 34--37
+[]\OT1/ptm/m/n/10.95 Cada pro-gra-ma en eje-cu-ci[]on tie-ne su pro-pio ``di-re
+c-to-rio ac-tual'' (\OT1/pcr/m/n/10.95 current
+ []
+
 [213] [214] [215] [216]
-Overfull \hbox (7.21455pt too wide) in paragraph at lines 338--338
+Overfull \hbox (7.21455pt too wide) in paragraph at lines 336--336
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
 [217]
-Overfull \hbox (7.21455pt too wide) in paragraph at lines 392--392
+Overfull \hbox (7.21455pt too wide) in paragraph at lines 390--390
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
 [218]
-Overfull \hbox (7.21455pt too wide) in paragraph at lines 430--430
+Overfull \hbox (7.21455pt too wide) in paragraph at lines 428--428
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
@@ -1729,14 +1730,18 @@ Ap\'{e}ndice D.
 
 ] (C:\Users\Windows\Documents\GitHub\py4inf\book.ind [234] [235
 
-] [236]
-[237]
-Underfull \hbox (badness 2856) in paragraph at lines 283--284
+]
+Underfull \hbox (badness 3428) in paragraph at lines 164--166
+[]\OT1/ptm/m/n/10.95 decorar-ordenar-quitar la de-co-ra-ci[]on,
+ []
+
+[236] [237]
+Underfull \hbox (badness 2856) in paragraph at lines 280--281
 []\OT1/ptm/m/n/10.95 Free Do-cu-men-ta-tion Li-cen-se, GNU,
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 322--323
+Underfull \hbox (badness 4713) in paragraph at lines 319--320
 []\OT1/ptm/m/n/10.95 GNU Free Do-cu-men-ta-tion Li-cen-se,
  []
 
@@ -1761,13 +1766,13 @@ Package createspace Info: book cost is 6.38USD (3.77USD for pro plan)
 
 (C:\Users\Windows\Documents\GitHub\py4inf\book.aux) ) ) 
 Here is how much of TeX's memory you used:
- 6104 strings out of 493921
- 87296 string characters out of 3144870
+ 6103 strings out of 493921
+ 87288 string characters out of 3144870
  145900 words of memory out of 3000000
- 9112 multiletter control sequences out of 15000+200000
+ 9111 multiletter control sequences out of 15000+200000
  66777 words of font info for 139 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,12n,69p,362b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,69p,362b,623s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
@@ -1779,7 +1784,7 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (256 pages, 1367402 bytes).
+Output written on book.pdf (256 pages, 1367472 bytes).
 PDF statistics:
  1036 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

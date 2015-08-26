@@ -36,7 +36,7 @@
 \indexentry{cadena}{19}
 \indexentry{comillas}{19}
 \indexentry{tipo}{19}
-\indexentry{cadena, tipo}{19}
+\indexentry{cadena!tipo}{19}
 \indexentry{tipo!str}{19}
 \indexentry{int, tipo}{19}
 \indexentry{tipo!int}{19}
@@ -55,7 +55,7 @@
 \indexentry{sentencia}{22}
 \indexentry{interactivo, modo}{22}
 \indexentry{script, modo}{22}
-\indexentry{operador aritm\IeC {\'e}tico}{22}
+\indexentry{operador!aritm\IeC {\'e}tico}{22}
 \indexentry{aritm\IeC {\'e}tico, operador}{22}
 \indexentry{operando}{22}
 \indexentry{expresi\IeC {\'o}n}{22}
@@ -91,7 +91,7 @@
 \indexentry{error!sintaxis}{29}
 \indexentry{mensaje de error}{29}
 \indexentry{use before def}{29}
-\indexentry{excepci\IeC {\'o}n}{29}
+\indexentry{exception}{29}
 \indexentry{runtime error}{29}
 \indexentry{error!runtime}{29}
 \indexentry{sensibilidad a may\IeC {\'u}sculas, nombres de variables}{29}
@@ -129,7 +129,7 @@
 \indexentry{valor especial!False}{33}
 \indexentry{booleano, tipo}{33}
 \indexentry{tipo!booleano}{33}
-\indexentry{comparaci\IeC {\'o}n, operador}{33}
+\indexentry{comparaci\IeC {\'o}n!operador}{33}
 \indexentry{operador!comparaci\IeC {\'o}n}{33}
 \indexentry{l\IeC {\'o}gico, operador}{34}
 \indexentry{operador!l\IeC {\'o}gico}{34}
@@ -139,11 +139,11 @@
 \indexentry{operador!and}{34}
 \indexentry{operador!or}{34}
 \indexentry{operador!not}{34}
-\indexentry{condicional, sentencia}{34}
+\indexentry{condicional!sentencia}{34}
 \indexentry{sentencia!condicional}{34}
 \indexentry{if, sentencia}{34}
 \indexentry{sentencia!if}{34}
-\indexentry{condicional, ejecuci\IeC {\'o}n}{34}
+\indexentry{condicional!ejecuci\IeC {\'o}n}{34}
 \indexentry{condici\IeC {\'o}n}{35}
 \indexentry{compuesta, sentencia}{35}
 \indexentry{sentencia!compuesta}{35}
@@ -152,7 +152,7 @@
 \indexentry{ejecuci\IeC {\'o}n alternativa}{35}
 \indexentry{else, palabra clave}{35}
 \indexentry{palabra clave!else}{35}
-\indexentry{branch}{36}
+\indexentry{rama}{36}
 \indexentry{encadenado, condicional}{36}
 \indexentry{condicional!encadenado}{36}
 \indexentry{elif, palabra clave}{37}
@@ -173,7 +173,7 @@
 \indexentry{runtime error}{41}
 \indexentry{exception!OverflowError}{42}
 \indexentry{OverflowError}{42}
-\indexentry{entera, division}{42}
+\indexentry{entera, divisi\IeC {\'o}n}{42}
 \indexentry{divisi\IeC {\'o}n!entera}{42}
 \indexentry{condici\IeC {\'o}n}{42}
 \indexentry{anidado, condicional}{42}
@@ -189,7 +189,7 @@
 \indexentry{rama}{42}
 \indexentry{compuesta, sentencia}{43}
 \indexentry{sentencia!compuesta}{43}
-\indexentry{condicional, sentencia}{43}
+\indexentry{condicional!sentencia}{43}
 \indexentry{sentencia!condicional}{43}
 \indexentry{traceback}{43}
 \indexentry{funci\IeC {\'o}n, llamada a}{45}
@@ -217,7 +217,7 @@
 \indexentry{choice, funci\IeC {\'o}n}{48}
 \indexentry{funci\IeC {\'o}n!choice}{48}
 \indexentry{math, funci\IeC {\'o}n}{48}
-\indexentry{funci\IeC {\'o}n, math}{48}
+\indexentry{funci\IeC {\'o}n!math}{48}
 \indexentry{m\IeC {\'o}dulo}{48}
 \indexentry{m\IeC {\'o}dulo, objeto}{48}
 \indexentry{notaci\IeC {\'o}n punto}{48}
@@ -248,14 +248,14 @@
 \indexentry{use before def}{51}
 \indexentry{flujo de ejecuci\IeC {\'o}n}{51}
 \indexentry{par\IeC {\'a}metro}{52}
-\indexentry{par\IeC {\'a}metro de funci\IeC {\'o}n}{52}
+\indexentry{par\IeC {\'a}metro!de funci\IeC {\'o}n}{52}
 \indexentry{argumento}{52}
 \indexentry{argumento de funci\IeC {\'o}n}{52}
 \indexentry{par\IeC {\'e}ntesis!par\IeC {\'a}metros entre}{52}
 \indexentry{composici\IeC {\'o}n}{52}
 \indexentry{argumento}{52}
 \indexentry{productiva, funci\IeC {\'o}n}{53}
-\indexentry{esteril, funci\IeC {\'o}n}{53}
+\indexentry{est\IeC {\'e}ril, funci\IeC {\'o}n}{53}
 \indexentry{funci\IeC {\'o}n productiva}{53}
 \indexentry{funci\IeC {\'o}n esteril}{53}
 \indexentry{interactivo, modo}{53}
@@ -346,7 +346,7 @@
 \indexentry{bucle!for}{70}
 \indexentry{sentencia!for}{70}
 \indexentry{recorrido}{70}
-\indexentry{rebanada, operador}{71}
+\indexentry{rebanada!operador}{71}
 \indexentry{operador!rebanada}{71}
 \indexentry{\IeC {\'\i }ndice!rebanada}{71}
 \indexentry{cadena!rebanada}{71}
@@ -360,7 +360,7 @@
 \indexentry{TypeError}{72}
 \indexentry{exception!TypeError}{72}
 \indexentry{objecto}{72}
-\indexentry{elemento, asignaci\IeC {\'o}n}{72}
+\indexentry{elemento!asignaci\IeC {\'o}n}{72}
 \indexentry{asignaci\IeC {\'o}n!elemento}{72}
 \indexentry{inmutabilidad}{72}
 \indexentry{concatenaci\IeC {\'o}n}{72}
@@ -395,9 +395,9 @@
 \indexentry{patr\IeC {\'o}n!guardi\IeC {\'a}n}{78}
 \indexentry{b\IeC {\'u}squeda, patr\IeC {\'o}n}{78}
 \indexentry{patr\IeC {\'o}n!de b\IeC {\'u}squeda}{78}
-\indexentry{cadena vac\IeC {\'\i }a}{78}
+\indexentry{cadena!vac\IeC {\'\i }a}{78}
 \indexentry{contador}{78}
-\indexentry{cadena a formatear}{79}
+\indexentry{cadena!a formatear}{79}
 \indexentry{elemento}{79}
 \indexentry{flag}{79}
 \indexentry{bandera}{79}
@@ -413,7 +413,7 @@
 \indexentry{recorrido}{79}
 \indexentry{secuencia}{79}
 \indexentry{formato, secuencia de}{79}
-\indexentry{cadena, m\IeC {\'e}todos}{80}
+\indexentry{cadena!m\IeC {\'e}todos}{80}
 \indexentry{m\IeC {\'e}todos!cadena}{80}
 \indexentry{fichero}{81}
 \indexentry{archivo}{81}
@@ -446,13 +446,13 @@
 \indexentry{espacio en blanco}{90}
 \indexentry{repr, funci\IeC {\'o}n}{90}
 \indexentry{funci\IeC {\'o}n!repr}{90}
-\indexentry{cadena, representaci\IeC {\'o}n de}{90}
+\indexentry{cadena!representaci\IeC {\'o}n de}{90}
 \indexentry{final de l\IeC {\'\i }nea, car\IeC {\'a}cter de}{90}
 \indexentry{catch}{91}
 \indexentry{capturar}{91}
 \indexentry{Controlador de Calidad}{91}
 \indexentry{QA}{91}
-\indexentry{fichero de texto}{91}
+\indexentry{fichero!de texto}{91}
 \indexentry{Pyth\IeC {\'o}nico}{91}
 \indexentry{salto de l\IeC {\'\i }nea}{91}
 \indexentry{lista}{93}
@@ -473,7 +473,7 @@
 \indexentry{mutabilidad}{94}
 \indexentry{\IeC {\'\i }ndice!comienza en cero}{94}
 \indexentry{cero, \IeC {\'\i }ndice comienza en}{94}
-\indexentry{asignaci\IeC {\'o}n de elemento}{94}
+\indexentry{elemento!asignaci\IeC {\'o}n}{94}
 \indexentry{asignaci\IeC {\'o}n!elemento}{94}
 \indexentry{exception!IndexError}{94}
 \indexentry{IndexError}{94}
@@ -498,7 +498,7 @@
 \indexentry{lista!concatenaci\IeC {\'o}n}{95}
 \indexentry{repeticion!lista}{95}
 \indexentry{lista!repetici\IeC {\'o}n}{95}
-\indexentry{rebanada, operador}{95}
+\indexentry{rebanada!operador}{95}
 \indexentry{operador!rebanada}{95}
 \indexentry{\IeC {\'\i }ndice!rebanada}{95}
 \indexentry{lista!rebanada}{95}
@@ -518,8 +518,8 @@
 \indexentry{m\IeC {\'e}todo!extend}{96}
 \indexentry{sort, m\IeC {\'e}todo}{96}
 \indexentry{m\IeC {\'e}todo!sort}{96}
-\indexentry{hueco, m\IeC {\'e}todo}{96}
-\indexentry{m\IeC {\'e}todo!hueco}{96}
+\indexentry{est\IeC {\'e}ril, m\IeC {\'e}todo}{96}
+\indexentry{m\IeC {\'e}todo!est\IeC {\'e}ril}{96}
 \indexentry{None, valor especial}{96}
 \indexentry{valor especial!None}{96}
 \indexentry{borrado de elemento}{97}
@@ -545,7 +545,6 @@
 \indexentry{join, m\IeC {\'e}todo}{99}
 \indexentry{m\IeC {\'e}todo!join}{99}
 \indexentry{concatenaci\IeC {\'o}n}{99}
-\indexentry{cadena vac\IeC {\'\i }a}{99}
 \indexentry{cadena!vac\IeC {\'\i }a}{99}
 \indexentry{objecto}{100}
 \indexentry{valor}{100}
@@ -570,7 +569,7 @@
 \indexentry{m\IeC {\'e}todo!append}{102}
 \indexentry{lista!concatenaci\IeC {\'o}n}{102}
 \indexentry{concatenaci\IeC {\'o}n!lista}{102}
-\indexentry{rebanada, operador}{103}
+\indexentry{rebanada!operador}{103}
 \indexentry{operador!rebanada}{103}
 \indexentry{depuraci\IeC {\'o}n}{103}
 \indexentry{sort, m\IeC {\'e}todo}{103}
@@ -615,7 +614,6 @@
 \indexentry{histograma}{111}
 \indexentry{frecuencia}{111}
 \indexentry{recorrido}{111}
-\indexentry{histogram}{111}
 \indexentry{get, m\IeC {\'e}todo}{112}
 \indexentry{m\IeC {\'e}todo!get}{112}
 \indexentry{estilo}{112}
@@ -642,13 +640,13 @@
 \indexentry{clave}{117}
 \indexentry{diccionario}{117}
 \indexentry{elemento!diccionario}{117}
-\indexentry{dispersi\IeC {\'o}n, funci\IeC {\'o}n de}{117}
+\indexentry{dispersi\IeC {\'o}n!funci\IeC {\'o}n de}{117}
 \indexentry{hash function}{117}
 \indexentry{histograma}{117}
 \indexentry{implementaci\IeC {\'o}n}{118}
 \indexentry{pareja clave-valor}{118}
 \indexentry{hashtable}{118}
-\indexentry{dispersi\IeC {\'o}n, tabla de}{118}
+\indexentry{dispersi\IeC {\'o}n!tabla de}{118}
 \indexentry{valor}{118}
 \indexentry{tupla}{121}
 \indexentry{tipo!tupla}{121}
@@ -661,11 +659,11 @@
 \indexentry{par\IeC {\'e}ntesis!en tuplas}{121}
 \indexentry{singleton}{121}
 \indexentry{tupla!singleton}{121}
-\indexentry{tupla, funci\IeC {\'o}n}{122}
+\indexentry{tupla!funci\IeC {\'o}n}{122}
 \indexentry{funci\IeC {\'o}n!tupla}{122}
 \indexentry{corchete, operador}{122}
 \indexentry{operador!corchete}{122}
-\indexentry{rebanada, operador}{122}
+\indexentry{rebanada!operador}{122}
 \indexentry{operador!slice}{122}
 \indexentry{operador!rebanada}{122}
 \indexentry{tupla!rebanada}{122}
@@ -684,7 +682,7 @@
 \indexentry{decorar-ordenar-quitar la decoraci\IeC {\'o}n, dise\IeC {\~n}o}{123}
 \indexentry{dise\IeC {\~n}o!decorate-sort-undecorate}{123}
 \indexentry{Romeo and Juliet}{123}
-\indexentry{palabra clave, argumento}{123}
+\indexentry{palabra clave!argumento}{123}
 \indexentry{argumento!palabra clave}{123}
 \indexentry{recorrido}{123}
 \indexentry{tupla!asignaci\IeC {\'o}n}{124}
@@ -766,7 +764,7 @@
 \indexentry{urllib!imagen}{152}
 \indexentry{web!scraping}{153}
 \indexentry{web!rascado}{153}
-\indexentry{HTML, an\IeC {\'a}lisis de}{153}
+\indexentry{HTML!an\IeC {\'a}lisis de}{153}
 \indexentry{codicioso}{154}
 \indexentry{no codicioso}{154}
 \indexentry{regex!par\IeC {\'e}ntesis}{154}
@@ -775,7 +773,7 @@
 \indexentry{BeautifulSoup}{155}
 \indexentry{HTML}{155}
 \indexentry{an\IeC {\'a}lisis!HTML}{155}
-\indexentry{fichero binario}{156}
+\indexentry{fichero!binario}{156}
 \indexentry{curl}{157}
 \indexentry{BeautifulSoup}{157}
 \indexentry{puerto}{158}
@@ -863,8 +861,8 @@
 \indexentry{m\IeC {\'e}todo!readline}{221}
 \indexentry{read, m\IeC {\'e}todo}{221}
 \indexentry{m\IeC {\'e}todo!read}{221}
-\indexentry{close, m\IeC {\'e}todo}{221}
-\indexentry{m\IeC {\'e}todo!close}{221}
+\indexentry{close, m\IeC {\'e}todo}{222}
+\indexentry{m\IeC {\'e}todo!close}{222}
 \indexentry{checksum}{222}
 \indexentry{directorio!actual}{222}
 \indexentry{directorio!de trabajo}{222}
@@ -872,8 +870,8 @@
 \indexentry{hashing}{222}
 \indexentry{pipe}{222}
 \indexentry{tuber\IeC {\'\i }a}{222}
-\indexentry{ruta!absoluta}{222}
-\indexentry{ruta!relativa}{222}
+\indexentry{ruta!absoluta}{223}
+\indexentry{ruta!relativa}{223}
 \indexentry{shell}{223}
 \indexentry{walk}{223}
 \indexentry{recorrer}{223}
