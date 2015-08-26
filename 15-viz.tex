@@ -3,7 +3,7 @@
 
 \chapter{Visualización de datos}
 
-Hasta ahora, primero hemos estudiado el lenguaje de Python y luego
+Hasta el momento, hemos estudiado primero el lenguaje de Python y luego
 hemos descubierto cómo usar Python, la red y las bases de datos
 para manipular datos.
 
@@ -56,7 +56,7 @@ Puedes reiniciar el proceso en cualquier momento eliminando el archivo
 Ejecuta el programa {\bf geoload.py}. Este programa leerá las líneas
 de entrada desde {\bf where.data} y para cada línea verificará primero si ya
 está en la base de datos. Si no disponemos de datos para esa ubicación,
-llamará a la API de geocodificación para recuperar los datos y los almacenará
+llamará a la API de geocodificación para recuperarlos y los almacenará
 en la base de datos.
 
 Aquí tenemos un ejemplo de ejecución una vez que ya disponemos de alguna información almacenada en la
@@ -185,7 +185,7 @@ How many pages:
 En esta ejecución de ejemplo, le pedimos que rastree un sitio web y que recupere dos
 páginas. Si reinicias el programa y le pides que rastree más
 páginas, no volverá a revisar aquellas que ya estén en la base de datos.
-En cada reinicio irá a una página al azar no rastreada aún y comenzará allí.
+En cada reinicio elegirá a una página al azar no rastreada aún y comenzará allí.
 De modo que cada ejecución sucesiva de {\bf spider.py} irá añadiendo páginas nuevas.
 
 \beforeverb
@@ -234,7 +234,7 @@ How many iterations:2
 \end{verbatim}
 \afterverb
 %
-Puedes volcar en pantalla el contenido la base de datos de nuevo para ver que la clasificación de
+Puedes volcar en pantalla el contenido de la base de datos de nuevo para ver que la clasificación de
 páginas ha sido actualizada:
 
 \beforeverb
@@ -310,7 +310,7 @@ pulsar ``recargar'' en el navegador para obtener los datos actualizados desde {\
 
 \section{Visualización de datos de correo}
 
-Si has llegado hasta este punto del libro, ya debes estar bastante familiarizado con
+Si has llegado hasta este punto del libro, ya debes de estar bastante familiarizado con
 nuestros ficheros de datos {\bf mbox-short.txt} y {\bf mbox.txt}. Ahora es el momento
 de llevar nuestro análisis de datos de correo electrónico al siguiente nivel.
 
@@ -388,7 +388,7 @@ Does not start with From
 \afterverb
 %
 El programa revisa {\bf content.sqlite} desde el principio hasta que encuentra un número de mensaje que
-no ha sido aún rastreado y comienza a partir de ahí. Continúa rastreando
+aún no ha sido rastreado y comienza a partir de ahí. Continúa rastreando
 hasta que ha recuperado el número deseado de mensajes o hasta que llega a una página
 que no contiene un mensaje adecuadamente formateado.
 

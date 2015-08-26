@@ -25,8 +25,8 @@ Para más detalles, consultar:
 
 \url{https://docs.python.org/2/library/re.html}
 
-La librería de expresiones regulares {\tt re}, debe importarse en el programa antes de poder utilizarlas.
-El uso más simple de esta librería es la función {\tt search()}. El programa siguiente
+La librería de expresiones regulares {\tt re}, debe ser importada en el programa antes de poder utilizarlas.
+El uso más sencillo de esta librería es la función {\tt search()}. El programa siguiente
 demuestra un uso trivial de la función search.
 \index{regex!search}
 
@@ -55,7 +55,7 @@ extracciones sofisticadas escribiendo muy poco código.
 Por ejemplo, el carácter de intercalación (\verb"^") es usado en las expresiones
 regulares para indicar ``el principio'' de una línea.
 Podemos cambiar nuestro programa para que sólo localice
-aquellas líneas en las cuales ``From:'' vaya al comienzo:
+aquellas líneas en las cuales ``From:'' vaya al principio:
 
 \beforeverb
 \begin{verbatim}
@@ -120,7 +120,7 @@ for linea in manf:
 %
 La cadena buscada ``\verb"^"From:.+@'' encontrará todas las líneas que comienzan con ``From:'',
 seguido por uno o más caracteres (``.+''), seguidos de un símbolo-arroba. De modo que la
-línea siguiente coincidirá:
+línea siguiente sería localizada:
 
 \beforeverb
 \begin{alltt}
@@ -317,7 +317,7 @@ X-DSPAM-Probability: 0.0000
 \afterverb
 %
 no querremos simplemente cualquier número en punto flotante de cualquier línea. Querremos extraer
-solamente los números de las líneas que tengan la sintaxis indicada antes.
+solamente los números de las líneas que tengan la sintaxis indicada arriba.
 
 Podemos construir la siguiente expresión regular para elegir las líneas:
 
@@ -482,7 +482,7 @@ Podemos lograr lo mismo de un modo mucho más sencillo con la siguiente expresi�
 %
 La traducción de esta expresión regular es que estamos buscando líneas que comiencen con ``From ''
 (fíjate en el espacio), seguidas por cualquier número de caracteres (``.*''), seguidos por un espacio,
-seguidos por dos dígitos ``[0-9][0-9]'', seguidos por un carácter dos-puntos. Ésa es la definición del tipo de
+seguidos por dos dígitos ``[0-9][0-9]'', seguidos por un carácter dos-puntos. Esta es la definición del tipo de
 líneas que estamos buscando.
 
 Para extraer sólo la hora usando {\tt findall()}, vamos a añadir paréntesis alrededor de los dos dígitos,
@@ -525,7 +525,7 @@ A pesar de que usamos caracteres especiales en las expresiones regulares para en
 de una línea, o los utilizamos como comodines, necesitamos un modo de indicar cuándo esos caracteres son
 ``normales'' y queremos encontrar el carácter real, como un signo de dolar o uno de intercalación.
 
-Podemos indicar que queremos simplemente encontrar un carácter, escapando ese carácter con
+Podemos indicar que queremos simplemente encontrar un carácter escapando ese carácter con
 una barra invertida. Por ejemplo, podemos encontrar cantidades de dinero con la expresión regular
 siguiente:
 
@@ -668,7 +668,7 @@ help> modules
 \end{verbatim}
 \afterverb
 %
-Si sabes qué módulo quieres usar, puedes usar el comando {\tt dir()} para localizar los métodos del módulo, como
+Si sabes qué módulo quieres usar, puedes utilizar el comando {\tt dir()} para localizar los métodos del módulo, como
 se muestra a continuación:
 
 \beforeverb

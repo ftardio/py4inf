@@ -166,18 +166,18 @@
 \contentsline {section}{\numberline {13.8}Seguridad y uso de APIs}{169}
 \contentsline {section}{\numberline {13.9}Glosario}{173}
 \contentsline {section}{\numberline {13.10}Ejercicios}{174}
-\contentsline {chapter}{\numberline {14}Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}{175}
+\contentsline {chapter}{\numberline {14}Bases de datos y Lenguaje de Consultas Estructurado (SQL)}{175}
 \contentsline {section}{\numberline {14.1}\IeC {\textquestiondown }Qu\IeC {\'e} es una base de datos?}{175}
 \contentsline {section}{\numberline {14.2}Conceptos sobre bases de datos}{176}
 \contentsline {section}{\numberline {14.3}Add-on de Firefox para gesti\IeC {\'o}n de SQLite}{176}
 \contentsline {section}{\numberline {14.4}Creaci\IeC {\'o}n de una tabla en una base de datos}{177}
-\contentsline {section}{\numberline {14.5}Resumen de Lenguaje de Consultas eStructurado}{180}
+\contentsline {section}{\numberline {14.5}Resumen de Lenguaje de Consultas Estructurado}{180}
 \contentsline {section}{\numberline {14.6}Rastreo en Twitter usando una base de datos}{181}
 \contentsline {section}{\numberline {14.7}Modelado de datos b\IeC {\'a}sico}{187}
 \contentsline {section}{\numberline {14.8}Programaci\IeC {\'o}n con m\IeC {\'u}ltiples tablas}{189}
 \contentsline {subsection}{\numberline {14.8.1}Restricciones en tablas de bases de datos}{191}
 \contentsline {subsection}{\numberline {14.8.2}Recuperar y/o insertar un registro}{192}
-\contentsline {subsection}{\numberline {14.8.3}Almacenado de relaciones entre amigos}{193}
+\contentsline {subsection}{\numberline {14.8.3}Almacenar las relaciones entre amigos}{193}
 \contentsline {section}{\numberline {14.9}Tres tipos de claves}{194}
 \contentsline {section}{\numberline {14.10}Uso de JSON para recuperar datos}{195}
 \contentsline {section}{\numberline {14.11}Resumen}{197}

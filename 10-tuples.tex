@@ -17,9 +17,9 @@ es una secuencia de valores muy parecida a una lista.
 Los valores almacenados en una tupla pueden ser de cualquier tipo, y
 están indexados por enteros.
 La diferencia más importante es que las tuplas son {\bf inmutables}.
-Las tuplas además son {\bf comparables} y {\bf hashables (dispersables)}, de modo que
+Las tuplas además son {\bf comparables} y {\bf hashables} (dispersables), de modo que
 las listas de tuplas se pueden ordenar y también es posible usar tuplas
-como valores de claves en los diccionarios de Python.
+como valores para las claves en los diccionarios de Python.
 
 \index{mutabilidad}
 \index{hashable}
@@ -61,8 +61,8 @@ al final:
 \end{verbatim}
 \afterverb
 %
-Sin la coma, Python trata \verb"('a')" como una expresión
-de cadena dentro de un paréntesis, que es evaluada como de tipo ``string'':
+Sin la coma, Python trata \verb"('a')" como una expresión con una
+cadena dentro de un paréntesis, que evalúa como de tipo ``string'':
 
 \beforeverb
 \begin{verbatim}
@@ -72,7 +72,7 @@ de cadena dentro de un paréntesis, que es evaluada como de tipo ``string'':
 \end{verbatim}
 \afterverb
 %
-Otro modo de construir una tupla es usar la función incorporada {\tt tuple}.
+Otro modo de construir una tupla es usar la función interna {\tt tuple}.
 Sin argumentos, crea una tupla vacía:
 
 \index{tupla, función}
@@ -114,13 +114,13 @@ indexa un elemento:
 \end{verbatim}
 \afterverb
 %
-Y el operador de rebanado selecciona un rango de elementos.
+Y el operador de rebanada selecciona un rango de elementos.
 
-\index{rebanado, operador}
+\index{rebanada, operador}
 \index{operador!slice}
-\index{operador!rebanado}
-\index{tupla!rebanado}
-\index{rebanado!tupla}
+\index{operador!rebanada}
+\index{tupla!rebanada}
+\index{rebanada!tupla}
 
 \beforeverb
 \begin{verbatim}
@@ -167,7 +167,7 @@ Los operadores de comparación funcionan también con las tuplas y otras secuenc
 Python comienza comparando el primer elemento de cada
 secuencia. Si es igual en ambas, pasa al siguiente elemento,
 y así sucesivamente, hasta que encuentra uno que es diferente. A partir de ese momento,
-los elementos siguientes ya no son tenidos en cuenta (aunque sean realmente grandes).
+los elementos siguientes ya no son tenidos en cuenta (aunque sean muy grandes).
 
 
 \beforeverb
@@ -187,12 +187,12 @@ Esta característica se presta al uso de un diseño llamado {\bf DSU}, que
 
 \begin{description}
 
-\item[Decorate (Decora)] una secuencia, construyendo una lista de tuplas
+\item[Decorate] (Decora) una secuencia, construyendo una lista de tuplas
 con uno o más índices ordenados precediendo los elementos de dicha secuencia,
 
-\item[Sort (Ordena)] la lista de tuplas usando la función incorporada en Python {\tt sort}, y
+\item[Sort] (Ordena) la lista de tuplas usando la función incorporada en Python {\tt sort}, y
 
-\item[Undecorate (Quita la decoración)], extrayendo los elementos ordenados de la secuencia.
+\item[Undecorate] (Quita la decoración), extrayendo los elementos ordenados de la secuencia.
 
 \end{description}
 
@@ -200,7 +200,7 @@ con uno o más índices ordenados precediendo los elementos de dicha secuencia,
 \index{DSU, diseño}
 \index{diseño!DSU}
 \index{decorate-sort-undecorate pattern}
-\index{decora-ordena-quita la decoración, diseño}
+\index{decorar-ordenar-quitar la decoración, diseño}
 \index{diseño!decorate-sort-undecorate}
 \index{Romeo and Juliet}
 
@@ -264,8 +264,8 @@ en orden descendente según la longitud de sus palabras.
 Una de las características sintácticas del lenguaje Python que resulta única
 es la capacidad de tener una tupla en el lado
 izquierdo de una sentencia de asignación. Esto permite asignar
-más de una variable a la vez cuando en el lado izquierdo se tiene
-una secuencia.
+varias variables el mismo tiempo cuando tenemos una secuencia
+en el lado izquierdo.
 
 En este ejemplo tenemos una lista de dos elementos (por lo que se trata de una secuencia), y
 asignamos los elementos primero y segundo de la secuencia
@@ -283,9 +283,9 @@ a las variables {\tt x} e {\tt y} en una única sentencia.
 \end{verbatim}
 \afterverb
 %
-No es magia, Python convierte \emph{aproximadamente} la
+No es magia, Python traduce \emph{aproximadamente} la
 sintaxis de asignación de la tupla
-de este modo:\footnote{Python no convierte la
+a lo siguiente:\footnote{Python no convierte la
 sintaxis de forma literal. Por ejemplo, si intentas esto con un diccionario,
 no funcionará como esperarías.}
 
@@ -396,7 +396,7 @@ tuplas, cada una de las cuales es una pareja clave-valor
 \end{verbatim}
 \afterverb
 %
-Como sería esperable en un diccionario, los elementos no
+Como sería de esperar en un diccionario, los elementos no
 tienen ningún orden en particular.
 
 Sin embargo, dado que la lista de tuplas es una lista, y las tuplas
@@ -441,7 +441,7 @@ diccionario.
 
 Para cada iteración a través del bucle, tanto {\tt clave} como {\tt valor} van
 pasando a la siguiente pareja clave-valor del diccionario
-(de nuevo en orden de dispersión).
+(aquí también en orden de dispersión).
 
 La salida de este bucle es:
 
@@ -519,9 +519,9 @@ for clave, valor in lst[:10] :
 \end{verbatim}
 \afterverb
 %
-La primera parte del programa que lee el archivo y procesa
-el diccionario, mapeando cada palabra en el contador de palabras del
-documento no ha cambiado. Pero en lugar de simplemente imprimir en pantalla
+La primera parte del programa, que lee el archivo y procesa
+el diccionario mapeando cada palabra en el contador de palabras del
+documento, no ha cambiado. Pero en lugar de simplemente imprimir en pantalla
 {\tt contadores} y terminar el programa, ahora construimos una
 lista de tuplas {\tt (valor, clave)} y luego ordenamos la lista en orden inverso.
 
@@ -553,8 +553,8 @@ nuestro análisis de frecuencia de palabras.
 \afterverb
 %
 El hecho de que este complejo procesado y análisis de datos
-puedan ser hecho en un programa Python de 19 líneas
-sencillo de comprender, es una de las razones por las que Python es una buena elección
+puedan ser realizado con un programa Python de 19 líneas
+sencillo de entender, es una de las razones por las que Python es una buena elección
 como lenguaje para explorar información.
 
 \section{Uso de tuplas como claves en diccionarios}
@@ -563,7 +563,7 @@ como lenguaje para explorar información.
 \index{hashable}
 \index{dispersable}
 
-Dado que las tuplas son {\bf hashables (dispersables)} y las listas no, si queremos
+Dado que las tuplas son {\bf hashables} (dispersables) y las listas no, si queremos
 crear una clave {\bf compuesta} para usar en un diccionario, deberemos usar una tupla
 como clave.
 
@@ -618,10 +618,10 @@ Para comenzar con lo más obvio, las cadenas están más limitadas que las demá
 secuencias, porque los elementos deben ser caracteres. También son
 inmutables. Si necesitas la capacidad de cambiar los caracteres
 en una cadena (en vez de crear una nueva), puede que
-quieras usar una lista de caracteres en su lugar.
+lo más adecuado sea elegir una lista de caracteres.
 
 Las listas se usan con más frecuencia que las tuplas, principalmente porque son mutables.
-Pero hay algunos pocos casos donde es posible que prefieras las tuplas:
+Pero hay algunos pocos casos donde es posible que prefieras usar las tuplas:
 
 \begin{enumerate}
 
@@ -679,15 +679,15 @@ trabajando en un fallo complicado, hay cuatro cosas que puedes probar:
 si en realidad dice lo que querías que dijera.
 
 \item[ejecución:] Experimenta haciendo cambios y ejecutando versiones
-diferentes. A menudo si muestras las cosas correctas en los lugares
-adecuados del programa, el problema se convierte en obvio, pero otras veces
-tendrás que emplear algún tiempo construyendo unas ciertas estructuras.
+diferentes. A menudo, si muestras las cosas correctas en los lugares
+adecuados del programa el problema se convierte en obvio, pero otras veces
+tendrás que invertir algún tiempo construyendo unas ciertas estructuras.
 
 \item[rumiado:] ¡Tómate tu tiempo para reflexionar! ¿De qué tipo de error
 se trata: sintáctico, de ejecución, semántico? ¿Qué información puedes obtener de
 los mensajes de error, o de la salida del programa? ¿Qué tipo de
 error podría causar el problema que estás viendo? ¿Qué fue lo último
-que cambiaste, antes de que el programa apareciera?
+que cambiaste, antes de que el problema apareciera?
 
 \item[retirada:] En algunos casos, lo mejor que se puede hacer
 es dar marcha atrás, deshaciendo los últimos cambios, hasta llegar
@@ -712,9 +712,9 @@ tu cabeza.
 
 Hacer experimentos puede ayudar, especialmente si estás ejecutando
 pruebas pequeñas y sencillas. Pero si ejecutas experimentos sin pararte a pensar
-o leer tu código, puedes caer en el patrón que yo llamo ``sistema de programación al azar'',
+o leer tu código, puedes caer en el modelo que yo llamo ``sistema de programación al azar'',
 que es el proceso de hacer cambios aleatorios hasta que el programa
-hace lo que tiene que hacer. No hace falta decir que este tipo de programación
+hace lo que tiene que hacer. No es necesario decir que este tipo de programación
 puede llevar mucho tiempo.
 
 \index{programación al azar}
@@ -732,10 +732,10 @@ a veces encontrarás la respuesta antes de haber terminado de hacer la pregunta.
 Pero incluso las mejores técnicas de depurado pueden fallar si hay demasiados
 errores, o si el código que se está intentando arreglar es demasiado grande
 y complicado. A veces la mejor opción es retirarse y simplificar el
-programa hasta que tener algo que funcione y que seas
-capaz de comprender.
+programa hasta tener algo que funcione y que se sea
+capaz de entender.
 
-Los programadores principiantes a menudo se muestran reacios a volver atrás,
+Los programadores novatos a menudo se muestran reacios a volver atrás,
 no pueden tolerar la idea de borrar ni una línea de código (incluso si está mal).
 Si eso te hace sentirte mejor, puedes copiar tu programa en otro archivo
 antes de empezar a eliminar cosas. Luego podrás volver a pegar los
@@ -749,10 +749,6 @@ intenta pasar a una de las otras.
 \section{Glosario}
 
 \begin{description}
-
-\item[acumular:] La operación de montar una tupla
-como argumento de longitud variable.
-\index{acumular}
 
 \item[asignación en tupla:] Una asignación con una secuencia en el
 lado derecho y una tupla de variables en el izquierdo. Primero
@@ -790,6 +786,10 @@ argumentos.
 \item[modelado (de una estructura de datos):] Un resumen del tipo,
 tamaño, y composición de una estructura de datos.
 \index{modelado}
+
+\item[reunir:] La operación de montar una tupla
+como argumento de longitud variable.
+\index{reunir}
 
 \item[singleton:] Una lista (u otra secuencia) con un único elemento.
 \index{singleton}

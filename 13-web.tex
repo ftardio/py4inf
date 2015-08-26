@@ -8,13 +8,13 @@ programas se convirtió en algo sencillo,
 no se tardó demasiado en desarrollar un modelo
 consistente en la producción de
 documentos específicamente diseñados para ser consumidos por otros
-programas (es decir, no sólo HTML para ser mostrado en un navegador).
+programas (es decir, no únicamente HTML para ser mostrado en un navegador).
 
 Existen dos formatos habituales que se usan para intercambio de datos a través de la web.
-El ``eXtensible Markup Language (lenguaje extensible de marcas)'' o XML ha sido utilizado
+El ``eXtensible Markup Language'' (lenguaje extensible de marcas) o XML ha sido utilizado
 durante mucho tiempo y es el más adecuado para intercambiar datos del tipo-documento.
 Cuando los programas simplemente quieren intercambiar unos con otros diccionarios, listas u otra
-información interna, usan JavaScript Object Notation (Notación de Objetos Javascript), o JSON
+información interna, usan ``JavaScript Object Notation'' (Notación de Objetos Javascript), o JSON
 (see \url{www.json.org}). Nosotros vamos a revisar ambos formatos.
 
 \section{eXtensible Markup Language - XML}
@@ -199,7 +199,7 @@ En el programa siguiente, usaremos la librería integrada {\bf json} para analiz
 el JSON y leer los datos. Compáralo cuidadosamente con los datos y código XML
 equivalentes que usamos antes. El JSON tiene menos detalles, de modo que podemos saber de
 antemano que vamos a obtener una lista y que la lista es de usuarios y además que cada usuario es un
-conjunto de parejas clave-valor. El JSON es más escueto (una ventaja), pero también es
+conjunto de parejas clave-valor. El JSON es más conciso (una ventaja), pero también es
 menos auto-descriptivo (una desventaja).
 
 \beforeverb
@@ -266,7 +266,7 @@ para poder enviar y recibir los datos entre esas aplicaciones, a través del eXt
 Markup Language (XML) o del JavaScript Object Notation (JSON).
 
 El paso siguiente consiste en empezar a definir y documentar ``contratos'' entre
-aplicaciones usando estas técnicas. El nombre corriente para estos
+aplicaciones usando estas técnicas. El nombre habitual para estos
 contratos entre aplicaciones es {\bf Interfaces de Programación
 de Aplicaciones}, o APIs. Cuando se utiliza una API, normalmente un programa
 crea un conjunto de {\bf servicios} disponibles para que los usen otras aplicaciones
@@ -378,7 +378,7 @@ while True:
 El programa toma la cadena de búsqueda y construye una URL
 codificándola como parámetro dentro de ella, utilizando luego
 {\bf urllib} para recuperar el texto de la API de geocodificación de Google.
-A diferencia de una página web estática, los datos que obtenemos dependen de los
+A diferencia de una página web estática, los datos que obtengamos dependerán de los
 parámetros que enviemos y de los datos geográficos almacenados en los servidores de Google.
 
 Una vez recuperados los datos JSON, los analizamos con la librería
@@ -493,7 +493,7 @@ variables apropiadas dentro del fichero:
 \end{verbatim}
 \afterverb
 %
-El servicio web de Twitter es accesible usando una URL como esta:
+Se puede acceder al servicio web de Twitter mediante una URL como ésta:
 
 \url{https://api.twitter.com/1.1/statuses/user_timeline.json}
 
@@ -584,9 +584,9 @@ una petición a la API nuestros intentos restantes van disminuyendo.
 
 En el ejemplo siguiente, recuperamos los amigos de un usuario en Twitter,
 analizamos el JSON devuelto y extraemos parte de la información
-sobre esos amigos. También vaciamos el JSON después de analizarlo e
-``imprimirlo ordenado'', con un justificado de cuatro caracteres para permitirnos
-estudiar minuciosamente los datos cuando queramos extraer más campos.
+sobre esos amigos. Después de analizar el JSON e ``imprimirlo bonito'',
+realizamos un volcado completo con un justificado de cuatro caracteres, para permitirnos
+poder estudiar minuciosamente los datos en el caso de que queramos extraer más campos.
 
 \beforeverb
 \begin{verbatim}
@@ -674,7 +674,7 @@ Introduce Cuenta de Twitter:
 \afterverb
 %
 El último trozo de la salida es donde podemos ver cómo el bucle for lee los
-cinco ``amigos'' más recientes de la cuenta de Twitter del {\bf drchuck}
+cinco ``amigos'' más nuevos de la cuenta de Twitter del {\bf drchuck}
 e imprime el estado más reciente de cada uno de ellos. Hay
 muchos más datos disponibles en el JSON devuelto. Si miras
 la salida del programa, podrás ver que el ``encuentra a los amigos''
@@ -682,7 +682,7 @@ de una cuenta particular tiene una limitación de usos distinta al
 número de consultas de líneas del tiempo que está permitido realizar en un periodo de tiempo.
 
 Estas claves de seguridad de la API permiten a Twitter tener la certeza de que
-sabe quién está usando su API y datos y a qué nivel. El enfoque del
+sabe quién está usando su API y datos y a qué nivel. El planteamiento del
 límite de usos nos permite hacer captaciones de datos sencillas e individuales, pero
 no nos permite crear un producto que extraiga datos de esa API
 millones de veces al día.
@@ -692,16 +692,16 @@ millones de veces al día.
 \begin{description}
 
 \item[API:] Interfaz de Programación de Aplicaciones - Un contrato entre
-aplicaciones que define los patrones de interacción entre
+aplicaciones que define las pautas de interacción entre
 los componentes de dos aplicaciones.
 \index{API}
 
-\item[Árbol de elementos:] Una librería integrada de Python que se utiliza
+\item[ElementTree:] Una librería interna de Python que se utiliza
 para analizar datos XML.
-\index{Árbol de elementos}
+\index{ElementTree}
 
 \item[JSON:] Notación de Objetos JavaScript. Un formato que permite
-el marcado de estructuras de datos basadas en la sintaxis de los Objetos
+el envío de estructuras de datos basadas en la sintaxis de los Objetos
 JavaScript.
 \index{JSON}
 \index{JavaScript Object Notation}
@@ -712,7 +712,7 @@ está formada por componentes conectados a través de una red.
 \index{Service Oriented Architecture}
 
 \item[XML:] Lenguaje de Marcas eXtensible. Un formato que permite
-el marcado de datos estructurados.
+el envío de datos estructurados.
 \index{XML}
 \index{eXtensible Markup Language}
 
@@ -721,11 +721,11 @@ el marcado de datos estructurados.
 \section{Ejercicios}
 
 \begin{ex}
-Cambia bien el programa
+Modifica el programa
 \url{www.py4inf.com/code/geojson.py} o bien
 \url{www.py4inf.com/code/geoxml.py} para imprimir en pantalla el
 código de país de dos caracteres de los datos recuperados.
-Añade comprobación de errores, de modo que tu programa no rastree esos datos
+Añade comprobación de errores, de modo que tu programa no rastree los datos
 si el código del país no está presente. Una vez que lo tengas
 funcionando, busca ``Océano Atlántico'' y asegúrate
 de que es capaz de gestionar ubicaciones que no están dentro de ningún país.

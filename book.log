@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  25 AUG 2015 21:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  26 AUG 2015 12:43
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -1328,12 +1328,9 @@ File: figs2/socket-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs2/socket-eps-converted-to.pdf used on input line 8
 8.
 (pdftex.def)             Requested size: 234.84177pt x 108.405pt.
- [148]
-Underfull \vbox (badness 2310) has occurred while \output is active []
-
- [149 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/socket-eps-converted-to.p
-df>]
-[150] [151] [152] [153] [154] [155] [156] [157] [158])
+ [148] [149 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/socket-eps-converte
+d-to.pdf>] [150] [151] [152] [153]
+[154] [155] [156] [157] [158])
 (C:\Users\Windows\Documents\GitHub\py4inf\13-web.tex [159] [160
 
 ]
@@ -1412,15 +1409,8 @@ File: figs2/relational-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figs2/relational-eps-converted-to.pdf used on input li
 ne 49.
 (pdftex.def)             Requested size: 334.24113pt x 108.405pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (14.20308pt): 
- Make it at least 25.54747pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[176 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/relational-eps-converted-t
-o.pdf>]
+ [176 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/relational-eps-converted-
+to.pdf>]
 Package epstopdf Info: Source file: <figs2/cursor.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 29617 bytes
@@ -1431,7 +1421,8 @@ Package epstopdf Info: Source file: <figs2/cursor.eps>
 to.pdf figs2/cursor.eps>
 (epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/cursor-eps-converted-to.pdf, id=732, 538.01pt x 308.15125pt>
+
+<figs2/cursor-eps-converted-to.pdf, id=732, 538.01pt x 308.15125pt>
 File: figs2/cursor-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/cursor-eps-converted-to.pdf>
@@ -1441,15 +1432,20 @@ Package pdftex.def Info: figs2/cursor-eps-converted-to.pdf used on input line 1
  [177] [178 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/cursor-eps-converte
 d-to.pdf>]
 Package epstopdf Info: Source file: <figs2/tracks.eps>
-(epstopdf)                    date: 2015-08-22 12:03:04
-(epstopdf)                    size: 19673 bytes
+(epstopdf)                    date: 2015-08-26 11:17:25
+(epstopdf)                    size: 30327 bytes
 (epstopdf)             Output file: <figs2/tracks-eps-converted-to.pdf>
 (epstopdf)                    date: 2015-08-22 17:29:04
 (epstopdf)                    size: 9958 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/tracks-eps-converted-
 to.pdf figs2/tracks.eps>
 (epstopdf)             \includegraphics on input line 229.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(epstopdf --outfile=figs2/tracks-eps-converted-to.pdf figs2/tracks.eps
+)...executed (allowed).
+
+Package epstopdf Info: Result file: <figs2/tracks-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-08-26 12:43:27
+(epstopdf)                    size: 12141 bytes.
 
 <figs2/tracks-eps-converted-to.pdf, id=749, 448.67625pt x 244.915pt>
 File: figs2/tracks-eps-converted-to.pdf Graphic file (type pdf)
@@ -1735,12 +1731,12 @@ Ap\'{e}ndice D.
 
 ] [236]
 [237]
-Underfull \hbox (badness 2856) in paragraph at lines 278--279
+Underfull \hbox (badness 2856) in paragraph at lines 283--284
 []\OT1/ptm/m/n/10.95 Free Do-cu-men-ta-tion Li-cen-se, GNU,
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 318--319
+Underfull \hbox (badness 4713) in paragraph at lines 322--323
 []\OT1/ptm/m/n/10.95 GNU Free Do-cu-men-ta-tion Li-cen-se,
  []
 
@@ -1783,7 +1779,7 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (256 pages, 1365459 bytes).
+Output written on book.pdf (256 pages, 1367402 bytes).
 PDF statistics:
  1036 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -26,10 +26,10 @@ de un socket, se obtienen los datos que la otra aplicación ha enviado.
 
 Pero si intentas leer de un socket cuando el programa que está al otro lado
 no ha enviado ningún dato---puedes esperar sentado. Si los programas de ambos extremos
-del socket simplemente intentan recibir datos sin que ninguno envié nada, esperarán durante mucho,
+del socket simplemente intentan recibir datos sin que ninguno envíe nada, esperarán durante mucho,
 mucho tiempo.
 
-De modo que una parte importante de los programas que se comunican a través de Internet es tener algún
+De modo que una parte importante de la comunicación de programas a través de Internet consiste en tener algún
 tipo de protocolo. Un protocolo son un conjunto de reglas precisas que determinan quién
 empieza primero, qué debe hacer, cuáles son las respuestas siguientes para ese mensaje,
 quién envía a continuación y todo lo demás. En cierto sentido las aplicaciones a ambos lados del
@@ -65,17 +65,17 @@ y mostrar lo que el servidor le devuelve.
 \begin{verbatim}
 import socket
 
-mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-mysock.connect(('www.py4inf.com', 80))
-mysock.send('GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n')
+misock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+misock.connect(('www.py4inf.com', 80))
+misock.send('GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n')
 
 while True:
-    datos = mysock.recv(512)
+    datos = misock.recv(512)
     if ( len(datos) < 1 ) :
         break
     print datos
 
-mysock.close()
+misock.close()
 \end{verbatim}
 \afterverb
 %
@@ -90,7 +90,7 @@ protocolo HTTP dice que debemos enviar el comando GET seguido por una línea en 
 
 Una vez enviada esa línea en blanco, escribimos un bucle que recibe los datos
 desde el socket en bloques de 512 caracteres y los imprime en pantalla
-hasta que no hay más datos por leer (es decir, hasta que recv() devuelve
+hasta que no quedan más datos por leer (es decir, hasta que recv() devuelve
 una cadena vacía).
 
 El programa produce la salida siguiente:
@@ -152,22 +152,22 @@ y luego guardaremos los datos de la imagen en un archivo, como se muestra a cont
 import socket
 import time
 
-mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-mysock.connect(('www.py4inf.com', 80))
-mysock.send('GET http://www.py4inf.com/cover.jpg HTTP/1.0\n\n')
+misock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+misock.connect(('www.py4inf.com', 80))
+misock.send('GET http://www.py4inf.com/cover.jpg HTTP/1.0\n\n')
 
 
 contador = 0
 imagen = "";
 while True:
-    datos = mysock.recv(5120)
+    datos = misock.recv(5120)
     if ( len(datos) < 1 ) : break
     # time.sleep(0.25)
     contador = contador + len(datos)
     print len(datos),contador
     imagen = imagen + datos
 
-mysock.close()
+misock.close()
 
 # Búsqueda del final de la cabecera (2 CRLF)
 pos = imagen.find("\r\n\r\n");
@@ -218,8 +218,8 @@ el archivo {\tt cosa.jpg} con un visor de imágenes.
 
 Al ejecutar el programa, se puede ver que no se obtienen 5120 caracteres
 cada vez que que se llama al método {\tt recv()}.
-Se obtienen tantos caracteres como hayan sido transferidos a través de la red
-hacia nosotros por el servidor web en el momento de la llamada a {\tt recv()}.
+Se obtienen tantos caracteres como hayan sido transferidos por el servidor web hacia nosotros
+a través de la red en el momento de la llamada a {\tt recv()}.
 En este ejemplo, se obtienen 1460 ó 2920 caracteres cada vez que
 se solicita un máximo de 5120 caracteres de datos.
 
@@ -265,7 +265,7 @@ nos dan 5120 caracteres cada vez que solicitamos más datos.
 Existe un buffer entre el servidor que hace las peticiones {\tt send()}
 y nuestra aplicación que hace las peticiones {\tt recv()}. Cuando ejecutamos
 el programa con el retraso activado, en algún momento el servidor podría
-llenar el buffer del socket y verse forzado a pararse hasta que
+llenar el buffer del socket y verse forzado a detenerse hasta que
 nuestro programa empiece a vaciar ese buffer. La detención de la aplicación
 que envía los datos o de la que los recibe se llama
 ``control de flujo''.
@@ -358,8 +358,8 @@ las  {\bf arañas} de Google se mueven por casi todas las páginas de
 la web.
 
 Google utiliza también la frecuencia con que las páginas que encuentra enlazan
-hacia una página concreta como medida de la ``importancia'' de
-esa página, y en qué posición debe aparecer en sus resultados de búsqueda.
+hacia una página concreta para calcular la ``importancia'' de
+esa página, y la posición en la que debe aparecer dentro de sus resultados de búsqueda.
 
 \section{Análisis de HTML mediante expresiones regulares}
 
@@ -557,7 +557,7 @@ Atributos: [(u'href', u'http://www.dr-chuck.com/page2.htm')]
 \end{verbatim}
 \afterverb
 %
-Estos ejemplos sólo insinúan la potencia de BeautifulSoup
+Estos ejemplos tan sólo insinúan la potencia de BeautifulSoup
 en el análisis del HTML. Lee la documentación y
 los ejemplos que están en
 \url{http://www.crummy.com/software/BeautifulSoup/} para obtener más detalles.
@@ -570,7 +570,7 @@ estos ficheros, pero se puede hacer una copia de una URL en un archivo
 local de nuestro disco duro con facilidad, usando {\tt urllib}.
 \index{fichero binario}
 
-El patrón consiste en abrir la URL y usar {\tt read} para descargar el contenido
+La pauta a seguir consiste en abrir la URL y usar {\tt read} para descargar el contenido
 completo del documento en una variable de tipo cadena ({\tt img}), y luego escribir la
 información a un archivo local, como se muestra a continuación:
 
@@ -655,7 +655,7 @@ que quieras usar de verdad este patrón en algún programa que estés escribiend
 y extaer datos de ellos
 que compensa la mayoría de las imperfecciones que los navegadores HTML
 normalmente ignoran.
-Puedes descargar el código BeautifulSoup
+Puedes descargar el código de BeautifulSoup
 desde
 \url{www.crummy.com}.
 \index{BeautifulSoup}
@@ -693,7 +693,7 @@ Cambia el programa del socket {\tt socket1.py} para que le pida al usuario
 la URL, de modo que pueda leer cualquier página web.
 Puedes usar {\tt split('/')} para dividir la URL en las partes que la componen,
 de modo que puedas extraer el nombre del host para la llamada a {\tt connect} del socket.
-Añade comprobación de errores, usando {\tt try} y {\tt except} para manejar el caso de que
+Añade comprobación de errores, usando {\tt try} y {\tt except} para gestionar el caso de que
 el usuario introduzca una URL mal formada o inexistente.  
 \end{ex}
 

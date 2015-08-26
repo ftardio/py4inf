@@ -21,7 +21,7 @@ Por ejemplo, hemos construido un diccionario que mapea desde palabras inglesas
 sus equivalentes en español, de modo que tanto claves como valores son cadenas.
 
 La función {\tt dict} crea un diccionario nuevo sin elementos.
-Dado que {\tt dict} es el nombre de una función incorporada, debes
+Dado que {\tt dict} es el nombre de una función interna, debes
 evitar usarla como nombre de variable.
 
 \index{dict, función}
@@ -122,7 +122,7 @@ número de parejas clave-valor:
 %
 El operador {\tt in} también funciona en los diccionarios; te dice si
 algo aparece como \emph{clave} en el diccionario (que aparezca
-como valor no sirve).
+como valor no es suficiente).
 
 \index{pertenencia!diccionario}
 \index{in, operador}
@@ -154,8 +154,8 @@ True
 %
 El operador {\tt in} utiliza algoritmos diferentes para las listas y
 para los diccionarios. Para las listas, usa un algoritmo lineal de búsqueda.
-Según la lista se va haciendo más larga, el tiempo de búsqueda
-crece en proporción directa a la longitud.
+A medida la lista se va haciendo más larga, el tiempo de búsqueda
+va aumentando en proporción directa a su longitud.
 Para los diccionarios, Python usa un
 algoritmo llamado {\bf tabla de dispersión}, que tiene una propiedad destacada--el
 operador {\tt in} emplea la misma cantidad de tiempo sin importar cuántos
@@ -197,7 +197,7 @@ carácter, aumentar el contador correspondiente, probablemente
 usando un condicional encadenado.
 
 \item Podrías crear una lista con 26 elementos. Luego podrías
-convertir cada carácter en un número (usando la función incorporada
+convertir cada carácter en un número (usando la función interna
 {\tt ord}), usar el número como índice dentro de la lista, y aumentar
 el contador apropiado.
 
@@ -208,12 +208,12 @@ Después, aumentarías el valor del elemento ya existente.
 
 \end{enumerate}
 
-Todas estas opciones realiza el mismo cálculo, pero cada
-una de ellas implementa ese cálculo de un modo diferente.
+Todas estas opciones realizan la misma operación, pero cada
+una de ellas implementa esa operación de un modo diferente.
 
 \index{implementación}
 
-Una {\bf implementación} es un modo de realizar un cálculo;
+Una {\bf implementación} es un modo de realizar una operación;
 algunas implementaciones son mejores que otras. Por ejemplo,
 una ventaja de las implementaciones del diccionario es que no
 necesitamos saber de antemano qué letras aparecerán en la cadena
@@ -279,7 +279,7 @@ el valor por defecto. Por ejemplo:
 \afterverb
 %
 Podemos usar {\tt get} para escribir nuestro bucle de histograma de forma más concisa.
-Ya que el método {\tt get} controla automáticamente el caso de que la clave
+Como el método {\tt get} controla automáticamente el caso de que la clave
 no esté en el diccionario, podemos reducir cuatro líneas a una sola
 y eliminar la sentencia {\tt if}
 
@@ -298,7 +298,7 @@ al final resulta ser un ``estilo'' que se usa en Python con mucha frecuencia, y
 lo utilizaremos muchas veces en el resto del libro. Así que deberías
 pararte un momento y comparar el bucle usando la sentencia {\tt if}
 y el operador {\tt in} con el mismo bucle usando el método {\tt get}.
-Hacen exactamente lo mismo, pero uno es más breve.
+Hacen exactamente lo mismo, pero uno es más conciso.
 \index{estilo}
 
 \section{Diccionarios y archivos}
@@ -587,7 +587,7 @@ Lo siguiente es una versión abreviada de la salida:
 
 \beforeverb
 \begin{verbatim}
-Enter the file name: romeo-full.txt
+Introduce el nombre del fichero: romeo-full.txt
 {'swearst': 1, 'all': 6, 'afeard': 1, 'leave': 2, 'these': 2, 
 'kinsmen': 2, 'what': 11, 'thinkst': 1, 'love': 24, 'cloak': 1, 
 a': 24, 'orchard': 2, 'light': 5, 'lovers': 2, 'romeo': 40, 
@@ -597,7 +597,7 @@ a': 24, 'orchard': 2, 'light': 5, 'lovers': 2, 'romeo': 40,
 \afterverb
 %
 Buscar a través de esta salida resulta todavía pesado y podemos utilizar
-a Python para que nos dé exactamente lo que buscamos. Pero para eso,
+a \mbox{Python} para que nos dé exactamente lo que buscamos. Pero para eso,
 tendremos que aprender algo sobre las {\bf tuplas} de Python.
 Retomaremos este ejemplo una vez que hayamos estudiado las tuplas.
 
@@ -613,7 +613,7 @@ sugerencias para depurar conjuntos de datos grandes:
 \item[Reduce la entrada:] Si es posible, reduce el tamaño del
 conjunto de datos. Por ejemplo, si el programa lee un archivo de texto,
 comienza solamente con las primeras 10 líneas, o con el ejemplo más pequeño
-que puedas encontrar. Puedes editar los mismos archivos, o (mejor) modificar el
+que puedas encontrar. Puedes editar los propios archivos, o (mejor) modificar el
 programa de modo que lea sólo las primeras {\tt n} líneas.
 
 Si hay un error, puedes reducir {\tt n} hasta el valor
@@ -644,7 +644,7 @@ Otro tipo de comprobación compara los resultados de dos cálculos
 diferentes para ver si son consistentes. A esto se le llama una
 ``consistency check (prueba de consistencia)''.
 
-\item[Haz que la salida quede bonita:] Dar formato a la salida de depuración
+\item[Haz que la salida se muestre ordenada:] Dar formato a la salida de depuración
 puede hacer más fácil localizar un error.
 
 \end{description}
@@ -683,6 +683,7 @@ valores correspondientes.
 \item[función de dispersión (hash function):] Una función usada por una tabla de dispersión
 para calcular la localización de una clave.
 \index{dispersión, función de}
+\index{hash function}
 
 \item[histograma:] Un conjunto de contadores.
 \index{histograma}
@@ -750,7 +751,7 @@ Introduce nombre del fichero: mbox-short.txt
 
 \begin{ex}
 Añade código al programa anterior para localizar quién
-tiene más mensajes en el archivo.
+tiene más mensajes en el fichero.
 
 Después de que los datos hayan sido leídos y el diccionario haya
 sido creado, busca a través del diccionario usando un bucle máximo
@@ -760,10 +761,10 @@ mensajes e imprime cuántos mensajes tiene esa persona.
 
 \beforeverb
 \begin{verbatim}
-Introduce un nombre de archivo: mbox-short.txt
+Introduce un nombre de fichero: mbox-short.txt
 cwen@iupui.edu 5
 
-Introduce un nombre de archivo: mbox.txt
+Introduce un nombre de fichero: mbox.txt
 zqian@umich.edu 195
 \end{verbatim}
 \afterverb
@@ -778,7 +779,7 @@ del programa, imprime en pantalla el contenido de tu diccionario.
 \beforeverb
 \begin{verbatim}
 python schoolcount.py
-Introduce un nombre de archivo: mbox-short.txt
+Introduce un nombre de fichero: mbox-short.txt
 {'media.berkeley.edu': 4, 'uct.ac.za': 6, 'umich.edu': 7, 
 'gmail.com': 1, 'caret.cam.ac.uk': 1, 'iupui.edu': 8}
 \end{verbatim}

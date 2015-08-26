@@ -83,7 +83,7 @@
 \indexentry{indicador}{25}
 \indexentry{salto de l\IeC {\'\i }nea}{25}
 \indexentry{ValueError}{26}
-\indexentry{excepci\IeC {\'o}n!ValueError}{26}
+\indexentry{exception!ValueError}{26}
 \indexentry{comentarios}{26}
 \indexentry{mnem\IeC {\'o}nico}{27}
 \indexentry{depuraci\IeC {\'o}n}{29}
@@ -643,6 +643,7 @@
 \indexentry{diccionario}{117}
 \indexentry{elemento!diccionario}{117}
 \indexentry{dispersi\IeC {\'o}n, funci\IeC {\'o}n de}{117}
+\indexentry{hash function}{117}
 \indexentry{histograma}{117}
 \indexentry{implementaci\IeC {\'o}n}{118}
 \indexentry{pareja clave-valor}{118}
@@ -664,11 +665,11 @@
 \indexentry{funci\IeC {\'o}n!tupla}{122}
 \indexentry{corchete, operador}{122}
 \indexentry{operador!corchete}{122}
-\indexentry{rebanado, operador}{122}
+\indexentry{rebanada, operador}{122}
 \indexentry{operador!slice}{122}
-\indexentry{operador!rebanado}{122}
-\indexentry{tupla!rebanado}{122}
-\indexentry{rebanado!tupla}{122}
+\indexentry{operador!rebanada}{122}
+\indexentry{tupla!rebanada}{122}
+\indexentry{rebanada!tupla}{122}
 \indexentry{exception!TypeError}{122}
 \indexentry{TypeError}{122}
 \indexentry{elemento, asignaci\IeC {\'o}n}{122}
@@ -680,7 +681,7 @@
 \indexentry{DSU, dise\IeC {\~n}o}{123}
 \indexentry{dise\IeC {\~n}o!DSU}{123}
 \indexentry{decorate-sort-undecorate pattern}{123}
-\indexentry{decora-ordena-quita la decoraci\IeC {\'o}n, dise\IeC {\~n}o}{123}
+\indexentry{decorar-ordenar-quitar la decoraci\IeC {\'o}n, dise\IeC {\~n}o}{123}
 \indexentry{dise\IeC {\~n}o!decorate-sort-undecorate}{123}
 \indexentry{Romeo and Juliet}{123}
 \indexentry{palabra clave, argumento}{123}
@@ -724,16 +725,16 @@
 \indexentry{depuraci\IeC {\'o}n!experimental}{130}
 \indexentry{programaci\IeC {\'o}n al azar}{130}
 \indexentry{plan de desarrollo!programaci\IeC {\'o}n al azar}{130}
-\indexentry{acumular}{130}
 \indexentry{tupla!asignaci\IeC {\'o}n en}{130}
 \indexentry{asignaci\IeC {\'o}n!tupla}{130}
-\indexentry{comparable}{130}
+\indexentry{comparable}{131}
 \indexentry{estructura de datos}{131}
 \indexentry{DSU, dise\IeC {\~n}o}{131}
 \indexentry{hashable}{131}
 \indexentry{dispersable}{131}
 \indexentry{dispersar}{131}
 \indexentry{modelado}{131}
+\indexentry{reunir}{131}
 \indexentry{singleton}{131}
 \indexentry{tupla}{131}
 \indexentry{letras, frecuencia de}{132}
@@ -797,7 +798,7 @@
 \indexentry{OAuth}{169}
 \indexentry{API!clave}{169}
 \indexentry{API}{173}
-\indexentry{\IeC {\'A}rbol de elementos}{173}
+\indexentry{ElementTree}{173}
 \indexentry{JSON}{173}
 \indexentry{JavaScript Object Notation}{173}
 \indexentry{SOA}{173}

@@ -1,7 +1,7 @@
 % The contents of this file is 
 % Copyright (c) 2009-  Charles R. Severance, All Righs Reserved
 
-\chapter{Uso de bases de datos y Lenguaje de Consultas eStructurado (SQL)}
+\chapter{Bases de datos y Lenguaje de Consultas Estructurado (SQL)}
 
 \section{¿Qué es una base de datos?}
 \index{base de datos}
@@ -10,7 +10,7 @@ Una {\bf base de datos} es un archivo que está organizado para almacenar datos.
 La mayoría de las bases de datos están organizadas como diccionarios, en el sentido
 de que realizan mapeados entre claves y valores. La diferencia más importante
 es que la base de datos se encuentra en el disco (u otro almacenamiento permanente),
-de modo que su contenido se mantiene después de que el programa finaliza. Gracias a que la base de
+de modo que su contenido se conserva después de que el programa finaliza. Gracias a que la base de
 datos se guarda en un almacenamiento permanente, puede almacenar muchos más datos que
 un diccionario, que está limitado al tamaño de la memoria
 que tenga el ordenador.
@@ -63,7 +63,7 @@ Database Manager}, que se puede descargar libremente desde:
 
 \url{https://addons.mozilla.org/en-us/firefox/addon/sqlite-manager/}
 
-Utilizando el navegador se pueden crear de forma sencilla tablas, insertar y editar datos
+Utilizando el navegador se pueden crear tablas con facilidad, insertar y editar datos
 o ejecutar consultas SQL sencillas sobre la base de datos.
 
 En cierto sentido, el gestor de base de datos es parecido a un editor de texto
@@ -78,7 +78,7 @@ será más conveniente usar Python.
 
 \section{Creación de una tabla en una base de datos}
 
-Las bases de datos necesitas una estructura más definida que las listas
+Las bases de datos necesitan una estructura más definida que las listas
 o diccionarios de Python\footnote{SQLite en realidad permite cierta
 flexibilidad respecto al tipo de datos que se almacenan en cada columna,
 pero en este capítulo nosotros vamos a mantener los tipos de datos estrictos
@@ -103,7 +103,7 @@ al principio, pero la recompensa consiste en obtener un acceso rápido a los dat
 incluso cuando la base de datos contiene una gran cantidad de ellos.
 
 El código para crear un archivo de base de datos y una tabla
-llamada {\tt Tracks} con dos columnas en la
+llamada {\tt Canciones} con dos columnas en la
 base de datos es el siguiente:
 
 \index{sqlite3, módulo}
@@ -268,10 +268,10 @@ para que podamos ejecutar el programa de nuevo repetidamente. Después de que se
 {\tt DELETE}, llamamos de nuevo a {\tt commit()} para forzar a los datos a ser eliminados de
 la base de datos.
 
-\section{Resumen de Lenguaje de Consultas eStructurado}
+\section{Resumen de Lenguaje de Consultas Estructurado}
 
-Hasta ahora, hemos estado usando el Lenguaje de Consultas eStructurado en nuestros
-ejemplos de Python y hemos usado muchos de los comandos básicos de SQL.
+Hasta ahora, hemos estado usando el Lenguaje de Consultas Estructurado en nuestros
+ejemplos de Python y hemos utilizado muchos de los comandos básicos de SQL.
 En esta sección, nos centraremos en el lenguaje SQL en particular
 y echaremos un vistazo a su sintaxis.
 
@@ -376,8 +376,8 @@ demasiados datos o ejecutas el programa durante demasiado tiempo
 pueden terminar cortándote el acceso a Twitter.}
 
 Uno de los problemas de cualquier tipo de programa araña es que se
-necesita poder detenerlo y volverlo a poner en marcha muchas veces y
-no queremos perder los datos que hayamos recuperado hasta ese momento.
+necesita poderlo detener y volver a poner en marcha muchas veces, y
+no se quieren perder los datos que se hayan recuperado hasta ese momento.
 No querrás tener que empezar siempre la recuperación de datos desde
 el principio, de modo que necesitaremos almacenar los datos según los vamos recuperando para
 que nuestro programa pueda usar esa copia de seguridad y continuar de nuevo su recogida de datos
@@ -386,7 +386,7 @@ donde lo dejó la última vez.
 Empezaremos por recuperar los amigos de Twitter de una persona y sus estados,
 moviéndonos a través de la lista de amigos y añadiendo cada uno de ellos
 a la base de datos para poder recuperarlos en el futuro. Después
-de haber procesado todos los amigos de esa persona, comprobaremos la base de datos
+de haber procesado todos los amigos de esa persona, consultaremos la base de datos
 y recuperaremos los amigos de uno de esos amigos. Continuaremos haciendo esto una y otra vez,
 recogiendo cualquier persona ``no visitada'', recuperando su lista de amigos
 y añadiendo aquellos que no tengamos ya en nuestra lista para una próxima visita.
@@ -394,11 +394,11 @@ y añadiendo aquellos que no tengamos ya en nuestra lista para una próxima visi
 También rastrearemos cuántas veces hemos visto un amigo concreto en la
 base de datos para tener una idea de su ``popularidad''.
 
-Al almacenar nuestra lista de cuentas de conocidos,
-de cuándo hemos recuperado una cuenta o no
-y de la popularidad de cada cuenta
+Como estamos almacenando nuestra lista de cuentas de conocidos,
+cuándo hemos recuperado una cuenta o no
+y la popularidad de cada cuenta
 en una base datos en el disco del ordenador,
-podremos detener y volver a poner en marcha el programa tantas veces como queramos. 
+podremos detener y reanudar el programa tantas veces como queramos. 
 
 % POR HACER: Añadir una referencia al lugar correcto
 Este programa es un poco complejo. Está basado en el código
@@ -582,7 +582,7 @@ de todas las filas de la tabla {\tt Twitter}, luego
 se mueve a través de las filas e imprime en pantalla su contenido.
 
 Si lanzamos este programa después de la primera ejecución de nuestra araña
-de Twitter, la salida que mostrará será parecida a ésta:
+de Twitter, la salida que mostrará será similar a ésta:
 
 \beforeverb
 \begin{verbatim}
@@ -804,7 +804,7 @@ CREATE TABLE Seguimientos
 Cuando añadimos la claúsula {\tt UNIQUE} a nuestras tablas, estamos comunicando un conjunto
 de reglas que vamos a exigir a la base de datos que se cumplan cuando se intenten insertar
 registros. Estamos creando esas reglas porque le convienen a nuestro programa, como
-veremos en un momento. Ambas reglas impiden que se cometan errores y hacen
+veremos dentro de un momento. Ambas reglas impiden que se cometan errores y hacen
 más sencillo escribir parte de nuestro código.
 
 En esencia, al crear esta tabla {\tt Seguimientos}, estamos modelando una
@@ -908,7 +908,7 @@ cur.close()
 %
 Este programa empieza a resultar un poco complicado, pero ilustra
 los patrones de diseño que debemos usar cuando utilizamos
-claves enteras para enlazar tablas. Esos patrones básicos son:
+claves de enteros para enlazar tablas. Esos patrones básicos son:
 
 \begin{enumerate}
 
@@ -946,7 +946,7 @@ cur.execute('''CREATE TABLE IF NOT EXISTS Seguimientos
 \afterverb
 %
 Estamos indicando que la columna {\tt nombre} de la tabla {\tt Personas} debe ser
-{\tt UNIQUE (única)}. Además indicamos que la combinación de los dos números
+{\tt UNIQUE} (única). Además indicamos que la combinación de los dos números
 de cada fila de la tabla {\tt Seguimientos} debe ser también única. Estas restricciones
 evitan que cometamos errores como añadir la misma relación entre las mismas personas
 más de una vez.
@@ -983,14 +983,14 @@ que hemos especificado para cada fila de {\tt Seguimientos}.
 \subsection{Recuperar y/o insertar un registro}
 
 Cuando pedimos al usuario una cuenta de Twitter, si la cuenta ya
-existe, debemos buscar el valor de su {\tt id}. Si la cuenta
+existe debemos buscar el valor de su {\tt id}. Si la cuenta
 no existe aún en la tabla {\tt Personas}, debemos insertar
 el registro y obtener el valor del {\tt id} de la fila
 recién insertada.
 
 Éste es un diseño muy habitual y se realiza dos veces en el programa anterior.
 Este código muestra cómo se busca el {\tt id} de la
-cuenta de un amigo una vez extraído su \verb"screen_name"
+cuenta de un amigo, una vez extraído su \verb"screen_name"
 desde un nodo de {\tt usuario} del JSON recuperado desde Twitter.
 
 Dado que con el tiempo es probable que vayan aumentando las posibilidades de que la cuenta
@@ -1028,7 +1028,7 @@ y el control será transferido a la sección {\tt except}.
 \afterverb
 %
 Si terminamos en el código {\tt except}, eso sólo significa que la fila
-no se ha encontrado en la tabla, de modo que debemos insertarla. Usamos, pues,
+no se ha encontrado en la tabla, de modo que deberemos insertarla. Usamos, pues,
 {\tt INSERT OR IGNORE} sólo para evitar errores, y luego llamamos al {\tt commit()} para
 forzar a la base de datos a que se actualice de verdad. Después de que se ha realizado la escritura,
 ya podemos comprobar el {\tt cur.rowcount} para saber cuántas filas se han visto afectadas. Como
@@ -1039,7 +1039,7 @@ Si el {\tt INSERT} tiene éxito, podemos usar {\tt cur.lastrowid}
 para averiguar el valor que la base de datos ha asignado a la columna {\tt id}
 en nuestra fila recién creada.
 
-\subsection{Almacenado de relaciones entre amigos}
+\subsection{Almacenar las relaciones entre amigos}
 
 Una vez que sabemos el valor de la clave tanto para del usuario de Twitter
 como para el amigo que hemos extraído del JSON, resulta sencillo insertar
@@ -1117,15 +1117,15 @@ verías también los amigos de los usuarios 2 y 3.
 \section{Tres tipos de claves}
 
 Ahora que hemos empezado a construir un modelo de datos, colocando
-nuestros datos en múltiples tablas enlazadas y enlazando las filas de esas
+nuestros datos en múltiples tablas enlazadas y hemos enlazado las filas de esas
 tablas usando {\bf claves}, debemos fijarnos en cierta terminología
-acerca de las claves. Generalmente en un modelo de base de datos hay
+acerca de esas claves. Generalmente en un modelo de base de datos hay
 tres tipos de claves que se pueden usar:
 
 \begin{itemize}
 
-\item Una {\bf clave lógica} es una clave que podría usar el ``mundo real''
-para buscar una fila. En nuestro ejemplo de modelado de datos, el campo
+\item Una {\bf clave lógica} es una clave que se podría usar en el ``mundo real''
+para localizar una fila. En nuestro ejemplo de modelado de datos, el campo
 {\tt nombre} es una clave lógica. Es el nombre que se muestra en pantalla para el usuario
 y, en efecto, buscamos la columna de un usuario varias veces en el programa
 usando el campo {\tt nombre}. A menudo verás que tiene sentido
@@ -1306,7 +1306,7 @@ posible.
 \section{Depuración}
 
 Un enfoque común cuando se está desarrollando un programa en Python que conecte con
-una base de datos SQLite será ejecutar primer el programa y revisar luego los
+una base de datos SQLite será ejecutar primero el programa y revisar luego los
 resultados usando el navegador de bases de datos de SQLite (SQLite Database Browser). El navegador
 te permite revisar cuidadosamente los datos para comprobar si tu programa está funcionando
 correctamente.
@@ -1323,7 +1323,7 @@ De modo que la solución pasa por asegurarse de cerrar el navegador de la base d
 o bien usar el menú {\bf Arhivo} para cerrar la base de datos abierta en el navegador
 antes de intentar acceder a ella desde Python, para evitar encontrarse con
 el problema de que el código de Python falle debido a que la base de datos
-esté bloqueada.
+está bloqueada.
 
 \section{Glosario}
 

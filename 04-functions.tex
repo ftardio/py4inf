@@ -9,7 +9,7 @@
 \index{función, llamada a}
 
 En el contexto de la programación, una {\bf función} es una secuencia de
-sentencias que realizan un cálculo y que reciben un nombre. Cuando se define una función,
+sentencias que realizan una operación y que reciben un nombre. Cuando se define una función,
 es posible especificar el nombre y la secuencia de sentencias. Más adelante, se puede
 ``llamar'' a la función por ese nombre.
 Ya hemos visto un ejemplo de una {\bf llamada a una función}:
@@ -157,8 +157,8 @@ Finalmente, {\tt str} convierte su argumento en una cadena:
 
 A partir de las mismas entradas, la mayoría de los ordenadores generarán
 las mismas salidas cada vez, que es lo que llamamos comportamiento {\bf determinista}.
-El determinismo normalmente es algo bueno, ya que esperamos que el mismo
-cálculo nos proporcione siempre el mismo resultado. Para ciertas aplicaciones, sin embargo,
+El determinismo normalmente es algo bueno, ya que esperamos que la misma
+operación nos proporcione siempre el mismo resultado. Para ciertas aplicaciones, sin embargo,
 querremos que el ordenador sea impredecible. Los juegos son el ejemplo
 obvio, pero hay más.
 
@@ -166,7 +166,7 @@ Conseguir que un programa sea realmente no-determinista no resulta tan fácil,
 pero hay modos de hacer que al menos lo parezca. Una de ellos
 es usar {\bf algoritmos} que generen números {\bf pseudoaleatorios}.
 Los números pseudoaleatorios no son verdaderamente aleatorios, ya que son
-generados por un cálculo determinista, pero si sólo nos fijamos en los números
+generados por una operación determinista, pero si sólo nos fijamos en los números
 resulta casi imposible distinguirlos de los aleatorios de verdad.
 
 \index{random, módulo}
@@ -647,7 +647,7 @@ dentro de \verb"muestra_dos_veces", siempre se llamará {\tt bruce}.
 \index{función esteril} 
 
 Algunas de las funciones que estamos usando, como las matemáticas, producen
-resultados; a falta de un nombre mejor, las llamaremos {\bf funciones fructíferas} (fruitful functions).
+resultados; a falta de un nombre mejor, las llamaremos {\bf funciones productivas} (fruitful functions).
 Otras funciones, como \verb"muestra_dos_veces", realizan una
 acción, pero no devuelven un valor. A esas las llamaremos {\bf funciones
 estériles} (void functions).
