@@ -166,7 +166,7 @@
 \contentsline {section}{\numberline {13.8}Seguridad y uso de APIs}{169}
 \contentsline {section}{\numberline {13.9}Glosario}{173}
 \contentsline {section}{\numberline {13.10}Ejercicios}{174}
-\contentsline {chapter}{\numberline {14}Bases de datos y Lenguaje de Consultas Estructurado (SQL)}{175}
+\contentsline {chapter}{\numberline {14}Bases de datos y SQL}{175}
 \contentsline {section}{\numberline {14.1}\IeC {\textquestiondown }Qu\IeC {\'e} es una base de datos?}{175}
 \contentsline {section}{\numberline {14.2}Conceptos sobre bases de datos}{176}
 \contentsline {section}{\numberline {14.3}Add-on de Firefox para gesti\IeC {\'o}n de SQLite}{176}
