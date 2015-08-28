@@ -45,13 +45,12 @@
     \subitem elemento, 72, 94, 122
     \subitem sentencia, 20
     \subitem tupla, 124, 130
-  \item asignaci\IeC {\'o}n de elemento, 94
   \item atributo, 198
 
   \indexspace
 
   \item b\IeC {\'u}squeda, 117
-  \item b\IeC {\'u}squeda, patr\IeC {\'o}n, 78
+  \item b\IeC {\'u}squeda, patr\IeC {\'o}n de, 78
   \item bandera, 79
   \item barra-baja, car\IeC {\'a}cter, 21
   \item base de datos, 175
@@ -65,7 +64,6 @@
   \item booleano, tipo, 33
   \item borrado de elemento, 97
   \item borrado, elemento de lista, 97
-  \item branch, 36
   \item break, sentencia, 61
   \item bucle, 60
     \subitem anidado, 112, 117
@@ -76,7 +74,7 @@
     \subitem m\IeC {\'a}ximo, 65
     \subitem recorrido, 70
     \subitem while, 59
-  \item bucle y contador, 72
+    \subitem y contador, 72
   \item bug, 16
 
   \indexspace
@@ -86,20 +84,19 @@
   \item cabecera, 49, 55
   \item cach\IeC {\'e}, 202
   \item cadena, 19, 29, 98, 128
+    \subitem a formatear, 79
     \subitem comparaci\IeC {\'o}n, 73
     \subitem find, 134
     \subitem inmutable, 72
     \subitem m\IeC {\'e}todo, 74
+    \subitem m\IeC {\'e}todos, 80
     \subitem operaci\IeC {\'o}n, 25
     \subitem rebanada, 71
+    \subitem representaci\IeC {\'o}n de, 90
     \subitem split, 138
     \subitem startswith, 134
-    \subitem vac\IeC {\'\i }a, 99
-  \item cadena a formatear, 79
-  \item cadena vac\IeC {\'\i }a, 78, 99
-  \item cadena, m\IeC {\'e}todos, 80
-  \item cadena, representaci\IeC {\'o}n de, 90
-  \item cadena, tipo, 19
+    \subitem tipo, 19
+    \subitem vac\IeC {\'\i }a, 78, 99
   \item capturar, 91
   \item car\IeC {\'a}cter, 69
   \item carpeta, 213
@@ -112,7 +109,7 @@
     \subitem for\IeC {\'a}nea, 198
     \subitem l\IeC {\'o}gica, 198
     \subitem primaria, 198
-  \item close, m\IeC {\'e}todo, 90, 222
+  \item close, m\IeC {\'e}todo, 90, 221
   \item codicioso, 135, 144, 154
   \item coincidencia codiciosa, 144
   \item colaboradores, 231
@@ -124,8 +121,8 @@
   \item comparable, 121, 131
   \item comparaci\IeC {\'o}n
     \subitem cadena, 73
+    \subitem operador, 33
     \subitem tupla, 122
-  \item comparaci\IeC {\'o}n, operador, 33
   \item compilar, 16
   \item composici\IeC {\'o}n, 52, 55
   \item compuesta, sentencia, 35, 43
@@ -134,9 +131,9 @@
   \item condici\IeC {\'o}n, 35, 42, 60
   \item condicional
     \subitem anidado, 37, 42
+    \subitem ejecuci\IeC {\'o}n, 34
     \subitem encadenado, 36, 42
-  \item condicional, ejecuci\IeC {\'o}n, 34
-  \item condicional, sentencia, 34, 43
+    \subitem sentencia, 34, 43
   \item connect, funci\IeC {\'o}n, 177
   \item consistency check, 117
   \item contador, 67, 72, 78, 84, 111
@@ -189,8 +186,9 @@
     \subitem DSU, 123
   \item dispersable, 121, 128, 131
   \item dispersar, 131
-  \item dispersi\IeC {\'o}n, funci\IeC {\'o}n de, 117
-  \item dispersi\IeC {\'o}n, tabla de, 118
+  \item dispersi\IeC {\'o}n
+    \subitem funci\IeC {\'o}n de, 117
+    \subitem tabla de, 118
   \item divisi\IeC {\'o}n
     \subitem entera, 23, 30, 42
     \subitem punto-flotante, 23
@@ -203,9 +201,10 @@
 
   \item ejecuci\IeC {\'o}n alternativa, 35
   \item elemento, 79, 93, 107
+    \subitem asignaci\IeC {\'o}n, 72, 94
     \subitem diccionario, 117
   \item elemento, actualizar, 95
-  \item elemento, asignaci\IeC {\'o}n, 72, 122
+  \item elemento, asignaci\IeC {\'o}n, 122
   \item ElementTree, 162, 173
     \subitem find, 162
     \subitem findall, 163
@@ -215,8 +214,7 @@
   \item else, palabra clave, 35
   \item encadenado, condicional, 36, 42
   \item encapsulaci\IeC {\'o}n, 72
-  \item entera, divisi\IeC {\'o}n, 23
-  \item entera, division, 42
+  \item entera, divisi\IeC {\'o}n, 23, 42
   \item entero, 30
   \item entrada desde teclado, 25
   \item equivalencia, 101
@@ -228,15 +226,14 @@
     \subitem sintaxis, 29
     \subitem tipogr\IeC {\'a}fico, 130
   \item espacio en blanco, 41, 55, 90
-  \item est\IeC {\'e}ril, funci\IeC {\'o}n, 56
+  \item est\IeC {\'e}ril, funci\IeC {\'o}n, 53, 56
+  \item est\IeC {\'e}ril, m\IeC {\'e}todo, 96
   \item establecer pertenencia, 111
-  \item esteril, funci\IeC {\'o}n, 53
   \item estilo, 104, 112, 114
   \item estructura, 117
   \item estructura de datos, 129, 131
   \item evaluar, 23, 30
-  \item excepci\IeC {\'o}n, 29
-  \item exception
+  \item exception, 29
     \subitem IndexError, 70, 94
     \subitem IOError, 88
     \subitem KeyError, 110
@@ -256,10 +253,10 @@
   \item False, valor especial, 33
   \item fichero, 81
     \subitem abrir, 82
+    \subitem binario, 156
+    \subitem de texto, 91
     \subitem escritura, 89
     \subitem lectura, 84
-  \item fichero binario, 156
-  \item fichero de texto, 91
   \item filtrado, patr\IeC {\'o}n, 85
   \item final de l\IeC {\'\i }nea, car\IeC {\'a}cter de, 90
   \item findall, 135
@@ -290,6 +287,7 @@
     \subitem len, 70, 110
     \subitem list, 99
     \subitem log, 48
+    \subitem math, 48
     \subitem open, 82, 88
     \subitem popen, 221
     \subitem randint, 47
@@ -305,7 +303,6 @@
   \item funci\IeC {\'o}n productiva, 53
   \item funci\IeC {\'o}n, definici\IeC {\'o}n, 49, 50, 55, 56
   \item funci\IeC {\'o}n, llamada a, 45, 56
-  \item funci\IeC {\'o}n, math, 48
   \item funci\IeC {\'o}n, objeto, 50
   \item funci\IeC {\'o}n, razones para, 54
   \item funci\IeC {\'o}n, trigonom\IeC {\'e}trica, 48
@@ -331,11 +328,9 @@
   \item hashable, 121, 128, 131
   \item hashing, 222
   \item hashtable, 118
-  \item histogram, 111
   \item histograma, 111, 117
   \item HTML, 155
-  \item HTML, an\IeC {\'a}lisis de, 153
-  \item hueco, m\IeC {\'e}todo, 96
+    \subitem an\IeC {\'a}lisis de, 153
 
   \indexspace
 
@@ -415,11 +410,11 @@
 
   \item m\IeC {\'e}todo, 74, 79
     \subitem append, 96, 102
-    \subitem close, 90, 222
+    \subitem close, 90, 221
     \subitem count, 75
+    \subitem est\IeC {\'e}ril, 96
     \subitem extend, 96
     \subitem get, 112
-    \subitem hueco, 96
     \subitem items, 125
     \subitem join, 99
     \subitem keys, 114
@@ -472,6 +467,7 @@
   \item open, funci\IeC {\'o}n, 82, 88
   \item operador, 30
     \subitem and, 34
+    \subitem aritm\IeC {\'e}tico, 22
     \subitem booleano, 73
     \subitem cadena, 25
     \subitem comparaci\IeC {\'o}n, 33
@@ -486,7 +482,6 @@
     \subitem or, 34
     \subitem rebanada, 71, 95, 103, 122
     \subitem slice, 122
-  \item operador aritm\IeC {\'e}tico, 22
   \item operando, 22, 30
   \item or, operador, 34
   \item orden de operaciones, 23, 29
@@ -496,12 +491,12 @@
   \indexspace
 
   \item palabra clave, 21, 30
+    \subitem argumento, 123
     \subitem def, 49
     \subitem elif, 37
     \subitem else, 35
-  \item palabra clave, argumento, 123
   \item par\IeC {\'a}metro, 52, 56, 102
-  \item par\IeC {\'a}metro de funci\IeC {\'o}n, 52
+    \subitem de funci\IeC {\'o}n, 52
   \item par\IeC {\'e}ntesis
     \subitem argumento in, 45
     \subitem en tuplas, 121
@@ -556,7 +551,7 @@
   \indexspace
 
   \item radi\IeC {\'a}n, 48
-  \item rama, 42
+  \item rama, 36, 42
   \item randint, funci\IeC {\'o}n, 47
   \item random, funci\IeC {\'o}n, 47
   \item random, m\IeC {\'o}dulo, 47
@@ -571,8 +566,8 @@
     \subitem cadena, 71
     \subitem copiar, 71, 96
     \subitem lista, 95
+    \subitem operador, 71, 95, 103, 122
     \subitem tupla, 122
-  \item rebanada, operador, 71, 95, 103, 122
   \item recorrer, 223
   \item recorrido, 70, 79, 111, 113, 123
     \subitem diccionario, 126
@@ -598,8 +593,8 @@
   \item Romeo and Juliet, 107, 113, 115, 123, 126
   \item runtime error, 29, 41
   \item ruta, 213
-    \subitem absoluta, 214, 223
-    \subitem relativa, 214, 223
+    \subitem absoluta, 214, 222
+    \subitem relativa, 214, 222
 
   \indexspace
 
@@ -671,9 +666,9 @@
     \subitem como clave en diccionario, 128
     \subitem comparaci\IeC {\'o}n, 122
     \subitem en corchetes, 128
+    \subitem funci\IeC {\'o}n, 122
     \subitem rebanada, 122
     \subitem singleton, 121
-  \item tupla, funci\IeC {\'o}n, 122
   \item TypeError, 69, 72, 77, 122
 
   \indexspace

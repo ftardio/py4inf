@@ -861,8 +861,8 @@
 \indexentry{m\IeC {\'e}todo!readline}{221}
 \indexentry{read, m\IeC {\'e}todo}{221}
 \indexentry{m\IeC {\'e}todo!read}{221}
-\indexentry{close, m\IeC {\'e}todo}{222}
-\indexentry{m\IeC {\'e}todo!close}{222}
+\indexentry{close, m\IeC {\'e}todo}{221}
+\indexentry{m\IeC {\'e}todo!close}{221}
 \indexentry{checksum}{222}
 \indexentry{directorio!actual}{222}
 \indexentry{directorio!de trabajo}{222}
@@ -870,8 +870,8 @@
 \indexentry{hashing}{222}
 \indexentry{pipe}{222}
 \indexentry{tuber\IeC {\'\i }a}{222}
-\indexentry{ruta!absoluta}{223}
-\indexentry{ruta!relativa}{223}
+\indexentry{ruta!absoluta}{222}
+\indexentry{ruta!relativa}{222}
 \indexentry{shell}{223}
 \indexentry{walk}{223}
 \indexentry{recorrer}{223}

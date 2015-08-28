@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  28 AUG 2015 09:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  28 AUG 2015 10:56
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -1315,11 +1315,11 @@ cias (csev@umich.edu y
 Cap\'{\i }tulo 12.
 [147]
 Package epstopdf Info: Source file: <figs2/socket.eps>
-(epstopdf)                    date: 2015-08-22 12:03:04
-(epstopdf)                    size: 23622 bytes
+(epstopdf)                    date: 2015-08-28 09:23:41
+(epstopdf)                    size: 37385 bytes
 (epstopdf)             Output file: <figs2/socket-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:29:02
-(epstopdf)                    size: 11207 bytes
+(epstopdf)                    date: 2015-08-28 09:34:04
+(epstopdf)                    size: 14441 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/socket-eps-converted-
 to.pdf figs2/socket.eps>
 (epstopdf)             \includegraphics on input line 88.
@@ -1737,17 +1737,17 @@ Ap\'{e}ndice D.
 ] (C:\Users\Windows\Documents\GitHub\py4inf\book.ind [234] [235
 
 ]
-Underfull \hbox (badness 3428) in paragraph at lines 164--166
+Underfull \hbox (badness 3428) in paragraph at lines 161--163
 []\OT1/ptm/m/n/10.95 decorar-ordenar-quitar la de-co-ra-ci[]on,
  []
 
 [236] [237]
-Underfull \hbox (badness 2856) in paragraph at lines 280--281
+Underfull \hbox (badness 2856) in paragraph at lines 277--278
 []\OT1/ptm/m/n/10.95 Free Do-cu-men-ta-tion Li-cen-se, GNU,
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 319--320
+Underfull \hbox (badness 4713) in paragraph at lines 316--317
 []\OT1/ptm/m/n/10.95 GNU Free Do-cu-men-ta-tion Li-cen-se,
  []
 
@@ -1778,7 +1778,7 @@ Here is how much of TeX's memory you used:
  9111 multiletter control sequences out of 15000+200000
  66777 words of font info for 139 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,12n,69p,362b,623s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,12n,69p,362b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
@@ -1790,7 +1790,7 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (256 pages, 1367359 bytes).
+Output written on book.pdf (256 pages, 1370301 bytes).
 PDF statistics:
  1036 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
