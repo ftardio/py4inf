@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  27 AUG 2015 18:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  28 AUG 2015 09:06
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -976,14 +976,14 @@ Package epstopdf Info: Source file: <figs2/pda2.eps>
 (epstopdf)                    size: 19568 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/pda2-eps-converted-to
 .pdf figs2/pda2.eps>
-(epstopdf)             \includegraphics on input line 90.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs2/pda2-eps-converted-to.pdf, id=60, 217.81375pt x 96.36pt>
 File: figs2/pda2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/pda2-eps-converted-to.pdf>
-Package pdftex.def Info: figs2/pda2-eps-converted-to.pdf used on input line 90.
+Package pdftex.def Info: figs2/pda2-eps-converted-to.pdf used on input line 92.
 
 (pdftex.def)             Requested size: 163.3599pt x 72.26999pt.
  [2 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pda2-eps-converted-to.pdf>]
@@ -995,14 +995,14 @@ Package epstopdf Info: Source file: <figs2/arch.eps>
 (epstopdf)                    size: 27992 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/arch-eps-converted-to
 .pdf figs2/arch.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs2/arch-eps-converted-to.pdf, id=70, 435.6275pt x 255.95625pt>
 File: figs2/arch-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch-eps-converted-to.pdf>
-Package pdftex.def Info: figs2/arch-eps-converted-to.pdf used on input line 112
+Package pdftex.def Info: figs2/arch-eps-converted-to.pdf used on input line 114
 .
 (pdftex.def)             Requested size: 307.50296pt x 180.67499pt.
  [3 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch-eps-converted-to.pdf>]
@@ -1014,7 +1014,7 @@ Package epstopdf Info: Source file: <figs2/arch2.eps>
 (epstopdf)                    size: 28467 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/arch2-eps-converted-t
 o.pdf figs2/arch2.eps>
-(epstopdf)             \includegraphics on input line 164.
+(epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs2/arch2-eps-converted-to.pdf, id=80, 435.6275pt x 255.95625pt>
@@ -1022,17 +1022,20 @@ File: figs2/arch2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch2-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/arch2-eps-converted-to.pdf used on input line 16
-4.
+6.
 (pdftex.def)             Requested size: 307.50296pt x 180.67499pt.
  [4 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch2-eps-converted-to.pdf>
 ] [5]
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 273.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 275.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ) [6] [7]
-[8] [9] [10] [11] [12] [13] [14] [15] [16] [17])
+Underfull \vbox (badness 3219) has occurred while \output is active []
+
+ [8]
+[9] [10] [11] [12] [13] [14] [15] [16] [17])
 (C:\Users\Windows\Documents\GitHub\py4inf\02-variables.tex [18]
 Cap\'{\i }tulo 2.
 
@@ -1771,7 +1774,7 @@ Package createspace Info: book cost is 6.38USD (3.77USD for pro plan)
 Here is how much of TeX's memory you used:
  6103 strings out of 493921
  87288 string characters out of 3144870
- 145900 words of memory out of 3000000
+ 144900 words of memory out of 3000000
  9111 multiletter control sequences out of 15000+200000
  66777 words of font info for 139 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -1787,7 +1790,7 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (256 pages, 1367108 bytes).
+Output written on book.pdf (256 pages, 1367359 bytes).
 PDF statistics:
  1036 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
