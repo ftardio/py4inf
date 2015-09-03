@@ -101,7 +101,7 @@ Cuando el operador corchete aparece en el lado izquierdo de una asignación,
 \end{verbatim}
 \afterverb
 %
-El elemento cuyo índice es uno de {\tt numeros}, que
+El elemento de {\tt numeros} cuyo índice es uno, que
 antes era 123, es ahora 5.
 
 \index{índice!comienza en cero}
@@ -263,9 +263,10 @@ repite la lista {\tt [1, 2, 3]} tres veces.
 \index{índice!rebanada}
 \index{lista!rebanada}
 \index{rebanada!lista}
-\index{slice}
+\index{slice!lista}
+\index{lista!slice}
 
-El operador de rebanada(slice) también funciona en listas:
+El operador de rebanada ({\tt slice}) también funciona en listas:
 
 \beforeverb
 \begin{verbatim}
@@ -294,7 +295,7 @@ si omites ambos, la rebanada será una copia de la lista completa.
 \end{verbatim}
 \afterverb
 %
-Como las litas son mutables, a menudo resultará útil hacer una copia
+Como las listas son mutables, a menudo resultará útil hacer una copia
 antes de realizar operaciones que dupliquen elementos, los hagan rotar o mutilen
 de algún modo esas listas.
 
@@ -491,7 +492,7 @@ Primero, el programa que calculaba la media sin usar listas:
 total = 0
 contador = 0
 while ( True ) :
-    ent = raw_input('Introduce un número: ')
+    ent = raw_input('Introduzca un número: ')
     if ent == 'fin' : break
     valor = float(ent)
     total = total + valor
@@ -514,7 +515,7 @@ de números introducidos al final.
 \begin{verbatim}
 listnum = list()
 while ( True ) :
-    ent = raw_input('Introduce un número: ')
+    ent = raw_input('Introduzca un número: ')
     if ent == 'fin' : break
     valor = float(ent)
     listnum.append(valor)
@@ -528,7 +529,7 @@ Creamos una lista vacía antes de que el bucle comience, y luego cada vez
 que tenemos un número lo añadimos a la lista. Al final del
 programa, simplemente calculamos la suma de los números de la
 lista y lo dividimos por la cantidad de números,
-para conseguir la media.
+para obtener la media.
 
 \section{Listas y cadenas}
 
@@ -571,7 +572,7 @@ quieres dividir una cadena en palabras, puedes usar el método
 >>> print t
 ['suspirando', 'por', 'los', 'fiordos']
 >>> print t[2]
-the
+los
 \end{verbatim}
 \afterverb
 %
@@ -660,7 +661,7 @@ Aquí utilizamos también la forma contraída de la sentencia
 {\tt if}, de modo que colocamos el {\tt continue} en la
 misma línea que el {\tt if}. Esta forma contraída
 del {\tt if} opera igual que cuando el
-{\tt continue} se coloca en la siguiente línea y sangrado.
+{\tt continue} se coloca en la siguiente línea e indentado.
 
 El programa produce la siguiente salida:
 
@@ -946,7 +947,7 @@ trampas comunes y los modos de evitarlas:
 devuelven {\tt None}. Esto es lo opuesto a lo que hacen los métodos de cadena,
 que devuelven una cadena nueva y dejan la original inalterada.
 
-Si tienes costumbre de escribir código con cadenas como éste:
+Si estás acostumbrado a escribir código con cadenas como éste:
 
 \beforeverb
 \begin{verbatim}
@@ -965,7 +966,7 @@ t = t.sort()           # ¡INCORRECTO!
 \index{sort, método}
 \index{método!sort}
 
-Debido a que {\tt sort} devuelve {\tt None}, la operación
+Como {\tt sort} devuelve {\tt None}, la operación
 siguiente que realices con {\tt t} es probable que falle.
 
 Antes de usar métodos de lista y operadores, deberías leer la
@@ -984,7 +985,7 @@ están documentados en
 Parte del problema con las listas es que hay demasiados
 modos de hacer las cosas. Por ejemplo, para eliminar un elemento de
 una lista, se puede usar {\tt pop}, {\tt remove}, {\tt del},
-o incluso una asignación de rebanada.
+o incluso una asignación de rebanada ({\tt slice}).
 
 Para añadir un elemento, se puede usar el método {\tt append} o
 el operador {\tt +}. Pero no olvides que esto es correcto:
@@ -1010,7 +1011,7 @@ t = t + x              # ¡INCORRECTO!
 Prueba cada uno de estos ejemplos en modo interactivo para asegurarte
 de que comprendes lo que hacen. Fíjate que sólo el último
 causa un error en tiempo de ejecución; los otros tres son correctos sintácticamente, pero
-no hacen lo que queremos.
+hacen las cosas mal.
 
 
 \item Haz copias para evitar los alias.
@@ -1036,13 +1037,13 @@ variable!
 
 \item Listas, {\tt split} y ficheros
 
-Cuando leemos y analizamos archivos, hay muchas oportunidades
+Cuando leemos y analizamos ficheros, hay muchas oportunidades
 de encontrar entradas que pueden hacer fallar nuestro programa, de modo que
 es una buena idea recurrir al uso del patrón {\bf guardián} cuando
 estemos escribiendo programas que lean a través de un archivo
 y busquen ``una aguja en el pajar''.
 
-Vamos a revisar nuestro programa anterior que buscaba el día de la semana
+Vamos a revisar el programa anterior que buscaba el día de la semana
 en las líneas ``from'' de nuestro archivo:
 
 \beforeverb
@@ -1083,7 +1084,7 @@ IndexError: list index out of range
 \end{verbatim}
 \afterverb
 %
-Parece funcionar, y podemos ver el día de la primera línea
+Parece funcionar, y podemos ver el día extraído de la primera línea
 (Sat), pero luego el programa falla con un error y su traceback correspondiente.
 ¿Qué es lo que ha ido mal? ¿Qué desastroso dato ha provocado que nuestro elegante,
 ingenioso, y muy Pythónico programa haya fallado?
@@ -1184,7 +1185,7 @@ como primera palabra también resulta irrelevante para nosotros, así que tambi�
 El programa modificado funciona correctamente, así que tal vez sea correcto. Nuestra
 sentencia guardián nos asegura que {\tt palabras[0]} no fallará nunca,
 pero tal vez eso no sea suficiente. Cuando estamos programando, siempre debemos
-estar pensando: ``¿Qué podría ir mal?''
+estar pensando: ``¿Qué podría salir mal?''
 
 \begin{ex}
 
@@ -1268,7 +1269,7 @@ Cuando el programa finalice, ordena y muestra en pantalla las
 palabras resultantes, en orden alfabético.
 
 \begin{verbatim}
-Introduce fichero: romeo.txt
+Introduzca fichero: romeo.txt
 ['Arise', 'But', 'It', 'Juliet', 'Who', 'already', 
 'and', 'breaks', 'east', 'envious', 'fair', 'grief', 
 'is', 'kill', 'light', 'moon', 'pale', 'sick', 'soft', 
@@ -1294,7 +1295,7 @@ Este es un buen ejemplo de salida con algunas líneas eliminadas:
 \beforeverb
 \begin{verbatim}
 python fromcount.py 
-Introduce un nombre de fichero: mbox-short.txt
+Introduzca un nombre de fichero: mbox-short.txt
 stephen.marquard@uct.ac.za
 louis@media.berkeley.edu
 zqian@umich.edu
@@ -1316,18 +1317,18 @@ Reescribe el programa que pide al usuario una lista de números
 e imprime en pantalla el máximo y mínimo de los números
 introducidos al final, cuando el usuario introduce ``fin''.
 Escribe ahora el programa de modo que almacene los números que el usuario
-introduzca en una lista y use las funciones {\tt max()} y {\tt min()} para
+introduzca en una lista y usa las funciones {\tt max()} y {\tt min()} para
 calcular los números máximo y mínimo después de que el
 bucle termine.
 
 \beforeverb
 \begin{verbatim}
-Introduce un número: 6
-Introduce un número: 2
-Introduce un número: 9
-Introduce un número: 3
-Introduce un número: 5
-Introduce un número: fin
+Introduzca un número: 6
+Introduzca un número: 2
+Introduzca un número: 9
+Introduzca un número: 3
+Introduzca un número: 5
+Introduzca un número: fin
 Máximo: 9.0
 Mínimo: 2.0
 \end{verbatim}

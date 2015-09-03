@@ -23,7 +23,7 @@ operador corchete:
 \afterverb
 %
 \index{índice}
-La segunda sentencia extrae el carácter cuyo índice de posición es 1 en la
+La segunda sentencia extrae el carácter en la posición índice 1 de la
 variable {\tt fruta} y lo asigna a la variable {\tt letra}.
 
 La expresión entre corchetes recibe el nombre de {\bf índice}.
@@ -120,8 +120,8 @@ a
 \end{verbatim}
 \afterverb
 %
-Alternativamente, se pueden usar índices negativos, que cuentan hacia atrás desde
-el final de la cadena. La expresión {\tt fruta[-1]} recoge la última
+Como alternativa, se pueden usar índices negativos, que cuentan hacia atrás desde
+el final de la cadena. La expresión {\tt fruta[-1]} obtiene la última
 letra, {\tt fruta[-2]} extrae la segunda desde el final, y así todas las demás.
 
 \index{índice!negativo}
@@ -138,7 +138,7 @@ letra, {\tt fruta[-2]} extrae la segunda desde el final, y así todas las demás
 \index{sentencia!for}
 \index{recorrido}
 
-Gran parte de las operaciones implican procesar una cadena carácter por
+Muchas operaciones implican procesar una cadena carácter por
 carácter. A menudo se empieza por el principio, se van seleccionando caracteres
 de uno en uno, se hace algo con ellos, y se continúa hasta el final. Este modelo
 de procesado recibe el nombre de {\bf recorrido}. Una forma de escribir un recorrido
@@ -180,7 +180,7 @@ Cada vez que se recorre el bucle, el carácter siguiente de la cadena es asignad
 a la variable {\tt car}. El bucle continúa hasta que no quedan caracteres.
 
 
-\section{Rebanado de cadenas}
+\section{Rebanado de cadenas ({\tt slicing})}
 \label{slice}
 
 \index{rebanada!operador}
@@ -188,8 +188,10 @@ a la variable {\tt car}. El bucle continúa hasta que no quedan caracteres.
 \index{índice!rebanada}
 \index{cadena!rebanada}
 \index{rebanada!cadena}
+\index{cadena!slice}
+\index{slice!cadena}
 
-Un segmento de una cadena recibe el nombre de {\bf rebanada (slice)}.
+Un segmento de una cadena recibe el nombre de {\bf rebanada} ({\tt slice}).
 Seleccionar una rebanada es similar a seleccionar caracteres:
 
 \beforeverb
@@ -268,7 +270,7 @@ TypeError: object does not support item assignment
 \afterverb
 %
 Error de tipado: El objeto no soporta la asignación del elemento.
-El ``object'' (objeto) en este caso es la cadena y el ``item'' (elemento) es
+El ``objecto'' ({\tt object}) en este caso es la cadena y el ``elemento'' ({\tt item}) es
 el carácter que intentabas asignar. Por ahora, consideraremos que un {\bf objeto} es
 lo mismo que un valor, aunque mejoraremos esa definición más adelante.
 Un {\bf elemento} es uno de los valores en una secuencia.
@@ -293,7 +295,7 @@ JHola, mundo!
 \afterverb
 %
 Este ejemplo concatena una primera letra nueva en
-una rebanada de {\tt saludo}. Esto conserva intacta
+una rebanada ({\tt slice}) de {\tt saludo}. Esto conserva intacta
 la cadena original.
 
 \index{concatenación}
@@ -320,7 +322,7 @@ print contador
 \end{verbatim}
 \afterverb
 %
-Este programa demuestra otro patrón del cálculo llamado {\bf contador}.
+Este programa demuestra otro diseño del cálculo llamado {\bf contador}.
 La variable {\tt contador} es inicializada a 0 y después
 es incrementada cada vez que se encuentra una {\tt a}.
 Cuando se sale del bucle, {\tt contador}
@@ -370,7 +372,7 @@ if palabra == 'banana':
 \end{verbatim}
 \afterverb
 %
-Otros operadores de comparación resultan útiles para colocar las palabras en orden
+Otros operadores de comparación resultan útiles para colocar palabras en orden
 alfabético:
 
 \beforeverb
@@ -395,7 +397,7 @@ Tu palabra, Piña, va antes que banana.
 \afterverb
 %
 Un método habitual para evitar este problema es convertir las cadenas
-a un formato estándar, por ejemplo todas en minúsculas, antes de realizar la
+a un formato estándar, por ejemplo todas a minúsculas, antes de realizar la
 comparación. Tenlo en cuenta en el caso de que tengas que defenderte
 de un hombre armado con una Piña.
 
@@ -519,7 +521,7 @@ Puede tomar un segundo argumento que indica en qué posición debe comenzar la b
 \afterverb
 %
 Una tarea habitual es eliminar espacios en blanco (espacios, tabulaciones, saltos de línea)
-del comienzo y del final de una cadena usando el método {\tt strip}:
+del principio y del final de una cadena usando el método {\tt strip}:
 
 \beforeverb
 \begin{verbatim}
@@ -590,7 +592,7 @@ From stephen.marquard@{\bf uct.ac.za} Sat Jan  5 09:14:16 2008
 
 y queremos extraer sólo la segunda mitad de la dirección (es decir,
 {\tt uct.ac.za}) de cada línea, podemos hacerlo usando el método
-{\tt find} y rebanando la cadena.
+{\tt find} y rebanando ({\tt slicing}) la cadena.
 
 En primer lugar, buscaremos la posición del símbolo arroba en la cadena. Después,
 buscaremos la posición del primer espacio \emph{después} de la arroba. Y a continuación
@@ -662,8 +664,8 @@ de modo que puedes insertar un valor en una frase:
 \beforeverb
 \begin{verbatim}
 >>> camellos = 42
->>> 'He visto %d camellos.' % camellos
-'He visto 42 camellos.'
+>>> 'He divisado %d camellos.' % camellos
+'He divisado 42 camellos.'
 \end{verbatim}
 \afterverb
 %
@@ -680,8 +682,8 @@ formatear una cadena:
 
 \beforeverb
 \begin{verbatim}
->>> 'En %d años he visto %g %s.' % (3, 0.1, 'camellos')
-'En 3 años he visto 0.1 camellos.'
+>>> 'En %d años he divisado %g %s.' % (3, 0.1, 'camellos')
+'En 3 años he divisado 0.1 camellos.'
 \end{verbatim}
 \afterverb
 %
@@ -727,8 +729,8 @@ Puedes leer más sobre él en
 \section{Depuración}
 \index{depuración}
 
-Una habilidad que deberás desarrollar cuando programes es la de
-estar preguntándote siempre: ``¿Qué podría ir mal aquí?'', o quizás,
+Una capacidad que deberás desarrollar cuando programes es la de
+estar preguntándote siempre: ``¿Qué podría salir mal aquí?'', o también,
 ``¿Qué locura puede hacer el usuario para destrozar nuestro (aparentemente)
 perfecto programa?''
 
@@ -771,7 +773,7 @@ soluciones a esto para convertir la línea tres en ``segura'', incluso
 cuando la entrada sea una cadena vacía.
 
 Una posibilidad es simplemente usar el método {\tt startswith},
-que devuelve {\tt False (falso)} si la cadena está vacía.
+que devuelve {\tt False} (falso) si la cadena está vacía.
 
 \beforeverb
 \begin{verbatim}
@@ -796,7 +798,7 @@ sólo cuando hay al menos un carácter en la cadena:
 
 \begin{description}
 
-\item[búsqueda:] Un patrón de recorrido que se detiene
+\item[búsqueda:] Un diseño de recorrido que se detiene
 cuando encuentra lo que está buscando.
 \index{búsqueda, patrón de}
 \index{patrón!de búsqueda}
@@ -821,8 +823,8 @@ una condición es verdadera.
 \index{flag}
 \index{bandera}
 
-\item[índice:] Un valor entero usado para seleccionar un elemento en
-una secuencia, como un carácter en una cadena.
+\item[índice:] Un valor entero usado para seleccionar un elemento de
+una secuencia, como puede ser un carácter en una cadena.
 \index{índice}
 
 \item[inmutable:] La propiedad de una secuencia cuyos elementos
@@ -876,7 +878,7 @@ cad = 'X-DSPAM-Confidence: {\bf 0.8475}'
 \end{alltt}
 \afterverb
 
-Usa {\tt find} y rebanado de cadenas para extraer la porción
+Usa {\tt find} y rebanado de cadenas ({\tt slicing}) para extraer la porción
 de la cadena después del carácter punto, y luego usa la
 función {\tt float} para convertir la cadena extraída en
 un número en punto flotante.

@@ -10,7 +10,7 @@
 
 En el contexto de la programación, una {\bf función} es una secuencia de
 sentencias que realizan una operación y que reciben un nombre. Cuando se define una función,
-es posible especificar el nombre y la secuencia de sentencias. Más adelante, se puede
+se especifica el nombre y la secuencia de sentencias. Más adelante, se puede
 ``llamar'' a la función por ese nombre.
 Ya hemos visto un ejemplo de una {\bf llamada a una función}:
 
@@ -28,7 +28,7 @@ El resultado de la función {\tt type} es el tipo del argumento.
 
 \index{paréntesis!argumento in}
 
-Es habitual decir que una función ``toma'' un argumento y ``retorna'' (o devuelve)
+Es habitual decir que una función ``toma'' (o recibe) un argumento y ``retorna'' (o devuelve)
 un resultado. El resultado se llama {\bf valor de retorno}.
 
 \index{argumento}
@@ -59,7 +59,7 @@ cadena (que resulta ser la letra ``u''), mientras que la función
 {\tt min} nos muestra el carácter más pequeño (que en ese caso es
 un espacio).
 
-Otra función incorporada muy común es {\tt len},
+Otra función interna muy común es {\tt len},
 que nos dice cuántos elementos hay en su argumento. Si el argumento
 de {\tt len} es una cadena, nos devuelve el número de caracteres
 que hay en la cadena.
@@ -92,7 +92,7 @@ Se deben tratar los nombres de las funciones internas como si fueran palabras re
 
 Python también proporciona funciones internas que convierten valores
 de un tipo a otro. La función {\tt int} toma cualquier valor y
-lo convierte en un entero si puede, o se queja si no puede:
+lo convierte en un entero, si puede, o se queja si no puede:
 
 \index{int, función}
 \index{función!int}
@@ -155,7 +155,7 @@ Finalmente, {\tt str} convierte su argumento en una cadena:
 \index{determinístico}
 \index{pseudoaleatorio}
 
-A partir de las mismas entradas, la mayoría de los PCs generarán
+A partir de las mismas entradas, la mayoría de los programas generarán
 las mismas salidas cada vez, que es lo que llamamos comportamiento {\bf determinista}.
 El determinismo normalmente es algo bueno, ya que esperamos que la misma
 operación nos proporcione siempre el mismo resultado. Para ciertas aplicaciones, sin embargo,
@@ -262,7 +262,7 @@ Gausiana, exponencial, gamma, y unas cuantas más.
 
 Python tiene un módulo  matemático {\tt (math)}, que proporciona la mayoría
 de las funciones matemáticas habituales.
-Antes de que se pueda utilizar el módulo, hay que importarlo:
+Antes de que podamos utilizar el módulo, deberemos importarlo:
 
 \beforeverb
 \begin{verbatim}
@@ -363,7 +363,7 @@ He aquí un ejemplo:
 \beforeverb
 \begin{verbatim}
 def muestra_estribillo():
-    print "Soy un leñador, qué alegría."
+    print 'Soy un leñador, qué alegría.'
     print 'Duermo toda la noche y trabajo todo el día.'
 \end{verbatim}
 \afterverb
@@ -382,17 +382,17 @@ nombre.
 
 Los paréntesis vacíos después del nombre indican que esta función
 no toma ningún argumento. Más tarde construiremos funciones que
-toman argumentos de entrada.
+reciban argumentos de entrada.
 
 \index{paréntesis!vacíos}
 \index{cabecera}
 \index{cuerpo}
-\index{sangrado}
+\index{indentado}
 \index{dos-puntos}
 
 La primera línea de la definición de la función es llamada la {\bf cabecera};
 el resto se llama el {\bf cuerpo}. La cabecera debe terminar con dos-puntos (:),
-y el cuerpo debe ir sangrado. Por convención, el sangrado es
+y el cuerpo debe ir indentado. Por convención, el indentado es
 siempre de cuatro espacios. El cuerpo puede contener
 cualquier número de sentencias.
 
@@ -410,7 +410,7 @@ no está completa:
 \beforeverb
 \begin{verbatim}
 >>> def muestra_estribillo():
-...     print "Soy un leñador, qué alegría."
+...     print 'Soy un leñador, qué alegría.'
 ...     print 'Duermo toda la noche y trabajo todo el día.'
 ...
 \end{verbatim}
@@ -436,8 +436,8 @@ tiene como tipo \verb"'function'".
 \index{función, objeto}
 \index{objeto!función}
 
-La sintaxis para llamar a la nueva función es la misma que
-la de las funciones internas:
+La sintaxis para llamar a nuestra nueva función es la misma que
+usamos para las funciones internas:
 
 \beforeverb
 \begin{verbatim}
@@ -471,18 +471,18 @@ Duermo toda la noche y trabajo todo el día.
 \end{verbatim}
 \afterverb
 %
-Pero la canción en realidad no es así.
+Pero en realidad la canción no es así.
 
 \section{Definición y usos}
 \index{función, definición}
 
 Reuniendo los fragmentos de código de las secciones anteriores, el
-programa completo sería algo esto:
+programa completo sería algo como esto:
 
 \beforeverb
 \begin{verbatim}
 def muestra_estribillo():
-    print "Soy un leñador, que alegría."
+    print 'Soy un leñador, que alegría.'
     print 'Duermo toda la noche y trabajo todo el día.'
 
 def repite_estribillo():
@@ -506,7 +506,7 @@ pueda ejecutar. En otras palabras, la definición de la función debe ser
 ejecutada antes de que la función se llame por primera vez.
 
 \begin{ex}
-Mueve la última línea de este programa
+Desplaza la última línea de este programa
 hacia arriba, de modo que la llamada a la función aparezca antes que las
 definiciones. Ejecuta
 el programa y observa qué mensaje
@@ -514,7 +514,7 @@ de error obtienes.
 \end{ex}
 
 \begin{ex}
-Mueve la llamada de la función de nuevo hacia el final,
+Desplaza la llamada de la función de nuevo hacia el final,
 y coloca la definición de \verb"muestra_estribillo" después de la definición
 de \verb"repite_estribillo". ¿Qué ocurre cuando haces funcionar ese programa?
 \end{ex}
@@ -539,11 +539,11 @@ de pasar a la siguiente sentencia, el flujo salta al cuerpo de
 la función, ejecuta todas las sentencias que hay allí, y después vuelve
 al punto donde lo dejó.
 
-Esto parece bastante simple, hasta que uno recuerda que una función puede
-llamar a otra. Cuando está en medio de una función, el programa puede
+Todo esto parece bastante sencillo, hasta que uno recuerda que una función puede
+llamar a otra. Cuando está en mitad de una función, el programa puede
 tener que ejecutar las sentencias de otra función. Pero cuando
 está ejecutando esa nueva función, ¡tal vez haya que ejecutar
-más funciones todavía!
+todavía más funciones!
 
 Afortunadamente, Python es capaz de llevar el seguimiento de dónde se encuentra en cada momento, de modo
 que cada vez que completa la ejecución de una función, el programa vuelve al punto donde lo dejó
@@ -617,7 +617,7 @@ Spam Spam Spam Spam
 \end{verbatim}
 \afterverb
 %
-El argumento es evaluado antes de que función sea llamada, así
+El argumento es evaluado antes de que la función sea llamada, así
 que en los ejemplos, la expresión \verb"'Spam '*4" y
 {\tt math.cos(math.pi)} son evaluadas sólo una vez.
 
@@ -783,14 +783,14 @@ devuelve el menor valor de esa lista.
 Si estás usando un editor de texto para escribir tus propios scripts, puede
 que tengas problemas con los espacios y tabulaciones. El mejor modo de evitar
 esos problemas es usar espacios exclusivamente (no tabulaciones). La mayoría
-de los editores de texto que reconocen Python lo hacen así por efecto, aunque
+de los editores de texto que reconocen Python lo hacen así por defecto, aunque
 hay algunos que no.
 
 \index{espacio en blanco}
 
 Las tabulaciones y los espacios normalmente son invisibles, lo cual hace
 que sea difícil depurar los errores que se pueden producir, así que mejor
-busca un editor que gestione el sangrado por ti.
+busca un editor que gestione el indentado por ti.
 
 Tampoco te olvides de guardar tu programa antes de hacerlo funcionar. Algunos
 entornos de desarrollo lo hacen automáticamente, pero otros no.
@@ -853,7 +853,7 @@ el funcionamiento de un programa.
 el nombre de la función seguido por una lista de argumentos.
 \index{función, llamada a}
 
-\item[notación punto:] La sintaxis de llamada a una función en
+\item[notación punto:] La sintaxis para llamar a una función de
 otro módulo, especificando el nombre del módulo seguido por un punto y el
 nombre de la función.
 \index{punto, notación}
@@ -894,7 +894,7 @@ es usada como una expresión, el valor de retorno es el valor de la expresión.
 
 a) Es una jerga que significa ``este código es realmente estupendo''\\
 b) Indica el comienzo de una función\\
-c) Indica que la siguiente sección de código sangrado debe ser almacenada para usarla más tarde\\
+c) Indica que la siguiente sección de código indentado debe ser almacenada para usarla más tarde\\
 d) b y c son correctas ambas\\
 e) Ninguna de las anteriores
 \end{ex}
@@ -929,8 +929,8 @@ y crea una función llamada \verb"calculo_salario" que reciba
 dos parámetros ({\tt horas} y {\tt tarifa}).
 
 \begin{verbatim}
-Introduce Horas: 45
-Introduce Tarifa: 10
+Introduzca Horas: 45
+Introduzca Tarifa: 10
 Salario: 475.0
 \end{verbatim}
 \end{ex}
@@ -950,19 +950,19 @@ Puntuación Calificación
 
 Ejecución del programa:
 
-Introduce puntuación: 0.95
+Introduzca puntuación: 0.95
 Sobresaliente
 
-Introduce puntuación: perfecto
+Introduzca puntuación: perfecto
 Puntuación incorrecta
 
-Introduce puntuación: 10.0
+Introduzca puntuación: 10.0
 Puntuación incorrecta
 
-Introduce puntuación: 0.75
+Introduzca puntuación: 0.75
 Bien
 
-Introduce puntuación: 0.5
+Introduzca puntuación: 0.5
 Insuficiente
 \end{verbatim}
 

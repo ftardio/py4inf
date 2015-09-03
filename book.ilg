@@ -6,8 +6,8 @@ Scanning input file book.idx...
    -- Illegal space within numerals in second argument.
 !! Input index error (file = book.idx, line = 3):
    -- Illegal space within numerals in second argument.
-.done (885 entries accepted, 3 rejected).
-Sorting entries..........done (9257 comparisons).
-Generating output file book.ind....done (713 lines written, 0 warnings).
+.done (890 entries accepted, 3 rejected).
+Sorting entries..........done (9196 comparisons).
+Generating output file book.ind....done (719 lines written, 0 warnings).
 Output written in book.ind.
 Transcript written in book.ilg.

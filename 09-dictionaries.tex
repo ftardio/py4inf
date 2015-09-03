@@ -12,12 +12,12 @@ Un {\bf diccionario} es similar a una lista, pero más general. En una lista,
 las posiciones de los índices deben ser enteros; en un diccionario,
 los índices pueden ser de (casi) cualquier tipo.
 
-Puedes pensar en un diccionario como un mapa entre un conjunto de índices
+Puedes pensar en un diccionario como una asignación entre un conjunto de índices
 (a los cuales se les llama {\bf claves}) y un conjunto de valores. Cada clave apunta a un
 valor. La asociación de una clave y un valor recibe el nombre de {\bf
 pareja clave-valor}, o a veces {\bf elemento}.
 
-Por ejemplo, hemos construido un diccionario que mapea desde palabras inglesas
+Por ejemplo, hemos construido un diccionario que asocia palabras inglesas con
 sus equivalentes en español, de modo que tanto claves como valores son cadenas.
 
 La función {\tt dict} crea un diccionario nuevo sin elementos.
@@ -154,7 +154,7 @@ True
 %
 El operador {\tt in} utiliza algoritmos diferentes para las listas y
 para los diccionarios. Para las listas, usa un algoritmo lineal de búsqueda.
-A medida la lista se va haciendo más larga, el tiempo de búsqueda
+A medida que la lista se va haciendo más larga, el tiempo de búsqueda
 va aumentando en proporción directa a su longitud.
 Para los diccionarios, Python usa un
 algoritmo llamado {\bf tabla de dispersión}, que tiene una propiedad destacada--el
@@ -215,7 +215,7 @@ una de ellas implementa esa operación de un modo diferente.
 
 Una {\bf implementación} es un modo de realizar una operación;
 algunas implementaciones son mejores que otras. Por ejemplo,
-una ventaja de las implementaciones del diccionario es que no
+una ventaja de la implementación del diccionario es que no
 necesitamos saber de antemano qué letras aparecerán en la cadena
 y sólo tendremos que hacer sitio para las letras que vayan apareciendo.
 
@@ -244,7 +244,7 @@ estadístico para un conjunto de contadores (o frecuencias).
 El bucle {\tt for} recorre
 la cadena. Cada vez que entra en el bucle, si el carácter {\tt c} no
 está en el diccionario, creamos un nuevo elemento con la clave {\tt c} y el
-valor inicial 1 (ya que hemos visto esa letra una vez). Si {\tt c} ya
+valor inicial 1 (ya que hemos encontrado esa letra una vez). Si {\tt c} ya
 está en el diccionario, incrementamos {\tt d[c]}.
 
 Aquí está la salida del programa:
@@ -277,7 +277,7 @@ el valor por defecto. Por ejemplo:
 \afterverb
 %
 Podemos usar {\tt get} para escribir nuestro bucle de histograma de forma más concisa.
-Como el método {\tt get} controla automáticamente el caso de que la clave
+Como el método {\tt get} gestiona automáticamente el caso de que la clave
 no esté en el diccionario, podemos reducir cuatro líneas a una sola
 y eliminar la sentencia {\tt if}
 
@@ -320,8 +320,8 @@ Who is already sick and pale with grief
 \afterverb
 %
 Vamos a escribir un programa en Python para ir leyendo las líneas del archivo,
-dividir cada línea en una lista de palabras, movernos en bucle a través de cada
-palabra y contar el número de veces que aparece cada una, usando un diccionario.
+dividir cada línea en una lista de palabras, ir recorriendo esa lista
+y contar el número de veces que aparece cada palabra, usando un diccionario.
 
 \index{anidados, bucles}
 \index{bucle!anidado}
@@ -342,7 +342,7 @@ todas las palabras en cada línea del archivo de entrada.
 
 \beforeverb
 \begin{verbatim}
-nombref = raw_input('Introduce el nombre del fichero: ')
+nombref = raw_input('Introduzca el nombre del fichero: ')
 try:
     manf = open(nombref)
 except:
@@ -370,7 +370,7 @@ de todos los contadores sin ordenar.
 \beforeverb
 \begin{verbatim}
 python count1.py 
-Introduce el nombre del fichero: romeo.txt
+Introduzca el nombre del fichero: romeo.txt
 {'and': 3, 'envious': 1, 'already': 1, 'fair': 1, 
 'is': 3, 'through': 1, 'pale': 1, 'yonder': 1, 
 'what': 1, 'sun': 2, 'Who': 1, 'But': 1, 'moon': 1, 
@@ -381,8 +381,8 @@ Introduce el nombre del fichero: romeo.txt
 \afterverb
 %
 Resulta un poco incómodo buscar a través del diccionario para encontrar
-cuál es la palabra más común y su contador, de modo que necesitamos añadir un poco
-más de código Phyton que nos proporcione la salida de un modo que nos resulte más útil.
+cuál es la palabra más común y su contador, de modo que necesitaremos añadir un poco
+más de código Phyton para obtener una salida que nos resulte más útil.
 
 \section{Bucles y diccionarios}
 
@@ -416,7 +416,7 @@ annie 42
 Vemos de nuevo que la claves aparecen sin ningún orden en particular.
 
 \index{estilo}
-Podemos usar este modelo para poner en práctica las diversas expresiones de bucles
+Podemos usar este diseño para poner en práctica las diversas expresiones de bucles
 que hemos descrito antes. Por ejemplo, si queremos
 encontrar todas las entradas de un diccionario que tengan un valor
 superior a diez, podríamos escribir el siguiente código:
@@ -434,7 +434,7 @@ El bucle {\tt for} itera a través de las
 {\em claves} del diccionario, de modo que podemos
 usar el operador índice para recuperar el
 {\em valor} correspondiente
-para cada clave.
+de cada clave.
 Aquí podemos ver el aspecto de la salida:
 
 \beforeverb
@@ -500,9 +500,9 @@ Who is already sick and pale with grief,
 \afterverb
 %
 Dado que la función de Python {\tt split} busca espacios y
-trata las palabras como fichas separadas por esos espacios, trataríamos
+trata las palabras como piezas separadas por esos espacios, trataríamos
 las palabras ``soft!'' y ``soft'' como \emph{diferentes}, y se crearía
-una entrada separada en el diccionario para cada una de ellas.
+una entrada diferente en el diccionario para cada una de ellas.
 
 Además, dado que el archivo contiene palabras en mayúsculas, también se
 trataría a ``who'' y ``Who'' como palabras diferentes, con contadores
@@ -540,7 +540,7 @@ Hacemos las siguientes modificaciones a nuestro programa:
 \begin{verbatim}
 import string                                          # Código nuevo
 
-nombref = raw_input('Introduce el nombre del fichero: ')
+nombref = raw_input('Introduzca el nombre del fichero: ')
 try:
     manf = open(nombref)
 except:
@@ -576,16 +576,16 @@ print a.translate(string.maketrans(' ',' '), string.punctuation
 %
 Parte del aprendizaje del ``Arte de Python'' o ``Pensar Pythónicamente''
 consiste en darse cuenta de que Python
-a menudo tiene capacidades incorporadas para muchos problemas de análisis
+a menudo tiene capacidades ya integradas para muchos problemas de análisis
 de datos comunes. Llegará un momento en que habrás visto suficiente código de ejemplo y leído
-suficiente documentación para saber dónde buscar para localizar si alguien
-ya ha escrito antes algo que pueda facilitarte el trabajo.
+suficiente documentación para saber dónde buscar para ver si alguien
+ya ha escrito anteriormente algo que pueda facilitarte el trabajo.
 
 Lo siguiente es una versión abreviada de la salida:
 
 \beforeverb
 \begin{verbatim}
-Introduce el nombre del fichero: romeo-full.txt
+Introduzca el nombre del fichero: romeo-full.txt
 {'swearst': 1, 'all': 6, 'afeard': 1, 'leave': 2, 'these': 2, 
 'kinsmen': 2, 'what': 11, 'thinkst': 1, 'love': 24, 'cloak': 1, 
 a': 24, 'orchard': 2, 'light': 5, 'lovers': 2, 'romeo': 40, 
@@ -612,7 +612,7 @@ sugerencias para depurar conjuntos de datos grandes:
 conjunto de datos. Por ejemplo, si el programa lee un archivo de texto,
 comienza solamente con las primeras 10 líneas, o con el ejemplo más pequeño
 que puedas encontrar. Puedes editar los propios archivos, o (mejor) modificar el
-programa de modo que lea sólo las primeras {\tt n} líneas.
+programa de modo que lea sólo las {\tt n} primeras líneas.
 
 Si hay un error, puedes reducir {\tt n} hasta el valor
 más pequeño en el cual se manifieste el error, y luego irlo incrementando gradualmente
@@ -623,27 +623,27 @@ conjunto de datos completo, considera imprimir resúmenes de los datos: por ejem
 el número de elementos en un diccionario o el total de una lista de números.
 
 Una causa habitual de errores en tiempo de ejecución es un valor que no es del tipo
-correcto. Para depurar este tipo de error, a menudo es suficiente con imprimir
+correcto. Para depurar este tipo de error, a menudo es suficiente con mostrar en pantalla
 el tipo del valor.
 
 \item[Escribe auto-comprobaciones:] A veces puedes escribir código que compruebe
 los errores automáticamente. Por ejemplo, si estás calculando la
 media de una lista de números, puedes comprobar que el resultado no
 es mayor que el elemento más grande de la lista, o menor que el más
-pequeño. A eso se le llama ``sanity check (prueba de sensatez)'', porque detecta
+pequeño. A eso se le llama ``prueba de coherencia'' ({\tt sanity check}), porque detecta
 resultados que son ``completamente ilógicos''.
 
 \index{sanity check}
-\index{prueba de sensatez}
+\index{prueba de coherencia}
 \index{consistency check}
 \index{prueba de consistencia}
 
 Otro tipo de comprobación compara los resultados de dos cálculos
 diferentes para ver si son consistentes. A esto se le llama una
-``consistency check (prueba de consistencia)''.
+``prueba de consistencia'' ({\tt consistency check}).
 
 \item[Haz que la salida se muestre ordenada:] Dar formato a la salida de depuración
-puede hacer más fácil localizar un error.
+puede conseguir que resulte más fácil localizar un error.
 
 \end{description}
 
@@ -671,7 +671,7 @@ y encuentra su valor correspondiente.
 primera parte de una pareja clave-valor.
 \index{clave}
 
-\item[diccionario:] Un mapeo de un conjunto de claves hacia sus
+\item[diccionario:] Una asociación de un conjunto de claves hacia sus
 valores correspondientes.
 \index{diccionario}
 
@@ -686,11 +686,11 @@ para calcular la localización de una clave.
 \item[histograma:] Un conjunto de contadores.
 \index{histograma}
 
-\item[implementación:] Un modo de realizar un cálculo.
+\item[implementación:] Un modo de realizar una operación.
 \index{implementación}
 
-\item[pareja clave-valor:] La representación del mapeado desde
-una clave hacia un valor.
+\item[pareja clave-valor:] La representación de la asociación de
+una clave con un valor.
 \index{pareja clave-valor}
 
 \item[tabla de dispersión (hashtable):] El algoritmo usado para implementar
@@ -722,7 +722,7 @@ From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 
 Ejemplo de Ejecución:
 python dow.py
-Intoduce un nombre de fichero: mbox-short.txt
+Intoduzca un nombre de fichero: mbox-short.txt
 {'Fri': 20, 'Thu': 6, 'Sat': 1}
 \end{verbatim}
 \afterverb
@@ -736,7 +736,7 @@ e imprima el diccionario.
 
 \beforeverb
 \begin{verbatim}
-Introduce nombre del fichero: mbox-short.txt
+Introduzca un nombre del fichero: mbox-short.txt
 {'gopal.ramasammycook@gmail.com': 1, 'louis@media.berkeley.edu': 3, 
 'cwen@iupui.edu': 5, 'antranig@caret.cam.ac.uk': 1, 
 'rjlowe@iupui.edu': 2, 'gsilver@umich.edu': 3, 
@@ -759,10 +759,10 @@ mensajes e imprime cuántos mensajes tiene esa persona.
 
 \beforeverb
 \begin{verbatim}
-Introduce un nombre de fichero: mbox-short.txt
+Introduzca un nombre de fichero: mbox-short.txt
 cwen@iupui.edu 5
 
-Introduce un nombre de fichero: mbox.txt
+Introduzca un nombre de fichero: mbox.txt
 zqian@umich.edu 195
 \end{verbatim}
 \afterverb
@@ -777,7 +777,7 @@ del programa, imprime en pantalla el contenido de tu diccionario.
 \beforeverb
 \begin{verbatim}
 python schoolcount.py
-Introduce un nombre de fichero: mbox-short.txt
+Introduzca un nombre de fichero: mbox-short.txt
 {'media.berkeley.edu': 4, 'uct.ac.za': 6, 'umich.edu': 7, 
 'gmail.com': 1, 'caret.cam.ac.uk': 1, 'iupui.edu': 8}
 \end{verbatim}

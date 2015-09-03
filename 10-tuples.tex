@@ -10,14 +10,14 @@
 \index{tipo!tupla}
 \index{secuencia}
 
-Una tupla\footnote{Anécdota: La palabra ``tupla (tuple en inglés)'' proviene de los nombres
+Una tupla\footnote{Anécdota: La palabra ``tupla'' ({/tt tuple} en inglés), proviene de los nombres
 dados a las secuencias de números de distintas longitudes: simple,
 doble, triple, cuádrupe, quíntuple, séxtuple, séptuple, etc.}
 es una secuencia de valores muy parecida a una lista.
 Los valores almacenados en una tupla pueden ser de cualquier tipo, y
 están indexados por enteros.
 La diferencia más importante es que las tuplas son {\bf inmutables}.
-Las tuplas además son {\bf comparables} y {\bf hashables} (dispersables), de modo que
+Las tuplas además son {\bf comparables} y {\bf dispersables} ({\tt hashables}), de modo que
 las listas de tuplas se pueden ordenar y también es posible usar tuplas
 como valores para las claves en los diccionarios de Python.
 
@@ -114,13 +114,15 @@ indexa un elemento:
 \end{verbatim}
 \afterverb
 %
-Y el operador de rebanada selecciona un rango de elementos.
+Y el operador de rebanada ({\tt slice}) selecciona un rango de elementos.
 
 \index{rebanada!operador}
 \index{operador!slice}
 \index{operador!rebanada}
 \index{tupla!rebanada}
 \index{rebanada!tupla}
+\index{tupla!slice}
+\index{slice!tupla}
 
 \beforeverb
 \begin{verbatim}
@@ -190,7 +192,7 @@ Esta característica se presta al uso de un diseño llamado {\bf DSU}, que
 \item[Decorate] (Decora) una secuencia, construyendo una lista de tuplas
 con uno o más índices ordenados precediendo los elementos de dicha secuencia,
 
-\item[Sort] (Ordena) la lista de tuplas usando la función incorporada en Python {\tt sort}, y
+\item[Sort] (Ordena) la lista de tuplas usando la función interna de Python {\tt sort}, y
 
 \item[Undecorate] (Quita la decoración), extrayendo los elementos ordenados de la secuencia.
 
@@ -285,9 +287,9 @@ a las variables {\tt x} e {\tt y} en una única sentencia.
 %
 No es magia, Python traduce \emph{aproximadamente} la
 sintaxis de asignación de la tupla
-a lo siguiente:\footnote{Python no convierte la
+de este modo:\footnote{Python no convierte la
 sintaxis de forma literal. Por ejemplo, si intentas esto con un diccionario,
-no funcionará como esperarías.}
+no funcionará exactamente como podrías esperar.}
 
 \beforeverb
 \begin{verbatim}
@@ -334,8 +336,8 @@ es asignado a su respectiva variable en el lado izquierdo.
 Todas las expresiones en el lado derecho son evaluadas antes de
 realizar ninguna asignación.
 
-El número de variables en el lado izquierdo y el número de
-valores en el derecho deben ser el mismo:
+La cantidad de variables en el lado izquierdo y la cantidad de
+valores en el derecho debe ser la misma:
 
 \index{exception!ValueError}
 \index{ValueError}
@@ -441,7 +443,7 @@ diccionario.
 
 Para cada iteración a través del bucle, tanto {\tt clave} como {\tt valor} van
 pasando a la siguiente pareja clave-valor del diccionario
-(aquí también en orden de dispersión).
+(todavía en orden de dispersión).
 
 La salida de este bucle es:
 
@@ -519,9 +521,9 @@ for clave, valor in lst[:10] :
 \end{verbatim}
 \afterverb
 %
-La primera parte del programa, que lee el archivo y procesa
-el diccionario mapeando cada palabra en el contador de palabras del
-documento, no ha cambiado. Pero en lugar de simplemente imprimir en pantalla
+La primera parte del programa, que lee el archivo y construye
+un diccionario que mapea cada palabra con las veces que se repite esa palabra en el
+documento, no ha cambiado. Pero en lugar de imprimir simplemente en pantalla
 {\tt contadores} y terminar el programa, ahora construimos una
 lista de tuplas {\tt (valor, clave)} y luego ordenamos la lista en orden inverso.
 
@@ -534,7 +536,7 @@ Al final escribimos un bonito bucle {\tt for} que hace una iteración con
 asignación múltiple e imprime en pantalla las diez palabras más comunes,
 iterando a través de una rebanada de la lista ({\tt lst[:10]}).
 
-De modo que la salida al final se parece a lo que queríamos para
+De modo que la salida al final tiene el aspecto que queríamos para
 nuestro análisis de frecuencia de palabras.
 
 \beforeverb
@@ -552,8 +554,8 @@ nuestro análisis de frecuencia de palabras.
 \end{verbatim}
 \afterverb
 %
-El hecho de que este complejo procesado y análisis de datos
-puedan ser realizado con un programa Python de 19 líneas
+El hecho de que este complejo análisis y procesado de datos
+pueda ser realizado con un programa Python de 19 líneas
 sencillo de entender, es una de las razones por las que Python es una buena elección
 como lenguaje para explorar información.
 
@@ -563,7 +565,7 @@ como lenguaje para explorar información.
 \index{hashable}
 \index{dispersable}
 
-Dado que las tuplas son {\bf hashables} (dispersables) y las listas no, si queremos
+Dado que las tuplas son {\bf dispersables} ({\tt hashables}) y las listas no, si queremos
 crear una clave {\bf compuesta} para usar en un diccionario, deberemos usar una tupla
 como clave.
 
@@ -596,7 +598,7 @@ Este bucle recorre las claves de {\tt directorio}, que son tuplas.
 Asigna los elementos de cada tupla a {\tt apellido} y {\tt nombre}, luego
 imprime el nombre, apellido y número de teléfono correspondiente.
 
-\section{Secuencias: cadenas, listas, y tuplas---¡Oh, Dios mío!}
+\section{Secuencias: cadenas, listas, y tuplas---¡Dios mío!}
 \index{secuencia}
 
 Me he centrado en las listas y tuplas, pero casi todos los ejemplos de
@@ -621,7 +623,7 @@ en una cadena (en vez de crear una nueva), puede que
 lo más adecuado sea elegir una lista de caracteres.
 
 Las listas se usan con más frecuencia que las tuplas, principalmente porque son mutables.
-Pero hay algunos pocos casos donde es posible que prefieras usar las tuplas:
+Pero hay algunos casos donde es posible que prefieras usar las tuplas:
 
 \begin{enumerate}
 
@@ -664,7 +666,7 @@ estructuras de datos compuestas, como listas o tuplas, y diccionarios que contie
 como claves y listas como valores. Las estructuras de datos compuestas son útiles, pero
 también resultan propensas a lo que yo llamo {\bf errores de modelado}; es decir, errores
 causados cuando una estructura de datos tiene el tipo, tamaño o composición incorrecto,
-o tal vez al escribir una parte del código se nos olvidó cual era el modelado
+o tal vez al escribir una parte del código se nos olvidó cómo era el modelado
 de los datos y se introdujo un error.
 
 Por ejemplo, si estás esperando una lista con un entero y te
@@ -681,7 +683,7 @@ si en realidad dice lo que querías que dijera.
 \item[ejecución:] Experimenta haciendo cambios y ejecutando versiones
 diferentes. A menudo, si muestras las cosas correctas en los lugares
 adecuados del programa el problema se convierte en obvio, pero otras veces
-tendrás que invertir algún tiempo construyendo unas ciertas estructuras.
+tendrás que invertir algún tiempo construyendo ciertas estructuras.
 
 \item[rumiado:] ¡Tómate tu tiempo para reflexionar! ¿De qué tipo de error
 se trata: sintáctico, de ejecución, semántico? ¿Qué información puedes obtener de
@@ -743,7 +745,7 @@ trozos poco a poco.
 
 Encontrar un fallo difícil requiere leer, ejecutar, rumiar, y
 a veces, retirarse. Si te quedas atascado en una de estas actividades,
-intenta pasar a una de las otras.
+intenta pasar a cualquiera de las otras.
 
 
 \section{Glosario}
@@ -768,13 +770,13 @@ organizados en listas, diccionarios, tuplas, etc.
 
 \item[DSU:] Abreviatura de ``decorate-sort-undecorate
 (decorar-ordenar-quitar la decoración)'',
-un patrón que implica construir una lista de tuplas, ordenar, y
+un diseño que implica construir una lista de tuplas, ordenar, y
 extraer parte del resultado.
 \index{DSU, diseño}
 
 \item[hashable (dispersable):] Un tipo que tiene una función de dispersión. Los tipos
 inmutables, como enteros,
-flotantes y cadenas son hashables (dispersables); los tipos mutables como listas y
+flotantes y cadenas son {\tt hashables} (dispersables); los tipos mutables como listas y
 diccionarios no lo son.
 \index{hashable}
 \index{dispersable}
@@ -788,7 +790,7 @@ tamaño, y composición de una estructura de datos.
 \index{modelado}
 
 \item[reunir:] La operación de montar una tupla
-como argumento de longitud variable.
+con argumentos de longitud variable.
 \index{reunir}
 
 \item[singleton:] Una lista (u otra secuencia) con un único elemento.
@@ -810,7 +812,7 @@ mensajes de cada persona usando un diccionario.
 	
 Después de que todos los datos hayan sido leídos, para mostrar
 la persona con más envíos, crea
-una lista de tuplas (contador, email) desde el
+una lista de tuplas (contador, email) a partir del
 diccionario. Luego ordena la lista en orden
 inverso y muestra la persona que tiene más
 envíos.
@@ -820,10 +822,10 @@ envíos.
 Línea de ejemplo:
 From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 
-Introduce un nombre de fichero: mbox-short.txt
+Introduzca un nombre de fichero: mbox-short.txt
 cwen@iupui.edu 5
 
-Introduce un nombre de fichero: mbox.txt
+Introduzca un nombre de fichero: mbox.txt
 zqian@umich.edu 195
 \end{verbatim}
 \afterverb
@@ -839,7 +841,7 @@ ordenados por hora como se muestra debajo.
 \begin{verbatim}
 Ejecución de ejemplo:
 python timeofday.py
-Introduce un nombre de fichero: mbox-short.txt
+Introduzca un nombre de fichero: mbox-short.txt
 04 3
 06 1
 07 1
@@ -863,7 +865,7 @@ imprima las {\em letras} en orden decreciente de frecuencia. El programa
 debe convertir todas las entradas a minúsculas y contar sólo las letras a-z.
 El programa no debe contar espacios, dígitos, signos de puntuación, ni nada
 que sea distinto a las letras a-z.
-Busca ejemplos de texto de varios idiomas diferentes, y observa cómo la frecuencia
+Busca ejemplos de texto en varios idiomas distintos, y observa cómo la frecuencia
 de las letras es diferente en cada idioma. Compara tus resultados con las tablas de
 \url{wikipedia.org/wiki/Letter_frequencies}.
 

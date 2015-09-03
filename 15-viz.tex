@@ -3,7 +3,7 @@
 
 \chapter{Visualización de datos}
 
-Hasta el momento, hemos estudiado primero el lenguaje de Python y luego
+Hasta el momento, hemos estudiado en primer lugar el lenguaje de Python y luego
 hemos descubierto cómo usar Python, la red y las bases de datos
 para manipular datos.
 
@@ -59,7 +59,7 @@ está en la base de datos. Si no disponemos de datos para esa ubicación,
 llamará a la API de geocodificación para recuperarlos y los almacenará
 en la base de datos.
 
-Aquí tenemos un ejemplo de ejecución una vez que ya disponemos de alguna información almacenada en la
+Aquí tenemos un ejemplo de ejecución cuando ya disponemos de alguna información almacenada en la
 base de datos:
 
 \beforeverb
@@ -136,7 +136,7 @@ myData = [
 %
 Se trata de una variable JavaScript que contiene una lista de listas.
 La sintaxis de las listas de constantes en JavaScript es muy similar a
-las de Python, de modo que la sintaxis debería resultarte familiar.
+las de Python, de modo que ésta debería resultarte familiar.
 
 Simplemente abre {\bf where.html} en un navegador para ver las ubicaciones.
 Puedes mantener el ratón sobre cada marca del mapa para ver la
@@ -185,7 +185,7 @@ How many pages:
 En esta ejecución de ejemplo, le pedimos que rastree un sitio web y que recupere dos
 páginas. Si reinicias el programa y le pides que rastree más
 páginas, no volverá a revisar aquellas que ya estén en la base de datos.
-En cada reinicio elegirá a una página al azar no rastreada aún y comenzará allí.
+En cada reinicio elegirá una página al azar no rastreada aún y comenzará allí.
 De modo que cada ejecución sucesiva de {\bf spider.py} irá añadiendo páginas nuevas.
 
 \beforeverb
@@ -201,7 +201,7 @@ How many pages:
 \afterverb
 %
 Se pueden tener múltiples puntos de partida en la misma base de datos---dentro
-del programa, estos son llamados ``webs''. La araña
+del programa, éstos son llamados ``webs''. La araña
 elije entre todos los enlaces no visitados de las páginas existentes uno al azar
 como siguiente página a rastrear.
 
@@ -247,7 +247,7 @@ páginas ha sido actualizada:
 \end{verbatim}
 \afterverb
 %
-Puedes ejecutar {\bf sprank.py} tantas veces com quieras, y simplemente irá refinando
+Puedes ejecutar {\bf sprank.py} tantas veces como quieras, y simplemente irá refinando
 la clasificación de páginas cada vez más. Puedes incluso ejecutar {\bf sprank.py} varias veces,
 luego ir a la araña {\bf spider.py} a recuperar unas cuantas páginas más y después ejecutar de nuevo
 {\bf sprank.py} para actualizar los valores de clasificación. Un motor de búsqueda normalmente
@@ -305,8 +305,8 @@ Mostrará un diseño automático de los nodos y enlaces. Puedes pinchar y
 arrastrar cualquier nodo y también hacer doble click sobre él para ver la URL
 que representa.
 
-Si vuelves a ejecutar las otras utilidades, ejecuta {\bf spjson.py} y
-pulsar ``recargar'' en el navegador para obtener los datos actualizados desde {\bf spider.json}.
+Si vuelves a ejecutar las otras utilidades, ejecuta de nuevo {\bf spjson.py} y
+pulsa ``recargar'' en el navegador para obtener los datos actualizados desde {\bf spider.json}.
 
 \section{Visualización de datos de correo}
 
@@ -332,8 +332,8 @@ Utilizaremos los datos de un servicio de archivo de listas de correo electrónic
 llamado \url{www.gmane.org}. Este servicio es muy popular en proyectos de código abierto,
 debido a que proporciona un buen almacenaje con capacidad de búsqueda de su
 actividad de correo. También tienen una política muy liberal respecto al acceso a
-sus datos a través de su API. No tienen límites de acceso, pero te piden que no
-sobrecargues su servicio y descargues sólo los datos que necesites. Puedes leer
+los datos a través de su API. No tienen límites de acceso, pero te piden que no
+sobrecargues su servicio y descargues sólo aquellos datos que necesites. Puedes leer
 los términos y condiciones de gmane en su página:
 
 \url{http://gmane.org/export.php}
@@ -392,9 +392,9 @@ aún no ha sido rastreado y comienza a partir de ahí. Continúa rastreando
 hasta que ha recuperado el número deseado de mensajes o hasta que llega a una página
 que no contiene un mensaje adecuadamente formateado.
 
-A veces \url{gmane.org} pierde un mensaje. Tal vez los administradores lo borraron,
-o quizás simplemente se perdió. Si tu araña se detiene, y parece que ha localizado
-un mensaje perdido, entra en el SQLite Manager, añade una fila con el id perdido y los
+A veces \url{gmane.org} no encuentra un mensaje. Tal vez los administradores lo borraron,
+o quizás simplemente se perdió. Si tu araña se detiene, y parece que se atasca en
+un mensaje que no puede localizar, entra en el SQLite Manager, añade una fila con el id perdido y los
 demás campos en blanco y reanuda {\bf gmane.py}. Así se desbloqueará el
 proceso de rastreo y podrá continuar. Esos mensajes vacíos serán ignorados en la siguiente
 fase del proceso.
@@ -407,7 +407,7 @@ Los datos en {\bf content.sqlite} están guardados en bruto, con un modelado de 
 ineficiente y sin comprimir.
 Esto se ha hecho así intencionadamente, para permitirte echar un vistazo en {\bf content.sqlite}
 usando el SQLite Manager y depurar problemas con el proceso de rastreo.
-Sería una mala idea ejecutar cualquier consulta sobre esta base de datos, ya que
+Sería mala idea ejecutar cualquier consulta sobre esta base de datos, ya que
 puede resultar bastante lenta.
 
 El segundo proceso consiste en ejecutar el programa {\bf gmodel.py}. Este programa lee los datos
@@ -416,7 +416,7 @@ que envía al fichero {\bf index.sqlite}. Este fichero es mucho más pequeño (p
 menor) que {\bf content.sqlite}, porque también comprime la cabecera y el texto del cuerpo.
 
 Cada vez que {\bf gmodel.py} se ejecuta, borra y reconstruye {\bf index.sqlite}, permitiéndote
-ajustar sus parámetros y editar las tablas de mapeo de {\bf content.sqlite} para ajustar el
+ajustar sus parámetros y editar las tablas de asignación de {\bf content.sqlite} para ajustar el
 proceso de limpieza de datos. Esto es un ejemplo de ejecución de {\bf gmodel.py}. El programa imprime
 una línea en pantalla cada vez que son procesados 250 mensajes de correo para que puedas ver su
 evolución, ya que puede quedarse funcionando durante un buen rato mientras procesa alrededor de
@@ -436,9 +436,9 @@ Loaded allsenders 1588 and mapping 28 dns mapping 1
 El programa {\bf gmodel.py} realiza varias labores de limpieza de datos.
 
 Los nombres de dominio son truncados a dos niveles para .com, .org, .edu y .net.
-Otros nombres de dominio son truncados a tres niveles. De modo que si.umich.edu se transforma en
-umich.edu, y caret.cam.ac.uk queda como cam.ac.uk. Las direcciones de correo electrónico también
-son transformadas a minúsculas, y algunas de las direcciones de @gmane.org, como las siguientes
+Otros nombres de dominio son truncados a tres niveles. De modo que {\tt si.umich.edu} se transforma en
+{\tt umich.edu}, y {\tt caret.cam.ac.uk} queda como {\tt cam.ac.uk}. Las direcciones de correo electrónico también
+son transformadas a minúsculas, y algunas de las direcciones de {\tt @gmane.org}, como las siguientes
 
 \beforeverb
 \begin{verbatim}
@@ -450,7 +450,7 @@ son convertidas en direcciones reales, cuando esa dirección de correo real exis
 en otra parte del cuerpo del mensaje.
 
 En la base de datos {\bf content.sqlite} existen dos tablas que te permiten
-mapear tanto nombres de dominios como direcciones de correo individuales que van cambiando
+asignar tanto nombres de dominios como direcciones de correo individuales que van cambiando
 a lo largo del tiempo de existencia de la lista de correo. Por ejemplo, Steve Githens ha usado las
 direcciones de correo siguientes, según iba cambiando de trabajo a lo largo del tiempo de existencia
 de la lista de desarrolladores de Sakai:
@@ -463,8 +463,8 @@ swgithen@mtu.edu
 \end{verbatim}
 \afterverb
 %
-Podemos añadir dos entradas en la tabla de Mapeo (Mapping) de {\bf content.sqlite}, de modo
-que {\bf gmodel.py} mapeará las tres direcciones en una:
+Podemos añadir dos entradas en la tabla de asignación ({\tt Mapping}) de {\bf content.sqlite}, de modo
+que {\bf gmodel.py} enlazará las tres direcciones en una:
 
 \beforeverb
 \begin{verbatim}
@@ -474,7 +474,7 @@ sgithens@cam.ac.uk -> swgithen@mtu.edu
 \afterverb
 %
 Puedes crear entradas similares en la tabla DNSMapping si hay múltiples nombres
-DNS que quieres mapear a una única DNS. El mapeo siguiente ha sido añadido a los datos de Sakai:
+DNS que quieres asignar a una única DNS. En los datos de Sakai se ha realizado la siguiente asignación:
 
 \beforeverb
 \begin{verbatim}
@@ -483,12 +483,12 @@ iupui.edu -> indiana.edu
 \afterverb
 %
 de modo que todas las cuentas de los distintos campus de las Universidades de Indiana son
-rastreados juntos.
+seguidas juntas.
 
 Puedes volver a ejecutar {\bf gmodel.py} una y otra vez mientras vas mirando los datos, y añadir
-mapeos para hacer que los datos queden más y más limpios. Cuando lo hayas hecho, tendrás una bonita
-versión indexada del correo en {\bf index.sqlite}. Éste es el fichero que usaremos para realizar
-el análisis de datos. Con ese fichero, el análisis de datos se realizará muy rápidamente.
+asignaciones para hacer que los datos queden más y más limpios. Cuando lo hayas hecho, tendrás una bonita
+versión indexada del correo en {\bf index.sqlite}. Éste es el fichero que usaremos para
+analizar los datos. Con ese fichero, el análisis de datos se realizará muy rápidamente.
 
 El primer y más sencillo análisis de datos consistirá en determinar ``¿quién ha enviado más correos?'',
 y ``¿qué organización ha enviado más correos?''. Esto se realizará usando {\bf gbasic.py}:
@@ -522,7 +522,7 @@ multipaso como el que se realiza en esta aplicación puede ser más largo de des
 pero te ahorrará un montón de tiempo cuando realmente comiences a explorar
 y visualizar los datos.
 
-Puedes generar una vista sencilla con la frecuencia de cada palabras en las
+Puedes generar una vista sencilla con la frecuencia de cada palabra en las
 líneas de título, usando el archivo {\bf gword.py}:
 
 \beforeverb
@@ -536,7 +536,7 @@ Esto genera el archivo {\bf gword.js}, que puedes visualizar utilizando
 {\bf gword.htm} para producir una nube de palabras similar a la del comienzo
 de esta sección. 
 
-{\bf gline.py} produce una segunda vista. En este caso cuenta la participación
+{\bf gline.py} genera también una segunda vista. En este caso cuenta la participación
 en forma de correos de las organizaciones a lo largo del tiempo.
 
 \beforeverb

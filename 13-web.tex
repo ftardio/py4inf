@@ -10,12 +10,12 @@ consistente en la producción de
 documentos específicamente diseñados para ser consumidos por otros
 programas (es decir, no únicamente HTML para ser mostrado en un navegador).
 
-Existen dos formatos habituales que se usan para intercambio de datos a través de la web.
-El ``eXtensible Markup Language'' (lenguaje extensible de marcas) o XML ha sido utilizado
-durante mucho tiempo y es el más adecuado para intercambiar datos del tipo-documento.
+Existen dos formatos habituales que se usan para el intercambio de datos a través de la web.
+El ``eXtensible Markup Language'' (lenguaje extensible de marcas), o XML, ha sido utilizado
+durante mucho tiempo, y es el más adecuado para intercambiar datos del tipo-documento.
 Cuando los programas simplemente quieren intercambiar unos con otros diccionarios, listas u otra
 información interna, usan ``JavaScript Object Notation'' (Notación de Objetos Javascript), o JSON
-(see \url{www.json.org}). Nosotros vamos a revisar ambos formatos.
+(consulta \url{www.json.org}). Nosotros vamos a revisar ambos formatos.
 
 \section{eXtensible Markup Language - XML}
 
@@ -105,7 +105,7 @@ usamos un bucle para recorrer todos los nodos {\tt usuario}:
 import xml.etree.ElementTree as ET
 
 entrada = '''
-<cosa>
+<cosas>
     <usuarios>
         <usuario x="2">
             <id>001</id>
@@ -116,10 +116,10 @@ entrada = '''
             <nombre>Brent</nombre>
         </usuario>
     </usuarios>
-</cosa>'''
+</cosas>'''
 
-cosa = ET.fromstring(entrada)
-lst = cosa.findall('usuarios/usuario')
+cosas = ET.fromstring(entrada)
+lst = cosas.findall('usuarios/usuario')
 print 'Cantidad de usuarios:', len(lst)
 
 for elemento in lst:
@@ -174,7 +174,7 @@ He aquí una codificación JSON que es más o menos equivalente al XML del ejemp
 \end{verbatim}
 \afterverb
 %
-Si te fijas encontrarás ciertas diferencias. La primera, en XML se pueden añadir atributos como
+Si te fijas, encontrarás ciertas diferencias. La primera, en XML se pueden añadir atributos como
 ``intl'' a la etiqueta ``telefono''. En JSON, simplemente tenemos parejas clave-valor.
 Además, la etiqueta ``persona'' de XML ha desaparecido, reemplazada por un conjunto
 de llaves exteriores.
@@ -228,13 +228,13 @@ for elemento in info:
 \end{verbatim}
 \afterverb
 %
-Si comparas el código que extrae los datos del JSON y XML analizado,
+Si comparas el código que extrae los datos del JSON analizado y el del XML,
 verás que lo que obtenemos de {\bf json.loads()} es una lista de Python
 que recorreremos con un bucle {\tt for}, y cada elemento dentro de esa lista
 es un diccionario de Python. Una vez analizado el JSON, podemos usar el operador
 índice de Python para extraer los distintos fragmentos de datos de cada usuario. No
 tenemos que usar la librería JSON para rebuscar a través del JSON analizado, ya que los
-datos devueltos son simplemente estructuras nativas de Python.
+datos devueltos son sencillamente estructuras nativas de Python.
 
 La salida de este programa es exactamente la misma que la de la versión XML anterior.
 
@@ -251,10 +251,10 @@ Atributo 7
 \afterverb
 %
 En general, hay una tendencia en la industria a apartarse del XML y pasar al JSON para
-los servicios web. Debido a que JSON es más sencillo, y se mapea de forma más directa hacia
+los servicios web. Como el JSON es más sencillo, y se mapea de forma más directa hacia
 estructuras de datos nativas que ya tenemos en los lenguajes de programación, el código de
 análisis y extracción de datos normalmente es más sencillo y directo usando JSON.
-Pero XML es más auto-descriptivo, y por eso hay ciertas
+Sin embargo, XML es más auto-descriptivo, y por eso hay ciertas
 aplicaciones en las cuales XML mantiene su ventaja. Por ejemplo, la mayoría de los
 procesadores de texto almacenan sus documentos internamente usando XML en vez de JSON.
 
@@ -268,15 +268,15 @@ Markup Language (XML) o del JavaScript Object Notation (JSON).
 El paso siguiente consiste en empezar a definir y documentar ``contratos'' entre
 aplicaciones usando estas técnicas. El nombre habitual para estos
 contratos entre aplicaciones es {\bf Interfaces de Programación
-de Aplicaciones}, o APIs. Cuando se utiliza una API, normalmente un programa
+de Aplicaciones} ({\tt Application Program Interfaces}), o APIs. Cuando se utiliza una API, normalmente un programa
 crea un conjunto de {\bf servicios} disponibles para que los usen otras aplicaciones
 y publica las APIs (es decir, las ``reglas'') que deben ser seguidas para
 acceder a los servicios proporcionados por el programa.
 
 Cuando comenzamos a construir programas con funcionalidades que incluyen
 el acceso a servicios proporcionados por otros,
-se utiliza un planteamiento llamado {\bf Arquitectura Orientada a Servicios}, o SOA, por sus
-iniciales en inglés.
+se utiliza un planteamiento llamado {\bf Arquitectura Orientada a Servicios}
+({\tt Service-Oriented Architecture}), o SOA.
 Un planteamiento SOA es aquel en el cual nuestra aplicación principal usa los servicios
 de otras aplicaciones. Un planteamiento no-SOA es aquel en el cual tenemos
 una única aplicación independiente que contiene ella misma todo el código
@@ -290,7 +290,7 @@ de las máquinas de los hoteles y recuperan los datos de los alojamientos que pr
 usuario. Cuando el usuario acepta realizar una reserva de un hotel usando el sitio web
 de una aerolínea, ésta utiliza otro servicio web en los sistemas de los hoteles para realizar
 la reserva real. Y cuando llega el momento de cargar en tu tarjeta de crédito el importe de la
-transacción completa, hay todavía otros equipos diferentes involucradas en el proceso.
+transacción completa, hay todavía otros equipos diferentes involucrados en el proceso.
 
 \beforefig
 \centerline{\includegraphics[height=2.50in]{figs2/soa.eps}}
@@ -298,7 +298,7 @@ transacción completa, hay todavía otros equipos diferentes involucradas en el 
 
 Una Arquitectura Orientada a Servicios tiene muchas ventajas, que incluyen: (1)
 siempre se mantiene una única copia de los datos (lo cual resulta particularmente
-importante en ciertas cosas como las reservas hoteleras, las cuales no se pueden duplicar)
+importante en ciertas cosas como las reservas hoteleras, que no se pueden duplicar)
 y (2) los propietarios de los datos pueden imponer las reglas acerca del uso de esos datos.
 Con estas ventajas, un sistema SOA debe ser diseñado con mucho cuidado para
 tener buen rendimiento y satisfacer las necesidades de los usuarios.
@@ -317,15 +317,15 @@ geográfica, como ``Ann Arbor, MI'' a su API de geocodificación y conseguir que
 nos devuelva la situación en un mapa de dónde podría estar nuestra cadena de
 búsqueda, además de los puntos de referencia en los alrededores.
 
-El servicio de geocodificación es gratuito pero limitado, de modo que no se puede hacer
+El servicio de geocodificación es gratuito, pero limitado, de modo que no se puede hacer
 un uso intensivo de esta API en una aplicación comercial. Pero si tienes ciertos datos
 estadísticos en los cuales un usuario final ha introducido una localización en formato
-libre en un cuadro de texto, puedes usar esta API para limpiar esos datos de forma
+libre en un cuadro de texto, puedes utilizar esta API para limpiar esos datos de forma
 bastante efectiva.
 
 {\em Cuando se usa una API libre, como la API de geocodificación de Google, se debe ser
-respetuoso con el uso de los recursos. Si hay demasiada gente que abusa de ello,
-Google puede interrumpir o restringir significativamente su servicio gratuito.}
+respetuoso con el uso de los recursos. Si hay demasiada gente que abusa del servicio,
+Google puede interrumpir o restringir significativamente su uso gratuito.}
 \index{límite de uso}
 
 Puedes leer la documentación online de este servicio, pero es bastante sencillo
@@ -348,7 +348,7 @@ import json
 urlservicio = 'http://maps.googleapis.com/maps/api/geocode/json?'
 
 while True:
-    direccion = raw_input('Introduce ubicación: ')
+    direccion = raw_input('Introduzca ubicación: ')
     if len(direccion) < 1 : break
 
     url = urlservicio + urllib.urlencode({'sensor':'false', 
@@ -391,7 +391,7 @@ ha sido eliminado):
 \beforeverb
 \begin{verbatim}
 $ python geojson.py
-Introduce ubicación: Ann Arbor, MI
+Introduzca ubicación: Ann Arbor, MI
 Recuperando http://maps.googleapis.com/maps/api/
   geocode/json?sensor=false&address=Ann+Arbor%2C+MI
 Recibidos 1669 caracteres
@@ -448,7 +448,7 @@ o una política que limita el número de peticiones
 que un único usuario puede realizar durante un determinado
 periodo de tiempo.
 
-A veces, una vez que tienes tu clave API, tan sólo debes incluirla
+En ocasiones, una vez que tienes tu clave API, tan sólo debes incluirla
 como parte de los datos POST, o tal vez como parámetro
 dentro de la URL que usas para llamar a la API.
 
@@ -463,7 +463,7 @@ Puedes leer más acerca del protocolo OAuth en
 A medida que la API de Twitter ha ido haciéndose más valiosa, Twitter
 ha pasado de una API abierta y pública a una API que necesita
 el uso de firmas OAuth en cada solicitud. Afortunadamente,
-aún hay unas cuantas librerías OAuth buenas y gratuitas,
+aún hay unas cuantas librerías OAuth útiles y gratuitas,
 de modo que te puedes ahorrar el tener que escribir una implementación OAuth
 desde cero leyendo las especificaciones. Estas librerías tienen
 una complejidad variable y varios niveles distintos en cuanto a variedad de características.
@@ -479,7 +479,7 @@ de tu equipo.
 
 Para usar estos programas debes tener una cuenta de Twitter,
 y autorizar a tu código Python como aplicación permitida,
-estableciendo diversos parámetros (key, secret, token y token secret). Debes editar
+estableciendo diversos parámetros (key, secret, token y token secret). Luego deberás editar
 el archivo {\bf hidden.py} y colocar esas cuatro cadenas en las
 variables apropiadas dentro del fichero:
 
@@ -535,7 +535,7 @@ TWITTER_URL='https://api.twitter.com/1.1/statuses/user_timeline.json'
 
 while True:
     print ''
-    cuenta = raw_input('Introduce Cuenta de Twitter:')
+    cuenta = raw_input('Introduzca Cuenta de Twitter:')
     if ( len(cuenta) < 1 ) : break
     url = twurl.augment(TWITTER_URL,
         {'screen_name': cuenta, 'count': '2'} )
@@ -553,7 +553,7 @@ Cuando el programa se ejecuta, produce la salida siguiente:
  
 \beforeverb
 \begin{verbatim}
-Introduce Cuenta de Twitter:drchuck
+Introduzca Cuenta de Twitter:drchuck
 Recuperando https://api.twitter.com/1.1/ ...
 [{"created_at":"Sat Sep 28 17:30:25 +0000 2013","
 id":384007200990982144,"id_str":"384007200990982144",
@@ -562,7 +562,7 @@ intersections: http:\/\/t.co\/tIiVWtEhj4\n#brilliant",
 "source":"web","truncated":false,"in_rep
 Restante 178
 
-Introduce Cuenta de Twitter:fixpert
+Introduzca Cuenta de Twitter:fixpert
 Recuperando https://api.twitter.com/1.1/ ...
 [{"created_at":"Sat Sep 28 18:03:56 +0000 2013",
 "id":384015634108919808,"id_str":"384015634108919808",
@@ -571,14 +571,14 @@ my wedding ring fits again! :)\n\nhttps:\/\/t.co\/2XmHPx7kgX",
 "source":"web","truncated":false,
 Restante 177
 
-Introduce Cuenta de Twitter:
+Introduzca Cuenta de Twitter:
 \end{verbatim}
 \afterverb
 %
 Junto con los datos de la línea del tiempo, Twitter también devuelve
-metadatos sobre la petición en las cabeceras de respuesta HTTP.
+metadatos sobre la petición, en las cabeceras de respuesta HTTP.
 Una cabecera en particular, {\bf x-rate-limit-remaining}, nos informa
-sobre cuántas peticiones podemos hacer antes de que seamos bloqueados
+sobre cuántas peticiones podremos hacer antes de que seamos bloqueados
 por un corto periodo de tiempo. Puedes ver cómo cada vez que realizamos
 una petición a la API nuestros intentos restantes van disminuyendo.
 
@@ -598,7 +598,7 @@ TWITTER_URL = 'https://api.twitter.com/1.1/friends/list.json'
 
 while True:
     print ''
-    cuenta = raw_input('Introduce Cuenta de Twitter:')
+    cuenta = raw_input('Introduzca Cuenta de Twitter:')
     if ( len(cuenta) < 1 ) : break
     url = twurl.augment(TWITTER_URL,
         {'screen_name': cuenta, 'count': '5'} )
@@ -627,7 +627,7 @@ se han acortado para que quepa en la página):
 
 \beforeverb
 \begin{verbatim}
-Introduce Cuenta de Twitter:drchuck
+Introduzca Cuenta de Twitter:drchuck
 Recuperando https://api.twitter.com/1.1/friends ...
 Restantes 14
 {
@@ -669,7 +669,7 @@ halherzog
 scweeker
    @DeviceLabDC love it! Now where so I get that "etc
 
-Introduce Cuenta de Twitter:
+Introduzca Cuenta de Twitter:
 \end{verbatim}
 \afterverb
 %
@@ -678,11 +678,12 @@ cinco ``amigos'' más nuevos de la cuenta de Twitter del {\bf drchuck}
 e imprime el estado más reciente de cada uno de ellos. Hay
 muchos más datos disponibles en el JSON devuelto. Si miras
 la salida del programa, podrás ver que el ``encuentra a los amigos''
-de una cuenta particular tiene una limitación de usos distinta al
-número de consultas de líneas del tiempo que está permitido realizar en un periodo de tiempo.
+de una cuenta particular tiene una limitación de usos distinta a la del
+número de consultas de líneas de tiempo que está permitido realizar
+durante un periodo de tiempo.
 
 Estas claves de seguridad de la API permiten a Twitter tener la certeza de que
-sabe quién está usando su API y datos y a qué nivel. El planteamiento del
+sabe quién está usando su API de datos, y a qué nivel. El planteamiento del
 límite de usos nos permite hacer captaciones de datos sencillas e individuales, pero
 no nos permite crear un producto que extraiga datos de esa API
 millones de veces al día.
@@ -722,7 +723,7 @@ el envío de datos estructurados.
 
 \begin{ex}
 Modifica el programa
-\url{www.py4inf.com/code/geojson.py} o bien
+\url{www.py4inf.com/code/geojson.py}, o bien
 \url{www.py4inf.com/code/geoxml.py} para imprimir en pantalla el
 código de país de dos caracteres de los datos recuperados.
 Añade comprobación de errores, de modo que tu programa no rastree los datos

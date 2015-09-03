@@ -10,9 +10,9 @@
 \index{actualización}
 \index{variable!actualización}
 
-Un uso habitual de las sentencias de asignación es aquel que consiste en
-actualizar una variable --
-donde el valor nuevo de la variable depende del antiguo.
+Uno de los usos habituales de las sentencia de asignación consiste en realizar una
+actualización sobre una variable --
+en la cual el valor nuevo de esa variable depende del antiguo.
 
 \beforeverb
 \begin{verbatim}
@@ -63,8 +63,8 @@ restarle 1 recibe el nombre de {\bf decrementar} (o disminuir).
 Los PCs se suelen utilizar a menudo para automatizar tareas repetitivas. Repetir
 tareas idénticas o muy similares sin cometer errores es algo que a las
 máquinas se les da bien y en cambio a las personas no.
-Dado que esa interacción es muy común, Python proporciona varias
-características en su lenguaje para hacerlo más sencillo.
+Como las iteraciones resultan tan habituales, Python proporciona varias
+características en su lenguaje para hacerlas más sencillas.
 
 Una forma de iteración en Python es la sentencia {\tt while}. He aquí un
 programa sencillo que cuenta hacia atrás desde cinco y luego dice ``¡Despegue!''.
@@ -143,7 +143,7 @@ un bucle es obviamente infinito, porque no tiene ninguna variable de iteración.
 
 A veces no se sabe si hay que terminar un bucle hasta que se ha
 recorrido la mitad del cuerpo del mismo. En ese caso se puede crear un bucle infinito a propósito
-y usar la sentencia {\tt break} para salir fuera del bucle cuando se desee.
+y usar la sentencia {\tt break} para salir fuera de él cuando se desee.
 
 El bucle siguiente es, obviamente, un {\bf bucle infinito}, porque la
 expresión lógica de la sentencia
@@ -192,7 +192,7 @@ el bucle se repetirá hasta que se ejecute la sentencia break.
 
 Cada vez que se entre en el bucle, se pedirá una entrada al usuario.
 Si el usuario escribe {\tt fin}, la sentencia {\tt break} hará que se
-salga del bucle. En otro caso, el programa repetirá cualquier cosa que el usuario
+salga del bucle. En cualquier otro caso, el programa repetirá cualquier cosa que el usuario
 escriba y volverá al principio del bucle. Éste es un ejemplo de su funcionamiento:
 
 \beforeverb
@@ -209,8 +209,8 @@ he terminado
 Este modo de escribir bucles {\tt while} es habitual, ya que
 así se puede comprobar la condición en cualquier punto del
 bucle (no sólo al principio), y se puede expresar la condición de parada
-afirmativamente (``detente cuando ocurra''), en vez de tener que hacerlo con lógica negativa
-(``sigue funcionando hasta que ocurra'').
+afirmativamente (``detente cuando ocurra...''), en vez de tener que hacerlo con lógica negativa
+(``sigue haciéndolo hasta que ocurra...'').
 
 \section{Finalizar iteraciones con {\tt continue}}
 \index{continue, sentencia}
@@ -239,7 +239,7 @@ print '¡Terminado!'
 \end{verbatim}
 \afterverb
 %
-He aquí una ejecución de ejemplo de este nuevo programa con la sentencia {\tt continue} añadida.
+He aquí una ejecución de ejemplo de ese nuevo programa con la sentencia {\tt continue} añadida.
 
 \beforeverb
 \begin{verbatim}
@@ -274,7 +274,7 @@ conjunto conocido de elementos, de modo que ejecuta tantas iteraciones como
 elementos hay en el conjunto.
 
 La sintaxis de un bucle {\tt for} es similar a la del bucle {\tt while},
-en la cual hay una sentencia {\tt for} y un cuerpo que se repite:
+en ella hay una sentencia {\tt for} y un cuerpo que se repite:
 
 \beforeverb
 \begin{verbatim}
@@ -312,9 +312,9 @@ Revisando el bucle, {\tt for}, {\bf for} e {\bf in} son palabras
 reservadas de Python, mientras que {\tt amigo} y {\tt amigos} son variables.
 
 {\tt {\bf for} amigo {\bf in} amigos{\bf :}\\
-\verb"    "{\bf print} 'Feliz año nuevo', amigo }
+\verb"    "{\bf print} 'Feliz año nuevo:', amigo }
 
-En particular, {\tt amigo} es la {\bf variable de iteración} para
+En concreto, {\tt amigo} es la {\bf variable de iteración} para
 el bucle for. La variable {\tt amigo} cambia para cada iteración del
 bucle y controla cuándo se termina el bucle {\tt for}. La
 {\bf variable de iteracion} se desplaza sucesivamente a través de
@@ -366,12 +366,12 @@ valores de la lista.
 
 En el cuerpo del bucle, añadimos 1 al valor actual de {\tt contador}
 para cada uno de los valores de la lista. Mientras el bucle se está ejecutando, el
-valor de {\tt contador} es el número de valores que se hayan visto ``hasta ese momento''.
+valor de {\tt contador} es la cantidad de valores que se hayan visto ``hasta ese momento''.
 
 Una vez el bucle se completa, el valor de {\tt contador} es el número total
 de elementos. El número total ``cae en nuestro poder'' al final del
-bucle. Se construye el bucle de modo que obtengamos lo que queremos cuando el
-bucle termina.
+bucle. Se construye el bucle de modo que obtengamos lo que queremos cuando
+éste termina.
 
 Otro bucle similar, que calcula el total de un conjunto de números,
 se muestra a continuación:
@@ -454,20 +454,20 @@ que la variable está ``vacía''.
 Antes de que el bucle comience, el mayor valor visto hasta entonces
 es {\tt None}, dado que no se ha visto aún ningún valor. Durante la
 ejecución del bucle, si {\tt mayor} es {\tt None}, entonces
-tomamos el primer valor que hemos visto como el mayor hasta entonces. Se puede ver en
+tomamos el primer valor que tenemos como el mayor hasta entonces. Se puede ver en
 la primera iteración, cuando el valor de {\tt valor} es 3,
 mientras que {\tt mayor} es {\tt None}, inmediatamente
-{\tt mayor} pasa a ser 3.
+hacemos que {\tt mayor} pase a ser 3.
 
 Tras la primera iteración, {\tt mayor} ya no es {\tt None},
 así que la segunda parte de la expresión lógica compuesta que comprueba
-si {\tt valor > mayor} se activará sólo cuando encontremos un valor que es
+si {\tt valor > mayor} se activará sólo cuando encontremos un valor que sea
 mayor que el ``mayor hasta ese momento''. Cuando encontramos un nuevo valor ``mayor aún'',
 tomamos ese nuevo valor para {\tt mayor}. Se puede ver en la salida
 del programa que {\tt mayor} pasa desde 3 a 41 y luego a 74.
 
 Al final del bucle, se habrán revisado todos los valores y la
-variable {\tt mayor} contendrá entonces el mayor valor de
+variable {\tt mayor} contendrá entonces el valor más grande de
 la lista.
 
 Para calcular el número más pequeño, el código es muy similar con un
@@ -487,7 +487,7 @@ print 'Menor:', menor
 %
 De nuevo, {\tt menor} es el ``menor hasta ese momento'' antes, durante y después de
 que el bucle se ejecute. Cuando el bucle se ha completado, {\tt menor} contendrá
-el mínimo valor de la lista
+el valor mínimo de la lista
 
 También como en el caso del número de elementos y de la suma, las funciones internas
 {\tt max()} y {\tt min()} convierten la escritura de este tipo de bucles
@@ -516,7 +516,7 @@ que ya está incorporada dentro de Python.
 
 A medida que vayas escribiendo programas más grandes, puede que notes que vas necesitando
 emplear cada vez más tiempo en depurarlos. Más código significa más oportunidades de
-cometer un error y más lugares para que los bugs puedan esconderse.
+cometer un error y más lugares donde los bugs pueden esconderse.
 
 \index{depuración!por bisección}
 \index{bisección, depuración por}
@@ -543,9 +543,9 @@ En la práctica no siempre está claro qué es
 ``el medio del programa'', y no siempre es posible colocar ahí
 una verificación. No tiene sentido contar las líneas y encontrar
 el punto medio exacto. En lugar de eso, piensa en lugares del programa
-en los cuales pueda haber errores y en lugares donde sea fácil colocar una verificación.
-Luego elige un lugar donde creas que las oportunidades de que el bug
-esté por delante y las de que esté por detrás son más o menos las mismas.
+en los cuales pueda haber errores y en lugares donde resulte fácil colocar una comprobación.
+Luego elige un sitio donde estimes que las oportunidades de que el bug
+esté por delante y las de que esté por detrás de esa comprobación son más o menos las mismas.
 
 \section{Glosario}
 
@@ -591,16 +591,16 @@ Escribe un programa que lea repetidamente números hasta que el usuario
 introduzca ``fin''.
 Una vez se haya introducido ``fin'', muestra por pantalla el total, la cantidad de números y la media
 de esos números. Si el usuario introduce cualquier otra cosa que no sea un número,
-detecta su error usando {\tt try} y {\tt except},
+detecta su fallo usando {\tt try} y {\tt except},
 muestra un mensaje de error y pasa al número siguiente.
 
 \begin{verbatim}
-Introduce un número: 4
-Introduce un número: 5
-Introduce un número: dato erróneo
+Introduzca un número: 4
+Introduzca un número: 5
+Introduzca un número: dato erróneo
 Entrada inválida
-Introduce un número: 7
-Introduce un número: fin
+Introduzca un número: 7
+Introduzca un número: fin
 16 3 5.33333333333
 \end{verbatim}
 \end{ex}

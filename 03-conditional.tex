@@ -9,8 +9,8 @@
 \index{lógico, operador}
 \index{operador!lógico}
 
-Una {\bf expresión booleana} es aquella que puede ser verdadera (True)
-o falsa (False). Los ejemplos siguientes usan el operador
+Una {\bf expresión booleana} es aquella que puede ser verdadera ({\tt True})
+o falsa ({\tt False}). Los ejemplos siguientes usan el operador
 {\tt ==}, que compara dos operandos y devuelve
 {\tt True} si son iguales y {\tt False} en caso contrario:
 
@@ -61,8 +61,8 @@ A pesar de que estas operaciones probablemente te resulten familiares, los
 símbolos en Python son diferentes de los símbolos matemáticos que se usan
 para realizar las mismas operaciones. Un error muy común
 es usar sólo un símbolo igual ({\tt =}) en vez del símbolo de doble igualdad
-({\tt ==}). Recuerda que {\tt =} es el operador de asignación, y
-{\tt ==} es un operador de comparación. No ocurre lo mismo con
+({\tt ==}). Recuerda que {\tt =} es un operador de asignación, y
+{\tt ==} es un operador de comparación. No existe algo como
 {\tt \verb"=<"} o {\tt \verb"=>"}.
 
 \index{comparación!operador}
@@ -90,7 +90,7 @@ es verdadero sólo cuando {\tt x} es mayor que 0
 \index{operador!not}
 
 {\tt n\%2 == 0 or n\%3 == 0} es verdadero si \emph{cualquiera} de las condiciones
-es verdadera, es decir, el número es divisible por 2 \emph{o} por 3.
+es verdadera, es decir, si el número es divisible por 2 \emph{o} por 3.
 
 Finalmente, el operador {\tt not} niega una expresión
 booleana, de modo que {\tt not (x > y)} es verdadero si {\tt x > y} es falso;
@@ -107,7 +107,7 @@ True
 \end{verbatim}
 \afterverb
 %
-Esta flexibilidad puede ser útil, pero existen ciertas sutilezas en este tipo de uso
+Esta flexibilidad puede ser útil, pero existen ciertas sutilezas en ese tipo de uso
 que pueden resultar confusas. Es posible que prefieras evitar usarlo de este modo
 hasta que estés bien seguro de lo que estás haciendo.
 
@@ -135,15 +135,18 @@ if x > 0 :
 La expresión booleana después de la sentencia {\tt if} recibe
 el nombre de {\bf condición}. La sentencia {\tt if} se finaliza
 con un carácter de dos-puntos (:) y la(s) línea(s) que van detrás de
-la sentencia if van sangradas (llevan una tabulación o varios espacios en blanco al principio).
+la sentencia if van indentadas\footnote{el término correcto en español
+sería ``sangradas'', pero en el mundillo de la programación se suele
+decir que las líneas van ``indentadas'' (Nota del trad.)}
+(es decir, llevan una tabulación o varios espacios en blanco al principio).
 
 \beforefig
 \centerline{\includegraphics[height=1.75in]{figs2/if.eps}}
 \afterfig
 
-Si la condición lógica es verdadera, la sentencia sangrada
-es ejecutada. Si la condición es falsa,
-la sentencia sangrada es omitida.
+Si la condición lógica es verdadera, la sentencia indentada
+será ejecutada. Si la condición es falsa,
+la sentencia indentada será omitida.
 
 \index{condición}
 \index{compuesta, sentencia}
@@ -153,7 +156,7 @@ La sentencia {\tt if} tiene la misma estructura que la definición de funciones
 o los bucles {\tt for}\footnote{Estudiaremos las funciones en el capítulo 4
 y los bucles en el capítulo 5.}. La sentencia consiste en una línea de encabezado
 que termina con el carácter dos-puntos (:)
-seguido por un bloque con sangrado. Las sentencias de este tipo
+seguido por un bloque indentado. Las sentencias de este tipo
 reciben el nombre de {\bf sentencias compuestas}, porque se extienden
 a lo largo de varias líneas.
 
@@ -169,7 +172,7 @@ caso, se puede usar la sentencia {\tt pass}, que no hace nada.
 \beforeverb
 \begin{verbatim}
 if x < 0 :
-    pass          # ¡necesito controlar los valores negativos!
+    pass          # ¡necesito gestionar los valores negativos!
 \end{verbatim}
 \afterverb
 %
@@ -304,7 +307,7 @@ pero podrían haber sido sentencias condicionales también.
 \centerline{\includegraphics[height=2.50in]{figs2/nested.eps}}
 \afterfig
 
-A pesar de que el sangrado de las sentencias hace que la estructura
+A pesar de que el indentado de las sentencias hace que la estructura
 esté clara, los {\bf condicionales anidados} pueden volverse difíciles
 de leer rápidamente. En general, es buena idea evitarlos si se puede.
 
@@ -336,7 +339,7 @@ if 0 < x and x < 10:
 
 Anteriormente vimos un fragmento de código donde usábamos las funciones \verb"raw_input" e
 {\tt int} para leer y analizar un número entero introducido por
-el usuario. También vimos lo poco seguro que podía llegar a ser hacer algo así:
+el usuario. También vimos lo poco seguro que podía llegar a resultar hacer algo así:
 
 \beforeverb
 \begin{verbatim}
@@ -369,7 +372,7 @@ desde grados Fahrenheit a grados Celsius:
 
 \beforeverb
 \begin{verbatim}
-ent = raw_input('Introduce la Temperatura Fahrenheit:')
+ent = raw_input('Introduzca la Temperatura Fahrenheit:')
 fahr = float(ent)
 cel = (fahr - 32.0) * 5.0 / 9.0
 print cel
@@ -382,11 +385,11 @@ fallará con un mensaje de error bastante antipático:
 \beforeverb
 \begin{verbatim}
 python fahren.py 
-Introduce la Temperatura Fahrenheit:72
+Introduzca la Temperatura Fahrenheit:72
 22.2222222222
 
 python fahren.py 
-Introduce la Temperatura Fahrenheit:fred
+Introduzca la Temperatura Fahrenheit:fred
 Traceback (most recent call last):
   File "fahren.py", line 2, in <module>
     fahr = float(ent)
@@ -411,43 +414,43 @@ Se puede reescribir nuestro conversor de temperaturas de esta forma:
 
 \beforeverb
 \begin{verbatim}
-ent = raw_input('Introduce la Temperatura Fahrenheit:')
+ent = raw_input('Introduzca la Temperatura Fahrenheit:')
 try:
     fahr = float(ent)
     cel = (fahr - 32.0) * 5.0 / 9.0
     print cel
 except:
-    print 'Por favor, introduce un número'
+    print 'Por favor, introduzca un número'
 \end{verbatim}
 \afterverb
 %
 
 Python comienza ejecutando la
 secuencia de sentencias del bloque
-{\tt try}. Si todo va bien,
-saltará el bloque {\tt except} y terminará.
+{\tt try}. Si todo va bien, se
+saltará todo el bloque {\tt except} y terminará.
 Si ocurre una excepción dentro del bloque {\tt try},
 Python saltará fuera de ese bloque y
-ejecutará la secuencia de sentencias en el bloque {\tt except}.
+ejecutará la secuencia de sentencias del bloque {\tt except}.
 
 \beforeverb
 \begin{verbatim}
 python fahren2.py 
-Introduce la Temperatura Fahrenheit:72
+Introduzca la Temperatura Fahrenheit:72
 22.2222222222
 
 python fahren2.py 
-Introduce la Temperatura Fahrenheit:fred
-Por favor, introduce un número
+Introduzca la Temperatura Fahrenheit:fred
+Por favor, introduzca un número
 \end{verbatim}
 \afterverb
 %
 
-Manejar una excepción con una sentencia {\tt try} recibe el nombre de
+Gestionar una excepción con una sentencia {\tt try} recibe el nombre de
 {\bf capturar} una excepción. En este ejemplo, la clausula {\tt except}
 muestra un mensaje de error. En general,
 capturar una excepción te da la oportunidad de corregir el problema,
-volverlo a intentar, o al menos de terminar el programa con elegancia.
+volverlo a intentar o, al menos, terminar el programa con elegancia.
 
 \section{Evaluación en cortocircuito de expresiones lógicas}
 \index{cortocircuito}
@@ -457,20 +460,20 @@ Cuando Python está procesando una expresión lógica, como
 izquierda a derecha. Debido a la definición de {\tt and},
 si {\tt x} es menor de 2, la expresión {\tt x >= 2} resulta ser
 {\tt falsa}, de modo que la expresión completa ya va a resultar {\tt falsa}, independientemente
-de si {\tt (x/y) > 2} se evalúa como {\tt verdadero} o {\tt falso}.
+de si {\tt (x/y) > 2} se evalúa como {\tt verdadera} o {\tt falsa}.
 
 Cuando Python detecta que no se gana nada evaluando
 el resto de una expresión lógica, detiene su evaluación y no
 realiza el cálculo del resto de la expresión.
 Cuando la evaluación de una expresión lógica se detiene debido a que
-ya se conoce el valor final, esto es conocido como {\bf cortocircuitar}
+ya se conoce el valor final, eso es conocido como {\bf cortocircuitar}
 la evaluación.
 
 \index{guardián, patrón}
 \index{patrón!guardián}
 A pesar de que esto pueda parecer hilar demasiado fino, el funcionamiento
 en cortocircuito nos descubre una ingeniosa técnica conocida como {\bf patrón guardián}.
-Considera la siguiente secuencia de código en el intérprete de Python:
+Examina la siguiente secuencia de código en el intérprete de Python:
 
 \beforeverb
 \begin{verbatim}
@@ -528,7 +531,7 @@ En la tercera expresión lógica, el {\tt y != 0} va \emph{después} del
 cálculo de {\tt (x/y) }, de modo que la expresión falla con un error.
 
 En la segunda expresión, se dice que {\tt y != 0} actúa como {\bf guardián}
-para asegurar que sólo se ejecute {\tt (x/y)} en el caso de que {\tt y} no sea cero.
+para garantizar que sólo se ejecute {\tt (x/y)} en el caso de que {\tt y} no sea cero.
 
 
 \section{Depuración}
@@ -548,9 +551,9 @@ más útiles normalmente son:
 
 \end{itemize}
 
-Los errores de sintaxis (syntax errors), normalmente son fáciles de encontrar, pero
-a veces tienen trampa. Los errores debido a espacios en blanco pueden ser complicados de
-localizar, ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
+Los errores de sintaxis (syntax errors), normalmente son fáciles de localizar, pero
+a veces tienen trampa. Los errores debido a espacios en blanco pueden ser complicados,
+ya que los espacios y las tabulaciones son invisibles, y solemos ignorarlos.
 
 \index{espacio en blanco}
 
@@ -565,7 +568,7 @@ SyntaxError: invalid syntax
 \end{verbatim}
 \afterverb
 %
-En este ejemplo, el problema es que la segunda línea está sangrada por
+En este ejemplo, el problema es que la segunda línea está indentada por
 un espacio. Pero el mensaje de error apunta a {\tt y}, lo cual
 resulta engañoso. En general, los mensajes de error indican dónde se ha
 descubierto el problema, pero el error real podría estar en el código
@@ -669,7 +672,7 @@ sentencia condicional.
 \index{rama}
 
 \item[sentencia compuesta:]  Una sentencia que consiste en un encabezado
-y un cuerpo. El encabezado termina con dos-puntos (:). El cuerpo está sangrado
+y un cuerpo. El encabezado termina con dos-puntos (:). El cuerpo está indentado
 con relación al encabezado.
 \index{compuesta, sentencia}
 \index{sentencia!compuesta}
@@ -693,8 +696,8 @@ veces la tarifa horaria para todas
 las horas trabajadas que excedan de 40.
 
 \begin{verbatim}
-Introduce las Horas: 45
-Introduce la Tarifa por hora: 10
+Introduzca las Horas: 45
+Introduzca la Tarifa por hora: 10
 Salario: 475.0
 \end{verbatim}
 \end{ex}
@@ -706,12 +709,12 @@ mostrando un mensaje y saliendo del programa.
 A continuación se muestran dos ejecuciones del programa:
 
 \begin{verbatim}
-Introduce las Horas: 20
-Introduce la Tarifa por hora: nueve
-Error, por favor introduce un número
+Introduzca las Horas: 20
+Introduzca la Tarifa por hora: nueve
+Error, por favor introduzca un número
 
-Introduce las Horas: cuarenta
-Error, por favor introduce un número
+Introduzca las Horas: cuarenta
+Error, por favor introduzca un número
 \end{verbatim}
 \end{ex}
 
@@ -729,19 +732,19 @@ Puntuación Calificación
 >= 0.6     Suficiente
 < 0.6      Insuficiente
 
-Introduce puntuación: 0.95
+Introduzca puntuación: 0.95
 Sobresaliente
 
-Introduce puntuación: perfecto
+Introduzca puntuación: perfecto
 Puntuación incorrecta
 
-Introduce puntuación: 10.0
+Introduzca puntuación: 10.0
 Puntuación incorrecta
 
-Introduce puntuación: 0.75
+Introduzca puntuación: 0.75
 Bien
 
-Introduce puntuación: 0.5
+Introduzca puntuación: 0.5
 Insuficiente
 \end{verbatim}
 

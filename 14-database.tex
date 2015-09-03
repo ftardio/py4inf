@@ -8,7 +8,7 @@
 
 Una {\bf base de datos} es un archivo que está organizado para almacenar datos.
 La mayoría de las bases de datos están organizadas como diccionarios, en el sentido
-de que realizan mapeados entre claves y valores. La diferencia más importante
+de que realizan asociaciones entre claves y valores. La diferencia más importante
 es que la base de datos se encuentra en el disco (u otro almacenamiento permanente),
 de modo que su contenido se conserva después de que el programa finaliza. Gracias a que la base de
 datos se guarda en un almacenamiento permanente, puede almacenar muchos más datos que
@@ -25,9 +25,9 @@ concreta.
 
 Existen muchos sistemas de bases de datos diferentes, que se utilizan para una
 amplia variedad de propósitos. Algunos de ellos son: Oracle, MySQL, Microsoft SQL Server,
-PostgrSQL, y SQLite. En este libro nos centraremos en SQLite, ya que
+PostgreSQL, y SQLite. En este libro nos centraremos en SQLite, ya que
 se trata de una base de datos muy habitual y ya viene integrada dentro de Python.
-SQLite está diseñada para ser \emph{incrustada} dentro de otras aplicaciones
+SQLite está diseñada para ser \emph{incrustada} dentro de otras aplicaciones,
 de modo que proporcione soporte para bases de datos dentro de la aplicación. Por ejemplo,
 el navegador Firefox es uno de los que utilizan la base de datos SQLite internamente,
 al igual que muchos otros productos.
@@ -40,7 +40,7 @@ hemos descrito en el capítulo anterior.
 
 \section{Conceptos sobre bases de datos}
 
-Cuando se ve por primera vez una base de datos, se asemeja a una
+Cuando se ve por primera vez una base de datos, se parece a una
 hoja de cálculo con múltiples hojas. Las estructuras de datos primarias
 en una base de datos son:
 {\bf tablas}, {\bf filas}, y {\bf columnas}.  
@@ -80,18 +80,18 @@ será más conveniente usar Python.
 
 Las bases de datos necesitan una estructura más definida que las listas
 o diccionarios de Python\footnote{SQLite en realidad permite cierta
-flexibilidad respecto al tipo de datos que se almacenan en cada columna,
-pero en este capítulo nosotros vamos a mantener los tipos de datos estrictos
+flexibilidad respecto al tipo de dato que se almacena en cada columna,
+pero en este capítulo nosotros vamos a mantener los tipos de datos estrictos,
 para que los conceptos que aprendamos puedan ser igualmente aplicados a otras
 bases de datos como MySQL.}.
 
 Cuando se crea una {\bf tabla}, se debe
 indicar de antemano a la base de datos los nombres de cada una de las
-{\bf columnas} de la tabla y el tipo de datos que se van a
-almacenar en cada {\bf columna}. Cuando el software de la base de datos
-conoce el tipo de datos de cada columna, puede elegir el modo más
-eficiente de almacenar y buscar en ellas, de acuerdo al tipo de
-datos guardados.
+{\bf columnas} de esa tabla y el tipo de dato que se va a
+almacenar en cada una de ellas. Cuando el software de la base de datos
+conoce el tipo de dato de cada columna, puede elegir el modo más
+eficiente de almacenar y buscar en ellas, basándose en el tipo de
+dato que contendrán.
 
 Puedes revisar los distintos tipos de datos soportados por SQLite
 en la siguiente dirección:
@@ -151,8 +151,8 @@ comandos sobre el contenido de la base de datos, usando el método
 Los comandos de las bases de datos se expresan en un lenguaje especial que ha
 sido estandarizado entre varios proveedores de bases de datos diferentes
 para permitirnos aprender un único lenguaje para todas ellas. Este lenguaje
-recibe el nombre de {\bf Lenguaje de Consultas eStructurado}, o {\bf SQL}
-por sus iniciales en inglés.
+recibe el nombre de {\bf Lenguaje de Consultas eStructurado}
+({\tt Structured Query Language}), o {\bf SQL}.
 
 \url{http://en.wikipedia.org/wiki/SQL}
 
@@ -187,11 +187,11 @@ cur.execute('CREATE TABLE Canciones (titulo TEXT, reproducciones INTEGER)')
 Ahora que ya hemos creado la tabla llamada {\tt Canciones}, podemos guardar
 algunos datos en ella usando la operación de SQL {\tt INSERT}. Empezaremos
 realizando otra vez una conexión con la base de datos y obteniendo el {\tt cursor}.
-Luego podremos ejecutar comandos SQL utilizando ese cursor.
+Luego podremos ejecutar comandos SQL usando ese cursor.
 
 El comando {\tt INSERT} de SQL indica qué tabla se está utilizando
 y luego define una fila nueva, enumerando los campos que se desean
-incluir {\tt (título, reproducciones)}, seguidos por los {\tt valores (VALUES)} que
+incluir {\tt (título, reproducciones)}, seguidos por los valores ({\tt VALUES}) que
 se desean colocar en esa fila. Nosotros vamos a especificar los valores como signos de interrogación
 {\tt (?, ?)} para indicarle que los valores reales serán pasados como una
 tupla {\tt ( 'My Way', 15 ) } en el segundo parámetro de la
@@ -222,7 +222,7 @@ cur.close()
 \end{verbatim}
 \afterverb
 %
-Primero {\tt insertamos (INSERT)} dos filas en la tabla y usamos {\tt commit()}
+Primero insertamos ({\tt INSERT}) dos filas en la tabla y usamos {\tt commit()}
 para forzar a que los datos sean escritos en el archivo de la base de datos.
 
 \beforefig
@@ -232,13 +232,13 @@ para forzar a que los datos sean escritos en el archivo de la base de datos.
 Después usamos el comando {\tt SELECT} para
 recuperar las filas que acabamos de insertar en la tabla.
 En el comando
-{\tt SELECT}, indicamos qué columnas nos gustaría obtener {\tt (titulo, reproducciones)}
-e indicamos desde qué tabla queremos recuperar los datos. Después de
+{\tt SELECT}, indicamos qué columnas nos gustaría obtener {\tt (titulo, reproducciones)},
+y también desde qué tabla ({\tt FROM}) queremos recuperar los datos. Después de
 ejecutar la sentencia {\tt SELECT}, el cursor se convierte en algo con lo que podemos
 iterar mediante una sentencia {\tt for}. Por eficiencia,
 el cursor no lee todos los datos de la base de datos
 cuando se ejecuta la sentencia {\tt SELECT}.
-En lugar de ello, los datos van siendo leídos según
+En lugar de ello, los datos van siendo leídos a medida que
 se van pidiendo las filas desde el bucle creado con la sentencia {\tt for}.
 
 La salida del programa es la siguiente:
@@ -258,7 +258,7 @@ No nos preocupa que la cadena del título comience por
 {\tt u'}. Se trata de una indicación de que las cadenas son del tipo {\bf Unicode},
 y por tanto capaces de almacenar conjuntos de caracteres no-latinos.
 
-Al final del programa, ejecutamos un comando SQL para {\tt borrar (DELETE)}
+Al final del programa, ejecutamos un comando SQL para borrar {\tt (DELETE)}
 las filas que acabamos de crear, de modo que podamos ejecutar el programa una y otra vez.
 El comando {\tt DELETE} nos muestra el uso de la cláusula {\tt WHERE}, la cual
 nos permite expresar un criterio de selección, de modo que podemos pedir a la base de datos
@@ -276,7 +276,7 @@ En esta sección, nos centraremos en el lenguaje SQL en particular
 y echaremos un vistazo a su sintaxis.
 
 A pesar de que hay muchos proveedores de bases de datos, el Lenguaje de Consultas
-eStructurado (SQL) está estandarizado, de modo que podríamos comunicarnos de una forma
+Estructurado (SQL) está estandarizado, para que podamos comunicarnos de una forma
 similar con sistemas de bases de datos de múltiples vendedores. 
 
 Una base de datos relacional está compuesta por tablas, filas y columnas. Las columnas
@@ -299,7 +299,7 @@ INSERT INTO Canciones (titulo, reproducciones) VALUES ('My Way', 15)
 %
 La sentencia {\tt INSERT} especifica el nombre de la tabla, seguido por una lista
 de los campos/columnas que se quieren establecer en la fila nueva, a continuación
-la palabra clave {\tt VALUES} y una lista de los valores correspondientes
+la palabra clave {\tt VALUES}, y una lista de los valores correspondientes
 para cada uno de los campos.
 
 El comando de SQL {\tt SELECT} se usa para recuperar filas y columnas desde una base de datos.
@@ -315,7 +315,10 @@ SELECT * FROM Canciones WHERE titulo = 'My Way'
 \afterverb
 %
 El \verb"*" indica que se desea que la base de datos devuelva todas las
-columnas para cada línea que cumpla la condición de la clausula {\tt WHERE}.
+columnas para cada línea que cumpla la condición de la clausula {\tt WHERE}
+\footnote{la consulta, traducida al español sería más o menos:
+{\tt SELECCIONA todas las columnas (*) DE la tabla 'Canciones' DONDE
+el título sea 'My Way' (Nota del trad.)}}.
 
 Fíjate que, a diferencia de lo que ocurre en Python, en SQL la clausula {\tt WHERE}
 utiliza un único signo igual
@@ -330,7 +333,7 @@ junto con {\tt AND}, {\tt OR} y paréntesis
 para construir expresiones lógicas.
 
 Se puede solicitar que las columnas devueltas vengan ordenadas por uno
-de los campos así:
+de los campos, de este modo:
 
 \beforeverb
 \begin{verbatim}
@@ -347,7 +350,7 @@ DELETE FROM Canciones WHERE titulo = 'My Way'
 \end{verbatim}
 \afterverb
 %
-Es posible {\tt actualizar (UPDATE)} una columna o varias de una o más filas
+Es posible actualizar {\tt (UPDATE)} una columna o varias de una o más filas
 en una tabla usando la sentencia de SQL {\tt UPDATE}, como se muestra a continuación:
 
 \beforeverb
@@ -356,7 +359,7 @@ UPDATE Canciones SET reproducciones = 16 WHERE titulo = 'My Way'
 \end{verbatim}
 \afterverb
 %
-La sentencia {\tt UPDATE} especifica una tabla y a continuación
+La sentencia {\tt UPDATE} especifica una tabla, a continuación
 una lista de campos y valores a cambiar detrás de la palabra
 clave {\tt SET}, y finalmente una clausula opcional {\tt WHERE} para elegir
 las filas que van a ser actualizadas. Una única sentencia {\tt UPDATE}
@@ -371,6 +374,7 @@ nos permiten realizar las cuatro operaciones básicas necesarias para crear y ma
 
 En esta sección, crearemos un programa araña sencillo que se moverá
 a través de cuentas de Twitter y construirá una base de datos de ellas.
+
 \emph{Nota: Ten mucho cuidado al ejecutar este programa. Si extraes
 demasiados datos o ejecutas el programa durante demasiado tiempo
 pueden terminar cortándote el acceso a Twitter.}
@@ -380,8 +384,8 @@ necesita poderlo detener y volver a poner en marcha muchas veces, y
 no se quieren perder los datos que se hayan recuperado hasta ese momento.
 No querrás tener que empezar siempre la recuperación de datos desde
 el principio, de modo que necesitaremos almacenar los datos según los vamos recuperando para
-que nuestro programa pueda usar esa copia de seguridad y continuar de nuevo su recogida de datos
-donde lo dejó la última vez.
+que nuestro programa pueda usar esa copia de seguridad y reanudar su recogida de datos
+desde donde lo dejó la última vez.
 
 Empezaremos por recuperar los amigos de Twitter de una persona y sus estados,
 moviéndonos a través de la lista de amigos y añadiendo cada uno de ellos
@@ -391,14 +395,14 @@ y recuperaremos los amigos de uno de esos amigos. Continuaremos haciendo esto un
 recogiendo cualquier persona ``no visitada'', recuperando su lista de amigos
 y añadiendo aquellos que no tengamos ya en nuestra lista para una próxima visita.
 
-También rastrearemos cuántas veces hemos visto un amigo concreto en la
-base de datos para tener una idea de su ``popularidad''.
+También contabilizaremos cuántas veces hemos visto un amigo concreto en la
+base de datos, para tener una idea de su ``popularidad''.
 
-Como estamos almacenando nuestra lista de cuentas de conocidos,
-cuándo hemos recuperado una cuenta o no
-y la popularidad de cada cuenta
-en una base datos en el disco de nuestro PC,
-podremos detener y reanudar el programa tantas veces como queramos. 
+Estamos almacenando nuestra lista de cuentas de conocidos,
+si hemos recuperado una cuenta o no,
+y la popularidad de cada cuenta.
+Al tener todo ello guardado en una base de datos en nuestro PC,
+podremos detener y reanudar el programa tantas veces como queramos.
 
 % POR HACER: Añadir una referencia al lugar correcto
 Este programa es un poco complejo. Está basado en el código
@@ -424,7 +428,7 @@ CREATE TABLE IF NOT EXISTS Twitter
 (nombre TEXT, recuperado INTEGER, amigos INTEGER)''')
 
 while True:
-    cuenta = raw_input('Introduce una cuenta de Twitter o salir: ')
+    cuenta = raw_input('Introduzca una cuenta de Twitter o salir: ')
     if ( cuenta == 'salir' ) : break
     if ( len(cuenta) < 1 ) :
         cur.execute('SELECT nombre FROM Twitter WHERE recuperado = 0 LIMIT 1')
@@ -479,9 +483,9 @@ En el bucle principal del programa, pedimos al usuario el nombre de una cuenta
 de Twitter o ``salir'' para finalizar el programa.
 Si el usuario introduce una cuenta de Twitter, recuperamos la
 lista de amigos de ese usuario y sus estados,
-y añadimos cada amigo a la base de datos si no
-estaba ya en ella. Si el amigo ya está en la lista,
-aumentamos en 1 el campo {\tt amigos} en la fila de la base de datos correspondiente.
+y añadimos cada amigo a la base de datos, si no
+estaba ya en ella. Si el amigo ya estaba en la lista,
+aumentamos en 1 el campo {\tt amigos} en la fila correspondiente de la base de datos.
 
 Si el usuario pulsa intro, buscamos en la base de datos la siguiente
 cuenta de Twitter que no haya sido aún recuperada, recuperamos los
@@ -519,7 +523,7 @@ contador de amigos ({\tt amigos}).
 \afterverb
 %
 Una vez que el cursor ejecuta la sentencia {\tt SELECT},
-debemos recuperar las filas. Podríamos hacerlo con una sentencia {\tt for},
+tenemos que recuperar las filas. Podríamos hacerlo con una sentencia {\tt for},
 pero dado que sólo estamos recuperando una única fila
 ({\tt LIMIT 1}), podemos también usar el método {\tt fetchone()} para extraer
 la primera (y única) fila que da como resultado la operación {\tt SELECT}.
@@ -537,18 +541,18 @@ interrogaciones dentro de la sentencia SQL.
 Si el código en el bloque {\tt try} falla, se deberá probablemente a que ningún registro
 coincide con lo especificado en la clausula {\tt WHERE nombre = ?} de la sentencia SELECT.
 Así que en el bloque {\tt except}, usamos la sentencia de SQL {\tt INSERT} para añadir el
-nombre a mostrar (\verb"screen_name") del amigo a la tabla con una indicación de que no lo hemos
-recuperado aún y fijamos su contador de amigos a cero.
+nombre a mostrar (\verb"screen_name") del amigo a la tabla, junto con una indicación
+de que no lo hemos recuperado aún, y fijamos su contador de amigos a cero.
 
 La primera vez que el programa funciona e introducimos una cuenta de Twitter, mostrará
 algo similar a esto:
 
 \beforeverb
 \begin{verbatim}
-Introduce una cuenta de Twitter o salir: drchuck
+Introduzca una cuenta de Twitter o salir: drchuck
 Recuperando http://api.twitter.com/1.1/friends ...
 Cuentas nuevas= 20  ya visitadas= 0
-Introduce una cuenta de Twitter o salir: salir
+Introduzca una cuenta de Twitter o salir: salir
 \end{verbatim}
 \afterverb
 %
@@ -558,8 +562,8 @@ una tabla llamada {\tt Twitter} a la base de datos. A continuación
 recuperamos algunos amigos y los añadimos a la base de datos, ya que
 ésta está vacía.
 
-En este momento, tal vez sea conveniente escribir un extractor de datos sencillo
-para echar un vistazo a lo que hay dentro del fichero {\tt arana.sqlite3}:
+En este momento, tal vez sea conveniente escribir un programa de volcado de datos
+sencillo, para echar un vistazo a lo que hay dentro del fichero {\tt arana.sqlite3}:
 
 \beforeverb
 \begin{verbatim}
@@ -608,13 +612,13 @@ escribir el nombre de una cuenta:
 
 \beforeverb
 \begin{verbatim}
-Introduce una cuenta de Twitter o salir:  
+Introduzca una cuenta de Twitter o salir:  
 Recuperando http://api.twitter.com/1.1/friends ...
 Cuentas nuevas= 18  ya visitadas= 2
-Introduce una cuenta de Twitter o salir: 
+Introduzca una cuenta de Twitter o salir: 
 Recuperando http://api.twitter.com/1.1/friends ...
 Cuentas nuevas= 17  ya visitadas= 3
-Introduce una cuenta de Twitter o salir: salir
+Introduzca una cuenta de Twitter o salir: salir
 \end{verbatim}
 \afterverb
 %
@@ -633,14 +637,14 @@ se ha ejecutado el código siguiente:
 \end{verbatim}
 \afterverb
 %
-Usamos la sentencia de SQL {\tt SELECT} para recuperar el nombre del primer
+Usamos la sentencia de SQL {\tt SELECT} para obtener el nombre del primer
 usuario ({\tt LIMIT 1}) que aún tiene su valor de ``hemos recuperado ya este usuario''
 a cero. También usamos el modelo {\tt fechone()[0]} en un bloque
-try/except para extraer el nombre de los datos recuperados o bien
-mostrar un mensaje de error y volver al principio.
+try/except para extraer el ``nombre a mostrar'' ({\tt screen name}) de los datos recuperados,
+o bien mostrar un mensaje de error y volver al principio.
 
-Si hemos recuperado con éxito el nombre de una cuenta que aún no había sido procesada,
-tratamos sus datos de este modo:
+Si hemos obtenido con éxito el nombre de una cuenta que aún no había sido procesada,
+recuperamos sus datos de este modo:
 
 \beforeverb
 \begin{verbatim}
@@ -654,15 +658,15 @@ tratamos sus datos de este modo:
 \end{verbatim}
 \afterverb
 %
-Una vez recuperamos los datos correctamente, usamos la sentencia {\tt UPDATE}
+Una vez recuperados correctamente los datos, usamos la sentencia {\tt UPDATE}
 para poner la columna {\tt recuperado} a 1, lo que indica que hemos terminado
-la recuperación de amigos de esa cuenta. Esto impide que recuperemos los
-mismos datos una y otra vez y nos permite ir avanzando a través de la red
+la extracción de amigos de esa cuenta. Esto impide que recuperemos los
+mismos datos una y otra vez, y nos permite ir avanzando a través de la red
 de amigos de Twitter. 
 
 Si ejecutamos el programa de amigos y pulsamos intro dos veces para recuperar
 los amigos del siguiente amigo no visitado,
-y luego ejecutamos de nuevo el programa de extracción de datos, nos mostrará la
+y luego ejecutamos de nuevo el programa de volcado de datos, nos mostrará la
 salida siguiente: 
 
 \beforeverb
@@ -682,35 +686,35 @@ salida siguiente:
 \end{verbatim}
 \afterverb
 %
-Podemos ver que se han guardado correctamente las visitas que hemos realizado a
-a {\tt lhawthorn} y {\tt opencontent}. Además las cuentas
+Podemos ver que se han guardado correctamente las visitas que hemos realizado
+a {\tt lhawthorn} y a {\tt opencontent}. Además, las cuentas
 {\tt cnxorg} y {\tt kthanos} ya tienen dos seguidores.
-A pesar de hasta ahora hemos recuperados sólo los amigos de tres personas
+A pesar de hasta ahora hemos recuperados sólo los amigos de tres personas,
 ({\tt drchuck}, {\tt opencontent}, y {\tt lhawthorn}), la tabla contiene ya
 55 filas de amigos por recuperar.
 
 Cada vez que ejecutamos el programa y pulsamos intro, se elegirá la siguiente
 cuenta no visitada (es decir, ahora la siguiente cuenta sería \verb"steve_coppin"),
-recuperará sus amigos, los marcará como recuperados, y para cada uno de los
-amigos de \verb"steve_coppin" o bien lo añadirá al final de la
-base de datos o bien actualizará su contador de amigos si ya estaba en la
+recuperará sus amigos, los marcará como recuperados y, para cada uno de los
+amigos de \verb"steve_coppin", o bien lo añadirá al final de la
+base de datos, o bien actualizará su contador de amigos si ya estaba en la
 tabla.
 
-Como ves, al estar los datos del programa almacenados en el disco en una base de datos,
-la actividad de rastreo puede ser suspendida y reanudada tantas veces como se desee
+Como ves, al estar los datos del programa almacenados en el disco, dentro de una base de datos,
+la actividad de rastreo puede ser suspendida y reanudada tantas veces como se desee,
 sin que se produzca ninguna pérdida de datos.
 
 \section{Modelado de datos básico}
 
 La potencia real de las bases de datos relacionales se manifiesta cuando se construyen múltiples
-tablas y se crean enlaces entre ellas. El acto de decidir cómo separar los datos de tu
+tablas y se crean enlaces entre ellas. La acción de decidir cómo separar los datos de tu
 aplicación en múltiples tablas y establecer las relaciones
 entre esas tablas recibe el nombre de {\bf modelado de datos}. El
 documento de diseño que muestra las tablas y sus relaciones
 se llama {\bf modelo de datos}.
 
 El modelado de datos es una habilidad relativamente sofisticada, y en esta sección sólo
-introduciremos los conceptos más básicos acerca de ello. Para obtener más
+introduciremos los conceptos más básicos acerca del tema. Para obtener más
 detalles sobre modelado de datos puedes comenzar con:
 
 \url{http://en.wikipedia.org/wiki/Relational_model}
@@ -727,7 +731,7 @@ A continuación se muestra un modo sencillo de hacer una tabla de este tipo:
 
 \beforeverb
 \begin{verbatim}
-CREATE TABLE Camaradas (desde_amigo TEXT, hacia_amigo TEXT)
+CREATE TABLE Colegas (desde_amigo TEXT, hacia_amigo TEXT)
 \end{verbatim}
 \afterverb
 %
@@ -736,7 +740,7 @@ insertaremos una fila de esta forma:
 
 \beforeverb
 \begin{verbatim}
-INSERT INTO Camaradas (desde_amigo, hacia_amigo) VALUES ('drchuck', 'lhawthorn')
+INSERT INTO Colegas (desde_amigo, hacia_amigo) VALUES ('drchuck', 'lhawthorn')
 \end{verbatim}
 \afterverb
 %
@@ -747,7 +751,7 @@ cadena un montón de veces en la base de datos.
 
 Esta duplicación de cadenas de datos viola una de las mejores prácticas
 para la {\bf normalización de bases de datos}, que básicamente consiste en
-que nunca se debe guardar la misma cadena de datos más de una vez en la base de datos.
+que nunca se debe guardar la misma cadena más de una vez en la base de datos.
 Si se necesitan los datos varias veces, se debe crear una
 {\bf clave} numérica para ellos y hacer referencia a los datos reales
 a través de esa clave.
@@ -770,7 +774,7 @@ SQLite tiene una característica que permite añadir automáticamente el valor d
 para cualquier fila que insertemos en la tabla, usando un tipo especial de
 datos en la columna, ({\tt INTEGER PRIMARY KEY}).
 
-Podemos, pues, crear la tabla {\tt Personas} con esa columna adicional
+Podemos, pues, crear la tabla {\tt Personas} con esa columna adicional,
 {\tt id}, como se muestra a continuación:
 
 \beforeverb
@@ -785,10 +789,10 @@ de la tabla {\tt Personas}.
 Cuando elegimos {\tt INTEGER PRIMARY KEY} como el tipo de la columna {\tt id},
 estamos indicando que queremos que SQLite controle esta columna y
 asigne automáticamente una clave numérica única para cada fila que insertemos.
-También añadimos la palabra clave {\tt UNIQUE} para indicar que no vamos
+También añadimos la palabra clave {\tt UNIQUE}, para indicar que no vamos
 a permitir a SQLite insertar dos filas con el mismo valor de {\tt nombre}.
 
-Ahora en vez de crear la tabla {\tt Camaradas} como hicimos antes, crearemos
+Ahora, en vez de crear la tabla {\tt Colegas} como hicimos antes, crearemos
 una tabla llamada {\tt Seguimientos} con dos columnas de tipo entero,
 \verb"desde_id" y \verb"hacia_id", y una restricción en la tabla que consistirá en que
 la \emph{combinación} de \verb"desde_id" y \verb"hacia_id" deberá ser única
@@ -841,7 +845,7 @@ cur.execute('''CREATE TABLE IF NOT EXISTS Seguimientos
     (desde_id INTEGER, hacia_id INTEGER, UNIQUE(desde_id, hacia_id))''')
 
 while True:
-    cuenta = raw_input('Introduce una cuenta de Twitter, o salir: ')
+    cuenta = raw_input('Introduzca una cuenta de Twitter, o salir: ')
     if ( cuenta == 'salir' ) : break
     if ( len(cuenta) < 1 ) :
         cur.execute('''SELECT id, nombre FROM Personas
@@ -934,7 +938,7 @@ Iremos explicando todos los puntos de uno en uno.
 Una vez diseñada la estructura de la tabla, podemos indicar al sistema
 de la base de datos que aplique unas cuantas reglas. Estas reglas nos
 ayudarán a evitar errores y a introducir correctamente los datos en
-las tablas. Cuando creemos nuestras tablas:
+las tablas. Cuando creamos nuestras tablas:
 
 \beforeverb
 \begin{verbatim}
@@ -951,7 +955,7 @@ de cada fila de la tabla {\tt Seguimientos} debe ser también única. Estas rest
 evitan que cometamos errores como añadir la misma relación entre las mismas personas
 más de una vez.
 
-Luego podemos aprovechar estas restricciones en el código siguiente:
+Después, podemos aprovechar estas restricciones en el código siguiente:
 
 \beforeverb
 \begin{verbatim}
@@ -963,8 +967,8 @@ cur.execute('''INSERT OR IGNORE INTO Personas (nombre, recuperado)
 Aquí añadimos la clausula {\tt IGNORE} en la sentencia {\tt INSERT} para indicar
 que si este {\tt INSERT} en concreto causara una violación de la regla
 ``el {\tt nombre} debe ser único'', el sistema de la base de datos está autorizado
-a ignorar el {\tt INSERT}. De modo que estamos usando las restricciones de la base de datos
-como una red de seguridad para asegurarnos de que no hacemos algo incorrecto de forma inadvertida.
+a {\tt ignorar} el {\tt INSERT}. De modo que estamos usando las restricciones de la base de datos
+como una red de seguridad para asegurarnos de que no hacemos algo incorrecto sin darnos cuenta.
 
 De forma similar, el código siguiente se asegura de que no añadamos exactamente
 la misma relación de {\tt Seguimiento} dos veces.
@@ -983,24 +987,24 @@ que hemos especificado para cada fila de {\tt Seguimientos}.
 \subsection{Recuperar y/o insertar un registro}
 
 Cuando pedimos al usuario una cuenta de Twitter, si la cuenta ya
-existe debemos buscar el valor de su {\tt id}. Si la cuenta
-no existe aún en la tabla {\tt Personas}, debemos insertar
+existe deberemos averiguar el valor de su {\tt id}. Si la cuenta
+no existe aún en la tabla {\tt Personas}, deberemos insertar
 el registro y obtener el valor del {\tt id} de la fila
 recién insertada.
 
-Éste es un diseño muy habitual y se realiza dos veces en el programa anterior.
+Éste es un diseño muy habitual y se utiliza dos veces en el programa anterior.
 Este código muestra cómo se busca el {\tt id} de la
 cuenta de un amigo, una vez extraído su \verb"screen_name"
 desde un nodo de {\tt usuario} del JSON recuperado desde Twitter.
 
-Dado que con el tiempo es probable que vayan aumentando las posibilidades de que la cuenta
-ya figure en la base de datos, primero comprobamos si el registro
+Dado que con el tiempo será cada vez más probable que la cuenta
+ya figure en la base de datos, primero comprobaremos si el registro
 existe en {\tt Personas}, usando una sentencia {\tt SELECT}.
 
-Si todo va bien\footnote{En general, cuando una frase comienza
+Si todo va bien\footnote{En general, cuando una frase empieza por
 ``si todo va bien''	es porque el código del que se habla necesita
 utilizar try/except.}, dentro de la sección {\tt try} recuperaremos el
-registro mediante {\tt fetchone()} y luego recuperaremos el
+registro mediante {\tt fetchone()} y luego extraeremos el
 primer (y único) elemento de la tupla devuelta, que almacenaremos en
 \verb"amigo_id".
 
@@ -1027,13 +1031,13 @@ y el control será transferido a la sección {\tt except}.
 \end{verbatim}
 \afterverb
 %
-Si terminamos en el código {\tt except}, eso sólo significa que la fila
+Si terminamos en el código del {\tt except}, eso sólo significa que la fila
 no se ha encontrado en la tabla, de modo que deberemos insertarla. Usamos, pues,
-{\tt INSERT OR IGNORE} sólo para evitar errores, y luego llamamos al {\tt commit()} para
+{\tt INSERT OR IGNORE} para evitar posibles errores, y luego llamamos al {\tt commit()} para
 forzar a la base de datos a que se actualice de verdad. Después de que se ha realizado la escritura,
-ya podemos comprobar el {\tt cur.rowcount} para saber cuántas filas se han visto afectadas. Como
+podemos comprobar el valor de {\tt cur.rowcount}, para saber cuántas filas se han visto afectadas. Como
 estamos intentando insertar una única fila, si el número de
-filas afectadas es distinto de 1, se ha producido un error.
+filas afectadas es distinto de 1, se habría producido un error.
 
 Si el {\tt INSERT} tiene éxito, podemos usar {\tt cur.lastrowid}
 para averiguar el valor que la base de datos ha asignado a la columna {\tt id}
@@ -1043,7 +1047,7 @@ en nuestra fila recién creada.
 
 Una vez que sabemos el valor de la clave tanto para del usuario de Twitter
 como para el amigo que hemos extraído del JSON, resulta sencillo insertar
-los dos números en la tabla de {\tt Seguimientos}
+ambos números en la tabla de {\tt Seguimientos}
 con el código siguiente:
 
 \beforeverb
@@ -1053,26 +1057,26 @@ cur.execute('INSERT OR IGNORE INTO Seguimientos (desde_id, hacia_id) VALUES (?, 
 \end{verbatim}
 \afterverb
 %
-Fíjate que dejamos que la base de datos se ocupe por nosotros de evitar la ``doble-inserción''
+Fíjate que dejamos que sea la base de datos quien se ocupe de evitar la ``inserción duplicada''
 de una relación, mediante la creación de una tabla con una restricción de unicidad, de modo que
-luego tan sólo añadimos {\tt o ignoramos} en nuestra sentencia {\tt INSERT}.
+luego en nuestra sentencia {\tt INSERT} tan sólo añadimos {\tt o ignoramos}.
 
 Una ejecución de ejemplo del programa sería la siguiente:
 
 \beforeverb
 \begin{verbatim}
-Introduce una cuenta de Twitter, o salir:
+Introduzca una cuenta de Twitter, o salir:
 No se han encontrado cuentas de Twitter sin recuperar
-Introduce una cuenta de Twitter, o salir: drchuck
+Introduzca una cuenta de Twitter, o salir: drchuck
 Recuperando http://api.twitter.com/1.1/friends ...
 Cuentas nuevas= 20  ya visitadas= 0
-Introduce una cuenta de Twitter, o salir: 
+Introduzca una cuenta de Twitter, o salir: 
 Recuperando http://api.twitter.com/1.1/friends ...
 Cuentas nuevas= 17  ya visitadas= 3
-Introduce una cuenta de Twitter, o salir:
+Introduzca una cuenta de Twitter, o salir:
 Recuperando http://api.twitter.com/1.1/friends ...
 Cuentas nuevas= 17  ya visitadas= 3
-Introduce una cuenta de Twitter, o salir: salir
+Introduzca una cuenta de Twitter, o salir: salir
 \end{verbatim}
 \afterverb
 %
@@ -1104,9 +1108,9 @@ Seguimientos:
 %
 Puedes ver los campos {\tt id}, {\tt nombre}, y {\tt visitado} de la
 tabla {\tt Personas}, y también los números de ambos extremos
-de la relación en la tabla {\tt Seguidores}.
+de la relación en la tabla {\tt Seguimientos}.
 En la tabla {\tt Personas}, vemos que las primeras tres personas
-han sido visitadas y que sus datos han sido recuperados.
+ya han sido visitadas y que sus datos han sido recuperados.
 Los datos de la tabla {\tt Seguidores} indican que
 {\tt drchuck} (usuario 1) es amigo de todas las personas que se muestran en las primeras
 cinco filas. Lo cual tiene sentido, porque
@@ -1117,7 +1121,7 @@ verías también los amigos de los usuarios 2 y 3.
 \section{Tres tipos de claves}
 
 Ahora que hemos empezado a construir un modelo de datos, colocando
-nuestros datos en múltiples tablas enlazadas y hemos enlazado las filas de esas
+nuestros datos en múltiples tablas enlazadas, y hemos enlazado las filas de esas
 tablas usando {\bf claves}, debemos fijarnos en cierta terminología
 acerca de esas claves. Generalmente en un modelo de base de datos hay
 tres tipos de claves que se pueden usar:
@@ -1127,31 +1131,31 @@ tres tipos de claves que se pueden usar:
 \item Una {\bf clave lógica} es una clave que se podría usar en el ``mundo real''
 para localizar una fila. En nuestro ejemplo de modelado de datos, el campo
 {\tt nombre} es una clave lógica. Es el nombre que se muestra en pantalla para el usuario
-y, en efecto, buscamos la columna de un usuario varias veces en el programa
-usando el campo {\tt nombre}. A menudo verás que tiene sentido
-añadir una restricción {\tt UNIQUE (única)} a una clave lógica. Ya que las
+y, en efecto, usamos el campo {\tt nombre} varias veces en el programa
+para localizar la fila correspondiente a un usuario. Comprobarás que a menudo tiene sentido
+añadir una restricción {\tt UNIQUE (única)} a una clave lógica. Como las
 claves lógicas son las que usamos para buscar una fila desde el mundo exterior, tendría
 poco sentido permitir que hubiera múltiples filas con el mismo valor en la tabla.
 
 \item Una {\bf clave primaria} es normalmente un número que es asignado
 automáticamente por la base de datos. En general no tiene ningún significado fuera
-del programa y sólo se utiliza para enlazar entre si filas de tablas diferentes.
-Cuando queramos buscar una fila en una tabla, realizar
+del programa y sólo se utiliza para enlazar entre sí filas de tablas diferentes.
+Cuando queremos buscar una fila en una tabla, realizar
 la búsqueda usando la clave primaria es, normalmente, el modo
 más rápido de localizarla. Como las claves primarias son números enteros,
-necesitan muy poco espacio de almacenamiento y pueden ser comparadas u ordenadas muy rápido.
+necesitan muy poco espacio de almacenamiento y pueden ser comparadas y ordenadas muy rápido.
 En nuestro modelo de datos, el campo {\tt id} es un ejemplo de una clave primaria.
 
-\item Una {\bf clave foránea}\footnote{Se trata de una ``foreign key'', la cual se traduce
-también a veces al español como ``clave extranjera'' (Nota del trad.)}
- es normalmente un número que apunta a la clave primaria
+\item Una {\bf clave foránea} ({\tt foreign key})\footnote{A veces se puede ver también
+el término traducido al español como ``clave externa'' (Nota del trad.)}
+es normalmente un número que apunta a la clave primaria
 de una fila asociada en una tabla diferente. Un ejemplo de una clave foránea
 en nuestro modelo de datos es la columna \verb"desde_id".
 
 \end{itemize}
 
-Estamos usando una
-convención de nombres para darle siempre al campo de clave primaria el nombre
+Estamos usando como
+convención para los nombres el darle siempre al campo de clave primaria el nombre
 {\tt id} y añadir el sufijo \verb"_id" a cualquier nombre de campo
 que sea una clave foránea.
 
@@ -1177,7 +1181,7 @@ SELECT * FROM Seguimientos JOIN Personas
 \afterverb
 %
 La clausula {\tt JOIN} indica que los campos que estamos seleccionando
-cruzan las tablas {\tt Seguimientos} y {\tt Personas}. La clausula
+mezclan las tablas {\tt Seguimientos} y {\tt Personas}. La clausula
 {\tt ON} indica cómo deben ser unidas las dos tablas: Toma cada fila
 de {\tt Seguimientos} y añade una fila de {\tt Personas} en la cual el
 campo \verb"desde_id" de {\tt Seguimientos} coincide con el valor {\tt id}
@@ -1188,7 +1192,7 @@ en la tabla {\tt Personas}.
 \afterfig
 
 El resultado del JOIN consiste en la creación de una ``meta-fila'' extra larga, que contendrá
-tanto los campos de {\tt Personas} como los campos de la fila de {\tt Seguimientos} que cumpla la
+tanto los campos de {\tt Personas} como los campos de la fila de {\tt Seguimientos} que cumplan la
 condición.
 Cuando hay más de una coincidencia entre el campo {\tt id} de {\tt Personas}
 y el \verb"desde_id" de {\tt Seguimientos}, JOIN creará una meta-fila
@@ -1276,14 +1280,14 @@ En el último select, buscamos las cuentas que sean amigas de
 En cada una de las ``meta-filas'' del último select, las primeras dos columnas pertenecen
 a la tabla {\tt Seguimientos}, mientras que las columnas tres a cinco pertenecen a la tabla
 {\tt Personas}. Se puede observar también cómo la segunda columna (\verb"Seguimientos.hacia_id")
-coincide con la tercera ({\tt Personas.id}) en cada una de las ``meta-filas'' del join.
+coincide con la tercera ({\tt Personas.id}) en cada una de las ``meta-filas'' unidas.
 
 \section{Resumen}
 
 En este capítulo se han tratado un montón de temas para darte una visión de conjunto del uso básico
 de las bases de datos en Python. Es más complicado escribir el código para usar una base
 de datos que almacene los datos que utilizar diccionarios de Python o archivos planos, de modo que
-existen pocas razones para usar una base de datos a menos que tu aplicación necesite de verdad
+existen pocas razones para usar una base de datos, a menos que tu aplicación necesite de verdad
 las capacidades que proporciona. Las situaciones en las cuales una base de datos pueden resultar
 bastante útil son:
 (1) cuando tu aplicación necesita realizar muchos cambios pequeños de forma aleatoria en un conjunto
@@ -1293,22 +1297,22 @@ información con frecuencia, o
 (3) cuando tienes un proceso que va a funcionar durante mucho tiempo, y necesitas poder
 detenerlo y volverlo a poner en marcha, conservando los datos entre ejecuciones.
 
-Para cubrir las necesidades de muchas aplicaciones, una base de datos con una simple tabla puede
-resultar suficiente, pero la mayoría de los problemas necesitarán varias tablas y enlaces/relaciones
+Una base de datos con una simple tabla puede resultar suficiente para cubrir las necesidades de
+muchas aplicaciones, pero la mayoría de los problemas necesitarán varias tablas y enlaces/relaciones
 entre filas de tablas diferentes. Cuando empieces a crear enlaces entre tablas,
 es importante realizar un diseño meditado y seguir las
-reglas de normalización de bases de datos para conseguir el mejor uso de sus capacidades.
+reglas de normalización de bases de datos, para conseguir el mejor uso de sus capacidades.
 Como la motivación principal para usar una base de datos
-suele ser tener grandes cantidades de datos con las que tratar, resulta importante
-modelar los datos de forma eficiente, de modo que tu programa funcione tan rápidamente como sea
+suele ser el tener grandes cantidades de datos con las que tratar, resulta importante
+modelar los datos de forma eficiente, para que tu programa funcione tan rápidamente como sea
 posible. 
 
 \section{Depuración}
 
-Un enfoque común cuando se está desarrollando un programa en Python que conecte con
-una base de datos SQLite será ejecutar primero el programa y revisar luego los
-resultados usando el navegador de bases de datos de SQLite (SQLite Database Browser). El navegador
-te permite revisar cuidadosamente los datos para comprobar si tu programa está funcionando
+Un planteamiento habitual, cuando se está desarrollando un programa en Python que conecta con
+una base de datos SQLite, será ejecutar primero el programa y revisar luego los
+resultados usando el navegador de bases de datos de SQLite ({\tt SQLite Database Browser}). El
+navegador te permite revisar cuidadosamente los datos, para comprobar si tu programa está funcionando
 correctamente.
 
 Debes tener cuidado, ya que SQLite se encarga de evitar que dos programa puedan
@@ -1317,12 +1321,12 @@ una base de datos en el navegador y realizas un cambio en la base de datos,
 pero no has pulsado aún el botón ``guardar'' del navegador, éste
 ``bloqueará'' el fichero de la base de datos y evitará que cualquier otro programa
 acceda a dicho fichero. Concretamente, en ese caso tu programa Python
-no será capaz de acceder al fichero si éste se encuentra bloqueado.
+no será capaz de acceder al fichero, ya que éste se encontrará bloqueado.
 
-De modo que la solución pasa por asegurarse de cerrar el navegador de la base de datos,
-o bien usar el menú {\bf Arhivo} para cerrar la base de datos abierta en el navegador
+De modo que la solución pasa por asegurarse de cerrar la ventana del navegador de la base de datos,
+o bien usar el menú {\bf Archivo} para cerrar la base de datos abierta en el navegador
 antes de intentar acceder a ella desde Python, para evitar encontrarse con
-el problema de que el código de Python falle debido a que la base de datos
+el problema de que el código de Python falla debido a que la base de datos
 está bloqueada.
 
 \section{Glosario}
@@ -1335,7 +1339,7 @@ llamada ``columna'' o ``campo''..
 
 \item[cursor:] Un cursor permite ejecutar comandos SQL en una base de datos
 y recuperar los datos de ella. Un cursor es similar a un
-socket en conexiones de red o a un manejador de ficheros.
+socket en conexiones de red o a un manejador de ficheros ({\tt handle}).
 \index{cursor}
 
 \item[clave foránea:] Una clave numérica que apunta a la clave primaria de
@@ -1350,7 +1354,7 @@ sería un buen candidato a utilizar como clave lógica para los datos de ese usu
 \index{lógica, clave}
 \index{clave!lógica}
 
-\item[clave primaria:] Una clave numérica asignada a cada fila que es utilizada para
+\item[clave primaria:] Una clave numérica asignada a cada fila, que es utilizada para
 referirnos a esa fila concreta de esa tabla desde otra tabla distinta. A menudo la base de datos
 se configura para asignar las claves primarias de forma automática, según se van insertando filas.
 \index{primaria, clave}

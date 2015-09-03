@@ -55,7 +55,7 @@ directorios ({\tt os} significa ``Operating System'' (Sistema Operativo).
 \afterverb
 %
 {\tt cwd} significa {\bf current working directory} (directorio de trabajo actual). El resultado en
-este ejemplo es {\tt /Users/csev}, que es el directorio de partida ({\tt home}) para un
+este ejemplo es {\tt /Users/csev}, que es el directorio de inicio ({\tt home}) para un
 usuario llamado {\tt csev}.
 
 \index{trabajo, directorio de}
@@ -71,7 +71,7 @@ sistema de archivos.
 \index{absoluta, ruta}
 \index{ruta!absoluta}
 
-Las rutas que hemos visto hasta ahora son simples nombres de archivo, de modo que
+Las rutas que hemos visto hasta ahora son simples nombres de fichero, de modo que
 son relativas al directorio actual. Para encontrar la ruta absoluta de
 un archivo se puede utilizar {\tt os.path.abspath}:
 
@@ -108,7 +108,7 @@ True
 %
 De forma similar, {\tt os.path.isfile} comprueba si se trata de un fichero.
 
-{\tt os.listdir} devuelve una lista de los archivos (y otros directorios)
+{\tt os.listdir} devuelve una lista de los ficheros (y otros directorios)
 existentes en el directorio dado:
 
 \beforeverb
@@ -128,8 +128,8 @@ en mi servidor. Lo escribí antes de que Flickr existiera y he continuado
 usándolo después, porque quería mantener las copias originales
 de mis imágenes para siempre.
 
-También quería enviar una descripción sencilla, con una línea de texto en el mensaje MMS,
-en la línea de título del correo. Almacené esos mensajes
+También quería enviar una descripción sencilla, con una línea de texto en el mensaje MMS
+o como título del correo. Almacené esos mensajes
 en un fichero de texto en el mismo directorio que el fichero con la imagen.
 Se me ocurrió una estructura de directorios basada en el mes, año, día y hora en
 que cada foto había sido realizada. Lo siguiente sería un ejemplo del nombre
@@ -143,10 +143,10 @@ de una foto y su descripción:
 \afterverb
 %
 Después de siete años, tenía un montón de fotos y descripciones. A lo largo de los años,
-según iba cambiando de teléfono móvil, a veces mi código para extraer el texto de los mensajes
+como iba cambiando de teléfono, a veces mi código para extraer el texto de los mensajes
 fallaba y añadía un montón de datos inútiles al servidor en lugar de la descripción.
 
-Quería moverme a través de esos ficheros y averiguar cuáles de los
+Quería revisar todos esos ficheros y averiguar cuáles de los
 textos eran realmente descripciones y cuáles eran simplemente basura, para poder eliminar
 los ficheros erróneos. Lo primero que hice fue generar un sencillo inventario de
 cuántos archivos de texto tenía en uno de los subdirectorios,
@@ -167,11 +167,11 @@ Ficheros: 1917
 \end{verbatim}
 \afterverb
 %
-El trozo de código que hace eso posible es la librería de Python
+El trozo de código que hace esto posible es la librería de Python
 {\tt os.walk}. Cuando llamamos a {\tt os.walk} y le damos un directorio
 de inicio, ``recorrerá''\footnote{``walk'' significa ``recorrer'' (Nota del trad.)}
 todos los directorios y subdirectorios de forma recursiva. La cadena ``.'' le indica
-que comience en el directorio actual y se mueva hacia delante.
+que comience en el directorio actual y se mueva hacia abajo.
 A medida que va encontrando directorios, obtenemos tres valores en una tupla
 en el cuerpo del bucle {\tt for}. El primer valor es el nombre del
 directorio actual, el segundo es la lista de subdirectorios dentro
@@ -216,7 +216,7 @@ o Apple se usa la barra normal (\verb"/").
 {\tt os.path.join} conoce esas diferencias y sabe en qué
 sistema se está ejecutando, de modo que realiza la concatenación correcta
 dependiendo del sistema. Así el mismo código de Python
-puede ejecutarse tanto en Windows como en sistemas de estilo Unix.
+puede ejecutarse tanto en Windows como en sistemas tipo Unix.
 
 Una vez que tenemos el nombre del fichero completo con la ruta
 del directorio, usamos la utilidad {\tt os.path.getsize}
@@ -298,7 +298,7 @@ de las tres primeras.
 
 Parece que filtrando esos ficheros con los tamaños incorrectos, y asumiendo
 que todos los que tienen sólo una línea son correctos, se
-consiguen unos datos bastante limpios:
+consiguen unos datos bastante claros:
 
 \beforeverb
 \begin{verbatim}
@@ -340,7 +340,7 @@ Simplemente comprobamos si tenemos un fichero con tres líneas, y si la tercera
 línea comienza con el texto especificado, lo saltamos.
 
 Ahora, cuando ejecutamos el programa, vemos que sólo quedan cuatro ficheros
-multi-línea, y todos ellos parecen bastante razonables:
+multi-línea, y todos ellos parecen ser correctos:
 
 \beforeverb
 \begin{verbatim}
@@ -357,15 +357,15 @@ python txtcheck2.py
 \afterverb
 %
 Si miras al diseño global de este programa,
-hemos ido refinando sucesivamente qué ficheros aceptamos o rechazamos
+hemos ido refinando sucesivamente qué ficheros aceptamos o rechazamos,
 y una vez que hemos localizado un patrón ``erróneo'', usamos
 {\tt continue} para saltar los ficheros que se ajustan a ese patrón, de modo que podríamos
-refinar el código para localizar más patrones incorrectos.
+refinar aún más el código para localizar más patrones incorrectos.
 
 Ahora estamos preparados para eliminar los ficheros, así
 que vamos a invertir la lógica y en lugar de imprimir en pantalla
 los ficheros correctos que quedan, vamos a imprimir los
-``erróneos'' que vamos a eliminar.
+``incorrectos'' que estamos a punto de eliminar.
 
 \beforeverb
 \begin{verbatim}
@@ -409,7 +409,7 @@ iPhone: ./2007/09/19-09-07_124857_01.txt
 %
 Podemos ir revisando estos ficheros para asegurarnos de que no hemos
 introducido un error en el programa de forma inadvertida, o de que quizás
-nuestra lógica captura algún fichero que no queramos que tome.
+nuestra lógica captura algún fichero que no queremos que tome.
 
 Una vez hemos comprobado que ésta es la lista de los archivos que de verdad queremos eliminar,
 realizamos los cambios siguientes en el programa:
@@ -417,13 +417,13 @@ realizamos los cambios siguientes en el programa:
 \beforeverb
 \begin{verbatim}
            if tamano == 2578 or tamano == 2565:
-               print 'T-Mobile:',elarchivo
-               os.remove(elarchivo)
+               print 'T-Mobile:',elfichero
+               os.remove(elfichero)
                continue
 ...
            if len(lineas) == 3 and lineas[2].startswith('Sent from my iPhone'):
-               print 'iPhone:', elarchivo
-               os.remove(elarchivo)
+               print 'iPhone:', elfichero
+               os.remove(elfichero)
                continue
 \end{verbatim}
 \afterverb
@@ -444,7 +444,7 @@ T-Mobile: ./2005/01/02-01-05_1858001.txt
 Si por diversión ejecutas el programa por segunda vez, no producirá ninguna salida,
 ya que los ficheros incorrectos ya no estarán.
 
-Si volvemos a ejecutar {\tt txtcount.py}, podemos ver que se han eliminado
+Si volvemos a ejecutar {\tt txtcount.py}, podremos ver que se han eliminado
 899 ficheros incorrectos:
 \beforeverb
 \begin{verbatim}
@@ -479,7 +479,7 @@ de ese fichero y los procesaban de este modo:
 
 \beforeverb
 \begin{verbatim}
-nombre = raw_input('Introduce fichero:')
+nombre = raw_input('Introduzca fichero:')
 manejador = open(nombre, 'r')
 texto = manejador.read()
 ...
@@ -494,7 +494,7 @@ a la petición de datos de este modo:
 \beforeverb
 \begin{verbatim}
 python words.py
-Introduce fichero: mbox-short.txt
+Introduzca fichero: mbox-short.txt
 ...
 \end{verbatim}
 \afterverb
@@ -516,7 +516,7 @@ for arg in sys.argv:
 %
 El contenido de {\tt sys.argv} es una lista de cadenas en la cual la primera
 es el nombre del programa Python y las siguientes son los argumentos que se han
-escrito en la línea de comandos detrás del nombre del fichero de Python.
+escrito en la línea de comandos detrás de ese nombre.
 
 Lo siguiente muestra nuestro programa leyendo varios argumentos desde la línea de
 comandos:
@@ -534,10 +534,10 @@ Argumento: aquí
 %
 Hay tres argumentos que se han pasado a nuestro programa, en forma de lista con tres elementos.
 El primer elemento de la lista es el nombre del fichero (argtest.py) y los otros son
-los dos argumentos de línea de comandos que hemos escrito detrás del nombre del fichero.
+los dos argumentos de línea de comandos que hemos escrito detrás de ese nombre del fichero.
 
 Podemos reescribir nuestro programa para leer ficheros, tomando el nombre del fichero
-desde un argumento de la línea de comandos, de este modo:
+a leer desde un argumento de la línea de comandos, de este modo:
 
 \beforeverb
 \begin{verbatim}
@@ -570,7 +570,7 @@ programa Python, especialmente cuando sólo necesitas introducir una o dos caden
 \index{pipe}
 
 La mayoría de los sistemas operativos proporcionan una interfaz de línea de comandos,
-también conocida como {\bf shell}. Las shells normalmente proporcionan comandos
+también conocida como {\bf shell}. Las {\tt shells} normalmente proporcionan comandos
 para navegar por el sistema de ficheros y ejecutar aplicaciones. Por
 ejemplo, en Unix se cambia de directorio con {\tt cd},
 se muestra el contenido de un directorio con {\tt ls}, y se ejecuta
@@ -580,7 +580,7 @@ un navegador web tecleando (por ejemplo) {\tt firefox}.
 \index{Comando Unix!ls}
 
 Cualquier programa que se ejecute desde la shell puede ser ejecutado
-también desde Python usando una {\bf pipe (tubería)}. Una tubería es un objeto
+también desde Python usando una {\bf pipe} (tubería). Una tubería es un objeto
 que representa a un proceso en ejecución.
 
 Por ejemplo, el comando de Unix\footnote{Cuando se usan tuberías para comunicarse
@@ -618,7 +618,7 @@ con {\tt read}:
 \end{verbatim}
 \afterverb
 %
-Cuando hayas terminado, debes cerrar la tubería como harías con un fichero:
+Cuando hayas terminado, debes cerrar la tubería, como harías con un fichero:
 
 \index{close, método}
 \index{método!close}
@@ -668,11 +668,11 @@ distintas a la función de hash y ésta devuelve el mismo hash para ambas.
 MD5, SHA1, y SHA256 son ejemplos de funciones hash comúnmente utilizadas.
 \index{hashing}
 
-\item[pipe (tubería):] Un pipe o tubería es una conexión con un programa en ejecución. Se
+\item[pipe (tubería):] Una {\tt pipe} o tubería es una conexión con un programa en ejecución. Se
 puede escribir un programa que envíe datos a otro o reciba datos desde ese otro
 mediante una tubería. Una tubería es similar a un
 {\bf socket}, excepto que una tubería sólo puede utilizarse
-para conectar programas en ejecución dentro del mismo PC
+para conectar programas en ejecución dentro del mismo equipo
 (es decir, no se puede usar a través de una red).
 \index{pipe}
 \index{tubería}
@@ -696,7 +696,7 @@ para ejecutarlo.
 
 \item[walk (recorrer):] Un término que se usa para describir el concepto de visitar
 el árbol completo de directorios, subdirectorios, sub-subdirectorios,
-hasta que se han visitado todos los directorios. A esto se le llama
+hasta que se han visitado todos. A esto se le llama
 ``recorrer el árbol de directorios''.
 \index{walk}
 \index{recorrer}
@@ -773,7 +773,7 @@ de ejemplo de la ejecución del programa en una carpeta con archivos de imágene
 \end{verbatim}
 \afterverb
 %
-Aparentemente, a veces envío la misma foto más de una vez
+Aparentemente, a veces envío la misma foto más de una vez,
 o hago una copia de una foto de vez en cuando sin eliminar después
 la original.
 

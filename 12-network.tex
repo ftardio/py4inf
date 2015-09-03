@@ -3,26 +3,26 @@
 
 \chapter{Programas en red}
 
-A pesar de que muchos de los ejemplos de este libro se han enfocado a la lectura
-de ficheros y búsqueda de datos dentro de esos ficheros, hay muchas otras fuentes
-diferentes de información cuando se tiene en cuenta también Internet.
+A pesar de que muchos de los ejemplos de este libro se han dirigido a la lectura
+de ficheros y a la búsqueda de datos dentro de ellos, existen otras muchas fuentes
+distintas de información si también se tiene en cuenta Internet.
 
 En este capítulo, fingiremos ser un navegador web y recuperaremos páginas
-web usando el Protocolo de Transporte de Hipertexto - HyperText Transport Protocol (HTTP).
-Luego recorreremos los datos de esas páginas web y los analizaremos.
+web usando el Protocolo de Transporte de Hipertexto ({\tt HyperText Transport Protocol} - HTTP).
+Luego revisaremos los datos de esas páginas web y los analizaremos.
 
 \section{Protocolo de Transporte de Hipertexto - HTTP}
 
 El protocolo de red que hace funcionar la web es en realidad bastante simple, y
 existe un soporte integrado en Python que se llama {\tt sockets} que hace que resulte muy
 fácil realizar conexiones de red y recuperar datos a través de esas
-conexiones en un programa Python.
+conexiones desde un programa Python.
 
 Un {\bf socket} es muy parecido a un archivo, excepto que un único socket
 proporciona una conexión de doble sentido entre dos programas.
 Es posible tanto leer como escribir en el mismo socket. Si se escribe algo en
 un socket, es enviado hacia la aplicación que está al otro lado del socket. Si se lee
-de un socket, se obtienen los datos que la otra aplicación ha enviado.
+desde un socket, se obtienen los datos que la otra aplicación ha enviado.
 
 Pero si intentas leer de un socket cuando el programa que está al otro lado
 no ha enviado ningún dato---puedes esperar sentado. Si los programas de ambos extremos
@@ -30,13 +30,13 @@ del socket simplemente intentan recibir datos sin que ninguno envíe nada, esper
 mucho tiempo.
 
 De modo que una parte importante de la comunicación de programas a través de Internet consiste en tener algún
-tipo de protocolo. Un protocolo son un conjunto de reglas precisas que determinan quién
+tipo de protocolo. Un protocolo es un conjunto de reglas precisas que determinan quién
 empieza primero, qué debe hacer, cuáles son las respuestas siguientes para ese mensaje,
 quién envía a continuación y todo lo demás. En cierto sentido las aplicaciones a ambos lados del
 socket están interpretando un baile y cada una de ellas debe estar segura de que no pisa
 los pies del otro.
 
-Hay muchos documentos que describen esos protocolos de red. El Protocolo de Transportes de
+Hay muchos documentos que describen esos protocolos de red. El Protocolo de Transporte de
 Hipertexto está descrito en el siguiente documento:
 
 \url{http://www.w3.org/Protocols/rfc2616/rfc2616.txt}
@@ -49,8 +49,8 @@ enviamos una línea como esta
 
 {\tt GET http://www.py4inf.com/code/romeo.txt HTTP/1.0 }
 
-donde el segundo parámetro es la página web que estamos solicitando, seguido
-de una línea en blanco. El servidor web responderá con una cabecera que contiene cierta
+en la cual el segundo parámetro es la página web que estamos solicitando, y a continuación
+enviamos una línea en blanco. El servidor web responderá con una cabecera que contiene cierta
 información acerca del documento y una línea en blanco,
 seguido por el contenido del documento.
 
@@ -117,7 +117,7 @@ Who is already sick and pale with grief
 La salida comienza con las cabecera que el servidor web envía
 para describir el documento.
 Por ejemplo, la cabecera {\tt Content-Type} indica que
-el documento es del tipo texto plano ({\tt text/plain}).
+el documento es del tipo texto sin formato ({\tt text/plain}).
 
 Después de que el servidor nos envía la cabecera, añade una línea en blanco
 para indicar el final de la misma, y a continuación envía los datos
@@ -125,7 +125,7 @@ reales del fichero {\tt romeo.txt}.
 
 Este ejemplo nos muestra cómo crear una conexión de red de bajo nivel
 con sockets. Los sockets pueden ser usados para comunicarse con un servidor
-web, con un servidor de correo o con muchos otros tipos de servidores.
+web, con un servidor de correo, o con muchos otros tipos de servidores.
 Todo lo que se necesita es localizar el documento que describe
 el protocolo correspondiente y escribir el código para enviar y recibir los datos
 de acuerdo a ese protocolo.
@@ -139,7 +139,7 @@ y recibir documentos y datos a través de la web.
 
 \index{imagen!jpg}
 \index{jpg}
-En el ejemplo anterior, hemos recibido un archivo de texto plano
+En el ejemplo anterior, hemos recibido un archivo de texto sin formato,
 que tenía saltos de línea en su interior, y lo único que hemos hecho
 desde el programa ha sido ir copiando los datos en la pantalla. Podemos usar un programa
 similar para recibir una imagen a través de HTTP. En lugar
@@ -171,7 +171,7 @@ misock.close()
 
 # Búsqueda del final de la cabecera (2 CRLF)
 pos = imagen.find("\r\n\r\n");
-print 'Longitud de cabecera',pos
+print 'Tamaño de cabecera',pos
 print imagen[:pos]
 
 # Saltar detrás de la cabecera y guardar los datos de la imagen
@@ -197,7 +197,7 @@ $ python urljpeg.py
 2920 67160
 1460 68620
 1681 70301
-Longitud de cabecera 240
+Tamaño de cabecera 240
 HTTP/1.1 200 OK
 Date: Sat, 02 Nov 2013 02:15:07 GMT
 Server: Apache
@@ -213,7 +213,7 @@ Content-Type: image/jpeg
 Puedes observar que, para esta url, la
 cabecera {\tt Content-Type} indica que el
 cuerpo del documento es una imagen ({\tt image/jpeg}).
-Una vez que el programa se completa, se pueden ver los datos de la imagen abriendo
+Una vez que el programa termina, se pueden ver los datos de la imagen abriendo
 el archivo {\tt cosa.jpg} con un visor de imágenes.
 
 Al ejecutar el programa, se puede ver que no se obtienen 5120 caracteres
@@ -227,7 +227,7 @@ Los resultados obtenidos pueden ser diferentes dependiendo de la velocidad de tu
 fíjate en que en la última llamada a {\tt recv()} se obtienen 1681 bytes, que es el final
 de la cadena, y en la siguiente llamada a {\tt recv()} se obtiene una cadena de
 longitud cero que nos indica que el servidor ya ha llamado a {\tt close()} en su lado
-del socket y por tanto no quedan más datos pendientes.
+del socket, y por tanto no quedan más datos pendientes.
 
 \index{time}
 \index{time.sleep}
@@ -246,7 +246,7 @@ $ python urljpeg.py
 5120 62900
 5120 68020
 2281 70301
-Longitud de cabecera 240
+Tamaño de cabecera 240
 HTTP/1.1 200 OK
 Date: Sat, 02 Nov 2013 02:22:04 GMT
 Server: Apache
@@ -276,8 +276,8 @@ que envía los datos o de la que los recibe se llama
 \index{urllib!imagen}
 A pesar de que es posible enviar y recibir datos manualmente a través de HTTP
 usando la librería socket, existe en Python un modo mucho más sencillo de
-realizar esta tarea cotidiana,
-usando la librería {\tt urllib}.
+realizar esta habitual tarea,
+mediante el uso de la librería {\tt urllib}.
 
 Al usar {\tt urllib},
 es posible tratar una página web de forma mucho más parecida a un fichero. Se puede
@@ -338,8 +338,8 @@ print contadores
 \end{verbatim}
 \afterverb
 %
-Vemos de nuevo que una vez abierta la página web
-se puede leer como si fuera un fichero local.
+De nuevo vemos que una vez abierta la página web
+se puede leer como si se tratase de un fichero local.
 
 \section{Análisis de HTML y rascado de la web}
 \index{web!scraping}
@@ -347,7 +347,8 @@ se puede leer como si fuera un fichero local.
 \index{HTML!análisis de}
 
 Uno de los usos más habituales de las capacidades de {\tt urllib} en Python
-es {\bf rascar} la web. El ``web scraping'' o rascado de la web consiste en escribir un programa
+es {\bf rascar} ({\tt scrape}) la web. El ``web scraping'', o rascado de la web,
+consiste en escribir un programa
 que finge ser un navegador web y recupera páginas, examinando
 luego los datos de esas páginas para encontrar ciertos patrones.
 
@@ -363,8 +364,8 @@ esa página, y la posición en la que debe aparecer dentro de sus resultados de 
 
 \section{Análisis de HTML mediante expresiones regulares}
 
-Un modo sencillo de analizar HTML consiste en usar expresiones regulares para
-hacer búsquedas repetidas que extraigan subcadenas que coincidan con un patrón concreto.
+Un modo sencillo de analizar HTML consiste en utilizar expresiones regulares para
+hacer búsquedas repetidas que extraigan subcadenas coincidentes con un modelo concreto.
 
 Aquí tenemos una página web sencilla:
 
@@ -374,7 +375,7 @@ Aquí tenemos una página web sencilla:
 <p>
 Si te apetece, puedes visitar la
 <a href="http://www.dr-chuck.com/page2.htm">
-Seguna Página</a>.
+Segunda Página</a>.
 </p>
 \end{verbatim}
 \afterverb
@@ -410,7 +411,7 @@ obtenemos el siguiente programa:
 import urllib
 import re
 
-url = raw_input('Introduce - ')
+url = raw_input('Introduzca - ')
 html = urllib.urlopen(url).read()
 enlaces = re.findall('href="(http://.*?)"', html)
 for enlace in enlaces:
@@ -427,11 +428,11 @@ Cuando ejecutamos el programa, obtenemos la siguiente salida:
 \beforeverb
 \begin{verbatim}
 python urlregex.py 
-Introduce - http://www.dr-chuck.com/page1.htm
+Introduzca - http://www.dr-chuck.com/page1.htm
 http://www.dr-chuck.com/page2.htm
 
 python urlregex.py 
-Introduce - http://www.py4inf.com/book.htm
+Introduzca - http://www.py4inf.com/book.htm
 http://www.greenteapress.com/thinkpython/thinkpython.html
 http://allendowney.com/
 http://www.py4inf.com/code
@@ -442,7 +443,7 @@ http://www.py4inf.com/py4inf-slides.zip
 %
 Las expresiones regulares funcionan muy bien cuando el HTML está bien formado
 y es predecible. Pero dado que ahí fuera hay muchas páginas con HTML ``defectuoso'',
-una solución usando solamente expresiones regulares puede o bien
+una solución usando solamente expresiones regulares puede, o bien
 perder parte de los enlaces correctos, o bien terminar obteniendo datos erróneos.
 
 Esto se puede resolver usando una librería de análisis de HTML robusta.
@@ -450,7 +451,7 @@ Esto se puede resolver usando una librería de análisis de HTML robusta.
 \section{Análisis de HTML mediante BeautifulSoup}
 \index{BeautifulSoup}
 
-Hay un buen número de librerías en Python que pueden ayudarte a analizar
+Hay una cantidad considerable de librerías en Python que pueden ayudarte a analizar
 HTML y a extraer datos de las páginas. Cada una de las librerías
 tiene sus puntos fuertes y flacos, de modo que puedes elegir una
 basada en tus necesidades.
@@ -469,9 +470,9 @@ misma carpeta que nuestra aplicación.
 A pesar de que el HTML se parece al XML\footnote{El formato XML será descrito
 en el próximo capítulo.} y que algunas páginas están cuidadosamente
 construidas para ser XML, la mayoría del HTML generalmente está
-incompleto, de tal modo que provoca que un analizador de XML rechace la página completa de HTML
+incompleto, de modo que provoca que un analizador de XML rechace la página completa de HTML
 por estar formada inadecuadamente. BeautifulSoup tolera el HTML
-aunque esté muy defectuoso, y aún así permite extraer los datos que se necesiten.
+aunque éste sea muy defectuoso, y aún en ese caso permite extraer los datos que se necesiten.
 
 Vamos a usar {\tt urllib} para leer la página y luego usaremos
 {\tt BeautifulSoup} para extraer los atributos {\tt href} de las
@@ -485,7 +486,7 @@ etiquetas de anclaje ({\tt a}).
 import urllib
 from BeautifulSoup import *
 
-url = raw_input('Introduce - ')
+url = raw_input('Introduzca - ')
 html = urllib.urlopen(url).read()
 sopa = BeautifulSoup(html)
 
@@ -506,11 +507,11 @@ Cuando el programa se ejecuta, muestra lo siguiente:
 \beforeverb
 \begin{verbatim}
 python urllinks.py 
-Introduce - http://www.dr-chuck.com/page1.htm
+Introduzca - http://www.dr-chuck.com/page1.htm
 http://www.dr-chuck.com/page2.htm
 
 python urllinks.py 
-Introduce - http://www.py4inf.com/book.htm
+Introduzca - http://www.py4inf.com/book.htm
 http://www.greenteapress.com/thinkpython/thinkpython.html
 http://allendowney.com/
 http://www.si502.com/
@@ -528,7 +529,7 @@ etiqueta de este modo:
 import urllib
 from BeautifulSoup import *
 
-url = raw_input('Introduce - ')
+url = raw_input('Introduzca - ')
 html = urllib.urlopen(url).read()
 sopa = BeautifulSoup(html)
 
@@ -564,8 +565,8 @@ los ejemplos que están en
 
 \section{Lectura de archivos binarios mediante urllib}
 
-A veces se quiere recuperar un fichero que no es de texto (o binario), como
-un archivo de imagen o video. Normalmente no resulta útil imprimir los datos de
+A veces se quiere recuperar un fichero que no es de texto (binario), como
+un archivo de imagen o de video. Normalmente no resulta útil imprimir los datos de
 estos ficheros, pero se puede hacer una copia de una URL en un archivo
 local de nuestro disco duro con facilidad, usando {\tt urllib}.
 \index{fichero!binario}
@@ -584,12 +585,12 @@ manf.close()
 \afterverb
 %
 Este programa lee todos los datos de una sola vez a través de la red y los
-almacena en la variable {\tt img} en la memoria principal de tu PC,
+almacena en la variable {\tt img} en la memoria principal de tu equipo,
 luego abre el fichero {\tt portada.jpg} y escribe los datos en el
 disco. Esto funcionará sólo si el tamaño del fichero es menor que el tamaño
-de la memoria de tu equipo.
+de la memoria de tu PC.
 
-Sin embargo, si se trata de un fichero enorme de audio o video, el programa puede fallar
+Sin embargo, si se trata de un fichero enorme de audio o video, el programa puede fallar,
 o al menos funcionar extremadamente lento cuando el equipo se quede sin memoria.
 Para evitar agotar la memoria, vamos a recuperar los datos en bloques
 (o buffers), y luego escribiremos cada bloque en el disco antes de recuperar
@@ -615,7 +616,7 @@ manf.close()
 \afterverb
 %
 En este ejemplo, leemos solamente 100.000 caracteres cada vez y luego
-escribimos esos caracteres en el archivo {\tt cover.jpg}
+escribimos esos caracteres en el archivo {\tt portada.jpg},
 antes de recuperar los 100.000 caracteres siguientes de datos desde
 la web.
 
@@ -645,14 +646,14 @@ ejemplos se han llamado astutamente {\tt curl1.py} y {\tt curl2.py} en
 \url{www.py4inf.com/code}, ya que implementan una funcionalidad similar
 a la del comando {\tt curl}. Existe también un programa de ejemplo {\tt curl3.py}
 que realiza la misma tarea de forma un poco más eficiente, en caso de
-que quieras usar de verdad este patrón en algún programa que estés escribiendo.
+que quieras usar de verdad este diseño en algún programa que estés escribiendo.
 
 \section{Glosario}
 
 \begin{description}
 
 \item[BeautifulSoup:] Una librería Python para analizar documentos HTML
-y extaer datos de ellos
+y extraer datos de ellos,
 que compensa la mayoría de las imperfecciones que los navegadores HTML
 normalmente ignoran.
 Puedes descargar el código de BeautifulSoup
@@ -666,10 +667,10 @@ Por ejemplo, el tráfico web normalmente usa el puerto 80, mientras que el tráf
 del correo electrónico usa el puerto 25.
 \index{puerto}
 
-\item[rastrear:] La acción de un motor de búsqueda web de recuperar una página
+\item[rastrear:] La acción de un motor de búsqueda web que consiste en recuperar una página
 y luego todas las páginas enlazadas por ella, continuando así sucesivamente hasta que
-tiene casi todas las páginas de Internet, que
-usan para construir su índice de búsqueda.
+tienen casi todas las páginas de Internet, que
+usan a continuación para construir su índice de búsqueda.
 \index{spider}
 \index{rastrear}
 
@@ -677,8 +678,8 @@ usan para construir su índice de búsqueda.
 en la cual dichas aplicaciones pueden enviar y recibir datos en ambas direcciones.
 \index{socket}
 
-\item[scraping (rascado):] Cuando un programa simula ser un navegador web y
-recupera una página web, y luego realiza una búsqueda en su contenido.
+\item[scrape (rascado):] Cuando un programa simula ser un navegador web y
+recupera una página web, para luego realizar una búsqueda en su contenido.
 A menudo los programas siguen los enlaces en una página para encontrar la
 siguiente, de modo que pueden atravesar una red de páginas o una red social.
 \index{scrape}
@@ -693,8 +694,8 @@ Cambia el programa del socket {\tt socket1.py} para que le pida al usuario
 la URL, de modo que pueda leer cualquier página web.
 Puedes usar {\tt split('/')} para dividir la URL en las partes que la componen,
 de modo que puedas extraer el nombre del host para la llamada a {\tt connect} del socket.
-Añade comprobación de errores, usando {\tt try} y {\tt except} para gestionar el caso de que
-el usuario introduzca una URL mal formada o inexistente.  
+Añade comprobación de errores, usando {\tt try} y {\tt except} para contemplar la posibilidad
+de que el usuario introduzca una URL mal formada o inexistente.  
 \end{ex}
 
 \begin{ex}

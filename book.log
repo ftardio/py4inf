@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  29 AUG 2015 13:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.7.24)  3 SEP 2015 12:02
 entering extended mode
 **book.tex
 (C:\Users\Windows\Documents\GitHub\py4inf\book.tex
@@ -927,7 +927,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 112.
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 116.
  [4] [5] [6
 
 ] (C:\Users\Windows\Documents\GitHub\py4inf\book.toc [7
@@ -1032,11 +1032,10 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 275.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ) [6] [7]
-Underfull \vbox (badness 3219) has occurred while \output is active []
+[8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18])
+(C:\Users\Windows\Documents\GitHub\py4inf\02-variables.tex [19] [20
 
- [8]
-[9] [10] [11] [12] [13] [14] [15] [16] [17])
-(C:\Users\Windows\Documents\GitHub\py4inf\02-variables.tex [18]
+]
 Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 6792) in paragraph at lines 17--22
@@ -1045,12 +1044,10 @@ OT1/ptm/m/n/10.95 di-fe-ren-tes: \OT1/pcr/m/n/10.95 2 \OT1/ptm/m/n/10.95 es un
 en-te-ro (int), y
  []
 
-[19
-
-] [20]
-Underfull \hbox (badness 5119) in paragraph at lines 173--179
-[]\OT1/ptm/m/n/10.95 El car[]acter barra-baja ([]\OT1/pcr/m/n/10.95 _\OT1/ptm/m
-/n/10.95 ) pue-de uti-li-zar-se en un nom-bre. A me-nu-do
+[21] [22]
+Underfull \hbox (badness 4378) in paragraph at lines 173--179
+[]\OT1/ptm/m/n/10.95 El car[]acter gui[]on-bajo ([]\OT1/pcr/m/n/10.95 _\OT1/ptm
+/m/n/10.95 ) pue-de uti-li-zar-se en un nom-bre. A me-nu-do
  []
 
 
@@ -1059,7 +1056,7 @@ Underfull \hbox (badness 4595) in paragraph at lines 173--179
 en []\OT1/pcr/m/n/10.95 mi_nombre \OT1/ptm/m/n/10.95 o
  []
 
-[21] [22] [23] [24]
+[23] [24] [25] [26]
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
 (Font)              scaled to size 9.85492pt on input line 475.
 
@@ -1068,12 +1065,12 @@ Overfull \hbox (11.80453pt too wide) in paragraph at lines 528--528
 elocidad de vuelo de una golondrina sin carga?\n\TS1/pcr/m/n/9 '[] 
  []
 
-[25] [26] [27] [28] [29] [30])
-(C:\Users\Windows\Documents\GitHub\py4inf\03-conditional.tex [31] [32
+[27] [28] [29] [30] [31] [32])
+(C:\Users\Windows\Documents\GitHub\py4inf\03-conditional.tex [33] [34
 
 ]
 Cap\'{\i }tulo 3.
-[33]
+[35]
 Package epstopdf Info: Source file: <figs2/if.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 15890 bytes
@@ -1082,15 +1079,16 @@ Package epstopdf Info: Source file: <figs2/if.eps>
 (epstopdf)                    size: 8370 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/if-eps-converted-to.p
 df figs2/if.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/if-eps-converted-to.pdf, id=186, 537.00626pt x 308.15125pt>
+ <figs2/if-eps-converted-to.pdf, id=193, 537.00626pt x 308.15125pt>
 File: figs2/if-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/if-eps-converted-to.pdf>
-Package pdftex.def Info: figs2/if-eps-converted-to.pdf used on input line 141.
+Package pdftex.def Info: figs2/if-eps-converted-to.pdf used on input line 144.
 (pdftex.def)             Requested size: 220.39522pt x 126.47249pt.
- [34 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/if-eps-converted-to.pdf>]
+ [36] [37 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/if-eps-converted-to.p
+df>]
 Package epstopdf Info: Source file: <figs2/if-else.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 18155 bytes
@@ -1099,20 +1097,16 @@ Package epstopdf Info: Source file: <figs2/if-else.eps>
 (epstopdf)                    size: 9068 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/if-else-eps-converted
 -to.pdf figs2/if-else.eps>
-(epstopdf)             \includegraphics on input line 218.
+(epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/if-else-eps-converted-to.pdf, id=196, 816.04875pt x 311.1625pt>
+<figs2/if-else-eps-converted-to.pdf, id=206, 816.04875pt x 311.1625pt>
 File: figs2/if-else-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/if-else-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/if-else-eps-converted-to.pdf used on input line 
-218.
+221.
 (pdftex.def)             Requested size: 331.68086pt x 126.47249pt.
-
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
- [35]
 Package epstopdf Info: Source file: <figs2/elif.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 19425 bytes
@@ -1121,18 +1115,21 @@ Package epstopdf Info: Source file: <figs2/elif.eps>
 (epstopdf)                    size: 9482 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/elif-eps-converted-to
 .pdf figs2/elif.eps>
-(epstopdf)             \includegraphics on input line 250.
+(epstopdf)             \includegraphics on input line 253.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/elif-eps-converted-to.pdf, id=201, 574.145pt x 554.07pt>
+<figs2/elif-eps-converted-to.pdf, id=207, 574.145pt x 554.07pt>
 File: figs2/elif-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/elif-eps-converted-to.pdf>
-Package pdftex.def Info: figs2/elif-eps-converted-to.pdf used on input line 250
+Package pdftex.def Info: figs2/elif-eps-converted-to.pdf used on input line 253
 .
 (pdftex.def)             Requested size: 224.66031pt x 216.81pt.
- [36 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/if-else-eps-converted-to.p
-df> <C:/Users/Windows/Documents/GitHub/py4inf/figs2/elif-eps-converted-to.pdf>]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/if-else-eps-converted-to.p
+df>]
 Package epstopdf Info: Source file: <figs2/nested.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 19958 bytes
@@ -1141,7 +1138,7 @@ Package epstopdf Info: Source file: <figs2/nested.eps>
 (epstopdf)                    size: 9531 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/nested-eps-converted-
 to.pdf figs2/nested.eps>
-(epstopdf)             \includegraphics on input line 304.
+(epstopdf)             \includegraphics on input line 307.
 Package epstopdf Info: Output file is already uptodate.
 
 <figs2/nested-eps-converted-to.pdf, id=217, 1048.91875pt x 502.87875pt>
@@ -1149,40 +1146,31 @@ File: figs2/nested-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/nested-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/nested-eps-converted-to.pdf used on input line 3
-04.
+07.
 (pdftex.def)             Requested size: 376.85822pt x 180.67499pt.
- [37 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/nested-eps-converted-to.pd
-f>] [38]
-Underfull \vbox (badness 3291) has occurred while \output is active []
-
- [39]
-[40] [41] [42] [43]) (C:\Users\Windows\Documents\GitHub\py4inf\04-functions.tex
-[44]
+ [39 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/elif-eps-converted-to.pdf>
+] [40 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/nested-eps-converted-to.p
+df>] [41] [42] [43] [44] [45])
+(C:\Users\Windows\Documents\GitHub\py4inf\04-functions.tex [46]
 Cap\'{\i }tulo 4.
-[45
+[47
 
-] [46] [47] [48] [49] [50]
-Underfull \hbox (badness 1087) in paragraph at lines 517--520
-\OT1/ptm/b/n/10.95 Ejercicio 4.3 \OT1/ptm/m/n/10.95 Mue-ve la lla-ma-da de la f
-un-ci[]on de nue-vo ha-cia el fi-nal, y
- []
-
-
+] [48] [49] [50] [51] [52]
 Underfull \hbox (badness 1231) in paragraph at lines 517--520
-\OT1/ptm/m/n/10.95 co-lo-ca la de-fi-ni-ci[]on de []\OT1/pcr/m/n/10.95 muestra_
-estribillo \OT1/ptm/m/n/10.95 des-pu[]es de la de-fi-ni-ci[]on de
+\OT1/ptm/b/n/10.95 Ejercicio 4.3 \OT1/ptm/m/n/10.95 Des-pla-za la lla-ma-da de 
+la fun-ci[]on de nue-vo ha-cia el fi-nal,
  []
 
-[51] [52] [53] [54] [55] [56])
-(C:\Users\Windows\Documents\GitHub\py4inf\05-iterations.tex [57] [58
+[53] [54] [55] [56] [57] [58])
+(C:\Users\Windows\Documents\GitHub\py4inf\05-iterations.tex [59] [60
 
 ]
 Cap\'{\i }tulo 5.
-[59] [60] [61] [62] [63]
+[61] [62] [63] [64] [65]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 346.
- [64] [65] [66] [67])
-(C:\Users\Windows\Documents\GitHub\py4inf\06-strings.tex [68]
+ [66] [67] [68] [69])
+(C:\Users\Windows\Documents\GitHub\py4inf\06-strings.tex [70]
 Cap\'{\i }tulo 6.
 Package epstopdf Info: Source file: <figs2/string.eps>
 (epstopdf)                    date: 2015-07-23 20:50:32
@@ -1194,24 +1182,24 @@ Package epstopdf Info: Source file: <figs2/string.eps>
 to.pdf figs2/string.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/string-eps-converted-to.pdf, id=326, 299.1175pt x 63.23625pt>
+<figs2/string-eps-converted-to.pdf, id=332, 299.1175pt x 63.23625pt>
 File: figs2/string-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/string-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/string-eps-converted-to.pdf used on input line 5
 8.
 (pdftex.def)             Requested size: 170.92776pt x 36.135pt.
- [69
+ [71
 
  <C:/Users/Windows/Documents/GitHub/py4inf/figs2/string-eps-converted-to.pdf>] 
-[70] [71] [72] [73] [74] [75]
-[76] [77] [78]
-Underfull \hbox (badness 10000) in paragraph at lines 891--896
+[72] [73] [74] [75] [76] [77]
+[78] [79] [80]
+Underfull \hbox (badness 10000) in paragraph at lines 893--898
 $\OT1/pcr/m/n/10.95 https : / / docs . python . org / 2 / library / stdtypes . 
 html # string-[]methods$\OT1/ptm/m/n/10.95 .
  []
 
-[79]) (C:\Users\Windows\Documents\GitHub\py4inf\07-files.tex [80]
+[81]) (C:\Users\Windows\Documents\GitHub\py4inf\07-files.tex [82]
 Cap\'{\i }tulo 7.
 Package epstopdf Info: Source file: <figs2/arch3.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
@@ -1223,14 +1211,14 @@ Package epstopdf Info: Source file: <figs2/arch3.eps>
 o.pdf figs2/arch3.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/arch3-eps-converted-to.pdf, id=375, 437.635pt x 243.91125pt>
+<figs2/arch3-eps-converted-to.pdf, id=381, 437.635pt x 243.91125pt>
 File: figs2/arch3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/arch3-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/arch3-eps-converted-to.pdf used on input line 29
 .
 (pdftex.def)             Requested size: 324.17871pt x 180.67499pt.
- [81
+ [83
 
  <C:/Users/Windows/Documents/GitHub/py4inf/figs2/arch3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figs2/handle.eps>
@@ -1244,20 +1232,20 @@ to.pdf figs2/handle.eps>
 (epstopdf)             \includegraphics on input line 75.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/handle-eps-converted-to.pdf, id=382, 606.265pt x 307.1475pt>
+<figs2/handle-eps-converted-to.pdf, id=389, 606.265pt x 307.1475pt>
 File: figs2/handle-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/handle-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/handle-eps-converted-to.pdf used on input line 7
 5.
 (pdftex.def)             Requested size: 249.64336pt x 126.47249pt.
- [82 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/handle-eps-converted-to.pd
-f>] [83] [84] [85] [86] [87] [88]
-[89] [90] [91]) (C:\Users\Windows\Documents\GitHub\py4inf\08-lists.tex [92]
+ [84 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/handle-eps-converted-to.pd
+f>] [85] [86] [87] [88] [89] [90]
+[91] [92] [93]) (C:\Users\Windows\Documents\GitHub\py4inf\08-lists.tex [94]
 Cap\'{\i }tulo 8.
-[93
+[95
 
-] [94] [95] [96] [97] [98] [99]
+] [96] [97] [98] [99] [100] [101]
 Package epstopdf Info: Source file: <figs2/list1.eps>
 (epstopdf)                    date: 2015-07-23 20:50:32
 (epstopdf)                    size: 4720 bytes
@@ -1266,54 +1254,49 @@ Package epstopdf Info: Source file: <figs2/list1.eps>
 (epstopdf)                    size: 3133 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/list1-eps-converted-t
 o.pdf figs2/list1.eps>
-(epstopdf)             \includegraphics on input line 703.
+(epstopdf)             \includegraphics on input line 704.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/list1-eps-converted-to.pdf, id=451, 218.8175pt x 42.1575pt>
+<figs2/list1-eps-converted-to.pdf, id=458, 218.8175pt x 42.1575pt>
 File: figs2/list1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/list1-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/list1-eps-converted-to.pdf used on input line 70
-3.
+4.
 (pdftex.def)             Requested size: 218.81696pt x 42.15738pt.
- [100 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/list1-eps-converted-to.pd
-f>] [101] [102] [103] [104] [105]
-[106] [107]) (C:\Users\Windows\Documents\GitHub\py4inf\09-dictionaries.tex
-[108]
+ [102 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/list1-eps-converted-to.pd
+f>] [103] [104] [105] [106] [107]
+[108] [109]) (C:\Users\Windows\Documents\GitHub\py4inf\09-dictionaries.tex
+[110]
 Cap\'{\i }tulo 9.
-[109
+[111
 
-] [110] [111] [112] [113] [114] [115] [116] [117] [118])
-(C:\Users\Windows\Documents\GitHub\py4inf\10-tuples.tex [119] [120
+] [112] [113] [114] [115] [116] [117] [118] [119] [120])
+(C:\Users\Windows\Documents\GitHub\py4inf\10-tuples.tex [121] [122
 
 ]
 Cap\'{\i }tulo 10.
-[121] [122] [123] [124] [125] [126] [127]
-Underfull \hbox (badness 1009) in paragraph at lines 599--599
-[]\OT1/ptm/b/n/14.4 Secuencias: ca-de-nas, lis-tas, y tuplas---!`Oh, Dios
- []
-
-[128] [129] [130] [131]) (C:\Users\Windows\Documents\GitHub\py4inf\11-regex.tex
-[132]
+[123] [124] [125] [126] [127] [128] [129] [130] [131] [132] [133])
+(C:\Users\Windows\Documents\GitHub\py4inf\11-regex.tex [134]
 Cap\'{\i }tulo 11.
-[133
+[135
 
-] [134] [135]
+] [136] [137]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 190.
+(Font)              Font shape `OMS/pzccm/m/n' tried instead on input line 191.
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 205--209
+Underfull \hbox (badness 7133) in paragraph at lines 206--210
 []\OT1/ptm/m/n/10.95 La ex-pre-si[]on re-gu-lar en-con-trar[]a dos coin-ci-den-
 cias (csev@umich.edu y
  []
 
-[136] [137] [138] [139] [140] [141] [142] [143] [144])
-(C:\Users\Windows\Documents\GitHub\py4inf\12-network.tex [145] [146
+[138] [139] [140] [141] [142] [143] [144] [145] [146])
+(C:\Users\Windows\Documents\GitHub\py4inf\12-network.tex [147] [148
 
 ]
 Cap\'{\i }tulo 12.
-[147]
+[149]
 Package epstopdf Info: Source file: <figs2/socket.eps>
 (epstopdf)                    date: 2015-08-28 09:23:41
 (epstopdf)                    size: 37385 bytes
@@ -1324,17 +1307,17 @@ Package epstopdf Info: Source file: <figs2/socket.eps>
 to.pdf figs2/socket.eps>
 (epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/socket-eps-converted-to.pdf, id=607, 1032.85875pt x 476.78125pt>
+ <figs2/socket-eps-converted-to.pdf, id=614, 1032.85875pt x 476.78125pt>
 File: figs2/socket-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/socket-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/socket-eps-converted-to.pdf used on input line 8
 8.
 (pdftex.def)             Requested size: 234.84177pt x 108.405pt.
- [148] [149 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/socket-eps-converte
-d-to.pdf>] [150] [151] [152] [153]
-[154] [155] [156] [157] [158])
-(C:\Users\Windows\Documents\GitHub\py4inf\13-web.tex [159] [160
+ [150] [151 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/socket-eps-converte
+d-to.pdf>] [152] [153] [154] [155]
+[156] [157] [158] [159] [160])
+(C:\Users\Windows\Documents\GitHub\py4inf\13-web.tex [161] [162
 
 ]
 Cap\'{\i }tulo 13.
@@ -1348,15 +1331,15 @@ Package epstopdf Info: Source file: <figs2/xml-tree.eps>
 d-to.pdf figs2/xml-tree.eps>
 (epstopdf)             \includegraphics on input line 42.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/xml-tree-eps-converted-to.pdf, id=655, 916.42375pt x 381.425pt>
+<figs2/xml-tree-eps-converted-to.pdf, id=662, 916.42375pt x 381.425pt>
 File: figs2/xml-tree-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/xml-tree-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/xml-tree-eps-converted-to.pdf used on input line
  42.
 (pdftex.def)             Requested size: 260.45634pt x 108.405pt.
- [161] [162 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/xml-tree-eps-conver
-ted-to.pdf>] [163] [164] [165]
+ [163] [164 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/xml-tree-eps-conver
+ted-to.pdf>] [165] [166] [167]
 Package epstopdf Info: Source file: <figs2/soa.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
 (epstopdf)                    size: 20591 bytes
@@ -1368,31 +1351,31 @@ pdf figs2/soa.eps>
 (epstopdf)             \includegraphics on input line 296.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/soa-eps-converted-to.pdf, id=682, 982.67125pt x 736.7525pt>
+<figs2/soa-eps-converted-to.pdf, id=689, 982.67125pt x 736.7525pt>
 File: figs2/soa-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/soa-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/soa-eps-converted-to.pdf used on input line 296.
 
 (pdftex.def)             Requested size: 240.97398pt x 180.67499pt.
- [166 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/soa-eps-converted-to.pdf>
+ [168 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/soa-eps-converted-to.pdf>
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 335--336
 []$\OT1/pcr/m/n/10.95 http : / / maps . googleapis . com / maps / api / geocode
  / json ? sensor = false &$
  []
 
-[167] [168]
+[169] [170]
 Underfull \hbox (badness 1603) in paragraph at lines 433--437
 \OT1/ptm/m/n/10.95 Puedes des-car-gar $\OT1/pcr/m/n/10.95 www . py4inf . com / 
 code / geojson . py$ \OT1/ptm/m/n/10.95 y $\OT1/pcr/m/n/10.95 www . py4inf . co
 m /$
  []
 
-[169] [170] [171] [172] [173])
-(C:\Users\Windows\Documents\GitHub\py4inf\14-database.tex [174]
+[171] [172] [173] [174] [175])
+(C:\Users\Windows\Documents\GitHub\py4inf\14-database.tex [176]
 Cap\'{\i }tulo 14.
-[175
+[177
 
 ]
 Package epstopdf Info: Source file: <figs2/relational.eps>
@@ -1405,7 +1388,7 @@ Package epstopdf Info: Source file: <figs2/relational.eps>
 ted-to.pdf figs2/relational.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
- <figs2/relational-eps-converted-to.pdf, id=721, 854.19125pt x 277.035pt>
+ <figs2/relational-eps-converted-to.pdf, id=727, 854.19125pt x 277.035pt>
 File: figs2/relational-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/relational-eps-converted-to.pdf>
@@ -1415,7 +1398,7 @@ ne 49.
 
 Underfull \vbox (badness 4303) has occurred while \output is active []
 
- [176 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/relational-eps-converted-
+ [178 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/relational-eps-converted-
 to.pdf>]
 Package epstopdf Info: Source file: <figs2/cursor.eps>
 (epstopdf)                    date: 2015-08-22 12:03:04
@@ -1428,14 +1411,14 @@ to.pdf figs2/cursor.eps>
 (epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/cursor-eps-converted-to.pdf, id=732, 538.01pt x 308.15125pt>
+<figs2/cursor-eps-converted-to.pdf, id=738, 538.01pt x 308.15125pt>
 File: figs2/cursor-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/cursor-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/cursor-eps-converted-to.pdf used on input line 1
 44.
 (pdftex.def)             Requested size: 189.26682pt x 108.405pt.
- [177] [178 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/cursor-eps-converte
+ [179] [180 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/cursor-eps-converte
 d-to.pdf>]
 Package epstopdf Info: Source file: <figs2/tracks.eps>
 (epstopdf)                    date: 2015-08-26 11:17:25
@@ -1448,37 +1431,37 @@ to.pdf figs2/tracks.eps>
 (epstopdf)             \includegraphics on input line 229.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/tracks-eps-converted-to.pdf, id=749, 448.67625pt x 244.915pt>
+<figs2/tracks-eps-converted-to.pdf, id=756, 448.67625pt x 244.915pt>
 File: figs2/tracks-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/tracks-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/tracks-eps-converted-to.pdf used on input line 2
 29.
 (pdftex.def)             Requested size: 132.39258pt x 72.26999pt.
- [179 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/tracks-eps-converted-to.p
-df>] [180] [181]
-Overfull \hbox (2.62457pt too wide) in paragraph at lines 469--469
+ [181 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/tracks-eps-converted-to.p
+df>] [182] [183]
+Overfull \hbox (2.62457pt too wide) in paragraph at lines 473--473
 []        \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 SELECT nomb
 re FROM Twitter WHERE recuperado = 0 LIMIT 1\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
 
  []
 
-
-Overfull \hbox (11.80453pt too wide) in paragraph at lines 469--469
+[184]
+Overfull \hbox (11.80453pt too wide) in paragraph at lines 473--473
 []    \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 UPDATE Twitter 
 SET recuperado=1 WHERE nombre = ?\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , (cuenta, ) )[
 ] 
  []
 
-[182] [183] [184]
-Overfull \hbox (2.62457pt too wide) in paragraph at lines 633--633
+[185] [186]
+Overfull \hbox (2.62457pt too wide) in paragraph at lines 637--637
 []        \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 SELECT nomb
 re FROM Twitter WHERE recuperado = 0 LIMIT 1\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
 
  []
 
-[185]
-Overfull \hbox (1.27464pt too wide) in paragraph at lines 654--654
+[187]
+Overfull \hbox (1.27464pt too wide) in paragraph at lines 658--658
 []    \OT1/pcr/m/n/9 url = twurl.augment(TWITTER_URL, {\TS1/pcr/m/n/9 '\OT1/pcr
 /m/n/9 screen_name\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 : cuenta, \TS1/pcr/m/n/9 '\OT1
 /pcr/m/n/9 count\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 : \TS1/pcr/m/n/9 '\OT1/pcr/m/n/9
@@ -1486,118 +1469,104 @@ Overfull \hbox (1.27464pt too wide) in paragraph at lines 654--654
  []
 
 
-Overfull \hbox (11.80453pt too wide) in paragraph at lines 654--654
+Overfull \hbox (11.80453pt too wide) in paragraph at lines 658--658
 []    \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 UPDATE Twitter 
 SET recuperado=1 WHERE nombre = ?\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , (cuenta, ) )[
 ] 
  []
 
-[186]
-Overfull \hbox (13.42456pt too wide) in paragraph at lines 740--740
-[]\OT1/pcr/m/n/9 INSERT INTO Camaradas (desde_amigo, hacia_amigo) VALUES (\TS1/
-pcr/m/n/9 '\OT1/pcr/m/n/9 drchuck\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , \TS1/pcr/m/n/
-9 '\OT1/pcr/m/n/9 lhawthorn\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
+[188]
+Overfull \hbox (4.2446pt too wide) in paragraph at lines 744--744
+[]\OT1/pcr/m/n/9 INSERT INTO Colegas (desde_amigo, hacia_amigo) VALUES (\TS1/pc
+r/m/n/9 '\OT1/pcr/m/n/9 drchuck\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , \TS1/pcr/m/n/9 
+'\OT1/pcr/m/n/9 lhawthorn\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 )[] 
  []
 
-[187]
+[189]
 Package epstopdf Info: Source file: <figs2/twitter.eps>
 (epstopdf)                    date: 2015-08-28 18:48:58
 (epstopdf)                    size: 48817 bytes
 (epstopdf)             Output file: <figs2/twitter-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:29:05
-(epstopdf)                    size: 22183 bytes
+(epstopdf)                    date: 2015-08-29 13:00:24
+(epstopdf)                    size: 22199 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/twitter-eps-converted
 -to.pdf figs2/twitter.eps>
-(epstopdf)             \includegraphics on input line 816.
-runsystem(epstopdf --outfile=figs2/twitter-eps-converted-to.pdf figs2/twitter.e
-ps)...executed (allowed).
-
-Package epstopdf Info: Result file: <figs2/twitter-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-29 13:00:24
-(epstopdf)                    size: 22199 bytes.
- <figs2/twitter-eps-converted-to.pdf, id=785, 1021.8175pt x 644.4075pt>
+(epstopdf)             \includegraphics on input line 820.
+Package epstopdf Info: Output file is already uptodate.
+ <figs2/twitter-eps-converted-to.pdf, id=791, 1021.8175pt x 644.4075pt>
 File: figs2/twitter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/twitter-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/twitter-eps-converted-to.pdf used on input line 
-816.
+820.
 (pdftex.def)             Requested size: 286.49673pt x 180.67499pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [188]
-[189 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/twitter-eps-converted-to.p
-df>]
-Overfull \hbox (3.43459pt too wide) in paragraph at lines 906--906
+ [190] [191 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/twitter-eps-convert
+ed-to.pdf>]
+Overfull \hbox (3.43459pt too wide) in paragraph at lines 910--910
 []            \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 INSER
 T OR IGNORE INTO Personas (nombre, recuperado)[] 
  []
 
 
-Overfull \hbox (16.39452pt too wide) in paragraph at lines 906--906
+Overfull \hbox (16.39452pt too wide) in paragraph at lines 910--910
 []    \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 UPDATE Personas
  SET recuperado=1 WHERE nombre = ?\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 , (cuenta, ) )
 [] 
  []
 
 
-Overfull \hbox (3.43459pt too wide) in paragraph at lines 906--906
+Overfull \hbox (3.43459pt too wide) in paragraph at lines 910--910
 []            \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 INSER
 T OR IGNORE INTO Personas (nombre, recuperado)[] 
  []
 
 
-Overfull \hbox (3.43459pt too wide) in paragraph at lines 906--906
+Overfull \hbox (3.43459pt too wide) in paragraph at lines 910--910
 []        \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 INSERT OR
  IGNORE INTO Seguimientos (desde_id, hacia_id)[] 
  []
 
-[190] [191]
-Overfull \hbox (3.43459pt too wide) in paragraph at lines 1027--1027
+[192] [193]
+Overfull \hbox (3.43459pt too wide) in paragraph at lines 1031--1031
 []            \OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 INSER
 T OR IGNORE INTO Personas (nombre, recuperado)[] 
  []
 
-[192]
-Overfull \hbox (30.16446pt too wide) in paragraph at lines 1053--1053
+[194]
+Overfull \hbox (30.16446pt too wide) in paragraph at lines 1057--1057
 []\OT1/pcr/m/n/9 cur.execute(\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 INSERT OR IGNORE IN
 TO Seguimientos (desde_id, hacia_id) VALUES (?, ?)\TS1/pcr/m/n/9 '\OT1/pcr/m/n/
 9 ,[] 
  []
 
-[193] [194]
+[195] [196]
 Package epstopdf Info: Source file: <figs2/join.eps>
 (epstopdf)                    date: 2015-08-28 18:50:05
 (epstopdf)                    size: 39215 bytes
 (epstopdf)             Output file: <figs2/join-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-22 17:29:05
-(epstopdf)                    size: 10891 bytes
+(epstopdf)                    date: 2015-08-29 13:00:24
+(epstopdf)                    size: 14451 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs2/join-eps-converted-to
 .pdf figs2/join.eps>
-(epstopdf)             \includegraphics on input line 1187.
-runsystem(epstopdf --outfile=figs2/join-eps-converted-to.pdf figs2/join.eps)...
-executed (allowed).
+(epstopdf)             \includegraphics on input line 1191.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figs2/join-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-08-29 13:00:24
-(epstopdf)                    size: 14451 bytes.
-
-<figs2/join-eps-converted-to.pdf, id=818, 916.42375pt x 631.35875pt>
+<figs2/join-eps-converted-to.pdf, id=824, 916.42375pt x 631.35875pt>
 File: figs2/join-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/join-eps-converted-to.pdf>
-Package pdftex.def Info: figs2/join-eps-converted-to.pdf used on input line 118
-7.
+Package pdftex.def Info: figs2/join-eps-converted-to.pdf used on input line 119
+1.
 (pdftex.def)             Requested size: 262.24623pt x 180.67499pt.
- [195 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/join-eps-converted-to.pdf
+ [197 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/join-eps-converted-to.pdf
 >]
-Overfull \hbox (3.43459pt too wide) in paragraph at lines 1234--1234
+Overfull \hbox (3.43459pt too wide) in paragraph at lines 1238--1238
 []    \OT1/pcr/m/n/9 ON Seguimientos.hacia_id = Personas.id WHERE Seguimientos.
 desde_id = 2\TS1/pcr/m/n/9 '''\OT1/pcr/m/n/9 )[] 
  []
 
-[196] [197] [198]) (C:\Users\Windows\Documents\GitHub\py4inf\15-viz.tex
-[199] [200
+[198] [199] [200]) (C:\Users\Windows\Documents\GitHub\py4inf\15-viz.tex
+[201] [202
 
 ]
 Cap\'{\i }tulo 15.
@@ -1611,15 +1580,15 @@ Package epstopdf Info: Source file: <figs2/google-map.eps>
 ted-to.pdf figs2/google-map.eps>
 (epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
-<figs2/google-map-eps-converted-to.pdf, id=844, 947.54pt x 681.54625pt>
+<figs2/google-map-eps-converted-to.pdf, id=850, 947.54pt x 681.54625pt>
 File: figs2/google-map-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/google-map-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/google-map-eps-converted-to.pdf used on input li
 ne 29.
 (pdftex.def)             Requested size: 226.06963pt x 162.6075pt.
- [201 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/google-map-eps-converted-
-to.pdf>] [202] [203]
+ [203 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/google-map-eps-converted-
+to.pdf>] [204] [205]
 Package epstopdf Info: Source file: <figs2/pagerank.eps>
 (epstopdf)                    date: 2015-07-23 20:50:32
 (epstopdf)                    size: 437382 bytes
@@ -1631,15 +1600,15 @@ d-to.pdf figs2/pagerank.eps>
 (epstopdf)             \includegraphics on input line 165.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/pagerank-eps-converted-to.pdf, id=858, 641.39626pt x 498.86375pt>
+<figs2/pagerank-eps-converted-to.pdf, id=864, 641.39626pt x 498.86375pt>
 File: figs2/pagerank-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/pagerank-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/pagerank-eps-converted-to.pdf used on input line
  165.
 (pdftex.def)             Requested size: 209.06789pt x 162.6075pt.
- [204 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pagerank-eps-converted-to
-.pdf>] [205]
+ [206 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/pagerank-eps-converted-to
+.pdf>] [207]
 Package epstopdf Info: Source file: <figs2/wordcloud.eps>
 (epstopdf)                    date: 2015-07-23 20:50:33
 (epstopdf)                    size: 470699 bytes
@@ -1651,7 +1620,7 @@ ed-to.pdf figs2/wordcloud.eps>
 (epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/wordcloud-eps-converted-to.pdf, id=868, 824.07875pt x 881.2925pt>
+<figs2/wordcloud-eps-converted-to.pdf, id=874, 824.07875pt x 881.2925pt>
 File: figs2/wordcloud-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/wordcloud-eps-converted-to.pdf>
@@ -1661,9 +1630,9 @@ e 324.
 
 Underfull \vbox (badness 2486) has occurred while \output is active []
 
- [206]
-[207 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/wordcloud-eps-converted-to
-.pdf>] [208] [209]
+ [208]
+[209 <C:/Users/Windows/Documents/GitHub/py4inf/figs2/wordcloud-eps-converted-to
+.pdf>] [210] [211]
 Package epstopdf Info: Source file: <figs2/mailorg.eps>
 (epstopdf)                    date: 2015-07-23 20:50:32
 (epstopdf)                    size: 676820 bytes
@@ -1675,16 +1644,16 @@ Package epstopdf Info: Source file: <figs2/mailorg.eps>
 (epstopdf)             \includegraphics on input line 556.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs2/mailorg-eps-converted-to.pdf, id=885, 1230.5975pt x 687.56876pt>
+<figs2/mailorg-eps-converted-to.pdf, id=891, 1230.5975pt x 687.56876pt>
 File: figs2/mailorg-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs2/mailorg-eps-converted-to.pdf>
 Package pdftex.def Info: figs2/mailorg-eps-converted-to.pdf used on input line 
 556.
 (pdftex.def)             Requested size: 323.3653pt x 180.67499pt.
- [210])
-(C:\Users\Windows\Documents\GitHub\py4inf\16-tasks.tex [211 <C:/Users/Windows/D
-ocuments/GitHub/py4inf/figs2/mailorg-eps-converted-to.pdf>] [212
+ [212])
+(C:\Users\Windows\Documents\GitHub\py4inf\16-tasks.tex [213 <C:/Users/Windows/D
+ocuments/GitHub/py4inf/figs2/mailorg-eps-converted-to.pdf>] [214
 
 ]
 Cap\'{\i }tulo 16.
@@ -1694,29 +1663,29 @@ Underfull \hbox (badness 1303) in paragraph at lines 34--37
 c-to-rio ac-tual'' (\OT1/pcr/m/n/10.95 current
  []
 
-[213] [214] [215] [216]
+[215] [216] [217] [218]
 Overfull \hbox (7.21455pt too wide) in paragraph at lines 336--336
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
-[217]
+[219]
 Overfull \hbox (7.21455pt too wide) in paragraph at lines 390--390
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
-[218]
+[220]
 Overfull \hbox (7.21455pt too wide) in paragraph at lines 428--428
 []           \OT1/pcr/m/n/9 if len(lineas) == 3 and lineas[2].startswith(\TS1/p
 cr/m/n/9 '\OT1/pcr/m/n/9 Sent from my iPhone\TS1/pcr/m/n/9 '\OT1/pcr/m/n/9 ):[]
  
  []
 
-[219] [220] [221] [222] [223])
-(C:\Users\Windows\Documents\GitHub\py4inf\AA-windows.tex [224]
+[221] [222] [223] [224] [225])
+(C:\Users\Windows\Documents\GitHub\py4inf\AA-windows.tex [226]
 Ap\'{e}ndice A.
 LaTeX Font Info:    Try loading font information for OMS+pcr on input line 28.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
@@ -1724,44 +1693,61 @@ File: omspcr.fd
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
- [225
+ [227
 
 ])
-(C:\Users\Windows\Documents\GitHub\py4inf\AB-apple.tex [226]
+(C:\Users\Windows\Documents\GitHub\py4inf\AB-apple.tex [228]
 Ap\'{e}ndice B.
-[227
-
-]) (C:\Users\Windows\Documents\GitHub\py4inf\AC-contrib.tex [228]
-Ap\'{e}ndice C.
 [229
 
-] [230]
+]) (C:\Users\Windows\Documents\GitHub\py4inf\AC-contrib.tex [230]
+Ap\'{e}ndice C.
+[231
+
+]
+Underfull \hbox (badness 1097) in paragraph at lines 94--96
+[]\OT1/ptm/m/n/10.95 Publiqu[]e el li-bro ba-jo Li-cen-cia de Do-cu-men-ta-ci[]
+on Li-bre GNU (\OT1/pcr/m/n/10.95 GNU Free
+ []
+
+[232]
 Underfull \hbox (badness 10000) in paragraph at lines 160--162
 
  []
 
-[231]) (C:\Users\Windows\Documents\GitHub\py4inf\AD-copyright.tex [232]
+[233]) (C:\Users\Windows\Documents\GitHub\py4inf\AD-copyright.tex [234]
 Ap\'{e}ndice D.
-[233
 
-] (C:\Users\Windows\Documents\GitHub\py4inf\book.ind [234] [235
+Underfull \hbox (badness 10000) in paragraph at lines 6--11
+[]\OT1/ptm/m/n/10.95 Este tra-ba-jo est[]a dis-tri-bui-do ba-jo una li-cen-cia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--11
+\OT1/pcr/m/n/10.95 Attribution-NonCommercial-ShareAlike 3.0 Unported License\OT
+1/ptm/m/n/10.95 . Esa
+ []
+
+[235
+
+] (C:\Users\Windows\Documents\GitHub\py4inf\book.ind [236] [237
 
 ]
-Underfull \hbox (badness 3428) in paragraph at lines 161--163
+Underfull \hbox (badness 3428) in paragraph at lines 162--164
 []\OT1/ptm/m/n/10.95 decorar-ordenar-quitar la de-co-ra-ci[]on,
  []
 
-[236] [237]
-Underfull \hbox (badness 2856) in paragraph at lines 277--278
+[238] [239]
+Underfull \hbox (badness 2856) in paragraph at lines 278--279
 []\OT1/ptm/m/n/10.95 Free Do-cu-men-ta-tion Li-cen-se, GNU,
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 316--317
+Underfull \hbox (badness 4713) in paragraph at lines 317--318
 []\OT1/ptm/m/n/10.95 GNU Free Do-cu-men-ta-tion Li-cen-se,
  []
 
-[238] [239] [240] [241] [242])
+[240] [241] [242] [243] [244])
 \createspace@c@pages=\count134
 
 Package createspace Info: added one page for calculations to make the page coun
@@ -1774,11 +1760,11 @@ t even
 \log@current=\dimen135
 \createspace@log=\dimen136
 \createspace@l@spine=\dimen137
-Package createspace Info: spine is about 39.81903pt wide
+Package createspace Info: spine is about 40.4718pt wide
 
 \createspace@cents=\count137
 \createspace@dols=\count138
-Package createspace Info: book cost is 6.38USD (3.77USD for pro plan)
+Package createspace Info: book cost is 6.42USD (3.80USD for pro plan)
 
 (C:\Users\Windows\Documents\GitHub\py4inf\book.aux) ) ) 
 Here is how much of TeX's memory you used:
@@ -1800,9 +1786,9 @@ hvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on book.pdf (256 pages, 1373882 bytes).
+Output written on book.pdf (258 pages, 1378351 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
+ 1042 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

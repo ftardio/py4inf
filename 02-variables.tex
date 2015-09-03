@@ -22,7 +22,7 @@ las cadenas porque van encerradas entre comillas.
 
 \index{comillas}
 
-La sentencia {\tt print} funciona también para enteros. Vamos a usar el
+La sentencia {\tt print} también funciona con enteros. Vamos a usar el
 comando {\tt python} para iniciar el intérprete.
 
 \beforeverb
@@ -45,9 +45,9 @@ Si no estás seguro de qué tipo de valor estás manejando, el intérprete te lo
 \afterverb
 %
 No resulta sorprendente que las cadenas pertenezca al tipo {\tt str}, y los
-enteros pertenezcan al tipo {\tt int}. Resulta sin embargo menos obvio
+enteros pertenezcan al tipo {\tt int}. Resulta, sin embargo, menos obvio
 que los números con un punto decimal pertenezcan a un tipo llamado {\tt float} (flotante),
-ya que esos números se representan en un formato
+debido a que esos números se representan en un formato
 conocido como {\bf punto flotante}\footnote{En el mundo anglosajón (y también en Python)
 la parte decimal de un número se separa de la parte entera mediante un punto, y no mediante una coma
 (Nota del trad.)}.
@@ -114,11 +114,11 @@ funciona sin producir ningún mensaje de error, pero no hace su trabajo
 \index{sentencia!asignación}
 
 Una de las características más potentes de un lenguaje de programación es
-la capacidad para manipular {\bf variables}. Una variable es un nombre
+la capacidad de manipular {\bf variables}. Una variable es un nombre
 que se refiere a un valor.
 
 Una {\bf sentencia de asignación} crea variables nuevas y las
-asigna valores:
+da valores:
 
 \beforeverb
 \begin{verbatim}
@@ -161,23 +161,23 @@ El tipo de una variable es el tipo del valor al que se refiere.
 \section{Nombres de variables y palabras claves}
 \index{palabra clave}
 
-Los programadores generalmente elijen nombres para sus variables que
+Los programadores generalmente eligen nombres para sus variables que
 tengan sentido y documenten para qué se usa esa variable.
 
 Los nombres de las variables pueden ser arbitrariamente largos. Pueden contener
 tanto letras como números, pero no pueden comenzar con un número.
-Es válido usar letras mayúsculas, pero es buena idea
+Se pueden usar letras mayúsculas, pero es buena idea
 comenzar los nombres de las variables con una letras minúscula (veremos
-por qué después).
+por qué más adelante).
 
-El carácter barra-baja (\verb"_") puede utilizarse en un nombre.
+El carácter guión-bajo (\verb"_") puede utilizarse en un nombre.
 A menudo se utiliza en nombres con múltiples palabras, como en
 \verb"mi_nombre" o \verb"velocidad_de_golondrina_sin_carga".
-Los nombres de las variables pueden comenzar con un carácter barra-baja, pero
+Los nombres de las variables pueden comenzar con un carácter guión-bajo, pero
 generalmente se evita usarlo así a menos que se esté escribiendo código
-para librerías que luego usarán otros.
+para librerías que luego utilizarán otros.
 
-\index{barra-baja, carácter}
+\index{guión-bajo, carácter}
 
 Si se le da a una variable un nombre no permitido, se obtiene un error de sintaxis:
 
@@ -272,7 +272,7 @@ reciben el nombre de {\bf operandos}.
 
 Los operadores {\tt +}, {\tt -}, {\tt *}, {\tt /}, y {\tt **}
 realizan sumas, restas, multiplicaciones, divisiones y
-exponenciación (elevar un número a una potencia), como se muestra en los siguientes ejemplos:
+exponenciación (elevar un número a una potencia), como se muestra en los ejemplos siguientes:
 
 \beforeverb
 \begin{verbatim}
@@ -436,7 +436,7 @@ puedes comprobar si un número es divisible por otro---si
 También se puede extraer el dígito más a la derecha
 de los que componen un número. Por ejemplo, {\tt x \% 10} obtiene el
 dígito que está más a la derecha de {\tt x} (en base 10). De forma similar, {\tt x \% 100}
-obtiene los últimos dos dígitos.
+obtiene los dos últimos dígitos.
 
 \section{Operaciones con cadenas}
 \index{cadena!operación}
@@ -467,9 +467,9 @@ La salida de este programa es {\tt 100150}.
 \section{Petición de información al usuario}
 \index{entrada desde teclado}
 
-A veces puede que queramos recibir el valor de una variable del usuario,
-a través del teclado.
-Python proporciona una función integrada llamada \verb"raw_input" que recibe
+A veces necesitaremos que sea el usuario quien nos proporcione el valor para
+una variable, a través del teclado.
+Python proporciona una función interna llamada \verb"raw_input" que recibe
 la entrada desde el teclado\footnote{En Python 3.0, esta función ha sido llamada
 {\tt input}.}. Cuando se llama a esa función, el programa se detiene y
 espera a que el usuario escriba algo. Cuando el usuario pulsa {\sf Retorno} o
@@ -489,8 +489,8 @@ Cualquier cosa ridícula
 \end{verbatim}
 \afterverb
 %
-Antes de recibir algo del usuario, es buena idea escribir
-un mensaje explicándole qué esperamos recibir. Se puede pasar una cadena a
+Antes de recibir cualquier dato desde el usuario, es buena idea escribir
+un mensaje explicándole qué debe introducir. Se puede pasar una cadena a
 \verb"raw_input", que será mostrada al usuario antes de que el programa se detenga
 para recibir su entrada:
 
@@ -528,7 +528,7 @@ el valor de retorno a {\tt int} usando la función {\tt int()}:
 \end{verbatim}
 \afterverb
 %
-Pero si el usuario escribe algo distinto a una cadena de dígitos,
+Pero si el usuario escribe algo que no sea una cadena de dígitos,
 obtendrás un error:
 
 \beforeverb
@@ -555,7 +555,7 @@ de leer. Los lenguajes formales son densos, y a menudo es complicado
 mirar un trozo de código e imaginarse qué es lo que hace, o por qué.
 
 Por eso es buena idea añadir notas a tus programas, para explicar
-en lenguaje natural qué es lo que el programa está haciendo. Estas notas reciben el nombre de
+en un lenguaje normal qué es lo que el programa está haciendo. Estas notas reciben el nombre de
 {\bf comentarios}, y en Python comienzan con el símbolo \verb"#":
 
 
@@ -669,7 +669,7 @@ for word in words:
 %
 ¿Qué ocurre aquí? ¿Cuáles de las piezas (for, word, in, etc.) son palabras reservadas
 y cuáles son simplemente nombres de variables? ¿Acaso Python comprende de un modo
-básico la noción de palabras (words)? Los programadores novatos tienen
+básico la noción de palabras ({\tt words})? Los programadores novatos tienen
 problemas separando qué parte del código
 \emph{debe} mantenerse tal como está en este ejemplo y qué partes son simplemente
 elección del programador.
@@ -689,11 +689,11 @@ de variables elegidas por el programador. Está bastante claro que Python no
 entiende nada de pizza ni de porciones,
 ni del hecho de que una pizza consiste en un conjunto de una o más porciones.
 
-Pero si nuestro programa lo que realmente va a hacer es leer datos y buscar palabras en esos datos,
+Pero si nuestro programa lo que realmente va a hacer es leer datos y buscar palabras en ellos,
 {\tt pizza} y {\tt porción} son nombres muy poco mnemónicos. Elegirlos como
 nombres de variables distrae del propósito real del programa.
 
-Después de un breve periodo de tiempo, conocerás las palabras reservadas más comunes,
+Dentro de muy poco tiempo, conocerás las palabras reservadas más comunes,
 y empezarás a ver cómo esas palabras reservadas resaltan sobre las demás:
 
 {\tt {\bf for} word {\bf in} words{\bf :}\\
@@ -724,7 +724,7 @@ de dos operandos sin ningún operador:
 
 \beforeverb
 \begin{verbatim}
->>> mal nombre = 5
+>>> nombre incorrecto = 5
 SyntaxError: invalid syntax
 \end{verbatim}
 \afterverb
@@ -745,9 +745,9 @@ antes de que le hayas asignado un valor. Eso puede ocurrir si escribes mal el no
 
 \beforeverb
 \begin{verbatim}
->>> principal = 327.68
->>> interes = principla * tarifa
-NameError: name 'principla' is not defined
+>>> capital = 327.68
+>>> interes = capitla * tipo
+NameError: name 'capitla' is not defined
 \end{verbatim}
 \afterverb
 %
@@ -846,7 +846,7 @@ Hasta ahora, las únicas sentencias que hemos visto son asignaciones y sentencia
 
 \item[tipo:] Una categoría de valores. Los tipos que hemos visto hasta ahora
 son enteros (tipo {\tt int}), números en punto flotante (tipo {\tt
-float}), y cadenas (type {\tt str}).
+float}), y cadenas (tipo {\tt str}).
 \index{tipo}
 
 \item[valor:] Una de las unidades básicas de datos, como un número o una cadena,
@@ -865,7 +865,7 @@ Escribe un programa que use \verb"raw_input" para pedirle al usuario su nombre
 y luego darle la bienvenida.
 
 \begin{verbatim}
-Introduce tu nombre: Chuck
+Introduzca tu nombre: Chuck
 Hola, Chuck
 \end{verbatim}
 
@@ -875,8 +875,8 @@ Hola, Chuck
 Escribe un programa para pedirle al usuario el número de horas y la tarifa por hora para calcular
 el salario bruto.
 \begin{verbatim}
-Introduce Horas: 35
-Introduce Tarifa: 2.75
+Introduzca Horas: 35
+Introduzca Tarifa: 2.75
 Salario: 96.25
 \end{verbatim}
 \end{ex}

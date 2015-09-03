@@ -38,7 +38,7 @@
 \def\refname{Referencias}%
 \def\abstractname{Abstracto}%
 \def\bibname{Bibliograf\'ia}%
-\def\chaptername{Chap\'itulo}%
+\def\chaptername{Cap\'itulo}%
 \def\appendixname{Ap\'endice}%
 \def\contentsname{Contenido}%
 \def\listfigurename{Lista de Figuras}%
